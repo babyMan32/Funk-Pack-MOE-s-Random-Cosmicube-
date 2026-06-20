@@ -1,6 +1,15 @@
 import funkin.game.shaders.ExtraDropShadowShader;
 
-//do NOT touch these
+//you can edit these
+var in_water = false;
+var weight_reduction = 0.4;
+
+var initial_momentum = 24;
+var momentum_decrease = 1.2;
+
+var hurt_timer = 1;
+
+//but do NOT touch these
 var momentum = 0;
 var landing_position = 0;
 var grounded = true;
@@ -14,15 +23,6 @@ var hurt_timer_const = hurt_timer;
 var jump_char_exists = false;
 
 var darkJumpShader:ExtraDropShadowShader;
-
-//you can edit these tho
-var in_water = false;
-var weight_reduction = 0.4;
-
-var initial_momentum = 24;
-var momentum_decrease = 1.2;
-
-var hurt_timer = 1;
 
 function createJumpChar()
 {
@@ -102,19 +102,19 @@ function onCreatePost()
 
 			createJumpChar();
 	}
+
+	switch (PlayState.SONG.stage)
+	{
+		case "voting":
+			allow_jump = false;
+
+			killBFJump();
+	}
 }
 
 function onUpdate(elapsed:Float):Void
 {
-	if (boyfriend.curCharacter == "bfMADNESSnew")
-	{
-		jump_check_var = true;
-	}
-
-	if (boyfriend.curCharacter != "bfMADNESSnew")
-	{
-		jump_check_var = false;
-	}
+	jump_check_var = boyfriend.curCharacter == "bfMADNESSnew" ? true : false;
 
 	checkCurChar();
 

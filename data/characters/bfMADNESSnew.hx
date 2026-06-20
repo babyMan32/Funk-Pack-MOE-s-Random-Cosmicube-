@@ -18,17 +18,10 @@ function onCreatePost()
 		{
 			case "voting":
 				boyfriend.y += 35;
+
+			case "turbulence":
+				triggerEventNote('Change Character', 'boyfriend', 'bfMADNESSnew-turb'); //bullshit go
 		}
-	}
-
-	if (boyfriend.curCharacter == "bfMADNESSnew")
-	{
-		iconP1.y += 10;
-	}
-
-	if (dad.curCharacter == "bfMADNESSnew")
-	{
-		iconP2.y += 10;
 	}
 }
 
