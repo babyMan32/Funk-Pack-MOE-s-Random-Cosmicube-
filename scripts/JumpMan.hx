@@ -1,25 +1,28 @@
 import funkin.game.shaders.ExtraDropShadowShader;
 
+//do NOT touch these
 var momentum = 0;
 var landing_position = 0;
 var grounded = true;
 
+var allow_jump = false;
+var jump_check_var = false;
+
+var got_hit = false;
+var hurt_timer_const = hurt_timer;
+
+var jump_char_exists = false;
+
+var darkJumpShader:ExtraDropShadowShader;
+
+//you can edit these tho
 var in_water = false;
 var weight_reduction = 0.4;
 
 var initial_momentum = 24;
 var momentum_decrease = 1.2;
 
-var allow_jump = false;
-var jump_check_var = false;
-
-var got_hit = false;
 var hurt_timer = 1;
-var hurt_timer_const = hurt_timer;
-
-var jump_char_exists = false;
-
-var darkJumpShader:ExtraDropShadowShader;
 
 function createJumpChar()
 {
