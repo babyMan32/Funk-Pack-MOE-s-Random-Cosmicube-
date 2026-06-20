@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF D-Sides (Grunt)",
+	"description": "tiky",
+
+	"node":
+	{
+		"parent": "grunt_bf",
+		"direction": "south"
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "Asgore",
+	"description": "He's driving in his car\nRight after a beer\nHey, that bump\nIs shaped like a deer",
+
+	"node": {
+		"parent": "exegf",
+		"direction": "south"
+	},
+	
+	"color": [
+		255,
+		255,
+		255
+	]
+}

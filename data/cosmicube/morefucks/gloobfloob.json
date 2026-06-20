@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF D-Sides (And)",
+	"description": "gloobfloob",
+
+	"node":
+	{
+		"parent": "buttfuck",
+		"direction": "west"
+	}
+}

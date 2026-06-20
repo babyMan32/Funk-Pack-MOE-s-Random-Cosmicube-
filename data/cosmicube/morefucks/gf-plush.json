@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "GF Plushie",
+	"description": "cuddly goober plushie",
+
+	"node": {
+		"parent": "bf-plush",
+		"direction": "south"
+	},
+	
+	"color": [
+		165,
+		0,
+		77
+	]
+}

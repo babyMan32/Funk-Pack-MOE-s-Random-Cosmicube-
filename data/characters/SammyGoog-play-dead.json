@@ -1,0 +1,62 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				763,
+				790
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "dieLmao"
+		},
+		{
+			"offsets": [
+				763,
+				790
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "dieConf"
+		},
+		{
+			"offsets": [
+				763,
+				790
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "dieHold"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/saamyDie",
+	"position": [
+		500,
+		750
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": "fnf_loss_sfx-sammy",
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "sammygoog",
+	"afterimages": false,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -3042943,
+	"camera_position": [
+		1450,
+		-1700
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 3,
+	"_editor_isPlayer": true
+}

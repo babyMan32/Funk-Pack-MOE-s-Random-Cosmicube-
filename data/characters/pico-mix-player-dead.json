@@ -1,0 +1,60 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-40,
+				-14
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "Pico_Dead_Loop0"
+		},
+		{
+			"offsets": [
+				-10,
+				-14
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "Pico_Dead_confirm0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "Pico_dies",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/mix/Mix_Pico_Player_Dead",
+	"position": [
+		-50,
+		214
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "pico-mix-flip",
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -4531882,
+	"camera_position": [
+		140,
+		40
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

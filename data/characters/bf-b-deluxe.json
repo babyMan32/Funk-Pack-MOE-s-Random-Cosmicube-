@@ -1,0 +1,183 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-5,
+				75
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Idle",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-5,
+				75
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Sing Down",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-5,
+				75
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Sing Right",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-5,
+				75
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Sing Up",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-5,
+				75
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "Miss Down",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-5,
+				75
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "Miss Left",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-5,
+				75
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Miss Right",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-5,
+				75
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "Miss Up",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-5,
+				75
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Sing Left",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"offsets": [
+				-5,
+				75
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "hey",
+			"loop": false,
+			"name": "Hey"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bf-b_NEW/bf-b",
+	"position": [
+		-12,
+		342
+	],
+	"flags": {
+		"defeatRetro": "bf-b-redux"
+	},
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bfB-deluxe",
+	"gameover_character": "bf-b-deluxe-dead",
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -1545525,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

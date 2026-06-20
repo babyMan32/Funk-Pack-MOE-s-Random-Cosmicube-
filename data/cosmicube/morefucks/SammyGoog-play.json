@@ -1,0 +1,12 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+	
+	"title": "Sammy The Goog",
+	"description": "awesome charter man",
+	
+	"node": {
+		"direction": "north",
+		"parent": "twink-idk"
+	}
+}

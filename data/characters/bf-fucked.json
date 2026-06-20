@@ -1,0 +1,126 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Coldsteel BF idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-15,
+				14
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Coldsteel BF left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-10,
+				9
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Coldsteel BF down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				5
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Coldsteel BF up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-24,
+				13
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Coldsteel BF right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-14,
+				16
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "Coldsteel BF miss left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-15,
+				11
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "Coldsteel BF miss down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-24,
+				8
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "Coldsteel BF miss up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-24,
+				18
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Coldsteel BF miss right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/exe/bf-fucked",
+	"position": [
+		0,
+		350
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf",
+	"gameover_character": null,
+	"vslice_sustains": true,
+	"flip_x": true,
+	"healthbar_colour": -13520687,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

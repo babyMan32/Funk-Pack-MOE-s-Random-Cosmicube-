@@ -1,0 +1,137 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				1445,
+				990
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "gdcolonge idle dance"
+		},
+		{
+			"offsets": [
+				1455,
+				964
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "gdcolonge down note"
+		},
+		{
+			"offsets": [
+				1445,
+				990
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "gdcolonge up note"
+		},
+		{
+			"offsets": [
+				1445,
+				990
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "gdcolonge hey"
+		},
+		{
+			"offsets": [
+				1445,
+				990
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "gdcolonge left note"
+		},
+		{
+			"offsets": [
+				1450,
+				990
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "gdcolonge right note"
+		},
+		{
+			"offsets": [
+				1445,
+				990
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "gdcolonge miss"
+		},
+		{
+			"offsets": [
+				1445,
+				990
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "gdcolonge miss"
+		},
+		{
+			"offsets": [
+				1445,
+				990
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "gdcolonge miss"
+		},
+		{
+			"offsets": [
+				1445,
+				990
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "gdcolonge miss"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/gdcolonge",
+	"position": [
+		-100,
+		100
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "gdcolonge",
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -10855846,
+	"camera_position": [
+		-580,
+		-200
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.6,
+	"_editor_isPlayer": true
+}

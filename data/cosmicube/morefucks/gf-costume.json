@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF D-Sides (Costume)",
+	"description": "i dont fucking know what her costume actually is-",
+
+	"node":
+	{
+		"parent": "bf-costume",
+		"direction": "north"
+	}
+}

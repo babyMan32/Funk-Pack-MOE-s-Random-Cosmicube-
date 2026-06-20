@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF D-Sides (Mobian)",
+	"description": "RTX 4090 + Ray Tracing",
+
+	"node":
+	{
+		"parent": "mobian_bf",
+		"direction": "west"
+	}
+}

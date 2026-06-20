@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Shaya (B2 GF) (Whitty)",
+	"description": "nya",
+
+	"node":
+	{
+		"parent": "bf-b2",
+		"direction": "south"
+	}
+}

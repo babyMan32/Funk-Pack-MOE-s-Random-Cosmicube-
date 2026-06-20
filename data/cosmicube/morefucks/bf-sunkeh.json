@@ -1,0 +1,14 @@
+{
+	"type": "playerSkin",
+	"price": -200,
+
+	"title": "BF (Sunky)",
+	"description": "Goober-licious!",
+	"hint": "He's so joyous he'll give you money when you get him!",
+
+	"node":
+	{
+		"parent": "keith",
+		"direction": "east"
+	}
+}

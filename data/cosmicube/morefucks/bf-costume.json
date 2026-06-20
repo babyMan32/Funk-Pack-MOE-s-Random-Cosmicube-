@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "BF D-Sides (Bettlejuice)",
+	"description": "Cosplay is always fun!",
+
+	"node":
+	{
+		"parent": "bf-beach",
+		"direction": "north"
+	}
+}

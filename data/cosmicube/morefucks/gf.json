@@ -1,0 +1,14 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Girlfriend",
+	"description": "No like seriously-",
+	"hint": "fucking moron pt2",
+
+	"node":
+	{
+		"parent": "bf",
+		"direction": "east"
+	}
+}

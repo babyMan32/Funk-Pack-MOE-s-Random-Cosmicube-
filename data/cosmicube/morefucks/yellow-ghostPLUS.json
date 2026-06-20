@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 120,
+	
+	"title": "Ghost Yellow",
+	"hint": "How about you finish your tasks instead???",
+	"description": "Why does she keep dying?! (RESTORED DLC COSMICUBE CONTENT)",
+	
+	"node": {
+		"direction": "south",
+		"parent": "sans"
+	}
+}

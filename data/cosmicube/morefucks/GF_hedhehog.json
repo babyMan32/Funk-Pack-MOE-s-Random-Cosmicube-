@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Encore GF",
+	"description": "Hedgehog to the rabbit!",
+
+	"node":
+	{
+		"parent": "bf-encore",
+		"direction": "north"
+	}
+}

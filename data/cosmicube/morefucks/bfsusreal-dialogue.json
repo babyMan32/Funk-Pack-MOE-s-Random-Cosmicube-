@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Sus BF (Dialogue)",
+	"description": "sus guy",
+
+	"node":
+	{
+		"parent": "bfpolus-dialogue",
+		"direction": "west"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+	
+	"title": "Idk's FNF Stuff",
+	"description": "the twink",
+	
+	"node": {
+		"direction": "east",
+		"parent": "glung"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "BF (Dialogue)",
+	"description": "Styled after the dialogue sprites!",
+	"hint": "Would he work on \"Ejected\"...?",
+
+	"node":
+	{
+		"parent": "bf-sunkeh",
+		"direction": "north"
+	}
+}

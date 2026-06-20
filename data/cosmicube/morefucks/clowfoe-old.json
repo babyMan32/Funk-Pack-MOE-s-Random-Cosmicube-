@@ -1,0 +1,21 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Clowfoe (V4 Version)",
+	"description": "The old iteration!",
+	"hint": "Get a B rank or higher on \"Monotone Attack\".",
+
+	"requirement": {
+		"type": "songrank",
+		"rank": "B"
+	},
+
+	"song": "monotone-attack",
+
+	"node":
+	{
+		"parent": "bf-air",
+		"direction": "east"
+	}
+}

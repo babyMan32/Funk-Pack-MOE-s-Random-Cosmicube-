@@ -1,0 +1,98 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				0
+			],
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "MonsterIdle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				30
+			],
+			"offsets": [
+				11,
+				-172
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "monsterDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				-30
+			],
+			"offsets": [
+				-56,
+				42
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "MonsterUp",
+			"indices": []
+		},
+		{
+			"offsets": [
+				240,
+				-60
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "MonsterRight"
+		},
+		{
+			"offsets": [
+				-125,
+				-50
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "MonsterLeft"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/chester/Dark",
+	"position": [
+		-100,
+		50
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "monster",
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -3004088,
+	"camera_position": [
+		79,
+		-6
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

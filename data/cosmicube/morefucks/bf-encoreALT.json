@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 350,
+
+	"title": "Encore BF (ALT)",
+	"description": "there's two blue bunny furries now-?",
+
+	"node":
+	{
+		"parent": "GF_hedhehog",
+		"direction": "north"
+	}
+}

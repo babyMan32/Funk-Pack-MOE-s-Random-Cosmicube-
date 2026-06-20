@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 400,
+
+	"title": "Sans.",
+	"description": "It's the guy from Undertale! No way!",
+
+	"node":
+	{
+		"parent": "Vaporeon",
+		"direction": "south"
+	}
+}

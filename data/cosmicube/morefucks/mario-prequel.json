@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Mario (Oh God No)",
+	"description": "He never meant to...",
+
+	"node":
+	{
+		"parent": "luigiprequel",
+		"direction": "south"
+	}
+}

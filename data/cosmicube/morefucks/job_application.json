@@ -1,0 +1,19 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "Job Application",
+	"description": "AHH\n\nNO\n\n\n\nGET THAT THING AWAY FROM ME",
+	"hint": "Adds an accuracy mechanic when equipped",
+
+	"node": {
+		"parent": "asgore",
+		"direction": "south"
+	},
+	
+	"color": [
+		255,
+		255,
+		255
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF D-Sides (Mobian) (Old)",
+	"description": "Keeping it faithful",
+
+	"node":
+	{
+		"parent": "kinoBF",
+		"direction": "north"
+	}
+}

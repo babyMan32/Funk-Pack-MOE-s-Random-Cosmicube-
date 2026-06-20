@@ -1,0 +1,82 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Snow IDLE",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				44,
+				-58
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Snow Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				24,
+				47
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Snow Up",
+			"indices": []
+		},
+		{
+			"offsets": [
+				40,
+				-5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Snow Right"
+		},
+		{
+			"offsets": [
+				40,
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Snow Left"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Snow Reanimated",
+	"position": [
+		80,
+		80
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "Snow",
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -547947,
+	"camera_position": [
+		50,
+		10
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

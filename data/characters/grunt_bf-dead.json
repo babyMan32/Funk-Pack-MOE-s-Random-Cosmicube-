@@ -1,0 +1,65 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "GameOver1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				16
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "GameOver3",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": true,
+			"flipY": false,
+			"offsets": [
+				0,
+				45
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "GameOver2",
+			"indices": [],
+			"flipX": false
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters\\BF/GruntBF_GAMEOVER",
+	"position": [
+		-280,
+		270
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bfgrunt",
+	"gameover_character": null,
+	"flip_x": true,
+	"healthbar_colour": -1813032,
+	"camera_position": [
+		110,
+		-10
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

@@ -1,0 +1,66 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				25,
+				100
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "firstDeath",
+			"loop": false,
+			"name": "Death Start"
+		},
+		{
+			"offsets": [
+				25,
+				100
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "deathLoop",
+			"loop": true,
+			"name": "Death Loop"
+		},
+		{
+			"offsets": [
+				25,
+				100
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "deathConfirm",
+			"loop": false,
+			"name": "Death Confirm"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bf-b_NEW/bf-b-dead",
+	"position": [
+		-12,
+		342
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bfB",
+	"gameover_character": "characters/bf-b_NEW/bf-b-dead",
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -1545525,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

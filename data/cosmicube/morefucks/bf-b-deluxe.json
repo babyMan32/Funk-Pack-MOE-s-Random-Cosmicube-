@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "BF B-Sides Deluxe",
+	"description": "attention seeker-",
+
+	"node":
+	{
+		"parent": "bf-b-redux",
+		"direction": "north"
+	}
+}

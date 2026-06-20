@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF B-Sides Classic",
+	"description": "She's old!",
+
+	"node":
+	{
+		"parent": "bf-b-classic",
+		"direction": "west"
+	}
+}

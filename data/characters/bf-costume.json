@@ -1,0 +1,218 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				0
+			],
+			"offsets": [
+				-4,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "BFIdle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				-30,
+				0
+			],
+			"offsets": [
+				47,
+				3
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "BFLeft0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				30
+			],
+			"offsets": [
+				-4,
+				-39
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "BFDown0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				-30
+			],
+			"offsets": [
+				-45,
+				39
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "BfUp0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				30,
+				0
+			],
+			"offsets": [
+				-17,
+				1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "BFRight0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				-30,
+				0
+			],
+			"offsets": [
+				40,
+				6
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "BfLeftMiss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				30
+			],
+			"offsets": [
+				4,
+				-42
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "BfDownMiss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				-30
+			],
+			"offsets": [
+				-51,
+				47
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "BFUpMiss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				30,
+				0
+			],
+			"offsets": [
+				-24,
+				2
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "BFRightMiss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				109,
+				14
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "BFYeah",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7,
+				7
+			],
+			"flipX": false
+		},
+		{
+			"offsets": [
+				-9,
+				7
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "scared",
+			"loop": true,
+			"name": "BFScared"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/d-sides_newBF/BOYFRIEND_COSTUME",
+	"position": [
+		40,
+		300
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bfhair",
+	"afterimages": true,
+	"gameover_character": "bf-costume-dead",
+	"vslice_sustains": true,
+	"flip_x": true,
+	"healthbar_colour": -1813032,
+	"camera_position": [
+		190,
+		-70
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

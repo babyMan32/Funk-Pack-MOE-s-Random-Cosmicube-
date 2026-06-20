@@ -1,0 +1,48 @@
+{
+    "changes": [
+        {
+            "step": 63,
+            "prefix": ""
+        },
+        {
+            "step": 75,
+            "prefix": "-png"
+        },
+        {
+            "step": 139,
+            "prefix": ""
+        },
+        {
+            "step": 143,
+            "prefix": "-png"
+        },
+        {
+            "step": 300,
+            "prefix": ""
+        },
+        {
+            "step": 303,
+            "prefix": "-png"
+        },
+        {
+            "step": 415,
+            "prefix": ""
+        },
+        {
+            "step": 1183,
+            "prefix": "-png"
+        },
+        {
+            "step": 1231,
+            "prefix": ""
+        },
+        {
+            "step": 1247,
+            "prefix": "-png"
+        },
+        {
+            "step": 1375,
+            "prefix": ""
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Girlfriend (Phantom) (Dustin')",
+	"description": "im dead",
+
+	"node":
+	{
+		"parent": "bf-frisk",
+		"direction": "north"
+	}
+}

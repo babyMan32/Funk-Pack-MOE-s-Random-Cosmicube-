@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "BF Plushie",
+	"description": "hey look\n\n\nit's me",
+
+	"node": {
+		"parent": "gdcolonge",
+		"direction": "south"
+	},
+	
+	"color": [
+		49,
+		176,
+		209
+	]
+}

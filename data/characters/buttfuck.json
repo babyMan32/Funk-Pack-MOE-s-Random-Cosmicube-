@@ -1,0 +1,125 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "buttfuck idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				29,
+				10
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "buttfuck left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				19
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "buttfuck down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				13,
+				46
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "buttfuck up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-28,
+				3
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "buttfuck right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				15,
+				3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "buttfuck miss left"
+		},
+		{
+			"offsets": [
+				5,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "buttfuck miss down"
+		},
+		{
+			"offsets": [
+				13,
+				45
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "buttfuck miss up"
+		},
+		{
+			"offsets": [
+				-29,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "buttfuck miss right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/d-sides_newBF/Buttfuck",
+	"position": [
+		-50,
+		320
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "buttfuck",
+	"gameover_character": null,
+	"flip_x": true,
+	"healthbar_colour": -39696,
+	"camera_position": [
+		79,
+		4
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.7,
+	"_editor_isPlayer": true
+}

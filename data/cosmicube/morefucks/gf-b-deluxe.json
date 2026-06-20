@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF B-Sides Deluxe",
+	"description": "Holy shit, was that an overhaul...",
+
+	"node":
+	{
+		"parent": "bf-b-deluxe",
+		"direction": "west"
+	}
+}

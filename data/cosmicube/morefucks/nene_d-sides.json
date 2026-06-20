@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Nene D-Sides",
+	"description": "For a friend of mine",
+
+	"node":
+	{
+		"parent": "gloobfloob",
+		"direction": "north"
+	}
+}

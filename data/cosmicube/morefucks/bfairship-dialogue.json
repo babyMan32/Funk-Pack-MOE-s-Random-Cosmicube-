@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Airship BF (Dialogue)",
+	"description": "almost forgot him",
+
+	"node":
+	{
+		"parent": "bfmira-dialogue",
+		"direction": "west"
+	}
+}

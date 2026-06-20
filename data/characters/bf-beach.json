@@ -1,0 +1,126 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-3,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Boyfriend/BFIdle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				8,
+				-9
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Boyfriend/BFDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-38,
+				38
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Boyfriend/BfUp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-43,
+				1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Boyfriend/BFRight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				16,
+				7
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Boyfriend/BFLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				16,
+				6
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "Boyfriend/BFMissLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-52,
+				41
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "Boyfriend/BFMissUp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-47,
+				2
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Boyfriend/BFMissRight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				8,
+				-13
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "Boyfriend/BFMissDown",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/d-sides_newBF/beach",
+	"position": [
+		0,
+		210
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": "bf_witty_death",
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bfhair",
+	"gameover_character": "bf-beach-dead",
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -1813032,
+	"camera_position": [
+		258,
+		12
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

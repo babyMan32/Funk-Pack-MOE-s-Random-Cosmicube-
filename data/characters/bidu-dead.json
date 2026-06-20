@@ -1,0 +1,63 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				52,
+				13
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "BIDU Dies",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				34,
+				-7
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "BIDU Dead Loop",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				118,
+				156
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "BIDU Dead confirm",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/arrow/BIDU_DED",
+	"position": [
+		25,
+		325
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bidu",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -6226143,
+	"camera_position": [
+		0,
+		10
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

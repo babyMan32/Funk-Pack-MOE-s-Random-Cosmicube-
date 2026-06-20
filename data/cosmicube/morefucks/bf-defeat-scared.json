@@ -1,0 +1,21 @@
+{
+	"type": "playerSkin",
+	"price": 400,
+
+	"title": "BF (Defeat) (Scared)",
+	"description": "skeletons",
+	"hint": "Get a A rank or higher on \"Defeat\".",
+
+	"requirement": {
+		"type": "songrank",
+		"rank": "A"
+	},
+
+	"song": "defeat",
+
+	"node":
+	{
+		"parent": "bf-defeat-normal",
+		"direction": "south"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend (Funkin' Mix)",
+	"description": "Rapper turned killer!",
+
+	"node":
+	{
+		"parent": "bf-air",
+		"direction": "west"
+	}
+}

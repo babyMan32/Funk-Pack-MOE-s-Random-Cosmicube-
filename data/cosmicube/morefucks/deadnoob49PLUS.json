@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 49,
+	
+	"title": "Dead Noob49",
+	"hint": "Just throw it out the back.",
+	"description": "Missing person, no longer missing! (RESTORED DLC COSMICUBE CONTENT)",
+	
+	"node": {
+		"direction": "south",
+		"parent": "yellow-ghostPLUS"
+	}
+}

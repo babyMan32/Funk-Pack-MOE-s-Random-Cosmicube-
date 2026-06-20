@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "BF B-Sides Classic",
+	"description": "Pink head-ass-",
+
+	"node":
+	{
+		"parent": "root",
+		"direction": "north"
+	}
+}

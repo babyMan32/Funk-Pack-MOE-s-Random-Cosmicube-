@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Shaya (B3 GF)",
+	"description": "trans appreciation",
+
+	"node":
+	{
+		"parent": "bf-b3",
+		"direction": "south"
+	}
+}

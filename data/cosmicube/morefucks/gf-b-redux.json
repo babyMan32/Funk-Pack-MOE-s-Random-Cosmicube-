@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF B-Sides Redux",
+	"description": "whats the fucking difference between classic and redux-",
+
+	"node":
+	{
+		"parent": "bf-b-redux",
+		"direction": "west"
+	}
+}

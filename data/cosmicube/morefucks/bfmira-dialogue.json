@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "MIRA BF (Dialogue)",
+	"description": "hmm",
+
+	"node":
+	{
+		"parent": "bfsauce-dialogue",
+		"direction": "west"
+	}
+}

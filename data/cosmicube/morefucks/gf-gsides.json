@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF G-Sides",
+	"description": "woman",
+
+	"node":
+	{
+		"parent": "bf-gsides",
+		"direction": "east"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Cat",
+	"description": "so mischevous",
+	"hint": "You're paying for whatever it breaks",
+
+	"node":
+	{
+		"parent": "bf-hoodie",
+		"direction": "north"
+	}
+}

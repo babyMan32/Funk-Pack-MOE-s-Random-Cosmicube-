@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF (Dialogue)",
+	"description": "Also styled after the dialogue sprites!",
+
+	"node":
+	{
+		"parent": "bf-dialogue",
+		"direction": "west"
+	}
+}

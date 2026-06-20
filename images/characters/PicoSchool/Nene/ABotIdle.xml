@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TextureAtlas imagePath="ABotIdle.png" width="1570" height="1019">
+	<SubTexture name="ABotSpeaker instancia 10000" x="787" y="513" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10001" x="5" y="5" width="779" height="503" frameX="-0" frameY="-0" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10002" x="5" y="5" width="779" height="503" frameX="-0" frameY="-0" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10003" x="5" y="513" width="777" height="501" frameX="-1" frameY="-2" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10004" x="789" y="5" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10005" x="789" y="5" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10006" x="789" y="5" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10007" x="789" y="5" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10008" x="789" y="5" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10009" x="789" y="5" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10010" x="789" y="5" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10011" x="789" y="5" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10012" x="789" y="5" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10013" x="789" y="5" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10014" x="789" y="5" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+	<SubTexture name="ABotSpeaker instancia 10015" x="789" y="5" width="776" height="500" frameX="-1" frameY="-3" frameWidth="779" frameHeight="504"/>
+</TextureAtlas>

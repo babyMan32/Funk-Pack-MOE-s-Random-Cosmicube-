@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:24dd14258cba12eca7b4ee2315dfdf33:18c03d8b95db07c046b7c57c4f1cd855:4c1a9b289e8b8dec015ca90e416a9266$ -->
+<TextureAtlas imagePath="pico_leg.png" width="854" height="1450">
+    <SubTexture name="Kax_Run_leg0001" x="3" y="1063" width="423" height="384" frameX="-31" frameY="-5" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0002" x="3" y="1063" width="423" height="384" frameX="-31" frameY="-5" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0003" x="3" y="3" width="453" height="378" frameX="-1" frameY="0" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0004" x="3" y="3" width="453" height="378" frameX="-1" frameY="0" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0005" x="3" y="649" rotated="true" width="429" height="414" frameX="0" frameY="-2" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0006" x="3" y="649" rotated="true" width="429" height="414" frameX="0" frameY="-2" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0007" x="3" y="381" rotated="true" width="442" height="268" frameX="-111" frameY="-12" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0008" x="3" y="381" rotated="true" width="442" height="268" frameX="-111" frameY="-12" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0009" x="456" y="3" width="395" height="380" frameX="-66" frameY="-9" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0010" x="456" y="3" width="395" height="380" frameX="-66" frameY="-9" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0011" x="445" y="383" width="399" height="398" frameX="-56" frameY="-3" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0012" x="445" y="383" width="399" height="398" frameX="-56" frameY="-3" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0013" x="426" y="1081" rotated="true" width="415" height="313" frameX="-108" frameY="-9" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0014" x="426" y="1081" rotated="true" width="415" height="313" frameX="-108" frameY="-9" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0015" x="432" y="781" rotated="true" width="419" height="300" frameX="-104" frameY="-18" frameWidth="461" frameHeight="454"/>
+    <SubTexture name="Kax_Run_leg0016" x="432" y="781" rotated="true" width="419" height="300" frameX="-104" frameY="-18" frameWidth="461" frameHeight="454"/>
+</TextureAtlas>

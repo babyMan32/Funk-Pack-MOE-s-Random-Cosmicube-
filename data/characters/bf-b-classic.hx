@@ -1,0 +1,34 @@
+var womanExists:Bool = true;
+var allow_gf_taunt = true;
+
+function onLoad()
+{
+	switch (PlayState.SONG.stage)
+	{
+		//no gf stages
+
+		case "beach-old", "boiling", "chef", "dave", "defeat", "esculent", "finalem", "idk", "jads", "jerma", "kills", "lounge", "monotone", "nuzzus", "piptowers", "pretender", "turbulence", "victory", "who":
+			womanExists = false;
+	}
+}
+
+function onUpdate(elapsed:Float):Void
+{
+	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bf-b-classic' && boyfriend.getAnimName() == 'hey')
+	{
+		if (!womanExists) return;
+
+		if (gf.curCharacter == 'gf-b-classic')
+		{
+			gf.playAnim('cheer');
+			gf.specialAnim = true;
+
+			allow_gf_taunt = false;
+		}
+	}
+
+	if (gf.getAnimName() != 'cheer')
+	{
+		allow_gf_taunt = true;
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF D-Sides (Beach)",
+	"description": "Bring your hot babe with you!",
+
+	"node":
+	{
+		"parent": "bf-beach",
+		"direction": "south"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 450,
+
+	"title": "BF (Needlemouse)",
+	"description": "spoopy",
+
+	"node":
+	{
+		"parent": "snow",
+		"direction": "north"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 450,
+
+	"title": "GF (Needlemouse)",
+	"description": "spoopy pt. 2",
+
+	"node":
+	{
+		"parent": "bf-needle",
+		"direction": "east"
+	}
+}

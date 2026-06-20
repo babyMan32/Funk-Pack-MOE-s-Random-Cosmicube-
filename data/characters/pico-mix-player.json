@@ -1,0 +1,313 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				38,
+				-3
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Pico Idle Dance0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				57,
+				21
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Pico Note Right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				62,
+				37
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "Pico Note Right  miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				-101
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Pico Down Note0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-3,
+				-83
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "Pico Down Note miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-18,
+				67
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "pico Up note0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				74
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "pico Up note miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-28,
+				21
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Pico NOTE LEFT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-44,
+				22
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Pico NOTE LEFT MISS0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				105,
+				26
+			],
+			"anim": "singLEFT-dodge",
+			"fps": 24,
+			"name": "Pico_bullet_dodge_left0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				13,
+				-114
+			],
+			"anim": "singDOWN-dodge",
+			"fps": 24,
+			"name": "Pico_bullet_dodge_down0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				64
+			],
+			"anim": "singUP-dodge",
+			"fps": 24,
+			"name": "Pico_bullet_dodge_up0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-36,
+				12
+			],
+			"anim": "singRIGHT-dodge",
+			"fps": 24,
+			"name": "Pico_bullet_dodge_right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				36,
+				4
+			],
+			"anim": "idle-angry",
+			"fps": 24,
+			"name": "Pico Idle Dance_angry0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				57,
+				22
+			],
+			"anim": "singLEFT-angry",
+			"fps": 24,
+			"name": "Pico Note Right_angry0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				64,
+				38
+			],
+			"anim": "singLEFTmiss-angry",
+			"fps": 24,
+			"name": "Pico Note Right  miss_angry0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				-99
+			],
+			"anim": "singDOWN-angry",
+			"fps": 24,
+			"name": "Pico Down Note_angry0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				-85
+			],
+			"anim": "singDOWNmiss-angry",
+			"fps": 24,
+			"name": "Pico Down Note miss_angry0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-15,
+				64
+			],
+			"anim": "singUP-angry",
+			"fps": 24,
+			"name": "pico Up note_angry0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				74
+			],
+			"anim": "singUPmiss-angry",
+			"fps": 24,
+			"name": "pico Up note miss_angry0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-54,
+				27
+			],
+			"anim": "singRIGHT-angry",
+			"fps": 24,
+			"name": "Pico NOTE LEFT_angry0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-54,
+				30
+			],
+			"anim": "singRIGHTmiss-angry",
+			"fps": 24,
+			"name": "Pico NOTE LEFT MISS_angry0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				105,
+				26
+			],
+			"anim": "singLEFT-dodge-angry",
+			"fps": 24,
+			"name": "Pico_bullet_dodge_left_angry0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				13,
+				-114
+			],
+			"anim": "singDOWN-dodge-angry",
+			"fps": 24,
+			"name": "Pico_bullet_dodge_down_angry0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				64
+			],
+			"anim": "singUP-dodge-angry",
+			"fps": 24,
+			"name": "Pico_bullet_dodge_up_angry0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-36,
+				12
+			],
+			"anim": "singRIGHT-dodge-angry",
+			"fps": 24,
+			"name": "Pico_bullet_dodge_right_angry0",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/mix/Mix_Pico_Player",
+	"position": [
+		30,
+		270
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "pico-mix-flip",
+	"gameover_character": "pico-mix-player-dead",
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -4531882,
+	"camera_position": [
+		140,
+		40
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

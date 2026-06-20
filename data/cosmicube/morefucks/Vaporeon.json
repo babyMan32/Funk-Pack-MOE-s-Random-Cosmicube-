@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 5000,
+
+	"title": "Kludge54n5",
+	"description": "Hey, it's Vaporeon! But not Vaporeon...",
+
+	"node":
+	{
+		"parent": "bfFH",
+		"direction": "west"
+	}
+}

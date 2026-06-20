@@ -1,0 +1,183 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				160,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "MarioIdle",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				188,
+				-50
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "MarioDown0",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				208,
+				3
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "MarioRight0",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				272,
+				-1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "MarioLeft0",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				152,
+				45
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "MarioUp0",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				188,
+				-25
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "MarioDownMiss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				208,
+				7
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "MarioRightMiss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				152,
+				6
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "MarioLeftMiss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				155,
+				45
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "MarioUpMiss",
+			"indices": [],
+			"flipX": false
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/madness/ogn/Mario_OHGODNO_Assets",
+	"position": [
+		140,
+		-50
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "marioP",
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -642716,
+	"camera_position": [
+		100,
+		160
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

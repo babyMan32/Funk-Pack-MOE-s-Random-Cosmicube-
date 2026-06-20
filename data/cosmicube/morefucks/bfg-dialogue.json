@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Ghost BF (Dialogue)",
+	"description": "ooooooooh hes a ghoioostt",
+
+	"node":
+	{
+		"parent": "bfairship-dialogue",
+		"direction": "west"
+	}
+}

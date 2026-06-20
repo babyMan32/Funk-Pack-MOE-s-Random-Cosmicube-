@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF D-Sides (Old)",
+	"description": "she is gross yucky-",
+
+	"node":
+	{
+		"parent": "bf-dsides_OLD",
+		"direction": "south"
+	}
+}

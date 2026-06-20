@@ -1,0 +1,21 @@
+{
+	"type": "playerSkin",
+	"price": 350,
+
+	"title": "BF (Defeat) (Normal)",
+	"description": "spooky scary",
+	"hint": "Get a C rank or higher on \"Defeat\".",
+
+	"requirement": {
+		"type": "songrank",
+		"rank": "C"
+	},
+
+	"song": "defeat",
+
+	"node":
+	{
+		"parent": "gf-needlemouse",
+		"direction": "south"
+	}
+}

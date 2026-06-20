@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "BF D-Sides (Mobian) (Old)",
+	"description": "V2.5/3.0 ahh design",
+
+	"node":
+	{
+		"parent": "bf-costume",
+		"direction": "west"
+	}
+}

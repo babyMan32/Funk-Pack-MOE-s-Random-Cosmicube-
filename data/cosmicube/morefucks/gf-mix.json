@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Girlfriend (Funkin' Mix)",
+	"description": "Female accomplice!",
+
+	"node":
+	{
+		"parent": "bf-mix",
+		"direction": "north"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF (Faker)",
+	"description": "tall woman",
+
+	"node":
+	{
+		"parent": "gf-b3",
+		"direction": "west"
+	}
+}

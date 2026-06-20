@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Snow The Fox",
+	"description": "hey its the rewrite guy",
+
+	"node":
+	{
+		"parent": "bfFH",
+		"direction": "east"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "BF (Sonic.EXE AIR Alts)",
+	"description": "super smash bros ahh cube-",
+	"hint": "\"Dont forget to special thank Sebas\"\n- Remagets",
+
+	"node":
+	{
+		"parent": "bf-dialogue",
+		"direction": "north"
+	}
+}

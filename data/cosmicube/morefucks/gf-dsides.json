@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "GF D-Sides",
+	"description": "organe woman",
+
+	"node":
+	{
+		"parent": "bf-dsides",
+		"direction": "south"
+	}
+}

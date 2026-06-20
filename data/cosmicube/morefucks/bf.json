@@ -1,0 +1,14 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend.XML",
+	"description": "How do we not have him in here yet?",
+	"hint": "fucking moron",
+
+	"node":
+	{
+		"parent": "bf-air",
+		"direction": "north"
+	}
+}

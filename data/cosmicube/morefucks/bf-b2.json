@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Bartholomew Bartholomew Bartholomew (B2 BF) (Whitty)",
+	"description": "why does he have such a long name-",
+
+	"node":
+	{
+		"parent": "gf-b3",
+		"direction": "south"
+	}
+}

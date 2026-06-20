@@ -1,0 +1,131 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				4
+			],
+			"loop": false,
+			"anim": "scared",
+			"fps": 24,
+			"name": "BARBARA Scared",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				-16
+			],
+			"loop": false,
+			"anim": "sad",
+			"fps": 24,
+			"name": "BARBARA sad",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		},
+		{
+			"offsets": [
+				0,
+				-9
+			],
+			"loop": false,
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "BARBARA Dancing Beat",
+			"indices": [
+				30,
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"offsets": [
+				0,
+				-9
+			],
+			"loop": false,
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "BARBARA Dancing Beat",
+			"indices": [
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
+			]
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				79
+			],
+			"anim": "cheer",
+			"fps": 24,
+			"name": "BARBARA Cheer",
+			"indices": [],
+			"flipX": false
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/arrow/BARBARA_BLUE",
+	"position": [
+		-50,
+		0
+	],
+	"dance_every": 1,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "barbara",
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -13312,
+	"camera_position": [
+		-150,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

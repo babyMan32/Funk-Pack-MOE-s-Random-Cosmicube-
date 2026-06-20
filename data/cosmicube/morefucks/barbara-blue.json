@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Barbara Blue",
+	"description": "Arrow Funk GF!",
+
+	"node":
+	{
+		"parent": "bidu",
+		"direction": "north"
+	}
+}
