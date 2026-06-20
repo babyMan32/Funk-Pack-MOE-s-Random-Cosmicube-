@@ -10,12 +10,12 @@ function onLoad(){
     abot.x += 80; abot.y -= 80;
     gfGroup.insert(0, abot);
 
-    a_bot_screen = new FlxSprite(40, 300).loadGraphic(Paths.image('characters/PicoSchool/Nene/ABotScreenFill'));
+    a_bot_screen = new FlxSprite(40, 300).loadGraphic(Paths.image('characters/PicoSchool/Nene/ABotScreenFill', null, null, PathsTestMode.LOOSE));
     abot.add(a_bot_screen);
 
 
     a_bot = new FlxSprite();
-    a_bot.frames = Paths.getSparrowAtlas('characters/PicoSchool/Nene/ABotIdle');
+    a_bot.frames = Paths.getSparrowAtlas('characters/PicoSchool/Nene/ABotIdle', null, null, PathsTestMode.LOOSE);
     a_bot.animation.addByPrefix('idle', 'ABot', 24, false);
     a_bot.animation.play('idle');
     abot.add(a_bot);

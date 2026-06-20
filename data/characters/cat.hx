@@ -5,7 +5,7 @@ var micCanTurnOn = false;
 
 var ext:String = "characters/vs_cord/";
 var mic:FlxSprite;
-var frames = Paths.getSparrowAtlas(ext + 'note');
+var frames = Paths.getSparrowAtlas(ext + 'note', null, null, PathsTestMode.LOOSE);
 var previousNote:Int = -1;
 var container = new FlxTypedSpriteGroup();
 
@@ -49,7 +49,7 @@ function onCreatePost()
 		useDefaultStep = true;
 	}
 
-	mic = new FlxSprite().loadGraphic(Paths.image(ext + 'mic'));
+	mic = new FlxSprite().loadGraphic(Paths.image(ext + 'mic', null, null, PathsTestMode.LOOSE));
 	mic.scale.set(0.8, 0.8);
 	mic.updateHitbox();
 	mic.x -= 200;

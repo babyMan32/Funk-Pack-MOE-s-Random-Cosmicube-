@@ -49,7 +49,7 @@ function onCreatePost()
 		bfArm.y = game.boyfriend.y + 110;
 	}
 
-	evilDyingThing = new FlxSprite(0, 0).loadGraphic(Paths.image('stages/vignette'));
+	evilDyingThing = new FlxSprite(0, 0).loadGraphic(Paths.image('stages/vignette', null, null, PathsTestMode.LOOSE));
 	evilDyingThing.scale.x = 1.01;
 	evilDyingThing.camera = PlayState.instance.camOther;
 	evilDyingThing.antialiasing = false;
@@ -57,7 +57,7 @@ function onCreatePost()
 	evilDyingThing.updateHitbox();
 	add(evilDyingThing);
 
-	evilDyingThingLayer2 = new FlxSprite(0, 0).loadGraphic(Paths.image('stages/vignettedarker'));
+	evilDyingThingLayer2 = new FlxSprite(0, 0).loadGraphic(Paths.image('stages/vignettedarker', null, null, PathsTestMode.LOOSE));
 	evilDyingThingLayer2.scale.x = 1.01;
 	evilDyingThingLayer2.camera = PlayState.instance.camOther;
 	evilDyingThingLayer2.antialiasing = false;
