@@ -14,10 +14,10 @@ function onLoad()
 
 function onUpdate(elapsed:Float):Void
 {
+	if (!womanExists) return;
+
 	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bf-b-classic' && boyfriend.getAnimName() == 'hey')
 	{
-		if (!womanExists) return;
-
 		if (gf.curCharacter == 'gf-b-classic')
 		{
 			gf.playAnim('cheer');
