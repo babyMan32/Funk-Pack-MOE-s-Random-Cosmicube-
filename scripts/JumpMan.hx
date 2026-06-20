@@ -136,7 +136,7 @@ function initJump()
 {
 	if (!jump_check_var) return;
 
-	if (FlxG.keys.justPressed.CONTROL && grounded && allow_jump && !got_hit)
+	if (controls.NOTE_TAUNT_P && grounded && allow_jump && !got_hit)
 	{
 		momentum = initial_momentum;
 		allow_jump = false;
