@@ -25,6 +25,11 @@ function onCreatePost()
 	{
 		iconP1.y += 10;
 	}
+
+	if (dad.curCharacter == "bfMADNESSnew")
+	{
+		iconP2.y += 10;
+	}
 }
 
 function onStepHit()
