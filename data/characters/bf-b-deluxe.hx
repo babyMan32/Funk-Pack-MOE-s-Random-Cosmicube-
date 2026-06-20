@@ -1,4 +1,4 @@
-var womanExists:Bool = true;
+var baddieExists:Bool = true;
 var allow_gf_taunt = true;
 
 function onLoad()
@@ -8,13 +8,13 @@ function onLoad()
 		//no gf stages
 
 		case "beach-old", "boiling", "chef", "dave", "defeat", "esculent", "finalem", "idk", "jads", "jerma", "kills", "lounge", "monotone", "nuzzus", "piptowers", "pretender", "turbulence", "victory", "who":
-			womanExists = false;
+			baddieExists = false;
 	}
 }
 
 function onUpdate(elapsed:Float):Void
 {
-	if (!womanExists) return;
+	if (!baddieExists) return;
 
 	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bf-b-deluxe' && boyfriend.getAnimName() == 'hey' && allow_gf_taunt)
 	{

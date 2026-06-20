@@ -1,4 +1,5 @@
-var womanExists:Bool = true;
+var baddieExists:Bool = true;
+var allow_gf_taunt = true;
 
 function onLoad()
 {
@@ -7,24 +8,25 @@ function onLoad()
 		//no gf stages
 
 		case "beach-old", "boiling", "chef", "dave", "defeat", "esculent", "finalem", "idk", "jads", "jerma", "kills", "lounge", "monotone", "nuzzus", "piptowers", "pretender", "turbulence", "victory", "who":
-			womanExists = false;
+			baddieExists = false;
 	}
 }
 
 function onUpdate(elapsed:Float):Void
 {
-	if (FlxG.keys.justPressed.SPACE && boyfriend.curCharacter == 'bf-dsides_OLD' && boyfriend.getAnimName() == 'idle')
+	if (!baddieExists) return;
+
+	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bf-dsides_OLD' && boyfriend.getAnimName() == 'hey' && allow_gf_taunt)
 	{
-		boyfriend.playAnim('hey');
-		boyfriend.specialAnim = true;
-		boyfriend.holding = true;
-
-		if (!womanExists) return;
-
 		if (gf.curCharacter == 'gf-dsides_OLD')
 		{
 			gf.playAnim('cheer');
 			gf.specialAnim = true;
 		}
+	}
+
+	if (gf.getAnimName() != 'cheer')
+	{
+		allow_gf_taunt = true;
 	}
 }
