@@ -63,6 +63,11 @@
 		210
 	],
 	"dance_every": 2,
+	"flags": {
+		"variants": {
+			"dark": "Vaporeon-dark"
+		}
+	},
 	"gameover_intial_sound": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,

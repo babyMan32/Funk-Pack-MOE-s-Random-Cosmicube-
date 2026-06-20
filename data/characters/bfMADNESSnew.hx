@@ -33,6 +33,14 @@ function onStepHit()
 	}
 }
 
+function onUpdate(elapsed:Float):Void
+{
+	if (boyfriend.curCharacter == "bfMADNESSexenewnervous" && boyfriend.shader != null)
+	{
+		boyfriend.shader = null;
+	}
+}
+
 function onEvent(eventName, value1, value2)
 {
 	switch (eventName)

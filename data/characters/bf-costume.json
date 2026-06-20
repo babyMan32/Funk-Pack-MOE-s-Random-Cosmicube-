@@ -198,7 +198,11 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": {},
+	"flags": {
+		"variants": {
+			"dark": "bf-costume-dark"
+		}
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "bfhair",

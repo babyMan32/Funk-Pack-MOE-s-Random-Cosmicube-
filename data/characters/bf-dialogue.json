@@ -352,7 +352,10 @@
 	"flags": {
 		"floating": true,
 		"runner": true,
-		"defeatRetro": "bf-dialogue"
+		"variants": {
+			"dark": "whitebf-dialogue",
+			"defeat": "bf-defeat-normal-dialogue"
+		}
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,

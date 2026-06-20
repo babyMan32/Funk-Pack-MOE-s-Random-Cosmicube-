@@ -236,8 +236,7 @@ function onEvent(eventName, value1, value2)
 			}
 
 		case 'Lights out':
-			if (value1 == '2') return;
-			if (value1 == '1' && !ClientPrefs.flashing) return;
+			if (value1 == '2' /* ????? */ || (value1 == '1' && !ClientPrefs.flashing)) return;
 
 			bfJump.shader = darkJumpShader;
 

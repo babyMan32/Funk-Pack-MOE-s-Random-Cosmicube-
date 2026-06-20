@@ -4,8 +4,6 @@ var allow_taunt = true;
 
 function onLoad()
 {
-	addCharacterToList('whitebf-dialogue', 0);
-
 	switch (PlayState.SONG.stage)
 	{
 		//no gf stages
@@ -49,9 +47,6 @@ function onCreatePost()
 					triggerEventNote('Change Character', 'gf', 'gfdanger-dialogue');
 				}
 
-			case "Defeat":
-				triggerEventNote('Change Character', 'boyfriend', 'bf-defeat-normal-dialogue');
-
 			case "Finale":
 				triggerEventNote('Change Character', 'boyfriend', 'bf-defeat-scared-dialogue');
 		}
@@ -61,11 +56,6 @@ function onCreatePost()
 function onUpdate(elapsed:Float):Void
 {
 	onTauntCalled();
-
-	if (boyfriend.curCharacter == 'whitebf-dialogue' && boyfriend.shader != null)
-	{
-		boyfriend.shader = null;
-	}
 
 	if (gf_falling_var)
 	{
@@ -118,32 +108,6 @@ function onEvent(eventName, value1, value2)
 		case 'Lights on':
 			if (value1 == '1' && !ClientPrefs.flashing) return;
 			triggerEventNote('Change Character', 'boyfriend', 'bf-dialogue');
-
-		case 'Defeat Retro':
-			var charType:Int = Std.parseInt(value1);
-			if (Math.isNaN(charType)) charType = 0;
-			
-			switch (charType)
-			{
-				case 1:
-					if (boyfriend.curCharacter == 'bf-dialogue')
-					{
-						changeCharacter('bf-defeat-scared-dialogue', 0);
-					}
-			}
-
-		case 'Defeat Fade':
-			var charType:Int = Std.parseInt(value1);
-			if (Math.isNaN(charType)) charType = 0;
-
-			switch (charType)
-			{
-				case 0:
-					if (boyfriend.curCharacter == 'bf-defeat-normal-dialogue')
-					{
-						triggerEventNote('Change Character', 'boyfriend', 'bf-defeat-scared-dialogue');
-					}
-			}
 
 		case 'Legacy':
 			switch (value1)

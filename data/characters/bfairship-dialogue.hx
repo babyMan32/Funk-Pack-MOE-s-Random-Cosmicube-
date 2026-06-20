@@ -3,7 +3,7 @@ var animSuffixInt:Int = 0;
 
 function onUpdate(elapsed:Float):Void
 {
-	if (FlxG.keys.justPressed.SPACE && boyfriend.curCharacter == 'bfairship-dialogue')
+	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bfairship-dialogue')
 	{
 		animSuffixInt = (animSuffixInt + 1) % 2;
 
