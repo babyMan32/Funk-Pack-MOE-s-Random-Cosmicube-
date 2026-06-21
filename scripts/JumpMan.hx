@@ -9,7 +9,7 @@ var momentum_decrease = 1.2;
 
 var hurt_timer = 1;
 
-var excludedStages = ["ejected", "voting", "turbulence"];
+var excludedStages = ["ejected", "voting", "turbulence", "skeldpixel"];
 
 //but do NOT touch these
 var momentum = 0;
@@ -279,6 +279,7 @@ function initJump(elapsed:Float)
 	if (got_hit)
 	{
 		bfJump.alpha = 0;
+		boyfriend.alpha = 0;
 		boyfriendHurt.alpha = 1;
 		hurt_timer -= elapsed;
 
