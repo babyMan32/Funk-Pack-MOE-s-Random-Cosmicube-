@@ -26,6 +26,7 @@ var jump_char_exists = false;
 
 var jumped_on_bill = false;
 var billFallMomentum = 12;
+var bullet_exists = false;
 
 var darkJumpShader:ExtraDropShadowShader;
 
@@ -59,6 +60,15 @@ function createJumpChar()
 		}
 	});
 
+	bfBounding = new FlxSprite().makeGraphic((bfJump.width * 6) / 7, (bfJump.height * 24) / 37, FlxColor.WHITE);
+	bfBounding.x = bfJump.x;
+	bfBounding.y = bfJump.y + 250;
+	bfBounding.alpha = (ClientPrefs.inDevMode ? 0.3 : 0);
+	add(bfBounding);
+}
+
+function createBill()
+{
 	evilBill = new FlxSprite(0, 0).loadGraphic(Paths.image('bullet', null, null, PathsTestMode.LOOSE));
 	evilBill.antialiasing = false;
 	evilBill.x = boyfriend.x - 10000;
@@ -66,16 +76,10 @@ function createJumpChar()
 	evilBill.scale.x = 0.4;
 	evilBill.scale.y = 0.4;
 	evilBill.updateHitbox();
-	evilBill.flipX = true;
+	evilBill.flipX = bullet_exists = true;
 	add(evilBill);
 
 	stage.insert(stage.members.indexOf(boyfriendGroup) + 1, evilBill);
-
-	bfBounding = new FlxSprite().makeGraphic((bfJump.width * 6) / 7, (bfJump.height * 24) / 37, FlxColor.WHITE);
-	bfBounding.x = bfJump.x;
-	bfBounding.y = bfJump.y + 250;
-	bfBounding.alpha = (ClientPrefs.inDevMode ? 0.3 : 0);
-	add(bfBounding);
 }
 
 function addLightsDownShaderBS()
@@ -148,8 +152,20 @@ function onUpdate(elapsed:Float):Void
 	checkHurt(elapsed);
 }
 
+function onSectionHit()
+{
+	if (!jump_char_exists) return;
+
+	if (FlxG.random.bool(100) && !bullet_exists)
+	{
+		createBill();
+	}
+}
+
 function onUpdatePost(elapsed:Float):Void
 {
+	if (!jump_char_exists) return;
+
 	boyfriendHurt.x = bfJump.x + 45;
 	boyfriendHurt.y = bfJump.y + 291;
 }
@@ -157,6 +173,8 @@ function onUpdatePost(elapsed:Float):Void
 function checkHurt(elapsed:Float)
 {
 	if (!jump_check_var) return;
+
+	if (!bullet_exists) return;
 
 	if (!jumped_on_bill)
 	{
@@ -173,9 +191,13 @@ function checkHurt(elapsed:Float)
 		}
 	}
 
-	pain = evilBill.overlaps(bfBounding);
+	if (evilBill.x > boyfriend.x + 500 || evilBill.y > boyfriend.y + 800)
+	{
+		bullet_exists = false;
+		evilBill.kill();
+	}
 
-	if (!evilBill.visible) return;
+	pain = evilBill.overlaps(bfBounding);
 
 	if (pain && !got_hit && !jumped_on_bill)
 	{
@@ -183,6 +205,7 @@ function checkHurt(elapsed:Float)
 		{
 			momentum = initial_momentum;
 			jumped_on_bill = true;
+			health += 0.1;
 		}
 		else
 		{
@@ -212,7 +235,7 @@ function checkCurChar()
 
 function initJump(elapsed:Float)
 {
-	if (!jump_check_var) return;
+	if (!jump_char_exists) return;
 
 	bfBounding.y = bfJump.y + 250;
 
@@ -305,6 +328,7 @@ function killBFJump()
 
 	bfJump.visible = jump_char_exists = false;
 	bfJump.shader = null;
+	bfBounding.kill();
 	bfJump.alpha = 0;
 	bfJump.kill();
 }
@@ -325,7 +349,9 @@ function onEvent(eventName, value1, value2)
 
 				case 'ending':
 					FlxG.signals.postUpdate.addOnce(function() {
-						killBFJump();
+						bfJump.visible = allow_jump = false;
+						grounded = true;
+						momentum = 0;
 					});
 
 				case 'readykill':
