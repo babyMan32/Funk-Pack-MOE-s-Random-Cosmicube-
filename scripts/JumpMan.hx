@@ -9,6 +9,8 @@ var momentum_decrease = 1.2;
 
 var hurt_timer = 1;
 
+var excludedStages = ["ejected", "voting", "turbulence"];
+
 //but do NOT touch these
 var momentum = 0;
 var landing_position = 0;
@@ -22,6 +24,9 @@ var hurt_timer_const = hurt_timer;
 
 var jump_char_exists = false;
 
+var jumped_on_bill = false;
+var billFallMomentum = 12;
+
 var darkJumpShader:ExtraDropShadowShader;
 
 function createJumpChar()
@@ -31,6 +36,11 @@ function createJumpChar()
 
 	bfJump.alpha = 0;
 	bfJump.visible = jump_char_exists = true;
+
+	boyfriendHurt = new Character(0, 0, 'bfMADNESSnew-hurtAnim', true);
+	boyfriendGroup.insert(boyfriendGroup.members.indexOf(boyfriendHurt) + 1, boyfriendHurt);
+
+	boyfriendHurt.alpha = 0;
 
 	FlxG.signals.postUpdate.addOnce(function() {
 		addLightsDownShaderBS();
@@ -48,6 +58,24 @@ function createJumpChar()
 			bfJumpingRim.updateFrameInfo(bfJump.frame);
 		}
 	});
+
+	evilBill = new FlxSprite(0, 0).loadGraphic(Paths.image('bullet', null, null, PathsTestMode.LOOSE));
+	evilBill.antialiasing = false;
+	evilBill.x = boyfriend.x - 10000;
+	evilBill.y = boyfriend.y + (FlxG.random.bool(50) ? 250 : -350);
+	evilBill.scale.x = 0.4;
+	evilBill.scale.y = 0.4;
+	evilBill.updateHitbox();
+	evilBill.flipX = true;
+	add(evilBill);
+
+	stage.insert(stage.members.indexOf(boyfriendGroup) + 1, evilBill);
+
+	bfBounding = new FlxSprite().makeGraphic((bfJump.width * 6) / 7, (bfJump.height * 24) / 37, FlxColor.WHITE);
+	bfBounding.x = bfJump.x;
+	bfBounding.y = bfJump.y + 250;
+	bfBounding.alpha = (ClientPrefs.inDevMode ? 0.3 : 0);
+	add(bfBounding);
 }
 
 function addLightsDownShaderBS()
@@ -98,33 +126,78 @@ function onCreatePost()
 	switch (boyfriend.curCharacter)
 	{
 		case "bfMADNESSnew":
-			allow_jump = jump_check_var = true;
+			allow_jump = true;
 
-			createJumpChar();
+			checkSongAndStage();
 	}
+}
 
-	switch (PlayState.SONG.stage)
-	{
-		case "voting":
-			if (!allow_jump) return;
+function checkSongAndStage()
+{
+	if(excludedStages.contains(PlayState.SONG.stage)) return;
 
-			allow_jump = false;
-
-			killBFJump();
-	}
+	jump_check_var = true;
 }
 
 function onUpdate(elapsed:Float):Void
 {
-	jump_check_var = boyfriend.curCharacter == "bfMADNESSnew" ? true : false;
-
 	checkCurChar();
 
-	initJump();
+	initJump(elapsed);
+
+	checkHurt(elapsed);
+}
+
+function onUpdatePost(elapsed:Float):Void
+{
+	boyfriendHurt.x = bfJump.x + 45;
+	boyfriendHurt.y = bfJump.y + 291;
+}
+
+function checkHurt(elapsed:Float)
+{
+	if (!jump_check_var) return;
+
+	if (!jumped_on_bill)
+	{
+		evilBill.x += 20 * playbackRate;
+	}
+
+	if (jumped_on_bill)
+	{
+		evilBill.y -= billFallMomentum * playbackRate;
+
+		if (billFallMomentum > -30)
+		{
+			billFallMomentum -= 0.8 * playbackRate;
+		}
+	}
+
+	pain = evilBill.overlaps(bfBounding);
+
+	if (!evilBill.visible) return;
+
+	if (pain && !got_hit && !jumped_on_bill)
+	{
+		if (momentum < 0)
+		{
+			momentum = initial_momentum;
+			jumped_on_bill = true;
+		}
+		else
+		{
+			boyfriend.playAnim("hurt");
+			boyfriendHurt.playAnim("hurt");
+			boyfriend.specialAnim = boyfriend.holding = boyfriendHurt.specialAnim = boyfriendHurt.holding = got_hit = true;
+			health /= 2;
+		}
+	}
 }
 
 function checkCurChar()
 {
+	if (!jump_check_var) return;
+
 	if (boyfriend.curCharacter == "bfMADNESSnew" && !jump_char_exists)
 	{
 		createJumpChar();
@@ -137,9 +210,11 @@ function checkCurChar()
 	}
 }
 
-function initJump()
+function initJump(elapsed:Float)
 {
 	if (!jump_check_var) return;
+
+	bfBounding.y = bfJump.y + 250;
 
 	if (controls.NOTE_TAUNT_P && grounded && allow_jump && !got_hit)
 	{
@@ -153,16 +228,13 @@ function initJump()
 		bfJump.playAnim("pre-jump");
 
 		new FlxTimer().start(0.125 / playbackRate, function(_) {
-			if (!got_hit)
-			{
-				bfJump.playAnim("jump");
+			bfJump.playAnim("jump");
 
-				grounded = false;
-			}
+			grounded = false;
 		});
 	}
 
-	if (controls.NOTE_TAUNT_R && momentum > 0)
+	if (controls.NOTE_TAUNT_R && momentum > 0 && !got_hit)
 	{
 		if (!allow_jump && grounded)
 		{
@@ -183,6 +255,8 @@ function initJump()
 
 	if (got_hit)
 	{
+		bfJump.alpha = 0;
+		boyfriendHurt.alpha = 1;
 		hurt_timer -= elapsed;
 
 		if (hurt_timer <= 0)
@@ -190,6 +264,8 @@ function initJump()
 			got_hit = false;
 			allow_jump = true;
 			hurt_timer = hurt_timer_const;
+			boyfriendHurt.alpha = 0;
+			boyfriend.alpha = 1;
 		}
 	}
 
@@ -207,14 +283,17 @@ function initJump()
 			momentum = 0;
 			grounded = true;
 
-			bfJump.playAnim("land");
+			if (!got_hit)
+			{
+				bfJump.playAnim("land");
 
-			new FlxTimer().start(0.21 / playbackRate, function(_) {
-				bfJump.alpha = 0;
-				boyfriend.alpha = 1;
+				new FlxTimer().start(0.21 / playbackRate, function(_) {
+					bfJump.alpha = 0;
+					boyfriend.alpha = 1;
 
-				allow_jump = true;
-			});
+					allow_jump = true;
+				});
+			}
 		}
 	}
 }

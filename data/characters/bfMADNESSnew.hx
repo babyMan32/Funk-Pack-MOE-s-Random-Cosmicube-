@@ -18,9 +18,6 @@ function onCreatePost()
 		{
 			case "voting":
 				boyfriend.y += 35;
-
-			case "turbulence", "ejected":
-				triggerEventNote('Change Character', 'boyfriend', 'bfMADNESSnew-turb'); //bullshit go
 		}
 	}
 }
