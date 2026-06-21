@@ -57,6 +57,11 @@ function createJumpChar()
 			bfJump.shader = bfJumpingRim;
 			bfJumpingRim.attachedSprite = bfJump;
 			bfJumpingRim.updateFrameInfo(bfJump.frame);
+
+			bfPainedRim = new funkin.game.shaders.ExtraDropShadowShader().copyFrom(boyfriend.shader);
+			boyfriendHurt.shader = bfPainedRim;
+			bfPainedRim.attachedSprite = boyfriendHurt;
+			bfPainedRim.updateFrameInfo(boyfriendHurt.frame);
 		}
 	});
 
@@ -328,7 +333,7 @@ function killBFJump()
 	momentum = 0;
 
 	bfJump.visible = jump_char_exists = false;
-	bfJump.shader = null;
+	bfJump.shader = boyfriendHurt.shader = null;
 	bfBounding.kill();
 	bfJump.alpha = 0;
 	bfJump.kill();
@@ -345,11 +350,12 @@ function onEvent(eventName, value1, value2)
 			{
 				case 'Vignette On', 'Vignette Off':
 					FlxG.signals.postUpdate.addOnce(function() {
-						bfJump.shader = boyfriend.shader;
+						bfJump.shader = boyfriendHurt.shader = boyfriend.shader;
 					});
 
 				case 'ending':
 					FlxG.signals.postUpdate.addOnce(function() {
+						bfJump.shader = boyfriendHurt.shader = boyfriend.shader;
 						bfJump.visible = allow_jump = false;
 						grounded = true;
 						momentum = 0;
@@ -366,12 +372,13 @@ function onEvent(eventName, value1, value2)
 			if (value1 == '2' /* ????? */ || (value1 == '1' && !ClientPrefs.flashing)) return;
 
 			bfJump.shader = darkJumpShader;
+			boyfriendHurt.shader = darkShader;
 
 		case 'Lights on':
 			if (value1 == '1' && !ClientPrefs.flashing) return;
 
 			FlxG.signals.postUpdate.addOnce(function() {
-				bfJump.shader = boyfriend.shader;
+				bfJump.shader = boyfriendHurt.shader = boyfriend.shader;
 			});
 	}
 }
