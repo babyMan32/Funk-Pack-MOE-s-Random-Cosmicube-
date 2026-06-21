@@ -106,6 +106,8 @@ function onCreatePost()
 	switch (PlayState.SONG.stage)
 	{
 		case "voting":
+			if (!allow_jump) return;
+
 			allow_jump = false;
 
 			killBFJump();

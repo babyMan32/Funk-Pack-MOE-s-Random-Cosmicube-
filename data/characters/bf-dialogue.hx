@@ -101,14 +101,6 @@ function onEvent(eventName, value1, value2)
 {
 	switch (eventName)
 	{
-		case 'Lights out':
-			if (value1 == '1' && !ClientPrefs.flashing) return;
-			triggerEventNote('Change Character', 'boyfriend', 'whitebf-dialogue');
-
-		case 'Lights on':
-			if (value1 == '1' && !ClientPrefs.flashing) return;
-			triggerEventNote('Change Character', 'boyfriend', 'bf-dialogue');
-
 		case 'Legacy':
 			switch (value1)
 			{

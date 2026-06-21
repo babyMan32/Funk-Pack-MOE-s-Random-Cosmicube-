@@ -14,6 +14,8 @@ function onLoad()
 
 function onUpdate(elapsed:Float):Void
 {
+	if (inCutscene || cpuControlled) return;
+
 	if (!baddieExists) return;
 
 	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bf-mix' && boyfriend.getAnimName() == 'hey' && allow_gf_taunt)

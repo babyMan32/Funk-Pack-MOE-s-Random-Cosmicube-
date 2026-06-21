@@ -14,6 +14,8 @@ function onLoad()
 
 function onUpdate(elapsed:Float):Void
 {
+	if (inCutscene || cpuControlled) return;
+
 	if (!baddieExists) return;
 
 	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bf-dsides' && boyfriend.getAnimName() == 'hey' && allow_gf_taunt)
@@ -22,6 +24,8 @@ function onUpdate(elapsed:Float):Void
 		{
 			gf.playAnim('cheer');
 			gf.specialAnim = true;
+
+			allow_gf_taunt = false;
 		}
 	}
 

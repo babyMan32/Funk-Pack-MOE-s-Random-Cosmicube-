@@ -14,6 +14,8 @@ function onLoad()
 
 function onUpdate(elapsed:Float):Void
 {
+	if (inCutscene || cpuControlled) return;
+
 	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bidu' && allow_taunt)
 	{
 		boyfriend.playAnim('yo');

@@ -3,8 +3,6 @@ var allow_gf_taunt = true;
 
 function onLoad()
 {
-	addCharacterToList('bf-costume-dark', 0);
-
 	switch (PlayState.SONG.stage)
 	{
 		//no gf stages
@@ -16,10 +14,7 @@ function onLoad()
 
 function onUpdate(elapsed:Float):Void
 {
-	if (boyfriend.curCharacter == 'bf-costume-dark' && boyfriend.shader != null)
-	{
-		boyfriend.shader = null;
-	}
+	if (inCutscene || cpuControlled) return;
 
 	if (!baddieExists) return;
 
@@ -37,19 +32,5 @@ function onUpdate(elapsed:Float):Void
 	if (gf.getAnimName() != 'cheer')
 	{
 		allow_gf_taunt = true;
-	}
-}
-
-function onEvent(eventName, value1, value2)
-{
-	switch (eventName)
-	{
-		case 'Lights out':
-			if (value1 == '1' && !ClientPrefs.flashing) return;
-			triggerEventNote('Change Character', 'boyfriend', 'bf-costume-dark');
-
-		case 'Lights on':
-			if (value1 == '1' && !ClientPrefs.flashing) return;
-			triggerEventNote('Change Character', 'boyfriend', 'bf-costume');
 	}
 }
