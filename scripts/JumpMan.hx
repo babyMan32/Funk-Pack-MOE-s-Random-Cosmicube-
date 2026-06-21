@@ -191,7 +191,7 @@ function checkHurt(elapsed:Float)
 		}
 	}
 
-	if (evilBill.x > boyfriend.x + 500 || evilBill.y > boyfriend.y + 800)
+	if (evilBill.x > boyfriend.x + 1500 || evilBill.y > boyfriend.y + 800 && jumped_on_bill)
 	{
 		bullet_exists = false;
 		evilBill.kill();
