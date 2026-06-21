@@ -162,6 +162,25 @@ function initJump()
 		});
 	}
 
+	if (controls.NOTE_TAUNT_R && momentum > 0)
+	{
+		if (!allow_jump && grounded)
+		{
+			momentum = 4;
+		}
+		else if (!allow_jump && !grounded)
+		{
+			if (bfJump.y < landing_position - 100)
+			{
+				momentum = 4;
+			}
+			else if (bfJump.y >= landing_position - 100)
+			{
+				momentum = 0;
+			}
+		}
+	}
+
 	if (got_hit)
 	{
 		hurt_timer -= elapsed;
