@@ -98,6 +98,7 @@ function onEvent(eventName, value1, value2)
 		case 'Both Opponents':
 			bothSing = Std.int(value1) == 1;
 			playHUD.iconP2.changeIcon(bothSing ? 'whiteblack-old' : (twoSing ? 'blackOG' : 'white-old'));
+			if (!bothSing) refreshDoubleKillIcon();
 	}
 }
 

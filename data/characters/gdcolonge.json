@@ -1,114 +1,142 @@
 {
+	"pausePortrait": "",
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				1445,
 				990
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "gdcolonge idle dance"
+			"fps": 24,
+			"name": "gdcolonge idle dance",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				1455,
 				964
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "gdcolonge down note"
+			"fps": 24,
+			"name": "gdcolonge down note",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				1445,
 				990
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "gdcolonge up note"
+			"fps": 24,
+			"name": "gdcolonge up note",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				1445,
 				990
 			],
-			"loop": false,
-			"fps": 24,
-			"anim": "hey",
-			"indices": [],
-			"name": "gdcolonge hey"
-		},
-		{
-			"offsets": [
-				1445,
-				990
-			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "gdcolonge left note"
+			"fps": 24,
+			"name": "gdcolonge left note",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				1450,
 				990
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "gdcolonge right note"
+			"fps": 24,
+			"name": "gdcolonge right note",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				1445,
 				990
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFTmiss",
-			"indices": [],
-			"name": "gdcolonge miss"
+			"fps": 24,
+			"name": "gdcolonge miss",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				1445,
 				990
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWNmiss",
-			"indices": [],
-			"name": "gdcolonge miss"
+			"fps": 24,
+			"name": "gdcolonge miss",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				1445,
 				990
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHTmiss",
-			"indices": [],
-			"name": "gdcolonge miss"
+			"fps": 24,
+			"name": "gdcolonge miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				1445,
+				990
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "gdcolonge miss",
+			"indices": []
 		},
 		{
 			"offsets": [
 				1445,
 				990
 			],
-			"loop": false,
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
 			"fps": 24,
-			"anim": "singUPmiss",
-			"indices": [],
-			"name": "gdcolonge miss"
+			"flipX": false,
+			"flipY": false,
+			"anim": "hey",
+			"loop": false,
+			"name": "gdcolonge hey"
 		}
 	],
 	"no_antialiasing": false,
@@ -119,9 +147,11 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
+	"flags": {},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "gdcolonge",
+	"afterimages": false,
 	"gameover_character": null,
 	"vslice_sustains": false,
 	"flip_x": false,
