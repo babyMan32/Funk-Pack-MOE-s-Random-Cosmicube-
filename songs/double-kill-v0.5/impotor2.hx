@@ -1,6 +1,3 @@
-var twoSing = false;
-var bothSing = false;
-
 function onCreatePost()
 {
 	for (playField in playFields)
@@ -44,20 +41,4 @@ function onCreatePost()
 	refreshZ(playFields);
 
 	camSpecialThing([2000, 1050], [2300, 1050], -1);
-}
-
-function onEvent(eventName, value1, value2)
-{
-	switch (eventName)
-	{
-		case 'Legacy':
-			switch (value1)
-			{
-				case 'black':
-					camSpecialThing([2050, 1000], [2300, 1050], -1); //I'm doing this my own special way
-
-				case 'not black':
-					camSpecialThing([2000, 1050], [2300, 1050], -1);
-			}
-	}
 }

@@ -1,0 +1,85 @@
+{
+	"pausePortrait": "doublekill",
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				199,
+				-210
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				169,
+				-198
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				107,
+				-232
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				158,
+				-214
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				120,
+				-209
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/old/whitedk",
+	"position": [
+		100,
+		100
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "white-old",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -3026184,
+	"camera_position": [
+		-130,
+		290
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.8,
+	"_editor_isPlayer": false
+}
