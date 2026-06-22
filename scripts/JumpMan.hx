@@ -1,7 +1,7 @@
 import funkin.game.shaders.ExtraDropShadowShader;
 
 //you can edit these
-var floaty = true;
+var floaty = false;
 var weight_reduction = 0.4;
 
 var initial_momentum = 24;
@@ -126,7 +126,6 @@ function addLightsDownShaderBS()
 	], -32, 15, 0);
 	
 	darkJumpShader.attachedSprite = bfJump;
-	boyfriend.useRenderTexture = true;
 	bfJump.shader = null;
 }
 
@@ -351,8 +350,9 @@ function killBFJump()
 	grounded = allow_jump = true;
 	momentum = 0;
 
-	bfJump.visible = jump_char_exists = false;
 	bfJump.shader = boyfriendHurt.shader = null;
+	bfJump.visible = jump_char_exists = false;
+	boyfriendHurt.kill();
 	bfBounding.kill();
 	bfJump.alpha = 0;
 	bfJump.kill();
@@ -391,7 +391,6 @@ function onEvent(eventName, value1, value2)
 			if (value1 == '2' /* ????? */ || (value1 == '1' && !ClientPrefs.flashing)) return;
 
 			bfJump.shader = darkJumpShader;
-			boyfriendHurt.shader = darkShader;
 
 		case 'Lights on':
 			if (value1 == '1' && !ClientPrefs.flashing) return;
