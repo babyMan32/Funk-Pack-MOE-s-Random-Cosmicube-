@@ -1,13 +1,13 @@
 import funkin.game.shaders.ExtraDropShadowShader;
 
 //you can edit these
-var in_water = false;
+var floaty = true;
 var weight_reduction = 0.4;
 
 var initial_momentum = 24;
 var momentum_decrease = 1.2;
 
-var hurt_timer = 1;
+var hurt_timer = 1.5;
 
 var excludedStages = ["ejected", "voting", "turbulence", "skeldpixel"];
 
@@ -143,9 +143,15 @@ function onCreatePost()
 
 function checkSongAndStage()
 {
-	if(excludedStages.contains(PlayState.SONG.stage)) return;
+	if (!excludedStages.contains(PlayState.SONG.stage))
+	{
+		jump_check_var = true;
+	}
 
-	jump_check_var = true;
+	if (PlayState.SONG.stage == "monotone")
+	{
+		floaty = false;
+	}
 }
 
 function onUpdate(elapsed:Float):Void
@@ -173,6 +179,15 @@ function onUpdatePost(elapsed:Float):Void
 
 	boyfriendHurt.x = bfJump.x + 45;
 	boyfriendHurt.y = bfJump.y + 291;
+
+	if (dad.curCharacter == "greenEjected")
+	{
+		floaty = true;
+	}
+	else
+	{
+		floaty = false;
+	}
 }
 
 function checkHurt(elapsed:Float)
@@ -214,9 +229,8 @@ function checkHurt(elapsed:Float)
 		}
 		else
 		{
-			boyfriend.playAnim("hurt");
 			boyfriendHurt.playAnim("hurt");
-			boyfriend.specialAnim = boyfriend.holding = boyfriendHurt.specialAnim = boyfriendHurt.holding = got_hit = true;
+			boyfriendHurt.specialAnim = boyfriendHurt.holding = got_hit = true;
 			health /= 2;
 		}
 	}
@@ -288,6 +302,11 @@ function initJump(elapsed:Float)
 		boyfriendHurt.alpha = 1;
 		hurt_timer -= elapsed;
 
+		if (health > 0.001)
+		{
+			health -= (Math.max(health - 0.001, 0) * 0.0025);
+		}
+
 		if (hurt_timer <= 0)
 		{
 			got_hit = false;
@@ -300,7 +319,7 @@ function initJump(elapsed:Float)
 
 	if (!grounded)
 	{
-		recalculate_momentum = in_water ? weight_reduction : 1;
+		recalculate_momentum = floaty ? weight_reduction : 1;
 		fps_measures = 60 / FlxG.save.data.framerate; //fix so he jumps at the same speed no matter your fps
 
 		bfJump.y -= (momentum * fps_measures) * playbackRate;
