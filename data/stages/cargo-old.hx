@@ -13,66 +13,55 @@ var cargoAirship:FlxSprite;
 	
 	heh. new eve nts order fixes this.
  */
-var ext = 'stages/airship/double-kill/';
-public var yellow:Character;
-public var isBfGhost:Bool = false;
-var mandoSing:Bool = false;
+var ext = 'stages/cargo-old/';
 
 function onLoad()
 {
-	var bg:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image(ext + 'cargo'));
-	bg.antialiasing = true;
-	bg.scale.set(2, 2);
-	bg.updateHitbox();
-	bg.scrollFactor.set(1, 1);
-	bg.active = false;
-	add(bg);
-	
-	cargoDark = new FlxSprite(-1000, -1000).makeScaledGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
-	cargoDark.antialiasing = true;
-	cargoDark.scrollFactor.set(0, 0);
-	cargoDark.alpha = 0.001;
-	add(cargoDark);
-}
+	var floor:FlxSprite = new FlxSprite(-400, 1070).loadGraphic(Paths.image(ext + 'cargofloor'));
+	floor.scrollFactor.set(1, 1);
+	floor.updateHitbox();
+	add(floor);
 
-function goodNoteHit(note)
-{
-	if (mandoSing) characterSing(yellow, note);
-}
+	var wall:FlxSprite = new FlxSprite(380, 200).loadGraphic(Paths.image(ext + 'cargowall'));
+	wall.scrollFactor.set(1, 1);
+	wall.updateHitbox();
+	add(wall);
 
-function onBeatHit()
-{
-	if (yellow != null) yellow.onBeatHit(curBeat);
+	var rareBox:FlxSprite = new FlxSprite(2600, 750).loadGraphic(Paths.image(ext + 'rarebox'));
+	rareBox.scrollFactor.set(1, 1);
+	rareBox.updateHitbox();
+	add(rareBox);
+
+	var boringCrate:FlxSprite = new FlxSprite(2050, 800).loadGraphic(Paths.image(ext + 'Crate_Boring'));
+	boringCrate.scrollFactor.set(1, 1);
+	boringCrate.updateHitbox();
+	add(boringCrate);
+
+	var doodlerBox:FlxSprite = new FlxSprite(1250, 650).loadGraphic(Paths.image(ext + 'doodlerbox'));
+	doodlerBox.scrollFactor.set(1, 1);
+	doodlerBox.updateHitbox();
+	add(doodlerBox);
+
+	var zeSpy:FlxSprite = new FlxSprite(3100, 1450).loadGraphic(Paths.image(ext + 'spybox'));
+	zeSpy.scrollFactor.set(1, 1);
+	zeSpy.updateHitbox();
+	add(zeSpy);
 }
 
 function onCreatePost()
 {
-	isBfGhost = boyfriend.getFlag('ghost');
-	
-	if (isBfGhost)
-	{
-		mandoSing = true;
-		
-		yellow = new Character(3100, 650, 'yellow-ghost', true);
-		yellow.alpha = 0.001;
-		startCharacterPos(yellow);
-		
-		add(yellow);
-	}
-	
-	mainoverlayDK = new FlxSprite(1000, 350).loadGraphic(Paths.image(ext + 'newoverlay1'));
-	mainoverlayDK.scale.set(1.8, 1.6);
-	mainoverlayDK.updateHitbox();
-	mainoverlayDK.alpha = .51;
-	mainoverlayDK.blend = BlendMode.SUBTRACT;
-	add(mainoverlayDK);
-	
-	lightoverlayDK = new FlxSprite(1000, 350).loadGraphic(Paths.image(ext + 'newoverlay2'));
-	lightoverlayDK.scale.set(1.8, 1.6);
-	lightoverlayDK.updateHitbox();
-	lightoverlayDK.alpha = 0.60;
-	lightoverlayDK.blend = BlendMode.ADD;
-	add(lightoverlayDK);
+	var adamBox:FlxSprite = new FlxSprite(365, 1200).loadGraphic(Paths.image(ext + 'adambox'));
+	adamBox.scrollFactor.set(1, 1);
+	adamBox.updateHitbox();
+	add(adamBox);
+
+	var tomatoBox:FlxSprite = new FlxSprite(2200, 1400).loadGraphic(Paths.image(ext + 'tomongusbox'));
+	tomatoBox.scrollFactor.set(1, 1);
+	tomatoBox.updateHitbox();
+	add(tomatoBox);
+
+	stage.insert(stage.members.indexOf(dadGroup) + 1, adamBox);
+	stage.insert(stage.members.indexOf(dadGroup) + 1, tomatoBox);
 }
 
 function onEvent(eventName, value1, value2)
@@ -107,19 +96,4 @@ function refreshDoubleKillIcon()
 	if (hasColor) scoreTxt.color = (twoSing ? gf : dad).healthColour;
 	playHUD.healthBar.setColors((twoSing ? gf : dad).healthColour, boyfriend.healthColour);
 	playHUD.iconP2.changeIcon(twoSing ? 'blackOG' : 'white-old');
-}
-
-function opponentNoteHitPre(note)
-{
-	if (note.noteType == 'Opponent 2 Sing')
-	{
-		note.owner = gf;
-	}
-	else if (note.noteType == 'Both Opponents Sing')
-	{
-		// remove the extra bullshit
-		characterSing(dad, note);
-		characterSing(gf, note);
-		note.noAnimation = true;
-	}
 }
