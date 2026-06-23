@@ -40,6 +40,21 @@ function onLoad()
 	add(ground);
 }
 
+function opponentNoteHitPre(note)
+{
+	if (note.noteType == 'Opponent Two')
+	{
+		note.owner = game.gf;
+	}
+
+	if (note.noteType == 'Both Opponents Sing')
+	{
+		characterSing(dad, note);
+		characterSing(gf, note);
+		note.noAnimation = true;
+	}
+}
+
 function onEvent(eventName, value1, value2)
 {
 	switch (eventName)
