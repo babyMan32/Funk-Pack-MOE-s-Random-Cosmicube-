@@ -212,7 +212,7 @@
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "bf",
-	"afterimages": true,
+	"afterimages": false,
 	"gameover_character": null,
 	"vslice_sustains": false,
 	"flip_x": true,
