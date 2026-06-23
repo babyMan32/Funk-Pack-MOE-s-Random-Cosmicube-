@@ -51,9 +51,10 @@ function onCreatePost()
 	stage.insert(stage.members.indexOf(dadGroup) + 1, adamBox);
 	stage.insert(stage.members.indexOf(dadGroup) + 1, tomatoBox);
 
-	if (boyfriend.hasFlag('defeatRetro'))
+	defeatRetro = (boyfriend.getFlag('variants')?.retro ?? boyfriend.getFlag('defeatRetro'));
+
+	if (defeatRetro != null && defeatRetro != '')
 	{
-		defeatRetro = (boyfriend.getFlag('variants')?.retro ?? boyfriend.getFlag('defeatRetro'));
 		changeCharacter(defeatRetro, 0);
 	}
 }
