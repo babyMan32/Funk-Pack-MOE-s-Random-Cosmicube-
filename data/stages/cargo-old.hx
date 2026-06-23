@@ -86,7 +86,7 @@ function onEvent(eventName, value1, value2)
 
 		case 'Both Opponents':
 			bothSing = Std.int(value1) == 1;
-			playHUD.iconP2.changeIcon(bothSing ? 'whiteblack-old' : (twoSing ? 'blackOG' : 'white-old'));
+			playHUD.iconP2.changeIcon(bothSing ? 'whiteblack-old' : (twoSing ? 'black-old' : 'white-old'));
 			if (!bothSing) refreshDoubleKillIcon();
 	}
 }
@@ -95,5 +95,5 @@ function refreshDoubleKillIcon()
 {
 	if (hasColor) scoreTxt.color = (twoSing ? gf : dad).healthColour;
 	playHUD.healthBar.setColors((twoSing ? gf : dad).healthColour, boyfriend.healthColour);
-	playHUD.iconP2.changeIcon(twoSing ? 'blackOG' : 'white-old');
+	playHUD.iconP2.changeIcon(twoSing ? 'black-old' : 'white-old');
 }

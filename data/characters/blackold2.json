@@ -81,7 +81,7 @@
 	"flags": {},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "blackOG",
+	"healthicon": "black-old",
 	"afterimages": false,
 	"gameover_character": null,
 	"vslice_sustains": false,
