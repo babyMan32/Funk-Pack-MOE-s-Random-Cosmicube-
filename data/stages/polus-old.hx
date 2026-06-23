@@ -40,6 +40,11 @@ function onLoad()
 	add(ground);
 }
 
+function onCreatePost()
+{
+	gf.camDisplacement = dad.camDisplacement = boyfriend.camDisplacement = 0;
+}
+
 function opponentNoteHitPre(note)
 {
 	if (note.noteType == 'Opponent Two')
@@ -63,17 +68,16 @@ function onEvent(eventName, value1, value2)
 			switch (value1) // orbyy do not pull this line of code on me ever again i will kill you
 			{
 				case 'green':
-					camCurTarget = game.gf;
 					camSpecialThing([250, 300], [700, 350], -1); //I'm doing this my own special way
 
 				case 'not green':
-					camCurTarget = null;
 					camSpecialThing([200, 350], [700, 350], -1);
 			}
 
 		case 'Opponent Two':
 			twoSing = Std.int(value1) == 1;
 			refreshDoubleTroubleIcon();
+			triggerEventNote("Legacy", twoSing ? "green" : "not green", "");
 
 		case 'Both Opponents':
 			bothSing = Std.int(value1) == 1;
