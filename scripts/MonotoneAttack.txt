@@ -21,6 +21,9 @@ function oMahFukenGodBruh()
 		switch (PlayState.SONG.song)
 		{
 			case "Monotone Attack":
+				game.playFields.members[0].owner = game.gf;
+				game.playFields.members[1].owner = game.members.biddle; //she just wont sing ig
+
 				if (PlayState.attackCharacter > 1)
 				{
 					iconP2.changeIcon('fabs');

@@ -3,7 +3,7 @@
 	"price": 300,
 	
 	"title": "GF Plushie",
-	"description": "cuddly goober plushie",
+	"description": "cuddly goober plushie\n\nRequested by w_gam1ng",
 
 	"node": {
 		"parent": "bf-plush",

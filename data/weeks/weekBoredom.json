@@ -1,6 +1,7 @@
 {
 	"songs": [
-		["Double Kill V0.5", "double-kill", [179, 0, 255], "doublekill", "Rareblin", ["double-kill"], 350]
+		["Double Kill (Old)", "double-kill", [179, 0, 255], "doublekill", "Rareblin", ["double-kill"], 350],
+		["Double Trouble V3", "double-trouble", [0, 57, 62], "doubletrouble", "Rareblin", ["double-trouble"], 350]
 	],
 	
 	"section": "story-old-st",
