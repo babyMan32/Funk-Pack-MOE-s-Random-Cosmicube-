@@ -73,7 +73,7 @@ function onEvent(eventName, value1, value2)
 				case 'not black':
 					camCurTarget = null;
 					camSpecialThing([2000, 1050], [2300, 1050], -1);
-			}
+			} // 62636f
 
 		case 'Opponent Two':
 			twoSing = Std.int(value1) == 1;
@@ -87,7 +87,7 @@ function onEvent(eventName, value1, value2)
 
 function refreshDoubleKillIcon()
 {
-	if (hasColor) scoreTxt.color = bothSing ? '-9082999' : (twoSing ? gf : dad).healthColour;
-	playHUD.healthBar.setColors(bothSing ? '-9082999' : (twoSing ? gf : dad).healthColour, boyfriend.healthColour);
+	if (hasColor) scoreTxt.color = bothSing ? '-10329233' : (twoSing ? gf : dad).healthColour;
+	playHUD.healthBar.setColors(bothSing ? '-10329233' : (twoSing ? gf : dad).healthColour, boyfriend.healthColour);
 	playHUD.iconP2.changeIcon(bothSing ? 'whiteblack-old' : (twoSing ? 'black-old' : 'white-old'));
 }
