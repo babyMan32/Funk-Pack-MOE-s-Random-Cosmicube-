@@ -39,6 +39,4 @@ function onCreatePost()
 	}
 
 	refreshZ(playFields);
-
-	camSpecialThing([2000, 1050], [2300, 1050], -1);
 }

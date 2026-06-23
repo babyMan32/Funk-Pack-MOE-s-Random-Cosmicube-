@@ -51,6 +51,8 @@ function onCreatePost()
 	stage.insert(stage.members.indexOf(dadGroup) + 1, adamBox);
 	stage.insert(stage.members.indexOf(dadGroup) + 1, tomatoBox);
 
+	camSpecialThing([2000, 1050], [2300, 1050], -1);
+
 	defeatRetro = (boyfriend.getFlag('variants')?.retro ?? boyfriend.getFlag('defeatRetro'));
 
 	if (defeatRetro != null && defeatRetro != '')
