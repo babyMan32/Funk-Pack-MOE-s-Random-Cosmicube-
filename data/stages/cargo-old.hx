@@ -1,18 +1,6 @@
 var bothSing:Bool = false;
 var twoSing:Bool = false;
-public var cargoDark:FlxSprite;
-public var lightoverlayDK:FlxSprite;
-public var mainoverlayDK:FlxSprite;
-var cargoAirship:FlxSprite;
-/*
-	There is a bug where the first note played in a changed section will be the
-	other character that sang last time. I do not know how to fix this yet.
 
-
-	Post-note: I manually moved all of the events 10ms to the left in the .json
-	
-	heh. new eve nts order fixes this.
- */
 var ext = 'stages/cargo-old/';
 
 function onLoad()
@@ -62,6 +50,12 @@ function onCreatePost()
 
 	stage.insert(stage.members.indexOf(dadGroup) + 1, adamBox);
 	stage.insert(stage.members.indexOf(dadGroup) + 1, tomatoBox);
+
+	if (boyfriend.hasFlag('defeatRetro'))
+	{
+		defeatRetro = (boyfriend.getFlag('variants')?.retro ?? boyfriend.getFlag('defeatRetro'));
+		changeCharacter(defeatRetro, 0);
+	}
 }
 
 function onEvent(eventName, value1, value2)

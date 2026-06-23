@@ -352,6 +352,7 @@
 	"flags": {
 		"floating": true,
 		"runner": true,
+		"defeatRetro": "bf",
 		"variants": {
 			"dark": "whitebf-dialogue",
 			"defeat": "bf-defeat-normal-dialogue"
