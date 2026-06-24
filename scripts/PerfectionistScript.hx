@@ -6,9 +6,9 @@ var miss_limit = 10; //how many misses before you can die to health drain | Defa
 var rating_limit = 50; //0-100 scale, how low your accuracy can go before you can die to health drain | Default: 50
 var division_amount = 100; // the smaller the number, the greater the drain | Default: 100
 
-function onLoad()
+function onCreatePost()
 {
-	if (ClientPrefs.pet == "job_application")
+	if (pet.curPet == "job_application")
 	{
 		enable_drain = true;
 	}
