@@ -1,5 +1,5 @@
 {
-	"pausePortrait": null,
+	"pausePortrait": "green",
 	"animations": [
 		{
 			"offsets": [

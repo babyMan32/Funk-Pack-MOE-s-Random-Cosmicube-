@@ -107,7 +107,7 @@
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "hey",
+			"anim": "yo",
 			"indices": [],
 			"name": "BF HEY"
 		},
@@ -213,7 +213,7 @@
 	"gameover_confirm_sound": null,
 	"healthicon": "bf",
 	"afterimages": false,
-	"gameover_character": null,
+	"gameover_character": "bf-old",
 	"vslice_sustains": false,
 	"flip_x": true,
 	"healthbar_colour": -13520687,

@@ -7,6 +7,10 @@ public var oppIconBase = 'impostor-old';
 public var oppIconExtra = 'impostor3-old';
 public var oppIconDuo = 'redgreen-old';
 
+public var pauseBase = 'red';
+public var pauseExtra = 'green';
+public var pauseDuo = 'doubletrouble';
+
 public var hpColorDuo = '-8355032';
 
 public var allowIconSwitching = true;
@@ -102,4 +106,5 @@ function refreshDoubleTroubleIcon()
 	if (hasColor) scoreTxt.color = bothSing ? hpColorDuo : (twoSing ? gf : dad).healthColour;
 	playHUD.healthBar.setColors(bothSing ? hpColorDuo : (twoSing ? gf : dad).healthColour, boyfriend.healthColour);
 	playHUD.iconP2.changeIcon(bothSing ? oppIconDuo : (twoSing ? oppIconExtra : oppIconBase));
+	pauseOverride = bothSing ? pauseDuo : (twoSing ? pauseExtra : pauseBase);
 }
