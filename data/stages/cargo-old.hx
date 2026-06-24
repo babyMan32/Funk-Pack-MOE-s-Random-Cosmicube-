@@ -3,6 +3,12 @@ var twoSing:Bool = false;
 
 var ext = 'stages/cargo-old/';
 
+public var oppIconBase = 'white-old';
+public var oppIconExtra = 'black-old';
+public var oppIconDuo = 'whiteblack-old';
+
+public var hpColorDuo = '-10329233';
+
 function onLoad()
 {
 	var floor:FlxSprite = new FlxSprite(-400, 1070).loadGraphic(Paths.image(ext + 'cargofloor'));
@@ -65,8 +71,8 @@ function onEvent(eventName, value1, value2)
 {
 	switch (eventName)
 	{
-		case 'Legacy': // I fucked up but i dont wanna go back and fix all the events i put down
-			switch (value1) // orbyy do not pull this line of code on me ever again i will kill you
+		case 'Legacy':
+			switch (value1)
 			{
 				case 'black':
 					camCurTarget = game.gf;
@@ -89,7 +95,7 @@ function onEvent(eventName, value1, value2)
 
 function refreshDoubleKillIcon()
 {
-	if (hasColor) scoreTxt.color = bothSing ? '-10329233' : (twoSing ? gf : dad).healthColour;
-	playHUD.healthBar.setColors(bothSing ? '-10329233' : (twoSing ? gf : dad).healthColour, boyfriend.healthColour);
-	playHUD.iconP2.changeIcon(bothSing ? 'whiteblack-old' : (twoSing ? 'black-old' : 'white-old'));
+	if (hasColor) scoreTxt.color = bothSing ? hpColorDuo : (twoSing ? gf : dad).healthColour;
+	playHUD.healthBar.setColors(bothSing ? hpColorDuo : (twoSing ? gf : dad).healthColour, boyfriend.healthColour);
+	playHUD.iconP2.changeIcon(bothSing ? oppIconDuo : (twoSing ? oppIconExtra : oppIconBase));
 }

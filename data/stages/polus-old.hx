@@ -3,6 +3,14 @@ var twoSing:Bool = false;
 
 var ext = 'stages/polus-old/';
 
+public var oppIconBase = 'impostor-old';
+public var oppIconExtra = 'impostor3-old';
+public var oppIconDuo = 'redgreen-old';
+
+public var hpColorDuo = '-8355032';
+
+public var allowIconSwitching = true;
+
 function onLoad()
 {
 	var sky:FlxSprite = new FlxSprite(-834.3, -620.5).loadGraphic(Paths.image(ext + 'polusSky'));
@@ -44,7 +52,7 @@ function onCreatePost()
 {
 	gf.camDisplacement = dad.camDisplacement = boyfriend.camDisplacement = 0;
 
-	camSpecialThing([200, 350], [700, 350], -1);
+	camSpecialThing([150, 350], [700, 350], -1);
 }
 
 function opponentNoteHitPre(note)
@@ -66,30 +74,32 @@ function onEvent(eventName, value1, value2)
 {
 	switch (eventName)
 	{
-		case 'Legacy': // I fucked up but i dont wanna go back and fix all the events i put down
-			switch (value1) // orbyy do not pull this line of code on me ever again i will kill you
+		case 'Legacy':
+			switch (value1)
 			{
 				case 'green':
-					camSpecialThing([250, 300], [700, 350], -1); //I'm doing this my own special way
+					camSpecialThing([300, 300], [700, 350], -1); //I'm doing this my own special way
 
 				case 'not green':
-					camSpecialThing([200, 350], [700, 350], -1);
+					camSpecialThing([150, 350], [700, 350], -1);
 			}
 
 		case 'Opponent Two':
 			twoSing = Std.int(value1) == 1;
-			refreshDoubleTroubleIcon();
 			triggerEventNote("Legacy", twoSing ? "green" : "not green", "");
+
+			if (allowIconSwitching) refreshDoubleTroubleIcon();
 
 		case 'Both Opponents':
 			bothSing = Std.int(value1) == 1;
-			refreshDoubleTroubleIcon();
+
+			if (allowIconSwitching) refreshDoubleTroubleIcon();
 	}
 }
 
 function refreshDoubleTroubleIcon()
 {
-	if (hasColor) scoreTxt.color = bothSing ? '-8355032' : (twoSing ? gf : dad).healthColour;
-	playHUD.healthBar.setColors(bothSing ? '-8355032' : (twoSing ? gf : dad).healthColour, boyfriend.healthColour);
-	playHUD.iconP2.changeIcon(bothSing ? 'redgreen-old' : (twoSing ? 'impostor3-old' : 'impostor-old'));
+	if (hasColor) scoreTxt.color = bothSing ? hpColorDuo : (twoSing ? gf : dad).healthColour;
+	playHUD.healthBar.setColors(bothSing ? hpColorDuo : (twoSing ? gf : dad).healthColour, boyfriend.healthColour);
+	playHUD.iconP2.changeIcon(bothSing ? oppIconDuo : (twoSing ? oppIconExtra : oppIconBase));
 }
