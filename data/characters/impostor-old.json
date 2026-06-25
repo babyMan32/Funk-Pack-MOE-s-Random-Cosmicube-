@@ -2,80 +2,80 @@
 	"pausePortrait": "red",
 	"animations": [
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				125,
 				-400
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "idle",
-			"loop": false,
-			"name": "impostor idle0"
+			"fps": 24,
+			"name": "impostor idle0",
+			"indices": [],
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				95,
 				-430
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "impostor down"
+			"fps": 24,
+			"name": "impostor down",
+			"indices": [],
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				265,
 				-395
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "imposter left"
+			"fps": 24,
+			"name": "imposter left",
+			"indices": [],
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				-30,
 				-410
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "singRIGHT",
-			"loop": false,
-			"name": "impostor right"
+			"fps": 24,
+			"name": "impostor right",
+			"indices": [],
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				80,
 				-340
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "singUP",
-			"loop": false,
-			"name": "impostor up2"
+			"fps": 24,
+			"name": "impostor up2",
+			"indices": [],
+			"flipX": false
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/old/impostorPolus",
 	"position": [
-		-200,
-		-375
+		10,
+		-10
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": null,
+	"flags": {},
 	"scalableOffsets": true,
 	"gameover_confirm_sound": null,
 	"healthicon": "impostor-old",
@@ -85,8 +85,8 @@
 	"flip_x": false,
 	"healthbar_colour": -52429,
 	"camera_position": [
-		0,
-		0
+		-50,
+		450
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 8,

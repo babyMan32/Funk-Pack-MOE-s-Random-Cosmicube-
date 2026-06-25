@@ -6,12 +6,12 @@
 				10,
 				-360
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
 			"flipY": false,
-			"anim": "idle",
 			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"flipX": false,
+			"indices": [],
 			"name": "impostor idle0"
 		},
 		{
@@ -19,12 +19,12 @@
 				-55,
 				-390
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
 			"flipY": false,
-			"anim": "singDOWN",
 			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"flipX": false,
+			"indices": [],
 			"name": "impostor down"
 		},
 		{
@@ -32,12 +32,12 @@
 				130,
 				-335
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
 			"flipY": false,
-			"anim": "singLEFT",
 			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"flipX": false,
+			"indices": [],
 			"name": "imposter left"
 		},
 		{
@@ -45,12 +45,12 @@
 				-100,
 				-379
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
 			"flipY": false,
-			"anim": "singRIGHT",
 			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"flipX": false,
+			"indices": [],
 			"name": "impostor right"
 		},
 		{
@@ -58,24 +58,24 @@
 				255,
 				-270
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
 			"flipY": false,
-			"anim": "singUP",
 			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"flipX": false,
+			"indices": [],
 			"name": "impostor up2"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/old/impostor3",
 	"position": [
-		-300,
-		-75
+		10,
+		-10
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": null,
+	"flags": {},
 	"scalableOffsets": true,
 	"gameover_confirm_sound": null,
 	"healthicon": "impostor3-old",
@@ -86,7 +86,7 @@
 	"healthbar_colour": -12539102,
 	"camera_position": [
 		0,
-		0
+		400
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 8,
