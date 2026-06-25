@@ -1,5 +1,6 @@
 {
 	"songs": [
+		["D'low (Old)", "yellow", [255, 218, 67], "yellow", "Rareblin", ["d'low"], 350],
 		["Double Kill (Old)", "whiteblack-old", [98, 99, 111], "doublekill", "Rareblin", ["double-kill"], 350],
 		["Double Trouble V3", "redgreen-old", [128, 131, 40], "doubletrouble", "Rareblin", ["double-trouble"], 350]
 	],

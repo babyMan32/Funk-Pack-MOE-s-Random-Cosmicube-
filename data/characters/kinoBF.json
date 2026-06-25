@@ -116,6 +116,9 @@
 		10,
 		360
 	],
+	"flags": {
+		"defeatRetro": "mobian_bf"
+	},
 	"dance_every": 2,
 	"gameover_intial_sound": null,
 	"scalableOffsets": false,

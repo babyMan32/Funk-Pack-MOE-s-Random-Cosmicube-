@@ -21,34 +21,34 @@ function onLoad()
 	sky.antialiasing = true;
 	sky.scrollFactor.set(0.5, 0.5);
 	sky.active = false;
-	add(sky);		
+	sky.updateHitbox();
+	add(sky);
 
 	var rocks:FlxSprite = new FlxSprite(-915.8, -411.3).loadGraphic(Paths.image(ext + 'polusrocks'));
-	rocks.updateHitbox();
-	rocks.antialiasing = true;
 	rocks.scrollFactor.set(0.6, 0.6);
+	rocks.antialiasing = true;
 	rocks.active = false;
-	add(rocks);	
-						
+	rocks.updateHitbox();
+	add(rocks);
+
 	var hills:FlxSprite = new FlxSprite(-1238.05, -180.55).loadGraphic(Paths.image(ext + 'polusHills'));
-	hills.updateHitbox();
-	hills.antialiasing = true;
 	hills.scrollFactor.set(0.9, 0.9);
+	hills.antialiasing = true;
 	hills.active = false;
+	hills.updateHitbox();
 	add(hills);
 
 	var warehouse:FlxSprite = new FlxSprite(-458.35, -315.6).loadGraphic(Paths.image(ext + 'polusWarehouse'));
-	warehouse.updateHitbox();
-	warehouse.antialiasing = true;
 	warehouse.scrollFactor.set(0.9, 0.9);
+	warehouse.antialiasing = true;
 	warehouse.active = false;
+	warehouse.updateHitbox();
 	add(warehouse);
 
 	var ground:FlxSprite = new FlxSprite(-580.9, 241.85).loadGraphic(Paths.image(ext + 'polusGround'));
-	ground.updateHitbox();
 	ground.antialiasing = true;
-	ground.scrollFactor.set(1, 1);
 	ground.active = false;
+	ground.updateHitbox();
 	add(ground);
 }
 

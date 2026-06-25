@@ -59,11 +59,11 @@ function onCreatePost()
 
 	camSpecialThing([2000, 1050], [2300, 1050], -1);
 
-	defeatRetro = (boyfriend.getFlag('variants')?.retro ?? boyfriend.getFlag('defeatRetro'));
+	soRetro = (boyfriend.getFlag('variants')?.retro ?? boyfriend.getFlag('defeatRetro'));
 
-	if (defeatRetro != null && defeatRetro != '')
+	if (soRetro != null && soRetro != '')
 	{
-		changeCharacter(defeatRetro, 0);
+		changeCharacter(soRetro, 0);
 	}
 }
 

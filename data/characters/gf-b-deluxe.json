@@ -72,6 +72,9 @@
 		0,
 		-70
 	],
+	"flags": {
+		"airshipRetro": "gf-b-redux"
+	},
 	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"scalableOffsets": false,

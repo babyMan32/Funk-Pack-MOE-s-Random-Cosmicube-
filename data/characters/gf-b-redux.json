@@ -193,6 +193,9 @@
 		0,
 		0
 	],
+	"flags": {
+		"airshipRetro": "gf-b-classic"
+	},
 	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"scalableOffsets": false,

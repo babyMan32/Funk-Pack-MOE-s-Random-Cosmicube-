@@ -71,12 +71,16 @@
 		225,
 		120
 	],
+	"flags": {
+		"airshipRetro": "KinoGF"
+	},
 	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "gf_d-sides",
 	"gameover_character": null,
+	"vslice_sustains": false,
 	"flip_x": false,
 	"healthbar_colour": -35256,
 	"camera_position": [
