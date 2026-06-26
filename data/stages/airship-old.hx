@@ -49,7 +49,7 @@ function onLoad()
 
 function onCreatePost()
 {
-	camSpecialThing([-500, 100], [-100, 100], -1);
+	camSpecialThing([-500, 50], [-100, 50], -1);
 
 	soRetroBF = (boyfriend.getFlag('variants')?.retro ?? boyfriend.getFlag('defeatRetro'));
 
