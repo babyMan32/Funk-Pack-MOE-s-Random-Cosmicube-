@@ -197,7 +197,7 @@ function checkHurt(elapsed:Float)
 
 	if (!jumped_on_bill)
 	{
-		evilBill.x += 20 * playbackRate;
+		evilBill.x += 35 * playbackRate;
 	}
 
 	if (jumped_on_bill)
@@ -210,7 +210,7 @@ function checkHurt(elapsed:Float)
 		}
 	}
 
-	if (evilBill.x > boyfriend.x + 1500 || evilBill.y > boyfriend.y + 800 && jumped_on_bill)
+	if (evilBill.x > boyfriend.x + 1500 || evilBill.y > boyfriend.y + 800)
 	{
 		bullet_exists = false;
 		evilBill.kill();

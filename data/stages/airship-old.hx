@@ -65,3 +65,25 @@ function onCreatePost()
 		changeCharacter(soRetroGF, 2);
 	}
 }
+
+function onEvent(eventName, value1, value2)
+{
+	switch (eventName)
+	{
+		case "Legacy":
+			if (value1 == "midpoint")
+			{
+				if (value2 == "yes" || value2 == "1" || value2 == "on")
+				{
+					camSpecialThing([-300, 0], [-300, 0], 0.55);
+					camCurTarget = game.gf;
+				}
+
+				if (value2 == "no" || value2 == "0" || value2 == "off")
+				{
+					camSpecialThing([-500, 50], [-100, 50], 0.65);
+					camCurTarget = null;
+				}
+			}
+	}
+}
