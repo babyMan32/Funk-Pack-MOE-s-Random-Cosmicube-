@@ -89,6 +89,10 @@ function onLoad()
 		case "horse":
 			camY = 380;
 
+		case "hall":
+			camX = 650;
+			camY = 600;
+
 		//now the bullshit
 
 		case "ejected":
@@ -165,7 +169,7 @@ function durh():Void
 
 	camHUD.alpha = 0.0001;
 
-	var speenSound:FlxSound = FlxG.sound.load(Paths.sound('rareChance/woosh'));
+	var speenSound:FlxSound = FlxG.sound.load(Paths.sound('rareChance/woosh', null, PathsTestMode.LOOSE));
 
 	FlxG.signals.postUpdate.addOnce(function() {
 		snapCamToPos(camX, camY);
