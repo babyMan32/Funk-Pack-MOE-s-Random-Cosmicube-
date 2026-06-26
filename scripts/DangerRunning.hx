@@ -16,7 +16,7 @@ var ogPos = 0;
 
 function onCreatePost()
 {
-	if (ClientPrefs.bfSkin == "bf-dialogue" || ClientPrefs.bfSkin == "bfMADNESSnew")
+	if (ClientPrefs.bfSkin == "bf-dialogue" || ClientPrefs.bfSkin == "bfMADNESSnew" || ClientPrefs.bfSkin == "pico_due_p1" || ClientPrefs.bfSkin == "pico_due_p2")
 	{
 		switch (PlayState.SONG.stage)
 		{

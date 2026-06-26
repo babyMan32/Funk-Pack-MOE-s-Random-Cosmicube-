@@ -3,8 +3,8 @@
 	"animations": [
 		{
 			"offsets": [
-				-10,
-				35
+				65,
+				40
 			],
 			"flipY": false,
 			"loop": false,
@@ -12,12 +12,12 @@
 			"anim": "idle",
 			"flipX": false,
 			"indices": [],
-			"name": "idle"
+			"name": "Pico Idle Dance"
 		},
 		{
 			"offsets": [
-				40,
-				-45
+				70,
+				-50
 			],
 			"flipY": false,
 			"loop": false,
@@ -25,12 +25,12 @@
 			"anim": "singDOWN",
 			"flipX": false,
 			"indices": [],
-			"name": "down"
+			"name": "PicoDown0"
 		},
 		{
 			"offsets": [
 				45,
-				-50
+				-25
 			],
 			"flipY": false,
 			"loop": false,
@@ -38,25 +38,12 @@
 			"anim": "singDOWNmiss",
 			"flipX": false,
 			"indices": [],
-			"name": "dmis"
+			"name": "PicoDownMiss"
 		},
 		{
 			"offsets": [
-				150,
-				0
-			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFTmiss",
-			"flipX": false,
-			"indices": [],
-			"name": "leftmiss"
-		},
-		{
-			"offsets": [
-				150,
-				0
+				83,
+				23
 			],
 			"flipY": false,
 			"loop": false,
@@ -64,25 +51,25 @@
 			"anim": "singLEFT",
 			"flipX": false,
 			"indices": [],
-			"name": "left0"
+			"name": "PicoLeft0"
 		},
 		{
 			"offsets": [
-				-75,
-				15
+				80,
+				44
 			],
 			"flipY": false,
 			"loop": false,
 			"fps": 24,
-			"anim": "singRIGHTmiss",
+			"anim": "singLEFTmiss",
 			"flipX": false,
 			"indices": [],
-			"name": "rightmiss"
+			"name": "PicoLeftMiss"
 		},
 		{
 			"offsets": [
-				-75,
-				15
+				-35,
+				65
 			],
 			"flipY": false,
 			"loop": false,
@@ -90,25 +77,25 @@
 			"anim": "singRIGHT",
 			"flipX": false,
 			"indices": [],
-			"name": "right0"
+			"name": "PicoRight0"
 		},
 		{
 			"offsets": [
-				-70,
-				90
+				0,
+				81
 			],
 			"flipY": false,
 			"loop": false,
 			"fps": 24,
-			"anim": "singUPmiss",
+			"anim": "singRIGHTmiss",
 			"flipX": false,
 			"indices": [],
-			"name": "upmiss"
+			"name": "PicoRightMiss"
 		},
 		{
 			"offsets": [
-				-70,
-				90
+				0,
+				95
 			],
 			"flipY": false,
 			"loop": false,
@@ -116,32 +103,61 @@
 			"anim": "singUP",
 			"flipX": false,
 			"indices": [],
-			"name": "up0"
+			"name": "PicoUp0"
+		},
+		{
+			"offsets": [
+				-45,
+				109
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "PicoUpMiss"
+		},
+		{
+			"offsets": [
+				260,
+				210
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "gunblast",
+			"flipX": false,
+			"indices": [],
+			"name": "PicoShoot"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/dust it/bf_frisk",
+	"image": "characters/madness/bico/Too_Late_Pico_ass_sets_v2",
 	"position": [
-		0,
-		340
+		-75,
+		350
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": {},
-	"scalableOffsets": false,
+	"flags": {
+		"runner": true,
+		"customMonotone": "pico"
+	},
+	"scalableOffsets": true,
 	"gameover_confirm_sound": null,
-	"healthicon": "bf_frisk",
+	"healthicon": "pico_due",
 	"afterimages": true,
 	"gameover_character": null,
 	"vslice_sustains": false,
 	"flip_x": true,
-	"healthbar_colour": -15841645,
+	"healthbar_colour": -4728747,
 	"camera_position": [
 		0,
 		0
 	],
 	"gameover_loop_sound": null,
-	"sing_duration": 8,
+	"sing_duration": 6.1,
 	"scale": 1,
 	"_editor_isPlayer": true
 }

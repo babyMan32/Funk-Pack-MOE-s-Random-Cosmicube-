@@ -10,14 +10,14 @@ var evilDyingThing:FlxSprite;
 
 function onLoad()
 {
-	if (ClientPrefs.bfSkin == "bf-dialogue" && PlayState.SONG.stage == "danger")
+	if (ClientPrefs.bfSkin == "bf-dialogue" && (PlayState.SONG.stage == "danger" || PlayState.SONG.stage == "danger-erect"))
 	{
 		runningFriend = dialogueRunningFriend = true;
 		bfLegs = new Character(0, 0, 'bf-legs', true);
 		boyfriendGroup.insert(boyfriendGroup.members.indexOf(bfLegs) + 1, bfLegs);
 	}
 
-	if (ClientPrefs.bfSkin == "bfMADNESSnew" && PlayState.SONG.stage == "danger")
+	if (ClientPrefs.bfSkin == "bfMADNESSnew" && (PlayState.SONG.stage == "danger" || PlayState.SONG.stage == "danger-erect"))
 	{
 		runningFriend = madnessRunningFriend = true;
 		bfLegs = new Character(0, 0, 'bf_demise_legs', true);
