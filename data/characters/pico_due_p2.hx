@@ -1,6 +1,14 @@
 var allow_attack = true;
 var killed_yellow = false;
 
+function onUpdate(elapsed:Float):Void
+{
+	if (game.endingSong)
+	{
+		allow_attack = false;
+	}
+}
+
 function onUpdatePost(elapsed:Float):Void
 {
 	if (inCutscene || cpuControlled) return;
