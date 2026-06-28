@@ -66,7 +66,7 @@ function onSectionHit()
 
 function onUpdate(elapsed:Float):Void
 {
-	if (game.endingSong)
+	if (game.endingSong || PlayState.instance.isDead)
 	{
 		allow_attack = false;
 	}
@@ -79,7 +79,7 @@ function onUpdatePost(elapsed:Float):Void
 		picoAttack();
 	}
 
-	if (boyfriend.getAnimName() != 'gunblast' && !game.endingSong)
+	if (boyfriend.getAnimName() != 'gunblast' && !game.endingSong && !PlayState.instance.isDead)
 	{
 		allow_attack = true;
 	}
