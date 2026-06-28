@@ -147,6 +147,7 @@
 	],
 	"flags": {
 		"floating": true,
+		"seeThrough": true,
 		"defeatRetro": "bf-ghost"
 	},
 	"dance_every": 2,

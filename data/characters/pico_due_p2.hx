@@ -1,13 +1,66 @@
 var allow_attack = true;
 var killed_yellow = false;
 var killed_jor = false;
+
 var threatening;
+var beeping;
+
+var mechanic = false;
+var attack = false;
+var counter = 0;
+
+var missed_dodges = 0;
+
+using StringTools;
 
 function onCreatePost()
 {
 	if (boyfriend.curCharacter == 'pico_due_p2')
 	{
 		threatening = FlxG.sound.load(Paths.sound('hankshoot', null, PathsTestMode.LOOSE));
+		beeping = FlxG.sound.load(Paths.sound('ConfirmMenu'));
+	}
+}
+
+function onBeatHit()
+{
+	if (boyfriend.curCharacter != 'pico_due_p2') return;
+
+	if (mechanic)
+	{
+		beeping.play(true);
+		counter++;
+
+		if (counter == 3)
+		{
+			if (boyfriend.getAnimName() != 'gunblast' || boyfriend.getAnimName() == 'gunblast' && game.boyfriend.animation.curAnim.curFrame > 6)
+			{
+				missed_dodges++;
+
+				health -= missed_dodges / 20;
+			}
+
+			counter = 0;
+			mechanic = false;
+		}
+	}
+}
+
+function onSectionHit()
+{
+	if (boyfriend.curCharacter != 'pico_due_p2') return;
+
+	if (!attack)
+	{
+		attack = FlxG.random.bool(10);
+	}
+
+	if (attack && !mechanic && !boyfriend.getAnimName().startsWith('sing'))
+	{
+		attack = false;
+		mechanic = true;
+		beeping.play(true);
+		counter++;
 	}
 }
 
@@ -26,7 +79,7 @@ function onUpdatePost(elapsed:Float):Void
 		picoAttack();
 	}
 
-	if (boyfriend.getAnimName() != 'spam' && !game.endingSong)
+	if (boyfriend.getAnimName() != 'gunblast' && !game.endingSong)
 	{
 		allow_attack = true;
 	}
