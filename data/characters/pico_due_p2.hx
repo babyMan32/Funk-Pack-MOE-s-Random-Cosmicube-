@@ -21,7 +21,20 @@ function onUpdate(elapsed:Float):Void
 
 function onUpdatePost(elapsed:Float):Void
 {
-	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'pico_due_p2' && allow_attack && !game.startingSong)
+	if (controls.NOTE_TAUNT_P)
+	{
+		picoAttack();
+	}
+
+	if (boyfriend.getAnimName() != 'spam' && !game.endingSong)
+	{
+		allow_attack = true;
+	}
+}
+
+function picoAttack()
+{
+	if (boyfriend.curCharacter == 'pico_due_p2' && allow_attack && !game.startingSong)
 	{
 		threatening.play(true);
 		boyfriend.playAnim('gunblast', true);
@@ -62,10 +75,5 @@ function onUpdatePost(elapsed:Float):Void
 		}
 
 		allow_attack = false;
-	}
-
-	if (boyfriend.getAnimName() != 'gunblast' && !game.endingSong)
-	{
-		allow_attack = true;
 	}
 }

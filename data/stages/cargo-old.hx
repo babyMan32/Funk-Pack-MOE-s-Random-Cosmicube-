@@ -64,6 +64,15 @@ function onCreatePost()
 	if (soRetro != null && soRetro != '')
 	{
 		changeCharacter(soRetro, 0);
+
+		if (soRetro == 'noob49retro')
+		{
+			iconP1.changeIcon('noob49alone');
+
+			FlxG.signals.postUpdate.addOnce(function() {
+				pet.kill();
+			});
+		}
 	}
 }
 

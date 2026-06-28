@@ -56,6 +56,15 @@ function onCreatePost()
 	if (soRetroBF != null && soRetroBF != '')
 	{
 		changeCharacter(soRetroBF, 0);
+
+		if (soRetroBF == 'noob49retro')
+		{
+			iconP1.changeIcon('noob49alone');
+
+			FlxG.signals.postUpdate.addOnce(function() {
+				pet.kill();
+			});
+		}
 	}
 
 	soRetroGF = gf.getFlag('airshipRetro'); //Yes I made my own variable for this, shut u-

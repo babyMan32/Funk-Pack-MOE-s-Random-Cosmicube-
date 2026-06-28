@@ -229,7 +229,8 @@
 	"gameover_intial_sound": null,
 	"flags": {
 		"runner": true,
-		"defeatRetro": "bfMADNESSnew"
+		"defeatRetro": "bfMADNESSnew",
+		"customMonotone": "bf-monotone"
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
