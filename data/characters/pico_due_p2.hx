@@ -22,11 +22,29 @@ function onCreatePost()
 	}
 }
 
+function onSectionHit()
+{
+	if (boyfriend.curCharacter != 'pico_due_p2') return;
+
+	if (!attack)
+	{
+		attack = FlxG.random.bool(10);
+	}
+
+	if (attack && !mechanic && !boyfriend.getAnimName().startsWith('sing') && !game.endingSong)
+	{
+		attack = false;
+		mechanic = true;
+		beeping.play(true);
+		counter++;
+	}
+}
+
 function onBeatHit()
 {
 	if (boyfriend.curCharacter != 'pico_due_p2') return;
 
-	if (mechanic)
+	if (mechanic && !game.endingSong)
 	{
 		beeping.play(true);
 		counter++;
@@ -43,24 +61,6 @@ function onBeatHit()
 			counter = 0;
 			mechanic = false;
 		}
-	}
-}
-
-function onSectionHit()
-{
-	if (boyfriend.curCharacter != 'pico_due_p2') return;
-
-	if (!attack)
-	{
-		attack = FlxG.random.bool(10);
-	}
-
-	if (attack && !mechanic && !boyfriend.getAnimName().startsWith('sing'))
-	{
-		attack = false;
-		mechanic = true;
-		beeping.play(true);
-		counter++;
 	}
 }
 
