@@ -72,17 +72,18 @@ function createJumpChar()
 	add(bfBounding);
 }
 
+var evilBill;
 function createBill()
 {
 	evilBill = new FlxSprite(0, 0).loadGraphic(Paths.image('bullet', null, null, PathsTestMode.LOOSE));
 	evilBill.antialiasing = false;
-	evilBill.x = boyfriend.x - 10000;
-	evilBill.y = boyfriend.y + (FlxG.random.bool(50) ? 250 : -350);
+	evilBill.x = BF_X - 10000;
+	evilBill.y = (BF_Y + 300) + (FlxG.random.bool(50) ? 250 : -350);
 	evilBill.scale.x = 0.4;
 	evilBill.scale.y = 0.4;
 	evilBill.updateHitbox();
 	evilBill.flipX = bullet_exists = true;
-	add(evilBill);
+	jumped_on_bill = false;
 
 	stage.insert(stage.members.indexOf(boyfriendGroup) + 1, evilBill);
 }
@@ -189,15 +190,17 @@ function onUpdatePost(elapsed:Float):Void
 	}
 }
 
+var bulletSpeed:Float = 1000;
+
 function checkHurt(elapsed:Float)
 {
-	if (!jump_check_var) return;
+	if (!jump_check_var || evilBill == null) return;
 
 	if (!bullet_exists) return;
 
 	if (!jumped_on_bill)
 	{
-		evilBill.x += 35 * playbackRate;
+		evilBill.x += (bulletSpeed * playbackRate) * elapsed;
 	}
 
 	if (jumped_on_bill)
@@ -213,7 +216,7 @@ function checkHurt(elapsed:Float)
 	if (evilBill.x > boyfriend.x + 1500 || evilBill.y > boyfriend.y + 800)
 	{
 		bullet_exists = false;
-		evilBill.kill();
+		evilBill.destroy();
 	}
 
 	pain = evilBill.overlaps(bfBounding);
