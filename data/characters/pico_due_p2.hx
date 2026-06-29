@@ -22,6 +22,15 @@ function onCreatePost()
 	}
 }
 
+function goodNoteHitPre(note)
+{
+	if (note.noteType == 'Hey!' || note.noteType == 'Cheer Note')
+	{
+		picoAttackSpecial();
+		note.noAnimation = true;
+	}
+}
+
 function onSectionHit()
 {
 	if (boyfriend.curCharacter != 'pico_due_p2') return;
@@ -51,6 +60,8 @@ function onBeatHit()
 
 		if (counter == 3)
 		{
+			if (cpuControlled) picoAttackSpecial();
+
 			if (boyfriend.getAnimName() != 'gunblast' || boyfriend.getAnimName() == 'gunblast' && game.boyfriend.animation.curAnim.curFrame > 6)
 			{
 				missed_dodges++;
@@ -85,7 +96,7 @@ function onUpdatePost(elapsed:Float):Void
 	}
 }
 
-function picoAttack()
+function picoAttackSpecial() //Used for Botplay and certain triggers if the opponent can be killed by the "taunt"
 {
 	if (boyfriend.curCharacter == 'pico_due_p2' && allow_attack && !game.startingSong)
 	{
@@ -93,10 +104,24 @@ function picoAttack()
 		boyfriend.playAnim('gunblast', true);
 		boyfriend.specialAnim = true;
 
-		if (!cpuControlled)
-		{
-			boyfriend.holding = true;
-		}
+		dad.playAnim('singLEFT', true);
+		dad.specialAnim = true;
+
+		health += 0.15;
+
+		allow_attack = false;
+	}
+}
+
+function picoAttack()
+{
+	if (inCutscene || cpuControlled) return;
+
+	if (boyfriend.curCharacter == 'pico_due_p2' && allow_attack && !game.startingSong)
+	{
+		threatening.play(true);
+		boyfriend.playAnim('gunblast', true);
+		boyfriend.specialAnim = boyfriend.holding = true;
 
 		if (!killed_yellow)
 		{
@@ -106,7 +131,7 @@ function picoAttack()
 			health += 0.15;
 		}
 
-		if (dad.curCharacter == 'yellow' && PlayState.SONG.song == 'D\'low' && !killed_yellow)
+		if (dad.curCharacter == 'yellow' && (PlayState.SONG.song == 'D\'low' || PlayState.SONG.song == 'D\'low (Pico Mix)') && !killed_yellow)
 		{
 			dad.playAnim('death', true);
 			dad.specialAnim = killed_yellow = true;
