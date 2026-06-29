@@ -73,6 +73,7 @@ function createJumpChar()
 }
 
 var evilBill;
+
 function createBill()
 {
 	evilBill = new FlxSprite(0, 0).loadGraphic(Paths.image('bullet', null, null, PathsTestMode.LOOSE));
@@ -84,6 +85,7 @@ function createBill()
 	evilBill.updateHitbox();
 	evilBill.flipX = bullet_exists = true;
 	jumped_on_bill = false;
+	billFallMomentum = 12;
 
 	stage.insert(stage.members.indexOf(boyfriendGroup) + 1, evilBill);
 }
@@ -167,7 +169,7 @@ function onSectionHit()
 {
 	if (!jump_char_exists) return;
 
-	if (FlxG.random.bool(100) && !bullet_exists)
+	if (FlxG.random.bool(50) && !bullet_exists)
 	{
 		createBill();
 	}
@@ -190,7 +192,7 @@ function onUpdatePost(elapsed:Float):Void
 	}
 }
 
-var bulletSpeed:Float = 1000;
+var bulletSpeed:Float = 2000;
 
 function checkHurt(elapsed:Float)
 {
@@ -272,9 +274,12 @@ function initJump(elapsed:Float)
 		bfJump.playAnim("pre-jump");
 
 		new FlxTimer().start(0.125 / playbackRate, function(_) {
-			bfJump.playAnim("jump");
+			if (!got_hit)
+			{
+				bfJump.playAnim("jump");
 
-			grounded = false;
+				grounded = false;
+			}
 		});
 	}
 
@@ -355,10 +360,10 @@ function killBFJump()
 
 	bfJump.shader = boyfriendHurt.shader = null;
 	bfJump.visible = jump_char_exists = false;
-	boyfriendHurt.kill();
-	bfBounding.kill();
+	boyfriendHurt.destroy();
+	bfBounding.destroy();
 	bfJump.alpha = 0;
-	bfJump.kill();
+	bfJump.destroy();
 }
 
 function onEvent(eventName, value1, value2)
