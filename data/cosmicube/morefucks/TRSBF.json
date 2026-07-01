@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Driver BF (Thomas' Railway Showdown | Refired Up)",
+	"description": "conductor but newer",
+
+	"node":
+	{
+		"parent": "driverbf-encore",
+		"direction": "east"
+	}
+}

@@ -1,0 +1,144 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				92,
+				9
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-29,
+				6
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-27,
+				75
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-8,
+				5
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-61,
+				30
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "oops!",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-83,
+				38
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "woopsie!",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-116,
+				30
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "eeps!",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-16,
+				30
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "yeowch!",
+			"indices": []
+		},
+		{
+			"offsets": [
+				8,
+				-8
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "scared",
+			"loop": true,
+			"name": "bruh"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/railway/TRSBF",
+	"position": [
+		-270,
+		20
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"defeatRetro": "driverbf"
+	},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": "railway/void_retry",
+	"healthicon": "trsbf",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -13520685,
+	"camera_position": [
+		-100,
+		250
+	],
+	"gameover_loop_sound": "railway/void_game_over",
+	"sing_duration": 8,
+	"scale": 0.5,
+	"_editor_isPlayer": true
+}

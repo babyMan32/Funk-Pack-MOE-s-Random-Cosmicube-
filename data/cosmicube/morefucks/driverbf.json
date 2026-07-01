@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Driver BF (Thomas' Railway Showdown)",
+	"description": "conductor",
+
+	"node":
+	{
+		"parent": "bf-defeat-scared",
+		"direction": "east"
+	}
+}
