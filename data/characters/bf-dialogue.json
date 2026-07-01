@@ -338,7 +338,7 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "shaking",
+			"anim": "scared",
 			"loop": true,
 			"name": "BF idle shaking"
 		},
@@ -351,7 +351,7 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "scared",
+			"anim": "yellowReaction",
 			"loop": true,
 			"name": "BF SHOCK"
 		}

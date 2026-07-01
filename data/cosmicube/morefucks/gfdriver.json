@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Driver GF (Thomas' Railway Showdown)",
+	"description": "woman conductor",
+
+	"node":
+	{
+		"parent": "driverbf",
+		"direction": "north"
+	}
+}

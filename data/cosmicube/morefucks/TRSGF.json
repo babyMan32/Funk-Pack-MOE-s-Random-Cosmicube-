@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Driver GF (Thomas' Railway Showdown | Refired Up)",
+	"description": "woman conductor but newer",
+
+	"node":
+	{
+		"parent": "TRSBF",
+		"direction": "north"
+	}
+}

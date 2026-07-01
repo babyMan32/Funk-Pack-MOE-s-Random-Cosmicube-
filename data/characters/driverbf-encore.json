@@ -135,14 +135,14 @@
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/railway/driver bf encore",
+	"image": "characters/railway/bf/driver bf encore",
 	"position": [
 		50,
 		330
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": {},
+	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": "railway/gameover new end",
 	"healthicon": "bf encore",

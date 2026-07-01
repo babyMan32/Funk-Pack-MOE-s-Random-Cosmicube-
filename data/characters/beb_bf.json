@@ -4,148 +4,126 @@
 		{
 			"loop": false,
 			"offsets": [
-				0,
+				-5,
 				0
 			],
 			"anim": "idle",
 			"fps": 24,
-			"name": "idle",
+			"name": "bf idle",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				10,
-				-6
+				28,
+				-3
 			],
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "left",
+			"name": "bf left",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-15,
-				-51
+				-3,
+				-15
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "down",
+			"name": "bf down",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-41,
-				27
+				-24,
+				15
 			],
 			"anim": "singUP",
 			"fps": 24,
-			"name": "up",
+			"name": "bf up",
 			"indices": []
+		},
+		{
+			"offsets": [
+				32,
+				-8
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "bf miss left"
+		},
+		{
+			"offsets": [
+				3,
+				-15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "bf miss down"
+		},
+		{
+			"offsets": [
+				-24,
+				37
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "bf miss up"
+		},
+		{
+			"offsets": [
+				-37,
+				-6
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "bf miss right"
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-43,
-				-7
+				-30,
+				0
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "right",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				9,
-				19
-			],
-			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "miss left",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-15,
-				-19
-			],
-			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "miss down",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-37,
-				26
-			],
-			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "miss up",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-40,
-				21
-			],
-			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "miss right",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-5,
-				10
-			],
-			"anim": "hey",
-			"fps": 24,
-			"name": "hey",
-			"indices": []
-		},
-		{
-			"loop": true,
-			"offsets": [
-				-3,
-				1
-			],
-			"anim": "scared",
-			"fps": 24,
-			"name": "scared idle",
+			"name": "bf right",
 			"indices": []
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/railway/bf/outdated driver bf",
+	"image": "characters/beb/beb_bf",
 	"position": [
-		0,
-		350
+		-50,
+		200
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": null,
+	"flags": {},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "driverbf",
+	"healthicon": "bf",
 	"afterimages": true,
 	"gameover_character": null,
 	"vslice_sustains": false,
 	"flip_x": true,
 	"healthbar_colour": -13520687,
 	"camera_position": [
-		0,
-		0
+		130,
+		-180
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 8,
-	"scale": 1,
+	"scale": 0.8,
 	"_editor_isPlayer": true
 }

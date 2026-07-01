@@ -1,0 +1,107 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-9
+			],
+			"anim": "danceLeft",
+			"fps": 20,
+			"name": "dance",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-9
+			],
+			"anim": "danceRight",
+			"fps": 20,
+			"name": "dance",
+			"indices": [
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
+			]
+		},
+		{
+			"offsets": [
+				-25,
+				-52
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "scared",
+			"loop": false,
+			"name": "aintnoway dawg"
+		},
+		{
+			"offsets": [
+				-25,
+				-52
+			],
+			"indices": [
+				14
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle-scared",
+			"loop": true,
+			"name": "aintnoway dawg"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/railway/gf/TRSGF",
+	"position": [
+		-320,
+		-190
+	],
+	"dance_every": 1,
+	"gameover_intial_sound": null,
+	"flags": {
+		"airshipRetro": "gfdriver"
+	},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "gf",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -5963699,
+	"camera_position": [
+		200,
+		260
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.5,
+	"_editor_isPlayer": false
+}

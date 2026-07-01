@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Girlfriend (Big Engine Brawl)",
+	"description": "woman conductor weird route",
+
+	"node":
+	{
+		"parent": "beb_bf",
+		"direction": "north"
+	}
+}
