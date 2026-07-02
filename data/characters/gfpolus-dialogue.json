@@ -2,14 +2,39 @@
 	"pausePortrait": "",
 	"animations": [
 		{
+			"offsets": [
+				-2,
+				-24
+			],
 			"loop": false,
+			"anim": "sad",
+			"fps": 24,
+			"name": "gf sad",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		},
+		{
 			"offsets": [
 				0,
-				0
+				-9
 			],
+			"loop": false,
 			"anim": "danceLeft",
 			"fps": 24,
-			"name": "idle",
+			"name": "GF Dancing Beat",
 			"indices": [
 				30,
 				0,
@@ -30,14 +55,14 @@
 			]
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
-				0
+				-9
 			],
+			"loop": false,
 			"anim": "danceRight",
 			"fps": 24,
-			"name": "idle",
+			"name": "GF Dancing Beat",
 			"indices": [
 				15,
 				16,
@@ -55,63 +80,25 @@
 				28,
 				29
 			]
-		},
-		{
-			"loop": true,
-			"offsets": [
-				45,
-				1
-			],
-			"anim": "hairBlow",
-			"fps": 24,
-			"name": "hair blowing",
-			"indices": [
-				0,
-				1,
-				2,
-				3
-			]
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "hairFall",
-			"fps": 24,
-			"name": "hair landing",
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				11
-			]
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/railway/gf/trs gf old",
+	"image": "characters/dialogue/gf/gfpolus",
 	"position": [
-		-15,
-		30
+		0,
+		0
 	],
 	"dance_every": 1,
 	"gameover_intial_sound": null,
-	"flags": {},
+	"flags": {
+		"airshipRetro": "gfpolus"
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "gf",
 	"afterimages": true,
 	"gameover_character": null,
-	"vslice_sustains": true,
+	"vslice_sustains": false,
 	"flip_x": false,
 	"healthbar_colour": -5963699,
 	"camera_position": [

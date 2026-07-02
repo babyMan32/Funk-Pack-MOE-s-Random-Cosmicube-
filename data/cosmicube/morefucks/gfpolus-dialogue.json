@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Polus GF (Dialogue)",
+	"description": "*insert more creative dialogue here*",
+
+	"node":
+	{
+		"parent": "bfpolus-dialogue",
+		"direction": "south"
+	}
+}

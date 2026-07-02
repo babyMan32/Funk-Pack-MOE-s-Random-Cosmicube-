@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Airship GF (Dialogue)",
+	"description": "Bring along your girlfriend's corpse!",
+
+	"node":
+	{
+		"parent": "bfairship-dialogue",
+		"direction": "south"
+	}
+}

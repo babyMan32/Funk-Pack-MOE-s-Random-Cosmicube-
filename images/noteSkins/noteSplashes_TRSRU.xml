@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="noteSplashes.png">
+<SubTexture name="puff0000" x="560" y="242" width="137" height="138" frameX="-72" frameY="-75" frameWidth="281" frameHeight="254" />
+<SubTexture name="puff0001" x="560" y="0" width="252" height="242" frameX="-16" frameY="-10" frameWidth="281" frameHeight="254" />
+<SubTexture name="puff0002" x="0" y="0" width="275" height="258" frameX="-3" frameY="0" frameWidth="281" frameHeight="254" />
+<SubTexture name="puff0003" x="0" y="258" width="283" height="255" frameX="0" frameY="-2" frameWidth="281" frameHeight="254" />
+<SubTexture name="puff0004" x="283" y="258" width="267" height="250" frameX="-8" frameY="-8" frameWidth="281" frameHeight="254" />
+<SubTexture name="puff0005" x="275" y="0" width="285" height="258" frameX="0" frameY="0" frameWidth="281" frameHeight="254" />
+</TextureAtlas>

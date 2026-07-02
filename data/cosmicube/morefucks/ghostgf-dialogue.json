@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Ghost GF (Dialogue)",
+	"description": "her too oooooooh ooohoh",
+
+	"node":
+	{
+		"parent": "bfg-dialogue",
+		"direction": "south"
+	}
+}

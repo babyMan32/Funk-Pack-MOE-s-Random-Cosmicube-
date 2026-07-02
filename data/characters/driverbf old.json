@@ -137,7 +137,7 @@
 	"healthicon": "driverbf",
 	"afterimages": true,
 	"gameover_character": null,
-	"vslice_sustains": false,
+	"vslice_sustains": true,
 	"flip_x": true,
 	"healthbar_colour": -13520687,
 	"camera_position": [

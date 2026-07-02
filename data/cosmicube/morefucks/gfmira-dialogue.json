@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "MIRA GF (Dialogue)",
+	"description": "hmm^2",
+
+	"node":
+	{
+		"parent": "bfmira-dialogue",
+		"direction": "south"
+	}
+}

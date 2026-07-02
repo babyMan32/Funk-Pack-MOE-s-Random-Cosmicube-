@@ -99,39 +99,6 @@
 			"anim": "singRIGHTmiss",
 			"indices": [],
 			"name": "miss left"
-		},
-		{
-			"offsets": [
-				-3,
-				46
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "firstDeath",
-			"indices": [],
-			"name": "death"
-		},
-		{
-			"offsets": [
-				0,
-				46
-			],
-			"loop": true,
-			"fps": 24,
-			"anim": "deathLoop",
-			"indices": [],
-			"name": "loop"
-		},
-		{
-			"offsets": [
-				1,
-				36
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "deathConfirm",
-			"indices": [],
-			"name": "retry"
 		}
 	],
 	"no_antialiasing": false,
@@ -141,13 +108,13 @@
 		330
 	],
 	"dance_every": 2,
-	"gameover_intial_sound": null,
+	"gameover_intial_sound": "tonic loss",
 	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": "railway/gameover new end",
 	"healthicon": "bf encore",
 	"afterimages": true,
-	"gameover_character": "driverbf-encore",
+	"gameover_character": "driverbf-encore-dead",
 	"vslice_sustains": false,
 	"flip_x": true,
 	"healthbar_colour": -16658177,

@@ -56,3 +56,8 @@ function onUpdate()
 		health -= drain;
 	}
 }
+
+function onUpdatePost()
+{
+	enable_drain = (pet.curPet == "job_application" ? true : false);
+}
