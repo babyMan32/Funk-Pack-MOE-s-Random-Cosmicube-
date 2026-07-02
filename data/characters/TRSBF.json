@@ -130,7 +130,7 @@
 	"healthicon": "trsbf",
 	"afterimages": true,
 	"gameover_character": null,
-	"vslice_sustains": false,
+	"vslice_sustains": true,
 	"flip_x": true,
 	"healthbar_colour": -13520685,
 	"camera_position": [
