@@ -38,7 +38,7 @@ var useDefaultStep = false;
 
 function onCreatePost()
 {
-	var path = Paths.json('catSuffixes-' + Paths.sanitize(songName));
+	var path = Paths.json('catSuffixes/' + Paths.sanitize(songName), null, PathsTestMode.LOOSE);
 
 	if (FunkinAssets.exists(path))
 	{
