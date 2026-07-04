@@ -109,7 +109,11 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": "tonic loss",
-	"flags": null,
+	"flags": {
+		"variants": {
+			"pixel": "bunfriend-pixel"
+		}
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": "railway/gameover new end",
 	"healthicon": "bf encore",
