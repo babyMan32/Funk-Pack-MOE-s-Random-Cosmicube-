@@ -1,0 +1,14 @@
+{
+	"type": "playerSkin",
+	"price": 350,
+
+	"title": "Ghost James",
+	"description": "Who the fuck-",
+	"hint": "Beat \"Oopsies!\" with an A rank or higher!",
+
+	"node":
+	{
+		"parent": "beb_bf",
+		"direction": "east"
+	}
+}

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="SignalBladeAnimated.png">
+<SubTexture name="signal green0000" x="0" y="0" width="207" height="74" frameX="-1" frameY="-117" frameWidth="308" frameHeight="308" />
+<SubTexture name="signal red0000" x="0" y="74" width="207" height="74" frameX="-1" frameY="-117" frameWidth="308" frameHeight="308" />
+</TextureAtlas>
