@@ -1,4 +1,4 @@
-var trsCharacters = ["TRSBF", "ghostJames"];
+var trsCharacters = ["TRSBF", "ghostJames", "thomas-termination-p1"];
 
 var signalBodyPlayer:FlxSprite;
 var signalBodyOpponent:FlxSprite;

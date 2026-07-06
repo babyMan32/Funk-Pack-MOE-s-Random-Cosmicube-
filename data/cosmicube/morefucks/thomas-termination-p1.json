@@ -1,0 +1,14 @@
+{
+	"type": "playerSkin",
+	"price": 350,
+
+	"title": "Thomas The Terminator Engine",
+	"description": "I guess we doing TRS Re-fired Up characters now",
+	"hint": "Beat \"Termination\" with an A rank or higher!",
+
+	"node":
+	{
+		"parent": "ghostJames",
+		"direction": "east"
+	}
+}
