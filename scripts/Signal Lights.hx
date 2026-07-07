@@ -59,7 +59,7 @@ function createSignals()
 
 	signalBodyOpponent.x = healthBar.x - 117;
 	signalBodyOpponent.y = healthBar.y - (ClientPrefs.downScroll ? 178 : 128);
-	signalLightOpponent.x = healthBar.x - 202;
+	signalLightOpponent.x = healthBar.x - 210;
 	signalLightOpponent.y = healthBar.y - (ClientPrefs.downScroll ? 28 : 178);
 
 	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 0, signalLightPlayer);
@@ -67,8 +67,10 @@ function createSignals()
 
 	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 1, signalBodyOpponent);
 	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 0, signalLightOpponent);
+
 	signalLightPlayer.updateHitbox();
 	signalBodyPlayer.updateHitbox();
+
 	signalBodyOpponent.updateHitbox();
 	signalLightOpponent.updateHitbox();
 }
