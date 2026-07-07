@@ -112,7 +112,7 @@
 	"flags": {},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "bf",
+	"healthicon": "beb_bf",
 	"afterimages": true,
 	"gameover_character": null,
 	"vslice_sustains": false,
