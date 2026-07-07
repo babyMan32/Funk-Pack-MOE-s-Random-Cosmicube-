@@ -47,8 +47,15 @@ function onSongStart()
 
 function onBeatHit()
 {
-	if (hahaRareChance && curBeat % 2 == 0)
+	if (!hahaRareChance) return;
+
+	if (curBeat % 2 == 0)
 	{
 		boyfriend.playAnim('idle', true);
+
+		if (FlxG.random.bool(30))
+		{
+			boyfriend.playAnim('hey', true);
+		}
 	}
 }
