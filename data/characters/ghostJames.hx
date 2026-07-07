@@ -36,6 +36,23 @@ function onUpdatePost(elapsed:Float):Void
 
 		boyfriend.y = baseY - 50 * Math.sin((currentBeat + 12 * 12) * Math.PI);
 	}
+
+	if (boyfriend.alpha > 1)
+	{
+		boyfriend.alpha = 1;
+	}
+
+	if (boyfriend.alpha <= 0 && !game.endingSong)
+	{
+		KillNotes();
+		PlayState.instance.audio?.stop();
+		FlxG.resetState();
+	}
+
+	if (hahaRareChance)
+	{
+		cpuControlled = false;
+	}
 }
 
 function onSongStart()
@@ -43,6 +60,26 @@ function onSongStart()
 	if (boyfriend.curCharacter != 'ghostJames') return;
 
 	FlxTween.tween(camGame, {alpha: 1}, 1.5, {ease: FlxEase.sineOut});
+}
+
+function onEndSong()
+{
+	if (boyfriend.curCharacter != 'ghostJames') return;
+
+	FlxTween.tween(boyfriend, {alpha: 0}, 1.5, {ease: FlxEase.sineIn});
+}
+
+function onStepHit()
+{
+	if (boyfriend.curCharacter != 'ghostJames') return;
+
+	if (curStep % 2 == 0)
+	{
+		if (game.endingSong)
+		{
+			boyfriend.playAnim('hey', true);
+		}
+	}
 }
 
 function onBeatHit()
@@ -58,4 +95,25 @@ function onBeatHit()
 			boyfriend.playAnim('hey', true);
 		}
 	}
+}
+
+function goodNoteHit(note)
+{
+	if (boyfriend.alpha < 1)
+	{
+		boyfriend.alpha += 0.01;
+	}
+}
+
+function noteMiss(note)
+{
+	FlxG.signals.postUpdate.addOnce(function() {
+		audio.playerVolume = 1;
+	});
+
+	if (hahaRareChance) return;
+
+	boyfriend.playAnim('hey', true);
+	boyfriend.specialAnim = boyfriend.holding = true;
+	boyfriend.alpha -= 0.01;
 }
