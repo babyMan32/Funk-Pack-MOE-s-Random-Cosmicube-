@@ -20,13 +20,6 @@ function onCreatePost()
 
 function createSignals()
 {
-	signalBodyPlayer = new FlxSprite(0, 0).loadGraphic(Paths.image('signals/Signal_Body', null, null, PathsTestMode.LOOSE));
-	signalBodyPlayer.cameras = [camHUD];
-	signalBodyPlayer.antialiasing = false;
-	signalBodyPlayer.screenCenter();
-	signalBodyPlayer.updateHitbox();
-	add(signalBodyPlayer);
-
 	signalLightPlayer = new FlxSprite(0, 0);
 	signalLightPlayer.frames = Paths.getSparrowAtlas('signals/SignalBladeAnimated', null, null, PathsTestMode.LOOSE);
 	signalLightPlayer.animation.addByPrefix('stop', 'signal red', 24, false);
@@ -34,15 +27,16 @@ function createSignals()
 	signalLightPlayer.cameras = [camHUD];
 	signalLightPlayer.animation.play('stop', true);
 	signalLightPlayer.screenCenter();
-	signalLightPlayer.updateHitbox();
-	add(signalLightPlayer);
 
 	signalBodyOpponent = new FlxSprite(0, 0).loadGraphic(Paths.image('signals/Signal_Body', null, null, PathsTestMode.LOOSE));
 	signalBodyOpponent.cameras = [camHUD];
 	signalBodyOpponent.antialiasing = false;
 	signalBodyOpponent.screenCenter();
-	signalBodyOpponent.updateHitbox();
-	add(signalBodyOpponent);
+	
+	signalBodyPlayer = new FlxSprite(0, 0).loadGraphic(Paths.image('signals/Signal_Body', null, null, PathsTestMode.LOOSE));
+	signalBodyPlayer.cameras = [camHUD];
+	signalBodyPlayer.antialiasing = false;
+	signalBodyPlayer.screenCenter();
 
 	signalLightOpponent = new FlxSprite(0, 0);
 	signalLightOpponent.frames = Paths.getSparrowAtlas('signals/SignalBladeAnimated', null, null, PathsTestMode.LOOSE);
@@ -51,8 +45,6 @@ function createSignals()
 	signalLightOpponent.cameras = [camHUD];
 	signalLightOpponent.animation.play('stop', true);
 	signalLightOpponent.screenCenter();
-	signalLightOpponent.updateHitbox();
-	add(signalLightOpponent);
 
 	signalBodyPlayer.scale.set(0.7, (ClientPrefs.downScroll ? -0.7 : 0.7));
 	signalLightPlayer.scale.set(0.7, (ClientPrefs.downScroll ? -0.7 : 0.7));
@@ -65,16 +57,20 @@ function createSignals()
 	signalLightPlayer.x = healthBar.x + 587;
 	signalLightPlayer.y = healthBar.y - (ClientPrefs.downScroll ? 28 : 178);
 
-	signalBodyOpponent.x = healthBar.x - 107;
+	signalBodyOpponent.x = healthBar.x - 117;
 	signalBodyOpponent.y = healthBar.y - (ClientPrefs.downScroll ? 178 : 128);
 	signalLightOpponent.x = healthBar.x - 202;
 	signalLightOpponent.y = healthBar.y - (ClientPrefs.downScroll ? 28 : 178);
 
-	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 1, signalBodyPlayer);
 	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 0, signalLightPlayer);
+	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 1, signalBodyPlayer);
 
 	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 1, signalBodyOpponent);
 	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 0, signalLightOpponent);
+	signalLightPlayer.updateHitbox();
+	signalBodyPlayer.updateHitbox();
+	signalBodyOpponent.updateHitbox();
+	signalLightOpponent.updateHitbox();
 }
 
 function onSongStart()
