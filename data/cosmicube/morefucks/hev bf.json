@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "HeV Boyfriend",
+	"description": "this was long overdue\n\nRequested by sadvac22, bradley086624, and matthew100716",
+
+	"node":
+	{
+		"parent": "abf",
+		"direction": "east"
+	}
+}

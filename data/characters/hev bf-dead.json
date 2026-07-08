@@ -1,0 +1,63 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				356,
+				76
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "game over loop",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				356,
+				275
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "game over start",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				356,
+				144
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "game over end",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/hev/HeV BF gameover",
+	"position": [
+		0,
+		400
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "hev-bf",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -16717313,
+	"camera_position": [
+		300,
+		-100
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

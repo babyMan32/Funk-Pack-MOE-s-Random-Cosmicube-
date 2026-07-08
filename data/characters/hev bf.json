@@ -1,0 +1,390 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				35,
+				70
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "BFidle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				103,
+				88
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "BFleft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				69,
+				45
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "BFdown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				29,
+				129
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "BFup",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				24,
+				66
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "BFrigh",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				107,
+				87
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "BFfailleft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				72,
+				64
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "BFfaildown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				36,
+				127
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "BFfailup",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				28,
+				62
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "BFfailright",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				80,
+				570
+			],
+			"anim": "pre-attack",
+			"fps": 24,
+			"name": "BFpreatack",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				291,
+				371
+			],
+			"anim": "attack",
+			"fps": 24,
+			"name": "BFatack",
+			"indices": []
+		},
+		{
+			"offsets": [
+				170,
+				120
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "dodge",
+			"indices": [],
+			"name": "BFdodge"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				50,
+				100
+			],
+			"anim": "hurt",
+			"fps": 24,
+			"name": "BFhit",
+			"indices": []
+		},
+		{
+			"offsets": [
+				37,
+				84
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "heynormal",
+			"indices": [],
+			"name": "hey"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				36,
+				84
+			],
+			"anim": "heycool",
+			"fps": 24,
+			"name": "BFcoolhey",
+			"indices": []
+		},
+		{
+			"offsets": [
+				37,
+				66
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "3",
+			"indices": [],
+			"name": "3"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				41,
+				77
+			],
+			"anim": "2",
+			"fps": 24,
+			"name": "2",
+			"indices": []
+		},
+		{
+			"offsets": [
+				44,
+				66
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "1",
+			"indices": [],
+			"name": "1"
+		},
+		{
+			"offsets": [
+				350,
+				120
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "boo",
+			"indices": [],
+			"name": "booh"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				33,
+				140
+			],
+			"anim": "haha",
+			"fps": 24,
+			"name": "haha",
+			"indices": []
+		},
+		{
+			"offsets": [
+				61,
+				81
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "swaws-transition",
+			"indices": [],
+			"name": "BFcooltrans"
+		},
+		{
+			"offsets": [
+				37,
+				62
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "BFcoolidle"
+		},
+		{
+			"offsets": [
+				165,
+				84
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "BFcoolleft"
+		},
+		{
+			"offsets": [
+				110,
+				49
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "BFcooldown"
+		},
+		{
+			"offsets": [
+				29,
+				137
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "BFcoolup"
+		},
+		{
+			"offsets": [
+				12,
+				93
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "BFcoolright"
+		},
+		{
+			"offsets": [
+				165,
+				76
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-beatbox",
+			"indices": [],
+			"name": "BFbeatboxleft"
+		},
+		{
+			"offsets": [
+				96,
+				52
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-beatbox",
+			"indices": [],
+			"name": "BFbeatboxdown"
+		},
+		{
+			"offsets": [
+				85,
+				146
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-beatbox",
+			"indices": [],
+			"name": "BFbeatboxup"
+		},
+		{
+			"offsets": [
+				27,
+				74
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-beatbox",
+			"indices": [],
+			"name": "BFbeatboxright"
+		},
+		{
+			"offsets": [
+				38,
+				71
+			],
+			"flipY": false,
+			"loop": true,
+			"fps": 24,
+			"anim": "scared",
+			"flipX": false,
+			"indices": [],
+			"name": "BFscared"
+		},
+		{
+			"offsets": [
+				37,
+				66
+			],
+			"indices": [
+				13
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle-prep",
+			"loop": false,
+			"name": "3 instance 1"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/hev/HeV Boyfriend",
+	"position": [
+		100,
+		400
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"defeatRetro": "bf"
+	},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "hev-bf",
+	"afterimages": true,
+	"gameover_character": "hev bf-dead",
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -16717313,
+	"camera_position": [
+		80,
+		-130
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}
