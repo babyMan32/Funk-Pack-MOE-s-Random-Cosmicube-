@@ -49,7 +49,7 @@ function onTauntCalled()
 {
 	if (inCutscene || cpuControlled) return;
 
-	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bf-dialogue' && allow_taunt)
+	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bf-dialogue' && allow_taunt && boyfriend.canTaunt)
 	{
 		boyfriend.playAnim('yo');
 

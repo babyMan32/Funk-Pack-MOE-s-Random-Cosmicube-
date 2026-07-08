@@ -17,23 +17,29 @@ function onCreatePost()
 function onUpdate(elapsed:Float):Void
 {
 	onTaunt();
+
 	onAnimSwitch();
+
+	if (boyfriend.getAnimName() != 'swaws-transition' && boyfriend.getAnimName() != 'un-swawsing' && boyfriend.getAnimName() != 'heynormal' && !game.startingSong)
+	{
+		allow_transition = true;
+	}
 }
 
 function onTaunt()
 {
 	if (inCutscene || cpuControlled) return;
 
-	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'hev bf' && allow_taunt && allow_transition)
+	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'hev bf' && allow_taunt && allow_transition && boyfriend.canTaunt)
 	{
-		boyfriend.playAnim(coolAnims ? 'heycool' : 'heynormal');
+		boyfriend.playAnim(coolAnims ? 'heycool' : (beatboxAnims ? 'boo' : (FlxG.random.bool(50) ? 'haha' : 'heynormal')));
 
 		boyfriend.specialAnim = boyfriend.holding = true;
 
 		allow_taunt = false;
 	}
 
-	if (boyfriend.getAnimName() != 'heynormal' && boyfriend.getAnimName() != 'heycool' && !game.startingSong)
+	if (boyfriend.getAnimName() != 'heycool' && boyfriend.getAnimName() != 'boo' && boyfriend.getAnimName() != 'haha' && boyfriend.getAnimName() != 'heynormal' && !game.startingSong)
 	{
 		allow_taunt = true;
 	}
@@ -41,7 +47,7 @@ function onTaunt()
 
 function onAnimSwitch()
 {
-	if (FlxG.keys.justPressed.CONTROL && boyfriend.curCharacter == 'hev bf' && allow_transition)
+	if (FlxG.keys.justPressed.CONTROL && boyfriend.curCharacter == 'hev bf' && allow_taunt && allow_transition && boyfriend.canTaunt)
 	{
 		animSuffixInt = (animSuffixInt + 1) % 3;
 
@@ -55,11 +61,6 @@ function onAnimSwitch()
 		boyfriend.specialAnim = true;
 
 		allow_transition = false;
-	}
-
-	if (boyfriend.getAnimName() != 'swaws-transition' && boyfriend.getAnimName() != 'un-swawsing' && boyfriend.getAnimName() != 'swaws-transition' && !game.startingSong)
-	{
-		allow_transition = true;
 	}
 }
 
@@ -83,5 +84,64 @@ function onCountdownTick(tick)
 			boyfriend.playAnim('heynormal');
 			boyfriend.specialAnim = true;
 			boyfriend.idleSuffix = '';
+	}
+}
+
+function onBeatHit()
+{
+	if (curBeat == 432 && PlayState.SONG.song == 'Defeat')
+	{
+		forceAnimSet('cool');
+	}
+}
+
+function forceAnimSet(animSet:String)
+{
+	if (animSet == 'basic' && (coolAnims || beatboxAnims))
+	{
+		animSuffixInt = 0;
+
+		boyfriend.animSuffix = animSuffixVariable[animSuffixInt];
+		boyfriend.idleSuffix = idleSuffixVariable[animSuffixInt];
+
+		boyfriend.playAnim(coolAnims ? 'un-swawsing' : 'heynormal');
+		boyfriend.specialAnim = true;
+
+		coolAnims = false;
+		beatboxAnims = false;
+
+		allow_transition = false;
+	}
+
+	if (animSet == 'cool' && !coolAnims)
+	{
+		animSuffixInt = 1;
+
+		boyfriend.animSuffix = animSuffixVariable[animSuffixInt];
+		boyfriend.idleSuffix = idleSuffixVariable[animSuffixInt];
+
+		coolAnims = true;
+		beatboxAnims = false;
+
+		boyfriend.playAnim('swaws-transition');
+		boyfriend.specialAnim = true;
+
+		allow_transition = false;
+	}
+
+	if (animSet == 'beatbox' && !beatboxAnims)
+	{
+		animSuffixInt = 2;
+
+		boyfriend.animSuffix = animSuffixVariable[animSuffixInt];
+		boyfriend.idleSuffix = idleSuffixVariable[animSuffixInt];
+
+		boyfriend.playAnim(coolAnims ? 'un-swawsing' : 'haha');
+		boyfriend.specialAnim = true;
+
+		coolAnims = false;
+		beatboxAnims = true;
+
+		allow_transition = false;
 	}
 }

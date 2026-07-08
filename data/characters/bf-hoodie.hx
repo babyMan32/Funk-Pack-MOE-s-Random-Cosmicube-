@@ -195,7 +195,7 @@ function onUpdate(elapsed:Float):Void
 
 	if (inCutscene || cpuControlled) return;
 
-	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bf-hoodie' && allow_taunt)
+	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bf-hoodie' && allow_taunt && boyfriend.canTaunt)
 	{
 		boyfriend.playAnim('yo');
 
