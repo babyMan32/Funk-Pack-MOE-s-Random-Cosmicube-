@@ -1,5 +1,4 @@
-var womanExists:Bool = true;
-var gf_falling_var = false;
+var baddieExists:Bool = true;
 var allow_taunt = true;
 
 function onLoad()
@@ -9,7 +8,7 @@ function onLoad()
 		//no gf stages
 
 		case "beach-old", "boiling", "chef", "dave", "defeat", "esculent", "finalem", "idk", "jads", "jerma", "kills", "lounge", "monotone", "nuzzus", "piptowers", "pretender", "turbulence", "victory", "who":
-			womanExists = false;
+			baddieExists = false;
 	}
 }
 
@@ -22,30 +21,13 @@ function onCreatePost()
 			case "Reactor":
 				triggerEventNote('Change Character', 'boyfriend', 'bfr-dialogue');
 
-				if (ClientPrefs.gfSkin == 'gf-dialogue')
-				{
-					triggerEventNote('Change Character', 'gf', 'gfr-dialogue');
-				}
-
 			case "Ejected":
 				triggerEventNote('Change Character', 'boyfriend', 'bf-fall-dialogue');
 
-				if (ClientPrefs.gfSkin == 'gf-dialogue')
-				{
-					triggerEventNote('Change Character', 'gf', 'gf-fall-dialogue');
-				}
-
-				gf_falling_var = true;
-
-				gf.shader = boyfriend.shader = dad.shader;
+				boyfriend.shader = dad.shader;
 
 			case "Danger":
 				triggerEventNote('Change Character', 'boyfriend', 'bf-running-dialogue');
-
-				if (ClientPrefs.gfSkin == 'gf-dialogue')
-				{
-					triggerEventNote('Change Character', 'gf', 'gfdanger-dialogue');
-				}
 
 			case "Finale":
 				triggerEventNote('Change Character', 'boyfriend', 'bf-defeat-scared-dialogue');
@@ -56,11 +38,6 @@ function onCreatePost()
 function onUpdate(elapsed:Float):Void
 {
 	onTauntCalled();
-
-	if (gf_falling_var)
-	{
-		gf.x = 500;
-	}
 
 	if (boyfriend.getAnimName() != 'HEY! Cool' && boyfriend.getAnimName() != 'yo')
 	{
@@ -87,7 +64,7 @@ function onTauntCalled()
 
 		allow_taunt = false;
 
-		if (!womanExists) return;
+		if (!baddieExists) return;
 
 		if (gf.curCharacter == 'gf-dialogue')
 		{

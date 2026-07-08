@@ -1,0 +1,71 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				5,
+				-20
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "firstDeath",
+			"loop": false,
+			"name": "BF Dies pixel"
+		},
+		{
+			"offsets": [
+				-25,
+				-32
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "deathLoop",
+			"loop": false,
+			"name": "Retry Loop"
+		},
+		{
+			"offsets": [
+				-25,
+				-32
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "deathConfirm",
+			"loop": false,
+			"name": "RETRY CONFIRM"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/fem/bfPixelsDEAD",
+	"position": [
+		200,
+		500
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"isPixel": true
+	},
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "fem_bf-pixel",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": true,
+	"flip_x": true,
+	"healthbar_colour": -8661258,
+	"camera_position": [
+		200,
+		-100
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 6,
+	"_editor_isPlayer": true
+}

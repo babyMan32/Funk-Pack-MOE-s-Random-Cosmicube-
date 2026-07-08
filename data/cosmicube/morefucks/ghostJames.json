@@ -8,7 +8,7 @@
 
 	"node":
 	{
-		"parent": "beb_bf",
-		"direction": "east"
+		"parent": "TRSBF",
+		"direction": "south"
 	}
 }

@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": -300,
+
+	"title": "Boyfriend (Happy)",
+	"description": "so joyous!",
+
+	"node":
+	{
+		"parent": "bf-geoff",
+		"direction": "east"
+	}
+}

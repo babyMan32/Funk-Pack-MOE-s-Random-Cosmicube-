@@ -1,0 +1,14 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend (Geoff Keighley)",
+	"description": "dam",
+	"hint": "Participate in the 2020 Game Awards Twitch stream!",
+
+	"node":
+	{
+		"parent": "galfriend",
+		"direction": "east"
+	}
+}

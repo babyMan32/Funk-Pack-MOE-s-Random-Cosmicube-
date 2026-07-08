@@ -99,7 +99,8 @@
 		10
 	],
 	"flags": {
-		"airshipRetro": "gf"
+		"airshipRetro": "gf",
+		"lightsDownSpeaker": true
 	},
 	"dance_every": 1,
 	"gameover_intial_sound": null,
