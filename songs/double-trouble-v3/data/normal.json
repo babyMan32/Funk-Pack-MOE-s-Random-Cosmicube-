@@ -25445,9 +25445,10 @@
 		],
 		"gfVersion": "impostor3-old",
 		"allowBFskin": false,
+		"chartVersion": "2",
 		"arrowSkins": [
-			"default",
-			"default"
+			"kade-play",
+			"kade-opp"
 		],
 		"needsVoices": true,
 		"trackSwap": false,
