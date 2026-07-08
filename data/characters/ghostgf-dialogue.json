@@ -102,6 +102,9 @@
 	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"flags": {
+		"ghost": true,
+		"floating": true,
+		"seeThrough": true,
 		"airshipRetro": "gf-ghost"
 	},
 	"scalableOffsets": false,

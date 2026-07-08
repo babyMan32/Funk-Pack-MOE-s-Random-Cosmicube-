@@ -2,362 +2,383 @@
 	"pausePortrait": "",
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				35,
 				70
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "BFidle"
+			"fps": 24,
+			"name": "BFidle",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				103,
 				88
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "BFleft",
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "BFleft"
+		},
+		{
+			"offsets": [
+				69,
+				45
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "BFdown"
+		},
+		{
+			"offsets": [
+				29,
+				129
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "BFup"
+		},
+		{
+			"offsets": [
+				24,
+				66
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "BFrigh"
+		},
+		{
+			"offsets": [
+				107,
+				87
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "BFfailleft"
+		},
+		{
+			"offsets": [
+				72,
+				64
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "BFfaildown"
+		},
+		{
+			"offsets": [
+				36,
+				127
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "BFfailup"
+		},
+		{
+			"offsets": [
+				28,
+				62
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "BFfailright"
+		},
+		{
+			"offsets": [
+				80,
+				570
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "pre-attack",
+			"indices": [],
+			"name": "BFpreatack"
+		},
+		{
+			"offsets": [
+				291,
+				371
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "attack",
+			"indices": [],
+			"name": "BFatack"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				170,
+				120
+			],
+			"anim": "dodge",
+			"fps": 24,
+			"name": "BFdodge",
+			"indices": []
+		},
+		{
+			"offsets": [
+				50,
+				100
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hurt",
+			"indices": [],
+			"name": "BFhit"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				37,
+				84
+			],
+			"anim": "heynormal",
+			"fps": 24,
+			"name": "hey",
+			"indices": []
+		},
+		{
+			"offsets": [
+				36,
+				84
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "heycool",
+			"indices": [],
+			"name": "BFcoolhey"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				37,
+				65
+			],
+			"anim": "3",
+			"fps": 24,
+			"name": "3",
+			"indices": []
+		},
+		{
+			"offsets": [
+				41,
+				76
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "2",
+			"indices": [],
+			"name": "2"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				44,
+				65
+			],
+			"anim": "1",
+			"fps": 24,
+			"name": "1",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				69,
-				45
+				350,
+				120
 			],
-			"anim": "singDOWN",
+			"anim": "boo",
 			"fps": 24,
-			"name": "BFdown",
+			"name": "booh",
+			"indices": []
+		},
+		{
+			"offsets": [
+				33,
+				140
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "haha",
+			"indices": [],
+			"name": "haha"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				61,
+				81
+			],
+			"anim": "swaws-transition",
+			"fps": 24,
+			"name": "BFcooltrans",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				37,
+				62
+			],
+			"anim": "idle-cool",
+			"fps": 24,
+			"name": "BFcoolidle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				165,
+				84
+			],
+			"anim": "singLEFT-cool",
+			"fps": 24,
+			"name": "BFcoolleft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				110,
+				49
+			],
+			"anim": "singDOWN-cool",
+			"fps": 24,
+			"name": "BFcooldown",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
 				29,
-				129
+				137
 			],
-			"anim": "singUP",
+			"anim": "singUP-cool",
 			"fps": 24,
-			"name": "BFup",
+			"name": "BFcoolup",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				24,
-				66
+				12,
+				93
 			],
-			"anim": "singRIGHT",
+			"anim": "singRIGHT-cool",
 			"fps": 24,
-			"name": "BFrigh",
+			"name": "BFcoolright",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				107,
-				87
+				165,
+				76
 			],
-			"anim": "singLEFTmiss",
+			"anim": "singLEFT-beatbox",
 			"fps": 24,
-			"name": "BFfailleft",
+			"name": "BFbeatboxleft",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				72,
-				64
+				96,
+				52
 			],
-			"anim": "singDOWNmiss",
+			"anim": "singDOWN-beatbox",
 			"fps": 24,
-			"name": "BFfaildown",
+			"name": "BFbeatboxdown",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				36,
-				127
+				85,
+				146
 			],
-			"anim": "singUPmiss",
+			"anim": "singUP-beatbox",
 			"fps": 24,
-			"name": "BFfailup",
+			"name": "BFbeatboxup",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				28,
-				62
+				27,
+				74
 			],
-			"anim": "singRIGHTmiss",
+			"anim": "singRIGHT-beatbox",
 			"fps": 24,
-			"name": "BFfailright",
+			"name": "BFbeatboxright",
 			"indices": []
 		},
 		{
-			"loop": false,
+			"loop": true,
+			"flipY": false,
 			"offsets": [
-				80,
-				570
+				38,
+				71
 			],
-			"anim": "pre-attack",
+			"anim": "scared",
 			"fps": 24,
-			"name": "BFpreatack",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				291,
-				371
-			],
-			"anim": "attack",
-			"fps": 24,
-			"name": "BFatack",
-			"indices": []
-		},
-		{
-			"offsets": [
-				170,
-				120
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "dodge",
+			"name": "BFscared",
 			"indices": [],
-			"name": "BFdodge"
+			"flipX": false
 		},
 		{
 			"loop": false,
-			"offsets": [
-				50,
-				100
-			],
-			"anim": "hurt",
-			"fps": 24,
-			"name": "BFhit",
-			"indices": []
-		},
-		{
+			"flipY": false,
 			"offsets": [
 				37,
-				84
+				65
 			],
-			"loop": false,
+			"anim": "idle-prep",
 			"fps": 24,
-			"anim": "heynormal",
-			"indices": [],
-			"name": "hey"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				36,
-				84
+			"name": "3 instance 1",
+			"indices": [
+				13
 			],
-			"anim": "heycool",
-			"fps": 24,
-			"name": "BFcoolhey",
-			"indices": []
-		},
-		{
-			"offsets": [
-				37,
-				66
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "3",
-			"indices": [],
-			"name": "3"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				41,
-				77
-			],
-			"anim": "2",
-			"fps": 24,
-			"name": "2",
-			"indices": []
-		},
-		{
-			"offsets": [
-				44,
-				66
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "1",
-			"indices": [],
-			"name": "1"
-		},
-		{
-			"offsets": [
-				350,
-				120
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "boo",
-			"indices": [],
-			"name": "booh"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				33,
-				140
-			],
-			"anim": "haha",
-			"fps": 24,
-			"name": "haha",
-			"indices": []
+			"flipX": false
 		},
 		{
 			"offsets": [
 				61,
 				81
 			],
-			"loop": false,
-			"fps": 24,
-			"anim": "swaws-transition",
-			"indices": [],
-			"name": "BFcooltrans"
-		},
-		{
-			"offsets": [
-				37,
-				62
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "idle-alt",
-			"indices": [],
-			"name": "BFcoolidle"
-		},
-		{
-			"offsets": [
-				165,
-				84
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT-alt",
-			"indices": [],
-			"name": "BFcoolleft"
-		},
-		{
-			"offsets": [
-				110,
-				49
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN-alt",
-			"indices": [],
-			"name": "BFcooldown"
-		},
-		{
-			"offsets": [
-				29,
-				137
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP-alt",
-			"indices": [],
-			"name": "BFcoolup"
-		},
-		{
-			"offsets": [
-				12,
-				93
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHT-alt",
-			"indices": [],
-			"name": "BFcoolright"
-		},
-		{
-			"offsets": [
-				165,
-				76
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT-beatbox",
-			"indices": [],
-			"name": "BFbeatboxleft"
-		},
-		{
-			"offsets": [
-				96,
-				52
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN-beatbox",
-			"indices": [],
-			"name": "BFbeatboxdown"
-		},
-		{
-			"offsets": [
-				85,
-				146
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP-beatbox",
-			"indices": [],
-			"name": "BFbeatboxup"
-		},
-		{
-			"offsets": [
-				27,
-				74
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHT-beatbox",
-			"indices": [],
-			"name": "BFbeatboxright"
-		},
-		{
-			"offsets": [
-				38,
-				71
-			],
-			"flipY": false,
-			"loop": true,
-			"fps": 24,
-			"anim": "scared",
-			"flipX": false,
-			"indices": [],
-			"name": "BFscared"
-		},
-		{
-			"offsets": [
-				37,
-				66
-			],
 			"indices": [
-				13
+				16,
+				6,
+				5,
+				4,
+				3,
+				2,
+				1
 			],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "idle-prep",
+			"anim": "un-swawsing",
 			"loop": false,
-			"name": "3 instance 1"
+			"name": "BFcooltrans instance 1"
 		}
 	],
 	"no_antialiasing": false,

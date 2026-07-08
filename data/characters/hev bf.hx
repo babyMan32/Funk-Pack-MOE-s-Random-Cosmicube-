@@ -1,9 +1,11 @@
 var allow_taunt = false;
 var allow_transition = false;
-var coolAnims = false;
 
-var animSuffixVariable:Array = ["", "-beatbox"];
-var idleSuffixVariable:Array = ["", "-alt"];
+var coolAnims = false;
+var beatboxAnims = false;
+
+var animSuffixVariable:Array = ["", "-cool", "-beatbox"];
+var idleSuffixVariable:Array = ["", "-cool", ""];
 var animSuffixInt:Int = 0;
 
 function onCreatePost()
@@ -13,6 +15,12 @@ function onCreatePost()
 }
 
 function onUpdate(elapsed:Float):Void
+{
+	onTaunt();
+	onAnimSwitch();
+}
+
+function onTaunt()
 {
 	if (inCutscene || cpuControlled) return;
 
@@ -29,23 +37,27 @@ function onUpdate(elapsed:Float):Void
 	{
 		allow_taunt = true;
 	}
+}
 
+function onAnimSwitch()
+{
 	if (FlxG.keys.justPressed.CONTROL && boyfriend.curCharacter == 'hev bf' && allow_transition)
 	{
-		animSuffixInt = (animSuffixInt + 1) % 2;
+		animSuffixInt = (animSuffixInt + 1) % 3;
 
 		boyfriend.animSuffix = animSuffixVariable[animSuffixInt];
 		boyfriend.idleSuffix = idleSuffixVariable[animSuffixInt];
 
-		coolAnims = (boyfriend.animSuffix == '' ? false : true);
+		coolAnims = (boyfriend.animSuffix == '-cool' ? true : false);
+		beatboxAnims = (boyfriend.animSuffix == '-beatbox' ? true : false);
 
-		boyfriend.playAnim(coolAnims ? 'swaws-transition' : 'heynormal');
-		boyfriend.specialAnim = boyfriend.holding = true;
+		boyfriend.playAnim(coolAnims ? 'swaws-transition' : (beatboxAnims ? 'un-swawsing' : 'heynormal'));
+		boyfriend.specialAnim = true;
 
 		allow_transition = false;
 	}
 
-	if (boyfriend.getAnimName() != 'heynormal' && boyfriend.getAnimName() != 'swaws-transition' && !game.startingSong)
+	if (boyfriend.getAnimName() != 'swaws-transition' && boyfriend.getAnimName() != 'un-swawsing' && boyfriend.getAnimName() != 'swaws-transition' && !game.startingSong)
 	{
 		allow_transition = true;
 	}
@@ -57,19 +69,19 @@ function onCountdownTick(tick)
 	{
 		case 0:
 			boyfriend.playAnim('3');
-			boyfriend.specialAnim = boyfriend.holding = true;
+			boyfriend.specialAnim = true;
 
 		case 1:
 			boyfriend.playAnim('2');
-			boyfriend.specialAnim = boyfriend.holding = true;
+			boyfriend.specialAnim = true;
 
 		case 2:
 			boyfriend.playAnim('1');
-			boyfriend.specialAnim = boyfriend.holding = true;
+			boyfriend.specialAnim = true;
 
 		case 3:
 			boyfriend.playAnim('heynormal');
-			boyfriend.specialAnim = boyfriend.holding = true;
+			boyfriend.specialAnim = true;
 			boyfriend.idleSuffix = '';
 	}
 }
