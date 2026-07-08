@@ -18,12 +18,12 @@ function rating_check():Bool
 {
 	if ((ratingPercent * 100) > rating_limit)
 	{
-		if (game.songMisses < miss_limit)
+		if (songMisses < miss_limit)
 		{
 			return true;
 		}
 
-		if (game.songMisses >= miss_limit)
+		if (songMisses >= miss_limit)
 		{
 			return false;
 		}
@@ -41,7 +41,7 @@ function onUpdate()
 
 	doing_good = rating_check();
 
-	totalNoteCount = game.totalNotesHit + game.songMisses;
+	totalNoteCount = game.totalNotesHit + songMisses;
 
 	if (totalNoteCount > 0)
 	{

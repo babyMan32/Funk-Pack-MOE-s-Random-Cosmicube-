@@ -4,9 +4,6 @@ var camMovedToOpp = false;
 function onLoad()
 {
 	hasColor = false;
-
-	playHUD.scoreTxt.x += 50;
-	playHUD.scoreTxt.y += 15;
 }
 
 function onCreatePost()
