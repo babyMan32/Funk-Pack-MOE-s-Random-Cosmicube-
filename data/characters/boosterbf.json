@@ -1,0 +1,239 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				53,
+				-9
+			],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "BFALTLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-28,
+				46
+			],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "BFALTUp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-19,
+				-2
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "BFALTRight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				30,
+				-73
+			],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "BFALTDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				36,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "BFLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				36,
+				3
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "BFMISSLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				16,
+				-59
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "BFDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				16,
+				-37
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "BFMISSDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-19,
+				38
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "BFMISSUp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-19,
+				38
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "BFUp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "BFRight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				1
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "BFMISSRight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				15,
+				11
+			],
+			"anim": "dodge",
+			"fps": 24,
+			"name": "BFDodge",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				75,
+				-1
+			],
+			"anim": "hurt",
+			"fps": 24,
+			"name": "BFHit",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				0
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "BFHEY",
+			"indices": []
+		},
+		{
+			"offsets": [
+				49,
+				-36
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "BF Dead Loop"
+		},
+		{
+			"offsets": [
+				49,
+				28
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "BF Dead confirm"
+		},
+		{
+			"offsets": [
+				49,
+				-30
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "BF dies"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "BFIdle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/funk story/BoosterBoyfriend",
+	"position": [
+		20,
+		310
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bfh",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -9097255,
+	"camera_position": [
+		-120,
+		35
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

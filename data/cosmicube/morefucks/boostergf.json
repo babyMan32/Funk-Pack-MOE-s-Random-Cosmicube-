@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Girlfriend (Funk Story)",
+	"description": "so sassy\n\nRequested by wii0658_32628",
+
+	"node":
+	{
+		"parent": "boosterbf",
+		"direction": "north"
+	}
+}

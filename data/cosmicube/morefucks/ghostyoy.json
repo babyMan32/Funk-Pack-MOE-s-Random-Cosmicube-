@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 99999999,
+	
+	"title": "Ghostyoy",
+	"description": "fucking lard",
+
+	"node": {
+		"parent": "SammyGoog-play",
+		"direction": "east"
+	},
+	
+	"color": [
+		206,
+		150,
+		89
+	]
+}

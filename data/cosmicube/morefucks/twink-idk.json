@@ -8,5 +8,11 @@
 	"node": {
 		"direction": "east",
 		"parent": "glung"
-	}
+	},
+
+	"color": [
+		255,
+		255,
+		255
+	]
 }
