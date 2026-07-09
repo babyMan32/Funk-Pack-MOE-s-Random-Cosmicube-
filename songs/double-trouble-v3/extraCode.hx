@@ -1,38 +1,16 @@
-var camMovedToPlay = false;
-var camMovedToOpp = false;
-
 function onLoad()
 {
-	hasColor = false;
-	ClientPrefs.inDevMode = false;
-	ClientPrefs.timeBarType = 'Disabled';
-	ClientPrefs.fpsDisplayType = 'Disabled';
+	init_kade_hud = true;
 }
 
 function onCreatePost()
 {
 	allowIconSwitching = false;
 	playHUD.iconP2.changeIcon(oppIconDuo);
-	playHUD.healthBar.setColors(0xfd0101, 0x6cf83e);
 	pauseOverride = pauseDuo;
-}
 
-function onMoveCamera(focus)
-{
-	if (focus == 'boyfriend' && !camMovedToPlay)
-	{
-		dad.playAnim('idle', true);
-		gf.playAnim('idle', true);
+	if (init_kade_hud) return;
 
-		camMovedToPlay = true;
-		camMovedToOpp = false;
-	}
-
-	if (focus == 'dad' && !camMovedToOpp)
-	{
-		boyfriend.playAnim('idle', true);
-
-		camMovedToPlay = false;
-		camMovedToOpp = true;
-	}
+	playHUD.healthBar.setColors(hpColorDuo);
+	if (hasColor) playHUD.scoreTxt.color = hpColorDuo;
 }
