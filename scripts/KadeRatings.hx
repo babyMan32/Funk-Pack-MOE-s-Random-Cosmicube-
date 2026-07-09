@@ -23,7 +23,7 @@ public function KadeRatings()
 
 public function KadeCombos()
 {
-	if (!StartedPlayerTurns) return '';
+	if (!StartedPlayerTurns || cpuControlled) return '';
 
 	if (goods < 1) return '(MFC) ';
 	if (bads < 1 && shits < 1) return '(GFC) ';

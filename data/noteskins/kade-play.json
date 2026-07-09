@@ -133,7 +133,7 @@
 					-16,
 					14
 				],
-				"xmlName": "splash 1",
+				"xmlName": "note splash purple 1",
 				"anim": "splash"
 			},
 			{
@@ -141,7 +141,7 @@
 					-16,
 					14
 				],
-				"xmlName": "splash 2",
+				"xmlName": "note splash purple 2",
 				"anim": "splash-1"
 			}
 		],
@@ -151,7 +151,7 @@
 					-16,
 					14
 				],
-				"xmlName": "splash 1",
+				"xmlName": "note splash blue 1",
 				"anim": "splash"
 			},
 			{
@@ -159,7 +159,7 @@
 					-16,
 					14
 				],
-				"xmlName": "splash 2",
+				"xmlName": "note splash blue 2",
 				"anim": "splash-1"
 			}
 		],
@@ -169,7 +169,7 @@
 					-16,
 					14
 				],
-				"xmlName": "splash 1",
+				"xmlName": "note splash green 1",
 				"anim": "splash"
 			},
 			{
@@ -177,7 +177,7 @@
 					-16,
 					14
 				],
-				"xmlName": "splash 2",
+				"xmlName": "note splash green 2",
 				"anim": "splash-1"
 			}
 		],
@@ -187,7 +187,7 @@
 					-16,
 					14
 				],
-				"xmlName": "splash 1",
+				"xmlName": "note splash red 1",
 				"anim": "splash"
 			},
 			{
@@ -195,7 +195,7 @@
 					-16,
 					14
 				],
-				"xmlName": "splash 2",
+				"xmlName": "note splash red 2",
 				"anim": "splash-1"
 			}
 		]
