@@ -64,3 +64,11 @@ function onMoveCamera(focus)
 		camMovedToOpp = true;
 	}
 }
+
+function onPause()
+{
+	if (!init_kade_hud) return;
+
+	openSubState(new ScriptedSubstate('CustomPauseSubState'));
+	return Function_Stop;
+}
