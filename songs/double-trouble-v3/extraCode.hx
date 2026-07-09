@@ -4,13 +4,16 @@ var camMovedToOpp = false;
 function onLoad()
 {
 	hasColor = false;
+	ClientPrefs.inDevMode = false;
+	ClientPrefs.timeBarType = 'Disabled';
+	ClientPrefs.fpsDisplayType = 'Disabled';
 }
 
 function onCreatePost()
 {
 	allowIconSwitching = false;
 	playHUD.iconP2.changeIcon(oppIconDuo);
-	playHUD.healthBar.setColors(0xFFfd0101, 0xFF6cf83e);
+	playHUD.healthBar.setColors(0xfd0101, 0x6cf83e);
 	pauseOverride = pauseDuo;
 }
 
