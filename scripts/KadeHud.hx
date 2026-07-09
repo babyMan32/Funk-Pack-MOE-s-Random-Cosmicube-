@@ -3,16 +3,6 @@ var camMovedToOpp = false;
 
 public var init_kade_hud = false;
 
-function onLoad()
-{
-	if (!init_kade_hud) return;
-
-	hasColor = false;
-	ClientPrefs.inDevMode = false;
-	ClientPrefs.timeBarType = 'Disabled';
-	ClientPrefs.fpsDisplayType = 'Disabled';
-}
-
 function onCreatePost()
 {
 	if (!init_kade_hud) return;
@@ -34,6 +24,17 @@ function onCreatePost()
 	playHUD.scoreTxt.visible = false;
 
 	playHUD.healthBar.setColors(0xfd0101, 0x6cf83e);
+
+	playHUD.ratingPrefix = 'ui/v3/';
+
+	FlxG.mouse.visible = false;
+
+	gf.camDisplacement = dad.camDisplacement = boyfriend.camDisplacement = 0;
+}
+
+function onUpdate(elapsed:Float):Void
+{
+	iconP1.scale.x = iconP1.scale.y = iconP2.scale.x = iconP2.scale.y = 1;
 }
 
 function onUpdatePost(elapsed:Float):Void
@@ -63,12 +64,4 @@ function onMoveCamera(focus)
 		camMovedToPlay = false;
 		camMovedToOpp = true;
 	}
-}
-
-function onPause()
-{
-	if (!init_kade_hud) return;
-
-	openSubState(new ScriptedSubstate('CustomPauseSubState'));
-	return Function_Stop;
 }

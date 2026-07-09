@@ -45,24 +45,6 @@ class PauseSubState extends MusicBeatSubstate
 		}
 		difficultyChoices.push('BACK');
 
-		//this is prolly scuffed but who cares brahhhh it works - cc
-
-		if (PlayState.SONG.stage.toLowerCase() == 'defeat')
-			pauseMusic = new FlxSound().loadEmbedded(Paths.music('blackPause'), true, true);
-		else if(PlayState.SONG.stage.toLowerCase() == 'school' || PlayState.SONG.stage.toLowerCase() == 'tomtus')
-			pauseMusic = new FlxSound().loadEmbedded(Paths.music('tomongusPause'), true, true);
-		else if (PlayState.SONG.stage.toLowerCase() == 'finale')
-			pauseMusic = new FlxSound().loadEmbedded(Paths.music('finalePause'), true, true);
-		else if (PlayState.SONG.stage.toLowerCase() == 'alpha')
-			pauseMusic = new FlxSound().loadEmbedded(Paths.music('untitled'), true, true);
-		else
-			pauseMusic = new FlxSound().loadEmbedded(Paths.music('sussus_muzak'), true, true);
-
-		pauseMusic.volume = 0;
-		pauseMusic.play(false, FlxG.random.int(0, Std.int(pauseMusic.length / 2)));
-
-		FlxG.sound.list.add(pauseMusic);
-
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		bg.alpha = 0;
 		bg.scrollFactor.set();

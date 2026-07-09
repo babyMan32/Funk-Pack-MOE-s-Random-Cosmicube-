@@ -54,8 +54,6 @@ function onLoad()
 
 function onCreatePost()
 {
-	gf.camDisplacement = dad.camDisplacement = boyfriend.camDisplacement = 0;
-
 	camSpecialThing([150, 350], [700, 350], -1);
 }
 
