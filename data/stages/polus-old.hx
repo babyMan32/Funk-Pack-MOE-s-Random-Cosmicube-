@@ -69,7 +69,7 @@ function onCreatePost()
     fakeScoreText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 	fakeScoreText.visible = !ClientPrefs.hideHud;
 	fakeScoreText.x = playHUD.scoreTxt.x + 400;
-	fakeScoreText.y = playHUD.scoreTxt.y + 20;
+	fakeScoreText.y = playHUD.scoreTxt.y + 15;
 	playHUD.add(fakeScoreText);
 
 	playHUD.scoreTxt.visible = false;
