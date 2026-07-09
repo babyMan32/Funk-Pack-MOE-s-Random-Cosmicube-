@@ -80,10 +80,13 @@ function onEvent(eventName, value1, value2)
 			switch (value1)
 			{
 				case 'green':
-					camSpecialThing([300, 300], [700, 350], -1); //I'm doing this my own special way
+					camSpecialThing([300, 300], [700, 350], 0.9); //I'm doing this my own special way
 
 				case 'not green':
-					camSpecialThing([150, 350], [700, 350], -1);
+					camSpecialThing([150, 350], [700, 350], 0.9);
+
+				case 'see all':
+					camSpecialThing([425, 325], [425, 325], 0.75);
 			}
 
 		case 'Opponent Two':
