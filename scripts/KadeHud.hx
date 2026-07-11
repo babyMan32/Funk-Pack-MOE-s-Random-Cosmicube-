@@ -15,11 +15,11 @@ function onCreatePost()
 	watermark.visible = !ClientPrefs.hideHud;
 	watermark.x += 5;
 	watermark.y = FlxG.height - 20;
-	playHUD.add(watermark);
+	playHUD.add(watermark); //kade engine watermark
 
 	fakeScoreText = new FlxText(0, 0, 1280, "Score: 0 | Combo Breaks: 0 | Accuracy: 0% | N/A");
 	fakeScoreText.setFormat(Paths.font("vcr.ttf", false), 16, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-	fakeScoreText.alignment = 'right';
+	fakeScoreText.alignment = 'right'; //why were you so hard to figure out
 	fakeScoreText.visible = !ClientPrefs.hideHud;
 	fakeScoreText.x = playHUD.scoreTxt.x - 250;
 	fakeScoreText.y = playHUD.scoreTxt.y + (ClientPrefs.downScroll ? -115 : 15);
@@ -27,21 +27,21 @@ function onCreatePost()
 
 	playHUD.scoreTxt.visible = false;
 
-	playHUD.ratingPrefix = 'ui/v3/';
+	playHUD.ratingPrefix = 'ui/v3/'; //pulled straight from Impostor V3's assets
 
 	FlxG.mouse.visible = false;
 
 	dad.camDisplacement = boyfriend.camDisplacement = 0;
 	
 	boyfriend.gameoverLoopDeathSound = 'v3/gameOver';
-	boyfriend.gameoverConfirmDeathSound = 'v3/gameOverEnd';
+	boyfriend.gameoverConfirmDeathSound = 'v3/gameOverEnd'; //so retro
 }
 
 function onUpdate(elapsed:Float):Void
 {
 	if (!init_kade_hud) return;
 
-	iconP1.scale.x = iconP1.scale.y = iconP2.scale.x = iconP2.scale.y = 1;
+	iconP1.scale.x = iconP1.scale.y = iconP2.scale.x = iconP2.scale.y = 1; //that signature kade engine icon bop
 }
 
 function onUpdatePost(elapsed:Float):Void
@@ -51,7 +51,7 @@ function onUpdatePost(elapsed:Float):Void
 	fakeScoreText.text = "Score: " + songScore + " | Combo Breaks: " + songMisses + " | Accuracy: " + Math.round(ratingPercent * 10000) / 100 + "% | " + KadeCombos() + KadeRatings();
 }
 
-function onMoveCamera(focus)
+function onMoveCamera(focus) //set anim back to idle to replicate that weird bug kade had
 {
 	if (!init_kade_hud) return;
 

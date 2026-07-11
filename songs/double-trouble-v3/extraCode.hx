@@ -1,7 +1,7 @@
 var dev_store;
 var fps_store;
 
-var camMovedToPlayExtra = false;
+var camMovedToPlayExtra = false; //more bullshit var
 
 function onLoad()
 {
@@ -9,7 +9,7 @@ function onLoad()
 
 	hasColor = false;
 
-	dev_store = ClientPrefs.inDevMode;
+	dev_store = ClientPrefs.inDevMode; //kinda fucky but we roll with this shit
 	fps_store = ClientPrefs.fpsDisplayType;
 
 	ClientPrefs.inDevMode = false;
@@ -17,7 +17,7 @@ function onLoad()
 
 	playHUD.timeBar.visible = playHUD.timeTxt.visible = false;
 
-	FlxG.stage.window.title = 'FNF: VS Impostor';
+	FlxG.stage.window.title = 'FNF: VS Impostor'; //haha the window title changed lmfao
 }
 
 function onCreatePost()
@@ -28,7 +28,7 @@ function onCreatePost()
 
 	if (init_kade_hud) return;
 
-	playHUD.healthBar.setColors(hpColorDuo);
+	playHUD.healthBar.setColors(hpColorDuo); //doubel trouble specific code
 	if (hasColor) playHUD.scoreTxt.color = hpColorDuo;
 
 	gf.camDisplacement = 0;
