@@ -11,7 +11,6 @@ var container = new FlxTypedSpriteGroup();
 
 var micPlatform:Bool = false;
 var killMic:Bool = false;
-var stepToNormal:Int = 128;
 
 function onLoad()
 {
