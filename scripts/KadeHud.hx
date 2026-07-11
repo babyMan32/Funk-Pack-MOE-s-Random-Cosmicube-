@@ -11,7 +11,7 @@ function onCreatePost()
 	if (!init_kade_hud) return;
 
 	watermark = new FlxText(0, 0, 0, PlayState.SONG.song + " - Normal | KE 1.6");
-	watermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+	watermark.setFormat(Paths.font("vcr.ttf"), 14, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 	watermark.visible = !ClientPrefs.hideHud;
 	watermark.x += 5;
 	watermark.y = FlxG.height - 20;
@@ -21,6 +21,7 @@ function onCreatePost()
 	fakeScoreText.setFormat(Paths.font("vcr.ttf", false), 16, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 	fakeScoreText.alignment = 'right'; //why were you so hard to figure out
 	fakeScoreText.visible = !ClientPrefs.hideHud;
+	fakeScoreText.visible = !cpuControlled;
 	fakeScoreText.x = playHUD.scoreTxt.x - 250;
 	fakeScoreText.y = playHUD.scoreTxt.y + (ClientPrefs.downScroll ? -115 : 15);
 	playHUD.add(fakeScoreText);
@@ -35,6 +36,10 @@ function onCreatePost()
 	
 	boyfriend.gameoverLoopDeathSound = 'v3/gameOver';
 	boyfriend.gameoverConfirmDeathSound = 'v3/gameOverEnd'; //so retro
+
+	healthBar.y += 5;
+	iconP1.y += 5;
+	iconP2.y += 5; //lower the healthbar ever so sligjhtly
 }
 
 function onUpdate(elapsed:Float):Void
@@ -71,5 +76,15 @@ function onMoveCamera(focus) //set anim back to idle to replicate that weird bug
 
 		camMovedToPlay = false;
 		camMovedToOpp = true;
+	}
+}
+
+function goodNoteHit(note)
+{
+	final strum:StrumNote = note.strum;
+
+	if (strum != null && cpuControlled)
+	{
+		strum.playAnim('static', true); //more kade engine jank lovely
 	}
 }
