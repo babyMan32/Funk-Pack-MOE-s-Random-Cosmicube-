@@ -1,22 +1,23 @@
 var dev_store;
-var timebar_store;
 var fps_store;
+
+var camMovedToPlayExtra = false;
 
 function onLoad()
 {
 	init_kade_hud = true;
 
 	hasColor = false;
+
 	dev_store = ClientPrefs.inDevMode;
-	timebar_store = ClientPrefs.timeBarType;
 	fps_store = ClientPrefs.fpsDisplayType;
 
 	ClientPrefs.inDevMode = false;
-	ClientPrefs.timeBarType = 'Disabled';
 	ClientPrefs.fpsDisplayType = 'Disabled';
 
-	playHUD.timeBar.visible = false;
-	playHUD.timeTxt.visible = false;
+	playHUD.timeBar.visible = playHUD.timeTxt.visible = false;
+
+	FlxG.stage.window.title = 'FNF: VS Impostor';
 }
 
 function onCreatePost()
@@ -29,11 +30,45 @@ function onCreatePost()
 
 	playHUD.healthBar.setColors(hpColorDuo);
 	if (hasColor) playHUD.scoreTxt.color = hpColorDuo;
+
+	gf.camDisplacement = 0;
 }
 
 function onDestroy()
 {
+	init_kade_hud = false;
+
 	ClientPrefs.inDevMode = dev_store;
-	ClientPrefs.timeBarType = timebar_store;
 	ClientPrefs.fpsDisplayType = fps_store;
+
+	FlxG.stage.window.title = 'VS IMPOSTOR LEGACY v1.1.1b';
+}
+
+function onGameOver()
+{
+	init_kade_hud = false;
+
+	ClientPrefs.inDevMode = dev_store;
+	ClientPrefs.fpsDisplayType = fps_store;
+
+	FlxG.stage.window.title = 'VS IMPOSTOR LEGACY v1.1.1b';
+}
+
+function onMoveCamera(focus)
+{
+	if (!init_kade_hud) return;
+
+	if (middleCam) return;
+
+	if (focus == 'boyfriend' && !camMovedToPlayExtra)
+	{
+		gf.playAnim('idle', true);
+
+		camMovedToPlayExtra = true;
+	}
+
+	if (focus == 'dad' && camMovedToPlayExtra)
+	{
+		camMovedToPlayExtra = false;
+	}
 }

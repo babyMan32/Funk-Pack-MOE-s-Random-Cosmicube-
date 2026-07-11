@@ -15,6 +15,8 @@ public var hpColorDuo = '-8355032';
 
 public var allowIconSwitching = true;
 
+public var middleCam = false;
+
 function onLoad()
 {
 	var sky:FlxSprite = new FlxSprite(-834.3, -620.5).loadGraphic(Paths.image(ext + 'polusSky'));
@@ -81,12 +83,15 @@ function onEvent(eventName, value1, value2)
 			{
 				case 'green':
 					camSpecialThing([300, 300], [700, 350], 0.9); //I'm doing this my own special way
+					middleCam = false;
 
 				case 'not green':
 					camSpecialThing([150, 350], [700, 350], 0.9);
+					middleCam = false;
 
 				case 'see all':
 					camSpecialThing([425, 325], [425, 325], 0.75);
+					middleCam = true;
 			}
 
 		case 'Opponent Two':

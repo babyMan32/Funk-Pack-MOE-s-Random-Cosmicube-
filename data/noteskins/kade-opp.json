@@ -133,7 +133,7 @@
 					-16,
 					14
 				],
-				"xmlName": "note splash purple 1",
+				"xmlName": "note impact 1 purple",
 				"anim": "splash"
 			},
 			{
@@ -141,7 +141,7 @@
 					-16,
 					14
 				],
-				"xmlName": "note splash purple 2",
+				"xmlName": "note impact 2 purple",
 				"anim": "splash-1"
 			}
 		],
@@ -151,7 +151,7 @@
 					-16,
 					14
 				],
-				"xmlName": "note splash blue 1",
+				"xmlName": "note impact 1  blue",
 				"anim": "splash"
 			},
 			{
@@ -159,7 +159,7 @@
 					-16,
 					14
 				],
-				"xmlName": "note splash blue 2",
+				"xmlName": "note impact 2 blue",
 				"anim": "splash-1"
 			}
 		],
@@ -169,7 +169,7 @@
 					-16,
 					14
 				],
-				"xmlName": "note splash green 1",
+				"xmlName": "note impact 1 green",
 				"anim": "splash"
 			},
 			{
@@ -177,7 +177,7 @@
 					-16,
 					14
 				],
-				"xmlName": "note splash green 2",
+				"xmlName": "note impact 2 green",
 				"anim": "splash-1"
 			}
 		],
@@ -187,7 +187,7 @@
 					-16,
 					14
 				],
-				"xmlName": "note splash red 1",
+				"xmlName": "note impact 1 red",
 				"anim": "splash"
 			},
 			{
@@ -195,7 +195,7 @@
 					-16,
 					14
 				],
-				"xmlName": "note splash red 2",
+				"xmlName": "note impact 2 red",
 				"anim": "splash-1"
 			}
 		]
@@ -208,7 +208,7 @@
 					0,
 					0
 				],
-				"xmlName": "purple",
+				"xmlName": "purple alone",
 				"anim": "scroll"
 			},
 			{
@@ -217,7 +217,7 @@
 					0,
 					0
 				],
-				"xmlName": "purple hold piece",
+				"xmlName": "purple hold",
 				"anim": "hold"
 			},
 			{
@@ -226,7 +226,7 @@
 					0,
 					0
 				],
-				"xmlName": "pruple end hold",
+				"xmlName": "purple tail",
 				"anim": "holdend"
 			}
 		],
@@ -237,7 +237,7 @@
 					0,
 					0
 				],
-				"xmlName": "blue",
+				"xmlName": "blue alone",
 				"anim": "scroll"
 			},
 			{
@@ -246,7 +246,7 @@
 					0,
 					0
 				],
-				"xmlName": "blue hold piece",
+				"xmlName": "blue hold",
 				"anim": "hold"
 			},
 			{
@@ -255,7 +255,7 @@
 					0,
 					0
 				],
-				"xmlName": "blue hold end",
+				"xmlName": "blue tail",
 				"anim": "holdend"
 			}
 		],
@@ -266,7 +266,7 @@
 					0,
 					0
 				],
-				"xmlName": "green",
+				"xmlName": "green alone",
 				"anim": "scroll"
 			},
 			{
@@ -275,7 +275,7 @@
 					0,
 					0
 				],
-				"xmlName": "green hold piece",
+				"xmlName": "green hold",
 				"anim": "hold"
 			},
 			{
@@ -284,7 +284,7 @@
 					0,
 					0
 				],
-				"xmlName": "green hold end",
+				"xmlName": "green tail",
 				"anim": "holdend"
 			}
 		],
@@ -295,7 +295,7 @@
 					0,
 					0
 				],
-				"xmlName": "red",
+				"xmlName": "red alone",
 				"anim": "scroll"
 			},
 			{
@@ -304,7 +304,7 @@
 					0,
 					0
 				],
-				"xmlName": "red hold piece",
+				"xmlName": "red hold",
 				"anim": "hold"
 			},
 			{
@@ -313,7 +313,7 @@
 					0,
 					0
 				],
-				"xmlName": "red hold end",
+				"xmlName": "red tail",
 				"anim": "holdend"
 			}
 		]
