@@ -10,7 +10,7 @@ function onCreatePost()
 {
 	if (!init_kade_hud) return;
 
-	cpuControlled = true;
+	//cpuControlled = true;
 
 	watermark = new FlxText(0, 0, 0, PlayState.SONG.song + " - Normal | KE 1.6");
 	watermark.setFormat(Paths.font("vcr.ttf"), 14, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
