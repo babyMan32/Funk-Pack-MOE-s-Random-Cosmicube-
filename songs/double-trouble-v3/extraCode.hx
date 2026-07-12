@@ -20,18 +20,24 @@ function onLoad()
 	FlxG.stage.window.title = 'FNF: VS Impostor'; //haha the window title changed lmfao
 }
 
+function onStartCountdown()
+{
+	FlxG.signals.postUpdate.addOnce(function() {
+		kadeIconDad.changeIcon(oppIconDuo);
+	});
+}
+
 function onCreatePost()
 {
 	allowIconSwitching = false;
-	playHUD.iconP2.changeIcon(oppIconDuo);
 	pauseOverride = pauseDuo;
+
+	gf.camDisplacement = 0;
 
 	if (init_kade_hud) return;
 
 	playHUD.healthBar.setColors(hpColorDuo); //doubel trouble specific code
 	if (hasColor) playHUD.scoreTxt.color = hpColorDuo;
-
-	gf.camDisplacement = 0;
 }
 
 function onDestroy()

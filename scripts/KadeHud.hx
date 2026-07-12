@@ -3,44 +3,49 @@ public var camMovedToOpp = false;
 
 public var init_kade_hud = false;
 
-var watermark:FlxText;
+public var watermark:FlxText;
+
 var fakeScoreText:FlxText;
 
-function onCreatePost()
+function onStartCountdown()
 {
-	if (!init_kade_hud) return;
+	FlxG.signals.postUpdate.addOnce(function() {
+		if (!init_kade_hud) return;
 
-	cpuControlled = true;
+		//cpuControlled = true;
 
-	watermark = new FlxText(0, 0, 0, PlayState.SONG.song + " - Normal | KE 1.6");
-	watermark.setFormat(Paths.font("vcr.ttf"), 14, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-	watermark.visible = !ClientPrefs.hideHud;
-	watermark.x += 5;
-	watermark.y = FlxG.height - 20;
-	playHUD.add(watermark); //kade engine watermark
+		watermark = new FlxText(0, 0, 0, PlayState.SONG.song + " - Normal | KE 1.6");
+		watermark.setFormat(Paths.font("vcr.ttf"), 14, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		watermark.visible = !ClientPrefs.hideHud;
+		watermark.x += 5;
+		watermark.y = FlxG.height - 20;
+		playHUD.add(watermark); //kade engine watermark
 
-	fakeScoreText = new FlxText(0, 0, 1280, "Score: 0 | Combo Breaks: 0 | Accuracy: 0% | N/A");
-	fakeScoreText.setFormat(Paths.font("vcr.ttf", false), 16, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-	fakeScoreText.alignment = 'right'; //why were you so hard to figure out
-	fakeScoreText.visible = !ClientPrefs.hideHud;
-	fakeScoreText.visible = !cpuControlled;
-	fakeScoreText.x = playHUD.scoreTxt.x - 250;
-	fakeScoreText.y = playHUD.scoreTxt.y + (ClientPrefs.downScroll ? -115 : 15);
-	playHUD.add(fakeScoreText);
+		fakeScoreText = new FlxText(0, 0, 1280, "Score: 0 | Combo Breaks: 0 | Accuracy: 0% | N/A");
+		fakeScoreText.setFormat(Paths.font("vcr.ttf", false), 16, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		fakeScoreText.alignment = 'right'; //why were you so hard to figure out
+		fakeScoreText.visible = !ClientPrefs.hideHud;
+		fakeScoreText.visible = !cpuControlled;
+		fakeScoreText.x = playHUD.scoreTxt.x - 250;
+		fakeScoreText.y = playHUD.scoreTxt.y + (ClientPrefs.downScroll ? -115 : 15);
+		playHUD.add(fakeScoreText);
 
-	playHUD.scoreTxt.visible = false;
+		playHUD.scoreTxt.visible = false;
 
-	FlxG.mouse.visible = false;
+		FlxG.mouse.visible = false;
 
-	dad.camDisplacement = boyfriend.camDisplacement = 0;
+		dad.camDisplacement = boyfriend.camDisplacement = 0;
 	
-	boyfriend.gameoverLoopDeathSound = 'v3/gameOver';
-	boyfriend.gameoverConfirmDeathSound = 'v3/gameOverEnd'; //so retro
+		boyfriend.gameoverLoopDeathSound = 'v3/gameOver';
+		boyfriend.gameoverConfirmDeathSound = 'v3/gameOverEnd'; //so retro
+	});
 }
 
 function onUpdate(elapsed:Float):Void
 {
 	if (!init_kade_hud) return;
+
+	if (game.startingSong) return;
 
 	iconP1.scale.x = iconP1.scale.y = iconP2.scale.x = iconP2.scale.y = 1; //that signature kade engine icon bop
 }
@@ -48,6 +53,8 @@ function onUpdate(elapsed:Float):Void
 function onUpdatePost(elapsed:Float):Void
 {
 	if (!init_kade_hud) return;
+
+	if (game.startingSong) return;
 
 	fakeScoreText.text = "Score: " + songScore + " | Combo Breaks: " + songMisses + " | Accuracy: " + Math.round(ratingPercent * 10000) / 100 + "% | " + KadeCombos() + KadeRatings();
 
