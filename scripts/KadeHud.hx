@@ -10,7 +10,7 @@ function onCreatePost()
 {
 	if (!init_kade_hud) return;
 
-	//cpuControlled = true;
+	cpuControlled = true;
 
 	watermark = new FlxText(0, 0, 0, PlayState.SONG.song + " - Normal | KE 1.6");
 	watermark.setFormat(Paths.font("vcr.ttf"), 14, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -36,10 +36,6 @@ function onCreatePost()
 	
 	boyfriend.gameoverLoopDeathSound = 'v3/gameOver';
 	boyfriend.gameoverConfirmDeathSound = 'v3/gameOverEnd'; //so retro
-
-	healthBar.y += 5;
-	iconP1.y += 5;
-	iconP2.y += 5; //lower the healthbar ever so sligjhtly
 }
 
 function onUpdate(elapsed:Float):Void

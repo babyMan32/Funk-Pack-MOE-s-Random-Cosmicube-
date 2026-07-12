@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Roxanne",
+	"description": "Character by/Requested by baban.fla",
+
+	"node":
+	{
+		"parent": "gf-needlemouse",
+		"direction": "east"
+	}
+}

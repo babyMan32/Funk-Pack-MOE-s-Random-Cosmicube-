@@ -36,10 +36,14 @@ public function KadeCombos()
 
 function noteMiss()
 {
+	if (cpuControlled) return;
+
 	StartedPlayerTurns = true;
 }
 
 function goodNoteHit()
 {
+	if (cpuControlled) return;
+
 	StartedPlayerTurns = true;
 }
