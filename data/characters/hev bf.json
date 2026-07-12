@@ -238,7 +238,7 @@
 				37,
 				62
 			],
-			"anim": "idle-cool",
+			"anim": "idle-alt",
 			"fps": 24,
 			"name": "BFcoolidle",
 			"indices": []
@@ -249,7 +249,7 @@
 				165,
 				84
 			],
-			"anim": "singLEFT-cool",
+			"anim": "singLEFT-alt",
 			"fps": 24,
 			"name": "BFcoolleft",
 			"indices": []
@@ -260,7 +260,7 @@
 				110,
 				49
 			],
-			"anim": "singDOWN-cool",
+			"anim": "singDOWN-alt",
 			"fps": 24,
 			"name": "BFcooldown",
 			"indices": []
@@ -271,7 +271,7 @@
 				29,
 				137
 			],
-			"anim": "singUP-cool",
+			"anim": "singUP-alt",
 			"fps": 24,
 			"name": "BFcoolup",
 			"indices": []
@@ -282,7 +282,7 @@
 				12,
 				93
 			],
-			"anim": "singRIGHT-cool",
+			"anim": "singRIGHT-alt",
 			"fps": 24,
 			"name": "BFcoolright",
 			"indices": []

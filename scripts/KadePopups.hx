@@ -12,6 +12,8 @@ public var kade_combo_counter = 0;
 
 function onCreatePost()
 {
+	if (!init_kade_hud) return;
+
 	ratingGraphic.visible = false;
 	ratingNumGroup.visible = false;
 }
@@ -28,6 +30,8 @@ function goodNoteHit(note)
 
 function noteMiss(note)
 {
+	if (!init_kade_hud) return;
+
 	currentNumberOnes = 0;
 	currentNumberTens = 0;
 	currentNumberHundrecs = 0;

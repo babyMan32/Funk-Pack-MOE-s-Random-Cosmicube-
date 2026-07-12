@@ -4,8 +4,8 @@ var allow_transition = false;
 var coolAnims = false;
 var beatboxAnims = false;
 
-var animSuffixVariable:Array = ["", "-cool", "-beatbox"];
-var idleSuffixVariable:Array = ["", "-cool", ""];
+var animSuffixVariable:Array = ["", "-alt", "-beatbox"];
+var idleSuffixVariable:Array = ["", "-alt", ""];
 var animSuffixInt:Int = 0;
 
 function onCreatePost()
@@ -54,7 +54,7 @@ function onAnimSwitch()
 		boyfriend.animSuffix = animSuffixVariable[animSuffixInt];
 		boyfriend.idleSuffix = idleSuffixVariable[animSuffixInt];
 
-		coolAnims = (boyfriend.animSuffix == '-cool' ? true : false);
+		coolAnims = (boyfriend.animSuffix == '-alt' ? true : false);
 		beatboxAnims = (boyfriend.animSuffix == '-beatbox' ? true : false);
 
 		boyfriend.playAnim(coolAnims ? 'swaws-transition' : (beatboxAnims ? 'un-swawsing' : 'heynormal'));

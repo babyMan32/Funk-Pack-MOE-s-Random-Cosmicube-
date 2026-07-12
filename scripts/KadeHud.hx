@@ -83,6 +83,8 @@ function onMoveCamera(focus) //set anim back to idle to replicate that weird bug
 
 function opponentNoteHit(note)
 {
+	if (!init_kade_hud) return;
+
 	final strumOpp:StrumNote = note.strum;
 
 	if (strumOpp != null)
@@ -93,6 +95,8 @@ function opponentNoteHit(note)
 
 function goodNoteHit(note)
 {
+	if (!init_kade_hud) return;
+
 	final strumPlay:StrumNote = note.strum;
 
 	if (strumPlay != null && cpuControlled)
