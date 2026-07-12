@@ -28092,8 +28092,8 @@
 		"allowBFskin": false,
 		"chartVersion": "2",
 		"arrowSkins": [
-			"kade-play",
-			"kade-opp"
+			"kade",
+			"kade"
 		],
 		"stage": "polus-old",
 		"trackSwap": false,

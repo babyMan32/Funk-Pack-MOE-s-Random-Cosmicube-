@@ -10,7 +10,7 @@ function onCreatePost()
 {
 	if (!init_kade_hud) return;
 
-	//cpuControlled = true;
+	cpuControlled = true;
 
 	watermark = new FlxText(0, 0, 0, PlayState.SONG.song + " - Normal | KE 1.6");
 	watermark.setFormat(Paths.font("vcr.ttf"), 14, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -30,7 +30,7 @@ function onCreatePost()
 
 	playHUD.scoreTxt.visible = false;
 
-	playHUD.ratingPrefix = 'ui/v3/'; //pulled straight from Impostor V3's assets
+	//playHUD.ratingPrefix = 'ui/v3/'; //pulled straight from Impostor V3's assets
 
 	FlxG.mouse.visible = false;
 
@@ -81,12 +81,22 @@ function onMoveCamera(focus) //set anim back to idle to replicate that weird bug
 	}
 }
 
+function opponentNoteHit(note)
+{
+	final strumOpp:StrumNote = note.strum;
+
+	if (strumOpp != null)
+	{
+		strumOpp.playAnim('static', true); //more kade engine jank lovely
+	}
+}
+
 function goodNoteHit(note)
 {
-	final strum:StrumNote = note.strum;
+	final strumPlay:StrumNote = note.strum;
 
-	if (strum != null && cpuControlled)
+	if (strumPlay != null && cpuControlled)
 	{
-		strum.playAnim('static', true); //more kade engine jank lovely
+		strumPlay.playAnim('static', true); //more kade engine jank lovely
 	}
 }
