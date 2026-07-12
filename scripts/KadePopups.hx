@@ -11,7 +11,7 @@ var currentNumberHundrecs = 0;
 public var kade_combo_counter = 0;
 
 var alpha_delay;
-var bounce = 0.65;
+var bounce = 0.5;
 var combo_fall = 2.5;
 
 function onCreatePost()
@@ -24,7 +24,7 @@ function onCreatePost()
 	alpha_delay = 60 / Conductor.bpm;
 }
 
-function goodNoteHit(note)
+function goodNoteHitPre(note)
 {
 	if (!init_kade_hud) return;
 
@@ -47,14 +47,16 @@ function noteMiss(note)
 
 function kadeComboPopup()
 {
+	if (cpuControlled) return;
+
 	FlxG.signals.postUpdate.addOnce(function() {
-		var rating_to_spawn = bullshitFunc();
+		rating_to_spawn = bullshitFunc();
 
 		var holySmackerel = new FlxSprite(550, 150).loadGraphic(Paths.image('ui/v3/$rating_to_spawn', null, null, PathsTestMode.LOOSE));
 		holySmackerel.scale.set(0.7, 0.7);
 		add(holySmackerel);
 
-		FlxTween.tween(holySmackerel, {y: holySmackerel.y - 10}, bounce, {ease: FlxEase.quadOut});
+		FlxTween.tween(holySmackerel, {y: holySmackerel.y - 20}, 0.2, {ease: FlxEase.quadOut});
 
 		FlxTween.tween(holySmackerel, {x: holySmackerel.x + FlxG.random.int(-170, 170)}, 3, {ease: FlxEase.quadIn});
 
@@ -81,8 +83,6 @@ function kadeNumbersPopup()
 		currentNumberHundrecs++;
 	}
 
-	if (kade_combo_counter < 10) return;
-
 	var unos = new FlxSprite(660, 250).loadGraphic(Paths.image('ui/v3/num$currentNumberOnes', null, null, PathsTestMode.LOOSE));
 	unos.scale.set(0.7, 0.7);
 	add(unos);
@@ -95,9 +95,9 @@ function kadeNumbersPopup()
 	beegNumb.scale.set(0.7, 0.7);
 	add(beegNumb);
 
-	FlxTween.tween(unos, {y: unos.y - 10}, bounce, {ease: FlxEase.quadOut});
-	FlxTween.tween(tens, {y: tens.y - 10}, bounce, {ease: FlxEase.quadOut});
-	FlxTween.tween(beegNumb, {y: tens.y - 10}, bounce, {ease: FlxEase.quadOut});
+	FlxTween.tween(unos, {y: unos.y - 20}, 0.2, {ease: FlxEase.quadOut});
+	FlxTween.tween(tens, {y: tens.y - 20}, 0.2, {ease: FlxEase.quadOut});
+	FlxTween.tween(beegNumb, {y: tens.y - 20}, 0.2, {ease: FlxEase.quadOut});
 
 	FlxTween.tween(unos, {x: unos.x + FlxG.random.int(-170, 170)}, 3, {ease: FlxEase.quadIn});
 	FlxTween.tween(tens, {x: tens.x + FlxG.random.int(-170, 170)}, 3, {ease: FlxEase.quadIn});
@@ -143,5 +143,5 @@ function bullshitFunc()
 		return 'shit';
 	}
 
-	return 'epic';
+	return 'empty';
 }
