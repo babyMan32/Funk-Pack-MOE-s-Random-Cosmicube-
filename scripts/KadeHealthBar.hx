@@ -72,10 +72,15 @@ function iconInitiation()
 
 function onUpdatePost(elapsed:Float):Void
 {
+	if (!init_kade_hud) return;
+
 	if (health < 2)
 	{
 		kadeBarPlay.x = kadeBar.width - ((113 * health) - (35 * (1 - health)));
 		kadeBarPlay.scale.x = health / 2;
+
+		kadeIconBF.x = (1200 - (health * 300)) - 287.5;
+		kadeIconDad.x = (1200 - (health * 300)) - 387.5;
 	}
 
 	if (health >= 2)
@@ -84,9 +89,6 @@ function onUpdatePost(elapsed:Float):Void
 		kadeBarPlay.screenCenter();
 		kadeBarPlay.y = FlxG.height * (!ClientPrefs.downScroll ? 0.89 : 0.11);
 	}
-
-	kadeIconBF.x = (1200 - (health * 300)) - 287.5;
-	kadeIconDad.x = (1200 - (health * 300)) - 387.5;
 
 	kadeIconBF.updateIconAnim((health * 50) * 0.01);
 	kadeIconDad.updateIconAnim((100 - (health * 50)) * 0.01);

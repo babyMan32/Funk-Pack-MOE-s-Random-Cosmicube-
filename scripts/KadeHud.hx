@@ -7,6 +7,11 @@ public var watermark:FlxText;
 
 var fakeScoreText:FlxText;
 
+function onCreatePost()
+{
+	boyfriend.canTaunt = false;
+}
+
 function onStartCountdown()
 {
 	FlxG.signals.postUpdate.addOnce(function() {
