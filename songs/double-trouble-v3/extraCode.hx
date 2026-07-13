@@ -22,6 +22,8 @@ function onLoad()
 
 function onStartCountdown()
 {
+	if (!init_kade_hud) return;
+
 	FlxG.signals.postUpdate.addOnce(function() {
 		kadeIconDad.changeIcon(oppIconDuo);
 	});

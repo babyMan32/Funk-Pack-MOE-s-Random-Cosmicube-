@@ -9,6 +9,8 @@ var fakeScoreText:FlxText;
 
 function onCreatePost()
 {
+	if (!init_kade_hud) return;
+
 	boyfriend.canTaunt = false;
 }
 

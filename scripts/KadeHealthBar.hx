@@ -70,6 +70,14 @@ function iconInitiation()
 	kadeIconDad.y = kadeBar.y - 75;
 }
 
+function onUpdate(elapsed:Float):Void
+{
+	if (!init_kade_hud) return;
+
+	kadeIconBF.scale.set(1, 1);
+	kadeIconDad.scale.set(1, 1);
+}
+
 function onUpdatePost(elapsed:Float):Void
 {
 	if (!init_kade_hud) return;
@@ -92,4 +100,21 @@ function onUpdatePost(elapsed:Float):Void
 
 	kadeIconBF.updateIconAnim((health * 50) * 0.01);
 	kadeIconDad.updateIconAnim((100 - (health * 50)) * 0.01);
+}
+
+function onBeatHit()
+{
+	if (!init_kade_hud) return;
+
+	if (curBeat % 2 == 0)
+	{
+		kadeIconBF.scale.set(1.25, 1.25);
+		kadeIconDad.scale.set(1.25, 1.25);
+	}
+
+	if (curBeat % 2 == 1)
+	{
+		kadeIconBF.scale.set(1.15, 1.15);
+		kadeIconDad.scale.set(1.15, 1.15);
+	}
 }
