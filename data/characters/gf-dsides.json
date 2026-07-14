@@ -273,7 +273,7 @@
 		-50
 	],
 	"flags": {
-		"airshipRetro": "gf-dsides_OLD"
+		"defeatRetro": "gf-dsides_OLD"
 	},
 	"dance_every": 1,
 	"gameover_intial_sound": null,

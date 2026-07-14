@@ -105,7 +105,7 @@
 		"ghost": true,
 		"floating": true,
 		"seeThrough": true,
-		"airshipRetro": "gf-ghost"
+		"defeatRetro": "gf-ghost"
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,

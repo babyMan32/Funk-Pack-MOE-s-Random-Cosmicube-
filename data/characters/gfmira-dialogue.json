@@ -91,7 +91,7 @@
 	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"flags": {
-		"airshipRetro": "gfmira"
+		"defeatRetro": "gfmira"
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
