@@ -1,0 +1,73 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				11
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "cordFall",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"offsets": [
+				0,
+				11
+			],
+			"indices": [
+				371
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "deathLoop",
+			"loop": false,
+			"name": "cordFall"
+		},
+		{
+			"offsets": [
+				0,
+				11
+			],
+			"indices": [
+				371
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "deathConfirm",
+			"loop": false,
+			"name": "cordFall"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/vs_cord/CORD_ASSETS",
+	"position": [
+		0,
+		150
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "cord",
+	"afterimages": false,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -13355935,
+	"camera_position": [
+		1500,
+		-1000
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

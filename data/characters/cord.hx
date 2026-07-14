@@ -8,6 +8,11 @@ var animSuffixVariable:Array = ["", "-alt", "-beatbox"];
 var idleSuffixVariable:Array = ["", "-alt", "-extralt"];
 var animSuffixInt:Int = 0;
 
+function onLoad()
+{
+	boyfriend.useRenderTexture = true;
+}
+
 function onUpdate(elapsed:Float):Void
 {
 	onTaunt();
@@ -51,11 +56,14 @@ function onAnimSwitch()
 		coolAnims = (boyfriend.animSuffix == '-alt' ? true : false);
 		beatboxAnims = (boyfriend.animSuffix == '-beatbox' ? true : false);
 
-		boyfriend.playAnim(coolAnims ? 'funny' : (beatboxAnims ? 'yea' : 'miau'));
+		boyfriend.playAnim(coolAnims ? 'miau' : (beatboxAnims ? 'yea' : 'funny'));
 		boyfriend.specialAnim = true;
 
 		boyfriend.danceEveryNumBeats = (beatboxAnims ? 1 : 2);
 
 		allow_transition = false;
+
+		boyfriend.gameoverCharacter = coolAnims ? 'cord-fallen' : 'genericDeath';
+		boyfriend.gameoverInitialDeathSound = coolAnims ? 'cordFall' : 'fnf_loss_sfx';
 	}
 }

@@ -120,39 +120,6 @@
 			"fps": 24,
 			"name": "BF idle shaking",
 			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				37,
-				11
-			],
-			"anim": "firstDeath",
-			"fps": 24,
-			"name": "BF dies",
-			"indices": []
-		},
-		{
-			"loop": true,
-			"offsets": [
-				37,
-				5
-			],
-			"anim": "deathLoop",
-			"fps": 24,
-			"name": "BF Dead Loop",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				37,
-				69
-			],
-			"anim": "deathConfirm",
-			"fps": 24,
-			"name": "BF Dead confirm",
-			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -169,7 +136,7 @@
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "bfB-redux",
-	"gameover_character": "bf-b-redux",
+	"gameover_character": "bf-b-redux-dead",
 	"vslice_sustains": false,
 	"flip_x": true,
 	"healthbar_colour": -1545525,
