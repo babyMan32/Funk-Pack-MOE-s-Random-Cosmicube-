@@ -14,6 +14,9 @@ var alpha_delay;
 var bounce = 0.5;
 var combo_fall = 2.5;
 
+var layerRate = 10;
+var layerCombo = 15;
+
 function onCreatePost()
 {
 	if (!init_kade_hud) return;

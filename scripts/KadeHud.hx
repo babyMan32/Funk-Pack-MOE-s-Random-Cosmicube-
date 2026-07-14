@@ -48,15 +48,6 @@ function onStartCountdown()
 	});
 }
 
-function onUpdate(elapsed:Float):Void
-{
-	if (!init_kade_hud) return;
-
-	if (game.startingSong) return;
-
-	iconP1.scale.x = iconP1.scale.y = iconP2.scale.x = iconP2.scale.y = 1; //that signature kade engine icon bop
-}
-
 function onUpdatePost(elapsed:Float):Void
 {
 	if (!init_kade_hud) return;

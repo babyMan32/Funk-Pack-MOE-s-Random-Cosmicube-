@@ -48,6 +48,10 @@ function barInitiation()
 	kadeBarPlay.y = FlxG.height * (!ClientPrefs.downScroll ? 0.89 : 0.11);
 	kadeBarPlay.color = boyfriend.healthColour;
 	kadeBarPlay.scale.x = health / 2;
+
+	kadeBar.y += 5;
+	kadeBarOpp.y += 5;
+	kadeBarPlay.y += 5;
 }
 
 function iconInitiation()
@@ -66,8 +70,8 @@ function iconInitiation()
 
 	kadeIconDad.flipX = true;
 
-	kadeIconBF.y = kadeBar.y - 75;
-	kadeIconDad.y = kadeBar.y - 75;
+	kadeIconBF.y = kadeBar.y - 70;
+	kadeIconDad.y = kadeBar.y - 70;
 }
 
 function onUpdate(elapsed:Float):Void
@@ -96,6 +100,7 @@ function onUpdatePost(elapsed:Float):Void
 		kadeBarPlay.scale.x = 1.001;
 		kadeBarPlay.screenCenter();
 		kadeBarPlay.y = FlxG.height * (!ClientPrefs.downScroll ? 0.89 : 0.11);
+		kadeBarPlay.y += 5;
 	}
 
 	kadeIconBF.updateIconAnim((health * 50) * 0.01);

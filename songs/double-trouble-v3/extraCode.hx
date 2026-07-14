@@ -1,3 +1,5 @@
+import cpp.Windows;
+
 var dev_store;
 var fps_store;
 
@@ -18,6 +20,7 @@ function onLoad()
 	playHUD.timeBar.visible = playHUD.timeTxt.visible = false;
 
 	FlxG.stage.window.title = 'FNF: VS Impostor'; //haha the window title changed lmfao
+	Windows.setDarkMode(false); //become blind bitch
 }
 
 function onStartCountdown()
@@ -49,17 +52,8 @@ function onDestroy()
 	ClientPrefs.inDevMode = dev_store;
 	ClientPrefs.fpsDisplayType = fps_store;
 
-	FlxG.stage.window.title = 'VS IMPOSTOR LEGACY v1.1.1b';
-}
-
-function onGameOver()
-{
-	init_kade_hud = false;
-
-	ClientPrefs.inDevMode = dev_store;
-	ClientPrefs.fpsDisplayType = fps_store;
-
-	FlxG.stage.window.title = 'VS IMPOSTOR LEGACY v1.1.1b';
+	FlxG.stage.window.title = 'VS IMPOSTOR LEGACY v' + Main.LEGACY_VERSION;
+	Windows.setDarkMode();
 }
 
 function onMoveCamera(focus)

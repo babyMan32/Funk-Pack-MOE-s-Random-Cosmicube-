@@ -8,7 +8,20 @@
 				-67,
 				35
 			],
-			"anim": "idle",
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "idle",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-67,
+				35
+			],
+			"anim": "danceRight",
 			"fps": 24,
 			"name": "idle",
 			"indices": [],
@@ -21,7 +34,20 @@
 				0,
 				0
 			],
-			"anim": "idle-alt",
+			"anim": "danceLeft-alt",
+			"fps": 24,
+			"name": "i alt",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceRight-alt",
 			"fps": 24,
 			"name": "i alt",
 			"indices": [],
@@ -73,7 +99,7 @@
 		50,
 		-50
 	],
-	"dance_every": 2,
+	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"flags": {},
 	"scalableOffsets": true,

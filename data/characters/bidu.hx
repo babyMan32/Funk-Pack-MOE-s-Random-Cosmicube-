@@ -16,7 +16,7 @@ function onUpdate(elapsed:Float):Void
 {
 	if (inCutscene || cpuControlled) return;
 
-	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bidu' && allow_taunt)
+	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bidu' && allow_taunt && boyfriend.canTaunt)
 	{
 		boyfriend.playAnim('yo');
 
@@ -31,7 +31,7 @@ function onUpdate(elapsed:Float):Void
 
 		allow_taunt = false;
 
-		if (!baddieExists) return;
+		if (!baddieExists || gf.skipDance) return;
 
 		if (gf.curCharacter == 'barbara-blue')
 		{

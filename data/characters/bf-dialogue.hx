@@ -64,7 +64,7 @@ function onTauntCalled()
 
 		allow_taunt = false;
 
-		if (!baddieExists) return;
+		if (!baddieExists || gf.skipDance) return;
 
 		if (gf.curCharacter == 'gf-dialogue')
 		{

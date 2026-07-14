@@ -18,9 +18,9 @@ function onUpdatePost(elapsed:Float):Void
 
 	if (!baddieExists || gf.skipDance) return;
 
-	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bf-dsides' && boyfriend.getAnimName() == 'hey' && allow_gf_taunt)
+	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'boosterbf' && boyfriend.getAnimName() == 'hey' && allow_gf_taunt)
 	{
-		if (gf.curCharacter == 'gf-dsides')
+		if (gf.curCharacter == 'boostergf')
 		{
 			gf.playAnim('cheer');
 			gf.specialAnim = true;
