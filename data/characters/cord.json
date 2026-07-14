@@ -1,0 +1,379 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"flipX": false,
+			"indices": [],
+			"name": "Cord Idle"
+		},
+		{
+			"offsets": [
+				-27,
+				-17
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"flipX": false,
+			"indices": [],
+			"name": "Cord Right"
+		},
+		{
+			"offsets": [
+				-82,
+				-65
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"flipX": false,
+			"indices": [],
+			"name": "Cord Down"
+		},
+		{
+			"offsets": [
+				-110,
+				10
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"flipX": false,
+			"indices": [],
+			"name": "Cord Left"
+		},
+		{
+			"offsets": [
+				-60,
+				5
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"flipX": false,
+			"indices": [],
+			"name": "Cord Up"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-alt",
+			"flipX": false,
+			"indices": [],
+			"name": "AltCord Idle"
+		},
+		{
+			"offsets": [
+				-47,
+				-68
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"flipX": false,
+			"indices": [],
+			"name": "Alt Down"
+		},
+		{
+			"offsets": [
+				-31,
+				-19
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"flipX": false,
+			"indices": [],
+			"name": "Alt Right0"
+		},
+		{
+			"offsets": [
+				-31,
+				-19
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt2",
+			"flipX": false,
+			"indices": [],
+			"name": "Alt Right1"
+		},
+		{
+			"offsets": [
+				-82,
+				18
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"flipX": false,
+			"indices": [],
+			"name": "Alt Left"
+		},
+		{
+			"offsets": [
+				-69,
+				13
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"flipX": false,
+			"indices": [],
+			"name": "Alt Up"
+		},
+		{
+			"offsets": [
+				-6,
+				17
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "miau",
+			"flipX": false,
+			"indices": [],
+			"name": "CordMeow"
+		},
+		{
+			"offsets": [
+				2,
+				-5
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "funny",
+			"flipX": false,
+			"indices": [],
+			"name": "giggle"
+		},
+		{
+			"offsets": [
+				17,
+				-4
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "chucklenuts",
+			"flipX": false,
+			"indices": [],
+			"name": "mic toss"
+		},
+		{
+			"offsets": [
+				58,
+				33
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "uh oh",
+			"flipX": false,
+			"indices": [],
+			"name": "badluckanim"
+		},
+		{
+			"offsets": [
+				0,
+				11
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "whoops",
+			"flipX": false,
+			"indices": [],
+			"name": "cordFall"
+		},
+		{
+			"offsets": [
+				58,
+				33
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "yea",
+			"flipX": false,
+			"indices": [
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64
+			],
+			"name": "badluckanim"
+		},
+		{
+			"offsets": [
+				-86,
+				-65
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-beatbox",
+			"flipX": false,
+			"indices": [],
+			"name": "beatbox-down"
+		},
+		{
+			"offsets": [
+				-38,
+				-21
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-beatbox",
+			"flipX": false,
+			"indices": [],
+			"name": "beatbox-right"
+		},
+		{
+			"offsets": [
+				-108,
+				11
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-beatbox",
+			"flipX": false,
+			"indices": [],
+			"name": "beatbox-left"
+		},
+		{
+			"offsets": [
+				-65,
+				5
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-beatbox",
+			"flipX": false,
+			"indices": [],
+			"name": "beatbox-up"
+		},
+		{
+			"offsets": [
+				0,
+				16
+			],
+			"indices": [
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "danceRight-extralt",
+			"loop": false,
+			"name": "idle-alt"
+		},
+		{
+			"offsets": [
+				0,
+				16
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "danceLeft-extralt",
+			"loop": false,
+			"name": "idle-alt"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/vs_cord/CORD_ASSETS",
+	"position": [
+		0,
+		150
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "cord",
+	"afterimages": false,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -13355935,
+	"camera_position": [
+		1500,
+		-1000
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

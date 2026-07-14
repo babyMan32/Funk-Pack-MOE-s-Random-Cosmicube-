@@ -99,7 +99,7 @@
 		10
 	],
 	"flags": {
-		"airshipRetro": "gf",
+		"defeatRetro": "gf",
 		"lightsDownSpeaker": true
 	},
 	"dance_every": 1,

@@ -194,7 +194,7 @@
 		0
 	],
 	"flags": {
-		"airshipRetro": "gf-b-classic"
+		"defeatRetro": "gf-b-classic"
 	},
 	"dance_every": 1,
 	"gameover_intial_sound": null,

@@ -67,7 +67,7 @@ function onCreatePost()
 		}
 	}
 
-	soRetroGF = gf.getFlag('airshipRetro'); //Yes I made my own variable for this, shut u-
+	soRetroGF = (gf.getFlag('variants')?.retro ?? gf.getFlag('defeatRetro'));
 
 	if (soRetroGF != null && soRetroGF != '')
 	{

@@ -72,7 +72,7 @@
 		120
 	],
 	"flags": {
-		"airshipRetro": "KinoGF"
+		"defeatRetro": "KinoGF"
 	},
 	"dance_every": 1,
 	"gameover_intial_sound": null,

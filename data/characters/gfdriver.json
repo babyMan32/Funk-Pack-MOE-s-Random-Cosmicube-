@@ -33,7 +33,7 @@
 	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"flags": {
-		"airshipRetro": "gfdriver-old"
+		"defeatRetro": "gfdriver-old"
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
