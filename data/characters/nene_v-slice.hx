@@ -1,9 +1,24 @@
 var ext = 'characters/neneshit/abot/';
 
+var lookingLeft = false;
+
+var a_bot_eyes;
+
 function onCreatePost()
 {
 	abot = new FlxSpriteGroup();
 	gfGroup.insert(0, abot);
+
+	abot_eyeWhites = new FlxSprite(-380, 730).makeGraphic(160, 60, 0xffffffff);
+	abot.add(abot_eyeWhites);
+
+	a_bot_eyes = new FunkinSprite(-355, 740).loadAtlas('${ext}systemEyes', null, PathsTestMode.LOOSE);
+    a_bot_eyes.addAnimByPrefix('move', '', 24, false);
+	abot.add(a_bot_eyes);
+
+    a_bot_eyes.anim.onFrameChange.add(function(name:String, frameNumber:Int, frameIndex:Int) {
+        if (frameNumber == 16) a_bot_eyes.anim.pause(); //totally didnt steal this from idks modpack what are you taaaaaaalking about-
+    });
 
     a_bot_screen = new FlxSprite(-250, 540).loadGraphic(Paths.image('${ext}stereoBG', null, null, PathsTestMode.LOOSE));
 	abot.add(a_bot_screen);
@@ -11,6 +26,35 @@ function onCreatePost()
 	a_bot = new FunkinSprite(-410, 500).loadAtlas('${ext}abotSystem', null, PathsTestMode.LOOSE);
 	abot.add(a_bot);
 
-	abot.x = gf.x + 270;
-	abot.y = gf.y - 125;
+	abot.x = gf.x + 300;
+	abot.y = gf.y - 117;
+}
+
+function onSectionHit()
+{
+	if (mustHitSection)
+	{
+		if (lookingLeft)
+		{
+			lookingLeft = false;
+			lookRight();
+		}
+	}
+	else
+	{
+		if (!lookingLeft)
+		{
+			lookingLeft = true;
+			lookLeft();
+		}
+	}
+}
+
+function lookLeft()
+{
+	a_bot_eyes.playAnim('move', true, false, 0);
+}
+
+function lookRight() {
+	a_bot_eyes.playAnim('move', true, false, 17);
 }
