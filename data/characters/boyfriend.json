@@ -161,10 +161,10 @@
 	"dance_every": 2,
 	"gameover_intial_sound": null,
 	"flags": {
+		"runner": true,
 		"variants": {
 			"dark": "boyfriend-dark",
-			"falling": "boyfriend-fall",
-			"running": "boyfriend-running"
+			"falling": "boyfriend-fall"
 		}
 	},
 	"scalableOffsets": false,

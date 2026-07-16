@@ -74,6 +74,11 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
+	"flags": {
+		"seeThrough": true,
+		"floating": true,
+		"ghost": true
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "yellow",

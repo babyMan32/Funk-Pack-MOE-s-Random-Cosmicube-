@@ -8,6 +8,7 @@ var legPosY = [13, 7, -3, -1, -1, 2, 7, 9, 7, 2, 0, 0, 3, 1, 3, 7, 13];
 function onLoad()
 {
 	doWeLegs = (ClientPrefs.bfSkin == 'boyfriend' && PlayState.SONG.stage == 'danger');
+
 	if (!doWeLegs) return;
 
 	bfOldLegs = new Character(0, 0, 'boyfriend-legs', true);
@@ -16,15 +17,47 @@ function onLoad()
 
 function onCreatePost()
 {
+	switch (PlayState.SONG.stage)
+	{
+		case "maroon":
+			changeCharacter("boyfriend-christmas", 0);
+
+		case "boiling":
+			changeCharacter("boyfriend-christmas", 0);
+
+			if (ClientPrefs.shaders)
+			{
+				var blackRimlightBase:ExtraDropShadowShader = new funkin.game.shaders.ExtraDropShadowShader();
+	
+				blackRimlightBase.setColorMatrix([
+					0.8,   0,   0, 0, 16,
+					-.1, 0.6, -.1, 0,  0,
+					  0,   0, 0.6, 0,  8,
+					  0,   0,   0, 1,  0
+			]);
+			blackRimlightBase.addLayer([
+					1.5, -.1, .2, 0, 64,
+					-.3, 1.2,  0, 0, 32,
+					  0,   0,  1, 0,  0,
+					  0,   0,  0, 1,  0
+				], 330, 25, .01);
+
+				bfRim = blackRimlightBase;
+				bfRim.attachedSprite = boyfriend;
+			}
+	}
+
 	if (!doWeLegs) return;
 
-	bfOldLegs.x = game.boyfriend.x + 30;
-	bfOldLegs.y = game.boyfriend.y + 275;
+	changeCharacter('boyfriend-running', 0);
+
+	bfOldLegs.x = game.boyfriend.x + 10;
+	bfOldLegs.y = game.boyfriend.y + 205;
 	bfAnchorPoint[0] = game.boyfriend.x;
 	bfAnchorPoint[1] = game.boyfriend.y;
 }
 
-function onUpdate(elapsed)
+function onUpdatePost(elapsed)
 {
 	if (!doWeLegs) return;
 
@@ -40,7 +73,7 @@ function onUpdate(elapsed)
 		bfOldLegs.animation.curAnim.curFrame = lastFrame;
 	}
 
-	if (boyfriend.getAnimName().contains('idle'))
+	if (boyfriend.getAnimName().contains('dance'))
 	{
 		bfOldLegs.visible = false;
 	}
@@ -57,7 +90,7 @@ function onKeyRelease()
 {
 	if (!doWeLegs) return;
 
-	boyfriend.danced = bfOldLegs.danced;
+	game.boyfriend.danced = bfOldLegs.danced;
 }
 
 function onCountdownTick()
