@@ -363,7 +363,7 @@
 	"scalableOffsets": true,
 	"gameover_confirm_sound": null,
 	"healthicon": "cord",
-	"afterimages": false,
+	"afterimages": true,
 	"gameover_character": null,
 	"vslice_sustains": false,
 	"flip_x": false,

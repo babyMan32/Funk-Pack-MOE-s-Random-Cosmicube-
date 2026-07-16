@@ -1,0 +1,186 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "BF idle dance"
+		},
+		{
+			"offsets": [
+				-24,
+				62
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "BF NOTE UP MISS"
+		},
+		{
+			"offsets": [
+				-51,
+				15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "BF NOTE RIGHT MISS"
+		},
+		{
+			"offsets": [
+				-2,
+				65
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"flipX": false,
+			"indices": [],
+			"name": "Hey"
+		},
+		{
+			"offsets": [
+				-3,
+				64
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"flipX": false,
+			"indices": [],
+			"name": "Left"
+		},
+		{
+			"offsets": [
+				-3,
+				64
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "Left Miss"
+		},
+		{
+			"offsets": [
+				-9,
+				63
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"flipX": false,
+			"indices": [],
+			"name": "Down"
+		},
+		{
+			"offsets": [
+				-9,
+				63
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "Down Miss"
+		},
+		{
+			"offsets": [
+				-5,
+				67
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"flipX": false,
+			"indices": [],
+			"name": "Up"
+		},
+		{
+			"offsets": [
+				-2,
+				64
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"flipX": false,
+			"indices": [],
+			"name": "Right"
+		},
+		{
+			"loop": true,
+			"flipY": false,
+			"offsets": [
+				-3,
+				64
+			],
+			"anim": "shaking",
+			"fps": 24,
+			"name": "Scared",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				65
+			],
+			"anim": "cheer",
+			"fps": 24,
+			"name": "Cheer",
+			"indices": [],
+			"flipX": false
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bf/bf",
+	"position": [
+		-12,
+		342
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"variants": {
+			"dark": "boyfriend-dark",
+			"falling": "boyfriend-fall",
+			"running": "boyfriend-running"
+		}
+	},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf",
+	"afterimages": true,
+	"gameover_character": "bf-dead",
+	"vslice_sustains": true,
+	"flip_x": true,
+	"healthbar_colour": -13520687,
+	"camera_position": [
+		100,
+		-50
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

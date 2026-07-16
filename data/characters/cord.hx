@@ -19,7 +19,7 @@ function onUpdate(elapsed:Float):Void
 
 	onAnimSwitch();
 
-	if (boyfriend.getAnimName() != 'funny' && boyfriend.getAnimName() != 'yea' && boyfriend.getAnimName() != 'miau')
+	if (boyfriend.getAnimName() != 'uh oh' && boyfriend.getAnimName() != 'miau' && boyfriend.getAnimName() != 'funny')
 	{
 		allow_transition = true;
 	}
@@ -56,7 +56,7 @@ function onAnimSwitch()
 		coolAnims = (boyfriend.animSuffix == '-alt' ? true : false);
 		beatboxAnims = (boyfriend.animSuffix == '-beatbox' ? true : false);
 
-		boyfriend.playAnim(coolAnims ? 'miau' : (beatboxAnims ? 'yea' : 'funny'));
+		boyfriend.playAnim(coolAnims ? 'uh oh' : (beatboxAnims ? 'miau' : 'funny'));
 		boyfriend.specialAnim = true;
 
 		boyfriend.danceEveryNumBeats = (beatboxAnims ? 1 : 2);

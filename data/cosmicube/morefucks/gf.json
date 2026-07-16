@@ -8,7 +8,7 @@
 
 	"node":
 	{
-		"parent": "bf",
+		"parent": "boyfriend",
 		"direction": "east"
 	}
 }

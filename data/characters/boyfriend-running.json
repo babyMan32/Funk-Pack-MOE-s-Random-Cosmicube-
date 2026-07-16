@@ -1,0 +1,182 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "danceLeft",
+			"loop": false,
+			"name": "bf idle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "danceRight",
+			"loop": false,
+			"name": "bf idle"
+		},
+		{
+			"offsets": [
+				-100,
+				-40
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "bf left"
+		},
+		{
+			"offsets": [
+				-155,
+				-75
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "bf down"
+		},
+		{
+			"offsets": [
+				-75,
+				-75
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "bf right"
+		},
+		{
+			"offsets": [
+				-100,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "bf up"
+		},
+		{
+			"offsets": [
+				-145,
+				-45
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "bf miss down"
+		},
+		{
+			"offsets": [
+				-45,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "bf miss right"
+		},
+		{
+			"offsets": [
+				-140,
+				-45
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "bf miss left"
+		},
+		{
+			"offsets": [
+				-80,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "bf miss up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bf/old/bf_running",
+	"position": [
+		-100,
+		200
+	],
+	"dance_every": 1,
+	"gameover_intial_sound": null,
+	"flags": {
+		"runner": true
+	},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": true,
+	"flip_x": true,
+	"healthbar_colour": -13520687,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}
