@@ -22,6 +22,9 @@ function onCreatePost()
 		case "maroon":
 			changeCharacter("boyfriend-christmas", 0);
 
+		case "o2", "jads", "chef":
+			changeCharacter("boyfriend-with-girlfriend", 0);
+
 		case "boiling":
 			changeCharacter("boyfriend-christmas", 0);
 
@@ -121,4 +124,21 @@ function noteMiss(daNote)
 	bfOldLegs.idleSuffix = '-miss';
 	bfOldLegs.recalculateDanceIdle();
 	bfOldLegs.animation.curAnim.curFrame = lastFrame;
+}
+
+function goodNoteHit(note)
+{
+	final strumPlay:StrumNote = note.strum;
+
+	if (strumPlay == null) return;
+
+	if (!cpuControlled)
+	{
+		strumPlay.animation.onFinish.add((animName) -> {
+			if (animName == 'confirm')
+			{
+				strumPlay.animation.play('pressed', true);
+			}
+		});
+	}
 }

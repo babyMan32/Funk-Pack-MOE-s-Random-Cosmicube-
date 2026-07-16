@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Nene",
+	"description": "yo nene",
+
+	"node":
+	{
+		"parent": "roxanne",
+		"direction": "east"
+	}
+}

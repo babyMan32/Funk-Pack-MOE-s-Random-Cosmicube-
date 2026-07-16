@@ -1,0 +1,202 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "BF idle dance",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": true,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle-loop",
+			"fps": 24,
+			"name": "BF idle dance",
+			"indices": [
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16
+			],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				130,
+				18
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "BF NOTE LEFT0",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": true,
+			"flipY": false,
+			"offsets": [
+				130,
+				18
+			],
+			"anim": "singLEFT-loop",
+			"fps": 24,
+			"name": "BF NOTE LEFT",
+			"indices": [
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16
+			],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-62,
+				-95
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "BF NOTE DOWN",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": true,
+			"flipY": false,
+			"offsets": [
+				-62,
+				-95
+			],
+			"anim": "singDOWN-loop",
+			"fps": 24,
+			"name": "BF NOTE DOWN",
+			"indices": [
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16
+			],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-50,
+				15
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "BF NOTE RIGHT",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": true,
+			"flipY": false,
+			"offsets": [
+				-50,
+				15
+			],
+			"anim": "singRIGHT-loop",
+			"fps": 24,
+			"name": "BF NOTE RIGHT",
+			"indices": [
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16
+			],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-130,
+				-65
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "BF NOTE UP",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": true,
+			"flipY": false,
+			"offsets": [
+				-130,
+				-65
+			],
+			"anim": "singUP-loop",
+			"fps": 24,
+			"name": "BF NOTE UP",
+			"indices": [
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16
+			],
+			"flipX": false
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/nightmare/nightmare-bf",
+	"position": [
+		-90,
+		70
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"backlit": true
+	},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf-night",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -10027009,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

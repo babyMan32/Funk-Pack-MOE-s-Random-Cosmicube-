@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Nightmare BF",
+	"description": "He's on fucking fire-",
+
+	"node":
+	{
+		"parent": "bfpolus-dialogue",
+		"direction": "north"
+	}
+}
