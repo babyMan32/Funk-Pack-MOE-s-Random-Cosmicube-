@@ -139,7 +139,7 @@
 		0,
 		350
 	],
-	"dance_every": 2,
+	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"flags": {},
 	"scalableOffsets": false,
