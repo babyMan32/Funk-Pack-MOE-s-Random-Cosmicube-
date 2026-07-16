@@ -28,6 +28,12 @@ function onCreatePost()
 
 	abot.x = gf.x + 300;
 	abot.y = gf.y - 117;
+
+	switch (PlayState.SONG.stage)
+	{
+		case "maroon":
+			changeCharacter("nene_v-slice-christmas", 2);
+	}
 }
 
 function onSectionHit()
@@ -57,4 +63,17 @@ function lookLeft()
 
 function lookRight() {
 	a_bot_eyes.playAnim('move', true, false, 17);
+}
+
+function goodNoteHit(note)
+{
+	FlxG.signals.postUpdate.addOnce(function() {
+		comboAnim = 'combo' + game.combo;
+
+		if (gf.hasAnim(comboAnim))
+		{
+			gf.playAnim(comboAnim, true);
+			gf.specialAnim = true;
+		}
+	});
 }
