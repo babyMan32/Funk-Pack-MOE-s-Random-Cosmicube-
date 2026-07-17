@@ -116,3 +116,12 @@ function onEvent(ev, v1, v2)
 		}
 	}
 }
+
+function onUpdatePost()
+{
+	if (noAbotStages.contains(PlayState.SONG.stage)) return;
+
+	abotRim = new funkin.game.shaders.ExtraDropShadowShader().copyFrom('gf');
+	abotRim.attachedSprite = abot;
+	abot.useRenderTexture = true;
+}

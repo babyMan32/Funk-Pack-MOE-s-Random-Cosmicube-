@@ -61,9 +61,9 @@
 				-3,
 				5
 			],
-			"anim": "hey",
+			"anim": "yo",
 			"fps": 24,
-			"name": "BF HEY",
+			"name": "BF HEY!!",
 			"indices": []
 		},
 		{
@@ -232,6 +232,9 @@
 		350
 	],
 	"dance_every": 2,
+	"flags": {
+		"defeatRetro": "bf"
+	},
 	"gameover_intial_sound": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
