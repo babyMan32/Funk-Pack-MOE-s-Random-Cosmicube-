@@ -9,7 +9,11 @@ var noAbotStages = ['ejected', 'ejectedErected'];
 
 function onCreatePost()
 {
-	if (noAbotStages.contains(PlayState.SONG.stage)) return;
+	if (noAbotStages.contains(PlayState.SONG.stage))
+	{
+		platformFloat();
+		return;
+	}
 
 	abot = new FlxSpriteGroup();
 	gfGroup.insert(0, abot);
@@ -39,6 +43,20 @@ function onCreatePost()
 		case "maroon":
 			changeCharacter("nene_v-slice-christmas", 2);
 	}
+}
+
+function platformFloat()
+{
+	platformGF = new FlxSprite(100, 550);
+	platformGF.frames = Paths.getSparrowAtlas('stages/common/platform');
+	platformGF.animation.addByPrefix('bop', 'floating', 24, true);
+	platformGF.animation.play('bop');
+	add(platformGF);
+	
+	platformGF.scrollFactor.set(0.7, 0.7);
+	platformGF.shader = gf.shader;
+	gfGroup.insert(0, platformGF);
+	refreshZ(stage);
 }
 
 function onSectionHit()

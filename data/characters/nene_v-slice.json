@@ -142,7 +142,9 @@
 	],
 	"dance_every": 1,
 	"gameover_intial_sound": null,
-	"flags": {},
+	"flags": {
+		"floating": true
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "gf",
