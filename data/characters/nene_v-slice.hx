@@ -114,7 +114,4 @@ function onUpdatePost() {
 	abot.color = gf.color;
 	abot.alpha = gf.alpha;
 	abot.visible = gf.visible;
-	abot.x = gf.x;
-	abot.y = gf.y;
-	abot.y = gf.angle;
 }
