@@ -4,8 +4,10 @@ var abot;
 var a_bot_eyes;
 var noAbotStages = ['ejected', 'ejectedErected'];
 
-function onCreatePost() {
-	if (noAbotStages.contains(PlayState.SONG.stage)) {
+function onCreatePost()
+{
+	if (noAbotStages.contains(PlayState.SONG.stage))
+	{
 		platformFloat();
 		return;
 	}
@@ -34,13 +36,17 @@ function onCreatePost() {
 	abot.x = gf.x + 300;
 	abot.y = gf.y - 117;
 
-	switch (PlayState.SONG.stage) {
+	switch (PlayState.SONG.stage)
+	{
 		case "maroon":
 			changeCharacter("nene_v-slice-christmas", 2);
 	}
+
+	lookLeft();
 }
 
-function platformFloat() {
+function platformFloat()
+{
 	platformGF = new FlxSprite(75, 315);
 	platformGF.frames = Paths.getSparrowAtlas('stages/common/platform');
 	platformGF.animation.addByPrefix('bop', 'floating', 24, true);
@@ -55,46 +61,56 @@ function platformFloat() {
 	});
 }
 
-function onSectionHit() {
-	if (noAbotStages.contains(PlayState.SONG.stage))
-		return;
+function onSectionHit()
+{
+	if (noAbotStages.contains(PlayState.SONG.stage)) return;
 
-	if (mustHitSection) {
-		if (lookingLeft) {
-			lookingLeft = false;
+	if (mustHitSection)
+	{
+		if (lookingLeft)
+		{
 			lookRight();
 		}
-	} else {
-		if (!lookingLeft) {
-			lookingLeft = true;
+	}
+	else
+	{
+		if (!lookingLeft)
+		{
 			lookLeft();
 		}
 	}
 }
 
-function lookLeft() {
+function lookLeft()
+{
+	lookingLeft = true;
 	a_bot_eyes.playAnim('move', true, false, 0);
 }
 
-function lookRight() {
+function lookRight()
+{
+	lookingLeft = false;
 	a_bot_eyes.playAnim('move', true, false, 17);
 }
 
-function goodNoteHit(note) {
+function goodNoteHit(note)
+{
 	if (note.isSustainNote)
 		return;
 
 	FlxG.signals.postUpdate.addOnce(function() {
 		comboAnim = 'combo' + game.combo;
 
-		if (gf.hasAnim(comboAnim)) {
+		if (gf.hasAnim(comboAnim))
+		{
 			gf.playAnim(comboAnim, true);
 			gf.specialAnim = true;
 		}
 	});
 }
 
-function onEvent(ev, v1, v2) {
+function onEvent(ev, v1, v2)
+{
 	if (ev == 'Legacy') {
 		switch (v1) {
 			case 'bye gf':
@@ -103,11 +119,13 @@ function onEvent(ev, v1, v2) {
 	}
 }
 
-function onUpdatePost() {
+function onUpdatePost()
+{
 	if (noAbotStages.contains(PlayState.SONG.stage))
 		return FlxTween.cancelTweensOf(gf);
 
-	for (i in [abot_eyeWhites, a_bot_eyes, a_bot_screen, a_bot]) {
+	for (i in [abot_eyeWhites, a_bot_eyes, a_bot_screen, a_bot])
+	{
 		i.shader = gf.shader;
 	}
 
