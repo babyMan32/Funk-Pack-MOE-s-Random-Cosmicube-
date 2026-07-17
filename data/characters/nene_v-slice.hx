@@ -5,9 +5,11 @@ var lookingLeft = false;
 var abot;
 var a_bot_eyes;
 
+var noAbotStages = ['ejected', 'ejectedErected'];
+
 function onCreatePost()
 {
-	if (PlayState.SONG.stage == 'ejected') return;
+	if (noAbotStages.contains(PlayState.SONG.stage)) return;
 
 	abot = new FlxSpriteGroup();
 	gfGroup.insert(0, abot);
@@ -41,7 +43,7 @@ function onCreatePost()
 
 function onSectionHit()
 {
-	if (PlayState.SONG.stage == 'ejected') return;
+	if (noAbotStages.contains(PlayState.SONG.stage)) return;
 
 	if (mustHitSection)
 	{
