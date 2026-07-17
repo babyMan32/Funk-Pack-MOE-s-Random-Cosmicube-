@@ -1,7 +1,9 @@
 var ext = 'characters/neneshit/abot/';
 var lookingLeft = false;
+
 var abot;
 var a_bot_eyes;
+
 var noAbotStages = ['ejected', 'ejectedErected'];
 
 function onCreatePost()
