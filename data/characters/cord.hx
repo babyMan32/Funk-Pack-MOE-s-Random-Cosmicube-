@@ -8,6 +8,8 @@ var animSuffixVariable:Array = ["", "-alt", "-beatbox"];
 var idleSuffixVariable:Array = ["", "-alt", "-extralt"];
 var animSuffixInt:Int = 0;
 
+var funny = false;
+
 function onLoad()
 {
 	boyfriend.useRenderTexture = true;
@@ -66,4 +68,17 @@ function onAnimSwitch()
 		boyfriend.gameoverCharacter = coolAnims ? 'cord-fallen' : 'genericDeath';
 		boyfriend.gameoverInitialDeathSound = coolAnims ? 'cordFall' : 'fnf_loss_sfx';
 	}
+}
+
+function goodNoteHit(note)
+{
+	if (note.noteData != 0) return;
+
+	if (!coolAnims) return;
+
+	funny = FlxG.random.bool(50);
+
+	if (!funny) return;
+
+	boyfriend.playAnim('singLEFT-alt2', true);
 }

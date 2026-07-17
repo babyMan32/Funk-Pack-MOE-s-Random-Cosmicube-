@@ -2,10 +2,13 @@ var ext = 'characters/neneshit/abot/';
 
 var lookingLeft = false;
 
+var abot;
 var a_bot_eyes;
 
 function onCreatePost()
 {
+	if (PlayState.SONG.stage == 'ejected') return;
+
 	abot = new FlxSpriteGroup();
 	gfGroup.insert(0, abot);
 
@@ -38,6 +41,8 @@ function onCreatePost()
 
 function onSectionHit()
 {
+	if (PlayState.SONG.stage == 'ejected') return;
+
 	if (mustHitSection)
 	{
 		if (lookingLeft)
@@ -67,6 +72,8 @@ function lookRight() {
 
 function goodNoteHit(note)
 {
+	if (note.isSustainNote) return;
+
 	FlxG.signals.postUpdate.addOnce(function() {
 		comboAnim = 'combo' + game.combo;
 
@@ -76,4 +83,16 @@ function goodNoteHit(note)
 			gf.specialAnim = true;
 		}
 	});
+}
+
+function onEvent(ev, v1, v2)
+{
+	if (ev == 'Legacy')
+	{
+		switch (v1)
+		{
+			case 'bye gf':
+				FlxTween.tween(abot, {x: abot.x - 3500}, 4, {ease: FlxEase.quartIn, onComplete: function() abot.kill()});
+		}
+	}
 }
