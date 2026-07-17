@@ -2,14 +2,10 @@
 	"pausePortrait": "",
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "danceLeft",
-			"fps": 24,
-			"name": "Idle",
 			"indices": [
 				0,
 				1,
@@ -24,20 +20,22 @@
 				10,
 				11,
 				12,
-				13,
-				14
-			]
+				13
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "danceLeft",
+			"loop": false,
+			"name": "idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "danceRight",
-			"fps": 24,
-			"name": "Idle",
 			"indices": [
+				14,
 				15,
 				16,
 				17,
@@ -50,103 +48,95 @@
 				24,
 				25,
 				26,
-				27,
-				28,
-				29
-			]
-		},
-		{
-			"offsets": [
-				0,
-				0
+				27
 			],
-			"flipY": false,
-			"loop": false,
 			"fps": 24,
-			"anim": "lowerKnife",
 			"flipX": false,
-			"indices": [],
-			"name": "Knife Lower"
+			"flipY": false,
+			"anim": "danceRight",
+			"loop": false,
+			"name": "idle"
 		},
 		{
 			"offsets": [
-				0,
-				0
+				-12,
+				60
 			],
-			"flipY": false,
-			"loop": false,
+			"indices": [],
 			"fps": 24,
+			"flipX": false,
+			"flipY": false,
 			"anim": "raiseKnife",
-			"flipX": false,
-			"indices": [],
-			"name": "Knife Raise"
+			"loop": false,
+			"name": "raise"
 		},
 		{
 			"offsets": [
-				0,
-				0
+				-12,
+				60
 			],
-			"flipY": false,
-			"loop": false,
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			],
 			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "lowerKnife",
+			"loop": false,
+			"name": "lower"
+		},
+		{
+			"offsets": [
+				-12,
+				60
+			],
+			"indices": [
+				6,
+				7
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
 			"anim": "idleKnife",
-			"flipX": false,
-			"indices": [],
-			"name": "Idle (holding Knife)"
+			"loop": true,
+			"name": "blink"
 		},
 		{
 			"offsets": [
-				0,
-				0
+				-126,
+				60
 			],
-			"indices": [],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "combo50",
+			"anim": "blinkKnife",
 			"loop": false,
-			"name": "Cheer"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "combo200",
-			"loop": false,
-			"name": "Fawn"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "laugh",
-			"loop": false,
-			"name": "Laugh"
+			"name": "blink"
 		}
 	],
-	"no_antialiasing": false,
-	"image": "characters/neneshit/nene",
+	"no_antialiasing": true,
+	"image": "characters/neneshit/nenePixel/nenePixel",
 	"position": [
-		60,
-		-50
+		190,
+		240
 	],
 	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"flags": {
-		"floating": true,
-		"variants": {
-			"pixel": "nene_v-slice-pixel"
-		}
+		"isPixel": true
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
@@ -162,6 +152,6 @@
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 8,
-	"scale": 1,
+	"scale": 6,
 	"_editor_isPlayer": false
 }
