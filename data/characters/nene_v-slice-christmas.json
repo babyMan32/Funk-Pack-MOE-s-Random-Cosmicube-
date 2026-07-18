@@ -162,12 +162,12 @@
 	"flags": {},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "gf",
+	"healthicon": "nene-playble",
 	"afterimages": true,
 	"gameover_character": null,
 	"vslice_sustains": false,
 	"flip_x": false,
-	"healthbar_colour": -5963699,
+	"healthbar_colour": -24888,
 	"camera_position": [
 		-150,
 		100

@@ -1,3 +1,5 @@
+import flixel.FlxObject;
+
 using StringTools;
 
 var doWeLegs:Bool = false;
@@ -5,9 +7,15 @@ public var bfOldLegs:Character;
 var bfAnchorPoint:Array<Float> = [0, 0];
 var legPosY = [13, 7, -3, -1, -1, 2, 7, 9, 7, 2, 0, 0, 3, 1, 3, 7, 13];
 
+var startedFakeout = false;
+
+var getTrolled = false;
+
 function onLoad()
 {
 	doWeLegs = (ClientPrefs.bfSkin == 'boyfriend' && PlayState.SONG.stage == 'danger');
+
+	getTrolled = FlxG.random.bool((1 / 4096) * 100);
 
 	if (!doWeLegs) return;
 
@@ -140,5 +148,47 @@ function goodNoteHit(note)
 				strumPlay.animation.play('pressed', true);
 			}
 		});
+	}
+}
+
+function onPause()
+{
+	if (getTrolled && startedFakeout)
+	{
+		return Function_Stop;
+	}
+}
+
+function onGameOver()
+{
+	if (getTrolled)
+	{
+		KillNotes();
+		PlayState.instance.audio?.stop();
+		camHUD.alpha = 0;
+
+		camFollow = new FlxObject(boyfriend.getMidpoint().x - boyfriend.cameraPosition[0] - 100, boyfriend.getMidpoint().y + boyfriend.cameraPosition[1] - 100);
+		FlxG.camera.follow(camFollow, true, 0);
+
+		if (!startedFakeout)
+		{
+			fuckassVOID = new FlxSprite(0, 0).makeGraphic(5000, 5000, 0xff000000);
+			fuckassVOID.screenCenter();
+			add(fuckassVOID);
+
+			boyfriend_troll = new Character(0, 0, 'boyfriend_fakeout', true);
+			add(boyfriend_troll);
+			boyfriend_troll.x = boyfriend.x;
+			boyfriend_troll.y = boyfriend.y;
+			boyfriend_troll.playAnim('trolololololol');
+
+			FlxG.sound.play(Paths.sound('rareChance/fakeout_death', null, PathsTestMode.LOOSE));
+
+			new FlxTimer().start(6.25, function(_) getTrolled = false);
+		}
+
+		startedFakeout = true;
+
+		return Function_Stop;
 	}
 }

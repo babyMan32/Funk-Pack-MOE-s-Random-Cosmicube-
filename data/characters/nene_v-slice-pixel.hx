@@ -12,6 +12,16 @@ function onCreatePost()
 	abotPixel = new FlxSpriteGroup();
 	gfGroup.insert(0, abotPixel);
 
+	a_bot_headPixel = new FlxSprite(-650, 560);
+	a_bot_headPixel.frames = Paths.getSparrowAtlas(ext + 'abotHead', null, null, PathsTestMode.LOOSE);
+	a_bot_headPixel.animation.addByPrefix('toleft', 'toleft', 24, false);
+	a_bot_headPixel.animation.addByPrefix('left', 'left', 24, false);
+	a_bot_headPixel.animation.addByPrefix('toright', 'toright', 24, false);
+	a_bot_headPixel.animation.addByPrefix('right', 'right', 24, false);
+	a_bot_headPixel.antialiasing = (hdChance ? true : false);
+	a_bot_headPixel.scale.set(6, 6);
+	abotPixel.add(a_bot_headPixel);
+
 	a_bot_screenPixel = new FlxSprite(-390, 500).loadGraphic(Paths.image('${ext}aBotPixelBack', null, null, PathsTestMode.LOOSE));
 	a_bot_screenPixel.antialiasing = (hdChance ? true : false);
 	a_bot_screenPixel.scale.set(6, 6);
@@ -23,16 +33,6 @@ function onCreatePost()
 	a_botPixel.antialiasing = (hdChance ? true : false);
 	a_botPixel.scale.set(6, 6);
 	abotPixel.add(a_botPixel);
-
-	a_bot_headPixel = new FlxSprite(-650, 570);
-	a_bot_headPixel.frames = Paths.getSparrowAtlas(ext + 'abotHead', null, null, PathsTestMode.LOOSE);
-	a_bot_headPixel.animation.addByPrefix('toleft', 'toleft', 24, false);
-	a_bot_headPixel.animation.addByPrefix('left', 'left', 24, false);
-	a_bot_headPixel.animation.addByPrefix('toright', 'toright', 24, false);
-	a_bot_headPixel.animation.addByPrefix('right', 'right', 24, false);
-	a_bot_headPixel.antialiasing = (hdChance ? true : false);
-	a_bot_headPixel.scale.set(6, 6);
-	abotPixel.add(a_bot_headPixel);
 
 	abotPixel.x = gf.x + 530;
 	abotPixel.y = gf.y - 280;

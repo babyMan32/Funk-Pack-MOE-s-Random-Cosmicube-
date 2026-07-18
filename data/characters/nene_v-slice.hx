@@ -4,7 +4,7 @@ var lookingLeft = false;
 var abot;
 var a_bot_eyes;
 
-var noAbotStages = ['ejected', 'ejectedErected'];
+var noAbotStages = ['ejected', 'ejectedErected', 'danger'];
 
 function onCreatePost()
 {
@@ -58,6 +58,8 @@ function platformFloat()
 	gfGroup.insert(0, platformGF);
 	refreshZ(stage);
 
+	if (PlayState.SONG.stage == 'danger') return;
+
 	FlxG.signals.postUpdate.addOnce(function() {
 		platformGF.scrollFactor.set(0.7, 0.7);
 	});
@@ -65,7 +67,7 @@ function platformFloat()
 
 function onSectionHit()
 {
-	if (noAbotStages.contains(PlayState.SONG.stage)) return;
+	if (noAbotStages.contains(PlayState.SONG.stage) || PlayState.SONG.stage == 'danger') return;
 
 	if (mustHitSection)
 	{
@@ -115,7 +117,7 @@ function onEvent(ev, v1, v2)
 	if (ev == 'Legacy') {
 		switch (v1) {
 			case 'bye gf':
-				FlxTween.tween(abot, {x: abot.x - 3500}, 4, {ease: FlxEase.quartIn, onComplete: function() abot.kill()});
+				FlxTween.tween(platformGFDanfet, {x: platformGFDanfet.x - 3500}, 4, {ease: FlxEase.quartIn, onComplete: function() platformGFDanfet.kill()});
 		}
 	}
 }

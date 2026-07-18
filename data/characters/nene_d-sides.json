@@ -1,15 +1,13 @@
 {
-	"pausePortrait": "",
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				-9
 			],
-			"anim": "danceLeft",
+			"loop": false,
 			"fps": 24,
-			"name": "NeneIdle",
+			"anim": "danceLeft",
 			"indices": [
 				15,
 				16,
@@ -26,17 +24,17 @@
 				27,
 				28,
 				29
-			]
+			],
+			"name": "NeneIdle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				-9
 			],
-			"anim": "danceRight",
+			"loop": false,
 			"fps": 24,
-			"name": "NeneIdle",
+			"anim": "danceRight",
 			"indices": [
 				0,
 				1,
@@ -53,85 +51,73 @@
 				12,
 				13,
 				14
-			]
+			],
+			"name": "NeneIdle"
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
-				-67,
+				-57,
 				72
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "cheer1",
-			"flipX": false,
+			"fps": 24,
+			"name": "NeneCombo12",
 			"indices": [],
-			"name": "NeneCombo12"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				-44,
-				-36
+				-27
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "cheer2",
-			"flipX": false,
+			"fps": 24,
+			"name": "NeneCombo22",
 			"indices": [],
-			"name": "NeneCombo22"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
-				-64,
+				-54,
+				15
+			],
+			"anim": "raiseKnife",
+			"fps": 24,
+			"name": "NeneKnifeRaise2",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-56,
 				14
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
-			"anim": "raiseKnife",
-			"flipX": false,
-			"indices": [],
-			"name": "NeneKnifeRaise2"
-		},
-		{
-			"offsets": [
-				-66,
-				13
-			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "idleKnife",
-			"flipX": false,
+			"fps": 24,
+			"name": "NeneKnifeHold2",
 			"indices": [],
-			"name": "NeneKnifeHold2"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
-				-64,
+				-57,
 				13
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "lowerKnife",
-			"flipX": false,
-			"indices": [],
-			"name": "NeneKnifeDown2"
-		},
-		{
-			"offsets": [
-				25,
-				-10
-			],
-			"flipY": false,
-			"loop": false,
 			"fps": 24,
-			"anim": "sad",
-			"flipX": false,
+			"name": "NeneKnifeDown2",
 			"indices": [],
-			"name": "NenePFF2"
+			"flipX": false
 		},
 		{
 			"loop": false,
@@ -140,9 +126,22 @@
 				25,
 				-10
 			],
-			"anim": "scene2",
+			"anim": "sad",
 			"fps": 24,
 			"name": "NenePFF2",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"offsets": [
+				25,
+				-10
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "scene2",
+			"flipX": false,
 			"indices": [
 				6,
 				7,
@@ -153,18 +152,13 @@
 				12,
 				13
 			],
-			"flipX": false
+			"name": "NenePFF2"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				25,
 				-10
 			],
-			"anim": "scene1",
-			"fps": 24,
-			"name": "NenePFF2",
 			"indices": [
 				0,
 				1,
@@ -214,7 +208,12 @@
 				10,
 				10
 			],
-			"flipX": false
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "scene1",
+			"loop": false,
+			"name": "NenePFF2"
 		},
 		{
 			"loop": false,

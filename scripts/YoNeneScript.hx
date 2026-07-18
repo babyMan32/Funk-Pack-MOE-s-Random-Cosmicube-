@@ -1,5 +1,7 @@
 //basically the script from Nene Roomcode but not copied at all and probably completely different
 
+var neneExists = true;
+
 var VULTURE_THRESHOLD = 0.5;
 var MIN_BLINK_DELAY = 3;
 var MAX_BLINK_DELAY = 7;
@@ -10,8 +12,21 @@ var blinkCountdown = 3;
 
 var yo_nenes = ['nene_v-slice', 'nene_d-sides'];
 
+function onLoad()
+{
+	switch (PlayState.SONG.stage)
+	{
+		//no gf stages
+
+		case "beach-old", "boiling", "chef", "dave", "defeat", "esculent", "finalem", "idk", "jads", "jerma", "kills", "lounge", "monotone", "nuzzus", "piptowers", "pretender", "turbulence", "victory", "who":
+			neneExists = false;
+	}
+}
+
 function onUpdatePost(elapsed:Float):Void
 {
+	if (!neneExists) return;
+
 	if (!yo_nenes.contains(gf.curCharacter)) return;
 
 	if (health <= VULTURE_THRESHOLD && !raise_her_knife)
