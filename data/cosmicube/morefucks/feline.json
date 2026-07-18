@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Feline",
+	"description": "idk her actual fucking name MOE HELP M-",
+
+	"node":
+	{
+		"parent": "cord",
+		"direction": "east"
+	}
+}

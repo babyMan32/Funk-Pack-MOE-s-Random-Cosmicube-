@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Rose (GF)",
+	"description": "idfk man",
+
+	"node":
+	{
+		"parent": "feline",
+		"direction": "east"
+	}
+}

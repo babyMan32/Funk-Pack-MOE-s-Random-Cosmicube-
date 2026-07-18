@@ -1,0 +1,131 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				14,
+				14
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "char/.costume feline sprites/leftMiss"
+		},
+		{
+			"offsets": [
+				-19,
+				4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "char/.costume feline sprites/rightMiss"
+		},
+		{
+			"offsets": [
+				-2,
+				30
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "char/.costume feline sprites/upMiss"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				15,
+				-1
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "char/.costume feline sprites/downMiss",
+			"indices": []
+		},
+		{
+			"offsets": [
+				14,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "char/.costume feline sprites/left"
+		},
+		{
+			"offsets": [
+				-15,
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "char/.costume feline sprites/right"
+		},
+		{
+			"offsets": [
+				4,
+				13
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "char/.costume feline sprites/up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				14,
+				-21
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "char/.costume feline sprites/down",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "char/.costume feline sprites/idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/vs_cord/feline",
+	"position": [
+		10,
+		90
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "feline",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -1670695,
+	"camera_position": [
+		33,
+		112
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 6.1,
+	"scale": 0.8,
+	"_editor_isPlayer": true
+}
