@@ -1,3 +1,5 @@
+using StringTools;
+
 var ext = 'darnell/';
 
 var prep;
@@ -6,6 +8,8 @@ var knee_forward;
 var bonk;
 
 var nene_laugh;
+
+var yollowExploding = ['D\'low', 'D\'low (Pico Mix)'];
 
 function onCreatePost()
 {
@@ -57,7 +61,7 @@ function onCreatePost()
 
 function goodNoteHitPre(note)
 {
-	if (PlayState.SONG.song != 'D\'low') return;
+	if (!yollowExploding.contains(PlayState.SONG.song)) return;
 
 	if (curStep >= 1415)
 	{
@@ -67,6 +71,8 @@ function goodNoteHitPre(note)
 
 function onStepHit()
 {
+	if (!yollowExploding.contains(PlayState.SONG.song)) return;
+
 	if (curStep == 1415)
 	{
 		prep.play();
@@ -91,7 +97,7 @@ function onStepHit()
 
 function onBeatHit()
 {
-	if (PlayState.SONG.song != 'D\'low') return;
+	if (!yollowExploding.contains(PlayState.SONG.song)) return;
 
 	if (curBeat == 354)
 	{
