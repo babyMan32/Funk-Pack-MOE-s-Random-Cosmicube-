@@ -7,8 +7,6 @@ var kick_up;
 var knee_forward;
 var bonk;
 
-var nene_laugh;
-
 var yollowExploding = ['D\'low', 'D\'low (Pico Mix)'];
 
 function onCreatePost()
@@ -55,8 +53,6 @@ function onCreatePost()
 	kick_up = FlxG.sound.load(Paths.sound(ext + 'Kick_Can_UP', null, PathsTestMode.LOOSE));
 	knee_forward = FlxG.sound.load(Paths.sound(ext + 'Kick_Can_FORWARD', null, PathsTestMode.LOOSE));
 	bonk = FlxG.sound.load(Paths.sound(ext + 'Pico_Bonk', null, PathsTestMode.LOOSE));
-
-	nene_laugh = FlxG.sound.load(Paths.sound(ext + 'nene_laugh', null, PathsTestMode.LOOSE));
 }
 
 function goodNoteHitPre(note)
@@ -120,11 +116,5 @@ function onBeatHit()
 
 		explodeYellow.alpha = 1;
 		explodeYellow.animation.play('boom');
-
-		if (gf.curCharacter != 'nene_v-slice') return;
-
-		gf.playAnimForDuration('drop70', 2, true);
-		gf.specialAnim = true;
-		nene_laugh.play();
 	}
 }

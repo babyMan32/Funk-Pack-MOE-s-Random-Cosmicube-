@@ -6,6 +6,10 @@ var a_bot_eyes;
 
 var noAbotStages = ['ejected', 'ejectedErected', 'danger'];
 
+var nene_laugh;
+
+var yollowExploding = ['D\'low', 'D\'low (Pico Mix)'];
+
 function onCreatePost()
 {
 	if (noAbotStages.contains(PlayState.SONG.stage))
@@ -37,6 +41,8 @@ function onCreatePost()
 
 	abot.x = gf.x + 300;
 	abot.y = gf.y - 117;
+
+	nene_laugh = FlxG.sound.load(Paths.sound('darnell/nene_laugh', null, PathsTestMode.LOOSE));
 
 	switch (PlayState.SONG.stage)
 	{
@@ -143,5 +149,17 @@ function noteMiss(note)
 	{
 		gf.playAnim('drop70', true);
 		gf.specialAnim = true;
+	}
+}
+
+function onBeatHit()
+{
+	if (!yollowExploding.contains(PlayState.SONG.song)) return;
+
+	if (curBeat == 356)
+	{
+		gf.playAnimForDuration('drop70', 2, true);
+		gf.specialAnim = true;
+		nene_laugh.play();
 	}
 }
