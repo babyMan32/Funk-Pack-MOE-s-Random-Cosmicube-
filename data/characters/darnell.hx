@@ -23,6 +23,30 @@ function onCreatePost()
 			explodeYellow.alpha = 0.00000001;
 	});
 
+	canUp = new FlxSprite(0, 0);
+	canUp.frames = Paths.getSparrowAtlas(ext + 'wked1_cutscene_1_can', null, null, PathsTestMode.LOOSE);
+	canUp.animation.addByPrefix('up', 'can kicked up', 24, false);
+	canUp.flipX = true;
+	add(canUp);
+
+	canKick = new FlxSprite(0, 0);
+	canKick.frames = Paths.getSparrowAtlas(ext + 'wked1_cutscene_1_can', null, null, PathsTestMode.LOOSE);
+	canKick.animation.addByPrefix('to', 'can kick quick', 24, false);
+	canKick.flipX = true;
+	add(canKick);
+
+	canUp.alpha = 0.00000001;
+	canUp.x = boyfriend.x + 280;
+	canUp.y = boyfriend.y + 50;
+
+	canKick.alpha = 0.00000001;
+	canKick.y = boyfriend.y + 50;
+
+	canKick.animation.onFinish.add((animName) -> {
+		if (animName == 'to')
+			canKick.alpha = 0.00000001;
+	});
+
 	prep = FlxG.sound.load(Paths.sound(ext + 'Darnell_Lighter', null, PathsTestMode.LOOSE));
 	kick_up = FlxG.sound.load(Paths.sound(ext + 'Kick_Can_UP', null, PathsTestMode.LOOSE));
 	knee_forward = FlxG.sound.load(Paths.sound(ext + 'Kick_Can_FORWARD', null, PathsTestMode.LOOSE));
@@ -55,7 +79,13 @@ function onStepHit()
 
 	if (curStep == 1423)
 	{
+		boyfriend.playAnim('punt-can', true);
+		boyfriend.specialAnim = true;
 		knee_forward.play();
+
+		canKick.alpha = 1;
+		canUp.alpha = 0.00000001;
+		canKick.animation.play('to', true);
 	}
 }
 
@@ -73,12 +103,13 @@ function onBeatHit()
 	{
 		boyfriend.playAnim('kick-up', true);
 		boyfriend.specialAnim = true;
+
+		canUp.alpha = 1;
+		canUp.animation.play('up', true);
 	}
 
 	if (curBeat == 356)
 	{
-		boyfriend.playAnim('punt-can', true);
-		boyfriend.specialAnim = true;
 		bonk.play();
 
 		explodeYellow.alpha = 1;
