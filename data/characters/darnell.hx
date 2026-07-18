@@ -5,6 +5,8 @@ var kick_up;
 var knee_forward;
 var bonk;
 
+var nene_laugh;
+
 function onCreatePost()
 {
 	explodeYellow = new FlxSprite(0, 0);
@@ -25,6 +27,8 @@ function onCreatePost()
 	kick_up = FlxG.sound.load(Paths.sound(ext + 'Kick_Can_UP', null, PathsTestMode.LOOSE));
 	knee_forward = FlxG.sound.load(Paths.sound(ext + 'Kick_Can_FORWARD', null, PathsTestMode.LOOSE));
 	bonk = FlxG.sound.load(Paths.sound(ext + 'Pico_Bonk', null, PathsTestMode.LOOSE));
+
+	nene_laugh = FlxG.sound.load(Paths.sound(ext + 'nene_laugh', null, PathsTestMode.LOOSE));
 }
 
 function goodNoteHitPre(note)
@@ -37,6 +41,24 @@ function goodNoteHitPre(note)
 	}
 }
 
+function onStepHit()
+{
+	if (curStep == 1415)
+	{
+		prep.play();
+	}
+
+	if (curStep == 1419)
+	{
+		kick_up.play();
+	}
+
+	if (curStep == 1423)
+	{
+		knee_forward.play();
+	}
+}
+
 function onBeatHit()
 {
 	if (PlayState.SONG.song != 'D\'low') return;
@@ -45,24 +67,27 @@ function onBeatHit()
 	{
 		boyfriend.playAnim('can-prep', true);
 		boyfriend.specialAnim = true;
-		prep.play();
 	}
 
 	if (curBeat == 355)
 	{
 		boyfriend.playAnim('kick-up', true);
 		boyfriend.specialAnim = true;
-		kick_up.play();
 	}
 
 	if (curBeat == 356)
 	{
 		boyfriend.playAnim('punt-can', true);
 		boyfriend.specialAnim = true;
-		knee_forward.play();
 		bonk.play();
 
 		explodeYellow.alpha = 1;
 		explodeYellow.animation.play('boom');
+
+		if (gf.curCharacter != 'nene_v-slice') return;
+
+		gf.playAnimForDuration('drop70', 2, true);
+		gf.specialAnim = true;
+		nene_laugh.play();
 	}
 }

@@ -97,8 +97,7 @@ function lookRight()
 
 function goodNoteHit(note)
 {
-	if (note.isSustainNote)
-		return;
+	if (note.isSustainNote) return;
 
 	FlxG.signals.postUpdate.addOnce(function() {
 		comboAnim = 'combo' + game.combo;
@@ -134,4 +133,13 @@ function onUpdatePost()
 	abot.color = gf.color;
 	abot.alpha = gf.alpha;
 	abot.visible = gf.visible;
+}
+
+function noteMiss(note)
+{
+	if (game.combo >= 70)
+	{
+		gf.playAnim('drop70', true);
+		gf.specialAnim = true;
+	}
 }
