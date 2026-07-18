@@ -2,105 +2,105 @@
 	"pausePortrait": "",
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
-				14,
+				24,
 				14
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFTmiss",
-			"indices": [],
-			"name": "char/.costume feline sprites/leftMiss"
+			"fps": 24,
+			"name": "char/.costume feline sprites/leftMiss",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-19,
 				4
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHTmiss",
-			"indices": [],
-			"name": "char/.costume feline sprites/rightMiss"
+			"fps": 24,
+			"name": "char/.costume feline sprites/rightMiss",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-2,
 				30
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUPmiss",
-			"indices": [],
-			"name": "char/.costume feline sprites/upMiss"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				15,
-				-1
-			],
-			"anim": "singDOWNmiss",
 			"fps": 24,
-			"name": "char/.costume feline sprites/downMiss",
+			"name": "char/.costume feline sprites/upMiss",
 			"indices": []
 		},
 		{
 			"offsets": [
-				14,
-				1
+				20,
+				-21
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singLEFT",
+			"anim": "singDOWNmiss",
 			"indices": [],
-			"name": "char/.costume feline sprites/left"
+			"name": "char/.costume feline sprites/downMiss"
 		},
 		{
+			"loop": false,
+			"offsets": [
+				22,
+				1
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "char/.costume feline sprites/left",
+			"indices": []
+		},
+		{
+			"loop": false,
 			"offsets": [
 				-15,
 				-1
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "char/.costume feline sprites/right"
+			"fps": 24,
+			"name": "char/.costume feline sprites/right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				4,
 				13
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "char/.costume feline sprites/up"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				14,
-				-21
-			],
-			"anim": "singDOWN",
 			"fps": 24,
-			"name": "char/.costume feline sprites/down",
+			"name": "char/.costume feline sprites/up",
 			"indices": []
 		},
 		{
 			"offsets": [
+				14,
+				-36
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "char/.costume feline sprites/down"
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
 				0,
 				0
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "idle",
-			"loop": false,
-			"name": "char/.costume feline sprites/idle"
+			"fps": 24,
+			"name": "char/.costume feline sprites/idle",
+			"indices": [],
+			"flipX": false
 		}
 	],
 	"no_antialiasing": false,
@@ -125,7 +125,7 @@
 		112
 	],
 	"gameover_loop_sound": null,
-	"sing_duration": 6.1,
+	"sing_duration": 8,
 	"scale": 0.8,
 	"_editor_isPlayer": true
 }

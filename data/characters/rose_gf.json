@@ -173,9 +173,11 @@
 		-50,
 		-191
 	],
-	"dance_every": 2,
+	"dance_every": 1,
 	"gameover_intial_sound": null,
-	"flags": {},
+	"flags": {
+		"floating": true
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "rose",
@@ -189,7 +191,7 @@
 		-102
 	],
 	"gameover_loop_sound": null,
-	"sing_duration": 4,
+	"sing_duration": 8,
 	"scale": 0.8,
 	"_editor_isPlayer": false
 }

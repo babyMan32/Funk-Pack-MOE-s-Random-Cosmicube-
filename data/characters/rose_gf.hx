@@ -1,28 +1,39 @@
 var noSpeakerStages = ['ejected', 'ejectedErected', 'danger'];
 
-function onCreatePost() {
+function onCreatePost()
+{
+	if (noSpeakerStages.contains(PlayState.SONG.stage))
+	{
+		platformFloat();
+		return;
+	}
+
 	speaker = new FunkinSprite(0, 0).loadAtlas('characters/vs_cord/ROSE_SPEAKER', null, PathsTestMode.LOOSE);
 	speaker.addAnimByPrefix('bop', 'speaker :3', 24, false);
 	gfGroup.insert(0, speaker);
 	speaker.x = gf.x;
 	speaker.y = gf.y + 475;
 	speaker.shader = gf.shader;
-
-		if (noSpeakerStages.contains(PlayState.SONG.stage))
-	{
-		platformFloat();
-		return;
-	}
 }
 
-function onBeatHit() {
+function onBeatHit()
+{
+	if (noSpeakerStages.contains(PlayState.SONG.stage)) return;
+
+	speaker.playAnim('bop', true, false, 0);
+}
+
+function onCountdownTick(tick)
+{
+	if (noSpeakerStages.contains(PlayState.SONG.stage)) return;
+
 	speaker.playAnim('bop', true, false, 0);
 }
 
 function onUpdatePost()
 {
 	if (noSpeakerStages.contains(PlayState.SONG.stage))
-	return FlxTween.cancelTweensOf(gf);
+		return FlxTween.cancelTweensOf(gf);
 	
 	speaker.shader = gf.shader;
 	speaker.color = gf.color;
@@ -33,7 +44,7 @@ function onUpdatePost()
 
 function platformFloat()
 {
-	platformGF = new FlxSprite(75, 315);
+	platformGF = new FlxSprite(75, 275);
 	platformGF.frames = Paths.getSparrowAtlas('stages/common/platform');
 	platformGF.animation.addByPrefix('bop', 'floating', 24, true);
 	platformGF.animation.play('bop');
