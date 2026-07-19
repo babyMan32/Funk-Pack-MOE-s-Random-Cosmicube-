@@ -11,8 +11,18 @@ var nene_laugh;
 
 var yollowExploding = ['D\'low', 'D\'low (Pico Mix)'];
 
+var darkNene = 'nene_v-slice-dark';
+
 function onCreatePost()
 {
+	addCharacterToList(darkNene, 2);
+
+	switch (PlayState.SONG.stage)
+	{
+		case "maroon":
+			changeCharacter("nene_v-slice-christmas", 2);
+	}
+
 	if (noAbotStages.contains(PlayState.SONG.stage))
 	{
 		platformFloat();
@@ -24,6 +34,10 @@ function onCreatePost()
 
 	abot_eyeWhites = new FlxSprite(-380, 730).makeGraphic(160, 60, 0xffffffff);
 	abot.add(abot_eyeWhites);
+
+	abot_eyeWhitesDark = new FlxSprite(-380, 730).makeGraphic(160, 60, 0xff6f96ce);
+	abot.add(abot_eyeWhitesDark);
+	abot_eyeWhitesDark.alpha = 0;
 
 	a_bot_eyes = new FunkinSprite(-355, 740).loadAtlas('${ext}systemEyes', null, PathsTestMode.LOOSE);
 	a_bot_eyes.addAnimByPrefix('move', '', 24, false);
@@ -37,19 +51,22 @@ function onCreatePost()
 	a_bot_screen = new FlxSprite(-250, 540).loadGraphic(Paths.image('${ext}stereoBG', null, null, PathsTestMode.LOOSE));
 	abot.add(a_bot_screen);
 
+	a_bot_screenDark = new FlxSprite(-250, 540).loadGraphic(Paths.image('${ext}stereoBG', null, null, PathsTestMode.LOOSE));
+	a_bot_screenDark.color = 0xFF616785;
+	abot.add(a_bot_screenDark);
+	a_bot_screenDark.alpha = 0;
+
 	a_bot = new FunkinSprite(-410, 500).loadAtlas('${ext}abotSystem', null, PathsTestMode.LOOSE);
 	abot.add(a_bot);
+
+	a_botDark = new FunkinSprite(-410, 500).loadAtlas('${ext}dark/abotSystem', null, PathsTestMode.LOOSE);
+	abot.add(a_botDark);
+	a_botDark.alpha = 0;
 
 	abot.x = gf.x + 300;
 	abot.y = gf.y - 117;
 
 	nene_laugh = FlxG.sound.load(Paths.sound('darnell/nene_laugh', null, PathsTestMode.LOOSE));
-
-	switch (PlayState.SONG.stage)
-	{
-		case "maroon":
-			changeCharacter("nene_v-slice-christmas", 2);
-	}
 
 	lookLeft();
 }
@@ -103,30 +120,38 @@ function lookRight()
 	a_bot_eyes.playAnim('move', true, false, 17);
 }
 
-function goodNoteHit(note)
-{
-	if (note.isSustainNote) return;
-
-	FlxG.signals.postUpdate.addOnce(function() {
-		comboAnim = 'combo' + game.combo;
-
-		if (gf.hasAnim(comboAnim))
-		{
-			gf.playAnim(comboAnim, true);
-			gf.specialAnim = true;
-		}
-	});
-}
-
 function onEvent(ev, v1, v2)
 {
-	if (ev == 'Legacy')
+	switch (ev)
 	{
-		switch (v1)
+		case 'Legacy':
 		{
-			case 'bye gf':
+			switch (v1)
+			{
+				case 'bye gf':
 				FlxTween.tween(platformGF, {x: platformGF.x - 3500}, 4, {ease: FlxEase.quartIn, onComplete: function() platformGF.kill()});
+			}
 		}
+
+		case 'Lights out':
+			if (v1 == '2' /* ????? */ || (v1 == '1' && !ClientPrefs.flashing)) return;
+
+			FlxG.signals.postUpdate.addOnce(function() {
+				gf.alpha = 1;
+				a_botDark.alpha = 1;
+				a_bot_screenDark.alpha = 1;
+				abot_eyeWhitesDark.alpha = 1;
+			});
+
+			changeCharacter(darkNene, 2);
+
+		case 'Lights on':
+			if (v1 == '1' && !ClientPrefs.flashing) return;
+
+			a_botDark.alpha = 0;
+			a_bot_screenDark.alpha = 0;
+			abot_eyeWhitesDark.alpha = 0;
+			changeCharacter(ClientPrefs.gfSkin, 2);
 	}
 }
 
@@ -140,20 +165,11 @@ function onUpdatePost()
 	for (i in [abot_eyeWhites, a_bot_eyes, a_bot_screen, a_bot])
 	{
 		i.shader = gf.shader;
+		i.color = gf.color;
 	}
 
-	abot.color = gf.color;
 	abot.alpha = gf.alpha;
 	abot.visible = gf.visible;
-}
-
-function noteMiss(note)
-{
-	if (game.combo >= 70)
-	{
-		gf.playAnim('drop70', true);
-		gf.specialAnim = true;
-	}
 }
 
 function onBeatHit()

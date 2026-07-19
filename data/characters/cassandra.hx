@@ -65,21 +65,6 @@ function onCountdownTick(tick)
 	speakerCass.animation.play(gf.getAnimName(), true);
 }
 
-function goodNoteHit(note)
-{
-	if (note.isSustainNote) return;
-
-	FlxG.signals.postUpdate.addOnce(function() {
-		comboAnim = 'combo' + game.combo;
-
-		if (gf.hasAnim(comboAnim))
-		{
-			gf.playAnim(comboAnim, true);
-			gf.specialAnim = true;
-		}
-	});
-}
-
 function onEvent(ev, v1, v2)
 {
 	if (ev == 'Legacy')

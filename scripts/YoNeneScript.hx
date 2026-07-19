@@ -10,7 +10,7 @@ var raise_her_knife = false;
 
 var blinkCountdown = 3;
 
-var yo_nenes = ['nene_v-slice', 'nene_d-sides'];
+var yo_nenes = ['nene_v-slice', 'nene_v-slice-dark', 'nene_d-sides'];
 
 function onLoad()
 {
@@ -78,5 +78,31 @@ function onBeatHit()
 	if (blinkCountdown > 0)
 	{
 		blinkCountdown--;
+	}
+}
+
+function goodNoteHit(note)
+{
+	if (note.isSustainNote) return;
+
+	FlxG.signals.postUpdate.addOnce(function() {
+		comboAnim = 'combo' + game.combo;
+
+		if (gf.hasAnim(comboAnim))
+		{
+			gf.playAnim(comboAnim, true);
+			gf.specialAnim = true;
+		}
+	});
+}
+
+function noteMiss(note)
+{
+	if (game.combo >= 70)
+	{
+		if (!gf.hasAnim('drop70')) return;
+
+		gf.playAnim('drop70', true);
+		gf.specialAnim = true;
 	}
 }
