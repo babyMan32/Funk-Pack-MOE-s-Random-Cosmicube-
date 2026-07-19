@@ -10,7 +10,7 @@ var raise_her_knife = false;
 
 var blinkCountdown = 3;
 
-var yo_nenes = ['nene_v-slice', 'nene_v-slice-dark', 'nene_d-sides'];
+var yo_nenes = ['nene_v-slice', 'nene_v-slice-dark', 'nene_v-slice-pixel', 'nene_d-sides'];
 
 function onLoad()
 {

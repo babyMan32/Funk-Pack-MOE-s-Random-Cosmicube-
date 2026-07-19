@@ -38,11 +38,13 @@ function onCreatePost()
 	add(canKick);
 
 	canUp.alpha = 0.00000001;
-	canUp.x = boyfriend.x + 280;
+	canUp.x = boyfriend.x + 180;
 	canUp.y = boyfriend.y + 50;
 
 	canKick.alpha = 0.00000001;
-	canKick.y = boyfriend.y + 50;
+	canKick.x = boyfriend.x - 620;
+	canKick.y = boyfriend.y + 160;
+	canKick.animation.play('to', true);
 
 	canKick.animation.onFinish.add((animName) -> {
 		if (animName == 'to')

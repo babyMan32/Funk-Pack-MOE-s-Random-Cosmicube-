@@ -102,7 +102,7 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "idleKnife",
+			"anim": "idleKnife-hold",
 			"loop": true,
 			"name": "blink"
 		},
@@ -122,7 +122,7 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "blinkKnife",
+			"anim": "idleKnife",
 			"loop": false,
 			"name": "blink"
 		}

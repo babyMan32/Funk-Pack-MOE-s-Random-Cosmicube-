@@ -76,7 +76,10 @@
 	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"flags": {
-		"floating": true
+		"floating": true,
+		"variants": {
+			"pixel": "cassandra-pixel"
+		}
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,

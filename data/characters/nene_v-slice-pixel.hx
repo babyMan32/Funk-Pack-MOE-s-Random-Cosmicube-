@@ -37,16 +37,25 @@ function onCreatePost()
 	abotPixel.x = gf.x + 530;
 	abotPixel.y = gf.y - 280;
 
+	gf.animation.onFinish.add((animName) -> {
+		if (animName == 'idleKnife')
+			gf.playAnim('idleKnife-hold');
+	});
+
 	lookLeft();
 }
 
 function onBeatHit()
 {
+	if (!StringTools.contains(gf.animation.curAnim.name, 'dance')) return;
+
 	a_botPixel.animation.play('idle', true);
 }
 
 function onCountdownTick(tick)
 {
+	if (!StringTools.contains(gf.animation.curAnim.name, 'dance')) return;
+
 	a_botPixel.animation.play('idle', true);
 }
 
