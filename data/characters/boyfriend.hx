@@ -15,7 +15,7 @@ function onLoad()
 {
 	doWeLegs = (ClientPrefs.bfSkin == 'boyfriend' && PlayState.SONG.stage == 'danger');
 
-	getTrolled = FlxG.random.bool((1 / 4096) * 100);
+	getTrolled = FlxG.random.bool((1) * 100);
 
 	if (!doWeLegs) return;
 
@@ -167,7 +167,11 @@ function onGameOver()
 		PlayState.instance.audio?.stop();
 		camHUD.alpha = 0;
 
+		PlayState.instance?.scripts.set('inGameOver', true);
+
 		camFollow = new FlxObject(boyfriend.getMidpoint().x - boyfriend.cameraPosition[0] - 100, boyfriend.getMidpoint().y + boyfriend.cameraPosition[1] - 100);
+		FlxG.camera.scroll.set();
+		FlxG.camera.target = null;
 		FlxG.camera.follow(camFollow, true, 0);
 
 		if (!startedFakeout)
