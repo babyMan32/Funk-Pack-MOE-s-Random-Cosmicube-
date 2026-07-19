@@ -11,6 +11,7 @@ function onCreatePost()
 
 		case "danger":
 			changeCharacter("nene-playable-wind", 0);
+			boyfriend.x += 40;
 			boyfriend.y -= 230;
 
 		case "maroon":

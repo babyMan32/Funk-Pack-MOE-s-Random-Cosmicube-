@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "Nene Plushie",
+	"description": "watch out for that knife",
+
+	"node": {
+		"parent": "gf-plush",
+		"direction": "south"
+	},
+	
+	"color": [
+		255,
+		158,
+		200
+	]
+}

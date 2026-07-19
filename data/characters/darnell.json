@@ -1,5 +1,5 @@
 {
-	"pausePortrait": null,
+	"pausePortrait": "",
 	"animations": [
 		{
 			"offsets": [
@@ -12,7 +12,7 @@
 			"flipY": false,
 			"anim": "idle",
 			"loop": false,
-			"name": "Idle"
+			"name": "idle"
 		},
 		{
 			"offsets": [
@@ -25,7 +25,7 @@
 			"flipY": false,
 			"anim": "singDOWN",
 			"loop": false,
-			"name": "Pose Down"
+			"name": "down"
 		},
 		{
 			"offsets": [
@@ -38,7 +38,7 @@
 			"flipY": false,
 			"anim": "singLEFT",
 			"loop": false,
-			"name": "Pose Right"
+			"name": "left"
 		},
 		{
 			"offsets": [
@@ -51,7 +51,7 @@
 			"flipY": false,
 			"anim": "singRIGHT",
 			"loop": false,
-			"name": "Pose Left"
+			"name": "right"
 		},
 		{
 			"offsets": [
@@ -64,46 +64,7 @@
 			"flipY": false,
 			"anim": "singUP",
 			"loop": false,
-			"name": "Pose Up"
-		},
-		{
-			"offsets": [
-				0,
-				1
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singRIGHT-loop",
-			"loop": true,
-			"name": "Left Flame Loop"
-		},
-		{
-			"offsets": [
-				0,
-				-15
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singDOWN-loop",
-			"loop": true,
-			"name": "Down Flame Loop"
-		},
-		{
-			"offsets": [
-				0,
-				2
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singLEFT-loop",
-			"loop": true,
-			"name": "Right Flame Loop"
+			"name": "up"
 		},
 		{
 			"offsets": [
@@ -116,7 +77,46 @@
 			"flipY": false,
 			"anim": "singUP-loop",
 			"loop": true,
-			"name": "Up Flame Loop"
+			"name": "up_loop"
+		},
+		{
+			"offsets": [
+				0,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT-loop",
+			"loop": true,
+			"name": "right_loop"
+		},
+		{
+			"offsets": [
+				0,
+				2
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT-loop",
+			"loop": true,
+			"name": "left_loop"
+		},
+		{
+			"offsets": [
+				0,
+				-15
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN-loop",
+			"loop": true,
+			"name": "down_loop"
 		},
 		{
 			"offsets": [
@@ -129,7 +129,7 @@
 			"flipY": false,
 			"anim": "can-prep",
 			"loop": false,
-			"name": "Light Can"
+			"name": "light"
 		},
 		{
 			"offsets": [
@@ -142,7 +142,7 @@
 			"flipY": false,
 			"anim": "kick-up",
 			"loop": false,
-			"name": "Kick Up"
+			"name": "kick"
 		},
 		{
 			"offsets": [
@@ -155,7 +155,7 @@
 			"flipY": false,
 			"anim": "punt-can",
 			"loop": false,
-			"name": "Knee Forward"
+			"name": "knee"
 		},
 		{
 			"offsets": [
@@ -168,18 +168,83 @@
 			"flipY": false,
 			"anim": "haha",
 			"loop": false,
-			"name": "Laugh"
+			"name": "laugh"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "hey",
+			"loop": false,
+			"name": "YEAH"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "left_miss"
+		},
+		{
+			"offsets": [
+				3,
+				2
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "right_miss"
+		},
+		{
+			"offsets": [
+				-17,
+				5
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "up_miss"
+		},
+		{
+			"offsets": [
+				0,
+				-14
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "down_miss"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/darnell",
+	"image": "characters/darnell/darnell_playable",
 	"position": [
-		-300,
+		-150,
 		220
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": null,
+	"flags": {},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "darnell",

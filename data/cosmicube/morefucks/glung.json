@@ -6,7 +6,7 @@
 	"description": "glungus",
 
 	"node": {
-		"parent": "gf-plush",
+		"parent": "nene-plush",
 		"direction": "east"
 	},
 	

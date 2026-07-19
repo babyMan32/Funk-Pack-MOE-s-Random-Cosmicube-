@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Cassandra",
+	"description": "w phantom arcade leaks\n\nRequested by abyssal.azure",
+
+	"node":
+	{
+		"parent": "nene-playable",
+		"direction": "east"
+	}
+}

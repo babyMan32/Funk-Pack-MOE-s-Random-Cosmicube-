@@ -5,3 +5,8 @@ function onLoad()
 
 	camHUD.alpha = 0;
 }
+
+function onUpdatePost(elapsed:Float):Void
+{
+	cpuControlled = true;
+}

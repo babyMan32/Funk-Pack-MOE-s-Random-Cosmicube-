@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="nene-plush.png">
+<SubTexture name="idle0000" x="0" y="0" width="207" height="222" frameX="-22" frameY="-14" frameWidth="250" frameHeight="250" />
+</TextureAtlas>

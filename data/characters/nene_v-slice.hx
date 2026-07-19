@@ -5,6 +5,7 @@ var abot;
 var a_bot_eyes;
 
 var noAbotStages = ['ejected', 'ejectedErected', 'danger'];
+var floatingStages = ['ejected', 'ejectedErected'];
 
 var nene_laugh;
 
@@ -62,7 +63,6 @@ function platformFloat()
 
 	platformGF.shader = gf.shader;
 	gfGroup.insert(0, platformGF);
-	refreshZ(stage);
 
 	if (PlayState.SONG.stage == 'danger') return;
 
@@ -73,7 +73,7 @@ function platformFloat()
 
 function onSectionHit()
 {
-	if (noAbotStages.contains(PlayState.SONG.stage) || PlayState.SONG.stage == 'danger') return;
+	if (noAbotStages.contains(PlayState.SONG.stage)) return;
 
 	if (mustHitSection)
 	{
@@ -120,18 +120,22 @@ function goodNoteHit(note)
 
 function onEvent(ev, v1, v2)
 {
-	if (ev == 'Legacy') {
-		switch (v1) {
+	if (ev == 'Legacy')
+	{
+		switch (v1)
+		{
 			case 'bye gf':
-				FlxTween.tween(platformGFDanfet, {x: platformGFDanfet.x - 3500}, 4, {ease: FlxEase.quartIn, onComplete: function() platformGFDanfet.kill()});
+				FlxTween.tween(platformGF, {x: platformGF.x - 3500}, 4, {ease: FlxEase.quartIn, onComplete: function() platformGF.kill()});
 		}
 	}
 }
 
 function onUpdatePost()
 {
-	if (noAbotStages.contains(PlayState.SONG.stage))
+	if (floatingStages.contains(PlayState.SONG.stage))
 		return FlxTween.cancelTweensOf(gf);
+
+	if (noAbotStages.contains(PlayState.SONG.stage)) return;
 
 	for (i in [abot_eyeWhites, a_bot_eyes, a_bot_screen, a_bot])
 	{
