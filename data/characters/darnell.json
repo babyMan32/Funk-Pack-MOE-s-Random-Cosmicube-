@@ -1,5 +1,5 @@
 {
-	"pausePortrait": "",
+	"pausePortrait": null,
 	"animations": [
 		{
 			"offsets": [
@@ -17,7 +17,7 @@
 		{
 			"offsets": [
 				0,
-				-15
+				0
 			],
 			"indices": [],
 			"fps": 24,
@@ -55,8 +55,8 @@
 		},
 		{
 			"offsets": [
-				-17,
-				5
+				-14,
+				4
 			],
 			"indices": [],
 			"fps": 24,
@@ -68,55 +68,16 @@
 		},
 		{
 			"offsets": [
-				-17,
-				5
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singUP-loop",
-			"loop": true,
-			"name": "up_loop"
-		},
-		{
-			"offsets": [
 				0,
-				1
+				0
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singRIGHT-loop",
-			"loop": true,
-			"name": "right_loop"
-		},
-		{
-			"offsets": [
-				0,
-				2
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singLEFT-loop",
-			"loop": true,
-			"name": "left_loop"
-		},
-		{
-			"offsets": [
-				0,
-				-15
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singDOWN-loop",
-			"loop": true,
-			"name": "down_loop"
+			"anim": "cheer",
+			"loop": false,
+			"name": "YEAH"
 		},
 		{
 			"offsets": [
@@ -133,8 +94,8 @@
 		},
 		{
 			"offsets": [
-				-10,
-				20
+				-16,
+				14
 			],
 			"indices": [],
 			"fps": 24,
@@ -146,7 +107,7 @@
 		},
 		{
 			"offsets": [
-				-30,
+				-35,
 				10
 			],
 			"indices": [],
@@ -159,33 +120,7 @@
 		},
 		{
 			"offsets": [
-				-2,
-				1
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "haha",
-			"loop": false,
-			"name": "laugh"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "hey",
-			"loop": false,
-			"name": "YEAH"
-		},
-		{
-			"offsets": [
-				0,
+				1,
 				0
 			],
 			"indices": [],
@@ -198,7 +133,7 @@
 		},
 		{
 			"offsets": [
-				3,
+				4,
 				2
 			],
 			"indices": [],
@@ -211,8 +146,8 @@
 		},
 		{
 			"offsets": [
-				-17,
-				5
+				-14,
+				4
 			],
 			"indices": [],
 			"fps": 24,
@@ -225,7 +160,7 @@
 		{
 			"offsets": [
 				0,
-				-14
+				0
 			],
 			"indices": [],
 			"fps": 24,
@@ -234,17 +169,82 @@
 			"anim": "singDOWNmiss",
 			"loop": false,
 			"name": "down_miss"
+		},
+		{
+			"offsets": [
+				0,
+				2
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT-loop",
+			"loop": false,
+			"name": "left_loop"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN-loop",
+			"loop": false,
+			"name": "down_loop"
+		},
+		{
+			"offsets": [
+				0,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT-loop",
+			"loop": false,
+			"name": "right_loop"
+		},
+		{
+			"offsets": [
+				-14,
+				4
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP-loop",
+			"loop": false,
+			"name": "up_loop"
+		},
+		{
+			"offsets": [
+				-155,
+				-20
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "hey",
+			"loop": false,
+			"name": "Darnell HEY"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/darnell/darnell_playable",
+	"image": "characters/darnell/darnell_playable, characters/darnell/playable-darnell-anims",
 	"position": [
 		-150,
 		220
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": {},
+	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "darnell",
@@ -254,8 +254,8 @@
 	"flip_x": false,
 	"healthbar_colour": -9216336,
 	"camera_position": [
-		0,
-		0
+		19,
+		2
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 8,
