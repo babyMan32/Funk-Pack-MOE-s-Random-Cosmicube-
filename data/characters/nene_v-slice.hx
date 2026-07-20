@@ -11,12 +11,8 @@ var nene_laugh;
 
 var yollowExploding = ['D\'low', 'D\'low (Pico Mix)'];
 
-var darkNene = 'nene_v-slice-dark';
-
 function onCreatePost()
 {
-	addCharacterToList(darkNene, 2);
-
 	switch (PlayState.SONG.stage)
 	{
 		case "maroon":
@@ -136,14 +132,9 @@ function onEvent(ev, v1, v2)
 		case 'Lights out':
 			if (v1 == '2' /* ????? */ || (v1 == '1' && !ClientPrefs.flashing)) return;
 
-			FlxG.signals.postUpdate.addOnce(function() {
-				gf.alpha = 1;
-				a_botDark.alpha = 1;
-				a_bot_screenDark.alpha = 1;
-				abot_eyeWhitesDark.alpha = 1;
-			});
-
-			changeCharacter(darkNene, 2);
+			a_botDark.alpha = 1;
+			a_bot_screenDark.alpha = 1;
+			abot_eyeWhitesDark.alpha = 1;
 
 		case 'Lights on':
 			if (v1 == '1' && !ClientPrefs.flashing) return;
@@ -151,7 +142,6 @@ function onEvent(ev, v1, v2)
 			a_botDark.alpha = 0;
 			a_bot_screenDark.alpha = 0;
 			abot_eyeWhitesDark.alpha = 0;
-			changeCharacter(ClientPrefs.gfSkin, 2);
 	}
 }
 

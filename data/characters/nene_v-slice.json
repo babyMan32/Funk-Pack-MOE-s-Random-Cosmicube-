@@ -182,7 +182,8 @@
 	"gameover_intial_sound": null,
 	"flags": {
 		"variants": {
-			"pixel": "nene_v-slice-pixel"
+			"pixel": "nene_v-slice-pixel",
+			"dark": "nene_v-slice-dark"
 		},
 		"floating": true
 	},
