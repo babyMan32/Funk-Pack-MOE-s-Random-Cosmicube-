@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Boyfriend.XML (Speakers)",
+	"description": "erm what the sigma",
+
+	"node":
+	{
+		"parent": "darnell",
+		"direction": "east"
+	}
+}
