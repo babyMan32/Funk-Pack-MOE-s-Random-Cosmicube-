@@ -166,7 +166,10 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": null,
+	"flags": {
+		"offsetX": 225,
+		"offsetY": 125
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "nene",

@@ -1,0 +1,13 @@
+{
+	"type": "extraPlayerSkin",
+	"price": 250,
+
+	"title": "Boyfriend (Encore) (Extra Player)",
+	"description": "we really doign anything huh\n\nRequested by have_.youever",
+
+	"node":
+	{
+		"parent": "root",
+		"direction": "west"
+	}
+}

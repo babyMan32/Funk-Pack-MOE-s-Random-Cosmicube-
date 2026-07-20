@@ -8,6 +8,8 @@ public var extraAnimSuffix = '';
 
 public var tauntAnim = 'hey';
 
+var direction = 'Left';
+
 function onCreatePost()
 {
 	extraPlayer = ClientPrefs.equipment.get('extraPlayerSkin');
@@ -16,17 +18,26 @@ function onCreatePost()
 
 	bf2 = new Character(0, 0, extraPlayer, true);
 	boyfriendGroup.insert(boyfriendGroup.members.indexOf(bf2) + 1, bf2);
-	bf2.x = boyfriend.x + 250;
-	bf2.y = boyfriend.y - 75;
+	bf2.x += bf2.getFlag('offsetX') ?? 250;
+	bf2.y += bf2.getFlag('offsetY') ?? 75;
 }
 
 function onBeatHit()
 {
 	if (extraPlayer == null) return;
 
-	if (curBeat % 2 == 0 && bf2.getAnimName().contains('idle'))
+	if (curBeat % bf2.danceEveryNumBeats == 0)
 	{
-		bf2.playAnim('idle' + extraIdleSuffix);
+		if (bf2.getAnimName().contains('idle'))
+		{
+			bf2.playAnim('idle' + extraIdleSuffix);
+		}
+
+		if (bf2.getAnimName().contains('dance'))
+		{
+			bf2.playAnim('dance$direction' + extraIdleSuffix);
+			direction = (bf2.getAnimName() == 'danceLeft' ? 'Right' : 'Left');
+		}
 	}
 }
 
@@ -34,9 +45,18 @@ function onCountdownTick(tick)
 {
 	if (extraPlayer == null) return;
 
-	if (tick % 2 == 0 && bf2.getAnimName().contains('idle'))
+	if (tick % bf2.danceEveryNumBeats == 0)
 	{
-		bf2.playAnim('idle' + extraIdleSuffix);
+		if (bf2.getAnimName().contains('idle'))
+		{
+			bf2.playAnim('idle' + extraIdleSuffix);
+		}
+
+		if (bf2.getAnimName().contains('dance'))
+		{
+			bf2.playAnim('dance$direction' + extraIdleSuffix);
+			direction = (bf2.getAnimName() == 'danceLeft' ? 'Right' : 'Left');
+		}
 	}
 }
 

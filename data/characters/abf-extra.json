@@ -1,0 +1,185 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				75,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Left"
+		},
+		{
+			"offsets": [
+				-16,
+				-118
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Down"
+		},
+		{
+			"offsets": [
+				89,
+				7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Right"
+		},
+		{
+			"offsets": [
+				-21,
+				70
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Up"
+		},
+		{
+			"offsets": [
+				50,
+				30
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeft",
+			"flipX": false,
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "Idle"
+		},
+		{
+			"offsets": [
+				50,
+				30
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight",
+			"flipX": false,
+			"indices": [
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27
+			],
+			"name": "Idle"
+		},
+		{
+			"offsets": [
+				-15,
+				-136
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "DM"
+		},
+		{
+			"offsets": [
+				55,
+				16
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "LM"
+		},
+		{
+			"offsets": [
+				88,
+				-9
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "RM"
+		},
+		{
+			"offsets": [
+				-22,
+				72
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "UM"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/abf",
+	"position": [
+		-110,
+		220
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"offsetX": 150,
+		"offsetY": 150
+	},
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf-encore",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -10053223,
+	"camera_position": [
+		-170,
+		130
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.8,
+	"_editor_isPlayer": true
+}
