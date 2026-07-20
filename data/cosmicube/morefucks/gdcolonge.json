@@ -7,7 +7,7 @@
 
 	"node":
 	{
-		"parent": "bfsusreal-dialogue",
-		"direction": "south"
+		"parent": "job_application",
+		"direction": "west"
 	}
 }

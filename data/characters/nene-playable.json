@@ -167,9 +167,10 @@
 	"dance_every": 2,
 	"gameover_intial_sound": "fnf_loss_sfx-nene",
 	"flags": {
+		"defeatRetro": "nene-playable-alt",
 		"variants": {
-			"dark": "nene-playable-dark",
-			"pixel": "nene-playable-pixel"
+			"pixel": "nene-playable-pixel",
+			"dark": "nene-playable-dark"
 		}
 	},
 	"scalableOffsets": false,

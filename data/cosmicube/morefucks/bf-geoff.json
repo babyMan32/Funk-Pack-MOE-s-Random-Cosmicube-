@@ -8,7 +8,7 @@
 
 	"node":
 	{
-		"parent": "galfriend",
+		"parent": "beffy",
 		"direction": "east"
 	}
 }

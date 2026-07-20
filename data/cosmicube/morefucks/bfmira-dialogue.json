@@ -7,7 +7,7 @@
 
 	"node":
 	{
-		"parent": "bfsauce-dialogue",
+		"parent": "bfpolus-dialogue",
 		"direction": "west"
 	}
 }

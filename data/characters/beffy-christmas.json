@@ -18,8 +18,8 @@
 			"loop": false,
 			"flipY": false,
 			"offsets": [
-				0,
-				0
+				20,
+				7
 			],
 			"anim": "singDOWN",
 			"fps": 24,
@@ -31,8 +31,8 @@
 			"loop": false,
 			"flipY": false,
 			"offsets": [
-				0,
-				3
+				20,
+				7
 			],
 			"anim": "singDOWNmiss",
 			"fps": 24,
@@ -44,7 +44,7 @@
 			"loop": false,
 			"flipY": false,
 			"offsets": [
-				0,
+				-2,
 				0
 			],
 			"anim": "singLEFT",
@@ -70,8 +70,8 @@
 			"loop": false,
 			"flipY": false,
 			"offsets": [
-				0,
-				0
+				-2,
+				-5
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
@@ -83,8 +83,8 @@
 			"loop": false,
 			"flipY": false,
 			"offsets": [
-				0,
-				0
+				-2,
+				-5
 			],
 			"anim": "singRIGHTmiss",
 			"fps": 24,
@@ -117,103 +117,10 @@
 			"name": "UpSHIT",
 			"indices": [],
 			"flipX": false
-		},
-		{
-			"loop": false,
-			"flipY": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "hey",
-			"fps": 24,
-			"name": "HEY",
-			"indices": [],
-			"flipX": false
-		},
-		{
-			"loop": true,
-			"flipY": false,
-			"offsets": [
-				6,
-				2
-			],
-			"anim": "scared",
-			"fps": 24,
-			"name": "scary",
-			"indices": [],
-			"flipX": false
-		},
-		{
-			"loop": false,
-			"flipY": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "hurt",
-			"fps": 24,
-			"name": "Hit",
-			"indices": [],
-			"flipX": false
-		},
-		{
-			"loop": false,
-			"flipY": false,
-			"offsets": [
-				10,
-				0
-			],
-			"anim": "dodge",
-			"fps": 24,
-			"name": "dodge",
-			"indices": [],
-			"flipX": false
-		},
-		{
-			"loop": false,
-			"flipY": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "pre-attack",
-			"fps": 24,
-			"name": "attack",
-			"indices": [
-				0,
-				1,
-				2
-			],
-			"flipX": false
-		},
-		{
-			"loop": false,
-			"flipY": false,
-			"offsets": [
-				586,
-				-182
-			],
-			"anim": "attack",
-			"fps": 24,
-			"name": "attack",
-			"indices": [
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				11,
-				12
-			],
-			"flipX": false
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/fem/beffy/beffy",
+	"image": "characters/fem/beffy/beffy-christmas",
 	"position": [
 		-475,
 		50
@@ -224,7 +131,7 @@
 	"scalableOffsets": true,
 	"gameover_confirm_sound": null,
 	"healthicon": "beffy",
-	"afterimages": true,
+	"afterimages": false,
 	"gameover_character": null,
 	"vslice_sustains": false,
 	"flip_x": false,

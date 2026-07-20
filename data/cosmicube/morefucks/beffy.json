@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Beffy",
+	"description": "genderswap 2\n\nRequested (and created!) by masterredstoneo",
+
+	"node":
+	{
+		"parent": "galfriend",
+		"direction": "east"
+	}
+}

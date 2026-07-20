@@ -1,0 +1,13 @@
+{
+	"type": "extraPlayerSkin",
+	"price": 250,
+
+	"title": "Nene (Playable) (Alt) (Extra Player)",
+	"description": "more yo nenes",
+
+	"node":
+	{
+		"parent": "root",
+		"direction": "east"
+	}
+}

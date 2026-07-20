@@ -1,60 +1,23 @@
 {
-	"pausePortrait": "",
+	"pausePortrait": null,
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
 			"anim": "idle",
-			"fps": 24,
-			"name": "BF idle dance",
-			"indices": []
-		},
-		{
-			"offsets": [
-				2,
-				5
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "hey",
 			"loop": false,
-			"name": "BF HEY!!"
+			"name": "Nene Idle"
 		},
 		{
 			"offsets": [
-				0,
-				0
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "shaking",
-			"loop": true,
-			"name": "BF idle shaking"
-		},
-		{
-			"offsets": [
-				8,
-				-37
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singDOWNmiss",
-			"loop": false,
-			"name": "BF NOTE DOWN MISS"
-		},
-		{
-			"offsets": [
-				-1,
-				-59
+				-35,
+				-143
 			],
 			"indices": [],
 			"fps": 24,
@@ -62,25 +25,12 @@
 			"flipY": false,
 			"anim": "singDOWN",
 			"loop": false,
-			"name": "BF NOTE DOWN0"
+			"name": "Nene Down"
 		},
 		{
 			"offsets": [
-				18,
-				23
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singLEFTmiss",
-			"loop": false,
-			"name": "BF NOTE LEFT MISS"
-		},
-		{
-			"offsets": [
-				17,
-				-6
+				10,
+				-24
 			],
 			"indices": [],
 			"fps": 24,
@@ -88,25 +38,12 @@
 			"flipY": false,
 			"anim": "singLEFT",
 			"loop": false,
-			"name": "BF NOTE LEFT0"
+			"name": "Nene Left"
 		},
 		{
 			"offsets": [
-				-26,
-				20
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singRIGHTmiss",
-			"loop": false,
-			"name": "BF NOTE RIGHT MISS"
-		},
-		{
-			"offsets": [
-				-34,
-				-8
+				-74,
+				2
 			],
 			"indices": [],
 			"fps": 24,
@@ -114,25 +51,12 @@
 			"flipY": false,
 			"anim": "singRIGHT",
 			"loop": false,
-			"name": "BF NOTE RIGHT0"
+			"name": "Nene Right"
 		},
 		{
 			"offsets": [
-				-23,
-				26
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singUPmiss",
-			"loop": false,
-			"name": "BF NOTE UP MISS"
-		},
-		{
-			"offsets": [
-				-29,
-				26
+				-22,
+				19
 			],
 			"indices": [],
 			"fps": 24,
@@ -140,29 +64,120 @@
 			"flipY": false,
 			"anim": "singUP",
 			"loop": false,
-			"name": "BF NOTE UP0"
+			"name": "Nene Up"
+		},
+		{
+			"offsets": [
+				-28,
+				43
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "Nene Miss Up"
+		},
+		{
+			"offsets": [
+				-71,
+				45
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "Nene Miss Right"
+		},
+		{
+			"offsets": [
+				10,
+				24
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "Nene Miss Left"
+		},
+		{
+			"offsets": [
+				20,
+				-93
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "Nene Miss Down"
+		},
+		{
+			"offsets": [
+				-54,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "scared",
+			"loop": true,
+			"name": "Nene Scared"
+		},
+		{
+			"offsets": [
+				-71,
+				-3
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "hey",
+			"loop": false,
+			"name": "Nene Hey"
+		},
+		{
+			"offsets": [
+				-96,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "dodge",
+			"loop": false,
+			"name": "Nene Dodge"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/GirlFriend_Assets_v2",
+	"image": "characters/neneshit/nene-play-alt/nene",
 	"position": [
-		100,
-		350
+		-20,
+		200
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
 	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "gf",
+	"healthicon": "nene",
 	"afterimages": true,
 	"gameover_character": null,
-	"vslice_sustains": true,
+	"vslice_sustains": false,
 	"flip_x": true,
-	"healthbar_colour": -5963699,
+	"healthbar_colour": -955739,
 	"camera_position": [
-		100,
-		50
+		0,
+		0
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 8,
