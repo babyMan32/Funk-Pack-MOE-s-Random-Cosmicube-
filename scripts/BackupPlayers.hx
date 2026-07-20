@@ -1,8 +1,12 @@
 using StringTools;
 
-public var extraPlayer;
+var extraPlayer;
+
+public var bf2;
 public var extraIdleSuffix = '';
 public var extraAnimSuffix = '';
+
+public var tauntAnim = 'hey';
 
 function onCreatePost()
 {
@@ -52,4 +56,15 @@ function noteMiss(note)
 
 	bf2.playAnim(note.skin.data.singAnimations[note.noteData] + 'miss' + extraAnimSuffix, true);
 	bf2.holdTimer = 0;
+}
+
+function onUpdatePost(elapsed:Float):Void
+{
+	if (extraPlayer == null) return;
+
+	if (controls.NOTE_TAUNT_P)
+	{
+		bf2.playAnim(tauntAnim);
+		bf2.specialAnim = true;
+	}
 }
