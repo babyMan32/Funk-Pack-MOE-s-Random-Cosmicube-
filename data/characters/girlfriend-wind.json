@@ -100,9 +100,7 @@
 	],
 	"dance_every": 1,
 	"gameover_intial_sound": null,
-	"flags": {
-		"lightsDownSpeaker": true
-	},
+	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "gf",

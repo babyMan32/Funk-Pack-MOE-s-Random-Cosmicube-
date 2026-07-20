@@ -151,13 +151,7 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": {
-		"variants": {
-			"dark": "boyfriend-dark",
-			"falling": "boyfriend-fall"
-		},
-		"runner": true
-	},
+	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "gf",
@@ -168,7 +162,7 @@
 	"healthbar_colour": -5963699,
 	"camera_position": [
 		100,
-		-50
+		50
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 8,

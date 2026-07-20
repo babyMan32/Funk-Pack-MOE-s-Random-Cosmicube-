@@ -10,8 +10,19 @@ var legPosY = [13, 7, -3, -1, -1, 2, 7, 9, 7, 2, 0, 0, 3, 1, 3, 7, 13];
 var startedFakeout = false;
 var getTrolled = false;
 
+var baddieExists:Bool = true;
+var allow_gf_taunt = true;
+
 function onLoad()
 {
+	switch (PlayState.SONG.stage)
+	{
+		//no gf stages
+
+		case "beach-old", "boiling", "chef", "dave", "defeat", "esculent", "finalem", "idk", "jads", "jerma", "kills", "lounge", "monotone", "nuzzus", "piptowers", "pretender", "turbulence", "victory", "who":
+			baddieExists = false;
+	}
+
 	doWeLegs = (ClientPrefs.bfSkin == 'boyfriend' && PlayState.SONG.stage == 'danger');
 
 	getTrolled = FlxG.random.bool((1 / 4096) * 100);
@@ -69,6 +80,8 @@ function onCreatePost()
 
 function onUpdatePost(elapsed)
 {
+	gfTaunt();
+
 	if (!doWeLegs) return;
 
 	game.boyfriend.y = bfAnchorPoint[1] + legPosY[bfOldLegs.animation.curAnim.curFrame];
@@ -77,15 +90,42 @@ function onUpdatePost(elapsed)
 	if (!boyfriend.getAnimName().contains('miss') && bfOldLegs.getAnimName().contains('miss'))
 	{
 		var lastFrame:Int = 0;
+		var lastDance:String = 'danceLeft';
+
 		lastFrame = bfOldLegs.animation.curAnim.curFrame;
+		lastDance = bfOldLegs.getAnimName();
 		bfOldLegs.idleSuffix = '';
 		bfOldLegs.recalculateDanceIdle();
+		bfOldLegs.playAnim(lastDance, false);
 		bfOldLegs.animation.curAnim.curFrame = lastFrame;
 	}
 
 	if (boyfriend.getAnimName().contains('dance'))
 	{
 		bfOldLegs.visible = false;
+		bfOldLegs.idleSuffix = '';
+		bfOldLegs.recalculateDanceIdle();
+	}
+}
+
+function gfTaunt()
+{
+	if (!baddieExists) return;
+
+	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'boyfriend' && boyfriend.getAnimName() == 'hey' && allow_gf_taunt)
+	{
+		if (gf.curCharacter == 'girlfriend' || gf.curCharacter == 'boyfriend-speaker')
+		{
+			gf.playAnim('cheer');
+			gf.specialAnim = true;
+
+			allow_gf_taunt = false;
+		}
+	}
+
+	if (gf.getAnimName() != 'cheer')
+	{
+		allow_gf_taunt = true;
 	}
 }
 
@@ -125,11 +165,16 @@ function noteMiss(daNote)
 {
 	if (!doWeLegs) return;
 
+	bfOldLegs.visible = true;
+
 	var lastFrame:Int = 0;
+	var lastDance:String = 'danceLeft';
 	
 	lastFrame = bfOldLegs.animation.curAnim.curFrame;
+	lastDance = bfOldLegs.getAnimName();
 	bfOldLegs.idleSuffix = '-miss';
 	bfOldLegs.recalculateDanceIdle();
+	bfOldLegs.playAnim(lastDance + '-miss', true);
 	bfOldLegs.animation.curAnim.curFrame = lastFrame;
 }
 
