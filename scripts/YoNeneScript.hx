@@ -83,6 +83,8 @@ function onBeatHit()
 
 function goodNoteHit(note)
 {
+	if (!neneExists) return;
+
 	if (note.isSustainNote) return;
 
 	FlxG.signals.postUpdate.addOnce(function() {

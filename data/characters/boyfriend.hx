@@ -8,14 +8,13 @@ var bfAnchorPoint:Array<Float> = [0, 0];
 var legPosY = [13, 7, -3, -1, -1, 2, 7, 9, 7, 2, 0, 0, 3, 1, 3, 7, 13];
 
 var startedFakeout = false;
-
 var getTrolled = false;
 
 function onLoad()
 {
 	doWeLegs = (ClientPrefs.bfSkin == 'boyfriend' && PlayState.SONG.stage == 'danger');
 
-	getTrolled = FlxG.random.bool((1) * 100);
+	getTrolled = FlxG.random.bool((1 / 4096) * 100);
 
 	if (!doWeLegs) return;
 
@@ -132,23 +131,6 @@ function noteMiss(daNote)
 	bfOldLegs.idleSuffix = '-miss';
 	bfOldLegs.recalculateDanceIdle();
 	bfOldLegs.animation.curAnim.curFrame = lastFrame;
-}
-
-function goodNoteHit(note)
-{
-	final strumPlay:StrumNote = note.strum;
-
-	if (strumPlay == null) return;
-
-	if (!cpuControlled)
-	{
-		strumPlay.animation.onFinish.add((animName) -> {
-			if (animName == 'confirm')
-			{
-				strumPlay.animation.play('pressed', true);
-			}
-		});
-	}
 }
 
 function onPause()
