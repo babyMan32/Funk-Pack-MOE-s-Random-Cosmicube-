@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Girlfriend (Playable)",
+	"description": "hell yeah jigsaw",
+
+	"node":
+	{
+		"parent": "boyfriend-speaker",
+		"direction": "north"
+	}
+}

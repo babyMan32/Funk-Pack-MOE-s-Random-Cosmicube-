@@ -1,0 +1,63 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				-20
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "BF dies",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-12,
+				-20
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "BF Dead Loop",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-12,
+				46
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "BF Dead confirm",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/BOYFRIEND_dsides-old",
+	"position": [
+		0,
+		350
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf_d-sides",
+	"afterimages": true,
+	"gameover_character": "bf-dsides_OLD-dead",
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -1813032,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

@@ -112,46 +112,13 @@
 			"indices": []
 		},
 		{
-			"loop": false,
-			"offsets": [
-				-13,
-				-20
-			],
-			"anim": "firstDeath",
-			"fps": 24,
-			"name": "BF dies",
-			"indices": []
-		},
-		{
-			"loop": true,
-			"offsets": [
-				-12,
-				-20
-			],
-			"anim": "deathLoop",
-			"fps": 24,
-			"name": "BF Dead Loop",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-12,
-				46
-			],
-			"anim": "deathConfirm",
-			"fps": 24,
-			"name": "BF Dead confirm",
-			"indices": []
-		},
-		{
 			"offsets": [
 				-90,
 				0
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "Dodge down",
+			"anim": "singDOWN-dodge",
 			"indices": [],
 			"name": "BF NOTE DOWN DODGE"
 		},
@@ -162,7 +129,7 @@
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "Dodge left",
+			"anim": "singLEFT-dodge",
 			"indices": [],
 			"name": "BF NOTE LEFT DODGE"
 		},
@@ -173,7 +140,7 @@
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "Dodge up",
+			"anim": "singUP-dodge",
 			"indices": [],
 			"name": "BF NOTE UP DODGE"
 		},
@@ -184,7 +151,7 @@
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "Dodge right",
+			"anim": "singRIGHT-dodge",
 			"indices": [],
 			"name": "BF NOTE RIGHT DODGE"
 		},
@@ -193,32 +160,7 @@
 				-81,
 				17
 			],
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4
-			],
+			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
@@ -240,7 +182,7 @@
 	"gameover_confirm_sound": null,
 	"healthicon": "bf_d-sides",
 	"afterimages": true,
-	"gameover_character": null,
+	"gameover_character": "bf-dsides_OLD-dead",
 	"vslice_sustains": false,
 	"flip_x": true,
 	"healthbar_colour": -1813032,

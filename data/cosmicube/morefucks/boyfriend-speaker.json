@@ -7,7 +7,7 @@
 
 	"node":
 	{
-		"parent": "darnell",
-		"direction": "east"
+		"parent": "girlfriend",
+		"direction": "north"
 	}
 }

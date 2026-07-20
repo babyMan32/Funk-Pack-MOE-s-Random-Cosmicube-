@@ -105,7 +105,7 @@
 				109,
 				-16
 			],
-			"anim": "sing_dodgeLEFT",
+			"anim": "singLEFT-dodge",
 			"fps": 24,
 			"name": "Boyfriend/BFDodgeLeft",
 			"indices": []
@@ -116,7 +116,7 @@
 				6,
 				-6
 			],
-			"anim": "sing_dodgeDOWN",
+			"anim": "singDOWN-dodge",
 			"fps": 24,
 			"name": "Boyfriend/BFDodgeDown",
 			"indices": []
@@ -127,7 +127,7 @@
 				-29,
 				51
 			],
-			"anim": "sing_dodgeUP",
+			"anim": "singUP-dodge",
 			"fps": 24,
 			"name": "Boyfriend/BFDodgeUp",
 			"indices": []
@@ -138,7 +138,7 @@
 				6,
 				4
 			],
-			"anim": "sing_dodgeRIGHT",
+			"anim": "singRIGHT-dodge",
 			"fps": 24,
 			"name": "Boyfriend/BFDodgeRight",
 			"indices": []

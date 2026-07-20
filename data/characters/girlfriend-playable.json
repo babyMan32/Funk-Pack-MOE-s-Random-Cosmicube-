@@ -1,0 +1,177 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "BF idle dance",
+			"indices": []
+		},
+		{
+			"offsets": [
+				2,
+				5
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "hey",
+			"loop": false,
+			"name": "BF HEY!!"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "shaking",
+			"loop": true,
+			"name": "BF idle shaking"
+		},
+		{
+			"offsets": [
+				8,
+				-37
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "BF NOTE DOWN MISS"
+		},
+		{
+			"offsets": [
+				-1,
+				-59
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "BF NOTE DOWN0"
+		},
+		{
+			"offsets": [
+				18,
+				23
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "BF NOTE LEFT MISS"
+		},
+		{
+			"offsets": [
+				17,
+				-6
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "BF NOTE LEFT0"
+		},
+		{
+			"offsets": [
+				-26,
+				20
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "BF NOTE RIGHT MISS"
+		},
+		{
+			"offsets": [
+				-34,
+				-8
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "BF NOTE RIGHT0"
+		},
+		{
+			"offsets": [
+				-23,
+				26
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "BF NOTE UP MISS"
+		},
+		{
+			"offsets": [
+				-29,
+				26
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "BF NOTE UP0"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/GirlFriend_Assets_v2",
+	"position": [
+		100,
+		350
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"variants": {
+			"dark": "boyfriend-dark",
+			"falling": "boyfriend-fall"
+		},
+		"runner": true
+	},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "gf",
+	"afterimages": true,
+	"gameover_character": "bf-dead",
+	"vslice_sustains": true,
+	"flip_x": true,
+	"healthbar_colour": -5963699,
+	"camera_position": [
+		100,
+		-50
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}
