@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Pico",
+	"description": "yooo",
+
+	"node":
+	{
+		"parent": "nene_v-slice",
+		"direction": "south"
+	}
+}
