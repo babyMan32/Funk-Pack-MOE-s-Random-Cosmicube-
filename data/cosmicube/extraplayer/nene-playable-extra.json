@@ -1,0 +1,13 @@
+{
+	"type": "extraPlayerSkin",
+	"price": 250,
+
+	"title": "Nene (Playable) (Extra Player)",
+	"description": "what the sigma\n\nRequested by abyssal.azure",
+
+	"node":
+	{
+		"parent": "nene-playable-alt-extra",
+		"direction": "east"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"type": "extraExtraPlayerSkin",
+	"price": 250,
+
+	"title": "Darnell",
+	"description": "such a CHUD",
+
+	"node":
+	{
+		"parent": "root",
+		"direction": "south"
+	}
+}

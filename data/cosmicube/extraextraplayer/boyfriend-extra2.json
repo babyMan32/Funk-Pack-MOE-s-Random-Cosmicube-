@@ -1,0 +1,13 @@
+{
+	"type": "extraExtraPlayerSkin",
+	"price": 250,
+
+	"title": "Boyfriend.XML (Extra Extra Player)",
+	"description": "okay what am i doing",
+
+	"node":
+	{
+		"parent": "root",
+		"direction": "north"
+	}
+}
