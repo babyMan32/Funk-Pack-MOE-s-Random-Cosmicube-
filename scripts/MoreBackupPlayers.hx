@@ -4,9 +4,9 @@ var extraExtraPlayer;
 
 public var bf3;
 
-public var extraIdleSuffix = '';
-public var extraAnimSuffix = '';
-public var tauntAnim = 'hey';
+public var extraExtraIdleSuffix = '';
+public var extraExtraAnimSuffix = '';
+public var tauntAnim2 = 'hey';
 
 var direction = 'Left';
 
