@@ -1,0 +1,13 @@
+{
+	"type": "extraPlayerSkin",
+	"price": 250,
+
+	"title": "Bartholomew Bartholomew Bartholomew (B2 BF) (Whitty) (Extra Player)",
+	"description": "more like b4 amirite-",
+
+	"node":
+	{
+		"parent": "root",
+		"direction": "south"
+	}
+}

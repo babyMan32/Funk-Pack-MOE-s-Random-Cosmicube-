@@ -17,9 +17,15 @@ function onCreatePost()
 	if (extraPlayer == null) return;
 
 	bf2 = new Character(0, 0, extraPlayer, true);
-	boyfriendGroup.insert(boyfriendGroup.members.indexOf(bf2) + 1, bf2);
+	boyfriendGroup.insert(0, bf2);
 	bf2.x += bf2.getFlag('offsetX') ?? 250;
 	bf2.y += bf2.getFlag('offsetY') ?? 75;
+
+	FlxG.signals.postUpdate.addOnce(function() {
+		bf2Rim = new funkin.game.shaders.ExtraDropShadowShader().copyFrom(boyfriend.shader);
+		bf2Rim.attachedSprite = bf2;
+		bf2.useRenderTexture = true;
+	});
 }
 
 function onBeatHit()
@@ -64,10 +70,11 @@ function goodNoteHit(note)
 {
 	if (extraPlayer == null) return;
 
+	bf2.holdTimer = 0;
+
 	if (note.isSustainNote && bf2.vSliceSustains) return;
 
 	bf2.playAnim(note.skin.data.singAnimations[note.noteData] + extraAnimSuffix, true);
-	bf2.holdTimer = 0;
 }
 
 function noteMiss(note)
@@ -80,9 +87,9 @@ function noteMiss(note)
 
 function onUpdatePost(elapsed:Float):Void
 {
-	if (extraPlayer == null) return;
+	if (extraPlayer == null || cpuControlled) return;
 
-	if (controls.NOTE_TAUNT_P)
+	if (controls.NOTE_TAUNT_P && bf2.hasAnim(tauntAnim))
 	{
 		bf2.playAnim(tauntAnim);
 		bf2.specialAnim = true;
