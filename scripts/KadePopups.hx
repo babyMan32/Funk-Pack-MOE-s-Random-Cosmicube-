@@ -10,12 +10,7 @@ var currentNumberHundrecs = 0;
 
 public var kade_combo_counter = 0;
 
-var alpha_delay;
-var bounce = 0.5;
-var combo_fall = 2.5;
-
-var layerRate = 10;
-var layerCombo = 15;
+var kadeCrochetMaybe = ((60 / bpm) * 1000);
 
 function onCreatePost()
 {
@@ -27,7 +22,7 @@ function onCreatePost()
 	alpha_delay = 60 / Conductor.bpm;
 }
 
-function goodNoteHitPre(note)
+function goodNoteHit(note)
 {
 	if (!init_kade_hud) return;
 
@@ -59,12 +54,18 @@ function kadeComboPopup()
 		holySmackerel.scale.set(0.7, 0.7);
 		add(holySmackerel);
 
-		FlxTween.tween(holySmackerel, {y: holySmackerel.y - 20}, 0.2, {ease: FlxEase.quadOut});
+		holySmackerel.acceleration.y = 550;
 
-		FlxTween.tween(holySmackerel, {x: holySmackerel.x + FlxG.random.int(-170, 170)}, 3, {ease: FlxEase.quadIn});
+		holySmackerel.velocity.y -= FlxG.random.int(140, 175);
+		holySmackerel.velocity.x -= FlxG.random.int(0, 10);
 
-		FlxTween.tween(holySmackerel, {y: 2500}, combo_fall, {ease: FlxEase.quadIn, startDelay: bounce});
-		FlxTween.tween(holySmackerel, {alpha: 0}, 0.5, {ease: FlxEase.quadIn, startDelay: alpha_delay, onComplete: function() holySmackerel.destroy()});
+		FlxTween.tween(holySmackerel, {alpha: 0}, 0.2, {
+			onComplete: function(tween:FlxTween)
+			{
+				holySmackerel.destroy();
+			},
+			startDelay: kadeCrochetMaybe * 0.001
+		});
 	});
 }
 
@@ -86,32 +87,33 @@ function kadeNumbersPopup()
 		currentNumberHundrecs++;
 	}
 
+	var ratingNums = new FlxSpriteGroup();
+	add(ratingNums);
+
 	var unos = new FlxSprite(660, 250).loadGraphic(Paths.image('ui/v3/num$currentNumberOnes', null, null, PathsTestMode.LOOSE));
 	unos.scale.set(0.7, 0.7);
-	add(unos);
+	ratingNums.add(unos);
 
 	var tens = new FlxSprite(600, 250).loadGraphic(Paths.image('ui/v3/num$currentNumberTens', null, null, PathsTestMode.LOOSE));
 	tens.scale.set(0.7, 0.7);
-	add(tens);
+	ratingNums.add(tens);
 
 	var beegNumb = new FlxSprite(540, 250).loadGraphic(Paths.image('ui/v3/num$currentNumberHundrecs', null, null, PathsTestMode.LOOSE));
 	beegNumb.scale.set(0.7, 0.7);
-	add(beegNumb);
+	ratingNums.add(beegNumb);
 
-	FlxTween.tween(unos, {y: unos.y - 20}, 0.2, {ease: FlxEase.quadOut});
-	FlxTween.tween(tens, {y: tens.y - 20}, 0.2, {ease: FlxEase.quadOut});
-	FlxTween.tween(beegNumb, {y: tens.y - 20}, 0.2, {ease: FlxEase.quadOut});
+	ratingNums.acceleration.y = FlxG.random.int(200, 300);
 
-	FlxTween.tween(unos, {x: unos.x + FlxG.random.int(-170, 170)}, 3, {ease: FlxEase.quadIn});
-	FlxTween.tween(tens, {x: tens.x + FlxG.random.int(-170, 170)}, 3, {ease: FlxEase.quadIn});
-	FlxTween.tween(beegNumb, {x: tens.x + FlxG.random.int(-170, 170)}, 3, {ease: FlxEase.quadIn});
+	ratingNums.velocity.y -= FlxG.random.int(140, 160);
+	ratingNums.velocity.x = FlxG.random.float(-5, 5);
 
-	FlxTween.tween(unos, {y: 2600}, combo_fall, {ease: FlxEase.quadIn, startDelay: bounce});
-	FlxTween.tween(unos, {alpha: 0}, 0.5, {ease: FlxEase.quadIn, startDelay: alpha_delay, onComplete: function() unos.destroy()});
-	FlxTween.tween(tens, {y: 2600}, combo_fall, {ease: FlxEase.quadIn, startDelay: bounce});
-	FlxTween.tween(tens, {alpha: 0}, 0.5, {ease: FlxEase.quadIn, startDelay: alpha_delay, onComplete: function() tens.destroy()});
-	FlxTween.tween(beegNumb, {y: 2600}, combo_fall, {ease: FlxEase.quadIn, startDelay: bounce});
-	FlxTween.tween(beegNumb, {alpha: 0}, 0.5, {ease: FlxEase.quadIn, startDelay: alpha_delay, onComplete: function() beegNumb.destroy()});
+	FlxTween.tween(ratingNums, {alpha: 0}, 0.2, {
+		onComplete: function(tween:FlxTween)
+		{
+			ratingNums.destroy();
+		},
+		startDelay: kadeCrochetMaybe * 0.002
+	});
 }
 
 function bullshitFunc()

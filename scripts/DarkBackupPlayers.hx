@@ -8,6 +8,8 @@ var direction = 'Left';
 
 function onCreatePost()
 {
+	if (bf2 == null) return;
+
 	darkVariant = bf2.getFlag('variants')?.dark;
 
 	if (darkVariant == null) return;
