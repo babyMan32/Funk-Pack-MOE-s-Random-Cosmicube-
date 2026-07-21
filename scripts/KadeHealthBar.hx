@@ -103,8 +103,8 @@ function onUpdatePost(elapsed:Float):Void
 		kadeBarPlay.y += 5;
 	}
 
-	kadeIconBF.updateIconAnim((health * 50) * 0.01);
-	kadeIconDad.updateIconAnim((100 - (health * 50)) * 0.01);
+	kadeIconBF.updateIconAnim(healthBar.percent * 0.01);
+	kadeIconDad.updateIconAnim((100 - healthBar.percent) * 0.01);
 }
 
 function onBeatHit()

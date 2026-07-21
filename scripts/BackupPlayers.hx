@@ -3,9 +3,9 @@ using StringTools;
 var extraPlayer;
 
 public var bf2;
+
 public var extraIdleSuffix = '';
 public var extraAnimSuffix = '';
-
 public var tauntAnim = 'hey';
 
 var direction = 'Left';
@@ -21,6 +21,11 @@ function onCreatePost()
 	bf2.x += bf2.getFlag('offsetX') ?? 250;
 	bf2.y += bf2.getFlag('offsetY') ?? 75;
 
+	bf2Icon = new HealthIcon(bf2.healthIcon, true);
+	playHUD.insert(2, bf2Icon);
+
+	if (boyfriend.shader == null) return;
+
 	FlxG.signals.postUpdate.addOnce(function() {
 		bf2Rim = new funkin.game.shaders.ExtraDropShadowShader().copyFrom(boyfriend.shader);
 		bf2Rim.attachedSprite = bf2;
@@ -30,7 +35,7 @@ function onCreatePost()
 
 function onBeatHit()
 {
-	if (extraPlayer == null) return;
+	if (bf2 == null) return;
 
 	if (curBeat % bf2.danceEveryNumBeats == 0)
 	{
@@ -49,7 +54,7 @@ function onBeatHit()
 
 function onCountdownTick(tick)
 {
-	if (extraPlayer == null) return;
+	if (bf2 == null) return;
 
 	if (tick % bf2.danceEveryNumBeats == 0)
 	{
@@ -68,7 +73,7 @@ function onCountdownTick(tick)
 
 function goodNoteHit(note)
 {
-	if (extraPlayer == null) return;
+	if (bf2 == null) return;
 
 	bf2.holdTimer = 0;
 
@@ -79,7 +84,7 @@ function goodNoteHit(note)
 
 function noteMiss(note)
 {
-	if (extraPlayer == null) return;
+	if (bf2 == null) return;
 
 	bf2.playAnim(note.skin.data.singAnimations[note.noteData] + 'miss' + extraAnimSuffix, true);
 	bf2.holdTimer = 0;
@@ -87,7 +92,15 @@ function noteMiss(note)
 
 function onUpdatePost(elapsed:Float):Void
 {
-	if (extraPlayer == null || cpuControlled) return;
+	if (bf2 == null) return;
+
+	bf2Icon.x = iconP1.x + 75;
+	bf2Icon.y = iconP1.y - 25;
+	bf2Icon.scale.set(iconP1.scale.x, iconP1.scale.y);
+	bf2Icon.shader = iconP1.shader;
+	bf2Icon.updateIconAnim(healthBar.percent * 0.01);
+
+	if (cpuControlled) return;
 
 	if (controls.NOTE_TAUNT_P && bf2.hasAnim(tauntAnim))
 	{
