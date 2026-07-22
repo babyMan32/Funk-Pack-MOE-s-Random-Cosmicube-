@@ -1,0 +1,242 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeft",
+			"flipX": false,
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "P IDLE 2 instance 1"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight",
+			"flipX": false,
+			"indices": [
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27
+			],
+			"name": "P IDLE 2 instance 1"
+		},
+		{
+			"offsets": [
+				69,
+				-3
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"flipX": false,
+			"indices": [],
+			"name": "P LEFT 2 instance 1"
+		},
+		{
+			"offsets": [
+				-2,
+				-16
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"flipX": false,
+			"indices": [],
+			"name": "P DOWN 2 instance 1"
+		},
+		{
+			"offsets": [
+				10,
+				62
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"flipX": false,
+			"indices": [],
+			"name": "P UP 2 instance 1"
+		},
+		{
+			"offsets": [
+				-14,
+				-7
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"flipX": false,
+			"indices": [],
+			"name": "P RIGHT 2 instance 1"
+		},
+		{
+			"offsets": [
+				80,
+				10
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"flipX": false,
+			"indices": [],
+			"name": "P LEFT 3 instance 1"
+		},
+		{
+			"offsets": [
+				-5,
+				-15
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"flipX": false,
+			"indices": [],
+			"name": "P DOWN 3 instance 1"
+		},
+		{
+			"offsets": [
+				0,
+				69
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"flipX": false,
+			"indices": [],
+			"name": "P UP 3 instance 1"
+		},
+		{
+			"offsets": [
+				-11,
+				3
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"flipX": false,
+			"indices": [],
+			"name": "P RIGHT 3 instance 1"
+		},
+		{
+			"offsets": [
+				-4,
+				13
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "P MISS UNI instance 1"
+		},
+		{
+			"offsets": [
+				-4,
+				13
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "P MISS UNI instance 1"
+		},
+		{
+			"offsets": [
+				-4,
+				13
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "P MISS UNI instance 1"
+		},
+		{
+			"offsets": [
+				-4,
+				13
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "P MISS UNI instance 1"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfdi26/pin wrongy the second",
+	"position": [
+		50,
+		280
+	],
+	"dance_every": 1,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "pin",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -59392,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

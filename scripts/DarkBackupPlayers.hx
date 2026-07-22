@@ -2,7 +2,7 @@ using StringTools;
 
 var darkVariant;
 
-public var bf2Dark;
+public var bf2Dark:Null<String>;
 
 var direction = 'Left';
 
@@ -99,6 +99,8 @@ function onEvent(ev, v1, v2)
 			switch (v1)
 			{
 				case 'Vignette On', 'Vignette Off', 'ending':
+					if (bf2 == null) return;
+
 					FlxG.signals.postUpdate.addOnce(function() {
 						bf2.shader = boyfriend.shader;
 					});

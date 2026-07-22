@@ -2,7 +2,7 @@ using StringTools;
 
 var extraExtraPlayer;
 
-public var bf3;
+public var bf3:Null<String>;
 
 public var extraExtraIdleSuffix = '';
 public var extraExtraAnimSuffix = '';

@@ -1,0 +1,147 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "hg idle instance 1"
+		},
+		{
+			"offsets": [
+				5,
+				-20
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "hg down instance 1"
+		},
+		{
+			"offsets": [
+				70,
+				10
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "hg left instance 1"
+		},
+		{
+			"offsets": [
+				-22,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "hg right instance 1"
+		},
+		{
+			"offsets": [
+				-18,
+				40
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "hg up instance 1"
+		},
+		{
+			"offsets": [
+				-20,
+				-7
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "hg miss instance 1"
+		},
+		{
+			"offsets": [
+				-20,
+				-7
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "hg miss instance 1"
+		},
+		{
+			"offsets": [
+				-20,
+				-7
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "hg miss instance 1"
+		},
+		{
+			"offsets": [
+				-20,
+				-7
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "hg miss instance 1"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfdi26/hourglass human",
+	"position": [
+		100,
+		260
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "hour",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -12388614,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

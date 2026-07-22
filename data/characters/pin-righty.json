@@ -1,0 +1,147 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "P IDLE 1 instance 1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				61,
+				-1
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "P LEFT 1 instance 1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				5,
+				-15
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "P DOWN 1 instance 1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				57
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "P UP 1 instance 1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-14,
+				1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "P RIGHT 1 instance 1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"offsets": [
+				-4,
+				13
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "P MISS UNI instance 1"
+		},
+		{
+			"offsets": [
+				-4,
+				13
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "P MISS UNI instance 1"
+		},
+		{
+			"offsets": [
+				-4,
+				13
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "P MISS UNI instance 1"
+		},
+		{
+			"offsets": [
+				-4,
+				13
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "P MISS UNI instance 1"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfdi26/pin wrongy",
+	"position": [
+		50,
+		280
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "pin",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -59392,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

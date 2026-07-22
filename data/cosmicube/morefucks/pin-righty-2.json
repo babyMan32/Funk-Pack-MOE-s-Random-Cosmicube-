@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Pin (Right Finger) (Phase 2) (BFDI 26)",
+	"description": "without a shadow of a doubt",
+
+	"node":
+	{
+		"parent": "pin-righty",
+		"direction": "south"
+	}
+}
