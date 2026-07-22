@@ -26,7 +26,10 @@ function goodNoteHit(note)
 
 	if (note.isSustainNote) return;
 
-	kadeComboPopup();
+	FlxG.signals.postUpdate.addOnce(function() {
+		kadeComboPopup();
+	});
+
 	kadeNumbersPopup();
 }
 
@@ -45,25 +48,23 @@ function kadeComboPopup()
 {
 	if (cpuControlled) return;
 
-	FlxG.signals.postUpdate.addOnce(function() {
-		rating_to_spawn = bullshitFunc(); //rating image
+	rating_to_spawn = bullshitFunc(); //rating image
 
-		var holySmackerel = new FlxSprite(550, 150).loadGraphic(Paths.image('ui/v3/$rating_to_spawn', null, null, PathsTestMode.LOOSE));
-		holySmackerel.scale.set(0.7, 0.7);
-		insert(1000, holySmackerel);
+	var holySmackerel = new FlxSprite(550, 150).loadGraphic(Paths.image('ui/v3/$rating_to_spawn', null, null, PathsTestMode.LOOSE));
+	holySmackerel.scale.set(0.7, 0.7);
+	insert(1000, holySmackerel);
 
-		holySmackerel.acceleration.y = 550;
+	holySmackerel.acceleration.y = 550;
 
-		holySmackerel.velocity.y -= FlxG.random.int(140, 175); //movement shit i fucking guess
-		holySmackerel.velocity.x -= FlxG.random.int(0, 10);
+	holySmackerel.velocity.y -= FlxG.random.int(140, 175); //movement shit i fucking guess
+	holySmackerel.velocity.x -= FlxG.random.int(0, 10);
 
-		FlxTween.tween(holySmackerel, {alpha: 0}, 0.2, {
-			onComplete: function(tween:FlxTween)
-			{
-				holySmackerel.destroy();
-			},
-			startDelay: kadeCrochetMaybe * 0.001
-		});
+	FlxTween.tween(holySmackerel, {alpha: 0}, 0.2, {
+		onComplete: function(tween:FlxTween)
+		{
+			holySmackerel.destroy();
+		},
+		startDelay: kadeCrochetMaybe * 0.001
 	});
 }
 
