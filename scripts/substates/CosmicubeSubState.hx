@@ -46,8 +46,10 @@ function handleNode(node)
 			var icon = new FlxSprite().loadGraphic(Paths.image('icons/icon-' + charInfo.healthicon));
 			icon.frames = FlxTileFrames.fromGraphic(icon.graphic, FlxPoint.get(icon.width / 2, icon.height)); // we split the icon in half depending on the width
 			icon.active = false; node.add(icon);
-			icon.setGraphicSize(140); icon.updateHitbox();
-			icon.x -= 150; icon.y -= 150;
+			icon.setGraphicSize(140);
+			icon.updateHitbox();
+			icon.x -= 150;
+			icon.y -= 150;
 		}
 	}
 

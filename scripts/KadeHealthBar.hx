@@ -22,7 +22,7 @@ function barInitiation()
 	kadeBar.alpha = ClientPrefs.healthBarAlpha;
 	kadeBar.visible = !ClientPrefs.hideHud;
 	kadeBar.screenCenter();
-	playHUD.add(kadeBar);
+	playHUD.insert(0, kadeBar);
 
 	kadeBar.y = FlxG.height * (!ClientPrefs.downScroll ? 0.89 : 0.11);
 
@@ -30,7 +30,7 @@ function barInitiation()
 	kadeBarOpp.alpha = ClientPrefs.healthBarAlpha;
 	kadeBarOpp.visible = !ClientPrefs.hideHud;
 	kadeBarOpp.screenCenter();
-	playHUD.add(kadeBarOpp);
+	playHUD.insert(1, kadeBarOpp);
 
 	kadeBarOpp.scale.x = 1.001;
 	kadeBarOpp.scale.y = 1.2;
@@ -41,7 +41,7 @@ function barInitiation()
 	kadeBarPlay.alpha = ClientPrefs.healthBarAlpha;
 	kadeBarPlay.visible = !ClientPrefs.hideHud;
 	kadeBarPlay.screenCenter();
-	playHUD.add(kadeBarPlay);
+	playHUD.insert(2, kadeBarPlay);
 
 	kadeBarPlay.scale.y = 1.2;
 	kadeBarPlay.x = kadeBar.width - 113;
@@ -60,13 +60,13 @@ function iconInitiation()
 	kadeIconBF.alpha = ClientPrefs.healthBarAlpha;
 	kadeIconBF.visible = !ClientPrefs.hideHud;
 	kadeIconBF.screenCenter();
-	playHUD.add(kadeIconBF);
+	playHUD.insert(3, kadeIconBF);
 
 	kadeIconDad = new HealthIcon(game.dad.healthIcon, true);
 	kadeIconDad.alpha = ClientPrefs.healthBarAlpha;
 	kadeIconDad.visible = !ClientPrefs.hideHud;
 	kadeIconDad.screenCenter();
-	playHUD.add(kadeIconDad);
+	playHUD.insert(4, kadeIconDad);
 
 	kadeIconDad.flipX = true;
 
