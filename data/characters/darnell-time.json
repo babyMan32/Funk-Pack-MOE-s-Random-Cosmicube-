@@ -1,0 +1,201 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				-4,
+				-7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "0uncrustable/down"
+		},
+		{
+			"offsets": [
+				-4,
+				49
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "0uncrustable/up"
+		},
+		{
+			"offsets": [
+				-4,
+				26
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "0uncrustable/right"
+		},
+		{
+			"offsets": [
+				25,
+				-7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "0uncrustable/left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-4,
+				20
+			],
+			"anim": "surprised",
+			"fps": 24,
+			"name": "0uncrustable/surprised",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				14,
+				14,
+				14,
+				14,
+				14,
+				14,
+				14,
+				14,
+				14,
+				14,
+				14,
+				14,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				-10
+			],
+			"anim": "uhoh",
+			"fps": 24,
+			"name": "0uncrustable/uhoh",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-4,
+				-7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "0uncrustable/altdown"
+		},
+		{
+			"offsets": [
+				-4,
+				49
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "0uncrustable/altup"
+		},
+		{
+			"offsets": [
+				-4,
+				26
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "0uncrustable/altright"
+		},
+		{
+			"offsets": [
+				25,
+				-7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "0uncrustable/altleft"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "0uncrustable/idle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle-alt",
+			"loop": false,
+			"name": "0uncrustable/altidle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfdi26/uncrustabletime",
+	"position": [
+		0,
+		370
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "crust",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -80047,
+	"camera_position": [
+		-200,
+		200
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}
