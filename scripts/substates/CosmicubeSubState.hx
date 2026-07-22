@@ -3,6 +3,8 @@ import flixel.graphics.frames.FlxTileFrames;
 
 var checked:Bool = false;
 
+var moesCubes = ['morefucks', 'extraplayer']; // to do: add 'extraextraplayer' in later cause it fucking breaks the game otherwise because no path is longer than one long-
+
 function onUpdate()
 {
 	if (!checked) // check if we are in a substate
@@ -10,11 +12,15 @@ function onUpdate()
 		if (FlxG.state.subState != null)
 		{
 			checked = true;
+
 			FlxG.state.subState.closeCallback = function() { checked = false; } // check for the next substate after we exit this one
 
-			if (FlxG.state.subState.cosmicube == 'morefucks')
+			for (iconPatches in 0...moesCubes.length)
 			{
-				FlxG.signals.postUpdate.addOnce(patchStuff); // on the extra characters substate! run patch
+				if (FlxG.state.subState.cosmicube == moesCubes[iconPatches])
+				{
+					FlxG.signals.postUpdate.addOnce(patchStuff); // on the extra characters substate! run patch
+				}
 			}
 		}
 	}

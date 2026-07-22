@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Stickmin GF (V4)",
+	"description": "old stick",
+
+	"node":
+	{
+		"parent": "gdcolonge",
+		"direction": "west"
+	}
+}
