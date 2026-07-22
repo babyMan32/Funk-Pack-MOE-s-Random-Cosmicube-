@@ -24,7 +24,15 @@ function onCreatePost()
 	bf3.y += bf3.getFlag('offsetY') ?? 225;
 
 	bf3Icon = new HealthIcon(bf3.healthIcon, true);
-	playHUD.insert(5, bf3Icon);
+
+	if (bf2 != null)
+	{
+		playHUD.insert(5, bf3Icon);
+	}
+	else
+	{
+		playHUD.insert(4, bf3Icon);
+	}
 
 	shadersCheck();
 }

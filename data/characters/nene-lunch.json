@@ -12,12 +12,12 @@
 			"flipY": false,
 			"anim": "idle",
 			"loop": false,
-			"name": "Nene Idle"
+			"name": "idle"
 		},
 		{
 			"offsets": [
-				-35,
-				-143
+				-10,
+				-17
 			],
 			"indices": [],
 			"fps": 24,
@@ -25,12 +25,12 @@
 			"flipY": false,
 			"anim": "singDOWN",
 			"loop": false,
-			"name": "Nene Down"
+			"name": "down"
 		},
 		{
 			"offsets": [
-				10,
-				-24
+				20,
+				3
 			],
 			"indices": [],
 			"fps": 24,
@@ -38,12 +38,12 @@
 			"flipY": false,
 			"anim": "singLEFT",
 			"loop": false,
-			"name": "Nene Left"
+			"name": "left"
 		},
 		{
 			"offsets": [
-				-74,
-				2
+				15,
+				-14
 			],
 			"indices": [],
 			"fps": 24,
@@ -51,12 +51,12 @@
 			"flipY": false,
 			"anim": "singRIGHT",
 			"loop": false,
-			"name": "Nene Right"
+			"name": "right"
 		},
 		{
 			"offsets": [
-				-22,
-				19
+				-30,
+				40
 			],
 			"indices": [],
 			"fps": 24,
@@ -64,12 +64,12 @@
 			"flipY": false,
 			"anim": "singUP",
 			"loop": false,
-			"name": "Nene Up"
+			"name": "up"
 		},
 		{
 			"offsets": [
-				-28,
-				43
+				0,
+				0
 			],
 			"indices": [],
 			"fps": 24,
@@ -77,38 +77,12 @@
 			"flipY": false,
 			"anim": "singUPmiss",
 			"loop": false,
-			"name": "Nene Miss Up"
+			"name": "miss"
 		},
 		{
 			"offsets": [
-				-71,
-				45
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singRIGHTmiss",
-			"loop": false,
-			"name": "Nene Miss Right"
-		},
-		{
-			"offsets": [
-				10,
-				24
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singLEFTmiss",
-			"loop": false,
-			"name": "Nene Miss Left"
-		},
-		{
-			"offsets": [
-				20,
-				-93
+				0,
+				0
 			],
 			"indices": [],
 			"fps": 24,
@@ -116,68 +90,52 @@
 			"flipY": false,
 			"anim": "singDOWNmiss",
 			"loop": false,
-			"name": "Nene Miss Down"
+			"name": "miss"
 		},
 		{
 			"offsets": [
-				-54,
-				1
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "scared",
-			"loop": true,
-			"name": "Nene Scared"
-		},
-		{
-			"offsets": [
-				-71,
-				-3
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "hey",
-			"loop": false,
-			"name": "Nene Hey"
-		},
-		{
-			"offsets": [
-				-96,
+				0,
 				0
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "dodge",
+			"anim": "singLEFTmiss",
 			"loop": false,
-			"name": "Nene Dodge"
+			"name": "miss"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "miss"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/neneshit/nene-play-alt/nene",
+	"image": "characters/bfdi26/sbmilk",
 	"position": [
-		-20,
-		200
+		100,
+		300
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": {
-		"offsetX": 225,
-		"offsetY": 125
-	},
-	"scalableOffsets": false,
+	"flags": null,
+	"scalableOffsets": true,
 	"gameover_confirm_sound": null,
-	"healthicon": "nene",
-	"afterimages": true,
+	"healthicon": "milky",
+	"afterimages": false,
 	"gameover_character": null,
 	"vslice_sustains": false,
 	"flip_x": true,
-	"healthbar_colour": -955739,
+	"healthbar_colour": -1,
 	"camera_position": [
 		0,
 		0

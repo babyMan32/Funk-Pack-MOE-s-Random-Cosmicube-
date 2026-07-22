@@ -1,0 +1,82 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "1neneandpico/idle"
+		},
+		{
+			"offsets": [
+				40,
+				-3
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle-alt",
+			"loop": false,
+			"name": "1neneandpico/altidle"
+		},
+		{
+			"offsets": [
+				67,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle-alt2",
+			"loop": false,
+			"name": "1neneandpico/twoaltidle"
+		},
+		{
+			"offsets": [
+				64,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "shock",
+			"loop": false,
+			"name": "1neneandpico/uhoh"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfdi26/nenepico",
+	"position": [
+		0,
+		0
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "milky",
+	"afterimages": false,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -1,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

@@ -1,0 +1,13 @@
+{
+	"type": "extraPlayerSkin",
+	"price": 350,
+
+	"title": "Nene (BFDI 26) (Extra Player)",
+	"description": "milk carton",
+
+	"node":
+	{
+		"parent": "nene-playable-extra",
+		"direction": "east"
+	}
+}
