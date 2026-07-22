@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pin wrongy im so sorry for this spritesheet.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="P DOWN SPLICE instance 10000" x="0" y="0" width="1157" height="871" frameX="0" frameY="-63" frameWidth="1157" frameHeight="934"/>
+	<SubTexture name="P DOWN SPLICE instance 10001" x="0" y="0" width="1157" height="871" frameX="0" frameY="-63" frameWidth="1157" frameHeight="934"/>
+	<SubTexture name="P DOWN SPLICE instance 10002" x="1162" y="0" width="1152" height="892" frameX="0" frameY="-42" frameWidth="1157" frameHeight="934"/>
+	<SubTexture name="P DOWN SPLICE instance 10003" x="1162" y="0" width="1152" height="892" frameX="0" frameY="-42" frameWidth="1157" frameHeight="934"/>
+	<SubTexture name="P DOWN SPLICE instance 10004" x="2319" y="0" width="1150" height="896" frameX="0" frameY="-38" frameWidth="1157" frameHeight="934"/>
+	<SubTexture name="P DOWN SPLICE instance 10005" x="2319" y="0" width="1150" height="896" frameX="0" frameY="-38" frameWidth="1157" frameHeight="934"/>
+	<SubTexture name="P DOWN SPLICE instance 10006" x="2319" y="0" width="1150" height="896" frameX="0" frameY="-38" frameWidth="1157" frameHeight="934"/>
+	<SubTexture name="P DOWN SPLICE instance 10007" x="3474" y="0" width="1139" height="909" frameX="0" frameY="-25" frameWidth="1157" frameHeight="934"/>
+	<SubTexture name="P DOWN SPLICE instance 10008" x="3474" y="0" width="1139" height="909" frameX="0" frameY="-25" frameWidth="1157" frameHeight="934"/>
+	<SubTexture name="P DOWN SPLICE instance 10009" x="4618" y="0" width="1117" height="934" frameX="0" frameY="0" frameWidth="1157" frameHeight="934"/>
+	<SubTexture name="P IDLE SPLICE instance 10000" x="5740" y="0" width="1112" height="942" frameX="0" frameY="-16" frameWidth="1136" frameHeight="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10001" x="5740" y="0" width="1112" height="942" frameX="0" frameY="-16" frameWidth="1136" frameHeight="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10002" x="6857" y="0" width="1111" height="944" frameX="0" frameY="-14" frameWidth="1136" frameHeight="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10003" x="6857" y="0" width="1111" height="944" frameX="0" frameY="-14" frameWidth="1136" frameHeight="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10004" x="0" y="949" width="1110" height="948" frameX="0" frameY="-10" frameWidth="1136" frameHeight="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10005" x="0" y="949" width="1110" height="948" frameX="0" frameY="-10" frameWidth="1136" frameHeight="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10006" x="1115" y="949" width="1117" height="951" frameX="0" frameY="-7" frameWidth="1136" frameHeight="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10007" x="1115" y="949" width="1117" height="951" frameX="0" frameY="-7" frameWidth="1136" frameHeight="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10008" x="2237" y="949" width="1133" height="956" frameX="0" frameY="-2" frameWidth="1136" frameHeight="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10009" x="2237" y="949" width="1133" height="956" frameX="0" frameY="-2" frameWidth="1136" frameHeight="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10010" x="3375" y="949" width="1136" height="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10011" x="3375" y="949" width="1136" height="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10012" x="4516" y="949" width="1135" height="956" frameX="0" frameY="-2" frameWidth="1136" frameHeight="958"/>
+	<SubTexture name="P IDLE SPLICE instance 10013" x="4516" y="949" width="1135" height="956" frameX="0" frameY="-2" frameWidth="1136" frameHeight="958"/>
+	<SubTexture name="P LEFT SPLICE instance 10000" x="5656" y="949" width="1047" height="944" frameX="0" frameY="-13" frameWidth="1087" frameHeight="957"/>
+	<SubTexture name="P LEFT SPLICE instance 10001" x="5656" y="949" width="1047" height="944" frameX="0" frameY="-13" frameWidth="1087" frameHeight="957"/>
+	<SubTexture name="P LEFT SPLICE instance 10002" x="6708" y="949" width="1084" height="957" frameX="-1" frameY="0" frameWidth="1087" frameHeight="957"/>
+	<SubTexture name="P LEFT SPLICE instance 10003" x="6708" y="949" width="1084" height="957" frameX="-1" frameY="0" frameWidth="1087" frameHeight="957"/>
+	<SubTexture name="P LEFT SPLICE instance 10004" x="0" y="1912" width="1086" height="957" frameX="-1" frameY="0" frameWidth="1087" frameHeight="957"/>
+	<SubTexture name="P LEFT SPLICE instance 10005" x="0" y="1912" width="1086" height="957" frameX="-1" frameY="0" frameWidth="1087" frameHeight="957"/>
+	<SubTexture name="P LEFT SPLICE instance 10006" x="1091" y="1912" width="1084" height="957" frameX="-1" frameY="0" frameWidth="1087" frameHeight="957"/>
+	<SubTexture name="P LEFT SPLICE instance 10007" x="2180" y="1912" width="1067" height="953" frameX="-1" frameY="-4" frameWidth="1087" frameHeight="957"/>
+	<SubTexture name="P LEFT SPLICE instance 10008" x="2180" y="1912" width="1067" height="953" frameX="-1" frameY="-4" frameWidth="1087" frameHeight="957"/>
+	<SubTexture name="P LEFT SPLICE instance 10009" x="3252" y="1912" width="1084" height="944" frameX="0" frameY="-13" frameWidth="1087" frameHeight="957"/>
+	<SubTexture name="P MISS SPLICE instance 10000" x="4341" y="1912" width="1171" height="920" frameX="-13" frameY="-23" frameWidth="1184" frameHeight="943"/>
+	<SubTexture name="P MISS SPLICE instance 10001" x="4341" y="1912" width="1171" height="920" frameX="-13" frameY="-23" frameWidth="1184" frameHeight="943"/>
+	<SubTexture name="P MISS SPLICE instance 10002" x="5517" y="1912" width="1163" height="935" frameX="0" frameY="-5" frameWidth="1184" frameHeight="943"/>
+	<SubTexture name="P MISS SPLICE instance 10003" x="5517" y="1912" width="1163" height="935" frameX="0" frameY="-5" frameWidth="1184" frameHeight="943"/>
+	<SubTexture name="P MISS SPLICE instance 10004" x="6685" y="1912" width="1157" height="939" frameX="-5" frameY="0" frameWidth="1184" frameHeight="943"/>
+	<SubTexture name="P MISS SPLICE instance 10005" x="6685" y="1912" width="1157" height="939" frameX="-5" frameY="0" frameWidth="1184" frameHeight="943"/>
+	<SubTexture name="P MISS SPLICE instance 10006" x="6685" y="1912" width="1157" height="939" frameX="-5" frameY="0" frameWidth="1184" frameHeight="943"/>
+	<SubTexture name="P MISS SPLICE instance 10007" x="6685" y="1912" width="1157" height="939" frameX="-5" frameY="0" frameWidth="1184" frameHeight="943"/>
+	<SubTexture name="P MISS SPLICE instance 10008" x="6685" y="1912" width="1157" height="939" frameX="-5" frameY="0" frameWidth="1184" frameHeight="943"/>
+	<SubTexture name="P MISS SPLICE instance 10009" x="6685" y="1912" width="1157" height="939" frameX="-5" frameY="0" frameWidth="1184" frameHeight="943"/>
+	<SubTexture name="P RIGHT SPLICE instance 10000" x="0" y="2874" width="1284" height="954" frameX="-4" frameY="-14" frameWidth="1288" frameHeight="968"/>
+	<SubTexture name="P RIGHT SPLICE instance 10001" x="0" y="2874" width="1284" height="954" frameX="-4" frameY="-14" frameWidth="1288" frameHeight="968"/>
+	<SubTexture name="P RIGHT SPLICE instance 10002" x="1289" y="2874" width="1234" height="960" frameX="-4" frameY="-8" frameWidth="1288" frameHeight="968"/>
+	<SubTexture name="P RIGHT SPLICE instance 10003" x="1289" y="2874" width="1234" height="960" frameX="-4" frameY="-8" frameWidth="1288" frameHeight="968"/>
+	<SubTexture name="P RIGHT SPLICE instance 10004" x="2528" y="2874" width="1227" height="960" frameX="-5" frameY="-8" frameWidth="1288" frameHeight="968"/>
+	<SubTexture name="P RIGHT SPLICE instance 10005" x="2528" y="2874" width="1227" height="960" frameX="-5" frameY="-8" frameWidth="1288" frameHeight="968"/>
+	<SubTexture name="P RIGHT SPLICE instance 10006" x="3760" y="2874" width="1227" height="960" frameX="-5" frameY="-8" frameWidth="1288" frameHeight="968"/>
+	<SubTexture name="P RIGHT SPLICE instance 10007" x="4992" y="2874" width="1203" height="965" frameX="-5" frameY="-3" frameWidth="1288" frameHeight="968"/>
+	<SubTexture name="P RIGHT SPLICE instance 10008" x="4992" y="2874" width="1203" height="965" frameX="-5" frameY="-3" frameWidth="1288" frameHeight="968"/>
+	<SubTexture name="P RIGHT SPLICE instance 10009" x="6200" y="2874" width="1143" height="968" frameX="0" frameY="0" frameWidth="1288" frameHeight="968"/>
+	<SubTexture name="P UP SPLICE instance 10000" x="0" y="3847" width="1176" height="1035" frameX="-3" frameY="0" frameWidth="1179" frameHeight="1046"/>
+	<SubTexture name="P UP SPLICE instance 10001" x="0" y="3847" width="1176" height="1035" frameX="-3" frameY="0" frameWidth="1179" frameHeight="1046"/>
+	<SubTexture name="P UP SPLICE instance 10002" x="1181" y="3847" width="1163" height="1010" frameX="-3" frameY="-24" frameWidth="1179" frameHeight="1046"/>
+	<SubTexture name="P UP SPLICE instance 10003" x="1181" y="3847" width="1163" height="1010" frameX="-3" frameY="-24" frameWidth="1179" frameHeight="1046"/>
+	<SubTexture name="P UP SPLICE instance 10004" x="2349" y="3847" width="1160" height="1007" frameX="-3" frameY="-27" frameWidth="1179" frameHeight="1046"/>
+	<SubTexture name="P UP SPLICE instance 10005" x="2349" y="3847" width="1160" height="1007" frameX="-3" frameY="-27" frameWidth="1179" frameHeight="1046"/>
+	<SubTexture name="P UP SPLICE instance 10006" x="3514" y="3847" width="1160" height="1007" frameX="-3" frameY="-27" frameWidth="1179" frameHeight="1046"/>
+	<SubTexture name="P UP SPLICE instance 10007" x="4679" y="3847" width="1152" height="1001" frameX="-3" frameY="-37" frameWidth="1179" frameHeight="1046"/>
+	<SubTexture name="P UP SPLICE instance 10008" x="4679" y="3847" width="1152" height="1001" frameX="-3" frameY="-37" frameWidth="1179" frameHeight="1046"/>
+	<SubTexture name="P UP SPLICE instance 10009" x="5836" y="3847" width="1141" height="986" frameX="0" frameY="-60" frameWidth="1179" frameHeight="1046"/>
+</TextureAtlas>

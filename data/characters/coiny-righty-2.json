@@ -1,0 +1,147 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "C IDLE 2 instance 1"
+		},
+		{
+			"offsets": [
+				-10,
+				-17
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "C DOWN 2 instance 1"
+		},
+		{
+			"offsets": [
+				113,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "C LEFT 2 instance 1"
+		},
+		{
+			"offsets": [
+				-19,
+				2
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "C RIGHT 2 instance 1"
+		},
+		{
+			"offsets": [
+				15,
+				45
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "C UP 2 instance 1"
+		},
+		{
+			"offsets": [
+				15,
+				-20
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "C DOWN 3 instance 1"
+		},
+		{
+			"offsets": [
+				105,
+				-8
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "C LEFT 3 instance 1"
+		},
+		{
+			"offsets": [
+				-34,
+				-3
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "C RIGHT 3 instance 1"
+		},
+		{
+			"offsets": [
+				-15,
+				100
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "C UP 3 instance 1"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfdi26/rest of the right finger gang/coiny wrongy the second",
+	"position": [
+		0,
+		400
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "coine",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -1270015,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

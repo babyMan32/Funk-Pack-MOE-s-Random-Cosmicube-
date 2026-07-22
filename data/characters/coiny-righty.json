@@ -1,0 +1,95 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "C IDLE 1 instance 1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-15,
+				-10
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "C DOWN 1 instance 1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				53,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "C LEFT 1 instance 1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-14,
+				2
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "C RIGHT 1 instance 1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-3,
+				40
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "C UP 1 instance 1",
+			"indices": [],
+			"flipX": false
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfdi26/rest of the right finger gang/coiny wrongy",
+	"position": [
+		0,
+		400
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "coine",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -1270015,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

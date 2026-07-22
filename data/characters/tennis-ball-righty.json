@@ -1,0 +1,69 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "TB IDLE 1"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle-alt",
+			"loop": false,
+			"name": "TB IDLE 2"
+		},
+		{
+			"offsets": [
+				23,
+				18
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "intro",
+			"loop": false,
+			"name": "TB BEGINNING"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfdi26/rest of the right finger gang/teebert",
+	"position": [
+		0,
+		400
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "face",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -8355712,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 2,
+	"_editor_isPlayer": false
+}

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="coiny wrongy splice.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="C DOWN SPLICE instance 10000" x="0" y="0" width="616" height="600" frameX="0" frameY="-2" frameWidth="616" frameHeight="602"/>
+	<SubTexture name="C DOWN SPLICE instance 10001" x="0" y="0" width="616" height="600" frameX="0" frameY="-2" frameWidth="616" frameHeight="602"/>
+	<SubTexture name="C DOWN SPLICE instance 10002" x="621" y="0" width="604" height="602" frameX="-1" frameY="0" frameWidth="616" frameHeight="602"/>
+	<SubTexture name="C DOWN SPLICE instance 10003" x="621" y="0" width="604" height="602" frameX="-1" frameY="0" frameWidth="616" frameHeight="602"/>
+	<SubTexture name="C DOWN SPLICE instance 10004" x="1230" y="0" width="603" height="600" frameX="0" frameY="-2" frameWidth="616" frameHeight="602"/>
+	<SubTexture name="C DOWN SPLICE instance 10005" x="1230" y="0" width="603" height="600" frameX="0" frameY="-2" frameWidth="616" frameHeight="602"/>
+	<SubTexture name="C DOWN SPLICE instance 10006" x="1838" y="0" width="602" height="602" frameX="-1" frameY="0" frameWidth="616" frameHeight="602"/>
+	<SubTexture name="C DOWN SPLICE instance 10007" x="2445" y="0" width="597" height="602" frameX="-1" frameY="0" frameWidth="616" frameHeight="602"/>
+	<SubTexture name="C DOWN SPLICE instance 10008" x="3047" y="0" width="598" height="600" frameX="0" frameY="-2" frameWidth="616" frameHeight="602"/>
+	<SubTexture name="C DOWN SPLICE instance 10009" x="3650" y="0" width="566" height="600" frameX="0" frameY="-2" frameWidth="616" frameHeight="602"/>
+	<SubTexture name="C IDLE RIGHT instance 10000" x="4221" y="0" width="666" height="600" frameX="0" frameY="-2" frameWidth="666" frameHeight="602"/>
+	<SubTexture name="C IDLE RIGHT instance 10001" x="4221" y="0" width="666" height="600" frameX="0" frameY="-2" frameWidth="666" frameHeight="602"/>
+	<SubTexture name="C IDLE RIGHT instance 10002" x="0" y="607" width="659" height="602" frameX="-1" frameY="0" frameWidth="666" frameHeight="602"/>
+	<SubTexture name="C IDLE RIGHT instance 10003" x="0" y="607" width="659" height="602" frameX="-1" frameY="0" frameWidth="666" frameHeight="602"/>
+	<SubTexture name="C IDLE RIGHT instance 10004" x="664" y="607" width="658" height="600" frameX="0" frameY="-2" frameWidth="666" frameHeight="602"/>
+	<SubTexture name="C IDLE RIGHT instance 10005" x="664" y="607" width="658" height="600" frameX="0" frameY="-2" frameWidth="666" frameHeight="602"/>
+	<SubTexture name="C IDLE RIGHT instance 10006" x="1327" y="607" width="657" height="602" frameX="-1" frameY="0" frameWidth="666" frameHeight="602"/>
+	<SubTexture name="C IDLE RIGHT instance 10007" x="1989" y="607" width="637" height="602" frameX="-1" frameY="0" frameWidth="666" frameHeight="602"/>
+	<SubTexture name="C IDLE RIGHT instance 10008" x="2631" y="607" width="638" height="600" frameX="0" frameY="-2" frameWidth="666" frameHeight="602"/>
+	<SubTexture name="C IDLE RIGHT instance 10009" x="3274" y="607" width="585" height="600" frameX="0" frameY="-2" frameWidth="666" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10000" x="3864" y="607" width="544" height="600" frameX="0" frameY="-2" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10001" x="3864" y="607" width="544" height="600" frameX="0" frameY="-2" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10002" x="4413" y="607" width="542" height="602" frameX="-1" frameY="0" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10003" x="4413" y="607" width="542" height="602" frameX="-1" frameY="0" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10004" x="0" y="1214" width="539" height="600" frameX="0" frameY="-2" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10005" x="0" y="1214" width="539" height="600" frameX="0" frameY="-2" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10006" x="544" y="1214" width="531" height="602" frameX="-1" frameY="0" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10007" x="544" y="1214" width="531" height="602" frameX="-1" frameY="0" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10008" x="1080" y="1214" width="526" height="600" frameX="0" frameY="-2" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10009" x="1080" y="1214" width="526" height="600" frameX="0" frameY="-2" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10010" x="1611" y="1214" width="528" height="602" frameX="-1" frameY="0" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10011" x="1611" y="1214" width="528" height="602" frameX="-1" frameY="0" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10012" x="2144" y="1214" width="532" height="600" frameX="0" frameY="-2" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C IDLE SPLICE instance 10013" x="2144" y="1214" width="532" height="600" frameX="0" frameY="-2" frameWidth="544" frameHeight="602"/>
+	<SubTexture name="C LEFT SPLICE instance 10000" x="2681" y="1214" width="516" height="600" frameX="0" frameY="-2" frameWidth="623" frameHeight="602"/>
+	<SubTexture name="C LEFT SPLICE instance 10001" x="2681" y="1214" width="516" height="600" frameX="0" frameY="-2" frameWidth="623" frameHeight="602"/>
+	<SubTexture name="C LEFT SPLICE instance 10002" x="3202" y="1214" width="516" height="602" frameX="-30" frameY="0" frameWidth="623" frameHeight="602"/>
+	<SubTexture name="C LEFT SPLICE instance 10003" x="3202" y="1214" width="516" height="602" frameX="-30" frameY="0" frameWidth="623" frameHeight="602"/>
+	<SubTexture name="C LEFT SPLICE instance 10004" x="3723" y="1214" width="515" height="600" frameX="-36" frameY="-2" frameWidth="623" frameHeight="602"/>
+	<SubTexture name="C LEFT SPLICE instance 10005" x="3723" y="1214" width="515" height="600" frameX="-36" frameY="-2" frameWidth="623" frameHeight="602"/>
+	<SubTexture name="C LEFT SPLICE instance 10006" x="4243" y="1214" width="515" height="602" frameX="-36" frameY="0" frameWidth="623" frameHeight="602"/>
+	<SubTexture name="C LEFT SPLICE instance 10007" x="4763" y="1214" width="515" height="602" frameX="-56" frameY="0" frameWidth="623" frameHeight="602"/>
+	<SubTexture name="C LEFT SPLICE instance 10008" x="0" y="1821" width="515" height="600" frameX="-56" frameY="-2" frameWidth="623" frameHeight="602"/>
+	<SubTexture name="C LEFT SPLICE instance 10009" x="520" y="1821" width="521" height="600" frameX="-102" frameY="-2" frameWidth="623" frameHeight="602"/>
+	<SubTexture name="C UP SPLICE instance 10000" x="1046" y="1821" width="557" height="687" frameX="0" frameY="0" frameWidth="569" frameHeight="692"/>
+	<SubTexture name="C UP SPLICE instance 10001" x="1046" y="1821" width="557" height="687" frameX="0" frameY="0" frameWidth="569" frameHeight="692"/>
+	<SubTexture name="C UP SPLICE instance 10002" x="1608" y="1821" width="552" height="653" frameX="-13" frameY="-33" frameWidth="569" frameHeight="692"/>
+	<SubTexture name="C UP SPLICE instance 10003" x="1608" y="1821" width="552" height="653" frameX="-13" frameY="-33" frameWidth="569" frameHeight="692"/>
+	<SubTexture name="C UP SPLICE instance 10004" x="2165" y="1821" width="550" height="651" frameX="-15" frameY="-36" frameWidth="569" frameHeight="692"/>
+	<SubTexture name="C UP SPLICE instance 10005" x="2165" y="1821" width="550" height="651" frameX="-15" frameY="-36" frameWidth="569" frameHeight="692"/>
+	<SubTexture name="C UP SPLICE instance 10006" x="2720" y="1821" width="550" height="651" frameX="-15" frameY="-36" frameWidth="569" frameHeight="692"/>
+	<SubTexture name="C UP SPLICE instance 10007" x="3275" y="1821" width="545" height="639" frameX="-21" frameY="-53" frameWidth="569" frameHeight="692"/>
+	<SubTexture name="C UP SPLICE instance 10008" x="3825" y="1821" width="545" height="639" frameX="-21" frameY="-53" frameWidth="569" frameHeight="692"/>
+	<SubTexture name="C UP SPLICE instance 10009" x="4375" y="1821" width="541" height="607" frameX="-28" frameY="-84" frameWidth="569" frameHeight="692"/>
+</TextureAtlas>

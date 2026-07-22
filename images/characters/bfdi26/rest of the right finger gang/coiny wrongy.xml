@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="coiny wrongy.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="C DOWN 1 instance 10000" x="0" y="0" width="314" height="242" frameX="-1" frameY="-33" frameWidth="317" frameHeight="275"/>
+	<SubTexture name="C DOWN 1 instance 10001" x="0" y="0" width="314" height="242" frameX="-1" frameY="-33" frameWidth="317" frameHeight="275"/>
+	<SubTexture name="C DOWN 1 instance 10002" x="319" y="0" width="314" height="255" frameX="-3" frameY="-20" frameWidth="317" frameHeight="275"/>
+	<SubTexture name="C DOWN 1 instance 10003" x="319" y="0" width="314" height="255" frameX="-3" frameY="-20" frameWidth="317" frameHeight="275"/>
+	<SubTexture name="C DOWN 1 instance 10004" x="638" y="0" width="313" height="256" frameX="-4" frameY="-19" frameWidth="317" frameHeight="275"/>
+	<SubTexture name="C DOWN 1 instance 10005" x="638" y="0" width="313" height="256" frameX="-4" frameY="-19" frameWidth="317" frameHeight="275"/>
+	<SubTexture name="C DOWN 1 instance 10006" x="956" y="0" width="310" height="256" frameX="-4" frameY="-19" frameWidth="317" frameHeight="275"/>
+	<SubTexture name="C DOWN 1 instance 10007" x="1271" y="0" width="276" height="261" frameX="-3" frameY="-14" frameWidth="317" frameHeight="275"/>
+	<SubTexture name="C DOWN 1 instance 10008" x="1271" y="0" width="276" height="261" frameX="-3" frameY="-14" frameWidth="317" frameHeight="275"/>
+	<SubTexture name="C DOWN 1 instance 10009" x="1552" y="0" width="251" height="274" frameX="0" frameY="0" frameWidth="317" frameHeight="275"/>
+	<SubTexture name="C IDLE 1 instance 10000" x="1808" y="0" width="250" height="280" frameX="-6" frameY="-5" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10001" x="1808" y="0" width="250" height="280" frameX="-6" frameY="-5" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10002" x="2063" y="0" width="250" height="281" frameX="-6" frameY="-4" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10003" x="2063" y="0" width="250" height="281" frameX="-6" frameY="-4" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10004" x="2318" y="0" width="250" height="282" frameX="-5" frameY="-3" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10005" x="2318" y="0" width="250" height="282" frameX="-5" frameY="-3" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10006" x="2573" y="0" width="251" height="284" frameX="-2" frameY="-1" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10007" x="2573" y="0" width="251" height="284" frameX="-2" frameY="-1" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10008" x="2829" y="0" width="251" height="285" frameX="-1" frameY="0" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10009" x="2829" y="0" width="251" height="285" frameX="-1" frameY="0" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10010" x="0" y="290" width="251" height="285" frameX="0" frameY="0" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10011" x="0" y="290" width="251" height="285" frameX="0" frameY="0" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10012" x="256" y="290" width="251" height="283" frameX="-1" frameY="-2" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C IDLE 1 instance 10013" x="256" y="290" width="251" height="283" frameX="-1" frameY="-2" frameWidth="256" frameHeight="285"/>
+	<SubTexture name="C LEFT 1 instance 10000" x="512" y="290" width="258" height="285" frameX="0" frameY="0" frameWidth="298" frameHeight="285"/>
+	<SubTexture name="C LEFT 1 instance 10001" x="512" y="290" width="258" height="285" frameX="0" frameY="0" frameWidth="298" frameHeight="285"/>
+	<SubTexture name="C LEFT 1 instance 10002" x="775" y="290" width="266" height="283" frameX="-14" frameY="-2" frameWidth="298" frameHeight="285"/>
+	<SubTexture name="C LEFT 1 instance 10003" x="775" y="290" width="266" height="283" frameX="-14" frameY="-2" frameWidth="298" frameHeight="285"/>
+	<SubTexture name="C LEFT 1 instance 10004" x="1046" y="290" width="266" height="282" frameX="-16" frameY="-3" frameWidth="298" frameHeight="285"/>
+	<SubTexture name="C LEFT 1 instance 10005" x="1046" y="290" width="266" height="282" frameX="-16" frameY="-3" frameWidth="298" frameHeight="285"/>
+	<SubTexture name="C LEFT 1 instance 10006" x="1046" y="290" width="266" height="282" frameX="-16" frameY="-3" frameWidth="298" frameHeight="285"/>
+	<SubTexture name="C LEFT 1 instance 10007" x="1317" y="290" width="261" height="282" frameX="-24" frameY="-3" frameWidth="298" frameHeight="285"/>
+	<SubTexture name="C LEFT 1 instance 10008" x="1317" y="290" width="261" height="282" frameX="-24" frameY="-3" frameWidth="298" frameHeight="285"/>
+	<SubTexture name="C LEFT 1 instance 10009" x="1583" y="290" width="250" height="283" frameX="-48" frameY="-2" frameWidth="298" frameHeight="285"/>
+	<SubTexture name="C RIGHT 1 instance 10000" x="1838" y="290" width="345" height="287" frameX="-33" frameY="0" frameWidth="378" frameHeight="287"/>
+	<SubTexture name="C RIGHT 1 instance 10001" x="1838" y="290" width="345" height="287" frameX="-33" frameY="0" frameWidth="378" frameHeight="287"/>
+	<SubTexture name="C RIGHT 1 instance 10002" x="2188" y="290" width="336" height="285" frameX="-20" frameY="-2" frameWidth="378" frameHeight="287"/>
+	<SubTexture name="C RIGHT 1 instance 10003" x="2188" y="290" width="336" height="285" frameX="-20" frameY="-2" frameWidth="378" frameHeight="287"/>
+	<SubTexture name="C RIGHT 1 instance 10004" x="2529" y="290" width="336" height="285" frameX="-18" frameY="-2" frameWidth="378" frameHeight="287"/>
+	<SubTexture name="C RIGHT 1 instance 10005" x="2529" y="290" width="336" height="285" frameX="-18" frameY="-2" frameWidth="378" frameHeight="287"/>
+	<SubTexture name="C RIGHT 1 instance 10006" x="0" y="582" width="333" height="285" frameX="-18" frameY="-2" frameWidth="378" frameHeight="287"/>
+	<SubTexture name="C RIGHT 1 instance 10007" x="338" y="582" width="309" height="284" frameX="-13" frameY="-3" frameWidth="378" frameHeight="287"/>
+	<SubTexture name="C RIGHT 1 instance 10008" x="338" y="582" width="309" height="284" frameX="-13" frameY="-3" frameWidth="378" frameHeight="287"/>
+	<SubTexture name="C RIGHT 1 instance 10009" x="652" y="582" width="251" height="280" frameX="0" frameY="-7" frameWidth="378" frameHeight="287"/>
+	<SubTexture name="C UP 1 instance 10000" x="908" y="582" width="348" height="326" frameX="-2" frameY="0" frameWidth="350" frameHeight="329"/>
+	<SubTexture name="C UP 1 instance 10001" x="908" y="582" width="348" height="326" frameX="-2" frameY="0" frameWidth="350" frameHeight="329"/>
+	<SubTexture name="C UP 1 instance 10002" x="1261" y="582" width="337" height="312" frameX="0" frameY="-14" frameWidth="350" frameHeight="329"/>
+	<SubTexture name="C UP 1 instance 10003" x="1261" y="582" width="337" height="312" frameX="0" frameY="-14" frameWidth="350" frameHeight="329"/>
+	<SubTexture name="C UP 1 instance 10004" x="1603" y="582" width="336" height="310" frameX="0" frameY="-16" frameWidth="350" frameHeight="329"/>
+	<SubTexture name="C UP 1 instance 10005" x="1603" y="582" width="336" height="310" frameX="0" frameY="-16" frameWidth="350" frameHeight="329"/>
+	<SubTexture name="C UP 1 instance 10006" x="1944" y="582" width="330" height="310" frameX="0" frameY="-16" frameWidth="350" frameHeight="329"/>
+	<SubTexture name="C UP 1 instance 10007" x="2279" y="582" width="293" height="307" frameX="0" frameY="-20" frameWidth="350" frameHeight="329"/>
+	<SubTexture name="C UP 1 instance 10008" x="2279" y="582" width="293" height="307" frameX="0" frameY="-20" frameWidth="350" frameHeight="329"/>
+	<SubTexture name="C UP 1 instance 10009" x="2577" y="582" width="249" height="294" frameX="-3" frameY="-35" frameWidth="350" frameHeight="329"/>
+</TextureAtlas>
