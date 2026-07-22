@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Nene + Pico (BFDI 26)",
+	"description": "milk and apple",
+
+	"node":
+	{
+		"parent": "darnell-time",
+		"direction": "west"
+	}
+}

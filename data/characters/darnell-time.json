@@ -109,7 +109,7 @@
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singDOWN-alt",
+			"anim": "singDOWN-scared",
 			"indices": [],
 			"name": "0uncrustable/altdown"
 		},
@@ -120,7 +120,7 @@
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singUP-alt",
+			"anim": "singUP-scared",
 			"indices": [],
 			"name": "0uncrustable/altup"
 		},
@@ -131,7 +131,7 @@
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singRIGHT-alt",
+			"anim": "singRIGHT-scared",
 			"indices": [],
 			"name": "0uncrustable/altright"
 		},
@@ -142,7 +142,7 @@
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singLEFT-alt",
+			"anim": "singLEFT-scared",
 			"indices": [],
 			"name": "0uncrustable/altleft"
 		},
@@ -168,7 +168,7 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "idle-alt",
+			"anim": "idle-scared",
 			"loop": false,
 			"name": "0uncrustable/altidle"
 		}

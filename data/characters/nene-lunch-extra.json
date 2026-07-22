@@ -131,10 +131,10 @@
 		"offsetX": 350,
 		"offsetY": 200
 	},
-	"scalableOffsets": true,
+	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "milky",
-	"afterimages": false,
+	"afterimages": true,
 	"gameover_character": null,
 	"vslice_sustains": false,
 	"flip_x": true,

@@ -118,12 +118,12 @@ function onBeatHit()
 	{
 		if (bf3.getAnimName().contains('idle'))
 		{
-			bf3.playAnim('idle' + extraIdleSuffix);
+			bf3.playAnim('idle' + extraExtraIdleSuffix);
 		}
 
 		if (bf3.getAnimName().contains('dance'))
 		{
-			bf3.playAnim('dance$direction' + extraIdleSuffix);
+			bf3.playAnim('dance$direction' + extraExtraIdleSuffix);
 			direction = (bf3.getAnimName() == 'danceLeft' ? 'Right' : 'Left');
 		}
 	}
@@ -137,12 +137,12 @@ function onCountdownTick(tick)
 	{
 		if (bf3.getAnimName().contains('idle'))
 		{
-			bf3.playAnim('idle' + extraIdleSuffix);
+			bf3.playAnim('idle' + extraExtraIdleSuffix);
 		}
 
 		if (bf3.getAnimName().contains('dance'))
 		{
-			bf3.playAnim('dance$direction' + extraIdleSuffix);
+			bf3.playAnim('dance$direction' + extraExtraIdleSuffix);
 			direction = (bf3.getAnimName() == 'danceLeft' ? 'Right' : 'Left');
 		}
 	}
@@ -156,14 +156,14 @@ function goodNoteHit(note)
 
 	if (note.isSustainNote && bf3.vSliceSustains) return;
 
-	bf3.playAnim(note.skin.data.singAnimations[note.noteData] + extraAnimSuffix, true);
+	bf3.playAnim(note.skin.data.singAnimations[note.noteData] + extraExtraAnimSuffix, true);
 }
 
 function noteMiss(note)
 {
 	if (bf3 == null) return;
 
-	bf3.playAnim(note.skin.data.singAnimations[note.noteData] + 'miss' + extraAnimSuffix, true);
+	bf3.playAnim(note.skin.data.singAnimations[note.noteData] + 'miss' + extraExtraAnimSuffix, true);
 	bf3.holdTimer = 0;
 }
 
