@@ -1,0 +1,28 @@
+{
+	"directory": "",
+	"defaultZoom": 0.75,
+	"isPixelStage": false,
+	"hide_girlfriend": false,
+	"camera_speed": 1,
+
+	"boyfriend": [1450, 46.5],
+	"girlfriend": [1000, 355],
+	"opponent": [700, 681.5],
+
+	"camera_boyfriend": [-100,-125],
+	"camera_opponent": [50,-125],
+	"camera_girlfriend": [0,125],
+	"images_to_cache": [
+	"backgrounds/wrongfinger/right/labbe",
+	"backgrounds/wrongfinger/right/fat graddie",
+	"backgrounds/wrongfinger/right/fg wire 1",
+	"backgrounds/wrongfinger/right/fg wire 2",
+	"backgrounds/wrongfinger/right/fg wire 3",
+	"backgrounds/wrongfinger/right/greenie graddie",
+	"backgrounds/wrongfinger/right/blur pan lab",
+	"backgrounds/wrongfinger/right/BG splice/greennie graddie splice",
+	"backgrounds/wrongfinger/right/BG splice/big ol graddie splace",
+	"backgrounds/wrongfinger/right/BG splice/chair sized",
+	"backgrounds/wrongfinger/right/BG splice/labbe splice"
+	]
+}

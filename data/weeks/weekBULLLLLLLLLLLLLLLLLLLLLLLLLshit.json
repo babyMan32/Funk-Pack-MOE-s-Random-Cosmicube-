@@ -1,0 +1,18 @@
+{
+	"songs": [
+		["Right Finger", "", [0, 0, 0], "null", "null", []]
+	],
+	
+	"section": "dumbshit",
+
+	"currency": "heads",
+	
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"hideFreeplay": false,
+	
+	"node": {
+		"parent": null,
+		"direction": null
+	}
+}
