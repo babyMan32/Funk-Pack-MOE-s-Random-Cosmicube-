@@ -112,5 +112,5 @@ function refreshDoubleTroubleIcon()
 	if (hasColor) scoreTxt.color = bothSing ? hpColorDuo : (twoSing ? gf : dad).healthColour;
 	playHUD.healthBar.setColors(bothSing ? hpColorDuo : (twoSing ? gf : dad).healthColour, boyfriend.healthColour);
 	playHUD.iconP2.changeIcon(bothSing ? oppIconDuo : (twoSing ? oppIconExtra : oppIconBase));
-	pauseOverride = bothSing ? pauseDuo : (twoSing ? pauseExtra : pauseBase);
+	pauseOverwrite = bothSing ? pauseDuo : (twoSing ? pauseExtra : pauseBase);
 }

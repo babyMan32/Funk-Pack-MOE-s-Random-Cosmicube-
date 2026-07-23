@@ -1,14 +1,13 @@
 function onLoad()
 {
-	if (ClientPrefs.bfSkin == "clowfoe-old")
+	if (ClientPrefs.bfSkin != "clowfoe-old") return;
+
+	switch (PlayState.SONG.song)
 	{
-		switch (PlayState.SONG.song)
-		{
-			case "Monotone Attack":
-				PlayState.SONG.player1 = 'clowfoe-old';
-				PlayState.SONG.player2 = 'attack-old';
-				PlayState.SONG.gfVersion = 'fabs-old';
-		}
+		case "Monotone Attack":
+			PlayState.SONG.player1 = 'clowfoe-old';
+			PlayState.SONG.player2 = 'attack-old';
+			PlayState.SONG.gfVersion = 'fabs-old';
 	}
 }
 
@@ -19,29 +18,29 @@ function onCreatePost()
 
 function hellyeah()
 {
-	if (ClientPrefs.bfSkin == "clowfoe-old")
+	if (ClientPrefs.bfSkin != "clowfoe-old") return;
+
+	switch (PlayState.SONG.song)
 	{
-		switch (PlayState.SONG.song)
-		{
-			case "Monotone Attack":
-				if (PlayState.attackCharacter > 1)
-				{
-					FlxG.signals.postUpdate.addOnce(function() {
-						healthBar.setColors(gf.healthColour, '-3217');
-					});
-				}
+		case "Monotone Attack":
+			if (PlayState.attackCharacter > 1)
+			{
+				FlxG.signals.postUpdate.addOnce(function() {
+					healthBar.setColors(gf.healthColour, '-3217');
+				});
+			}
 
-				if (PlayState.attackCharacter == 1 || PlayState.attackCharacter == 2)
-				{
-					healthBar.leftToRight = true;
+			if (PlayState.attackCharacter == 1 || PlayState.attackCharacter == 2)
+			{
+				healthBar.leftToRight = true;
 
-					switch (PlayState.attackCharacter)
-					{
-						case 1:
-							iconP1.changeIcon('attack_OLD');
-							iconP2.changeIcon('bfclow_OLD');
-					}
+				switch (PlayState.attackCharacter)
+				{
+					case 1:
+						iconP1.changeIcon('attack_OLD');
+						iconP2.changeIcon('bfclow_OLD');
 				}
-		}
+			}
 	}
+
 }
