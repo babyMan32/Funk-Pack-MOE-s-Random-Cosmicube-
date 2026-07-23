@@ -8819,6 +8819,8 @@
 		],
 		"gfVersion": "tennis-ball-righty",
 		"disableNoteRGB": true,
+		"allowBFskin": false,
+		"allowGFskin": false,
 		"song": "Right Finger",
 		"needsVoices": true,
 		"stage": "lab",

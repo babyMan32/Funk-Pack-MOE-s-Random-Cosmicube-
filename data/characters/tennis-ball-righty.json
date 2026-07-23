@@ -36,7 +36,7 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "intro",
+			"anim": "start",
 			"loop": false,
 			"name": "TB BEGINNING"
 		}

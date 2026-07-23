@@ -1,6 +1,7 @@
 var ext = 'stages/wrongfinger/right/';
 
-function onLoad() {
+function onLoad()
+{
     var lab2:FlxSprite = new FlxSprite(465, 25).loadGraphic(Paths.image(ext + 'BG splice/labbe splice'));
     lab2.alpha = 0;
     add(lab2);
@@ -47,4 +48,9 @@ function onLoad() {
     transition.screenCenter();
     transition.x = -4600;
     add(transition);
+}
+
+function onCreatePost()
+{
+	camSpecialThing([1100, 500], [1350, 500], -1);
 }
