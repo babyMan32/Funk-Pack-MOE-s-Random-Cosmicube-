@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "Double//Slash",
+	"description": "whens Double//Slash mix bro\n Added by Idk's FNF Stuff",
+
+	"node": {
+		"parent": "pin-righty",
+		"direction": "west"
+	},
+	
+	"color": [
+		255,
+		255,
+		255
+	]
+}

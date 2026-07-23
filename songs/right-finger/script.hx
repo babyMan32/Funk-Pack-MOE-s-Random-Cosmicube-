@@ -1,0 +1,3 @@
+function onCreatePost() {
+    skipCountdown = true;
+}
