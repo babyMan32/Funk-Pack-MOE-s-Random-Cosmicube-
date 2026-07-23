@@ -1,0 +1,13 @@
+{
+	"type": "extraPlayerSkin",
+	"price": 350,
+
+	"title": "MOEFUN (Human) (Extra Player)",
+	"description": "who let me in-",
+
+	"node":
+	{
+		"parent": "boyfriend-extra",
+		"direction": "north"
+	}
+}

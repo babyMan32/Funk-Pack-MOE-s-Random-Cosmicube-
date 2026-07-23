@@ -1,0 +1,13 @@
+{
+	"type": "extraExtraPlayerSkin",
+	"price": 500,
+
+	"title": "Void (Extra Extra Player)",
+	"description": "twink 2",
+
+	"node":
+	{
+		"parent": "root",
+		"direction": "west"
+	}
+}

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Human!MOEFUN.png">
+<SubTexture name="MOE Idle0000" x="2340" y="698" width="369" height="692" frameX="-190" frameY="-156" frameWidth="750" frameHeight="1000" />
+<SubTexture name="MOE Idle0001" x="1971" y="0" width="369" height="719" frameX="-190" frameY="-129" frameWidth="750" frameHeight="1000" />
+<SubTexture name="MOE Idle0002" x="1259" y="909" width="369" height="753" frameX="-190" frameY="-95" frameWidth="750" frameHeight="1000" />
+<SubTexture name="MOE Idle0003" x="0" y="909" width="369" height="782" frameX="-190" frameY="-66" frameWidth="750" frameHeight="1000" />
+<SubTexture name="MOE Idle0004" x="796" y="0" width="369" height="797" frameX="-190" frameY="-51" frameWidth="750" frameHeight="1000" />
+<SubTexture name="MOE Left0000" x="369" y="909" width="481" height="774" frameX="-75" frameY="-74" frameWidth="750" frameHeight="1000" />
+<SubTexture name="MOE Left0001" x="1165" y="0" width="425" height="787" frameX="-134" frameY="-61" frameWidth="750" frameHeight="1000" />
+<SubTexture name="MOE Down0000" x="0" y="1691" width="388" height="636" frameX="-171" frameY="-212" frameWidth="750" frameHeight="1000" />
+<SubTexture name="MOE Down0001" x="2340" y="0" width="388" height="698" frameX="-171" frameY="-150" frameWidth="750" frameHeight="1000" />
+<SubTexture name="MOE Right0000" x="850" y="909" width="409" height="771" frameX="-270" frameY="-77" frameWidth="750" frameHeight="1000" />
+<SubTexture name="MOE Right0001" x="1590" y="0" width="381" height="784" frameX="-196" frameY="-64" frameWidth="750" frameHeight="1000" />
+<SubTexture name="MOE Up0000" x="0" y="0" width="398" height="909" frameX="-161" frameY="-49" frameWidth="750" frameHeight="1000" />
+<SubTexture name="MOE Up0001" x="398" y="0" width="398" height="861" frameX="-161" frameY="-97" frameWidth="750" frameHeight="1000" />
+</TextureAtlas>
