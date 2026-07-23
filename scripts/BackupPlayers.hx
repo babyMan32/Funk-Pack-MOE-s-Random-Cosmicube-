@@ -108,6 +108,40 @@ function onUpdatePost(elapsed:Float):Void
 	bf2Icon.alpha = iconP1.alpha;
 	bf2Icon.visible = iconP1.visible;
 
+	curAnim = bf2.getAnimName();
+
+	curAnimFinished = bf2.isAnimFinished();
+
+	if (curAnimFinished)
+	{
+		switch (curAnim)
+		{
+			case "singLEFT", "singLEFT-loop":
+				if (bf2.hasAnim("singLEFT-loop"))
+				{
+					bf2.playAnim('singLEFT-loop');
+				}
+
+			case "singDOWN", "singDOWN-loop":
+				if (bf2.hasAnim("singDOWN-loop"))
+				{
+					bf2.playAnim('singDOWN-loop');
+				}
+
+			case "singUP", "singUP-loop":
+				if (bf2.hasAnim("singUP-loop"))
+				{
+					bf2.playAnim('singUP-loop');
+				}
+
+			case "singRIGHT", "singRIGHT-loop":
+				if (bf2.hasAnim("singRIGHT-loop"))
+				{
+					bf2.playAnim('singRIGHT-loop');
+				}
+		}
+	}
+
 	if (cpuControlled) return;
 
 	if (controls.NOTE_TAUNT_P && bf2.hasAnim(tauntAnim))

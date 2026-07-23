@@ -116,6 +116,40 @@ function onUpdatePost(elapsed:Float):Void
 	bf3Icon.alpha = iconP1.alpha;
 	bf3Icon.visible = iconP1.visible;
 
+	curAnim = bf3.getAnimName();
+
+	curAnimFinished = bf3.isAnimFinished();
+
+	if (curAnimFinished)
+	{
+		switch (curAnim)
+		{
+			case "singLEFT", "singLEFT-loop":
+				if (bf3.hasAnim("singLEFT-loop"))
+				{
+					bf3.playAnim('singLEFT-loop');
+				}
+
+			case "singDOWN", "singDOWN-loop":
+				if (bf3.hasAnim("singDOWN-loop"))
+				{
+					bf3.playAnim('singDOWN-loop');
+				}
+
+			case "singUP", "singUP-loop":
+				if (bf3.hasAnim("singUP-loop"))
+				{
+					bf3.playAnim('singUP-loop');
+				}
+
+			case "singRIGHT", "singRIGHT-loop":
+				if (bf3.hasAnim("singRIGHT-loop"))
+				{
+					bf3.playAnim('singRIGHT-loop');
+				}
+		}
+	}
+
 	if (cpuControlled) return;
 
 	if (controls.NOTE_TAUNT_P && bf3.hasAnim(tauntAnim))

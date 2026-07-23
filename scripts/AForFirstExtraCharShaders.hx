@@ -1,9 +1,8 @@
 import funkin.game.shaders.ExtraDropShadowShader;
 
 var stageRimExtras:ExtraDropShadowShader = new ExtraDropShadowShader();
-var stageRimDoubleExtras:ExtraDropShadowShader = new ExtraDropShadowShader();
 
-public function shadersCheck(char)
+public function shadersCheck()
 {
 	if (ClientPrefs.shaders)
 	{
