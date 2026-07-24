@@ -1,3 +1,12 @@
+function onCreatePost()
+{
+	switch (PlayState.SONG.song)
+	{
+		case "Finale":
+			changeCharacter('bf-defeat-scared-dialogue', 0);
+	}
+}
+
 function onEvent(eventName, value1, value2)
 {
 	switch (eventName)

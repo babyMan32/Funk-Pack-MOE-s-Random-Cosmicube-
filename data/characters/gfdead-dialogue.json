@@ -27,8 +27,8 @@
 	"no_antialiasing": false,
 	"image": "characters/dialogue/gf/gfdead",
 	"position": [
-		40,
-		350
+		50,
+		400
 	],
 	"dance_every": 1,
 	"gameover_intial_sound": null,

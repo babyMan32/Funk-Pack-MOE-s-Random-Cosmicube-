@@ -14,24 +14,13 @@ function onLoad()
 
 function onCreatePost()
 {
-	if (hasBfSkin)
+	switch (PlayState.SONG.song)
 	{
-		switch (PlayState.SONG.song)
-		{
-			case "Reactor":
-				triggerEventNote('Change Character', 'boyfriend', 'bfr-dialogue');
+		case "Reactor":
+			changeCharacter('bfr-dialogue', 0);
 
-			case "Ejected":
-				triggerEventNote('Change Character', 'boyfriend', 'bf-fall-dialogue');
-
-				boyfriend.shader = dad.shader;
-
-			case "Danger":
-				triggerEventNote('Change Character', 'boyfriend', 'bf-running-dialogue');
-
-			case "Finale":
-				triggerEventNote('Change Character', 'boyfriend', 'bf-defeat-scared-dialogue');
-		}
+		case "Danger":
+			changeCharacter('bf-running-dialogue', 0);
 	}
 }
 

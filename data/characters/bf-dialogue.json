@@ -367,10 +367,10 @@
 	"flags": {
 		"variants": {
 			"dark": "whitebf-dialogue",
+			"falling": "bf-fall-dialogue",
 			"defeat": "bf-defeat-normal-dialogue"
 		},
-		"runner": true,
-		"floating": true
+		"runner": true
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
