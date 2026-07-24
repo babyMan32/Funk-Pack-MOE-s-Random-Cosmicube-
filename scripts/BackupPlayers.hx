@@ -14,6 +14,8 @@ var bf2StageRim;
 
 function onCreatePost()
 {
+	if (!hasBfSkin || boyfriend.curCharacter != ClientPrefs.bfSkin) return;
+
 	extraPlayer = ClientPrefs.equipment.get('extraPlayerSkin');
 
 	if (extraPlayer == null) return;
@@ -116,6 +118,12 @@ function onUpdatePost(elapsed:Float):Void
 	{
 		switch (curAnim)
 		{
+			case "idle", "idle-loop":
+				if (bf2.hasAnim("idle-loop"))
+				{
+					bf2.playAnim('idle-loop');
+				}
+
 			case "singLEFT", "singLEFT-loop":
 				if (bf2.hasAnim("singLEFT-loop"))
 				{

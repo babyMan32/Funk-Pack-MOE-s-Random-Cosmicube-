@@ -82,6 +82,46 @@ function onUpdatePost(elapsed:Float):Void
 {
 	if (bf2Dark == null) return;
 
+	curAnim = bf2Dark.getAnimName();
+
+	curAnimFinished = bf2Dark.isAnimFinished();
+
+	if (curAnimFinished)
+	{
+		switch (curAnim)
+		{
+			case "idle", "idle-loop":
+				if (bf2Dark.hasAnim("idle-loop"))
+				{
+					bf2Dark.playAnim('idle-loop');
+				}
+
+			case "singLEFT", "singLEFT-loop":
+				if (bf2Dark.hasAnim("singLEFT-loop"))
+				{
+					bf2Dark.playAnim('singLEFT-loop');
+				}
+
+			case "singDOWN", "singDOWN-loop":
+				if (bf2Dark.hasAnim("singDOWN-loop"))
+				{
+					bf2Dark.playAnim('singDOWN-loop');
+				}
+
+			case "singUP", "singUP-loop":
+				if (bf2Dark.hasAnim("singUP-loop"))
+				{
+					bf2Dark.playAnim('singUP-loop');
+				}
+
+			case "singRIGHT", "singRIGHT-loop":
+				if (bf2Dark.hasAnim("singRIGHT-loop"))
+				{
+					bf2Dark.playAnim('singRIGHT-loop');
+				}
+		}
+	}
+
 	if (cpuControlled) return;
 
 	if (controls.NOTE_TAUNT_P && bf2Dark.hasAnim(tauntAnim))

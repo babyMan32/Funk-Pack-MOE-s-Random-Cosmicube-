@@ -31,8 +31,6 @@ function onCreatePost()
 	fakeScoreText.y = playHUD.scoreTxt.y + (ClientPrefs.downScroll ? -115 : 15);
 	playHUD.add(fakeScoreText);
 
-	refreshZ(playHUD);
-
 	playHUD.scoreTxt.visible = false;
 
 	FlxG.mouse.visible = false;
@@ -97,4 +95,21 @@ function goodNoteHit(note)
 	{
 		strumPlay.playAnim('static', true); //more kade engine jank lovely
 	}
+}
+
+function onPause()
+{
+	if (!init_kade_hud) return;
+
+	openCustomPause();
+	return Function_Stop;
+}
+
+function openCustomPause()
+{
+	game.persistentUpdate = false;
+	game.persistentDraw = true;
+	game.paused = true;
+    game.audio?.pause();
+	openSubState(new ScriptedSubstate('CustomPauseSubState'));
 }

@@ -14,6 +14,8 @@ var bf3StageRim;
 
 function onCreatePost()
 {
+	if (!hasBfSkin || boyfriend.curCharacter != ClientPrefs.bfSkin) return;
+
 	extraExtraPlayer = ClientPrefs.equipment.get('extraExtraPlayerSkin');
 
 	if (extraExtraPlayer == null) return;
@@ -34,7 +36,7 @@ function onCreatePost()
 		playHUD.insert(4, bf3Icon);
 	}
 
-	bf3StageRim = shadersCheck();
+	bf3StageRim = shadersExtraCheck();
 
 	if (bf3StageRim == null)
 	{
@@ -124,6 +126,12 @@ function onUpdatePost(elapsed:Float):Void
 	{
 		switch (curAnim)
 		{
+			case "idle", "idle-loop":
+				if (bf3.hasAnim("idle-loop"))
+				{
+					bf3.playAnim('idle-loop');
+				}
+
 			case "singLEFT", "singLEFT-loop":
 				if (bf3.hasAnim("singLEFT-loop"))
 				{

@@ -3,7 +3,7 @@ import flixel.graphics.frames.FlxTileFrames;
 
 var checked:Bool = false;
 
-var moesCubes = ['morefucks', 'extraplayer']; // to do: add 'extraextraplayer' in later cause it fucking breaks the game otherwise because no path is longer than one long-
+var moesCubes = ['morefucks', 'extraplayer', 'extraextraplayer'];
 
 function onUpdate()
 {

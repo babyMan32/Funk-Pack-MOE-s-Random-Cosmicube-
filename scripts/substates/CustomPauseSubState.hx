@@ -51,6 +51,12 @@ function onLoad()
 	blueballedTxt.updateHitbox();
 	add(blueballedTxt);
 
+	var difficulty:FlxText = new FlxText(20, 15 + 32, 0, "NORMAL", 32);
+	difficulty.scrollFactor.set();
+	difficulty.setFormat(Paths.font('vcr.ttf'), 32);
+	difficulty.updateHitbox();
+	add(difficulty);
+
 	practiceText = new FlxText(20, 15 + 101, 0, "PRACTICE MODE", 32);
 	practiceText.scrollFactor.set();
 	practiceText.setFormat(Paths.font('vcr.ttf'), 32);
@@ -68,12 +74,14 @@ function onLoad()
 	add(botplayText);
 
 	blueballedTxt.alpha = 0;
+	difficulty.alpha = 0;
 	//levelDifficulty.alpha = 0;
 	levelInfo.alpha = 0;
 
-	levelInfo.x = FlxG.width - (levelInfo.width + 20);
-	//levelDifficulty.x = FlxG.width - (levelDifficulty.width + 20);
 	blueballedTxt.x = FlxG.width - (blueballedTxt.width + 20);
+	difficulty.x = FlxG.width - (difficulty.width + 20);
+	//levelDifficulty.x = FlxG.width - (levelDifficulty.width + 20);
+	levelInfo.x = FlxG.width - (levelInfo.width + 20);
 
 	grpMenuShit = new FlxTypedGroup();
 	add(grpMenuShit);
@@ -83,6 +91,7 @@ function onLoad()
 		var songText:Alphabet = new Alphabet(0, (70 * i) + 30, menuItems[i], true, false);
 		songText.isMenuItem = true;
 		songText.targetY = i;
+		songText.screenCenter();
 		grpMenuShit.add(songText);
 	}
 
@@ -92,13 +101,15 @@ function onLoad()
 
 	FlxG.signals.postUpdate.addOnce(function () {
 		FlxTween.tween(bg, {alpha: 0.6}, 0.4, {ease: FlxEase.quartInOut});
-		FlxTween.tween(levelInfo, {alpha: 1, y: 20}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.3});
+		// FlxTween.tween(blueballedTxt, {alpha: 1, y: blueballedTxt.y + 5}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.5});
+		FlxTween.tween(difficulty, {alpha: 1, y: difficulty.y + 5}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.5});
 		//FlxTween.tween(levelDifficulty, {alpha: 1, y: levelDifficulty.y + 5}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.5});
-		FlxTween.tween(blueballedTxt, {alpha: 1, y: blueballedTxt.y + 5}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.5});
+		FlxTween.tween(levelInfo, {alpha: 1, y: 20}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.3});
 	});
 }
 
-function onUpdate(elapsed:Float) {
+function onUpdate(elapsed:Float)
+{
 	// if (pauseMusic.volume < 0.5)
 	// 	pauseMusic.volume += 0.01 * elapsed;
 
@@ -110,6 +121,7 @@ function onUpdate(elapsed:Float) {
 	{
 		changeSelection(-1);
 	}
+
 	if (downP)
 	{
 		changeSelection(1);
@@ -118,8 +130,11 @@ function onUpdate(elapsed:Float) {
 	if (accepted)
 	{
 		var daSelected:String = menuItems[curSelected];
-		for (i in 0...difficultyChoices.length-1) {
-			if(difficultyChoices[i] == daSelected) {
+
+		for (i in 0...difficultyChoices.length-1)
+		{
+			if (difficultyChoices[i] == daSelected)
+			{
 				var name:String = PlayState.SONG.song.toLowerCase();
 				var poop = Highscore.formatSong(name, curSelected);
 				PlayState.SONG = Song.loadFromJson(poop, name);
@@ -203,17 +218,21 @@ function changeSelection(change:Int = 0):Void
 	}
 }
 
-function regenMenu():Void {
-	for (i in 0...grpMenuShit.members.length) {
+function regenMenu():Void
+{
+	for (i in 0...grpMenuShit.members.length)
+	{
 		grpMenuShit.remove(this.grpMenuShit.members[0], true);
 	}
 
-	for (i in 0...menuItems.length) {
+	for (i in 0...menuItems.length)
+	{
 		var item = new Alphabet(0, 70 * i + 30, menuItems[i], true, false);
 		item.isMenuItem = true;
 		item.targetY = i;
 		grpMenuShit.add(item);
 	}
+
 	curSelected = 0;
 	changeSelection();
 }
