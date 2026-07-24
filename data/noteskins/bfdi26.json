@@ -6,7 +6,8 @@
 		"singRIGHT"
 	],
 	"splashesEnabled": true,
-	"noteTexture": "pixelUI/NOTE_assets",
+	"susSplashesEnabled": false,
+	"noteTexture": "nonRGB/NOTE_assets-bfdi",
 	"receptorAnimations": [
 		[
 			{
@@ -132,18 +133,9 @@
                     0,
                     0
                 ],
-                "xmlName": "splash0",
+                "xmlName": "note splash purple 1",
                 "anim": "splash",
-                "fps": 18
-            },		
-            {
-                "offsets": [
-                    0,
-                    0
-                ],
-                "xmlName": "splash0",
-                "anim": "splash-1",
-                "fps": 18
+                "fps": 24
             }
         ],
         [
@@ -152,18 +144,9 @@
                     0,
                     0
                 ],
-                "xmlName": "splash0",
+                "xmlName": "note splash green 1",
                 "anim": "splash",
-                "fps": 18
-            },		
-            {
-                "offsets": [
-                    0,
-                    0
-                ],
-                "xmlName": "splash0",
-                "anim": "splash-1",
-                "fps": 18
+                "fps": 24
             }
         ],
         [
@@ -172,18 +155,9 @@
                     0,
                     0
                 ],
-                "xmlName": "splash0",
+                "xmlName": "note splash blue 1",
                 "anim": "splash",
-                "fps": 18
-            },		
-            {
-                "offsets": [
-                    0,
-                    0
-                ],
-                "xmlName": "splash0",
-                "anim": "splash-1",
-                "fps": 18
+                "fps": 24
             }
         ],
         [
@@ -192,18 +166,9 @@
                     0,
                     0
                 ],
-                "xmlName": "splash0",
+                "xmlName": "note splash red 1",
                 "anim": "splash",
-                "fps": 18
-            },		
-            {
-                "offsets": [
-                    0,
-                    0
-                ],
-                "xmlName": "splash0",
-                "anim": "splash-1",
-                "fps": 18
+                "fps": 24
             }
         ]
 	],
@@ -325,101 +290,16 @@
 			}
 		]
 	],
-	"susSplashAnimations": [
-		[
-			{
-				"anim": "start",
-				"xmlName": "start",
-				"offsets": [0, 0],
-				"looping": false
-			},
-			{
-				"anim": "loop",
-				"xmlName": "loop",
-				"offsets": [0, 0],
-				"looping": true
-			},
-			{
-				"anim": "end",
-				"xmlName": "end",
-				"offsets": [0, 0],
-				"looping": false
-			}
-		],
-		[
-			{
-				"anim": "start",
-				"xmlName": "start",
-				"offsets": [0, 0],
-				"looping": false
-			},
-			{
-				"anim": "loop",
-				"xmlName": "loop",
-				"offsets": [0, 0],
-				"looping": true
-			},
-			{
-				"anim": "end",
-				"xmlName": "end",
-				"offsets": [0, 0],
-				"looping": false
-			}
-		],
-		[
-			{
-				"anim": "start",
-				"xmlName": "start",
-				"offsets": [0, 0],
-				"looping": false
-			},
-			{
-				"anim": "loop",
-				"xmlName": "loop",
-				"offsets": [0, 0],
-				"looping": true
-			},
-			{
-				"anim": "end",
-				"xmlName": "end",
-				"offsets": [0, 0],
-				"looping": false
-			}
-		],
-		[
-			{
-				"anim": "start",
-				"xmlName": "start",
-				"offsets": [0, 0],
-				"looping": false
-			},
-			{
-				"anim": "loop",
-				"xmlName": "loop",
-				"offsets": [0, 0],
-				"looping": true
-			},
-			{
-				"anim": "end",
-				"xmlName": "end",
-				"offsets": [0, 0],
-				"looping": false
-			}
-		]
-	],
 	"arrowRGB": [
 		{"r": -1935617, "g": -1537, "b": -10485619},
 		{"r": -12727553, "g": -720897, "b": -16764832},
 		{"r": -9313536, "g": -589850, "b": -16764672},
 		{"r": -30642, "g": -1291, "b": -9699328}
 	],
-	"splashTexture": "pixelUI/splash",
-    "sustainSplashTexture": "pixelUI/holdCover",
-	"antialiasing": false,
-	"inGameColoring": true,
-	"receptorScale": 6,
-	"noteScale": 6,
-	"splashScale": 6,
-    "susSplashScale": 6,
-	"susSplashOrigin": [-160, 15]
+	"splashTexture": "nonRGB/noteSplashes-bfdi",
+	"noteSplashVariants": 2,
+	"antialiasing": true,
+	"inGameColoring": false,
+	"noteScale": 0.7,
+	"splashScale": 1
 }

@@ -8818,10 +8818,13 @@
 			}
 		],
 		"gfVersion": "tennis-ball-righty",
-		"disableNoteRGB": true,
 		"allowBFskin": false,
 		"allowGFskin": false,
 		"song": "Right Finger",
+		"arrowSkins": [
+			"bfdi26",
+			"bfdi26"
+		],
 		"needsVoices": true,
 		"stage": "lab",
 		"bpm": 120,
