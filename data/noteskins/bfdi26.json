@@ -128,49 +128,45 @@
 	],
 	"noteSplashAnimations": [
 		[
-            {
-                "offsets": [
-                    0,
-                    0
-                ],
-                "xmlName": "note splash purple 1",
-                "anim": "splash",
-                "fps": 24
-            }
-        ],
-        [
-            {
-                "offsets": [
-                    0,
-                    0
-                ],
-                "xmlName": "note splash green 1",
-                "anim": "splash",
-                "fps": 24
-            }
-        ],
-        [
-            {
-                "offsets": [
-                    0,
-                    0
-                ],
-                "xmlName": "note splash blue 1",
-                "anim": "splash",
-                "fps": 24
-            }
-        ],
-        [
-            {
-                "offsets": [
-                    0,
-                    0
-                ],
-                "xmlName": "note splash red 1",
-                "anim": "splash",
-                "fps": 24
-            }
-        ]
+			{
+				"offsets": [
+					0,
+					0
+				],
+				"xmlName": "note splash purple 1",
+				"anim": "splash"
+			}
+		],
+		[
+			{
+				"offsets": [
+					0,
+					0
+				],
+				"xmlName": "note splash blue 1",
+				"anim": "splash"
+			}
+		],
+		[
+			{
+				"offsets": [
+					0,
+					0
+				],
+				"xmlName": "note splash green 1",
+				"anim": "splash"
+			}
+		],
+		[
+			{
+				"offsets": [
+					0,
+					0
+				],
+				"xmlName": "note splash red 1",
+				"anim": "splash"
+			}
+		]
 	],
 	"noteAnimations": [
 		[
@@ -290,14 +286,8 @@
 			}
 		]
 	],
-	"arrowRGB": [
-		{"r": -1935617, "g": -1537, "b": -10485619},
-		{"r": -12727553, "g": -720897, "b": -16764832},
-		{"r": -9313536, "g": -589850, "b": -16764672},
-		{"r": -30642, "g": -1291, "b": -9699328}
-	],
 	"splashTexture": "nonRGB/noteSplashes-bfdi",
-	"noteSplashVariants": 2,
+	"noteSplashVariants": 1,
 	"antialiasing": true,
 	"inGameColoring": false,
 	"noteScale": 0.7,
