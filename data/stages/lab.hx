@@ -53,4 +53,7 @@ function onLoad()
 function onCreatePost()
 {
 	camSpecialThing([1100, 500], [1350, 500], -1);
+
+    playHUD.ratingPrefix = 'ui/bfdi26/';
+	playHUD.ratingSuffix = '-bfdi26';
 }
