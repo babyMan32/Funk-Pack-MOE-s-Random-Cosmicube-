@@ -108,7 +108,8 @@
 	],
 	"dance_every": 2,
 	"flags": {
-		"backlit": true
+		"backlit": true,
+		"defeatRetro": "bf-dialogue"
 	},
 	"gameover_intial_sound": null,
 	"scalableOffsets": false,

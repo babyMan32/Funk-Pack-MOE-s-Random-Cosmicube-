@@ -370,8 +370,7 @@
 			"defeat": "bf-defeat-normal-dialogue"
 		},
 		"runner": true,
-		"floating": true,
-		"defeatRetro": "bf"
+		"floating": true
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
