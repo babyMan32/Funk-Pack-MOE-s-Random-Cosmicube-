@@ -20,11 +20,6 @@ function onLoad()
 
 function onCreatePost()
 {
-	hellyeah();
-}
-
-function hellyeah()
-{
 	if (ClientPrefs.bfSkin != "clowfoe-old") return;
 
 	switch (PlayState.SONG.song)
@@ -37,16 +32,10 @@ function hellyeah()
 				});
 			}
 
-			if (PlayState.attackCharacter == 1 || PlayState.attackCharacter == 2)
+			if (PlayState.attackCharacter == 1)
 			{
-				healthBar.leftToRight = true;
-
-				switch (PlayState.attackCharacter)
-				{
-					case 1:
-						iconP1.changeIcon('attack_OLD');
-						iconP2.changeIcon('bfclow_OLD');
-				}
+				iconP1.changeIcon('attack_OLD');
+				iconP2.changeIcon('bfclow_OLD');
 			}
 	}
 
