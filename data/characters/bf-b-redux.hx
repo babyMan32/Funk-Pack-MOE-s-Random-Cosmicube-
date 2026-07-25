@@ -1,16 +1,4 @@
-var baddieExists:Bool = true;
 var allow_gf_taunt = true;
-
-function onLoad()
-{
-	switch (PlayState.SONG.stage)
-	{
-		//no gf stages
-
-		case "beach-old", "boiling", "chef", "dave", "defeat", "esculent", "finalem", "idk", "jads", "jerma", "kills", "lounge", "monotone", "nuzzus", "piptowers", "pretender", "turbulence", "victory", "who":
-			baddieExists = false;
-	}
-}
 
 function onUpdatePost(elapsed:Float):Void
 {

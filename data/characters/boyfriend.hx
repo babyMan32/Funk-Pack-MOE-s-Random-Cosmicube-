@@ -10,19 +10,10 @@ var legPosY = [13, 7, -3, -1, -1, 2, 7, 9, 7, 2, 0, 0, 3, 1, 3, 7, 13];
 var startedFakeout = false;
 var getTrolled = false;
 
-var baddieExists:Bool = true;
 var allow_gf_taunt = true;
 
 function onLoad()
 {
-	switch (PlayState.SONG.stage)
-	{
-		//no gf stages
-
-		case "beach-old", "boiling", "chef", "dave", "defeat", "esculent", "finalem", "idk", "jads", "jerma", "kills", "lounge", "monotone", "nuzzus", "piptowers", "pretender", "turbulence", "victory", "who":
-			baddieExists = false;
-	}
-
 	doWeLegs = (ClientPrefs.bfSkin == 'boyfriend' && PlayState.SONG.stage == 'danger');
 
 	getTrolled = FlxG.random.bool((1 / 4096) * 100);

@@ -12,14 +12,11 @@ var blinkCountdown = 3;
 
 var yo_nenes = ['nene_v-slice', 'nene_v-slice-dark', 'nene_v-slice-pixel', 'nene_d-sides'];
 
-function onLoad()
+function onCreatePost()
 {
-	switch (PlayState.SONG.stage)
+	if (gf == null)
 	{
-		//no gf stages
-
-		case "beach-old", "boiling", "chef", "dave", "defeat", "esculent", "finalem", "idk", "jads", "jerma", "kills", "lounge", "monotone", "nuzzus", "piptowers", "pretender", "turbulence", "victory", "who":
-			neneExists = false;
+		neneExists = false;
 	}
 }
 
@@ -67,6 +64,8 @@ function neneing(neneState)
 
 function onBeatHit()
 {
+	if (!neneExists) return;
+
 	if (!raise_her_knife) return;
 
 	if (blinkCountdown == 0)
@@ -100,6 +99,8 @@ function goodNoteHit(note)
 
 function noteMiss(note)
 {
+	if (!neneExists) return;
+
 	if (game.combo >= 70)
 	{
 		if (!gf.hasAnim('drop70')) return;
