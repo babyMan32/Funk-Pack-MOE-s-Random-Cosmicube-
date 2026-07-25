@@ -116,26 +116,14 @@ function onUpdate()
 
 		if (FlxG.mouse.overlaps(bf))
 		{
-			if (!hoveredOnBf)
-			{
-				changeSelection(1);
-
-				hoveredOnBf = true;
-				hoveredOnGlung = false;
-			}
+			if (!hoveredOnBf) changeSelection(1);
 
 			if (FlxG.mouse.justPressed) songShitIGuess(curSelection);
 		}
 
 		if (FlxG.mouse.overlaps(glung))
 		{
-			if (!hoveredOnGlung)
-			{
-				changeSelection(-1);
-
-				hoveredOnBf = false;
-				hoveredOnGlung = true;
-			}
+			if (!hoveredOnGlung) changeSelection(-1);
 
 			if (FlxG.mouse.justPressed) songShitIGuess(curSelection);
 		}
