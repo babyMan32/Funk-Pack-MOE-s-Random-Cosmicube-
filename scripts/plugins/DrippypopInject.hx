@@ -1,20 +1,16 @@
 import funkin.states.FreeplayState;
 
-var game;
-
-var song;
-
-var select_song_mouse;
-
 function onUpdate()
 {
-	game = FlxG.state;
+	var game = FlxG.state;
 
 	var select_song = Controls.instance.ACCEPT;
   
 	if (Std.isOfType(game, FreeplayState))
 	{
-		if (select_song || select_song_mouse)
+		var song = game.week_songs[FreeplayState.curSelect];
+
+		if (select_song)
 		{
 			if (song[0] != 'Drippypop') return;
 			
@@ -29,29 +25,13 @@ function onUpdate()
 	}
 }
 
-function onUpdatePost()
-{
-	if (Std.isOfType(game, FreeplayState))
-	{
-		select_song_mouse = FlxG.mouse.y >= (game.upperBar.y + game.upperBar.height) && FlxG.mouse.justPressed && FlxG.mouse.overlaps(game.cards);
-
-		if (game.ws_lock[FreeplayState.curSelect]) return;
-
-		song = game.week_songs[FreeplayState.curSelect];
-
-		trace(song[0]);
-	}
-}
-
 // plugin scirpts dont have onUpdate rn so  this will do i guess??
 function onLoad()
 {
 	FlxG.signals.preUpdate.add(onUpdate);
-	FlxG.signals.preUpdate.add(onUpdatePost);
 }
 
 function onDestroy()
 {
 	FlxG.signals.preUpdate.remove(onUpdate);
-	FlxG.signals.preUpdate.remove(onUpdatePost);
 }

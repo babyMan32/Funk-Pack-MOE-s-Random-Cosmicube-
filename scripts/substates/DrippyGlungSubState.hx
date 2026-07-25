@@ -1,6 +1,7 @@
 import funkin.objects.HealthIcon;
 import flixel.system.FlxBGSprite;
 import funkin.states.FreeplayState;
+import funkin.objects.menu.AmongControls;
 
 var songType:FlxText = 'Drippypop';
 
@@ -8,6 +9,7 @@ var curSelection:Int = 0;
 var bg:FlxBGSprite;
 var selectionArrow:FlxSprite;
 var overlayCamera:FlxCamera;
+var bottomControls;
 
 var canMove = false;
 	
@@ -64,6 +66,17 @@ function onLoad()
 	selectionArrow.alpha = 0;
 	add(selectionArrow); // arrow that shows you which variation is currently selected
 
+	if (bottomControls == null)
+	{
+		bottomControls = new AmongControls([
+			['arrow', 'select'], // select
+			['enter', 'conf'], // conf
+			['esc', 'back'] // back
+		], false);
+		bottomControls.zIndex = 10;
+		add(bottomControls);
+	}
+
 	tweenTheShits(true);
 }
 
@@ -76,12 +89,20 @@ function tweenTheShits(?on:Bool = false) // fade the shit in/out
 	FlxTween.tween(glung, {alpha: (on ? 1 : 0)}, 0.35, {ease: tweenType});
 	FlxTween.tween(songType, {alpha: (on ? 1 : 0)}, 0.35, {ease: tweenType});
 	FlxTween.tween(selectionArrow, {alpha: (on ? 1 : 0)}, 0.35, {ease: tweenType, onComplete: function() bullshitFuncMyFav(on)});
+
+	if (on == false) return;
+
+	bottomControls.revive();
 }
 
 function bullshitFuncMyFav(?on:Bool = false)
 {
 	canMove = on;
 	FlxG.state.lockMovement = on;
+
+	if (on == true) return;
+
+	bottomControls.kill();
 }
 
 function onUpdate()
@@ -110,7 +131,7 @@ function onUpdate()
 		{
 			if (!hoveredOnGlung)
 			{
-				changeSelection(1);
+				changeSelection(-1);
 
 				hoveredOnBf = false;
 				hoveredOnGlung = true;
@@ -133,6 +154,9 @@ function changeSelection(by:Int)
 	curSelection = FlxMath.wrap(curSelection + by, 0, 1);
 
 	selectionArrow.x = iconArray[curSelection].x + 25;
+
+	hoveredOnBf = curSelection == 0;
+	hoveredOnGlung = curSelection == 1;
 
 	songType.text = dripRemixes[curSelection];
 
