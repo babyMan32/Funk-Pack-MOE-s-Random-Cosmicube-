@@ -1,5 +1,7 @@
 var beeg = false;
 
+var speed = 1;
+
 function onLoad() 
 {
 	playbackRate = FlxG.random.float(0.8, 1.2);
@@ -14,15 +16,33 @@ function onLoad()
 
 		playbackRate *= 1.2;
 	}
+
+	speed = playbackRate;
 }
 
 function onCreatePost()
 {
-	if (beeg && PlayState.SONG.song == 'Identity Crisis')
+	if (PlayState.SONG.song != 'Identity Crisis') return;
+
+	playbackRate *= FlxG.random.float(0.8, 1.2);
+
+	if (beeg)
 	{
 		copyPet.scale.set(1.2, 1.2);
 		copyPet.y = pet.y - 25;
 		copyPet.x -= 200;
 		copyPet.updateHitbox();
+
+		playbackRate *= 1.2;
+	}
+
+	speed = playbackRate;
+}
+
+function onUpdate(elapsed:Float):Void
+{
+	if (FlxG.keys.justReleased.THREE)
+	{
+		playbackRate = speed;
 	}
 }
