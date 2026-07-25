@@ -110,6 +110,9 @@ function openCustomPause()
 	game.persistentUpdate = false;
 	game.persistentDraw = true;
 	game.paused = true;
-    game.audio?.pause();
+	game.audio?.pause();
+
+	Paths.overrideMode = PathsTestMode.LOOSE;
 	openSubState(new ScriptedSubstate('CustomPauseSubState'));
+	Paths.overrideMode = null;
 }
