@@ -20,7 +20,7 @@ var iconArray:Array<HealthIcon> = [];
 var hoveredOnBf = true;
 var hoveredOnGlung = false;
 
-var dripRemixes = ['Drippypop', 'Double Kill']; // Double Kill is temporary until 'Drippypop (Remagets Mix)' is done
+var dripRemixes = ['Drippypop', 'Drippypop (Remagets Mix)'];
 
 var rare_chance = 'Drippypop (Glungus Mix)';
 
@@ -132,6 +132,7 @@ function onUpdate()
 
 function songShitIGuess(song:Int)
 {
+	Paths.overrideMode = PathsTestMode.LOOSE;
 	FreeplayState.loadSong(dripRemixes[song]); // load variation
 }
 

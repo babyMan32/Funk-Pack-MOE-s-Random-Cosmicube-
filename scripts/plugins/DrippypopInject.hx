@@ -13,7 +13,7 @@ function onUpdate()
 		if (select_song)
 		{
 			if (song[0] != 'Drippypop') return;
-			
+
 			if (game.lockMovement) return;
 
 			game.lockMovement = true;
@@ -26,12 +26,5 @@ function onUpdate()
 }
 
 // plugin scirpts dont have onUpdate rn so  this will do i guess??
-function onLoad()
-{
-	FlxG.signals.preUpdate.add(onUpdate);
-}
-
-function onDestroy()
-{
-	FlxG.signals.preUpdate.remove(onUpdate);
-}
+function onLoad() FlxG.signals.preUpdate.add(onUpdate);
+function onDestroy() FlxG.signals.preUpdate.remove(onUpdate);
