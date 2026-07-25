@@ -7,11 +7,11 @@ function onUpdate()
 	var select_song = Controls.instance.ACCEPT;
 
 	var overlappingCard = (FlxG.mouse.y >= 319) && (FlxG.mouse.y <= 424);
-
-	var select_song_mouse = FlxG.mouse.justPressed && FlxG.mouse.overlaps(game.cards) && overlappingCard;
   
 	if (Std.isOfType(game, FreeplayState))
 	{
+		var select_song_mouse = FlxG.mouse.justPressed && FlxG.mouse.overlaps(game.cards) && overlappingCard;
+
 		if (game.ws_lock[FreeplayState.curSelect]) return;
 
 		if (select_song || select_song_mouse)
