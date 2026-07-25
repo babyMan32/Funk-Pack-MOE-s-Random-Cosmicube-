@@ -12,10 +12,13 @@ function onUpdate()
 		{
 			var song = game.week_songs[FreeplayState.curSelect];
       
-			if (song[0] == 'Drippypop')
+			if (song[0] == 'Drippypop' && !game.lockMovement)
 			{
 				game.lockMovement = true;
-				game.openSubState(new ScriptedSubstate('DrippypopGlungSubState'));
+				Paths.overrideMode = PathsTestMode.LOOSE;
+				game.openSubState(new ScriptedSubstate('DrippyGlungSubState'));
+				Paths.overrideMode = null;
+				return;
 			}
 		}
 	}
