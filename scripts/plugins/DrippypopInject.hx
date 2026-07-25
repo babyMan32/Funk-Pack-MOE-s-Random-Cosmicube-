@@ -14,10 +14,6 @@ function onUpdate()
   
 	if (Std.isOfType(game, FreeplayState))
 	{
-		if (game.ws_lock[FreeplayState.curSelect]) return;
-
-		song = game.week_songs[FreeplayState.curSelect];
-
 		if (select_song || select_song_mouse)
 		{
 			if (song[0] != 'Drippypop') return;
@@ -38,6 +34,12 @@ function onUpdatePost()
 	if (Std.isOfType(game, FreeplayState))
 	{
 		select_song_mouse = FlxG.mouse.y >= (game.upperBar.y + game.upperBar.height) && FlxG.mouse.justPressed && FlxG.mouse.overlaps(game.cards);
+
+		if (game.ws_lock[FreeplayState.curSelect]) return;
+
+		song = game.week_songs[FreeplayState.curSelect];
+
+		trace(song[0]);
 	}
 }
 
@@ -45,11 +47,11 @@ function onUpdatePost()
 function onLoad()
 {
 	FlxG.signals.preUpdate.add(onUpdate);
-	FlxG.signals.postUpdate.add(onUpdatePost);
+	FlxG.signals.preUpdate.add(onUpdatePost);
 }
 
 function onDestroy()
 {
 	FlxG.signals.preUpdate.remove(onUpdate);
-	FlxG.signals.postUpdate.remove(onUpdatePost);
+	FlxG.signals.preUpdate.remove(onUpdatePost);
 }
