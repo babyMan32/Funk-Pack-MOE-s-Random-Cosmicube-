@@ -366,9 +366,10 @@
 	"gameover_intial_sound": null,
 	"flags": {
 		"variants": {
+			"defeat": "bf-defeat-normal-dialogue",
 			"dark": "whitebf-dialogue",
 			"falling": "bf-fall-dialogue",
-			"defeat": "bf-defeat-normal-dialogue"
+			"retro": "bf"
 		},
 		"runner": true
 	},
