@@ -40,3 +40,21 @@ function onCreatePost()
 	}
 
 }
+
+function onPause()
+{
+	if (ClientPrefs.bfSkin != "clowfoe-old") return;
+
+	Paths.overrideMode = PathsTestMode.LOOSE;
+	pauseOverwrite = 'attack-old';
+}
+
+function onResume()
+{
+	if (ClientPrefs.bfSkin != "clowfoe-old") return;
+
+	if (Paths.overrideMode != null)
+	{
+		Paths.overrideMode = null;
+	}
+}
