@@ -21,6 +21,8 @@ var dripRemixes = ['Drippypop', 'Drippypop (Remagets Mix)'];
 
 var rare_chance = 'Drippypop (Glungus Mix)';
 
+var ultra_rare_chance = 'Drippypop (Remadicks Mix)';
+
 function onLoad()
 {
 	canMove = false;
@@ -147,10 +149,7 @@ function changeSelection(by:Int)
 
 	songType.text = dripRemixes[curSelection];
 
-	if (curSelection == 1 && FlxG.random.bool(10))
-	{
-		songType.text = rare_chance; // lmao glungus mix
-	}
+	chanceTime();
 }
 
 function setSelection(by:Int)
@@ -163,8 +162,18 @@ function setSelection(by:Int)
 
 	songType.text = dripRemixes[curSelection];
 
+	chanceTime();
+}
+
+function chanceTime()
+{
 	if (curSelection == 1 && FlxG.random.bool(10))
 	{
 		songType.text = rare_chance; // lmao glungus mix
+	}
+
+	if (curSelection == 1 && FlxG.random.bool(1))
+	{
+		songType.text = ultra_rare_chance; // what the twink calls him
 	}
 }
