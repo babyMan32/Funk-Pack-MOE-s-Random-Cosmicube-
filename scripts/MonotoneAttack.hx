@@ -15,6 +15,16 @@ function onLoad()
 				PlayState.SONG.player2 = 'attack';
 				PlayState.SONG.gfVersion = 'fabs';
 			}
+
+		case "Drippypop":
+			if (ClientPrefs.bfSkin == 'clowfoe-old')
+			{
+				PlayState.SONG.player2 = 'drippypop-old';
+			}
+			else
+			{
+				PlayState.SONG.player2 = 'drippypop';
+			}
 	}
 }
 
@@ -38,15 +48,18 @@ function onCreatePost()
 				iconP2.changeIcon('bfclow_OLD');
 			}
 	}
-
 }
 
 function onPause()
 {
 	if (ClientPrefs.bfSkin != "clowfoe-old") return;
 
-	Paths.overrideMode = PathsTestMode.LOOSE;
-	pauseOverwrite = 'attack-old';
+	switch (PlayState.SONG.song)
+	{
+		case "Monotone Attack":
+			Paths.overrideMode = PathsTestMode.LOOSE;
+			pauseOverwrite = 'attack-old';
+	}
 }
 
 function onResume()

@@ -134,6 +134,7 @@ function songShitIGuess(song:Int)
 {
 	Paths.overrideMode = PathsTestMode.LOOSE;
 	FreeplayState.loadSong(dripRemixes[song]); // load variation
+	Paths.overrideMode = null;
 }
 
 function changeSelection(by:Int)
