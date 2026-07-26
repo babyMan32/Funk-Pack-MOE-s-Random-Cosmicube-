@@ -1,6 +1,6 @@
 import funkin.states.FreeplayState;
 
-var select_song_mouse;
+var lastSong;
 
 function onUpdate()
 {
@@ -12,21 +12,23 @@ function onUpdate()
 	{
 		if (game.ws_lock[FreeplayState.curSelect]) return;
 
+		var song = game.week_songs[FreeplayState.curSelect];
+
+		var select_song_mouse = FlxG.mouse.y >= (game.upperBar.y + game.upperBar.height) && FlxG.mouse.justPressed && FlxG.mouse.overlaps(game.cards) && (song[0] == lastSong);
+
 		if (select_song || select_song_mouse)
 		{
-			var song = game.week_songs[FreeplayState.curSelect];
-      
-			if (song[0] == 'Drippypop' && !game.lockMovement)
-			{
-				game.lockMovement = true;
-				Paths.overrideMode = PathsTestMode.LOOSE; // i was going insane trying to load substates not from legacy, thank you ashley
-				game.openSubState(new ScriptedSubstate('DrippyGlungSubState'));
-				Paths.overrideMode = null;
-				return;
-			}
+			if (song[0] != 'Drippypop') return;
+		
+			if (game.lockMovement) return;
+
+			game.lockMovement = true;
+			Paths.overrideMode = PathsTestMode.LOOSE; // i was going insane trying to load substates not from legacy, thank you ashley
+			game.openSubState(new ScriptedSubstate('DrippyGlungSubState'));
+			Paths.overrideMode = null;
 		}
 
-		select_song_mouse = FlxG.mouse.y >= (game.upperBar.y + game.upperBar.height) && FlxG.mouse.justPressed && FlxG.mouse.overlaps(game.cards);
+		lastSong = song[0];
 	}
 }
 
