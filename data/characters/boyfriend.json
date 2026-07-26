@@ -164,6 +164,7 @@
 		"runner": true,
 		"variants": {
 			"dark": "boyfriend-dark",
+			"pixel": "boyfriend-pixel",
 			"falling": "boyfriend-fall"
 		}
 	},
