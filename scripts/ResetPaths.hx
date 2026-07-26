@@ -1,4 +1,4 @@
-function onCreatePost()
+function onDestroy()
 {
 	if (Paths.overrideMode != null)
 	{

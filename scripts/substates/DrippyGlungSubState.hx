@@ -17,9 +17,6 @@ var bf:HealthIcon;
 var glung:HealthIcon;
 var iconArray:Array<HealthIcon> = [];
 
-var hoveredOnBf = true;
-var hoveredOnGlung = false;
-
 var dripRemixes = ['Drippypop', 'Drippypop (Remagets Mix)'];
 
 var rare_chance = 'Drippypop (Glungus Mix)';
@@ -114,18 +111,21 @@ function onUpdate()
 		if (controls.BACK) tweenTheShits();
 		if (controls.ACCEPT) songShitIGuess(curSelection);
 
-		if (FlxG.mouse.overlaps(bf))
+		if ((FlxG.mouse.justPressed))
 		{
-			if (!hoveredOnBf) changeSelection(1);
+			if (FlxG.mouse.overlaps(bf))
+			{
+				if (curSelection == 0) songShitIGuess(curSelection);
 
-			if (FlxG.mouse.justPressed) songShitIGuess(curSelection);
-		}
+				if (curSelection != 0) setSelection(0);
+			}
 
-		if (FlxG.mouse.overlaps(glung))
-		{
-			if (!hoveredOnGlung) changeSelection(-1);
+			if (FlxG.mouse.overlaps(glung))
+			{
+				if (curSelection == 1) songShitIGuess(curSelection);
 
-			if (FlxG.mouse.justPressed) songShitIGuess(curSelection);
+				if (curSelection != 1) setSelection(1);
+			}
 		}
 	}
 }
@@ -144,8 +144,21 @@ function changeSelection(by:Int)
 
 	selectionArrow.x = iconArray[curSelection].x + 25;
 
-	hoveredOnBf = curSelection == 0;
-	hoveredOnGlung = curSelection == 1;
+	songType.text = dripRemixes[curSelection];
+
+	if (curSelection == 1 && FlxG.random.bool(10))
+	{
+		songType.text = rare_chance; // lmao glungus mix
+	}
+}
+
+function setSelection(by:Int)
+{
+	FlxG.sound.play(Paths.sound('hover'), 0.5);
+
+	curSelection = by;
+
+	selectionArrow.x = iconArray[curSelection].x + 25;
 
 	songType.text = dripRemixes[curSelection];
 
