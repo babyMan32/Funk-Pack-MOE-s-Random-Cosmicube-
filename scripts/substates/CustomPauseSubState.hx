@@ -13,6 +13,7 @@ var practiceText:FlxText;
 var botplayText:FlxText;
 
 var transCamera:FlxCamera;
+var canInput:Bool = false;
 
 function onLoad()
 {
@@ -91,7 +92,8 @@ function onLoad()
 		var songText:Alphabet = new Alphabet(0, (70 * i) + 30, menuItems[i], true, false);
 		songText.isMenuItem = true;
 		songText.targetY = i;
-		songText.screenCenter();
+		songText.screenCenter(0x01);
+		songText.changeAxis = 0x10;
 		grpMenuShit.add(songText);
 	}
 
@@ -105,11 +107,14 @@ function onLoad()
 		FlxTween.tween(difficulty, {alpha: 1, y: difficulty.y + 5}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.5});
 		//FlxTween.tween(levelDifficulty, {alpha: 1, y: levelDifficulty.y + 5}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.5});
 		FlxTween.tween(levelInfo, {alpha: 1, y: 20}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.3});
+
+		canInput = true;
 	});
 }
 
 function onUpdate(elapsed:Float)
 {
+	if (!canInput) return;
 	// if (pauseMusic.volume < 0.5)
 	// 	pauseMusic.volume += 0.01 * elapsed;
 
