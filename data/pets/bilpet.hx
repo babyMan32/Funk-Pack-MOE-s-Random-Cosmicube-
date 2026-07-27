@@ -2,6 +2,8 @@ var state = 'norm';
 
 var speed = 1;
 
+var copyDead = true;
+
 function onLoad() 
 {
 	if (FlxG.random.bool(10)) 
@@ -33,6 +35,8 @@ function onCreatePost()
 {
 	if (PlayState.SONG.song != 'Identity Crisis') return;
 
+	copyDead = false;
+
 	if (state == 'beeg')
 	{
 		copyPet.scale.set(1.2, 1.2);
@@ -54,6 +58,16 @@ function onCreatePost()
 	}
 
 	speed = playbackRate;
+}
+
+function onEvent(n, v1, v2)
+{
+	if (dad.curCharacter == 'monotone' && !copyDead)
+	{
+		speed /= (state == 'smol' ? 0.8 : (state == 'beeg' ? 1.2 : 1));
+		playbackRate = speed;
+		copyDead = true;
+	}
 }
 
 function onUpdate(elapsed:Float):Void
