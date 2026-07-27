@@ -4,10 +4,6 @@ var speed = 1;
 
 function onLoad() 
 {
-	val = Math.round(FlxG.random.int(80, 120)) / 100;
-
-	playbackRate = val;
-
 	if (FlxG.random.bool(10)) 
 	{
 		pet.scale.set(1.2, 1.2);
@@ -25,10 +21,6 @@ function onLoad()
 function onCreatePost()
 {
 	if (PlayState.SONG.song != 'Identity Crisis') return;
-
-	val = Math.round(FlxG.random.int(80, 120)) / 100;
-
-	playbackRate *= val;
 
 	if (beeg)
 	{
