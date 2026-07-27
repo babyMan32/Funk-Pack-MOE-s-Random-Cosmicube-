@@ -1,4 +1,5 @@
 import funkin.states.FreeplayState;
+import funkin.FunkinAssets;
 
 function onUpdate()
 {
@@ -12,16 +13,19 @@ function onUpdate()
 
 		var song = game.week_songs[FreeplayState.curSelect];
 
+		var songVars = Paths.json("variations/" + Paths.sanitize(song[0]), null, PathsTestMode.LOOSE);
+
 		if (select_song)
 		{
-			if (song[0] != 'Drippypop') return;
-		
-			if (game.lockMovement) return;
+			if (FunkinAssets.exists(songVars))
+			{
+				if (game.lockMovement) return;
 
-			game.lockMovement = true;
-			Paths.overrideMode = PathsTestMode.LOOSE; // i was going insane trying to load substates not from legacy, thank you ashley
-			game.openSubState(new ScriptedSubstate('DrippyGlungSubState'));
-			Paths.overrideMode = null;
+				game.lockMovement = true;
+				Paths.overrideMode = PathsTestMode.LOOSE; // i was going insane trying to load substates not from legacy, thank you ashley
+				game.openSubState(new ScriptedSubstate('VariationSubState'));
+				return;
+			}
 		}
 	}
 }

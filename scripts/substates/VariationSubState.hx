@@ -1,9 +1,10 @@
+import funkin.FunkinAssets;
 import funkin.objects.HealthIcon;
 import flixel.system.FlxBGSprite;
 import funkin.states.FreeplayState;
 import funkin.objects.menu.AmongControls;
 
-var songType:FlxText = 'Drippypop';
+var songType:FlxText = '';
 
 var curSelection:Int = 0;
 var bg:FlxBGSprite;
@@ -17,7 +18,14 @@ var bf:HealthIcon;
 var glung:HealthIcon;
 var iconArray:Array<HealthIcon> = [];
 
-var dripRemixes = ['Drippypop', 'Drippypop (Remagets Mix)'];
+var song = FlxG.state.week_songs[FreeplayState.curSelect];
+
+var songVars = Paths.json("variations/" + Paths.sanitize(song[0]), null, PathsTestMode.LOOSE);
+
+var normMix = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).bf;
+var extraMix = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).extra;
+
+var remixes = [normMix, extraMix];
 
 var common_chance = 'Drippypop (Magnets Mix)';
 
@@ -27,6 +35,8 @@ var ultra_rare_chance = 'Drippypop (Remadicks Mix)';
 
 function onLoad()
 {
+	Paths.overrideMode = null;
+
 	canMove = false;
 
 	overlayCamera = new FlxCamera();
@@ -55,7 +65,7 @@ function onLoad()
 	add(glung);
 	iconArray.push(glung); // rema variation (icon to be done)
 
-	songType = new FlxText(0, 0, 1280, "Drippypop");
+	songType = new FlxText(0, 0, 1280, normMix);
 	songType.setFormat(Paths.font("vcr.ttf"), 35, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 	songType.alignment = 'center';
 	songType.screenCenter();
@@ -138,7 +148,7 @@ function songShitIGuess(song:Int)
 {
 	FlxG.sound.play(Paths.sound('confirmMenu'), 0.5);
 	Paths.overrideMode = PathsTestMode.LOOSE;
-	FreeplayState.loadSong(dripRemixes[song]); // load variation
+	FreeplayState.loadSong(remixes[song]); // load variation
 	Paths.overrideMode = null;
 }
 
@@ -150,7 +160,7 @@ function changeSelection(by:Int)
 
 	selectionArrow.x = iconArray[curSelection].x + 25;
 
-	songType.text = dripRemixes[curSelection];
+	songType.text = remixes[curSelection];
 
 	chanceTime();
 }
@@ -163,13 +173,15 @@ function setSelection(by:Int)
 
 	selectionArrow.x = iconArray[curSelection].x + 25;
 
-	songType.text = dripRemixes[curSelection];
+	songType.text = remixes[curSelection];
 
 	chanceTime();
 }
 
 function chanceTime()
 {
+	if (song[0] != 'Drippypop') return;
+
 	if (curSelection == 1 && FlxG.random.bool(25))
 	{
 		songType.text = common_chance; // hehe attract
