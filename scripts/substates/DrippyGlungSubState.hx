@@ -19,6 +19,8 @@ var iconArray:Array<HealthIcon> = [];
 
 var dripRemixes = ['Drippypop', 'Drippypop (Remagets Mix)'];
 
+var common_chance = 'Drippypop (Magnets Mix)';
+
 var rare_chance = 'Drippypop (Glungus Mix)';
 
 var ultra_rare_chance = 'Drippypop (Remadicks Mix)';
@@ -134,6 +136,7 @@ function onUpdate()
 
 function songShitIGuess(song:Int)
 {
+	FlxG.sound.play(Paths.sound('confirmMenu'), 0.5);
 	Paths.overrideMode = PathsTestMode.LOOSE;
 	FreeplayState.loadSong(dripRemixes[song]); // load variation
 	Paths.overrideMode = null;
@@ -167,6 +170,11 @@ function setSelection(by:Int)
 
 function chanceTime()
 {
+	if (curSelection == 1 && FlxG.random.bool(25))
+	{
+		songType.text = common_chance; // hehe attract
+	}
+
 	if (curSelection == 1 && FlxG.random.bool(10))
 	{
 		songType.text = rare_chance; // lmao glungus mix
