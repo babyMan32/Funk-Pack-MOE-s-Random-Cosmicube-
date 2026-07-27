@@ -4,7 +4,9 @@ var speed = 1;
 
 function onLoad() 
 {
-	playbackRate = FlxG.random.float(0.8, 1.2);
+	val = Math.round(FlxG.random.int(80, 120)) / 100;
+
+	playbackRate = val;
 
 	if (FlxG.random.bool(10)) 
 	{
@@ -14,7 +16,7 @@ function onLoad()
 		pet.updateHitbox();
 		beeg = true;
 
-		playbackRate *= 1.2;
+		playbackRate = Math.round(playbackRate * 120) / 100;
 	}
 
 	speed = playbackRate;
@@ -24,7 +26,9 @@ function onCreatePost()
 {
 	if (PlayState.SONG.song != 'Identity Crisis') return;
 
-	playbackRate *= FlxG.random.float(0.8, 1.2);
+	val = Math.round(FlxG.random.int(80, 120)) / 100;
+
+	playbackRate *= val;
 
 	if (beeg)
 	{
@@ -33,7 +37,7 @@ function onCreatePost()
 		copyPet.x -= 200;
 		copyPet.updateHitbox();
 
-		playbackRate *= 1.2;
+		playbackRate = Math.round(playbackRate * 120) / 100;
 	}
 
 	speed = playbackRate;
