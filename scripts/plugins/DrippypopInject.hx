@@ -1,7 +1,5 @@
 import funkin.states.FreeplayState;
 
-var lastSong;
-
 function onUpdate()
 {
 	var game = FlxG.state;
@@ -14,9 +12,7 @@ function onUpdate()
 
 		var song = game.week_songs[FreeplayState.curSelect];
 
-		var select_song_mouse = FlxG.mouse.y >= (game.upperBar.y + game.upperBar.height) && FlxG.mouse.justPressed && FlxG.mouse.overlaps(game.cards) && (song[0] == lastSong);
-
-		if (select_song || select_song_mouse)
+		if (select_song)
 		{
 			if (song[0] != 'Drippypop') return;
 		
@@ -27,8 +23,6 @@ function onUpdate()
 			game.openSubState(new ScriptedSubstate('DrippyGlungSubState'));
 			Paths.overrideMode = null;
 		}
-
-		lastSong = song[0];
 	}
 }
 
