@@ -41,8 +41,15 @@ function onCreatePost()
 
 function onUpdate(elapsed:Float):Void
 {
-	if (FlxG.keys.justReleased.THREE)
+	if (ClientPrefs.inDevMode || PlayState.chartingMode)
 	{
-		playbackRate = speed;
+		if (FlxG.keys.pressed.THREE)
+		{
+			playbackRate *= speed;
+		}
+		else if (FlxG.keys.justReleased.THREE)
+		{
+			playbackRate = speed;
+		}
 	}
 }
