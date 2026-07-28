@@ -43,62 +43,6 @@ function onCreatePost()
 	refreshZ(playFields);
 }
 
-function extraNoteHitPre()
-{
-	if (duet) return;
-
-	for (i in playFields.members)
-	{
-		final orgID = (3 - i.ID);
-		final wrap = Math.floor(orgID / 2) == 1;
-		final wrap2 = orgID == 2;
-
-		if (!wrap)
-		{
-			modManager.setValue("alpha", 0, i.ID);
-			modManager.setValue("transformZ", 0, i.ID);
-			modManager.setValue("transformY", 0, i.ID);
-			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", -(space) + 549, i.ID);
-		}
-
-		if (wrap2)
-		{
-			modManager.setValue("alpha", 0.7, i.ID);
-			modManager.setValue("transformZ", -1, i.ID);
-			modManager.setValue("transformY", -90 * (ClientPrefs.downScroll ? -1 : 1), i.ID);
-			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", -(space) + 315, i.ID);
-		}
-	}
-}
-
-function opponentNoteHitPre()
-{
-	if (duet) return;
-
-	for (i in playFields.members)
-	{
-		final orgID = (3 - i.ID);
-		final wrap = Math.floor(orgID / 2) == 1;
-		final wrap2 = orgID == 2;
-
-		if (!wrap)
-		{
-			modManager.setValue("alpha", 0.7, i.ID);
-			modManager.setValue("transformZ", -1, i.ID);
-			modManager.setValue("transformY", -90 * (ClientPrefs.downScroll ? -1 : 1), i.ID);
-			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", -(space), i.ID);
-		}
-
-		if (wrap2)
-		{
-			modManager.setValue("alpha", 0, i.ID);
-			modManager.setValue("transformZ", 0, i.ID);
-			modManager.setValue("transformY", 0, i.ID);
-			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", 0, i.ID);
-		}
-	}
-}
-
 function onEvent(eventName, value1, value2)
 {
 	switch (eventName)
@@ -108,17 +52,22 @@ function onEvent(eventName, value1, value2)
 			{
 				duet = true;
 
-				forceBothUp();
+				forceStrumsUp('both');
 			}
 
 			if (Std.int(value1) == 0)
 			{
 				duet = false;
 			}
+
+		case 'Opponent Two':
+			if (duet) return;
+
+			forceStrumsUp(Std.int(value1) == 1 ? 'extra' : 'opp');
 	}
 }
 
-function forceBothUp()
+function forceStrumsUp(char)
 {
 	for (i in playFields.members)
 	{
@@ -128,18 +77,18 @@ function forceBothUp()
 
 		if (!wrap)
 		{
-			modManager.setValue("alpha", 0, i.ID);
-			modManager.setValue("transformZ", 0, i.ID);
-			modManager.setValue("transformY", -110 * (ClientPrefs.downScroll ? 1 : -1), i.ID);
-			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", -(space) + 549, i.ID);
+			modManager.setValue("alpha", (char != 'opp' ? 0 : 0.7), i.ID);
+			modManager.setValue("transformZ", (char != 'opp' ? 0 : -1), i.ID);
+			modManager.setValue("transformY", (char == 'both' ? 110 : (char == 'opp' ? -90 : 0)) * (ClientPrefs.downScroll ? -1 : 1), i.ID);
+			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", -(space) + (char != 'opp' ? 549 : 0), i.ID);
 		}
 
 		if (wrap2)
 		{
-			modManager.setValue("alpha", 0, i.ID);
-			modManager.setValue("transformZ", 0, i.ID);
-			modManager.setValue("transformY", 0, i.ID);
-			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", 0, i.ID);
+			modManager.setValue("alpha", (char != 'extra' ? 0 : 0.7), i.ID);
+			modManager.setValue("transformZ", (char != 'extra' ? 0 : -1), i.ID);
+			modManager.setValue("transformY", (char != 'extra' ? 0 : -90) * (ClientPrefs.downScroll ? -1 : 1), i.ID);
+			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", (char != 'extra' ? 0 : -(space) + 315), i.ID);
 		}
 	}
 }
