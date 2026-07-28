@@ -94,3 +94,16 @@ function forceStrumsUp(char)
 		}
 	}
 }
+
+function onSpawnNote(note)
+{
+	if (note.lane == 1)
+	{
+		note.setCustomColor([0xd0e3ff /*red channel*/, 0x49a6ce /*green channel*/, 0x93a2e4 /*blue channel*/]);
+	}
+
+	if (note.lane == 2)
+	{
+		note.setCustomColor([0x2b2c3c /*red channel*/, 0x000000 /*green channel*/, 0x1a182e /*blue channel*/]);
+	}
+}
