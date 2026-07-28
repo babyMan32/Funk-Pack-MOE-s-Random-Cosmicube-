@@ -90,7 +90,7 @@ function onEvent(eventName, value1, value2)
 				case 'not black':
 					camCurTarget = null;
 					camSpecialThing([2000, 1050], [2300, 1050], -1);
-			} // 62636f
+			}
 
 		case 'Opponent Two':
 			twoSing = Std.int(value1) == 1;
