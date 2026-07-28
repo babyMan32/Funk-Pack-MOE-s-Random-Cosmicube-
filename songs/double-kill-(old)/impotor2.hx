@@ -41,7 +41,7 @@ function onCreatePost()
 	refreshZ(playFields);
 }
 
-function extraNoteHit()
+function extraNoteHitPre()
 {
 	for (i in playFields.members)
 	{
@@ -67,7 +67,7 @@ function extraNoteHit()
 	}
 }
 
-function opponentNoteHit()
+function opponentNoteHitPre()
 {
 	for (i in playFields.members)
 	{
