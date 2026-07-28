@@ -26,8 +26,8 @@ var songVarsRNG = Paths.json("variations/funnyChances/" + Paths.sanitize(song[0]
 var normMix = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).base;
 var extraMix = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).extra;
 
-var normIcon = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).baseIcon ?? 'placeholder';
-var extraIcon = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).extraIcon ?? 'placeholder';
+var normIcon = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).baseIcon;
+var extraIcon = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).extraIcon;
 
 var remixes = [normMix, extraMix];
 
