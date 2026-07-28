@@ -101,9 +101,9 @@ function setUpChances()
 
 	if (extraChances != null)
 	{
-		common_chance_extra = normChances.extra?.common_chance;
-		rare_chance_extra = normChances.extra?.rare_chance;
-		ultra_rare_chance_extra = normChances.extra?.ultra_rare_chance;
+		common_chance_extra = extraChances.extra?.common_chance;
+		rare_chance_extra = extraChances.extra?.rare_chance;
+		ultra_rare_chance_extra = extraChances.extra?.ultra_rare_chance;
 	}
 }
 
