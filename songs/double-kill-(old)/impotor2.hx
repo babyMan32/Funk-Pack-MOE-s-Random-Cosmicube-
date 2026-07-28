@@ -58,6 +58,8 @@ function onEvent(eventName, value1, value2)
 			if (Std.int(value1) == 0)
 			{
 				duet = false;
+
+				forceStrumsUp('opp');
 			}
 
 		case 'Opponent Two':
