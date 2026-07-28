@@ -47,13 +47,48 @@ function extraNoteHit()
 	{
 		final orgID = (3 - i.ID);
 		final wrap = Math.floor(orgID / 2) == 1;
+		final wrap2 = orgID == 2;
 
 		if (!wrap)
 		{
 			modManager.setValue("alpha", 0, i.ID);
 			modManager.setValue("transformZ", 0, i.ID);
 			modManager.setValue("transformY", 0, i.ID);
-			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", -(space) + 550, i.ID);
+			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", -(space) + 549, i.ID);
+		}
+
+		if (wrap2)
+		{
+			modManager.setValue("alpha", 0.7, i.ID);
+			modManager.setValue("transformZ", -1, i.ID);
+			modManager.setValue("transformY", -90 * (ClientPrefs.downScroll ? -1 : 1), i.ID);
+			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", -(space) + 315, i.ID);
+		}
+	}
+}
+
+function opponentNoteHit()
+{
+	for (i in playFields.members)
+	{
+		final orgID = (3 - i.ID);
+		final wrap = Math.floor(orgID / 2) == 1;
+		final wrap2 = orgID == 2;
+
+		if (!wrap)
+		{
+			modManager.setValue("alpha", 0.7, i.ID);
+			modManager.setValue("transformZ", -1, i.ID);
+			modManager.setValue("transformY", -90 * (ClientPrefs.downScroll ? -1 : 1), i.ID);
+			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", -(space), i.ID);
+		}
+
+		if (wrap2)
+		{
+			modManager.setValue("alpha", 0, i.ID);
+			modManager.setValue("transformZ", 0, i.ID);
+			modManager.setValue("transformY", 0, i.ID);
+			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", 0, i.ID);
 		}
 	}
 }
