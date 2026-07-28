@@ -1,5 +1,7 @@
 final space = 865;
 
+var duet = false;
+
 function onCreatePost()
 {
 	for (playField in playFields)
@@ -43,6 +45,8 @@ function onCreatePost()
 
 function extraNoteHitPre()
 {
+	if (duet) return;
+
 	for (i in playFields.members)
 	{
 		final orgID = (3 - i.ID);
@@ -69,6 +73,8 @@ function extraNoteHitPre()
 
 function opponentNoteHitPre()
 {
+	if (duet) return;
+
 	for (i in playFields.members)
 	{
 		final orgID = (3 - i.ID);
@@ -81,6 +87,51 @@ function opponentNoteHitPre()
 			modManager.setValue("transformZ", -1, i.ID);
 			modManager.setValue("transformY", -90 * (ClientPrefs.downScroll ? -1 : 1), i.ID);
 			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", -(space), i.ID);
+		}
+
+		if (wrap2)
+		{
+			modManager.setValue("alpha", 0, i.ID);
+			modManager.setValue("transformZ", 0, i.ID);
+			modManager.setValue("transformY", 0, i.ID);
+			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", 0, i.ID);
+		}
+	}
+}
+
+function onEvent(eventName, value1, value2)
+{
+	switch (eventName)
+	{
+		case 'Both Opponents':
+			if (Std.int(value1) == 1)
+			{
+				duet = true;
+
+				forceBothUp();
+			}
+
+			if (Std.int(value1) == 0)
+			{
+				duet = false;
+			}
+	}
+}
+
+function forceBothUp()
+{
+	for (i in playFields.members)
+	{
+		final orgID = (3 - i.ID);
+		final wrap = Math.floor(orgID / 2) == 1;
+		final wrap2 = orgID == 2;
+
+		if (!wrap)
+		{
+			modManager.setValue("alpha", 0, i.ID);
+			modManager.setValue("transformZ", 0, i.ID);
+			modManager.setValue("transformY", -110 * (ClientPrefs.downScroll ? 1 : -1), i.ID);
+			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", -(space) + 549, i.ID);
 		}
 
 		if (wrap2)
