@@ -16,7 +16,7 @@ function onLoad()
 				PlayState.SONG.gfVersion = 'fabs';
 			}
 
-		case "Drippypop", "Drippypop (Remagets Mix)":
+		case "Drippypop":
 			if (ClientPrefs.bfSkin == 'clowfoe-old')
 			{
 				PlayState.SONG.player2 = 'drippypop-old';
