@@ -25,13 +25,10 @@ var songVars = Paths.json("variations/" + Paths.sanitize(song[0]), null, PathsTe
 var normMix = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).bf;
 var extraMix = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).extra;
 
+var normChances = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).randomChanceNames;
+var extraChances = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).randomChanceNames;
+
 var remixes = [normMix, extraMix];
-
-var common_chance = 'Drippypop (Magnets Mix)';
-
-var rare_chance = 'Drippypop (Glungus Mix)';
-
-var ultra_rare_chance = 'Drippypop (Remadicks Mix)';
 
 function onLoad()
 {
@@ -89,6 +86,25 @@ function onLoad()
 	}
 
 	tweenTheShits(true);
+
+	setUpChances();
+}
+
+function setUpChances()
+{
+	if (normChances != null)
+	{
+		common_chance = normChances.norm?.common_chance;
+		rare_chance = normChances.norm?.rare_chance;
+		ultra_rare_chance = normChances.norm?.ultra_rare_chance;
+	}
+
+	if (extraChances != null)
+	{
+		common_chance_extra = normChances.extra?.common_chance;
+		rare_chance_extra = normChances.extra?.rare_chance;
+		ultra_rare_chance_extra = normChances.extra?.ultra_rare_chance;
+	}
 }
 
 function tweenTheShits(?on:Bool = false) // fade the shit in/out
@@ -182,18 +198,18 @@ function chanceTime()
 {
 	if (song[0] != 'Drippypop') return;
 
-	if (curSelection == 1 && FlxG.random.bool(25))
+	if (FlxG.random.bool(25))
 	{
-		songType.text = common_chance; // hehe attract
+		songType.text = (curSelection == 0 ? common_chance : common_chance_extra);
 	}
 
-	if (curSelection == 1 && FlxG.random.bool(10))
+	if (FlxG.random.bool(10))
 	{
-		songType.text = rare_chance; // lmao glungus mix
+		songType.text = (curSelection == 0 ? rare_chance : rare_chance_extra);
 	}
 
-	if (curSelection == 1 && FlxG.random.bool(1))
+	if (FlxG.random.bool(1))
 	{
-		songType.text = ultra_rare_chance; // what the twink calls him
+		songType.text = (curSelection == 0 ? ultra_rare_chance : ultra_rare_chance_extra);
 	}
 }

@@ -1,5 +1,5 @@
-import funkin.states.FreeplayState;
 import funkin.FunkinAssets;
+import funkin.states.FreeplayState;
 
 function onUpdate()
 {

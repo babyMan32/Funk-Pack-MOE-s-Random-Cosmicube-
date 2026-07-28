@@ -1,4 +1,12 @@
 {
+	"randomChanceNames": {
+		"extra": {
+			"common_chance": "Drippypop (Magnets Mix)",
+			"rare_chance": "Drippypop (Glungus Mix)",
+			"ultra_rare_chance": "Drippypop (Remadicks Mix)"
+		}
+	},
+
 	"bf": "Drippypop",
 	"extra": "Drippypop (Remagets Mix)"
 }
