@@ -1,3 +1,5 @@
+final space = 865;
+
 function onCreatePost()
 {
 	for (playField in playFields)
@@ -21,17 +23,15 @@ function onCreatePost()
 		{
 			i.underlay.kill();
 
-			modManager.setValue("noteAlpha", 1, i.ID);
+			// modManager.setValue("noteAlpha", 1, i.ID);
 			modManager.setValue("alpha", 0.7, i.ID);
-			modManager.setValue("stealth", 0.5, i.ID);
+			// modManager.setValue("stealth", 0.5, i.ID);
 			// modManager.setValue("sustainSplashAlpha", 1, i.ID);
 			// modManager.setValue("reverse", 1, i.ID);
 			modManager.setValue("transformZ", -1, i.ID);
 			modManager.setValue("transformY", -90 * (ClientPrefs.downScroll ? -1 : 1), i.ID);
-			modManager.setValue("stealthPastReceptors", 1, i.ID);
-			
-			final space = 865;
-			
+			// modManager.setValue("stealthPastReceptors", 1, i.ID);
+
 			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", i.ID == 2 ? -(space) : space, i.ID);
 			else if (!ClientPrefs.opponentStrums) i.visible = false;
 			// modManager.setValue("")
@@ -39,4 +39,21 @@ function onCreatePost()
 	}
 
 	refreshZ(playFields);
+}
+
+function extraNoteHit()
+{
+	for (i in playFields.members)
+	{
+		final orgID = (3 - i.ID);
+		final wrap = Math.floor(orgID / 2) == 1;
+
+		if (!wrap)
+		{
+			modManager.setValue("alpha", 0, i.ID);
+			modManager.setValue("transformZ", 0, i.ID);
+			modManager.setValue("transformY", 0, i.ID);
+			if (!ClientPrefs.middleScroll) modManager.setValue("transformX", -(space) + 550, i.ID);
+		}
+	}
 }
