@@ -136,14 +136,14 @@ function onUpdate()
 
 		if ((FlxG.mouse.justPressed))
 		{
-			if (FlxG.mouse.overlaps(bf))
+			if (FlxG.mouse.overlaps(norm))
 			{
 				if (curSelection == 0) songShitIGuess(curSelection);
 
 				if (curSelection != 0) setSelection(0);
 			}
 
-			if (FlxG.mouse.overlaps(glung))
+			if (FlxG.mouse.overlaps(extra))
 			{
 				if (curSelection == 1) songShitIGuess(curSelection);
 
