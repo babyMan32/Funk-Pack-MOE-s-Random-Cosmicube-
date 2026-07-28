@@ -6,7 +6,7 @@ function onCreatePost()
 	}
 	else
 	{
-		bfOff[1] -= 30;
+		bfOff[1] -= 25;
 	}
 }
 
@@ -27,5 +27,10 @@ function onEvent(eventName, value1, value2)
 						bfOff[1] -= 50;
 					});
 			}
+
+				case 'black', 'not black':
+					FlxG.signals.postUpdate.addOnce(function() {
+						bfOff[1] -= 25;
+					});
 	}
 }
