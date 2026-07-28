@@ -21,12 +21,10 @@ var iconArray:Array<HealthIcon> = [];
 var song = FlxG.state.week_songs[FreeplayState.curSelect];
 
 var songVars = Paths.json("variations/" + Paths.sanitize(song[0]), null, PathsTestMode.LOOSE);
+var songVarsRNG = Paths.json("funnyChances/" + Paths.sanitize(song[0]), null, PathsTestMode.LOOSE);
 
 var normMix = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).bf;
 var extraMix = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).extra;
-
-var normChances = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).randomChanceNames;
-var extraChances = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).randomChanceNames;
 
 var remixes = [normMix, extraMix];
 
@@ -92,18 +90,10 @@ function onLoad()
 
 function setUpChances()
 {
-	if (normChances != null)
+	if (FunkinAssets.exists(songVarsRNG))
 	{
-		common_chance = normChances.norm?.common_chance;
-		rare_chance = normChances.norm?.rare_chance;
-		ultra_rare_chance = normChances.norm?.ultra_rare_chance;
-	}
-
-	if (extraChances != null)
-	{
-		common_chance_extra = extraChances.extra?.common_chance;
-		rare_chance_extra = extraChances.extra?.rare_chance;
-		ultra_rare_chance_extra = extraChances.extra?.ultra_rare_chance;
+		normChances = FunkinAssets.parseJson(FunkinAssets.getContent(songVarsRNG)).norm;
+		extraChances = FunkinAssets.parseJson(FunkinAssets.getContent(songVarsRNG)).extra;
 	}
 }
 
@@ -196,20 +186,47 @@ function setSelection(by:Int)
 
 function chanceTime()
 {
-	if (song[0] != 'Drippypop') return;
+	commonChance = FlxG.random.bool(25);
+	uncommonChance = FlxG.random.bool(10);
+	rareChance = FlxG.random.bool(1);
 
-	if (FlxG.random.bool(25))
+	if (curSelection == 0)
 	{
-		songType.text = (curSelection == 0 ? common_chance : common_chance_extra);
+		if (normChances == null) return;
+
+		if (commonChance)
+		{
+			songType.text = normChances.common;
+		}
+
+		if (uncommonChance)
+		{
+			songType.text = normChances.uncommon;
+		}
+
+		if (rareChance)
+		{
+			songType.text = normChances.rare;
+		}
 	}
 
-	if (FlxG.random.bool(10))
+	if (curSelection == 1)
 	{
-		songType.text = (curSelection == 0 ? rare_chance : rare_chance_extra);
-	}
+		if (extraChances == null) return;
 
-	if (FlxG.random.bool(1))
-	{
-		songType.text = (curSelection == 0 ? ultra_rare_chance : ultra_rare_chance_extra);
+		if (commonChance)
+		{
+			songType.text = extraChances.common;
+		}
+
+		if (uncommonChance)
+		{
+			songType.text = extraChances.uncommon;
+		}
+
+		if (rareChance)
+		{
+			songType.text = extraChances.rare;
+		}
 	}
 }
