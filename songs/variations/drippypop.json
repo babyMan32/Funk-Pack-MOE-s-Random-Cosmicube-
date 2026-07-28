@@ -1,4 +1,6 @@
 {
-	"bf": "Drippypop",
-	"extra": "Drippypop (Remagets Mix)"
+	"base": "Drippypop",
+	"baseIcon": "bf",
+	"extra": "Drippypop (Remagets Mix)",
+	"extraIcon": "pip"
 }

@@ -10,28 +10,29 @@ var curSelection:Int = 0;
 var bg:FlxBGSprite;
 var selectionArrow:FlxSprite;
 var overlayCamera:FlxCamera;
-var bottomControls;
+var bottomControls:AmongControls;
 
 var canMove = false;
 	
-var bf:HealthIcon;
-var glung:HealthIcon;
+var norm:HealthIcon;
+var extra:HealthIcon;
 var iconArray:Array<HealthIcon> = [];
 
 var song = FlxG.state.week_songs[FreeplayState.curSelect];
 
 var songVars = Paths.json("variations/" + Paths.sanitize(song[0]), null, PathsTestMode.LOOSE);
-var songVarsRNG = Paths.json("funnyChances/" + Paths.sanitize(song[0]), null, PathsTestMode.LOOSE);
+var songVarsRNG = Paths.json("variations/funnyChances/" + Paths.sanitize(song[0]), null, PathsTestMode.LOOSE);
 
-var normMix = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).bf;
+var normMix = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).base;
 var extraMix = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).extra;
+
+var normIcon = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).baseIcon ?? 'placeholder';
+var extraIcon = FunkinAssets.parseJson(FunkinAssets.getContent(songVars)).extraIcon ?? 'placeholder';
 
 var remixes = [normMix, extraMix];
 
 function onLoad()
 {
-	Paths.overrideMode = null;
-
 	canMove = false;
 
 	overlayCamera = new FlxCamera();
@@ -46,19 +47,21 @@ function onLoad()
 	bg.alpha = 0;
 	add(bg); // darken the screen
 
-	bf = new HealthIcon('bf', false);
-	bf.screenCenter();
-	bf.x -= 240;
-	bf.alpha = 0;
-	add(bf);
-	iconArray.push(bf); // base variation
+	norm = new HealthIcon(normIcon, false);
+	norm.screenCenter();
+	norm.x -= 240;
+	norm.alpha = 0;
+	add(norm);
+	iconArray.push(norm); // base variation
 
-	glung = new HealthIcon('pico', false);
-	glung.screenCenter();
-	glung.x += 240;
-	glung.alpha = 0;
-	add(glung);
-	iconArray.push(glung); // rema variation (icon to be done)
+	extra = new HealthIcon(extraIcon, false);
+	extra.screenCenter();
+	extra.x += 240;
+	extra.alpha = 0;
+	add(extra);
+	iconArray.push(extra); // extra variation
+
+	Paths.overrideMode = null;
 
 	songType = new FlxText(0, 0, 1280, normMix);
 	songType.setFormat(Paths.font("vcr.ttf"), 35, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -102,8 +105,8 @@ function tweenTheShits(?on:Bool = false) // fade the shit in/out
 	tweenType = (on ? FlxEase.circOut : FlxEase.circIn); // tween shit
 
 	FlxTween.tween(bg, {alpha: (on ? 0.5 : 0)}, 0.35, {ease: tweenType});
-	FlxTween.tween(bf, {alpha: (on ? 1 : 0)}, 0.35, {ease: tweenType});
-	FlxTween.tween(glung, {alpha: (on ? 1 : 0)}, 0.35, {ease: tweenType});
+	FlxTween.tween(norm, {alpha: (on ? 1 : 0)}, 0.35, {ease: tweenType});
+	FlxTween.tween(extra, {alpha: (on ? 1 : 0)}, 0.35, {ease: tweenType});
 	FlxTween.tween(songType, {alpha: (on ? 1 : 0)}, 0.35, {ease: tweenType});
 	FlxTween.tween(selectionArrow, {alpha: (on ? 1 : 0)}, 0.35, {ease: tweenType, onComplete: function() bullshitFuncMyFav(on)});
 
