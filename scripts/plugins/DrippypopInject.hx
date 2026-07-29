@@ -5,10 +5,10 @@ function onUpdate()
 {
 	var game = FlxG.state;
 
-	var select_song = Controls.instance.ACCEPT;
-  
 	if (Std.isOfType(game, FreeplayState))
 	{
+		var select_song = Controls.instance.ACCEPT;
+
 		if (game.ws_lock[FreeplayState.curSelect]) return;
 
 		var song = game.week_songs[FreeplayState.curSelect];
