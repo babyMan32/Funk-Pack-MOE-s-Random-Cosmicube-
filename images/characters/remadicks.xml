@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="remadicks.png">
+<SubTexture name="idle0000" x="720" y="0" width="360" height="360" frameX="-170" frameY="-170" frameWidth="700" frameHeight="700" />
+<SubTexture name="down0000" x="1080" y="720" width="360" height="104" frameX="-170" frameY="-422" frameWidth="700" frameHeight="700" />
+<SubTexture name="down0001" x="0" y="862" width="360" height="209" frameX="-170" frameY="-319" frameWidth="700" frameHeight="700" />
+<SubTexture name="left0000" x="0" y="502" width="528" height="360" frameX="-2" frameY="-170" frameWidth="700" frameHeight="700" />
+<SubTexture name="left0001" x="528" y="502" width="449" height="360" frameX="-80" frameY="-170" frameWidth="700" frameHeight="700" />
+<SubTexture name="up0000" x="0" y="0" width="360" height="502" frameX="-170" frameY="-29" frameWidth="700" frameHeight="700" />
+<SubTexture name="up0001" x="360" y="0" width="360" height="427" frameX="-170" frameY="-104" frameWidth="700" frameHeight="700" />
+<SubTexture name="right0000" x="1080" y="0" width="524" height="360" frameX="-168" frameY="-170" frameWidth="700" frameHeight="700" />
+<SubTexture name="right0001" x="1080" y="360" width="435" height="360" frameX="-168" frameY="-170" frameWidth="700" frameHeight="700" />
+</TextureAtlas>
