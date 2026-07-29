@@ -2,5 +2,11 @@ import funkin.data.NoteSkin;
 
 function onCreatePost()
 {
-	//triggerEventNote('Change Noteskin', 'railway', 0);
+	Paths.overrideMode = PathsTestMode.LOOSE;
+	triggerEventNote('Change Noteskin', 'railway', 0);
+}
+
+function onDestroy()
+{
+	Paths.overrideMode = null;
 }

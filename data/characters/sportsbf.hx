@@ -14,7 +14,7 @@ function onCreatePost()
 function onSpawnNote(note)
 {
 	if (note.lane != 0) return;
-		
+
 	if (!dontlaugh) return;
 
 	note.ignoreNote = true;

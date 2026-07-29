@@ -69,10 +69,11 @@
 	"image": "characters/d-sides_newGF/Morbius_GF",
 	"position": [
 		225,
-		120
+		180
 	],
 	"flags": {
-		"defeatRetro": "KinoGF"
+		"defeatRetro": "KinoGF",
+		"dangerSkateboard": true
 	},
 	"dance_every": 1,
 	"gameover_intial_sound": null,
