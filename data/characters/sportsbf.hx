@@ -4,7 +4,7 @@ var crewmateMoment = false;
 
 function onCreatePost()
 {
-	if (FlxG.random.bool(100))
+	if (FlxG.random.bool(10))
 	{
 		boyfriend.canTaunt = false;
 		boyfriend.stunned = dontlaugh = true;
@@ -64,5 +64,15 @@ function onEvent(eventName, value1, value2)
 					boyfriend.stunned = false;
 					boyfriend.playAnim('idle', true);
 			}
+	}
+}
+
+function onUpdatePost(elapsed:Float):Void
+{
+	if (!dontlaugh) return;
+
+	if (boyfriend.getAnimName() != 'whyyoutryingnottolaughbruh')
+	{
+		boyfriend.playAnim('whyyoutryingnottolaughbruh', true);
 	}
 }
