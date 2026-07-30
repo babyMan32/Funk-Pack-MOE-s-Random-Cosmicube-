@@ -45,8 +45,8 @@ function onEvent(eventName, value1, value2)
 				case 'Vignette Off':
 					if (!crewmateMoment) return;
 
-					boyfriend.playAnim('idle', true);
 					boyfriend.stunned = false;
+					boyfriend.playAnim('idle', true);
 
 					if (cpuControlled)
 					{
@@ -59,6 +59,10 @@ function onEvent(eventName, value1, value2)
 					crewmateMoment = false;
 					boyfriend.stunned = true;
 					boyfriend.playAnim('whyyoutryingnottolaughbruh', true);
+
+				case 'dlow death':
+					boyfriend.stunned = false;
+					boyfriend.playAnim('idle', true);
 			}
 	}
 }
