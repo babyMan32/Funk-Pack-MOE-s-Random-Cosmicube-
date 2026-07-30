@@ -28,6 +28,9 @@ var jumped_on_bill = false;
 var billFallMomentum = 12;
 var bullet_exists = false;
 
+var low = false;
+var showbills = false;
+
 var darkJumpShader:ExtraDropShadowShader;
 
 function createJumpChar()
@@ -70,19 +73,24 @@ function createJumpChar()
 	bfBounding.y = bfJump.y + 250;
 	bfBounding.alpha = (ClientPrefs.inDevMode ? 0.3 : 0);
 	add(bfBounding);
+
+	showbills = true;
 }
 
 var evilBill;
 
 function createBill()
 {
+	low = FlxG.random.bool();
+
 	evilBill = new FlxSprite(0, 0).loadGraphic(Paths.image('bullet', null, null, PathsTestMode.LOOSE));
 	evilBill.antialiasing = false;
 	evilBill.x = BF_X - 10000;
-	evilBill.y = (BF_Y + 300) + (FlxG.random.bool(50) ? 250 : -350);
+	evilBill.y = (BF_Y + 300) + (low ? 250 : -350);
 	evilBill.scale.x = 0.4;
 	evilBill.scale.y = 0.4;
 	evilBill.updateHitbox();
+	evilBill.visible = showbills;
 	evilBill.flipX = bullet_exists = true;
 	jumped_on_bill = false;
 	billFallMomentum = 12;
@@ -221,6 +229,8 @@ function checkHurt(elapsed:Float)
 		evilBill.destroy();
 	}
 
+	if (!evilBill.visible) return;
+
 	pain = evilBill.overlaps(bfBounding);
 
 	if (pain && !got_hit && !jumped_on_bill)
@@ -230,6 +240,10 @@ function checkHurt(elapsed:Float)
 			momentum = initial_momentum;
 			jumped_on_bill = true;
 			health += 0.1;
+		}
+		else if (momentum > 0 && low)
+		{
+			// run nothing just make sure he doesnt hurt lol
 		}
 		else
 		{
@@ -364,6 +378,8 @@ function killBFJump()
 	bfBounding.destroy();
 	bfJump.alpha = 0;
 	bfJump.destroy();
+
+	showbills = false;
 }
 
 function onEvent(eventName, value1, value2)
