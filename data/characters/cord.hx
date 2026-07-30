@@ -76,7 +76,7 @@ function goodNoteHit(note)
 
 	if (!coolAnims) return;
 
-	funny = FlxG.random.bool(50);
+	funny = FlxG.random.bool();
 
 	if (!funny) return;
 
