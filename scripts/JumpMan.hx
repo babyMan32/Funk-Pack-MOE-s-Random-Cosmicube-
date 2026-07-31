@@ -177,7 +177,7 @@ function onSectionHit()
 {
 	if (!jump_char_exists) return;
 
-	if (FlxG.random.bool(50) && !bullet_exists)
+	if (FlxG.random.bool() && !bullet_exists)
 	{
 		createBill();
 	}
