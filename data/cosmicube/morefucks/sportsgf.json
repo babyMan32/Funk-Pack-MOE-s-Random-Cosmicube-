@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Girlfriend (Wii Funkin' V3)",
+	"description": "floating hands",
+
+	"node":
+	{
+		"parent": "sportsbf",
+		"direction": "west"
+	}
+}

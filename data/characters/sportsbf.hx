@@ -14,7 +14,7 @@ var noteData:Array<Int> = [];
 
 function onCreatePost()
 {
-	if (FlxG.random.bool(100))
+	if (FlxG.random.bool(10))
 	{
 		iconShit();
 
@@ -29,10 +29,13 @@ function onCreatePost()
 		extraboyfriend.y = boyfriend.y;
 		extraboyfriend.alpha = 0.5;
 
-		for (sec in PlayState.SONG.notes) {
-			for (i in sec.sectionNotes) {
+		for (sec in PlayState.SONG.notes)
+		{
+			for (i in sec.sectionNotes)
+			{
 				// 0 - 3 = bf
-				if (i[1] < 4) {
+				if (i[1] < 4)
+				{
 					timeData.push(i[0]);
 					noteData.push(i[1]);
 				}
@@ -50,26 +53,33 @@ function iconShit()
 	fakeIcon.cameras = [camHUD];
 	fakeIcon.setPosition(playHUD.iconP1.x, playHUD.iconP1.y);
 	playHUD.insert(playHUD.members.indexOf(playHUD.iconP1), fakeIcon);
+
+	fakeIcon.visible = (PlayState.SONG.song != 'Defeat');
 }
 
 var singAnimations = ['singLEFT', 'singDOWN', 'singUP', 'singRIGHT'];
+
 function onUpdate(note)
 {
 	if (!dontlaugh) return;
+
 	if (timeData.length == 0) return;
 
-	if (timeData[0] <= Conductor.songPosition) {
+	if (timeData[0] <= Conductor.songPosition)
+	{
 		// hit note
 		timeData.shift();
 		var dir = noteData.shift();
 		extraboyfriend.playAnim(singAnimations[dir], true);
 		extraboyfriend.holdTimer = 0;
+		health += 0.023;
 	}
 }
 
 function onSpawnNote(note)
 {
 	if (!dontlaugh) return;
+
 	if (note.lane != 0) return;
 
 	note.ignoreNote = true;
@@ -81,6 +91,15 @@ function onEvent(eventName, value1, value2)
 
 	switch (eventName)
 	{
+		case 'Defeat Retro':
+			var charType:Int = Std.parseInt(value1);
+
+			if (Math.isNaN(charType)) charType = 0;
+
+			dontlaugh = (charType == 0 ? false : true);
+			boyfriend.stunned = (charType == 0 ? false : true);
+			extraboyfriend.visible = (charType == 0 ? false : true);
+
 		case 'Legacy':
 			switch (value1)
 			{

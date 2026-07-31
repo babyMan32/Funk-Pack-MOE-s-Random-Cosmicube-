@@ -2,83 +2,85 @@
 	"pausePortrait": "",
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-5,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "BF idle dance",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "BF idle dance"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				6,
 				-7
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "BF NOTE LEFT0",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "BF NOTE LEFT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-48,
 				27
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "BF NOTE UP0",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "BF NOTE UP"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-52,
 				-5
 			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "BF NOTE RIGHT0",
-			"indices": []
-		},
-		{
 			"loop": false,
-			"offsets": [
-				7,
-				19
-			],
-			"anim": "singLEFTmiss",
 			"fps": 24,
-			"name": "BF NOTE LEFT MISS",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "BF NOTE RIGHT"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				-6,
 				1
 			],
-			"anim": "scared",
+			"loop": true,
 			"fps": 24,
-			"name": "BF idle shaking",
-			"indices": []
+			"anim": "scared",
+			"indices": [],
+			"name": "BF idle shaking"
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-13,
+				-39
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "alt bf hey",
+			"indices": [],
+			"flipX": false
 		},
 		{
 			"offsets": [
-				-8,
-				-39
+				-25,
+				-50
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "hey",
+			"anim": "singDOWN",
 			"loop": false,
-			"name": "alt bf hey"
+			"name": "BF NOTE DOWN"
 		}
 	],
 	"no_antialiasing": false,
