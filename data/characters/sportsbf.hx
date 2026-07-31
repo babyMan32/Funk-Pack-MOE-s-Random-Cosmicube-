@@ -1,12 +1,13 @@
 using StringTools;
 
-var dontlaugh = false;
+public var dontlaugh = false;
+public var fuuuuuuuuuuuck = false;
 
 var crewmateMoment = false;
 
 var fakeIcon;
 
-var extraboyfriend;
+public var extraboyfriend;
 
 // pretty much the same thing that vslice does lol
 var timeData:Array<Float> = [];
@@ -19,7 +20,7 @@ function onCreatePost()
 		iconShit();
 
 		boyfriend.canTaunt = false;
-		boyfriend.stunned = dontlaugh = true;
+		boyfriend.stunned = dontlaugh = fuuuuuuuuuuuck = true;
 		boyfriend.playAnim('whyyoutryingnottolaughbruh', true);
 
 		extraboyfriend = new Character(0, 0, 'sportsbf', true);
@@ -36,7 +37,7 @@ function onCreatePost()
 				// 0 - 3 = bf
 				if (i[1] < 4)
 				{
-					timeData.push(i[0]);
+					timeData.push(i[0]); // Kludge to the rescue yet again
 					noteData.push(i[1]);
 				}
 			}
@@ -91,15 +92,6 @@ function onEvent(eventName, value1, value2)
 
 	switch (eventName)
 	{
-		case 'Defeat Retro':
-			var charType:Int = Std.parseInt(value1);
-
-			if (Math.isNaN(charType)) charType = 0;
-
-			dontlaugh = (charType == 0 ? false : true);
-			boyfriend.stunned = (charType == 0 ? false : true);
-			extraboyfriend.visible = (charType == 0 ? false : true);
-
 		case 'Legacy':
 			switch (value1)
 			{
