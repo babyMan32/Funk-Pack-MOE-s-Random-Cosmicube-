@@ -1,4 +1,3 @@
-import funkin.data.Chart;
 using StringTools;
 
 var dontlaugh = false;
@@ -7,10 +6,11 @@ var crewmateMoment = false;
 
 var fakeIcon;
 
-var chart:Song = null;
-var chartPath = '/data/normal';
-
 var extraboyfriend;
+
+// pretty much the same thing that vslice does lol
+var timeData:Array<Float> = [];
+var noteData:Array<Int> = [];
 
 function onCreatePost()
 {
@@ -22,14 +22,22 @@ function onCreatePost()
 		boyfriend.stunned = dontlaugh = true;
 		boyfriend.playAnim('whyyoutryingnottolaughbruh', true);
 
-		chart = Chart.fromPath(Paths.json(Paths.sanitize(songName) + chartPath));
-
 		extraboyfriend = new Character(0, 0, 'sportsbf', true);
 		extraboyfriend.color = boyfriend.healthColour;
 		boyfriendGroup.insert(0, extraboyfriend);
 		extraboyfriend.x = boyfriend.x + 350;
 		extraboyfriend.y = boyfriend.y;
 		extraboyfriend.alpha = 0.5;
+
+		for (sec in PlayState.SONG.notes) {
+			for (i in sec.sectionNotes) {
+				// 0 - 3 = bf
+				if (i[1] < 4) {
+					timeData.push(i[0]);
+					noteData.push(i[1]);
+				}
+			}
+		}
 
 		if (ClientPrefs.inDevMode) trace('yo thats disrespectful as fuck man');
 	}
@@ -44,18 +52,27 @@ function iconShit()
 	playHUD.insert(playHUD.members.indexOf(playHUD.iconP1), fakeIcon);
 }
 
+var singAnimations = ['singLEFT', 'singDOWN', 'singUP', 'singRIGHT'];
+function onUpdate(note)
+{
+	if (!dontlaugh) return;
+	if (timeData.length == 0) return;
+
+	if (timeData[0] <= Conductor.songPosition) {
+		// hit note
+		timeData.shift();
+		var dir = noteData.shift();
+		extraboyfriend.playAnim(singAnimations[dir], true);
+		extraboyfriend.holdTimer = 0;
+	}
+}
+
 function onSpawnNote(note)
 {
+	if (!dontlaugh) return;
 	if (note.lane != 0) return;
 
-	if (!dontlaugh) return;
-
 	note.ignoreNote = true;
-
-	new FlxTimer().start(1.075 * (170 / bpm), function(_) {
-		extraboyfriend.playAnim(note.skin.singAnimations[note.noteData], true);
-		extraboyfriend.holdTimer = 0;
-	});
 }
 
 function onEvent(eventName, value1, value2)
