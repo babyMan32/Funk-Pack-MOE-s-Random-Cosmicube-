@@ -76,8 +76,9 @@
 	"dance_every": 2,
 	"gameover_intial_sound": null,
 	"flags": {
-		"runner": true,
-		"customMonotone": "pico"
+		"customMonotone": "pico",
+		"noteSkin": "madness",
+		"runner": true
 	},
 	"scalableOffsets": true,
 	"gameover_confirm_sound": null,

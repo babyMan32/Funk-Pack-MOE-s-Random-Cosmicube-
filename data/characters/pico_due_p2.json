@@ -142,6 +142,7 @@
 	"gameover_intial_sound": null,
 	"flags": {
 		"customMonotone": "pico",
+		"noteSkin": "madness",
 		"runner": true
 	},
 	"scalableOffsets": true,

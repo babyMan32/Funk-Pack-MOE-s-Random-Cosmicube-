@@ -143,7 +143,8 @@
 	"dance_every": 2,
 	"gameover_intial_sound": null,
 	"flags": {
-		"defeatRetro": "driverbf old"
+		"defeatRetro": "driverbf old",
+		"noteSkin": "railway"
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": "railway/gameover new end",

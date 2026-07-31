@@ -230,7 +230,8 @@
 	"flags": {
 		"runner": true,
 		"defeatRetro": "bfMADNESSnew",
-		"customMonotone": "bf-monotone"
+		"customMonotone": "bf-monotone",
+		"noteSkin": "madness"
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,

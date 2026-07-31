@@ -71,8 +71,8 @@ function createSignals()
 	signalLightPlayer.updateHitbox();
 	signalBodyPlayer.updateHitbox();
 
-	signalBodyOpponent.updateHitbox();
 	signalLightOpponent.updateHitbox();
+	signalBodyOpponent.updateHitbox();
 }
 
 function onSongStart()
@@ -115,4 +115,7 @@ function onUpdatePost()
 		signalLightOpponent.animation.play('go', true);
 		charWinning = 'nil';
 	}
+
+	signalLightPlayer.alpha = signalBodyPlayer.alpha = signalLightOpponent.alpha = signalBodyOpponent.alpha = healthBar.alpha;
+	signalLightPlayer.visible = signalBodyPlayer.visible = signalLightOpponent.visible = signalBodyOpponent.visible = healthBar.visible;
 }
