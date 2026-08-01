@@ -140,6 +140,12 @@ function onUpdatePost(elapsed:Float):Void
 		fakeIcon.alpha = healthBar.alpha;
 	}
 
+	if (extraboyfriend != null)
+	{
+		extraboyfriend.alpha = boyfriend.alpha * 0.5;
+		extraboyfriend.visible = boyfriend.visible;
+	}
+
 	if (!boyfriend.stunned) return;
 
 	if (boyfriend.getAnimName() != 'whyyoutryingnottolaughbruh')
