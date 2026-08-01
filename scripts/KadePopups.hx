@@ -12,12 +12,18 @@ public var kade_combo_counter = 0;
 
 var kadeCrochetMaybe = ((60 / bpm) * 1000);
 
-function onCreatePost()
+function onUpdatePost(elapsed:Float):Void
 {
-	if (!init_kade_hud) return;
-
-	ratingGraphic.visible = false;
-	ratingNumGroup.visible = false;
+	if (init_kade_hud)
+	{
+		ratingGraphic.visible = false;
+		ratingNumGroup.visible = false;
+	}
+	else
+	{
+		ratingGraphic.visible = true;
+		ratingNumGroup.visible = true;
+	}
 }
 
 function goodNoteHit(note)

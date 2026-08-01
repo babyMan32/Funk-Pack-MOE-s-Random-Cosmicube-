@@ -6,12 +6,6 @@ public var kadeIconDad:HealthIcon;
 
 function onCreatePost()
 {
-	if (!init_kade_hud) return;
-
-	playHUD.healthBar.visible = false;
-	playHUD.iconP1.visible = false;
-	playHUD.iconP2.visible = false;
-
 	barInitiation();
 	iconInitiation();
 }
@@ -76,16 +70,12 @@ function iconInitiation()
 
 function onUpdate(elapsed:Float):Void
 {
-	if (!init_kade_hud) return;
-
 	kadeIconBF.scale.set(1, 1);
 	kadeIconDad.scale.set(1, 1);
 }
 
 function onUpdatePost(elapsed:Float):Void
 {
-	if (!init_kade_hud) return;
-
 	if (health < 2)
 	{
 		kadeBarPlay.x = kadeBar.width - ((113 * health) - (35 * (1 - health)));
@@ -105,12 +95,35 @@ function onUpdatePost(elapsed:Float):Void
 
 	kadeIconBF.updateIconAnim(healthBar.percent * 0.01);
 	kadeIconDad.updateIconAnim((100 - healthBar.percent) * 0.01);
+
+	if (init_kade_hud)
+	{
+		playHUD.healthBar.visible = false;
+		playHUD.iconP1.visible = false;
+		playHUD.iconP2.visible = false;
+
+		kadeIconDad.visible = true;
+		kadeBarPlay.visible = true;
+		kadeBarOpp.visible = true;
+		kadeIconBF.visible = true;
+		kadeBar.visible = true;
+	}
+	else
+	{
+		playHUD.healthBar.visible = true;
+		playHUD.iconP1.visible = true;
+		playHUD.iconP2.visible = true;
+
+		kadeIconDad.visible = false;
+		kadeBarPlay.visible = false;
+		kadeBarOpp.visible = false;
+		kadeIconBF.visible = false;
+		kadeBar.visible = false;
+	}
 }
 
 function onBeatHit()
 {
-	if (!init_kade_hud) return;
-
 	if (curBeat % 2 == 0)
 	{
 		kadeIconBF.scale.set(1.25, 1.25);

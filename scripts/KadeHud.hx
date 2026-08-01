@@ -7,12 +7,12 @@ public var watermark:FlxText;
 
 public var fakeScoreText:FlxText;
 
+var deathLoop;
+var deathEnd;
+var displace;
+
 function onCreatePost()
 {
-	if (!init_kade_hud) return;
-
-	boyfriend.canTaunt = false;
-
 	//cpuControlled = true;
 
 	watermark = new FlxText(0, 0, 0, PlayState.SONG.song + " - Normal | KE 1.6");
@@ -31,23 +31,38 @@ function onCreatePost()
 	fakeScoreText.y = playHUD.scoreTxt.y + (ClientPrefs.downScroll ? -115 : 15);
 	playHUD.add(fakeScoreText);
 
-	playHUD.scoreTxt.visible = false;
-
-	FlxG.mouse.visible = false;
-
-	dad.camDisplacement = boyfriend.camDisplacement = 0;
-
-	boyfriend.gameoverLoopDeathSound = 'v3/gameOver';
-	boyfriend.gameoverConfirmDeathSound = 'v3/gameOverEnd'; //so retro
+	displace = boyfriend.camDisplacement;
+	deathLoop = boyfriend.gameoverLoopDeathSound;
+	deathEnd = boyfriend.gameoverConfirmDeathSound;
 }
 
 function onUpdatePost(elapsed:Float):Void
 {
-	if (!init_kade_hud) return;
-
 	fakeScoreText.text = "Score: " + songScore + " | Combo Breaks: " + songMisses + " | Accuracy: " + Math.round(ratingPercent * 10000) / 100 + "% | " + KadeCombos() + KadeRatings();
 
 	fakeScoreText.visible = !cpuControlled;
+
+	if (init_kade_hud)
+	{
+		FlxG.mouse.visible = false;
+		playHUD.scoreTxt.visible = false;
+
+		boyfriend.canTaunt = false;
+		boyfriend.gameoverLoopDeathSound = 'v3/gameOver';
+		dad.camDisplacement = boyfriend.camDisplacement = 0;
+		boyfriend.gameoverConfirmDeathSound = 'v3/gameOverEnd'; //so retro
+	}
+	else if (!boyfriend.canTaunt)
+	{
+		FlxG.mouse.visible = true;
+		fakeScoreText.visible = false;
+		playHUD.scoreTxt.visible = true;
+
+		boyfriend.canTaunt = true;
+		boyfriend.gameoverLoopDeathSound = deathLoop;
+		boyfriend.gameoverConfirmDeathSound = deathEnd;
+		dad.camDisplacement = boyfriend.camDisplacement = displace;
+	}
 }
 
 function onMoveCamera(focus) //set anim back to idle to replicate that weird bug kade had
