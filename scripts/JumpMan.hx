@@ -33,6 +33,9 @@ var showbills = false;
 
 var darkJumpShader:ExtraDropShadowShader;
 
+var botplayJump = false;
+var botplayJumped = false;
+
 function createJumpChar()
 {
 	bfJump = new Character(0, 0, 'bfMADNESSnewhopping', true);
@@ -96,6 +99,8 @@ function createBill()
 	billFallMomentum = 12;
 
 	stage.insert(stage.members.indexOf(boyfriendGroup) + 1, evilBill);
+
+	botplayJumped = false;
 }
 
 function addLightsDownShaderBS()
@@ -171,6 +176,12 @@ function onUpdate(elapsed:Float):Void
 	initJump(elapsed);
 
 	checkHurt(elapsed);
+
+	if (cpuControlled && evilBill != null && boyfriend.x - evilBill.x < 1200 && low && !botplayJumped)
+	{
+		botplayJump = true;
+		botplayJumped = true;
+	}
 }
 
 function onSectionHit()
@@ -276,10 +287,11 @@ function initJump(elapsed:Float)
 
 	bfBounding.y = bfJump.y + 250;
 
-	if (controls.NOTE_TAUNT_P && grounded && allow_jump && !got_hit)
+	if ((controls.NOTE_TAUNT_P && !cpuControlled || botplayJump) && grounded && allow_jump && !got_hit)
 	{
 		momentum = initial_momentum;
 		allow_jump = false;
+		botplayJump = false;
 
 		bfJump.alpha = 1;
 		boyfriend.alpha = 0;
@@ -297,7 +309,7 @@ function initJump(elapsed:Float)
 		});
 	}
 
-	if (controls.NOTE_TAUNT_R && momentum > 0 && !got_hit)
+	if (controls.NOTE_TAUNT_R && !cpuControlled && momentum > 0 && !got_hit)
 	{
 		if (!allow_jump && grounded)
 		{
