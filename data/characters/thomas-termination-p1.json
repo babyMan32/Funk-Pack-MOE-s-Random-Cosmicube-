@@ -88,7 +88,9 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": null,
+	"flags": {
+		"noteSkin": "railway_re-fired"
+	},
 	"scalableOffsets": true,
 	"gameover_confirm_sound": null,
 	"healthicon": "bigtom",

@@ -91,7 +91,8 @@
 	"flags": {
 		"ghost": true,
 		"floating": true,
-		"seeThrough": true
+		"seeThrough": true,
+		"noteSkin": "railway_re-fired"
 	},
 	"scalableOffsets": true,
 	"gameover_confirm_sound": null,
