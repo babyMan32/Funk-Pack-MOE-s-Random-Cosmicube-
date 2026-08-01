@@ -17,6 +17,8 @@ var canInput:Bool = false;
 
 function onLoad()
 {
+	Paths.overrideMode = null;
+
 	// #if debug
 	// menuItemsOG.push('Botplay');
 	// #end

@@ -44,6 +44,7 @@ function onUpdatePost(elapsed:Float):Void
 
 	if (init_kade_hud)
 	{
+		watermark.visible = true;
 		FlxG.mouse.visible = false;
 		playHUD.scoreTxt.visible = false;
 
@@ -52,8 +53,9 @@ function onUpdatePost(elapsed:Float):Void
 		dad.camDisplacement = boyfriend.camDisplacement = 0;
 		boyfriend.gameoverConfirmDeathSound = 'v3/gameOverEnd'; //so retro
 	}
-	else if (!boyfriend.canTaunt)
+	else
 	{
+		watermark.visible = false;
 		FlxG.mouse.visible = true;
 		fakeScoreText.visible = false;
 		playHUD.scoreTxt.visible = true;
@@ -128,6 +130,5 @@ function openCustomPause()
 	game.audio?.pause();
 
 	Paths.overrideMode = PathsTestMode.LOOSE;
-	openSubState(new ScriptedSubstate('CustomPauseSubState'));
-	Paths.overrideMode = null;
+	openSubState(new ScriptedSubstate('KadePauseSubState'));
 }
