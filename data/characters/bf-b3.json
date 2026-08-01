@@ -207,6 +207,9 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
+	"flags": {
+		"noteSkin": "b3"
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "bf_b3",

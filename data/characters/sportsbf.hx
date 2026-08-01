@@ -54,8 +54,6 @@ function iconShit()
 	fakeIcon.cameras = [camHUD];
 	fakeIcon.setPosition(playHUD.iconP1.x, playHUD.iconP1.y);
 	playHUD.insert(playHUD.members.indexOf(playHUD.iconP1), fakeIcon);
-
-	fakeIcon.visible = (PlayState.SONG.song != 'Defeat');
 }
 
 var singAnimations = ['singLEFT', 'singDOWN', 'singUP', 'singRIGHT'];
@@ -138,6 +136,8 @@ function onUpdatePost(elapsed:Float):Void
 	if (fakeIcon != null)
 	{
 		fakeIcon.x = playHUD.healthBar.barCenter - (150 / 2) + 26 * 2;
+		fakeIcon.visible = healthBar.visible;
+		fakeIcon.alpha = healthBar.alpha;
 	}
 
 	if (!boyfriend.stunned) return;

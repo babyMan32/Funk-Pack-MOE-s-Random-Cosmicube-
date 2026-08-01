@@ -190,7 +190,9 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": "fnf_loss_sfx-bidu",
-	"flags": {},
+	"flags": {
+		"noteSkin": "arrowfunk"
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "bidu",

@@ -112,7 +112,8 @@
 	"flags": {
 		"variants": {
 			"pixel": "bunfriend-pixel"
-		}
+		},
+		"noteSkin": "railway"
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": "railway/gameover new end",

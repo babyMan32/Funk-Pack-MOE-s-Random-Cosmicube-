@@ -165,6 +165,10 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
+	"flags": {
+		"noteSkin": "madness",
+		"botplayNoteSkin": "madness-bot"
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "marioP",

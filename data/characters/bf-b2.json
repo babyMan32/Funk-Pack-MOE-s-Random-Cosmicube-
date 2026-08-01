@@ -107,7 +107,8 @@
 		350
 	],
 	"flags": {
-		"defeatRetro": "bf-b3"
+		"defeatRetro": "bf-b3",
+		"noteSkin": "b3"
 	},
 	"healthicon": "bf_b3",
 	"flip_x": true,
