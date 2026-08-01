@@ -124,6 +124,7 @@
 	"gameover_intial_sound": null,
 	"flags": {
 		"defeatRetro": "driverbf",
+		"customMonotone": "TRSBF-opp",
 		"noteSkin": "railway_re-fired",
 		"refiredUpSkin": true
 	},

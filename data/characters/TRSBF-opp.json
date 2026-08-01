@@ -1,0 +1,106 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				-1,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-14,
+				6
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				3,
+				75
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"loop": true,
+			"flipY": false,
+			"offsets": [
+				-22,
+				-8
+			],
+			"anim": "scared",
+			"fps": 24,
+			"name": "bruh",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"offsets": [
+				30,
+				4
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "right"
+		},
+		{
+			"offsets": [
+				-54,
+				8
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "left"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/railway/bf/TRSBF",
+	"position": [
+		-120,
+		20
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"refiredUpSkin": true,
+		"noteSkin": "railway_re-fired",
+		"defeatRetro": "driverbf"
+	},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": "railway/void_retry",
+	"healthicon": "trsbf",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": true,
+	"flip_x": true,
+	"healthbar_colour": -13520685,
+	"camera_position": [
+		-100,
+		250
+	],
+	"gameover_loop_sound": "railway/void_game_over",
+	"sing_duration": 8,
+	"scale": 0.5,
+	"_editor_isPlayer": false
+}
