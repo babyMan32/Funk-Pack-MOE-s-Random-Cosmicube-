@@ -93,7 +93,6 @@ function createBill()
 	evilBill.scale.x = 0.4;
 	evilBill.scale.y = 0.4;
 	evilBill.updateHitbox();
-	evilBill.visible = showbills;
 	evilBill.flipX = bullet_exists = true;
 	jumped_on_bill = false;
 	billFallMomentum = 12;
@@ -209,6 +208,8 @@ function onUpdatePost(elapsed:Float):Void
 	{
 		floaty = false;
 	}
+
+	evilBill?.visible = showbills;
 }
 
 var bulletSpeed:Float = 2000;

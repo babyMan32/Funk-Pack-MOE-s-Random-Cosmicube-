@@ -1,6 +1,7 @@
 import funkin.data.NoteSkin;
 
 var skins;
+var skinsOpp;
 
 function onCreatePost()
 {
@@ -8,9 +9,11 @@ function onCreatePost()
 
 	Paths.overrideMode = PathsTestMode.LOOSE;
 
-	skins = boyfriend.getFlag('noteSkin') ?? PlayState.SONG.arrowSkin;
+	skins = boyfriend.getFlag('noteSkin') ?? PlayState.SONG.arrowSkins[0];
+	skinsOpp = dad.getFlag('noteSkin') ?? PlayState.SONG.arrowSkins[1];
 
 	triggerEventNote('Change Noteskin', skins, 0);
+	triggerEventNote('Change Noteskin', skinsOpp, 1);
 }
 
 function onDestroy()
@@ -43,8 +46,10 @@ function onEvent(eventName, value1, value2)
 		case 'Change Character':
 			Paths.overrideMode = PathsTestMode.LOOSE;
 
-			skins = boyfriend.getFlag('noteSkin') ?? PlayState.SONG.arrowSkins[1];
+			skins = boyfriend.getFlag('noteSkin') ?? PlayState.SONG.arrowSkins[0];
+			skinsOpp = dad.getFlag('noteSkin') ?? PlayState.SONG.arrowSkins[1];
 
 			triggerEventNote('Change Noteskin', skins, 0);
+			triggerEventNote('Change Noteskin', skinsOpp, 1);
 	}
 }

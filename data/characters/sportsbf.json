@@ -273,7 +273,8 @@
 	"dance_every": 2,
 	"gameover_intial_sound": null,
 	"flags": {
-		"defeatRetro": "BOYFRIENDMII"
+		"defeatRetro": "BOYFRIENDMII",
+		"noteSkin": "wii"
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
