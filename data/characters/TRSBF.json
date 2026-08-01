@@ -124,7 +124,8 @@
 	"gameover_intial_sound": null,
 	"flags": {
 		"defeatRetro": "driverbf",
-		"noteSkin": "railway_re-fired"
+		"noteSkin": "railway_re-fired",
+		"refiredUpSkin": true
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": "railway/void_retry",

@@ -92,7 +92,8 @@
 		"ghost": true,
 		"floating": true,
 		"seeThrough": true,
-		"noteSkin": "railway_re-fired"
+		"noteSkin": "railway_re-fired",
+		"refiredUpSkin": true
 	},
 	"scalableOffsets": true,
 	"gameover_confirm_sound": null,

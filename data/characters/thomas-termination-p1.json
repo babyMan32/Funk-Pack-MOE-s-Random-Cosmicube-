@@ -89,7 +89,8 @@
 	"dance_every": 2,
 	"gameover_intial_sound": null,
 	"flags": {
-		"noteSkin": "railway_re-fired"
+		"noteSkin": "railway_re-fired",
+		"refiredUpSkin": true
 	},
 	"scalableOffsets": true,
 	"gameover_confirm_sound": null,

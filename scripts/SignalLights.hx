@@ -1,21 +1,16 @@
-var trsCharacters = ["TRSBF", "ghostJames", "thomas-termination-p1"];
-
 var signalBodyPlayer:FlxSprite;
 var signalLightPlayer:FlxSprite;
 
 var signalBodyOpponent:FlxSprite;
+var signalLightOpponent:FlxSprite;
 
 var charWinning = 'nil';
 
-var trsCharsAsPlayer = false;
+var refiredCheck = false;
 
 function onCreatePost()
 {
-	if (trsCharacters.contains(boyfriend.curCharacter))
-	{
-		createSignals();
-		trsCharsAsPlayer = true;
-	}
+	createSignals();
 }
 
 function createSignals()
@@ -77,8 +72,6 @@ function createSignals()
 
 function onSongStart()
 {
-	if (!trsCharsAsPlayer) return;
-
 	FlxTween.tween(signalLightPlayer, {angle: (ClientPrefs.downScroll ? 45 : -45)}, 0.5, {ease: FlxEase.sineOut});
 	signalLightPlayer.animation.play('go', true);
 
@@ -88,7 +81,16 @@ function onSongStart()
 
 function onUpdatePost()
 {
-	if (!trsCharsAsPlayer) return;
+	refiredCheck = boyfriend.getFlag('refiredUpSkin') ?? false;
+
+	if (!refiredCheck)
+	{
+		signalLightPlayer.visible = signalBodyPlayer.visible = signalLightOpponent.visible = signalBodyOpponent.visible = false;
+	}
+	else
+	{
+		signalLightPlayer.visible = signalBodyPlayer.visible = signalLightOpponent.visible = signalBodyOpponent.visible = healthBar.visible;
+	}
 
 	if (health <= 0.4 && charWinning == 'nil')
 	{
@@ -117,5 +119,4 @@ function onUpdatePost()
 	}
 
 	signalLightPlayer.alpha = signalBodyPlayer.alpha = signalLightOpponent.alpha = signalBodyOpponent.alpha = healthBar.alpha;
-	signalLightPlayer.visible = signalBodyPlayer.visible = signalLightOpponent.visible = signalBodyOpponent.visible = healthBar.visible;
 }

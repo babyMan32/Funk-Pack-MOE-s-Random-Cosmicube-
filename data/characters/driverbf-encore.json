@@ -113,7 +113,8 @@
 		"variants": {
 			"pixel": "bunfriend-pixel"
 		},
-		"noteSkin": "railway"
+		"noteSkin": "railway",
+		"showdownSkin": true
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": "railway/gameover new end",

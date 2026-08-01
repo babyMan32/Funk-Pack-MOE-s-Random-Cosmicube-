@@ -144,7 +144,8 @@
 	"gameover_intial_sound": null,
 	"flags": {
 		"defeatRetro": "driverbf old",
-		"noteSkin": "railway"
+		"noteSkin": "railway",
+		"showdownSkin": true
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": "railway/gameover new end",

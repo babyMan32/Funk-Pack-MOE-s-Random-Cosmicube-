@@ -131,7 +131,10 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": null,
+	"flags": {
+		"noteSkin": "railway",
+		"showdownSkin": true
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "driverbf",
