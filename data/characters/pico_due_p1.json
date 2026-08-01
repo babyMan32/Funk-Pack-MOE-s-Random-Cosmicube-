@@ -76,6 +76,7 @@
 	"dance_every": 2,
 	"gameover_intial_sound": null,
 	"flags": {
+		"botplayNoteSkin": "madness-bot",
 		"customMonotone": "pico",
 		"noteSkin": "madness",
 		"runner": true

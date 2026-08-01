@@ -231,7 +231,8 @@
 		"runner": true,
 		"defeatRetro": "bfMADNESSnew",
 		"customMonotone": "bf-monotone",
-		"noteSkin": "madness"
+		"noteSkin": "madness",
+		"botplayNoteSkin": "madness-bot"
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,

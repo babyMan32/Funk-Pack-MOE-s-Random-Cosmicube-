@@ -107,7 +107,8 @@
 	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"flags": {
-		"noteSkin": "madness"
+		"noteSkin": "madness",
+		"botplayNoteSkin": "madness-bot"
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
