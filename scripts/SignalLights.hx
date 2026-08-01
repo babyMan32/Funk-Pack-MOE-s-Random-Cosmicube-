@@ -72,11 +72,17 @@ function createSignals()
 
 function onSongStart()
 {
-	FlxTween.tween(signalLightPlayer, {angle: (ClientPrefs.downScroll ? 45 : -45)}, 0.5, {ease: FlxEase.sineOut});
-	signalLightPlayer.animation.play('go', true);
+	if (health > 0.4)
+	{
+		FlxTween.tween(signalLightPlayer, {angle: (ClientPrefs.downScroll ? 45 : -45)}, 0.5, {ease: FlxEase.sineOut});
+		signalLightPlayer.animation.play('go', true);
+	}
 
-	FlxTween.tween(signalLightOpponent, {angle: (ClientPrefs.downScroll ? -45 : 45)}, 0.5, {ease: FlxEase.sineOut});
-	signalLightOpponent.animation.play('go', true);
+	if (health < 1.6)
+	{
+		FlxTween.tween(signalLightOpponent, {angle: (ClientPrefs.downScroll ? -45 : 45)}, 0.5, {ease: FlxEase.sineOut});
+		signalLightOpponent.animation.play('go', true);
+	}
 }
 
 function onUpdatePost()
@@ -94,12 +100,14 @@ function onUpdatePost()
 
 	if (health <= 0.4 && charWinning == 'nil')
 	{
+		FlxTween.cancelTweensOf(signalLightPlayer);
 		FlxTween.tween(signalLightPlayer, {angle: 0}, 0.5, {ease: FlxEase.sineOut});
 		signalLightPlayer.animation.play('stop', true);
 		charWinning = 'opp';
 	}
 	else if (health > 0.4 && charWinning == 'opp')
 	{
+		FlxTween.cancelTweensOf(signalLightPlayer);
 		FlxTween.tween(signalLightPlayer, {angle: (ClientPrefs.downScroll ? 45 : -45)}, 0.5, {ease: FlxEase.sineOut});
 		signalLightPlayer.animation.play('go', true);
 		charWinning = 'nil';
@@ -107,12 +115,14 @@ function onUpdatePost()
 
 	if (health >= 1.6 && charWinning == 'nil')
 	{
+		FlxTween.cancelTweensOf(signalLightOpponent);
 		FlxTween.tween(signalLightOpponent, {angle: 0}, 0.5, {ease: FlxEase.sineOut});
 		signalLightOpponent.animation.play('stop', true);
 		charWinning = 'play';
 	}
 	else if (health < 1.6 && charWinning == 'play')
 	{
+		FlxTween.cancelTweensOf(signalLightOpponent);
 		FlxTween.tween(signalLightOpponent, {angle: (ClientPrefs.downScroll ? -45 : 45)}, 0.5, {ease: FlxEase.sineOut});
 		signalLightOpponent.animation.play('go', true);
 		charWinning = 'nil';

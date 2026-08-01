@@ -11,6 +11,8 @@ var hurt_timer = 1.5;
 
 var excludedStages = ["ejected", "voting", "turbulence", "skeldpixel"];
 
+public var jumpchanics = false;
+
 //but do NOT touch these
 var momentum = 0;
 var landing_position = 0;
@@ -149,6 +151,8 @@ function onCreatePost()
 	switch (boyfriend.curCharacter)
 	{
 		case "bfMADNESSnew":
+			if (!jumpchanics) return;
+
 			allow_jump = true;
 
 			checkSongAndStage();
@@ -170,6 +174,8 @@ function checkSongAndStage()
 
 function onUpdate(elapsed:Float):Void
 {
+	if (!jumpchanics) return;
+
 	checkCurChar();
 
 	initJump(elapsed);
@@ -185,6 +191,8 @@ function onUpdate(elapsed:Float):Void
 
 function onSectionHit()
 {
+	if (!jumpchanics) return;
+
 	if (!jump_char_exists) return;
 
 	if (FlxG.random.bool() && !bullet_exists)
@@ -195,6 +203,8 @@ function onSectionHit()
 
 function onUpdatePost(elapsed:Float):Void
 {
+	if (!jumpchanics) return;
+
 	if (!jump_char_exists) return;
 
 	boyfriendHurt.x = bfJump.x + 45;
@@ -397,6 +407,8 @@ function killBFJump()
 
 function onEvent(eventName, value1, value2)
 {
+	if (!jumpchanics) return;
+
 	if (!jump_check_var) return;
 
 	switch (eventName)
