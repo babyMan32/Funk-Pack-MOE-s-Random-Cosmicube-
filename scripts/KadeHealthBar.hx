@@ -100,7 +100,7 @@ function onUpdatePost(elapsed:Float):Void
 	{
 		playHUD.healthBar.visible = false;
 		playHUD.iconP1.visible = false;
-		playHUD.iconP2.visible = false;
+		playHUD.iconP2.alpha = 0;
 
 		kadeIconDad.visible = true;
 		kadeBarPlay.visible = true;
@@ -112,7 +112,7 @@ function onUpdatePost(elapsed:Float):Void
 	{
 		playHUD.healthBar.visible = true;
 		playHUD.iconP1.visible = true;
-		playHUD.iconP2.visible = true;
+		playHUD.iconP2.alpha = 1;
 
 		kadeIconDad.visible = false;
 		kadeBarPlay.visible = false;
