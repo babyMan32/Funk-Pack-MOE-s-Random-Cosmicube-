@@ -110,10 +110,6 @@ function onUpdatePost(elapsed:Float):Void
 	}
 	else
 	{
-		playHUD.healthBar.visible = true;
-		playHUD.iconP1.visible = true;
-		playHUD.iconP2.alpha = 1;
-
 		kadeIconDad.visible = false;
 		kadeBarPlay.visible = false;
 		kadeBarOpp.visible = false;
