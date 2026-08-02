@@ -52,6 +52,7 @@ function onUpdatePost(elapsed:Float):Void
 	if (hahaRareChance)
 	{
 		cpuControlled = false;
+		boyfriend.canTaunt = false;
 	}
 }
 

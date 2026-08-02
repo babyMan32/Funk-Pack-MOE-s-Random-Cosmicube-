@@ -1,6 +1,7 @@
 var allow_attack = true;
 var killed_yellow = false;
 var killed_jor = false;
+var killed_dave = false;
 
 var threatening;
 var beeping;
@@ -123,7 +124,7 @@ function picoAttack()
 		boyfriend.playAnim('gunblast', true);
 		boyfriend.specialAnim = boyfriend.holding = true;
 
-		if (!killed_yellow)
+		if (!killed_yellow && !killed_dave)
 		{
 			dad.playAnim('singLEFT', true);
 			dad.specialAnim = true;
@@ -137,6 +138,15 @@ function picoAttack()
 			dad.specialAnim = killed_yellow = true;
 
 			setSongTime(125.64 * 1000);
+			clearNotesBefore(Conductor.songPosition);
+		}
+
+		if (dad.curCharacter == 'dave' && PlayState.SONG.song == 'Crewicide' && !killed_dave)
+		{
+			dad.alpha = 0;
+			killed_dave = true;
+
+			setSongTime(154.80 * 1000);
 			clearNotesBefore(Conductor.songPosition);
 		}
 
