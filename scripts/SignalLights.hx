@@ -7,34 +7,39 @@ var signalLightOpponent:FlxSprite;
 var charWinning = 'nil';
 
 var refiredCheck = false;
+var evilCheckOpp = false;
+
+var ext = 'signals/';
 
 function onCreatePost()
 {
+	evilCheckOpp = (dad.curCharacter == 'purple' || dad.getFlag('evil') == true);
+
 	createSignals();
 }
 
 function createSignals()
 {
+	signalBodyPlayer = new FlxSprite(0, 0).loadGraphic(Paths.image(ext + 'Signal_Body', null, null, PathsTestMode.LOOSE));
+	signalBodyPlayer.cameras = [camHUD];
+	signalBodyPlayer.antialiasing = false;
+	signalBodyPlayer.screenCenter();
+
 	signalLightPlayer = new FlxSprite(0, 0);
-	signalLightPlayer.frames = Paths.getSparrowAtlas('signals/SignalBladeAnimated', null, null, PathsTestMode.LOOSE);
+	signalLightPlayer.frames = Paths.getSparrowAtlas(ext + 'SignalBladeAnimated', null, null, PathsTestMode.LOOSE);
 	signalLightPlayer.animation.addByPrefix('stop', 'signal red', 24, false);
 	signalLightPlayer.animation.addByPrefix('go', 'signal green', 24, false);
 	signalLightPlayer.cameras = [camHUD];
 	signalLightPlayer.animation.play('stop', true);
 	signalLightPlayer.screenCenter();
 
-	signalBodyOpponent = new FlxSprite(0, 0).loadGraphic(Paths.image('signals/Signal_Body', null, null, PathsTestMode.LOOSE));
+	signalBodyOpponent = new FlxSprite(0, 0).loadGraphic(Paths.image(ext + (evilCheckOpp ? 'Signal_Body_Evil' : 'Signal_Body'), null, null, PathsTestMode.LOOSE));
 	signalBodyOpponent.cameras = [camHUD];
 	signalBodyOpponent.antialiasing = false;
 	signalBodyOpponent.screenCenter();
 	
-	signalBodyPlayer = new FlxSprite(0, 0).loadGraphic(Paths.image('signals/Signal_Body', null, null, PathsTestMode.LOOSE));
-	signalBodyPlayer.cameras = [camHUD];
-	signalBodyPlayer.antialiasing = false;
-	signalBodyPlayer.screenCenter();
-
 	signalLightOpponent = new FlxSprite(0, 0);
-	signalLightOpponent.frames = Paths.getSparrowAtlas('signals/SignalBladeAnimated', null, null, PathsTestMode.LOOSE);
+	signalLightOpponent.frames = Paths.getSparrowAtlas(ext + 'SignalBladeAnimated', null, null, PathsTestMode.LOOSE);
 	signalLightOpponent.animation.addByPrefix('stop', 'signal red', 24, false);
 	signalLightOpponent.animation.addByPrefix('go', 'signal green', 24, false);
 	signalLightOpponent.cameras = [camHUD];
@@ -57,8 +62,8 @@ function createSignals()
 	signalLightOpponent.x = healthBar.x - 210;
 	signalLightOpponent.y = healthBar.y - (ClientPrefs.downScroll ? 28 : 178);
 
-	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 0, signalLightPlayer);
 	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 1, signalBodyPlayer);
+	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 0, signalLightPlayer);
 
 	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 1, signalBodyOpponent);
 	playHUD.insert(playHUD.members.indexOf(playHUD.healthBar) - 0, signalLightOpponent);
@@ -96,6 +101,11 @@ function onUpdatePost()
 	else
 	{
 		signalLightPlayer.visible = signalBodyPlayer.visible = signalLightOpponent.visible = signalBodyOpponent.visible = healthBar.visible;
+	}
+
+	if (evilCheckOpp)
+	{
+		signalLightOpponent.visible = false;
 	}
 
 	if (health <= 0.4 && charWinning == 'nil')
