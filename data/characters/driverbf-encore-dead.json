@@ -53,8 +53,8 @@
 	"flip_x": true,
 	"healthbar_colour": -16658177,
 	"camera_position": [
-		200,
-		-30
+		-100,
+		20
 	],
 	"gameover_loop_sound": "railway/gameover new",
 	"sing_duration": 8,
