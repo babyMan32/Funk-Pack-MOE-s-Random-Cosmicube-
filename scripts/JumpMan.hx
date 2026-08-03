@@ -11,7 +11,7 @@ var hurt_timer = 1.5;
 
 var excludedStages = ["ejected", "voting", "turbulence", "skeldpixel"];
 
-public var jumpchanics = false;
+public var jumpchanics = true;
 
 //but do NOT touch these
 var momentum = 0;

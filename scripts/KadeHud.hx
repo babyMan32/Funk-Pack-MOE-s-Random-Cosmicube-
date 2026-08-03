@@ -15,6 +15,10 @@ function onCreatePost()
 {
 	//cpuControlled = true;
 
+	pahs = Paths.overrideMode;
+
+	Paths.overrideMode = null;
+
 	watermark = new FlxText(0, 0, 0, PlayState.SONG.song + " - Normal | KE 1.6");
 	watermark.setFormat(Paths.font("vcr.ttf"), 14, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 	watermark.visible = !ClientPrefs.hideHud;
@@ -30,6 +34,8 @@ function onCreatePost()
 	fakeScoreText.x = playHUD.scoreTxt.x - 250;
 	fakeScoreText.y = playHUD.scoreTxt.y + (ClientPrefs.downScroll ? -115 : 15);
 	playHUD.add(fakeScoreText);
+
+	Paths.overrideMode = pahs;
 
 	displace = boyfriend.camDisplacement;
 	deathLoop = boyfriend.gameoverLoopDeathSound;
