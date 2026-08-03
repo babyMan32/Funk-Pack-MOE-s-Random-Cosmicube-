@@ -41,6 +41,7 @@ function onCreatePost()
 	if (bf3StageRim == null)
 	{
 		bf3.shader = boyfriend.shader;
+		bf3.color = boyfriend.color;
 		return;
 	}
 

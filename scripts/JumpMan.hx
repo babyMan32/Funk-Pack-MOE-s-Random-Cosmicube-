@@ -71,6 +71,10 @@ function createJumpChar()
 			bfPainedRim.attachedSprite = boyfriendHurt;
 			bfPainedRim.updateFrameInfo(boyfriendHurt.frame);
 		}
+		else
+		{
+			bfJump.color = boyfriendHurt.color = boyfriend.color;
+		}
 	});
 
 	bfBounding = new FlxSprite().makeGraphic((bfJump.width * 6) / 7, (bfJump.height * 24) / 37, FlxColor.WHITE);
