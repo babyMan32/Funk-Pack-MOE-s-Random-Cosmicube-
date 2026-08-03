@@ -7,9 +7,9 @@ function onUpdate()
 
 	if (Std.isOfType(game, FreeplayState))
 	{
-		var select_song = Controls.instance.ACCEPT;
-
 		if (game.ws_lock[FreeplayState.curSelect]) return;
+
+		var select_song = Controls.instance.ACCEPT;
 
 		var song = game.week_songs[FreeplayState.curSelect];
 
