@@ -41,7 +41,7 @@ function noteSkinChange()
 {
 	Paths.overrideMode = PathsTestMode.LOOSE;
 
-	skins = boyfriend.getFlag('noteSkin') ?? PlayState.SONG.arrowSkins[0];
+	botplayNoteCheck();
 	skinsOpp = dad.getFlag('noteSkin') ?? PlayState.SONG.arrowSkins[1];
 
 	triggerEventNote('Change Noteskin', skins, 0);
@@ -57,7 +57,16 @@ function onUpdatePost(elapsed:Float):Void
 		lastDadSkin = dad.curCharacter;
 	}
 
-	if (!boyfriend.hasFlag('botplayNoteSkin')) return; // mainly only used for the MMV2 chars
+	botplayNoteCheck();
+}
+
+function botplayNoteCheck()
+{
+	if (!boyfriend.hasFlag('botplayNoteSkin')) // mainly only used for the MMV2 chars
+	{
+		skins = boyfriend.getFlag('noteSkin') ?? PlayState.SONG.arrowSkins[0];
+		return;
+	}
 
 	skins = (cpuControlled ? boyfriend.getFlag('botplayNoteSkin') : (boyfriend.getFlag('noteSkin') ?? PlayState.SONG.arrowSkins[0]));
 
