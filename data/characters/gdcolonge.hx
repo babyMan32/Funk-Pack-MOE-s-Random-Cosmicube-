@@ -1,6 +1,6 @@
 function onCreatePost()
 {
-	if (PlayState.SONG.song == 'Double Trouble')
+	if (PlayState.SONG.stage == 'doubletrouble')
 	{
 		bfOff[1] -= 100;
 	}
