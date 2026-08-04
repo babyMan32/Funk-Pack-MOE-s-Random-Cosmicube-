@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Jack'O'GF",
+	"description": "dumbass punkimg 2\n\nRequested by plusherx",
+
+	"node":
+	{
+		"parent": "jackobf",
+		"direction": "west"
+	}
+}

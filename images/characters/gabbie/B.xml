@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="B.png">
+<SubTexture name="B Idle0000" x="0" y="1448" width="480" height="467" frameX="-131" frameY="-197" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B Idle0001" x="0" y="974" width="477" height="474" frameX="-141" frameY="-189" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B Idle0002" x="0" y="3671" width="475" height="418" frameX="-144" frameY="-180" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B Idle0003" x="0" y="2829" width="488" height="421" frameX="-135" frameY="-176" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B Idle0004" x="0" y="3250" width="484" height="421" frameX="-136" frameY="-176" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B Down0000" x="0" y="6415" width="444" height="347" frameX="-152" frameY="-265" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B Down0001" x="0" y="6762" width="461" height="337" frameX="-145" frameY="-259" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B Left0000" x="0" y="5294" width="453" height="378" frameX="-62" frameY="-220" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B Left0001" x="0" y="5672" width="446" height="374" frameX="-72" frameY="-223" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B Right0000" x="0" y="4089" width="513" height="410" frameX="-183" frameY="-187" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B Right0001" x="0" y="4499" width="498" height="405" frameX="-183" frameY="-192" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B Up0000" x="0" y="494" width="416" height="480" frameX="-143" frameY="-118" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B Up0001" x="0" y="1915" width="420" height="467" frameX="-138" frameY="-131" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B MissD0000" x="0" y="6046" width="461" height="369" frameX="-145" frameY="-227" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B MissL0000" x="0" y="4904" width="446" height="390" frameX="-72" frameY="-207" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B MissR0000" x="0" y="2382" width="498" height="447" frameX="-183" frameY="-150" frameWidth="720" frameHeight="720"/>
+<SubTexture name="B MissU0000" x="0" y="0" width="420" height="494" frameX="-138" frameY="-104" frameWidth="720" frameHeight="720"/>
+</TextureAtlas>

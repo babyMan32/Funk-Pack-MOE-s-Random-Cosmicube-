@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="jackogf.png">
+	<!-- Created with Adobe Animate version 24.0.3.19 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gf idle0000" x="2" y="2" width="722" height="728" frameX="0" frameY="-7" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0001" x="726" y="2" width="724" height="728" frameX="0" frameY="-7" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0002" x="1452" y="2" width="724" height="728" frameX="0" frameY="-7" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0003" x="2178" y="2" width="722" height="728" frameX="0" frameY="-7" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0004" x="2902" y="2" width="722" height="732" frameX="0" frameY="-3" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0005" x="3626" y="2" width="722" height="732" frameX="0" frameY="-3" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0006" x="4350" y="2" width="722" height="733" frameX="0" frameY="-2" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0007" x="5074" y="2" width="722" height="734" frameX="0" frameY="-1" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0008" x="5798" y="2" width="722" height="734" frameX="0" frameY="-1" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0009" x="6522" y="2" width="722" height="734" frameX="0" frameY="-1" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0010" x="7246" y="2" width="722" height="735" frameX="0" frameY="0" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0011" x="7246" y="2" width="722" height="735" frameX="0" frameY="0" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0012" x="2" y="739" width="722" height="735" frameX="0" frameY="0" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0013" x="726" y="739" width="722" height="735" frameX="0" frameY="0" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0014" x="1450" y="739" width="722" height="735" frameX="0" frameY="0" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0015" x="2174" y="739" width="722" height="727" frameX="0" frameY="-8" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0016" x="2898" y="739" width="724" height="727" frameX="0" frameY="-8" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0017" x="3624" y="739" width="724" height="727" frameX="0" frameY="-8" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0018" x="4350" y="739" width="722" height="727" frameX="0" frameY="-8" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0019" x="5074" y="739" width="722" height="728" frameX="0" frameY="-7" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0020" x="5798" y="739" width="722" height="728" frameX="0" frameY="-7" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0021" x="6522" y="739" width="722" height="732" frameX="0" frameY="-3" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0022" x="7246" y="739" width="722" height="735" frameX="0" frameY="0" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0023" x="2" y="1476" width="722" height="735" frameX="0" frameY="0" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0024" x="726" y="1476" width="722" height="735" frameX="0" frameY="0" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0025" x="1450" y="1476" width="722" height="735" frameX="0" frameY="0" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0026" x="1450" y="1476" width="722" height="735" frameX="0" frameY="0" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0027" x="2174" y="1476" width="722" height="735" frameX="0" frameY="0" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0028" x="2898" y="1476" width="722" height="733" frameX="0" frameY="-2" frameWidth="724" frameHeight="735"/>
+	<SubTexture name="gf idle0029" x="3622" y="1476" width="722" height="733" frameX="0" frameY="-2" frameWidth="724" frameHeight="735"/>
+</TextureAtlas>

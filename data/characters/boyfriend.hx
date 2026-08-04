@@ -16,7 +16,7 @@ function onLoad()
 {
 	doWeLegs = (ClientPrefs.bfSkin == 'boyfriend' && PlayState.SONG.stage == 'danger');
 
-	getTrolled = FlxG.random.bool((1 / 4096) * 100);
+	getTrolled = FlxG.random.bool((1 / 1) * 100);
 
 	if (!doWeLegs) return;
 
@@ -181,19 +181,22 @@ function onGameOver()
 {
 	if (getTrolled)
 	{
-		KillNotes();
-		PlayState.instance.audio?.stop();
+		game.persistentUpdate = false;
+		game.persistentDraw = true;
+		game.paused = true;
+		game.audio?.pause();
+
 		camHUD.alpha = 0;
 
-		PlayState.instance?.scripts.set('inGameOver', true);
-
-		camFollow = new FlxObject(boyfriend.getMidpoint().x - boyfriend.cameraPosition[0] - 100, boyfriend.getMidpoint().y + boyfriend.cameraPosition[1] - 100);
-		FlxG.camera.scroll.set();
-		FlxG.camera.target = null;
-		FlxG.camera.follow(camFollow, true, 0);
+		FlxG.camera.followLerp = 0;
 
 		if (!startedFakeout)
 		{
+			camFollow = new FlxObject(boyfriend.getMidpoint().x - boyfriend.cameraPosition[0] - 100, boyfriend.getMidpoint().y + boyfriend.cameraPosition[1] - 100);
+			FlxG.camera.scroll.set();
+			FlxG.camera.target = null;
+			FlxG.camera.follow(camFollow, true, 0);
+
 			fuckassVOID = new FlxSprite(0, 0).makeGraphic(5000, 5000, 0xff000000);
 			fuckassVOID.screenCenter();
 			add(fuckassVOID);
