@@ -46,7 +46,7 @@
 				-2
 			],
 			"indices": [],
-			"fps": 24,
+			"fps": 12,
 			"flipX": false,
 			"flipY": false,
 			"anim": "singRIGHT",
@@ -59,7 +59,7 @@
 				0
 			],
 			"indices": [],
-			"fps": 24,
+			"fps": 12,
 			"flipX": false,
 			"flipY": false,
 			"anim": "singUP",
