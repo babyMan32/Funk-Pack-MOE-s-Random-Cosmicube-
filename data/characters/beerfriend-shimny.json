@@ -1,0 +1,95 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "BF idle dance instância 1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-50,
+				-52
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Down instância 1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-15,
+				30
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Up instância 1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"offsets": [
+				7,
+				-5
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Right instância 1"
+		},
+		{
+			"offsets": [
+				-71,
+				-7
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Left instância 1"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/gabbie/ShinyBeer",
+	"position": [
+		10,
+		350
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": "beerfriend_dead",
+	"flags": {},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "BeerShiny",
+	"afterimages": true,
+	"gameover_character": "beerfriend-death",
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -13520687,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

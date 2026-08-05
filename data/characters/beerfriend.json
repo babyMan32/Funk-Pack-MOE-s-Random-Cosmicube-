@@ -127,7 +127,9 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": "beerfriend_dead",
-	"flags": null,
+	"flags": {
+		"customMonotone": "beerfriend-shimny"
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "beer",
