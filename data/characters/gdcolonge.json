@@ -122,7 +122,9 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": {},
+	"flags": {
+		"tall": true
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "gdcolonge",

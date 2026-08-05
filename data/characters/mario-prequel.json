@@ -166,6 +166,7 @@
 	"dance_every": 2,
 	"gameover_intial_sound": null,
 	"flags": {
+		"tall": true,
 		"noteSkin": "madness",
 		"botplayNoteSkin": "madness-bot"
 	},

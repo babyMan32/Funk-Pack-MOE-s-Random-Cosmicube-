@@ -92,12 +92,13 @@
 		50
 	],
 	"dance_every": 2,
+	"gameover_intial_sound": null,
 	"flags": {
+		"tall": true,
 		"variants": {
 			"dark": "chester-dark"
 		}
 	},
-	"gameover_intial_sound": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "monster",

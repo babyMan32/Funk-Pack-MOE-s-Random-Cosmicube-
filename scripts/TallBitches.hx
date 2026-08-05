@@ -1,6 +1,12 @@
+var tall = false;
+
 function onCreatePost()
 {
-	if (PlayState.SONG.stage == 'doubletrouble')
+	tall = boyfriend.getFlag('tall') ?? false;
+
+	if (!tall) return; // rip my short kings
+
+	if (PlayState.SONG.stage == 'doubletrouble' || PlayState.SONG.stage == 'polus')
 	{
 		bfOff[1] -= 100;
 	}
@@ -12,6 +18,8 @@ function onCreatePost()
 
 function onEvent(eventName, value1, value2)
 {
+	if (!tall) return; // rip my short kings
+
 	if (value1 == 'bf')
 	{
 		snapCamToPos(2250, 1000);

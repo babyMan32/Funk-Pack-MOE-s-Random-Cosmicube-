@@ -12,12 +12,12 @@
 			"flipY": false,
 			"anim": "idle",
 			"loop": false,
-			"name": "idle0"
+			"name": "BF idle dance instância 1"
 		},
 		{
 			"offsets": [
-				15,
-				-50
+				-10,
+				-52
 			],
 			"indices": [],
 			"fps": 24,
@@ -25,12 +25,12 @@
 			"flipY": false,
 			"anim": "singDOWN",
 			"loop": false,
-			"name": "down0"
+			"name": "Down instância 1"
 		},
 		{
 			"offsets": [
-				2,
-				-5
+				14,
+				-7
 			],
 			"indices": [],
 			"fps": 24,
@@ -38,11 +38,11 @@
 			"flipY": false,
 			"anim": "singLEFT",
 			"loop": false,
-			"name": "left0"
+			"name": "Left instância 1"
 		},
 		{
 			"offsets": [
-				-53,
+				-44,
 				-5
 			],
 			"indices": [],
@@ -51,12 +51,12 @@
 			"flipY": false,
 			"anim": "singRIGHT",
 			"loop": false,
-			"name": "right0"
+			"name": "Right instância 1"
 		},
 		{
 			"offsets": [
-				-55,
-				4
+				-35,
+				30
 			],
 			"indices": [],
 			"fps": 24,
@@ -64,51 +64,12 @@
 			"flipY": false,
 			"anim": "singUP",
 			"loop": false,
-			"name": "up0"
+			"name": "Up instância 1"
 		},
 		{
 			"offsets": [
-				-50,
-				4
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singUPmiss",
-			"loop": false,
-			"name": "up miss"
-		},
-		{
-			"offsets": [
-				-58,
-				-5
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singRIGHTmiss",
-			"loop": false,
-			"name": "right miss"
-		},
-		{
-			"offsets": [
-				7,
-				-6
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singLEFTmiss",
-			"loop": false,
-			"name": "left miss"
-		},
-		{
-			"offsets": [
-				13,
-				-51
+				-5,
+				0
 			],
 			"indices": [],
 			"fps": 24,
@@ -116,88 +77,62 @@
 			"flipY": false,
 			"anim": "singDOWNmiss",
 			"loop": false,
-			"name": "down miss"
+			"name": "BF NOTE DOWN MISS instância 1"
 		},
 		{
 			"offsets": [
-				-26,
-				23
+				-5,
+				0
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singUP-alt",
+			"anim": "singLEFTmiss",
 			"loop": false,
-			"name": "up alt"
+			"name": "BF NOTE LEFT MISS instância 1"
 		},
 		{
 			"offsets": [
-				-36,
-				-7
+				-5,
+				0
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singRIGHT-alt",
+			"anim": "singRIGHTmiss",
 			"loop": false,
-			"name": "right alt"
+			"name": "BF NOTE RIGHT MISS instância 1"
 		},
 		{
 			"offsets": [
-				33,
-				-5
+				-5,
+				0
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singLEFT-alt",
+			"anim": "singUPmiss",
 			"loop": false,
-			"name": "left alt"
-		},
-		{
-			"offsets": [
-				16,
-				-43
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singDOWN-alt",
-			"loop": false,
-			"name": "down alt"
-		},
-		{
-			"offsets": [
-				-25,
-				50
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "idle-alt",
-			"loop": false,
-			"name": "idle alt"
+			"name": "BF NOTE UP MISS instância 1"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/gabbie/jackOBF",
+	"image": "characters/gabbie/Beerfriend",
 	"position": [
-		0,
-		300
+		10,
+		350
 	],
 	"dance_every": 2,
-	"gameover_intial_sound": null,
+	"gameover_intial_sound": "beerfriend_dead",
 	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "bf-spg",
+	"healthicon": "beer",
 	"afterimages": true,
-	"gameover_character": null,
+	"gameover_character": "beerfriend-death",
 	"vslice_sustains": false,
 	"flip_x": true,
 	"healthbar_colour": -13520687,
