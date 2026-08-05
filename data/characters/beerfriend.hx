@@ -78,6 +78,17 @@ function opponentNoteHit(note)
 	value = constValue;
 }
 
+function onGameOverPost()
+{
+	camGame.filters = [];
+	camHUD.filters = [];
+	camOther.filters = [];
+
+	addedShaders = false;
+
+	value = constValue;
+}
+
 function goodNoteHit(note)
 {
 	if (boyfriend.curCharacter != 'beerfriend') return;
