@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Jack'O'Nene",
+	"description": "yo jackonene\n\nRequested by plusherx",
+
+	"node":
+	{
+		"parent": "jackogf",
+		"direction": "west"
+	}
+}
