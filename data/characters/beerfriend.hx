@@ -3,6 +3,9 @@ import openfl.filters.ShaderFilter;
 var beer;
 var drunk;
 
+var value = 0.5;
+var constValue = value;
+
 var addedShaders = false;
 
 function onCreatePost()
@@ -64,22 +67,29 @@ function onUpdatePost(elapsed:Float):Void
 
 function opponentNoteHit(note)
 {
-	audio.pitch = 1 + (dad.curCharacter == 'beerfriend-shimny' ? FlxG.random.float(-0.5, 0.5) : 0);
-	FlxG.timeScale = 1;
+	audio.pitch = 1;
 
 	camGame.filters = [];
 	camHUD.filters = [];
 	camOther.filters = [];
 
 	addedShaders = false;
+
+	value = constValue;
 }
 
 function goodNoteHit(note)
 {
 	if (boyfriend.curCharacter != 'beerfriend') return;
 
+	if (FlxG.random.bool(5))
+	{
+		value += 0.1;
+		addedShaders = false;
+	}
+
 	FlxG.signals.postUpdate.addOnce(function() {
-		audio.pitch = 1 + FlxG.random.float(-0.5, 0.5);
+		audio.pitch = 1 + FlxG.random.float(-value, value);
 
 		shaderShit();
 	});
