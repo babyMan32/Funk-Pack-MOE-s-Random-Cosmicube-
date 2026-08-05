@@ -64,7 +64,7 @@
 	"image": "characters/gabbie/jackonerd",
 	"position": [
 		0,
-		0
+		-10
 	],
 	"dance_every": 1,
 	"gameover_intial_sound": null,
