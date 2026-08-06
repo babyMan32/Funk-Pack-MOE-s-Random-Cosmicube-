@@ -77,7 +77,6 @@
 	"gameover_intial_sound": "beerfriend_dead",
 	"flags": {
 		"winningIcon": true,
-		"healthBarColor0": -13520687,
 		"healthBarColor1": "0x67009b",
 		"healthBarColor2": "0xFFFF00"
 	},
