@@ -1,0 +1,165 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "BF idle dance"
+		},
+		{
+			"offsets": [
+				14,
+				-7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "BF NOTE LEFT0"
+		},
+		{
+			"offsets": [
+				48,
+				-50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "BF NOTE DOWN0"
+		},
+		{
+			"offsets": [
+				-23,
+				15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "BF NOTE UP0"
+		},
+		{
+			"offsets": [
+				-49,
+				-6
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "BF NOTE RIGHT0"
+		},
+		{
+			"offsets": [
+				20,
+				18
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "BF NOTE LEFT MISS"
+		},
+		{
+			"offsets": [
+				50,
+				-21
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "BF NOTE DOWN MISS"
+		},
+		{
+			"offsets": [
+				-45,
+				22
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "BF NOTE RIGHT MISS"
+		},
+		{
+			"loop": true,
+			"flipY": false,
+			"offsets": [
+				-1,
+				1
+			],
+			"anim": "scared",
+			"fps": 24,
+			"name": "BF idle shaking",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"offsets": [
+				0,
+				5
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "hey",
+			"loop": false,
+			"name": "BF HEY!!"
+		},
+		{
+			"offsets": [
+				-3,
+				15
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "BF NOTE UP MISS"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/minus/BOYFRIEND",
+	"position": [
+		0,
+		350
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"runner": true,
+		"variants": {
+			"retro": "bf",
+			"dark": "whitebf-dialogue",
+			"falling": "bf-fall-dialogue",
+			"defeat": "bf-defeat-normal-dialogue"
+		}
+	},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -13520687,
+	"camera_position": [
+		100,
+		-40
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}
