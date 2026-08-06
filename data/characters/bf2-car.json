@@ -1,0 +1,275 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"flipX": false,
+			"indices": [],
+			"name": "Hey"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"flipX": false,
+			"indices": [],
+			"name": "Left"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "Left Miss"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"flipX": false,
+			"indices": [],
+			"name": "Down"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"flipX": false,
+			"indices": [],
+			"name": "Down Miss"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"flipX": false,
+			"indices": [],
+			"name": "Up"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"flipX": false,
+			"indices": [],
+			"name": "Right"
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Idle",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Right Miss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "Up Miss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				22,
+				23,
+				24,
+				25
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "hey-loop",
+			"loop": true,
+			"name": "Hey"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				10,
+				11,
+				12,
+				13
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle-loop",
+			"loop": true,
+			"name": "Idle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				26,
+				27,
+				28,
+				29
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN-loop",
+			"loop": true,
+			"name": "Down"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT-loop",
+			"loop": true,
+			"name": "Left"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				58,
+				59,
+				60,
+				61
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT-loop",
+			"loop": true,
+			"name": "Right"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				11,
+				12,
+				13,
+				14
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP-loop",
+			"loop": true,
+			"name": "Up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bf2/bf2-car",
+	"position": [
+		-10,
+		280
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"runner": true,
+		"variants": {
+			"dark": "boyfriend-dark",
+			"pixel": "boyfriend-pixel",
+			"falling": "boyfriend-fall"
+		}
+	},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf2",
+	"afterimages": true,
+	"gameover_character": "boyfriend-dead",
+	"vslice_sustains": true,
+	"flip_x": true,
+	"healthbar_colour": -8826400,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

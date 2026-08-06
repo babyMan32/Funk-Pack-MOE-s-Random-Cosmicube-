@@ -159,7 +159,7 @@
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/bf/bf",
+	"image": "characters/bf2/bf2",
 	"position": [
 		-10,
 		280
@@ -168,20 +168,18 @@
 	"gameover_intial_sound": null,
 	"flags": {
 		"variants": {
-			"pixel": "boyfriend-pixel",
-			"dark": "boyfriend-dark",
-			"falling": "boyfriend-fall"
-		},
-		"runner": true
+			"dark": "bf2-dark",
+			"windy": "bf2-car"
+		}
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "bf",
+	"healthicon": "bf2",
 	"afterimages": true,
 	"gameover_character": "boyfriend-dead",
 	"vslice_sustains": true,
 	"flip_x": true,
-	"healthbar_colour": -13520687,
+	"healthbar_colour": -8826400,
 	"camera_position": [
 		0,
 		0

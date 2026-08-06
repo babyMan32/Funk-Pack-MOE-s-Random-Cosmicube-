@@ -44,7 +44,7 @@ function handleNode(node)
 		if (node.unlocked) // if its unlocked we add its icon
 		{
 			var icon = new FlxSprite().loadGraphic(Paths.image('icons/icon-' + charInfo.healthicon));
-			icon.frames = FlxTileFrames.fromGraphic(icon.graphic, FlxPoint.get(icon.width / 2, icon.height)); // we split the icon in half depending on the width
+			icon.frames = FlxTileFrames.fromGraphic(icon.graphic, FlxPoint.get((icon.width < 450 ? icon.width / 2 : icon.width / 3), icon.height)); // we split the icon depending on the width
 			icon.active = false; node.add(icon);
 			icon.setGraphicSize(140);
 			icon.updateHitbox();

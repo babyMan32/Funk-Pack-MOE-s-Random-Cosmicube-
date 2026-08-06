@@ -29,43 +29,20 @@ function onCreatePost()
 	}
 }
 
-function onUpdatePost(elapsed:Float):Void
+function opponentNoteHit(note)
 {
-	if (boyfriend.curCharacter != 'beerfriend') return;
+	audio.pitch = 1;
 
-	if (health >= 1.6)
-	{
-		playHUD.healthBar.setColors((dad.curCharacter == 'beerfriend-shimny' ? 0x67009b : null), FlxColor.WHITE);
-		playHUD.iconP1.animation.curAnim.curFrame = 2;
+	camGame.filters = [];
+	camHUD.filters = [];
+	camOther.filters = [];
 
-		if (dad.curCharacter == 'beerfriend-shimny')
-		{
-			playHUD.iconP2.animation.curAnim.curFrame = 1;
-		}
-	}
-	else if (health < 1.6 && health > 0.4)
-	{
-		playHUD.healthBar.setColors(null, boyfriend.healthColour);
-		playHUD.iconP1.animation.curAnim.curFrame = 0;
+	addedShaders = false;
 
-		if (dad.curCharacter == 'beerfriend-shimny')
-		{
-			playHUD.iconP2.animation.curAnim.curFrame = 0;
-		}
-	}
-	else
-	{
-		playHUD.healthBar.setColors((dad.curCharacter == 'beerfriend-shimny' ? FlxColor.PURPLE : null), 0x701e4d);
-		playHUD.iconP1.animation.curAnim.curFrame = 1;
-
-		if (dad.curCharacter == 'beerfriend-shimny')
-		{
-			playHUD.iconP2.animation.curAnim.curFrame = 2;
-		}
-	}
+	value = constValue;
 }
 
-function opponentNoteHit(note)
+function extraNoteHit(note)
 {
 	audio.pitch = 1;
 
@@ -93,17 +70,17 @@ function goodNoteHit(note)
 {
 	if (boyfriend.curCharacter != 'beerfriend') return;
 
-	if (FlxG.random.bool(5))
-	{
-		value += 0.1;
-		addedShaders = false;
-	}
+	// if (FlxG.random.bool(5))
+	// {
+	// 	value += 0.1;
+	// 	addedShaders = false;
+	// }
 
-	FlxG.signals.postUpdate.addOnce(function() {
-		audio.pitch = 1 + FlxG.random.float(-value, value);
+	// FlxG.signals.postUpdate.addOnce(function() {
+	// 	audio.pitch = 1 + FlxG.random.float(-value, value);
 
-		shaderShit();
-	});
+	// 	shaderShit();
+	// });
 }
 
 function shaderShit()

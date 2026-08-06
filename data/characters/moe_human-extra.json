@@ -76,6 +76,7 @@
 	"dance_every": 2,
 	"gameover_intial_sound": null,
 	"flags": {
+		"winningIcon": true,
 		"offsetX": 100,
 		"offsetY": -75
 	},
