@@ -1,100 +1,12 @@
-import openfl.filters.ShaderFilter;
-
-var beer;
-var drunk;
-
-var value = 0.5;
-var constValue = value;
-
-var addedShaders = false;
-
-function onCreatePost()
+function onUpdatePost(elapsed:Float):Void
 {
-	beer = newShader('lsd');
-	drunk = newShader('vhs');
-
-	if (camGame.filters == null)
+	if (FlxG.random.bool((1 / 120) * 100))
 	{
-		camGame.filters = [];
+		boyfriend.stunned = true;
 	}
 
-	if (camHUD.filters == null)
+	if (FlxG.random.bool((1 / 30) * 100))
 	{
-		camHUD.filters = [];
+		boyfriend.stunned = false;
 	}
-
-	if (camOther.filters == null)
-	{
-		camOther.filters = [];
-	}
-}
-
-function opponentNoteHit(note)
-{
-	audio.pitch = 1;
-
-	camGame.filters = [];
-	camHUD.filters = [];
-	camOther.filters = [];
-
-	addedShaders = false;
-
-	value = constValue;
-}
-
-function extraNoteHit(note)
-{
-	audio.pitch = 1;
-
-	camGame.filters = [];
-	camHUD.filters = [];
-	camOther.filters = [];
-
-	addedShaders = false;
-
-	value = constValue;
-}
-
-function onGameOverPost()
-{
-	camGame.filters = [];
-	camHUD.filters = [];
-	camOther.filters = [];
-
-	addedShaders = false;
-
-	value = constValue;
-}
-
-function goodNoteHit(note)
-{
-	if (boyfriend.curCharacter != 'beerfriend') return;
-
-	// if (FlxG.random.bool(5))
-	// {
-	// 	value += 0.1;
-	// 	addedShaders = false;
-	// }
-
-	// FlxG.signals.postUpdate.addOnce(function() {
-	// 	audio.pitch = 1 + FlxG.random.float(-value, value);
-
-	// 	shaderShit();
-	// });
-}
-
-function shaderShit()
-{
-	if (addedShaders) return;
-
-	addedShaders = true;
-
-	camGame.filters.push(new ShaderFilter(beer));
-	camGame.filters.push(new ShaderFilter(drunk));
-
-	camHUD.filters.push(new ShaderFilter(beer));
-	camHUD.filters.push(new ShaderFilter(drunk));
-
-	camOther.filters.push(new ShaderFilter(beer));
-	camOther.filters.push(new ShaderFilter(drunk));
 }
