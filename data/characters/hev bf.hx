@@ -32,7 +32,7 @@ function onTaunt()
 
 	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'hev bf' && allow_taunt && allow_transition && boyfriend.canTaunt)
 	{
-		boyfriend.playAnim(coolAnims ? 'heycool' : (beatboxAnims ? 'boo' : (FlxG.random.bool(50) ? 'haha' : 'heynormal')));
+		boyfriend.playAnim(coolAnims ? 'heycool' : (beatboxAnims ? 'boo' : (FlxG.random.bool() ? 'haha' : 'heynormal')));
 
 		boyfriend.specialAnim = boyfriend.holding = true;
 
