@@ -16,7 +16,7 @@ function onLoad()
 {
 	doWeLegs = (ClientPrefs.bfSkin == 'boyfriend' && PlayState.SONG.stage == 'danger');
 
-	getTrolled = FlxG.random.bool((1 / 1) * 100);
+	getTrolled = FlxG.random.bool((1 / 4096) * 100);
 
 	if (!doWeLegs) return;
 
@@ -179,6 +179,8 @@ function onPause()
 
 function onGameOver()
 {
+	if (boyfriend.curCharacter != 'boyfriend') return;
+
 	if (getTrolled)
 	{
 		game.persistentUpdate = false;
