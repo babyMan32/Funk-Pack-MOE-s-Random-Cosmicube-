@@ -3,47 +3,67 @@
 	"animations": [
 		{
 			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
 			"anim": "idle",
 			"fps": 24,
-			"name": "BF idle dance instância 1",
-			"indices": [],
-			"flipX": false
+			"name": "BF idle dance",
+			"indices": []
 		},
 		{
 			"loop": false,
-			"flipY": false,
 			"offsets": [
-				-50,
-				-52
+				-17,
+				-51
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "Down instância 1",
-			"indices": [],
-			"flipX": false
+			"name": "BF NOTE DOWN0",
+			"indices": []
 		},
 		{
 			"loop": false,
-			"flipY": false,
 			"offsets": [
-				-15,
-				30
+				7,
+				27
 			],
 			"anim": "singUP",
 			"fps": 24,
-			"name": "Up instância 1",
-			"indices": [],
-			"flipX": false
+			"name": "BF NOTE UP0",
+			"indices": []
 		},
 		{
 			"offsets": [
-				7,
-				-5
+				35,
+				25
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "cheer",
+			"flipX": false,
+			"indices": [],
+			"name": "Cheer"
+		},
+		{
+			"offsets": [
+				-5,
+				5
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "hey",
+			"loop": false,
+			"name": "BF HEY!!"
+		},
+		{
+			"offsets": [
+				38,
+				-6
 			],
 			"indices": [],
 			"fps": 24,
@@ -51,11 +71,11 @@
 			"flipY": false,
 			"anim": "singLEFT",
 			"loop": false,
-			"name": "Right instância 1"
+			"name": "BF NOTE RIGHT0"
 		},
 		{
 			"offsets": [
-				-71,
+				-37,
 				-7
 			],
 			"indices": [],
@@ -64,34 +84,35 @@
 			"flipY": false,
 			"anim": "singRIGHT",
 			"loop": false,
-			"name": "Left instância 1"
+			"name": "BF NOTE LEFT0"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/gabbie/ShinyBeer",
+	"image": "characters/fem/galfriend/BOYFRIEND, characters/fem/galfriend/BFCheer",
 	"position": [
-		10,
+		0,
 		350
 	],
 	"dance_every": 2,
-	"gameover_intial_sound": "beerfriend_dead",
+	"gameover_intial_sound": null,
 	"flags": {
-		"winningIcon": true,
-		"customColors": true,
-		"healthBarColor1": "0x67009b",
-		"healthBarColor2": "0xFFFF00"
+		"variants": {
+			"pixel": "galfriend-pixel",
+			"dark": "galfriend-dark",
+			"weird": "galfriend-weird"
+		}
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "BeerShiny",
+	"healthicon": "fem_bf",
 	"afterimages": true,
-	"gameover_character": "beerfriend-death",
-	"vslice_sustains": false,
-	"flip_x": false,
+	"gameover_character": "galfriend-dead",
+	"vslice_sustains": true,
+	"flip_x": true,
 	"healthbar_colour": -13520687,
 	"camera_position": [
-		0,
-		0
+		100,
+		-40
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 8,

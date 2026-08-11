@@ -43,8 +43,15 @@ function onUpdatePost(elapsed:Float):Void
 		}
 	}
 
-	colorP = boyfriend.getFlag('healthBarColor' + playHUD.iconP1.animation.curAnim.curFrame) ?? boyfriend.healthColour;
-	colorO = dad.getFlag('healthBarColor' + playHUD.iconP2.animation.curAnim.curFrame) ?? dad.healthColour;
-
-	playHUD.healthBar.setColors(Std.parseInt(colorO), Std.parseInt(colorP));
+	if ((boyfriend.getFlag('customColors') ?? false) == true)
+	{
+		colorP = boyfriend.getFlag('healthBarColor' + playHUD.iconP1.animation.curAnim.curFrame) ?? boyfriend.healthColour;
+		playHUD.healthBar.setColors(null, Std.parseInt(colorP));
+	}
+	
+	if ((dad.getFlag('customColors') ?? false) == true)
+	{
+		colorO = dad.getFlag('healthBarColor' + playHUD.iconP2.animation.curAnim.curFrame) ?? dad.healthColour;
+		playHUD.healthBar.setColors(Std.parseInt(colorO), null);
+	}
 }

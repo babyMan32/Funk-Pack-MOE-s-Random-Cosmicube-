@@ -12,12 +12,12 @@
 			"flipY": false,
 			"anim": "idle",
 			"loop": false,
-			"name": "BF idle dance instância 1"
+			"name": "i"
 		},
 		{
 			"offsets": [
 				-10,
-				-52
+				-70
 			],
 			"indices": [],
 			"fps": 24,
@@ -25,12 +25,12 @@
 			"flipY": false,
 			"anim": "singDOWN",
 			"loop": false,
-			"name": "Down instância 1"
+			"name": "d"
 		},
 		{
 			"offsets": [
-				14,
-				-7
+				236,
+				-35
 			],
 			"indices": [],
 			"fps": 24,
@@ -38,12 +38,12 @@
 			"flipY": false,
 			"anim": "singLEFT",
 			"loop": false,
-			"name": "Left instância 1"
+			"name": "l"
 		},
 		{
 			"offsets": [
-				-44,
-				-5
+				-160,
+				0
 			],
 			"indices": [],
 			"fps": 24,
@@ -51,7 +51,7 @@
 			"flipY": false,
 			"anim": "singRIGHT",
 			"loop": false,
-			"name": "Right instância 1"
+			"name": "r"
 		},
 		{
 			"offsets": [
@@ -64,51 +64,12 @@
 			"flipY": false,
 			"anim": "singUP",
 			"loop": false,
-			"name": "Up instância 1"
+			"name": "u"
 		},
 		{
 			"offsets": [
-				-5,
-				0
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singDOWNmiss",
-			"loop": false,
-			"name": "BF NOTE DOWN MISS instância 1"
-		},
-		{
-			"offsets": [
-				-5,
-				0
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singLEFTmiss",
-			"loop": false,
-			"name": "BF NOTE LEFT MISS instância 1"
-		},
-		{
-			"offsets": [
-				-5,
-				0
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singRIGHTmiss",
-			"loop": false,
-			"name": "BF NOTE RIGHT MISS instância 1"
-		},
-		{
-			"offsets": [
-				-5,
-				0
+				-39,
+				34
 			],
 			"indices": [],
 			"fps": 24,
@@ -116,35 +77,68 @@
 			"flipY": false,
 			"anim": "singUPmiss",
 			"loop": false,
-			"name": "BF NOTE UP MISS instância 1"
+			"name": "missu"
+		},
+		{
+			"offsets": [
+				-156,
+				7
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "missr"
+		},
+		{
+			"offsets": [
+				89,
+				-43
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "missl"
+		},
+		{
+			"offsets": [
+				-10,
+				-76
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "missd"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/gabbie/Beerfriend",
+	"image": "characters/wii/PICO_WII_assets_V6",
 	"position": [
-		10,
-		350
+		-50,
+		280
 	],
 	"dance_every": 2,
-	"gameover_intial_sound": "beerfriend_dead",
-	"flags": {
-		"customMonotone": "beerfriend-shimny",
-		"winningIcon": true,
-		"customColors": true,
-		"healthBarColor1": "0x701e4d",
-		"healthBarColor2": -1
-	},
+	"gameover_intial_sound": "death/pico",
+	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "beer",
+	"healthicon": "pico",
 	"afterimages": true,
-	"gameover_character": "beerfriend-death",
+	"gameover_character": "piico_dead",
 	"vslice_sustains": false,
 	"flip_x": true,
-	"healthbar_colour": -13520687,
+	"healthbar_colour": -4728747,
 	"camera_position": [
-		0,
-		0
+		-100,
+		100
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 8,

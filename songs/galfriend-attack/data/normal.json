@@ -1,0 +1,3744 @@
+{
+	"song": {
+		"player1": "beffy",
+		"notes": [
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [
+					[
+						202.702702702703,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						304.054054054054,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						405.405405405405,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						608.108108108108,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						810.810810810811,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						861.486486486486,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						1013.51351351351,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						1114.86486486486,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						1216.21621621622,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						1418.91891891892,
+						2,
+						0,
+						"Dad Sing",
+						true
+					]
+				],
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": false,
+				"changeBPM": false,
+				"bpm": 100
+			},
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [
+					[
+						1824.32432432432,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						1925.67567567568,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						2027.02702702703,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						2229.72972972973,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						2432.43243243243,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						2483.10810810811,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						2635.13513513513,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						2736.48648648649,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						2837.83783783784,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						3040.54054054054,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						3141.89189189189,
+						3,
+						0,
+						"Opponent Two",
+						true
+					]
+				],
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": false,
+				"changeBPM": false,
+				"bpm": 100
+			},
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [
+					[
+						3243.24324324324,
+						2,
+						304.054054054054,
+						"Opponent Two",
+						true
+					],
+					[
+						3445.94594594595,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						3547.2972972973,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						3648.64864864865,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						3851.35135135135,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						4054.05405405405,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						4104.72972972973,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						4256.75675675676,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						4358.10810810811,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						4459.45945945946,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						4662.16216216216,
+						3,
+						0,
+						"",
+						true
+					]
+				],
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 148
+			},
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [
+					[
+						5067.56756756757,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						5168.91891891892,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						5270.27027027027,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						5472.97297297297,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						5675.67567567568,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						5878.37837837838,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						5979.72972972973,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						6081.08108108108,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						6283.78378378378,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						6385.13513513513,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					]
+				],
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 148
+			},
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [
+					[
+						6486.48648648649,
+						0,
+						304.054054054054,
+						"Kaity Sing",
+						true
+					],
+					[
+						6689.18918918919,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						6891.89189189189,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						7094.5945945946,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						7195.94594594595,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						7297.2972972973,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						7398.64864864865,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						7500,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						7601.35135135135,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						7702.7027027027,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						7804.05405405405,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						7905.40540540541,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						8006.75675675676,
+						3,
+						0,
+						"Dad Sing",
+						true
+					]
+				],
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": false,
+				"changeBPM": false,
+				"bpm": 148
+			},
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [
+					[
+						8108.10810810811,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						8108.10810810811,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						8310.81081081081,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						8310.81081081081,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						8513.51351351351,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						8513.51351351351,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						8716.21621621622,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						8716.21621621622,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						8918.91891891892,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						8918.91891891892,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						9121.62162162162,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						9121.62162162162,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						9222.97297297297,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						9222.97297297297,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						9324.32432432433,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						9324.32432432433,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						9527.02702702703,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						9527.02702702703,
+						1,
+						0,
+						"Opponent Two",
+						true
+					]
+				],
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": false,
+				"changeBPM": false,
+				"bpm": 148
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						9729.72972972973,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						9729.72972972973,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						9932.43243243243,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						10033.7837837838,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						10135.1351351351,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						10337.8378378378,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						10439.1891891892,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						10540.5405405405,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						10641.8918918919,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						10692.5675675676,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						10743.2432432432,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						10844.5945945946,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						10945.9459459459,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						11047.2972972973,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						11047.2972972973,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						11148.6486486486,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						11148.6486486486,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						11250,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						11250,
+						0,
+						0,
+						"",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						11351.3513513514,
+						1,
+						202.702702702703,
+						"Kaity Sing",
+						true
+					],
+					[
+						11351.3513513514,
+						3,
+						202.702702702703,
+						"",
+						true
+					],
+					[
+						11655.4054054054,
+						0,
+						202.702702702703,
+						"",
+						true
+					],
+					[
+						11655.4054054054,
+						3,
+						202.702702702703,
+						"Kaity Sing",
+						true
+					],
+					[
+						11959.4594594595,
+						1,
+						202.702702702703,
+						"",
+						true
+					],
+					[
+						11959.4594594595,
+						2,
+						202.702702702703,
+						"Kaity Sing",
+						true
+					],
+					[
+						12263.5135135135,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						12263.5135135135,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						12466.2162162162,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						12466.2162162162,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						12567.5675675676,
+						1,
+						304.054054054054,
+						"Kaity Sing",
+						true
+					],
+					[
+						12567.5675675676,
+						0,
+						304.054054054054,
+						"",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						12972.972972973,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						13074.3243243243,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						13175.6756756757,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						13277.027027027,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						13378.3783783784,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						13581.0810810811,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						13682.4324324324,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						13783.7837837838,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						13986.4864864865,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						14087.8378378378,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						14189.1891891892,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						14391.8918918919,
+						1,
+						0,
+						"Dad Sing",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						14594.5945945946,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						14797.2972972973,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						15000,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						15101.3513513514,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						15202.7027027027,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						15304.0540540541,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						15354.7297297297,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						15405.4054054054,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						15506.7567567568,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						15608.1081081081,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						15709.4594594595,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						15810.8108108108,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						16013.5135135135,
+						0,
+						0,
+						"Dad Sing",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						16216.2162162162,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						16418.9189189189,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						16621.6216216216,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						16722.972972973,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						16824.3243243243,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						16925.6756756757,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						17027.027027027,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						17229.7297297297,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						17331.0810810811,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						17432.4324324324,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						17533.7837837838,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						17635.1351351351,
+						2,
+						0,
+						"Dad Sing",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						17837.8378378378,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						18040.5405405405,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						18243.2432432432,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						18445.9459459459,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						18648.6486486487,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						18851.3513513514,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						18952.7027027027,
+						0,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						19054.0540540541,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						19256.7567567568,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						19358.1081081081,
+						3,
+						0,
+						"Dad Sing",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						19459.4594594595,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						19459.4594594595,
+						0,
+						304.054054054054,
+						"Dad Sing",
+						true
+					],
+					[
+						19560.8108108108,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						19662.1621621622,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						19763.5135135135,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						19864.8648648649,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						20067.5675675676,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						20168.9189189189,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						20270.2702702703,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						20472.972972973,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						20574.3243243243,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						20675.6756756757,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						20878.3783783784,
+						0,
+						0,
+						"",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						21081.0810810811,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						21283.7837837838,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						21486.4864864865,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						21587.8378378378,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						21689.1891891892,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						21790.5405405405,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						21841.2162162162,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						21891.8918918919,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						21993.2432432432,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						22094.5945945946,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						22195.9459459459,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						22297.2972972973,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						22500,
+						2,
+						0,
+						"",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						22702.7027027027,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						22905.4054054054,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						23108.1081081081,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						23209.4594594595,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						23310.8108108108,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						23412.1621621622,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						23513.5135135135,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						23716.2162162162,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						23817.5675675676,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						23918.9189189189,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						24020.2702702703,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						24121.6216216216,
+						3,
+						0,
+						"",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						24324.3243243243,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						24527.027027027,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						24729.7297297297,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						24932.4324324324,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						25135.1351351351,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						25337.8378378378,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						25439.1891891892,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						25540.5405405405,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						25743.2432432432,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						25844.5945945946,
+						2,
+						0,
+						"",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						25945.9459459459,
+						3,
+						304.054054054054,
+						"",
+						true
+					],
+					[
+						26148.6486486487,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						26199.3243243243,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						26351.3513513514,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						26554.0540540541,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						26756.7567567568,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						26959.4594594595,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						27162.1621621622,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						27162.1621621622,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						27364.8648648649,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						27364.8648648649,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						27466.2162162162,
+						1,
+						0,
+						"Opponent Two",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						27567.5675675676,
+						0,
+						709.459459459459,
+						"Kaity Sing",
+						true
+					],
+					[
+						27567.5675675676,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						27668.9189189189,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						27770.2702702703,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						27871.6216216216,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						27972.972972973,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						28074.3243243243,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						28175.6756756757,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						28277.027027027,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						28378.3783783784,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						28581.0810810811,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						28581.0810810811,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						28783.7837837838,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						28783.7837837838,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						28986.4864864865,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						28986.4864864865,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						29087.8378378378,
+						1,
+						0,
+						"Opponent Two",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						29189.1891891892,
+						2,
+						304.054054054054,
+						"Kaity Sing",
+						true
+					],
+					[
+						29189.1891891892,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						29391.8918918919,
+						0,
+						506.756756756757,
+						"Kaity Sing",
+						true
+					],
+					[
+						29391.8918918919,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						29493.2432432432,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						29594.5945945946,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						29797.2972972973,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						29898.6486486487,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						30000,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						30202.7027027027,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						30202.7027027027,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						30253.3783783784,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						30304.0540540541,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						30405.4054054054,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						30405.4054054054,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						30608.1081081081,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						30608.1081081081,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						30709.4594594595,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						30709.4594594595,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						30810.8108108108,
+						2,
+						304.054054054054,
+						"Kaity Sing",
+						true
+					],
+					[
+						30810.8108108108,
+						0,
+						304.054054054054,
+						"Opponent Two",
+						true
+					],
+					[
+						31216.2162162162,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						31216.2162162162,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						31317.5675675676,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						31418.9189189189,
+						0,
+						304.054054054054,
+						"Kaity Sing",
+						true
+					],
+					[
+						31418.9189189189,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						31520.2702702703,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						31722.972972973,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						31824.3243243243,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						31824.3243243243,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						31925.6756756757,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						31925.6756756757,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						32027.027027027,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						32027.027027027,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						32229.7297297297,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						32229.7297297297,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						32331.0810810811,
+						0,
+						0,
+						"Opponent Two",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						32432.4324324324,
+						2,
+						709.459459459459,
+						"Opponent Two",
+						true
+					],
+					[
+						32635.1351351351,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						32685.8108108108,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						32837.8378378378,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						33040.5405405405,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						33243.2432432432,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						33445.9459459459,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						33648.6486486486,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						33648.6486486486,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						33851.3513513514,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						33851.3513513514,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						33952.7027027027,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						34054.0540540541,
+						1,
+						709.459459459459,
+						"Opponent Two",
+						true
+					],
+					[
+						34054.0540540541,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						34155.4054054054,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						34256.7567567568,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						34358.1081081081,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						34459.4594594595,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						34560.8108108108,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						34662.1621621622,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						34763.5135135135,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						34864.8648648649,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						35067.5675675676,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						35067.5675675676,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						35270.2702702703,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						35270.2702702703,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						35472.972972973,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						35472.972972973,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						35574.3243243243,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						35675.6756756757,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						35675.6756756757,
+						3,
+						304.054054054054,
+						"Opponent Two",
+						true
+					],
+					[
+						35878.3783783784,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						35878.3783783784,
+						1,
+						506.756756756757,
+						"Opponent Two",
+						true
+					],
+					[
+						35979.7297297297,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						36081.0810810811,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						36283.7837837838,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						36385.1351351351,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						36486.4864864865,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						36689.1891891892,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						36689.1891891892,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						36739.8648648649,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						36790.5405405405,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						36891.8918918919,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						36891.8918918919,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						37094.5945945946,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						37094.5945945946,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						37195.945945946,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						37195.945945946,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						37297.2972972973,
+						2,
+						304.054054054054,
+						"Kaity Sing",
+						true
+					],
+					[
+						37297.2972972973,
+						3,
+						304.054054054054,
+						"Opponent Two",
+						true
+					],
+					[
+						37702.7027027027,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						37702.7027027027,
+						2,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						37804.0540540541,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						37905.4054054054,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						37905.4054054054,
+						0,
+						304.054054054054,
+						"Opponent Two",
+						true
+					],
+					[
+						38006.7567567568,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						38209.4594594595,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						38310.8108108108,
+						3,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						38310.8108108108,
+						1,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						38412.1621621622,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						38412.1621621622,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						38513.5135135135,
+						0,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						38513.5135135135,
+						3,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						38716.2162162162,
+						1,
+						0,
+						"Opponent Two",
+						true
+					],
+					[
+						38716.2162162162,
+						2,
+						0,
+						"Kaity Sing",
+						true
+					],
+					[
+						38817.5675675676,
+						0,
+						0,
+						"Kaity Sing",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						39932.4324324324,
+						2,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						40033.7837837838,
+						1,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						40135.1351351351,
+						3,
+						0,
+						"Dad Sing",
+						true
+					],
+					[
+						40337.8378378378,
+						0,
+						0,
+						"Dad Sing",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						40540.5405405405,
+						2,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						40743.2432432432,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						40844.5945945946,
+						0,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						41047.2972972973,
+						2,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						41148.6486486486,
+						3,
+						202.702702702703,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						41554.0540540541,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						41655.4054054054,
+						2,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						41756.7567567568,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						41959.4594594595,
+						0,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						42060.8108108108,
+						3,
+						0,
+						"Dad Sing Alt",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						42364.8648648649,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						42415.5405405405,
+						2,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						42567.5675675676,
+						3,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						42770.2702702703,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						42871.6216216216,
+						0,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						43074.3243243243,
+						2,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						43175.6756756757,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						43277.027027027,
+						3,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						43378.3783783784,
+						2,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						43479.7297297297,
+						0,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						43581.0810810811,
+						3,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						43682.4324324324,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						43783.7837837838,
+						0,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						43986.4864864865,
+						2,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						44087.8378378378,
+						3,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						44290.5405405405,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						44391.8918918919,
+						2,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						44493.2432432432,
+						0,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						44543.9189189189,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						44594.5945945946,
+						3,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						44695.9459459459,
+						0,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						44797.2972972973,
+						2,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						44898.6486486487,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						45000,
+						3,
+						101.351351351351,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						45101.3513513514,
+						0,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						45202.7027027027,
+						2,
+						101.351351351351,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						45304.0540540541,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [
+					[
+						45405.4054054054,
+						0,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						45608.1081081081,
+						3,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						45810.8108108108,
+						2,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						46013.5135135135,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						46216.2162162162,
+						3,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						46317.5675675676,
+						2,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						46418.9189189189,
+						0,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						46520.2702702703,
+						3,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						46621.6216216216,
+						1,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						46722.972972973,
+						0,
+						0,
+						"Dad Sing Alt",
+						true
+					],
+					[
+						46824.3243243243,
+						2,
+						0,
+						"Dad Sing Alt",
+						true
+					]
+				],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 148,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			}
+		],
+		"player2": "bf-opponent",
+		"keys": 4,
+		"song": "Galfriend Attack",
+		"allowGFskin": true,
+		"allowPet": false,
+		"format": "nmv2",
+		"lanes": 2,
+		"speed": 2.7,
+		"events": [],
+		"gfVersion": "gf",
+		"allowBFskin": false,
+		"arrowSkins": [
+			"default",
+			"default"
+		],
+		"stage": "stage",
+		"needsVoices": true,
+		"trackSwap": false,
+		"bpm": 148
+	}
+}
