@@ -37,7 +37,6 @@ function onCreatePost()
 
 	Paths.overrideMode = pahs;
 
-	displace = boyfriend.camDisplacement;
 	deathLoop = boyfriend.gameoverLoopDeathSound;
 	deathEnd = boyfriend.gameoverConfirmDeathSound;
 }
@@ -54,9 +53,9 @@ function onUpdatePost(elapsed:Float):Void
 		FlxG.mouse.visible = false;
 		playHUD.scoreTxt.visible = false;
 
+		canFollow = false;
 		boyfriend.canTaunt = false;
 		boyfriend.gameoverLoopDeathSound = 'v3/gameOver';
-		dad.camDisplacement = boyfriend.camDisplacement = 0;
 		boyfriend.gameoverConfirmDeathSound = 'v3/gameOverEnd'; //so retro
 	}
 	else
@@ -64,12 +63,10 @@ function onUpdatePost(elapsed:Float):Void
 		watermark.visible = false;
 		FlxG.mouse.visible = true;
 		fakeScoreText.visible = false;
-		playHUD.scoreTxt.visible = true;
 
 		boyfriend.canTaunt = true;
 		boyfriend.gameoverLoopDeathSound = deathLoop;
 		boyfriend.gameoverConfirmDeathSound = deathEnd;
-		dad.camDisplacement = boyfriend.camDisplacement = displace;
 	}
 }
 
