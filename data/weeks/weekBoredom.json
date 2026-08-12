@@ -4,15 +4,15 @@
 		["Double Kill (Old)", "whiteblack-old", [98, 99, 111], "doublekill", "Rareblin", ["double-kill"], 350],
 		["Double Trouble V3", "redgreen-old", [128, 131, 40], "doubletrouble", "Rareblin", ["double-trouble"], 350]
 	],
-	
+
 	"section": "story-old-st",
 
 	"currency": "heads",
-	
+
 	"startUnlocked": true,
 	"hideStoryMode": true,
 	"hideFreeplay": false,
-	
+
 	"node": {
 		"parent": null,
 		"direction": null

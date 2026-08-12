@@ -1,17 +1,17 @@
 {
 	"songs": [
 		["Right Finger", "", [0, 0, 0], "null", "null", []],
-		["Galfriend Attack", "bf", [0, 0, 0], "null", "Biddle3, Astralynn", []]
+		["Galfriend Attack", "bf", [0, 0, 0], "boyfriend", "Biddle3, Astralynn", []]
 	],
-	
+
 	"section": "dumbshit",
 
 	"currency": "heads",
-	
+
 	"startUnlocked": true,
 	"hideStoryMode": true,
 	"hideFreeplay": false,
-	
+
 	"node": {
 		"parent": null,
 		"direction": null
