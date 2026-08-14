@@ -64,7 +64,6 @@ function onUpdatePost(elapsed:Float):Void
 	else
 	{
 		watermark.visible = false;
-		FlxG.mouse.visible = true;
 		fakeScoreText.visible = false;
 
 		boyfriend.canTaunt = true;
