@@ -40,6 +40,8 @@ function onCreatePost()
 	deathLoop = boyfriend.gameoverLoopDeathSound;
 	deathEnd = boyfriend.gameoverConfirmDeathSound;
 
+	if (!init_kade_hud) return;
+
 	modManager.setValue("transformX", -50, 0);
 	modManager.setValue("transformX", -50, 1);
 }
