@@ -97,6 +97,8 @@ function onMoveCamera(focus) //set anim back to idle to replicate that weird bug
 
 function onKeyPress(k:Int):Void
 {
+	if (!init_kade_hud) return;
+
 	for (field in playFields.members)
 	{
 		if (!field.canInput()) return;
