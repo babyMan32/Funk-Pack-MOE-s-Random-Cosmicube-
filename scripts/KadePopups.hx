@@ -58,7 +58,8 @@ function kadeComboPopup()
 
 	var holySmackerel = new FlxSprite(550, 150).loadGraphic(Paths.image('ui/v3/$rating_to_spawn', null, null, PathsTestMode.LOOSE));
 	holySmackerel.scale.set(0.7, 0.7);
-	insert(10000, holySmackerel);
+	playHUD.insert(10000, holySmackerel);
+	holySmackerel.y += 50;
 
 	holySmackerel.acceleration.y = 550;
 
@@ -93,7 +94,8 @@ function kadeNumbersPopup()
 	}
 
 	var ratingNums = new FlxSpriteGroup();
-	insert(11000, ratingNums);
+	playHUD.insert(11000, ratingNums);
+	ratingNums.y += 50;
 
 	var unos = new FlxSprite(660, 250).loadGraphic(Paths.image('ui/v3/num$currentNumberOnes', null, null, PathsTestMode.LOOSE));
 	unos.scale.set(0.7, 0.7);

@@ -20,7 +20,7 @@ function onCreatePost()
 	Paths.overrideMode = null;
 
 	watermark = new FlxText(0, 0, 0, PlayState.SONG.song + " - Normal | KE 1.6");
-	watermark.setFormat(Paths.font("vcr.ttf"), 14, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+	watermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, 0, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 	watermark.visible = !ClientPrefs.hideHud;
 	watermark.x += 5;
 	watermark.y = FlxG.height - 20;
@@ -39,6 +39,9 @@ function onCreatePost()
 
 	deathLoop = boyfriend.gameoverLoopDeathSound;
 	deathEnd = boyfriend.gameoverConfirmDeathSound;
+
+	modManager.setValue("transformX", -50, 0);
+	modManager.setValue("transformX", -50, 1);
 }
 
 function onUpdatePost(elapsed:Float):Void
@@ -90,6 +93,23 @@ function onMoveCamera(focus) //set anim back to idle to replicate that weird bug
 
 		camMovedToPlay = false;
 		camMovedToOpp = true;
+	}
+}
+
+function onKeyPress(k:Int):Void
+{
+	for (field in playFields.members)
+	{
+		if (!field.canInput()) return;
+
+		final leStroom = field.members[k];
+
+		leStroom.animation.onFinish.add((animName) -> {
+			if (animName == 'pressed')
+			{
+				leStroom.animation.play('pressed', true);
+			}
+		});
 	}
 }
 

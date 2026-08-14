@@ -126,7 +126,10 @@
 		"defeatRetro": "driverbf",
 		"customMonotone": "TRSBF-opp",
 		"noteSkin": "railway_re-fired",
-		"refiredUpSkin": true
+		"refiredUpSkin": true,
+		"variants": {
+			"flipped": "TRSBF-flip"
+		}
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": "railway/void_retry",
