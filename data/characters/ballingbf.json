@@ -130,7 +130,7 @@
 	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "bf",
+	"healthicon": "bf-spg",
 	"afterimages": true,
 	"gameover_character": null,
 	"vslice_sustains": false,

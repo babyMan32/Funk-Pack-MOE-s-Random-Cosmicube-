@@ -2,14 +2,61 @@ using StringTools;
 
 var allow_taunt = true;
 
+var songForcesAnims = false;
+
 var animSuffixVariable:Array = ["", "-alt", "-angry", "-angryAlt", "-beatbox", "-blush", "-fresh", "-xmas"];
 var animSuffixInt:Int = 0;
 
+function onCreatePost()
+{
+	if (PlayState.SONG.song == 'Double Kill (SUSKILL)')
+	{
+		songForcesAnims = true;
+
+		boyfriend.animSuffix = '-angry';
+
+		FlxG.signals.postUpdate.addOnce(function() {
+			yellowShield.x += 70;
+		});
+	}
+}
+
+function onEvent(eventName, value1, value2)
+{
+	switch (eventName)
+	{
+		case 'Legacy':
+			if (value1 == 'Switch State')
+			{
+				if (boyfriend.curCharacter == 'animania-bf')
+				{
+					switch (value2)
+					{
+						case 'base':
+							boyfriend.animSuffix = '';
+
+						case 'erm':
+							boyfriend.animSuffix = '-fresh';
+
+						case 'annoyed', 'nervous':
+							boyfriend.animSuffix = '-angry';
+
+						case 'magicrainbow', 'scared':
+							boyfriend.animSuffix = '-angryAlt';
+					}
+				}
+			}
+	}
+}
+
 function onUpdate(elapsed:Float):Void
 {
-	animSwap();
+	if (!songForcesAnims)
+	{
+		animSwap();
 
-	animSwapManual();
+		animSwapManual();
+	}
 
 	if (boyfriend.animSuffix.contains('angry') && !boyfriend.idleSuffix.contains('angry'))
 	{
@@ -24,6 +71,12 @@ function onUpdate(elapsed:Float):Void
 			boyfriend.playAnim('idle-angry', true);
 			boyfriend.animation.curAnim.curFrame = lastFrame;
 		}
+		else if (boyfriend.getAnimName().contains('sing'))
+		{
+			lastFrame = boyfriend.animation.curAnim.curFrame;
+			boyfriend.playAnim(boyfriend.getAnimName() + '-angry', true);
+			boyfriend.animation.curAnim.curFrame = lastFrame;
+		}
 	}
 	else if (!boyfriend.animSuffix.contains('angry') && boyfriend.idleSuffix.contains('angry'))
 	{
@@ -36,6 +89,14 @@ function onUpdate(elapsed:Float):Void
 		{
 			lastFrame = boyfriend.animation.curAnim.curFrame;
 			boyfriend.playAnim('idle', true);
+			boyfriend.animation.curAnim.curFrame = lastFrame;
+		}
+		else if (boyfriend.getAnimName().contains('sing'))
+		{
+			splitAnimName = boyfriend.getAnimName().split("-");
+
+			lastFrame = boyfriend.animation.curAnim.curFrame;
+			boyfriend.playAnim(splitAnimName[0], true);
 			boyfriend.animation.curAnim.curFrame = lastFrame;
 		}
 	}

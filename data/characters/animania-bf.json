@@ -2,706 +2,719 @@
 	"pausePortrait": "",
 	"animations": [
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "idle",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "idle"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "down",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "down"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "left",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "left"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "right",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "right"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "miss up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "miss right",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss right"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "miss left",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss left"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "miss down",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss down"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN-alt",
-			"fps": 24,
-			"name": "alt down",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "alt down"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT-alt",
-			"fps": 24,
-			"name": "alt left",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "alt left"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT-alt",
-			"fps": 24,
-			"name": "alt right",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "alt right"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP-alt",
-			"fps": 24,
-			"name": "alt up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "alt up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUPmiss-alt",
-			"fps": 24,
-			"name": "miss alt up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss alt up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHTmiss-alt",
-			"fps": 24,
-			"name": "miss alt right",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss alt right"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFTmiss-alt",
-			"fps": 24,
-			"name": "miss alt left",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss alt left"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWNmiss-alt",
-			"fps": 24,
-			"name": "miss alt down",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss alt down"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN-fresh",
-			"fps": 24,
-			"name": "fresh down",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "fresh down"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT-fresh",
-			"fps": 24,
-			"name": "fresh left",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "fresh left"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT-fresh",
-			"fps": 24,
-			"name": "fresh right",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "fresh right"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP-fresh",
-			"fps": 24,
-			"name": "fresh up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "fresh up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUPmiss-fresh",
-			"fps": 24,
-			"name": "miss fresh up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss fresh up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHTmiss-fresh",
-			"fps": 24,
-			"name": "miss fresh right",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss fresh right"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFTmiss-fresh",
-			"fps": 24,
-			"name": "miss fresh left",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss fresh left"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWNmiss-fresh",
-			"fps": 24,
-			"name": "miss fresh down",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss fresh down"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN-beatbox",
-			"fps": 24,
-			"name": "beatbox down",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "beatbox down"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT-beatbox",
-			"fps": 24,
-			"name": "beatbox left",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "beatbox left"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT-beatbox",
-			"fps": 24,
-			"name": "beatbox right",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "beatbox right"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP-beatbox",
-			"fps": 24,
-			"name": "beatbox up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "beatbox up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN-xmas",
-			"fps": 24,
-			"name": "xmas down",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "xmas down"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT-xmas",
-			"fps": 24,
-			"name": "xmas left",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "xmas left"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT-xmas",
-			"fps": 24,
-			"name": "xmas right",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "xmas right"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP-xmas",
-			"fps": 24,
-			"name": "xmas up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "xmas up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUPmiss-xmas",
-			"fps": 24,
-			"name": "miss xmas up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss xmas up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHTmiss-xmas",
-			"fps": 24,
-			"name": "miss xmas right",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss xmas right"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFTmiss-xmas",
-			"fps": 24,
-			"name": "miss xmas left",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss xmas left"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWNmiss-xmas",
-			"fps": 24,
-			"name": "miss xmas down",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "miss xmas down"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN-blush",
-			"fps": 24,
-			"name": "blush down",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "blush down"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT-blush",
-			"fps": 24,
-			"name": "blush left",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "blush left"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT-blush",
-			"fps": 24,
-			"name": "blush right",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "blush right"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP-blush",
-			"fps": 24,
-			"name": "blush up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "blush up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP-erect",
-			"fps": 24,
-			"name": "erect up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "erect up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN-angry",
-			"fps": 24,
-			"name": "angry down",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "angry down"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN-angryAlt",
-			"fps": 24,
-			"name": "angry alt down",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "angry alt down"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT-angry",
-			"fps": 24,
-			"name": "angry left",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "angry left"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT-angryAlt",
-			"fps": 24,
-			"name": "angry alt left",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "angry alt left"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT-angry",
-			"fps": 24,
-			"name": "angry right",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "angry right"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT-angryAlt",
-			"fps": 24,
-			"name": "angry alt right",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "angry alt right"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP-angry",
-			"fps": 24,
-			"name": "angry up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "angry up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP-angryAlt",
-			"fps": 24,
-			"name": "angry alt up",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "angry alt up"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "yo",
-			"fps": 24,
-			"name": "hey",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "hey"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "yo-alt",
-			"fps": 24,
-			"name": "alt hey",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "alt hey"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "yo-xmas",
-			"fps": 24,
-			"name": "xmas hey",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "xmas hey"
 		},
 		{
-			"loop": true,
-			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "scared",
+			"flipY": false,
+			"loop": true,
 			"fps": 24,
-			"name": "scared",
+			"anim": "scared",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "scared"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "boink",
+			"flipX": false,
+			"indices": [],
+			"name": "eggnog animation"
 		},
 		{
 			"loop": false,
@@ -710,9 +723,9 @@
 				0,
 				0
 			],
-			"anim": "boink",
+			"anim": "idle-angry",
 			"fps": 24,
-			"name": "eggnog animation",
+			"name": "angry idle",
 			"indices": [],
 			"flipX": false
 		},
@@ -725,9 +738,9 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "idle-angry",
+			"anim": "hit",
 			"loop": false,
-			"name": "angry idle"
+			"name": "dodge 2"
 		}
 	],
 	"no_antialiasing": false,
