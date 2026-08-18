@@ -219,7 +219,7 @@ function onUpdate(elapsed:Float):Void
 
 function animSwap()
 {
-	if (FlxG.keys.justPressed.SHIFT && boyfriend.curCharacter == 'bf-hoodie')
+	if (FlxG.keys.justPressed.CONTROL && boyfriend.curCharacter == 'bf-hoodie')
 	{
 		animSuffixInt = (animSuffixInt + 1) % 2;
 

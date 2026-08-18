@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend (Animania)",
+	"description": "BF from \"Friday Night Funkin' Animania!\"!\n\nRequested by matthew100716",
+
+	"node":
+	{
+		"parent": "hev bf",
+		"direction": "south"
+	}
+}
