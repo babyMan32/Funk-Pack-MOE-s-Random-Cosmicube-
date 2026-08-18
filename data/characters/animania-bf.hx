@@ -11,13 +11,33 @@ function onUpdate(elapsed:Float):Void
 
 	animSwapManual();
 
-	if (boyfriend.animSuffix.contains('angry'))
+	if (boyfriend.animSuffix.contains('angry') && !boyfriend.idleSuffix.contains('angry'))
 	{
+		var lastFrame:Int = 0;
+
 		boyfriend.idleSuffix = '-angry';
+		boyfriend.recalculateDanceIdle();
+
+		if (!boyfriend.getAnimName().contains('sing'))
+		{
+			lastFrame = boyfriend.animation.curAnim.curFrame;
+			boyfriend.playAnim('idle-angry', true);
+			boyfriend.animation.curAnim.curFrame = lastFrame;
+		}
 	}
-	else
+	else if (!boyfriend.animSuffix.contains('angry') && boyfriend.idleSuffix.contains('angry'))
 	{
+		var lastFrame:Int = 0;
+
 		boyfriend.idleSuffix = '';
+		boyfriend.recalculateDanceIdle();
+
+		if (!boyfriend.getAnimName().contains('sing'))
+		{
+			lastFrame = boyfriend.animation.curAnim.curFrame;
+			boyfriend.playAnim('idle', true);
+			boyfriend.animation.curAnim.curFrame = lastFrame;
+		}
 	}
 
 	if (inCutscene || cpuControlled) return;
