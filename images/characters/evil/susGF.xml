@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="susGF.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="leftbop0000" x="0" y="0" width="449" height="768" pivotX="105.05" pivotY="118.4" frameX="0" frameY="-10" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0001" x="0" y="0" width="449" height="768" frameX="0" frameY="-10" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0002" x="0" y="770" width="448" height="768" frameX="-2" frameY="-9" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0003" x="0" y="770" width="448" height="768" frameX="-2" frameY="-9" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0004" x="0" y="1540" width="443" height="774" frameX="-9" frameY="-4" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0005" x="0" y="1540" width="443" height="774" frameX="-9" frameY="-4" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0006" x="451" y="0" width="434" height="778" frameX="-17" frameY="0" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0007" x="451" y="0" width="434" height="778" frameX="-17" frameY="0" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0008" x="887" y="0" width="433" height="777" frameX="-18" frameY="0" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0009" x="887" y="0" width="433" height="777" frameX="-18" frameY="0" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0010" x="887" y="0" width="433" height="777" frameX="-18" frameY="0" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0011" x="887" y="0" width="433" height="777" frameX="-18" frameY="0" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0012" x="887" y="779" width="433" height="777" frameX="-18" frameY="0" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="leftbop0013" x="887" y="779" width="433" height="777" frameX="-18" frameY="0" frameWidth="452" frameHeight="778"/>
+	<SubTexture name="rightbop0000" x="445" y="2318" width="431" height="769" pivotX="94.7" pivotY="117.1" frameX="-14" frameY="-7" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0001" x="445" y="2318" width="431" height="769" frameX="-14" frameY="-7" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0002" x="878" y="2318" width="429" height="770" frameX="-13" frameY="-6" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0003" x="878" y="2318" width="429" height="770" frameX="-13" frameY="-6" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0004" x="445" y="1540" width="440" height="776" frameX="-2" frameY="0" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0005" x="445" y="1540" width="440" height="776" frameX="-2" frameY="0" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0006" x="444" y="3092" width="441" height="776" frameX="-1" frameY="0" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0007" x="444" y="3092" width="441" height="776" frameX="-1" frameY="0" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0008" x="0" y="3092" width="442" height="775" frameX="0" frameY="-1" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0009" x="0" y="3092" width="442" height="775" frameX="0" frameY="-1" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0010" x="0" y="3092" width="442" height="775" frameX="0" frameY="-1" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0011" x="0" y="3092" width="442" height="775" frameX="0" frameY="-1" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0012" x="0" y="2316" width="443" height="774" frameX="0" frameY="-2" frameWidth="445" frameHeight="776"/>
+	<SubTexture name="rightbop0013" x="0" y="2316" width="443" height="774" frameX="0" frameY="-2" frameWidth="445" frameHeight="776"/>
+</TextureAtlas>

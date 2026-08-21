@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="susGF-2.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle0000" x="868" y="693" width="431" height="695" pivotX="82.6" pivotY="410.25" frameX="-7" frameY="-4" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0001" x="868" y="693" width="431" height="695" frameX="-7" frameY="-4" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0002" x="434" y="0" width="437" height="690" frameX="0" frameY="-9" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0003" x="434" y="0" width="437" height="690" frameX="0" frameY="-9" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0004" x="873" y="0" width="436" height="691" frameX="-1" frameY="-8" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0005" x="873" y="0" width="436" height="691" frameX="-1" frameY="-8" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0006" x="434" y="692" width="432" height="695" frameX="-5" frameY="-4" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0007" x="434" y="692" width="432" height="695" frameX="-5" frameY="-4" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0008" x="0" y="0" width="432" height="698" frameX="-5" frameY="-2" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0009" x="0" y="0" width="432" height="698" frameX="-5" frameY="-2" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0010" x="1311" y="0" width="430" height="700" frameX="-7" frameY="0" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0011" x="1311" y="0" width="430" height="700" frameX="-7" frameY="0" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0012" x="1311" y="0" width="430" height="700" frameX="-7" frameY="0" frameWidth="438" frameHeight="700"/>
+	<SubTexture name="idle0013" x="1311" y="0" width="430" height="700" frameX="-7" frameY="0" frameWidth="438" frameHeight="700"/>
+</TextureAtlas>
