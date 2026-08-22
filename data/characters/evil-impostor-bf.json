@@ -1,0 +1,165 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				20,
+				-46
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-100,
+				-1
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-96,
+				3
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-4,
+				135
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				20,
+				1
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "dmiss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-100,
+				34
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "lmiss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-70,
+				48
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "rmiss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-156,
+				134
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "umiss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"offsets": [
+				-120,
+				4
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "hey",
+			"loop": false,
+			"name": "hey"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/evil/susBF",
+	"position": [
+		-100,
+		300
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"variants": {
+			"mira": "evil-impostor-bf-mira",
+			"defeat": "evil-impostor-bf-defeat"
+		}
+	},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "evilimpbf",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -4766615,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

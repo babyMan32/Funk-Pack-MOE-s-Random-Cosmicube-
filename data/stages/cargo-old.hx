@@ -105,6 +105,6 @@ function onEvent(eventName, value1, value2)
 function refreshDoubleKillIcon()
 {
 	if (hasColor) scoreTxt.color = bothSing ? hpColorDuo : (twoSing ? gf : dad).healthColour;
-	playHUD.healthBar.setColors(bothSing ? hpColorDuo : (twoSing ? gf : dad).healthColour, boyfriend.healthColour);
+	playHUD.healthBar.setColors(bothSing ? hpColorDuo : (twoSing ? gf : dad).healthColour, null);
 	playHUD.iconP2.changeIcon(bothSing ? oppIconDuo : (twoSing ? oppIconExtra : oppIconBase));
 }

@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "RGBF",
+	"description": "he ate a disco ball with glow sticks as vegetables\n\nDescription/Requested by nichoribelle, name by nickzbrk",
+
+	"node":
+	{
+		"parent": "bf2",
+		"direction": "west"
+	}
+}

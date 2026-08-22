@@ -70,15 +70,18 @@ function onAnimSwitch()
 	}
 }
 
-function goodNoteHit(note)
+function goodNoteHitPre(note)
 {
 	if (note.noteData != 0) return;
 
 	if (!coolAnims) return;
 
-	funny = FlxG.random.bool();
+	if (!note.isSustainNote)
+	{
+		funny = FlxG.random.bool();
+	}
 
 	if (!funny) return;
 
-	boyfriend.playAnim('singLEFT-alt2', true);
+	note.animSuffix = '-alt2';
 }

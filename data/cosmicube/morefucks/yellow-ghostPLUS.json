@@ -7,7 +7,7 @@
 	"description": "Why does she keep dying?! (RESTORED DLC COSMICUBE CONTENT)",
 	
 	"node": {
-		"direction": "south",
-		"parent": "sans"
+		"parent": "sans-playable",
+		"direction": "south"
 	}
 }

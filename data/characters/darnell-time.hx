@@ -5,9 +5,14 @@ function onStepHit()
 		case 'Evil Defeat Alkamix':
 			switch (curStep)
 			{
-				case 1728:
+				case 1727:
 					boyfriend.idleSuffix = '-scared';
 					boyfriend.animSuffix = '-scared';
 			}
 	}
+}
+
+function goodNoteHitPre(note)
+{
+	note.animSuffix = boyfriend.animSuffix;
 }

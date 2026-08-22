@@ -19,6 +19,38 @@ function onCreatePost()
 			yellowShield.x += 70;
 		});
 	}
+
+	switch (PlayState.SONG.stage)
+	{
+		case 'maroon':
+			changeCharacter('animania-bf-xmas', 0);
+
+		case 'boiling':
+			changeCharacter('animania-bf-xmas', 0);
+
+			boyfriend.useRenderTexture = true;
+
+			if (ClientPrefs.shaders)
+			{
+				var blackRimlightBase:ExtraDropShadowShader = new funkin.game.shaders.ExtraDropShadowShader();
+	
+				blackRimlightBase.setColorMatrix([
+					0.8,   0,   0, 0, 16,
+					-.1, 0.6, -.1, 0,  0,
+					  0,   0, 0.6, 0,  8,
+					  0,   0,   0, 1,  0
+				]);
+				blackRimlightBase.addLayer([
+					1.5, -.1, .2, 0, 64,
+					-.3, 1.2,  0, 0, 32,
+					  0,   0,  1, 0,  0,
+					  0,   0,  0, 1,  0
+				], 330, 25, .01);
+
+				bfRim = blackRimlightBase;
+				bfRim.attachedSprite = boyfriend;
+			}
+	}
 }
 
 function onEvent(eventName, value1, value2)
@@ -28,7 +60,7 @@ function onEvent(eventName, value1, value2)
 		case 'Legacy':
 			if (value1 == 'Switch State')
 			{
-				if (boyfriend.curCharacter == 'animania-bf')
+				if (boyfriend.curCharacter.contains('animania-bf'))
 				{
 					switch (value2)
 					{
@@ -101,9 +133,9 @@ function onUpdate(elapsed:Float):Void
 		}
 	}
 
-	if (inCutscene || cpuControlled) return;
+	if (inCutscene || cpuControlled || songForcesAnims) return;
 
-	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'animania-bf' && allow_taunt && boyfriend.canTaunt)
+	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter.contains('animania-bf') && allow_taunt && boyfriend.canTaunt)
 	{
 		heyAnim = 'yo' + boyfriend.animSuffix;
 
@@ -127,9 +159,24 @@ function onUpdate(elapsed:Float):Void
 	}
 }
 
+function goodNoteHitPre(note)
+{
+	if (note.noteData == 2 && boyfriend.curCharacter.contains('animania-bf'))
+	{
+		if (note.isSustainNote) return;
+
+		if (boyfriend.animSuffix == '-fresh')
+		{
+			if (!FlxG.random.bool(10)) return;
+
+			note.animSuffix = '-erect';
+		}
+	}
+}
+
 function animSwap()
 {
-	if (FlxG.keys.justPressed.CONTROL && boyfriend.curCharacter == 'animania-bf')
+	if (FlxG.keys.justPressed.CONTROL && boyfriend.curCharacter.contains('animania-bf'))
 	{
 		animSuffixInt = (animSuffixInt + 1) % 8;
 
@@ -141,7 +188,7 @@ function animSwapManual()
 {
 	if (FlxG.keys.pressed.ALT)
 	{
-		if (boyfriend.curCharacter != 'animania-bf') return if (ClientPrefs.inDevMode) trace('WHO THE HELL IS THIS');
+		if (!boyfriend.curCharacter.contains('animania-bf')) return if (ClientPrefs.inDevMode) trace('WHO THE HELL IS THIS');
 
 		if (FlxG.keys.justPressed.Z)
 		{

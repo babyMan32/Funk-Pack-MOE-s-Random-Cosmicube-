@@ -4,8 +4,8 @@ var allow_transition = false;
 var coolAnims = false;
 var beatboxAnims = false;
 
-var animSuffixVariable:Array = ["", "-alt", "-beatbox"];
-var idleSuffixVariable:Array = ["", "-alt", ""];
+var animSuffixVariable:Array = ["", "-cool", "-beatbox"];
+var idleSuffixVariable:Array = ["", "-cool", ""];
 var animSuffixInt:Int = 0;
 
 function onCreatePost()
@@ -24,6 +24,11 @@ function onUpdate(elapsed:Float):Void
 	{
 		allow_transition = true;
 	}
+}
+
+function goodNoteHitPre(note)
+{
+	note.animSuffix = boyfriend.animSuffix;
 }
 
 function onTaunt()

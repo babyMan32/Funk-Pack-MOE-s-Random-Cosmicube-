@@ -30,8 +30,7 @@ function patchStuff()
 {
 	var cosm = FlxG.state.subState; // substate
 
-	for (i in 4...8)
-		handleNode(cosm.maze.members[i]); // pass the first 4 nodes
+	for (i in 4...8) handleNode(cosm.maze.members[i]); // pass the first 4 nodes
 }
 
 // recursively patch each notes and its neighboring nodes
