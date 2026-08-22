@@ -5,6 +5,8 @@ var skinsOpp;
 var lastSkins;
 var lastBfSkin;
 var lastDadSkin;
+var lastOppSkin;
+var lastPlaySkin;
 
 function onCreatePost()
 {
@@ -44,8 +46,18 @@ function noteSkinChange()
 	botplayNoteCheck();
 	skinsOpp = dad.getFlag('noteSkin') ?? PlayState.SONG.arrowSkins[1];
 
-	triggerEventNote('Change Noteskin', skins, 0);
-	triggerEventNote('Change Noteskin', skinsOpp, 1);
+	if (skins != lastPlaySkin)
+	{
+		triggerEventNote('Change Noteskin', skins, 0);
+	}
+
+	if (skinsOpp != lastOppSkin)
+	{
+		triggerEventNote('Change Noteskin', skinsOpp, 1);
+	}
+
+	lastPlaySkin = skins;
+	lastOppSkin = skinsOpp;
 }
 
 function onUpdatePost(elapsed:Float):Void
@@ -65,6 +77,7 @@ function botplayNoteCheck()
 	if (!boyfriend.hasFlag('botplayNoteSkin')) // mainly only used for the MMV2 chars
 	{
 		skins = boyfriend.getFlag('noteSkin') ?? PlayState.SONG.arrowSkins[0];
+		lastPlaySkin = skins;
 		return;
 	}
 
@@ -74,5 +87,5 @@ function botplayNoteCheck()
 
 	triggerEventNote('Change Noteskin', skins, 0);
 
-	lastSkins = skins;
+	lastPlaySkin = lastSkins = skins;
 }

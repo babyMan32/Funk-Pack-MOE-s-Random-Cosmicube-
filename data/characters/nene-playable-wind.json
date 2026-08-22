@@ -195,7 +195,9 @@
 	"flags": {
 		"variants": {
 			"pixel": "nene-playable-pixel",
-			"dark": "nene-playable-dark"
+			"cold": "nene-playable-xmas",
+			"dark": "nene-playable-dark",
+			"retro": "nene-playable-alt"
 		}
 	},
 	"scalableOffsets": false,

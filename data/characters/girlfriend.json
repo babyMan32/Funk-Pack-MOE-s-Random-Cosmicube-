@@ -209,7 +209,11 @@
 	],
 	"dance_every": 1,
 	"gameover_intial_sound": null,
-	"flags": null,
+	"flags": {
+		"variants": {
+			"windy": "girlfriend-wind"
+		}
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "gf",

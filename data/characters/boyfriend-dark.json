@@ -147,12 +147,7 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": {
-		"variants": {
-			"dark": "bf-dark",
-			"falling": "bf-fall"
-		}
-	},
+	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "bf",

@@ -192,7 +192,8 @@
 		"variants": {
 			"dark": "galfriend-dark",
 			"pixel": "galfriend-pixel",
-			"weird": "galfriend-weird"
+			"weird": "galfriend-weird",
+			"cold": "galfriend-christmas"
 		}
 	},
 	"scalableOffsets": false,

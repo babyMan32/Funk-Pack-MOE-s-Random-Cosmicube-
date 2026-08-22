@@ -3,7 +3,7 @@ function onCreatePost()
 	switch (PlayState.SONG.stage)
 	{
 		case "danger":
-			boyfriend.x += 40;
-			boyfriend.y -= 230;
+			gf.x -= 50;
+			gf.y -= 25;
 	}
 }

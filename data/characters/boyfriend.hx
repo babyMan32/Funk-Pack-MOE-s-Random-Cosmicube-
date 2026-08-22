@@ -28,35 +28,8 @@ function onCreatePost()
 {
 	switch (PlayState.SONG.stage)
 	{
-		case "maroon":
-			changeCharacter("boyfriend-christmas", 0);
-
 		case "o2", "jads", "chef":
 			changeCharacter("boyfriend-with-girlfriend", 0);
-
-		case "boiling":
-			changeCharacter("boyfriend-christmas", 0);
-
-			if (ClientPrefs.shaders)
-			{
-				var blackRimlightBase:ExtraDropShadowShader = new funkin.game.shaders.ExtraDropShadowShader();
-	
-				blackRimlightBase.setColorMatrix([
-					0.8,   0,   0, 0, 16,
-					-.1, 0.6, -.1, 0,  0,
-					  0,   0, 0.6, 0,  8,
-					  0,   0,   0, 1,  0
-			]);
-			blackRimlightBase.addLayer([
-					1.5, -.1, .2, 0, 64,
-					-.3, 1.2,  0, 0, 32,
-					  0,   0,  1, 0,  0,
-					  0,   0,  0, 1,  0
-				], 330, 25, .01);
-
-				bfRim = blackRimlightBase;
-				bfRim.attachedSprite = boyfriend;
-			}
 	}
 
 	if (!doWeLegs) return;

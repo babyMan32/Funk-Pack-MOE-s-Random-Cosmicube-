@@ -168,6 +168,7 @@
 	"gameover_intial_sound": null,
 	"flags": {
 		"variants": {
+			"cold": "boyfriend-christmas",
 			"pixel": "boyfriend-pixel",
 			"dark": "boyfriend-dark",
 			"falling": "boyfriend-fall"

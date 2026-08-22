@@ -8,9 +8,9 @@ function onCreatePost()
 {
 	miraChar = boyfriend.getFlag('variants')?.mira ?? null;
 
-	if (miraChar != null)
+	if (miraStages.contains(PlayState.SONG.stage))
 	{
-		if (miraStages.contains(PlayState.SONG.stage))
+		if (miraChar != null)
 		{
 			changeCharacter(miraChar, 0);
 

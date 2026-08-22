@@ -3,10 +3,26 @@ function onCreatePost()
 	switch (PlayState.SONG.stage)
 	{
 		case "maroon":
-			changeCharacter("beffy-christmas", 0);
+			coldVarP = (boyfriend.getFlag('variants')?.cold ?? null);
+			coldVarG = (gf.getFlag('variants')?.cold ?? null);
+
+			if (coldVarP != null)
+			{
+				changeCharacter(coldVarP, 0);
+			}
+
+			if (coldVarG != null)
+			{
+				changeCharacter(coldVarG, 2);
+			}
 
 		case "boiling":
-			changeCharacter("beffy-christmas", 0);
+			coldVarP = (boyfriend.getFlag('variants')?.cold ?? null);
+
+			if (coldVarP != null)
+			{
+				changeCharacter(coldVarP, 0);
+			}
 
 			boyfriend.useRenderTexture = true;
 
