@@ -36,6 +36,11 @@ function onCreatePost()
 		playHUD.insert(4, bf3Icon);
 	}
 
+	if (curSong == 'Oversight 2025')
+	{
+		bf3.offset.x = 400;
+	}
+
 	bf3StageRim = shadersExtraCheck();
 
 	if (bf3StageRim == null)

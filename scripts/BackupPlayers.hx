@@ -28,6 +28,11 @@ function onCreatePost()
 	bf2Icon = new HealthIcon(bf2.healthIcon, true);
 	playHUD.insert(2, bf2Icon);
 
+	if (curSong == 'Oversight 2025')
+	{
+		bf2.offset.x = 400;
+	}
+
 	bf2StageRim = shadersCheck();
 
 	if (bf2StageRim == null)

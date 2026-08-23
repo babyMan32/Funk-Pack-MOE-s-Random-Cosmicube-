@@ -8,6 +8,6 @@
 	"node":
 	{
 		"parent": "rgbf",
-		"direction": "south"
+		"direction": "west"
 	}
 }

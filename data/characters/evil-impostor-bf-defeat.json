@@ -87,15 +87,15 @@
 		300
 	],
 	"dance_every": 2,
-	"gameover_intial_sound": null,
+	"gameover_intial_sound": "bitchslap",
 	"flags": {
 		"backlit": true
 	},
 	"scalableOffsets": false,
-	"gameover_confirm_sound": null,
+	"gameover_confirm_sound": "evil/gameOverEnd",
 	"healthicon": "evilimpbf",
 	"afterimages": true,
-	"gameover_character": null,
+	"gameover_character": "evil-impostor-bf-defeat-dead",
 	"vslice_sustains": false,
 	"flip_x": true,
 	"healthbar_colour": -4766615,
@@ -103,7 +103,7 @@
 		0,
 		0
 	],
-	"gameover_loop_sound": null,
+	"gameover_loop_sound": "evil/gameOver",
 	"sing_duration": 8,
 	"scale": 1,
 	"_editor_isPlayer": true

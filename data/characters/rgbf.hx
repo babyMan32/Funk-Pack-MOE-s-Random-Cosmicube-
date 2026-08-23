@@ -39,7 +39,7 @@ function onCreatePost()
 	}
 }
 
-function goodNoteHit(note)
+function goodNoteHitPre(note)
 {
 	if (!boyfriend.curCharacter.contains('rgbf') || note.noteType == 'Ghost Note') return;
 

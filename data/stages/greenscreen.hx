@@ -4,4 +4,12 @@ function onLoad()
 	add(bg);
 
 	camHUD.alpha = 0;
+
+	healthLoss = 0;
+}
+
+function onCreatePost()
+{
+	camSpecialThing([750, 250], [750, 250]);
+	canFollow = false;
 }
