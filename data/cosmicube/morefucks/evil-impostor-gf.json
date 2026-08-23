@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Girlfriend (Evil Impostor)",
+	"description": "evil gal\n\nRequested by nickzbrk",
+
+	"node":
+	{
+		"parent": "evil-impostor-bf",
+		"direction": "west"
+	}
+}
