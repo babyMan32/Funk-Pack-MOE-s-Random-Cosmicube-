@@ -41,12 +41,17 @@ function onCreatePost()
 
 function goodNoteHit(note)
 {
-	if (!boyfriend.curCharacter.contains('rgbf')) return;
+	if (!boyfriend.curCharacter.contains('rgbf') || note.noteType == 'Ghost Note') return;
 
 	leColour = colors[note.noteData];
 
 	playHUD.iconP1.color = leColour;
 	playHUD.healthBar.setColors(null, playHUD.iconP1.color);
+
+	if (curSong == 'Oversight 2025')
+	{
+		playHUD.scoreTxt.color = playHUD.iconP1.color;
+	}
 }
 
 function onUpdatePost(elapsed:Float):Void
@@ -57,5 +62,21 @@ function onUpdatePost(elapsed:Float):Void
 	{
 		playHUD.iconP1.color = FlxColor.WHITE;
 		playHUD.healthBar.setColors(null, playHUD.iconP1.color);
+
+		if (curSong == 'Oversight 2025')
+		{
+			playHUD.scoreTxt.color = playHUD.iconP1.color;
+		}
+	}
+}
+
+function noteMiss(note)
+{
+	playHUD.iconP1.color = 0x333333;
+	playHUD.healthBar.setColors(null, playHUD.iconP1.color);
+
+	if (curSong == 'Oversight 2025')
+	{
+		playHUD.scoreTxt.color = playHUD.iconP1.color;
 	}
 }

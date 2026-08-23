@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Paula",
+	"description": "Flavin's sister!\n\nRequested by nickzbrk",
+
+	"node":
+	{
+		"parent": "flavin",
+		"direction": "west"
+	}
+}

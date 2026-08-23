@@ -19,6 +19,46 @@ function onCreatePost()
 			yellowShield.x += 70;
 		});
 	}
+
+	wIcons = new FlxSprite(0, 0);
+	wIcons.frames = Paths.getSparrowAtlas('icons/icon-bf-amtake', null, null, PathsTestMode.LOOSE);
+	wIcons.animation.addByPrefix('state0', 'basic0', 24, false);
+	wIcons.animation.addByPrefix('state1', 'basic-to-lose', 24, false);
+	wIcons.animation.addByPrefix('state2', 'lose0', 24, false);
+	wIcons.animation.addByPrefix('state3', 'lose-to-basic', 24, false);
+	wIcons.animation.addByPrefix('state4', 'basic-to-win', 24, false);
+	wIcons.animation.addByPrefix('state5', 'win0', 24, false);
+	wIcons.animation.addByPrefix('state6', 'win-to-basic', 24, false);
+	wIcons.animation.addByPrefix('state7', 'lose-to-predeath', 24, false);
+	wIcons.animation.addByPrefix('state8', 'predeath0', 24, false);
+	wIcons.animation.addByPrefix('state9', 'predeath-to-lose', 24, false);
+	wIcons.scale.set(0.8, 0.8);
+	wIcons.animation.play('state0');
+	wIcons.updateHitbox();
+	playHUD.insert(11, wIcons);
+
+	wIcons.animation.onFinish.add((animName) -> {
+		switch (animName)
+		{
+			case 'state1':
+				wIcons.animation.play('state2');
+
+			case 'state3':
+				wIcons.animation.play('state0');
+
+			case 'state4':
+				wIcons.animation.play('state5');
+
+			case 'state6':
+				wIcons.animation.play('state0');
+
+			case 'state7':
+				wIcons.animation.play('state8');
+
+			case 'state9':
+				wIcons.animation.play('state2');
+		}
+	});
 }
 
 function onEvent(eventName, value1, value2)
@@ -57,6 +97,23 @@ function onUpdate(elapsed:Float):Void
 
 		animSwapManual();
 	}
+
+	if (boyfriend.curCharacter.contains('animania-bf'))
+	{
+		wIcons.visible = true;
+		iconP1.visible = false;
+	}
+	else
+	{
+		wIcons.visible = false;
+		iconP1.visible = true;
+	}
+
+	wIcons.x = iconP1.x;
+	wIcons.y = iconP1.y;
+	wIcons.scale.x = iconP1.scale.x * 0.8;
+	wIcons.scale.y = iconP1.scale.y * 0.8;
+	iconCheck();
 
 	if (boyfriend.animSuffix.contains('angry') && !boyfriend.idleSuffix.contains('angry'))
 	{
@@ -139,6 +196,34 @@ function goodNoteHitPre(note)
 
 			note.animSuffix = '-erect';
 		}
+	}
+}
+
+function iconCheck() // absolutely horrid code, please someone fix this
+{
+	if (health >= 1.6 && wIcons.animation.curAnim.name == 'state0')
+	{
+		wIcons.animation.play('state4', true);
+	}
+	else if (health < 1.6 && (wIcons.animation.curAnim.name == 'state4' || wIcons.animation.curAnim.name == 'state5'))
+	{
+		wIcons.animation.play('state6', true);
+	}
+	else if (health <= 0.4 && wIcons.animation.curAnim.name == 'state0')
+	{
+		wIcons.animation.play('state1', true);
+	}
+	else if (health <= 0.2 && (wIcons.animation.curAnim.name == 'state1' || wIcons.animation.curAnim.name == 'state2'))
+	{
+		wIcons.animation.play('state7', true);
+	}
+	else if (health > 0.2 && (wIcons.animation.curAnim.name == 'state7' || wIcons.animation.curAnim.name == 'state8'))
+	{
+		wIcons.animation.play('state9', true);
+	}
+	else if (health > 0.4 && (wIcons.animation.curAnim.name == 'state9' || wIcons.animation.curAnim.name == 'state2'))
+	{
+		wIcons.animation.play('state3', true);
 	}
 }
 
@@ -229,5 +314,32 @@ function animSwapManual()
 
 			if (ClientPrefs.inDevMode) trace('XMAS ANIMS ENABLES');
 		}
+	}
+}
+
+function onStepHit()
+{
+	if (curStep == 1182 && curSong == 'Magmatic')
+	{
+		boyfriend.playAnim('brt', true);
+		boyfriend.specialAnim = boyfriend.skipDance = true;
+	}
+}
+
+function onSpawnNote(note)
+{
+	if ((note.noteType == 'Hey!' || curStep >= 1170) && curSong == 'Magmatic')
+	{
+		note.noAnimation = note.noMissAnimation = true;
+	}
+}
+
+function noteMiss(note)
+{
+	if ((note.noteType == 'Hey!' || curStep >= 1181) && curSong == 'Magmatic')
+	{
+		FlxG.signals.postUpdate.addOnce(function() {
+			audio.playerVocals.volume = 1;
+		});
 	}
 }
