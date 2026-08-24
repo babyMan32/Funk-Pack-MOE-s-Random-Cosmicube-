@@ -18,15 +18,8 @@ function onUpdatePost(elapsed:Float):Void
 		}
 
 		allow_taunt = false;
-
-		if (!baddieExists || gf.skipDance) return;
-
-		if (gf.curCharacter == 'gf-gsides')
-		{
-			gf.playAnim('cheer');
-			gf.specialAnim = true;
-		}
 	}
+
 	if (boyfriend.getAnimName() != 'cheer' && boyfriend.getAnimName() != 'yo')
 	{
 		allow_taunt = true;

@@ -6,7 +6,7 @@ function onUpdatePost(elapsed:Float):Void
 
 	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'girlfriend-playable' && boyfriend.getAnimName() == 'hey' && allow_gf_taunt)
 	{
-		if (gf.curCharacter == 'boyfriend-speaker' || gf.curCharacter == 'girlfriend')
+		if (gf.curCharacter == 'girlfriend')
 		{
 			gf.playAnim('cheer');
 			gf.specialAnim = true;

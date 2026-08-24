@@ -40,14 +40,6 @@ function onTauntCalled()
 		}
 
 		allow_taunt = false;
-
-		if (!baddieExists || gf.skipDance) return;
-
-		if (gf.curCharacter == 'gf-dialogue')
-		{
-			gf.playAnim('cheer');
-			gf.specialAnim = true;
-		}
 	}
 }
 

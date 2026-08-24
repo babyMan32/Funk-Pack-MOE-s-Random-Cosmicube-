@@ -78,7 +78,7 @@ function gfTaunt()
 
 	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'boyfriend' && boyfriend.getAnimName() == 'hey' && allow_gf_taunt)
 	{
-		if (gf.curCharacter == 'girlfriend' || gf.curCharacter == 'boyfriend-speaker')
+		if (gf.curCharacter == 'boyfriend-speaker')
 		{
 			gf.playAnim('cheer');
 			gf.specialAnim = true;

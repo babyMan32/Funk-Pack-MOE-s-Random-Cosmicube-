@@ -78,6 +78,7 @@
 	"flags": {
 		"floating": true,
 		"variants": {
+			"windy": "cassandra-wind",
 			"pixel": "cassandra-pixel"
 		}
 	},

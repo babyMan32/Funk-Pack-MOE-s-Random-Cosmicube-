@@ -5,19 +5,6 @@ var floatingStages = ['ejected', 'ejectedErected'];
 
 function onCreatePost()
 {
-	switch (PlayState.SONG.stage)
-	{
-		case "ejected", "ejectedErected":
-			changeCharacter("cassandra-wind", 2);
-
-			gf.useRenderTexture = true;
-
-			gf.shader = boyfriend.shader;
-
-		case "danger":
-			changeCharacter("cassandra-wind", 2);
-	}
-
 	if (noSpeakerStages.contains(PlayState.SONG.stage))
 	{
 		platformFloat();
@@ -79,8 +66,7 @@ function onEvent(ev, v1, v2)
 
 function onUpdatePost()
 {
-	if (floatingStages.contains(PlayState.SONG.stage))
-		return FlxTween.cancelTweensOf(gf);
+	if (floatingStages.contains(PlayState.SONG.stage)) return FlxTween.cancelTweensOf(gf);
 
 	if (noSpeakerStages.contains(PlayState.SONG.stage)) return;
 
