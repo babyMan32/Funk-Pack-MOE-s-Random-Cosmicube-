@@ -1,0 +1,135 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": true,
+			"cameraOffset": [
+				0,
+				0
+			],
+			"offsets": [
+				141,
+				670
+			],
+			"anim": "idle",
+			"fps": 12,
+			"name": "Poses/Cyclops idle",
+			"indices": null
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				-30,
+				0
+			],
+			"offsets": [
+				808,
+				635
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "Poses/Cyclops Left",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				30
+			],
+			"offsets": [
+				501,
+				490
+			],
+			"anim": "singDOWN",
+			"fps": 12,
+			"name": "Poses/Cyclops Down",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				-30
+			],
+			"offsets": [
+				218,
+				874
+			],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "Poses/Cyclops Up",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				30,
+				0
+			],
+			"offsets": [
+				160,
+				740
+			],
+			"anim": "singRIGHT",
+			"fps": 12,
+			"name": "Poses/Cyclops Right",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/speed.gif/cyclops-new",
+	"position": [
+		-350,
+		-100
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"customMonotone": "bf-cyc"
+	},
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "cyclops",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -13619897,
+	"camera_position": [
+		-1150,
+		-950
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.55,
+	"_editor_isPlayer": true
+}

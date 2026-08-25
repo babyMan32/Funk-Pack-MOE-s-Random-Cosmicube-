@@ -1,0 +1,105 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"offsets": [
+				-1,
+				0
+			],
+			"cameraOffset": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": null,
+			"name": "Poses/BF Idle"
+		},
+		{
+			"offsets": [
+				18,
+				12
+			],
+			"cameraOffset": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": null,
+			"name": "BF Left"
+		},
+		{
+			"offsets": [
+				-61,
+				-71
+			],
+			"cameraOffset": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": null,
+			"name": "Poses/BF Down"
+		},
+		{
+			"offsets": [
+				47,
+				136
+			],
+			"cameraOffset": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": null,
+			"name": "Poses/BF Up"
+		},
+		{
+			"offsets": [
+				-73,
+				-23
+			],
+			"cameraOffset": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": null,
+			"name": "Poses/BF Right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/speed.gif/rem-bf",
+	"position": [
+		0,
+		200
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -13520687,
+	"camera_position": [
+		-330,
+		-190
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.8,
+	"_editor_isPlayer": false
+}

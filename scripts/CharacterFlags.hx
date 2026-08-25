@@ -17,34 +17,34 @@ function onCreatePost()
 			}
 
 		case "boiling":
-			coldVarP = (boyfriend.getFlag('variants')?.cold ?? null);
+			coldVar = (boyfriend.getFlag('variants')?.cold ?? null);
 
-			if (coldVarP != null)
+			if (coldVar != null)
 			{
-				changeCharacter(coldVarP, 0);
-			}
+				changeCharacter(coldVar, 0);
 
-			boyfriend.useRenderTexture = true;
+				boyfriend.useRenderTexture = true;
 
-			if (ClientPrefs.shaders)
-			{
-				var blackRimlightBase:ExtraDropShadowShader = new funkin.game.shaders.ExtraDropShadowShader();
+				if (ClientPrefs.shaders)
+				{
+					var blackRimlightBase:ExtraDropShadowShader = new funkin.game.shaders.ExtraDropShadowShader();
 	
-				blackRimlightBase.setColorMatrix([
-					0.8,   0,   0, 0, 16,
-					-.1, 0.6, -.1, 0,  0,
-					  0,   0, 0.6, 0,  8,
-					  0,   0,   0, 1,  0
-				]);
-				blackRimlightBase.addLayer([
-					1.5, -.1, .2, 0, 64,
-					-.3, 1.2,  0, 0, 32,
-					  0,   0,  1, 0,  0,
-					  0,   0,  0, 1,  0
-				], 330, 25, .01);
+					blackRimlightBase.setColorMatrix([
+						0.8,   0,   0, 0, 16,
+						-.1, 0.6, -.1, 0,  0,
+						  0,   0, 0.6, 0,  8,
+						  0,   0,   0, 1,  0
+					]);
+					blackRimlightBase.addLayer([
+						1.5, -.1, .2, 0, 64,
+						-.3, 1.2,  0, 0, 32,
+						  0,   0,  1, 0,  0,
+						  0,   0,  0, 1,  0
+					], 330, 25, .01);
 
-				bfRim = blackRimlightBase;
-				bfRim.attachedSprite = boyfriend;
+					bfRim = blackRimlightBase;
+					bfRim.attachedSprite = boyfriend;
+				}
 			}
 	}
 }
