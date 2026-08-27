@@ -11,6 +11,8 @@ function onCreatePost()
 	playFields.members[1].playerControls = true;
 	playFields.members[1].autoPlayed = false;
 	playFields.members[1].noteSplashes = true;
+
+	healthGain = healthLoss *= -1;
 }
 
 function onStepHit()
@@ -28,5 +30,7 @@ function onStepHit()
 		playFields.members[1].playerControls = false;
 		playFields.members[1].autoPlayed = true;
 		playFields.members[1].noteSplashes = false;
+
+		healthGain = healthLoss *= -1;
 	}
 }

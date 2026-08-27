@@ -120,6 +120,8 @@ function onUpdatePost(elapsed:Float):Void
 
 function onBeatHit()
 {
+	if (!init_kade_hud) return;
+
 	if (curBeat % 2 == 0)
 	{
 		kadeIconBF.scale.set(1.25, 1.25);

@@ -53,7 +53,7 @@ function onUpdate()
 			return;
 		}
 
-		health -= drain;
+		health -= (dad.curCharacter != 'bf-cyc' ? drain : -drain);
 	}
 }
 
