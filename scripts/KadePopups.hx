@@ -12,7 +12,7 @@ public var kade_combo_counter = 0;
 
 var kadeCrochetMaybe = ((60 / bpm) * 1000);
 
-function onUpdatePost(elapsed:Float):Void
+function onPopUpScorePost(note, rating)
 {
 	if (init_kade_hud)
 	{

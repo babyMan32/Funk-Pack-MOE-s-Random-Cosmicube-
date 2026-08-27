@@ -93,8 +93,8 @@ function onUpdatePost(elapsed:Float):Void
 		kadeBarPlay.y += 5;
 	}
 
-	kadeIconBF.updateIconAnim(healthBar.percent * 0.01);
-	kadeIconDad.updateIconAnim((100 - healthBar.percent) * 0.01);
+	kadeIconBF.updateIconAnim(playHUD.healthBar.percent * 0.01);
+	kadeIconDad.updateIconAnim((100 - playHUD.healthBar.percent) * 0.01);
 
 	if (init_kade_hud)
 	{
