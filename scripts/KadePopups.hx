@@ -71,7 +71,7 @@ function kadeComboPopup()
 
 	rating_to_spawn = bullshitFunc(); //rating image
 
-	var holySmackerel = new FlxSprite(550, 150).loadGraphic(Paths.image('ui/v3/$rating_to_spawn', null, null, PathsTestMode.LOOSE));
+	var holySmackerel = new FlxSprite(baseX + 550, baseY + 150).loadGraphic(Paths.image('ui/v3/$rating_to_spawn', null, null, PathsTestMode.LOOSE));
 	holySmackerel.scale.set(scaleComboX, scaleComboY);
 	bleh.add(holySmackerel);
 	holySmackerel.y += 50;
