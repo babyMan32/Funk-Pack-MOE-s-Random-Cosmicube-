@@ -1,3 +1,5 @@
+var bleh:FlxSpriteGroup;
+
 var variable_epics = 0;
 var variable_sicks = 0;
 var variable_goods = 0;
@@ -12,17 +14,26 @@ public var kade_combo_counter = 0;
 
 var kadeCrochetMaybe = ((60 / bpm) * 1000);
 
-function onPopUpScorePost(note, rating)
+var baseX:Float = 0;
+var baseY:Float = 0;
+
+var scaleComboX = 0.7;
+var scaleComboY = 0.7;
+var scaleNumbsX = 0.5;
+var scaleNumbsY = 0.5;
+
+function onCreatePost()
+{
+	bleh = new FlxSpriteGroup();
+	playHUD.add(bleh);
+}
+
+function onUpdatePost(elapsed:Float):Void
 {
 	if (init_kade_hud)
 	{
-		ratingGraphic.visible = false;
-		ratingNumGroup.visible = false;
-	}
-	else
-	{
-		ratingGraphic.visible = true;
-		ratingNumGroup.visible = true;
+		playHUD.showRating = false;
+		playHUD.showRatingNum = false;
 	}
 }
 
@@ -34,20 +45,24 @@ function goodNoteHit(note)
 
 	FlxG.signals.postUpdate.addOnce(function() {
 		kadeComboPopup();
+		kadeNumbersPopup();
 	});
-
-	kadeNumbersPopup();
 }
 
 function noteMiss(note)
 {
 	if (!init_kade_hud) return;
 
-	currentNumberOnes = 0;
+	missBullshit();
+}
+
+function missBullshit()
+{
+	kade_combo_counter = -1; //you lost your combo
+
+	currentNumberOnes = kade_combo_counter;
 	currentNumberTens = 0;
 	currentNumberHundrecs = 0;
-
-	kade_combo_counter = 0; //you lost your combo
 }
 
 function kadeComboPopup()
@@ -57,8 +72,8 @@ function kadeComboPopup()
 	rating_to_spawn = bullshitFunc(); //rating image
 
 	var holySmackerel = new FlxSprite(550, 150).loadGraphic(Paths.image('ui/v3/$rating_to_spawn', null, null, PathsTestMode.LOOSE));
-	holySmackerel.scale.set(0.7, 0.7);
-	playHUD.insert(10000, holySmackerel);
+	holySmackerel.scale.set(scaleComboX, scaleComboY);
+	bleh.add(holySmackerel);
 	holySmackerel.y += 50;
 
 	holySmackerel.acceleration.y = 550;
@@ -94,19 +109,26 @@ function kadeNumbersPopup()
 	}
 
 	var ratingNums = new FlxSpriteGroup();
-	playHUD.insert(11000, ratingNums);
+	bleh.add(ratingNums);
 	ratingNums.y += 50;
 
-	var unos = new FlxSprite(660, 250).loadGraphic(Paths.image('ui/v3/num$currentNumberOnes', null, null, PathsTestMode.LOOSE));
-	unos.scale.set(0.7, 0.7);
+	offfsetr = 42;
+
+	leCordY = baseY + 250;
+	x1 = baseX + 625;
+	x2 = x1 - offfsetr;
+	x3 = x2 - offfsetr;
+
+	var unos = new FlxSprite(x1, leCordY).loadGraphic(Paths.image('ui/v3/num$currentNumberOnes', null, null, PathsTestMode.LOOSE));
+	unos.scale.set(scaleNumbsX, scaleNumbsY);
 	ratingNums.add(unos);
 
-	var tens = new FlxSprite(600, 250).loadGraphic(Paths.image('ui/v3/num$currentNumberTens', null, null, PathsTestMode.LOOSE));
-	tens.scale.set(0.7, 0.7);
+	var tens = new FlxSprite(x2, leCordY).loadGraphic(Paths.image('ui/v3/num$currentNumberTens', null, null, PathsTestMode.LOOSE));
+	tens.scale.set(scaleNumbsX, scaleNumbsY);
 	ratingNums.add(tens);
 
-	var beegNumb = new FlxSprite(540, 250).loadGraphic(Paths.image('ui/v3/num$currentNumberHundrecs', null, null, PathsTestMode.LOOSE));
-	beegNumb.scale.set(0.7, 0.7);
+	var beegNumb = new FlxSprite(x3, leCordY).loadGraphic(Paths.image('ui/v3/num$currentNumberHundrecs', null, null, PathsTestMode.LOOSE));
+	beegNumb.scale.set(scaleNumbsX, scaleNumbsY);
 	ratingNums.add(beegNumb);
 
 	ratingNums.acceleration.y = FlxG.random.int(200, 300);
@@ -152,6 +174,8 @@ function bullshitFunc()
 	if (shits > variable_shits)
 	{
 		variable_shits = shits;
+		missBullshit(); // you missed
+		game.combo = 0;
 		return 'shit';
 	}
 
