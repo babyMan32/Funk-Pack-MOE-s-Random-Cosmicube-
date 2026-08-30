@@ -1,4 +1,5 @@
 var tauntAnim = 'cheer';
+var _base_tauntAnim = tauntAnim;
 
 public var _character_sets = [ // you can do "_character_sets.push('bfChar', 'gfChar');" in theory to add any chars you want without having to modify this script
 	['boyfriend', 'girlfriend', 'combo50'],
@@ -24,7 +25,7 @@ function onUpdatePost(elapsed:Float):Void
 	{
 		for (i in 0..._character_sets.length)
 		{
-			tauntCheck(_character_sets[i][0], _character_sets[i][1], (_character_sets[i][2] == null ? tauntAnim : _character_sets[i][2]));
+			tauntCheck(_character_sets[i][0], _character_sets[i][1], (_character_sets[i][2] == null ? _base_tauntAnim : _character_sets[i][2]));
 		}
 	}
 }
