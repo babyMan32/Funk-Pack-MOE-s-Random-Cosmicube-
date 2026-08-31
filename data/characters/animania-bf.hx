@@ -100,16 +100,19 @@ function onUpdate(elapsed:Float):Void
 
 	if (boyfriend.curCharacter.contains('animania-bf'))
 	{
-		wIcons.visible = true;
-		iconP1.visible = false;
+		wIcons.visible = iconP1.visible;
+		wIcons.alpha = iconP1.alpha;
+
+		FlxG.signals.postUpdate.addOnce(function() {
+			iconP1.x = 999999;
+		});
 	}
 	else
 	{
 		wIcons.visible = false;
-		iconP1.visible = true;
 	}
 
-	wIcons.x = iconP1.x;
+	wIcons.x = playHUD.healthBar.barCenter - (150 / 2) + 26 * 2;
 	wIcons.y = iconP1.y;
 	wIcons.scale.x = iconP1.scale.x * 0.8;
 	wIcons.scale.y = iconP1.scale.y * 0.8;
