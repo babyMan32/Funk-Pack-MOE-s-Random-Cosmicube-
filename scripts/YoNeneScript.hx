@@ -12,6 +12,8 @@ var blinkCountdown = 3;
 
 var yo_nenes = ['nene_v-slice', 'nene_v-slice-dark', 'nene_v-slice-pixel', 'nene_d-sides'];
 
+var playedAnim = false;
+
 function onCreatePost()
 {
 	if (gf == null)
@@ -89,10 +91,11 @@ function goodNoteHit(note)
 	FlxG.signals.postUpdate.addOnce(function() {
 		comboAnim = 'combo' + game.combo;
 
-		if (gf.hasAnim(comboAnim))
+		if (gf.hasAnim(comboAnim) && !playedAnim)
 		{
 			gf.playAnim(comboAnim, true);
 			gf.specialAnim = true;
+			playedAnim = true;
 		}
 	});
 }
@@ -108,4 +111,6 @@ function noteMiss(note)
 		gf.playAnim('drop70', true);
 		gf.specialAnim = true;
 	}
+
+	playedAnim = false;
 }
