@@ -3,7 +3,6 @@ import funkin.game.shaders.ExtraDropShadowShader;
 using StringTools;
 
 var remnanytsShader;
-var currentShader:FlxShader;
 var bfReal:Bool = false;
 
 function onCreatePost() {
