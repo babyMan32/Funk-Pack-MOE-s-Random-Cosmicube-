@@ -1,9 +1,12 @@
 using StringTools;
-import String;
+
+var remnanytsShader;
 
 function onCreatePost()
 {
 	if (!curSong.contains('Remnants')) return;
+
+	if (boyfriend.curCharacter.contains('remnants')) return;
 
 	wRemnants(boyfriend);
 	wRemnants(gf);
@@ -13,15 +16,15 @@ function wRemnants(character)
 {
 	remnanytsShader = new funkin.game.shaders.ExtraDropShadowShader();
 
-	bullshit1 = FlxColor.getRed(character.healthColour);
-	bullshit2 = FlxColor.getGreen(character.healthColour);
-	bullshit3 = FlxColor.getBlue(character.healthColour);
+	bullshitR = FlxColor.getRed(character.healthColour);
+	bullshitG = FlxColor.getGreen(character.healthColour);
+	bullshitB = FlxColor.getBlue(character.healthColour);
 
-	remnanytsShader.threshold = .03;
+	remnanytsShader.threshold = 0.03;
 	remnanytsShader.setHollowColorMatrix([
-		0, 0, 0, 0, bullshit1,
-		0, 0, 0, 0, bullshit2,
-		0, 0, 0, 0, bullshit3,
+		0, 0, 0, 0, bullshitR,
+		0, 0, 0, 0, bullshitG,
+		0, 0, 0, 0, bullshitB,
 		0, 0, 0, 1, 0
 	]);
 	remnanytsShader.setColorMatrix([
