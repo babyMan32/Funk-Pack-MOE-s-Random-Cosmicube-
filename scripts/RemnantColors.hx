@@ -3,7 +3,6 @@ import funkin.game.shaders.ExtraDropShadowShader;
 using StringTools;
 
 var remnanytsShader;
-var bfReal:Bool = false;
 
 function onCreatePost() {
 	if (!curSong.contains('Remnants'))
@@ -15,7 +14,6 @@ function onCreatePost() {
 		|| boyfriend.curCharacter == 'yellow-ghostPLUS') {
 		wRemnants(boyfriend);
 		boyfriend.ghostsEnabled = false;
-		bfReal = true;
 	}
 
 	if (gf != null && !gf.curCharacter.contains('remnants')
@@ -25,25 +23,32 @@ function onCreatePost() {
 		gf.ghostsEnabled = false;
 	}
 
-	if (hasPet && bfReal && !pet.curPet.contains('remnants')
+	if (hasPet && !pet.curPet.contains('remnants')
 		&& !pet.curPet.contains('ghost')
 		&& !pet.curPet.contains('nightmare')) {
-		wRemnants(pet);
-
-		// TODO: Find a variable for the pet's cosmicube colors instad of just copying BF's health color
-		petShader = new ExtraDropShadowShader();
-		petShader.copyFrom(boyfriend.shader);
-		petShader.attachedSprite = pet;
-		pet.useRenderTexture = true;
+		wRemnants(pet, 'pet');
 	}
 }
 
-function wRemnants(character) {
+function wRemnants(character, ?type = 'notPet') {
 	remnanytsShader = new funkin.game.shaders.ExtraDropShadowShader();
 
-	bullshitR = FlxColor.getRed(character.healthColour);
-	bullshitG = FlxColor.getGreen(character.healthColour);
-	bullshitB = FlxColor.getBlue(character.healthColour);
+	bullshitR = 255;
+	bullshitG = 255;
+	bullshitB = 255;
+
+	switch (type)
+	{
+		case 'pet':
+			// bullshitR = petColors.color[0];
+			// bullshitG = petColors.color[1];
+			// bullshitB = petColors.color[2];
+
+		default:
+			bullshitR = FlxColor.getRed(character.healthColour);
+			bullshitG = FlxColor.getGreen(character.healthColour);
+			bullshitB = FlxColor.getBlue(character.healthColour);
+	}
 
 	remnanytsShader.threshold = 0.03;
 	remnanytsShader.setHollowColorMatrix([
