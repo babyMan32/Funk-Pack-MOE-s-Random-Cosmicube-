@@ -4,33 +4,35 @@ using StringTools;
 
 var remnanytsShader;
 
-function onCreatePost() {
-	if (!curSong.contains('Remnants'))
-		return;
+function onCreatePost()
+{
+	REMNA();
+}
 
-	if (boyfriend != null && !boyfriend.curCharacter.contains('remnants')
-		&& !boyfriend.curCharacter.contains('ghost')
-		&& !boyfriend.curCharacter.contains('nightmare')
-		|| boyfriend.curCharacter == 'yellow-ghostPLUS') {
+function REMNA()
+{
+	if (!curSong.contains('Remnants')) return;
+
+	if (boyfriend != null && !boyfriend.curCharacter.contains('remnants') && !boyfriend.curCharacter.contains('ghost') && !boyfriend.curCharacter.contains('nightmare') || boyfriend.curCharacter == 'yellow-ghostPLUS')
+	{
 		wRemnants(boyfriend);
 		boyfriend.ghostsEnabled = false;
 	}
 
-	if (gf != null && !gf.curCharacter.contains('remnants')
-		&& !gf.curCharacter.contains('ghost')
-		&& !gf.curCharacter.contains('nightmare')) {
+	if (gf != null && !gf.curCharacter.contains('remnants') && !gf.curCharacter.contains('ghost') && !gf.curCharacter.contains('nightmare'))
+	{
 		wRemnants(gf);
 		gf.ghostsEnabled = false;
 	}
 
-	if (hasPet && !pet.curPet.contains('remnants')
-		&& !pet.curPet.contains('ghost')
-		&& !pet.curPet.contains('nightmare')) {
+	if (hasPet && !pet.curPet.contains('remnants') && !pet.curPet.contains('ghost') && !pet.curPet.contains('nightmare'))
+	{
 		wRemnants(pet, 'pet');
 	}
 }
 
-function wRemnants(character, ?type = 'notPet') {
+function wRemnants(character, ?type = 'notPet')
+{
 	remnanytsShader = new funkin.game.shaders.ExtraDropShadowShader();
 
 	bullshitR = 255;
@@ -67,4 +69,16 @@ function wRemnants(character, ?type = 'notPet') {
 
 	remnanytsShader.attachedSprite = character;
 	character.useRenderTexture = true;
+}
+
+function onEvent(eventName, value1, value2)
+{
+	switch (eventName)
+	{
+		case 'Defeat Retro':
+			if (Std.parseInt(value1) == 1)
+			{
+				REMNA();
+			}
+	}
 }
