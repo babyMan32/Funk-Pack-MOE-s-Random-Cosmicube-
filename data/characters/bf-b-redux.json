@@ -129,7 +129,9 @@
 		350
 	],
 	"flags": {
-		"defeatRetro": "bf-b-classic"
+		"variants": {
+			"retro": "bf-b-classic"
+		}
 	},
 	"dance_every": 2,
 	"gameover_intial_sound": null,

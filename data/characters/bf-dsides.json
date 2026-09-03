@@ -190,7 +190,9 @@
 		340
 	],
 	"flags": {
-		"defeatRetro": "bf-dsides_OLD"
+		"variants": {
+			"retro": "bf-dsides_OLD"
+		}
 	},
 	"dance_every": 2,
 	"gameover_intial_sound": null,

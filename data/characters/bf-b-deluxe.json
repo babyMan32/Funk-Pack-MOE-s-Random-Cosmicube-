@@ -138,7 +138,9 @@
 		342
 	],
 	"flags": {
-		"defeatRetro": "bf-b-redux"
+		"variants": {
+			"retro": "bf-b-redux"
+		}
 	},
 	"dance_every": 2,
 	"gameover_intial_sound": null,

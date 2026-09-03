@@ -1,0 +1,147 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "Idle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Pose Down"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN-loop",
+			"loop": true,
+			"name": "Down Flame Loop"
+		},
+		{
+			"offsets": [
+				-2,
+				2
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Pose Right"
+		},
+		{
+			"offsets": [
+				-2,
+				2
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT-loop",
+			"loop": true,
+			"name": "Right Flame Loop"
+		},
+		{
+			"offsets": [
+				0,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Pose Left"
+		},
+		{
+			"offsets": [
+				0,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT-loop",
+			"loop": true,
+			"name": "Left Flame Loop"
+		},
+		{
+			"offsets": [
+				-10,
+				3
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Pose Up"
+		},
+		{
+			"offsets": [
+				-10,
+				3
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP-loop",
+			"loop": true,
+			"name": "Up Flame Loop"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/darnell/darnell-remnants",
+	"position": [
+		-330,
+		50
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "darnell-remnants",
+	"afterimages": false,
+	"gameover_character": null,
+	"vslice_sustains": true,
+	"flip_x": false,
+	"healthbar_colour": -8235026,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}
