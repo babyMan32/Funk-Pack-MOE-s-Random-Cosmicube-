@@ -13,20 +13,24 @@ function REMNA()
 {
 	if (!curSong.contains('Remnants')) return;
 
-	if (boyfriend != null && !boyfriend.curCharacter.contains('remnants') && !boyfriend.curCharacter.contains('ghost') && !boyfriend.curCharacter.contains('nightmare') || boyfriend.curCharacter == 'yellow-ghostPLUS')
-	{
+	if (boyfriend != null && !boyfriend.curCharacter.contains('remnants')
+		&& !boyfriend.curCharacter.contains('ghost')
+		&& !boyfriend.curCharacter.contains('nightmare')
+		|| boyfriend.curCharacter == 'yellow-ghostPLUS') {
 		wRemnants(boyfriend);
 		boyfriend.ghostsEnabled = false;
 	}
 
-	if (gf != null && !gf.curCharacter.contains('remnants') && !gf.curCharacter.contains('ghost') && !gf.curCharacter.contains('nightmare'))
-	{
+	if (gf != null && !gf.curCharacter.contains('remnants')
+		&& !gf.curCharacter.contains('ghost')
+		&& !gf.curCharacter.contains('nightmare')) {
 		wRemnants(gf);
 		gf.ghostsEnabled = false;
 	}
 
-	if (hasPet && !pet.curPet.contains('remnants') && !pet.curPet.contains('ghost') && !pet.curPet.contains('nightmare'))
-	{
+	if (hasPet && !pet.curPet.contains('remnants')
+		&& !pet.curPet.contains('ghost')
+		&& !pet.curPet.contains('nightmare')) {
 		wRemnants(pet, 'pet');
 	}
 }
