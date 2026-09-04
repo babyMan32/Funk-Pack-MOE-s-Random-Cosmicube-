@@ -73,7 +73,9 @@
 		-70
 	],
 	"flags": {
-		"defeatRetro": "gf-b-redux"
+		"variants": {
+			"retro": "gf-b-redux"
+		}
 	},
 	"dance_every": 1,
 	"gameover_intial_sound": null,

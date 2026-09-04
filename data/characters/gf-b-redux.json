@@ -194,7 +194,9 @@
 		0
 	],
 	"flags": {
-		"defeatRetro": "gf-b-classic"
+		"variants": {
+			"retro": "gf-b-classic"
+		}
 	},
 	"dance_every": 1,
 	"gameover_intial_sound": null,
