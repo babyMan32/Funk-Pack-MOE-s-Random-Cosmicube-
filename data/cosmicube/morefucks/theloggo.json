@@ -1,0 +1,14 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "The Loggo",
+	"hint": "The Loggo",
+	"description": "The Loggo",
+
+	"node":
+	{
+		"parent": "oldmongboy",
+		"direction": "north"
+	}
+}

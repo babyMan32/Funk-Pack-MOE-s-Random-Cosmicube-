@@ -47,3 +47,24 @@ function tauntCheck(bfChar, gfChar, heyPose)
 		}
 	}
 }
+
+function onEvent(eventName, value1, value2) // dont mind me
+{
+	switch (eventName)
+	{
+		case 'Defeat Retro':
+			var charType:Int = Std.parseInt(value1);
+			if (Math.isNaN(charType)) charType = 0;
+
+			switch (charType)
+			{
+				case 0:
+					if (ClientPrefs.bfSkin == 'amongbf') changeCharacter('oldmongboy', 0);
+
+					boyfriend.ghostsEnabled = false;
+
+				case 1:
+					if (boyfriend.curCharacter == 'oldmongboy') changeCharacter('amongbf', 0);
+			}
+	}
+}
