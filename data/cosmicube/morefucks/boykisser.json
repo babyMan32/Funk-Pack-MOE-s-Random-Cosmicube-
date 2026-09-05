@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boykisser",
+	"description": "Dont question it just accept it my friend \n \n Added by gay ass Idk's FNF Stuff",
+
+	"node":
+	{
+		"parent": "reminisce",
+		"direction": "south"
+	}
+}
