@@ -34,3 +34,11 @@ function onStepHit()
 		healthGain = healthLoss *= -1;
 	}
 }
+
+function onGameOver()
+{
+	if (playFields.members[0].isPlayer == true) return;
+
+	health = 0.025;
+	return Function_Stop;
+}
