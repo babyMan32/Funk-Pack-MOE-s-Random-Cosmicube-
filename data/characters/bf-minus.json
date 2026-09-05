@@ -137,15 +137,7 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": {
-		"variants": {
-			"dark": "whitebf-dialogue",
-			"retro": "bf",
-			"defeat": "bf-defeat-normal-dialogue",
-			"falling": "bf-fall-dialogue"
-		},
-		"runner": true
-	},
+	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "bf-old",

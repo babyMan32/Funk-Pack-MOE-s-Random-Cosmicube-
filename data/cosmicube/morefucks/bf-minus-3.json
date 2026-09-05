@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend (Minus) (Alt 2)",
+	"description": "angry little man (say that again...)\n\nRequested by abyssal.azure",
+
+	"node":
+	{
+		"parent": "bf-minus-2",
+		"direction": "west"
+	}
+}

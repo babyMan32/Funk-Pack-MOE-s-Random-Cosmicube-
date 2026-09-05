@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend (Minus) (Alt 1)",
+	"description": "he's blue now\n\nthat's his attack\n\nRequested by abyssal.azure",
+
+	"node":
+	{
+		"parent": "bf-minus",
+		"direction": "west"
+	}
+}
