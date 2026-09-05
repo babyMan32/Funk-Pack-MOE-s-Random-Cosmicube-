@@ -86,3 +86,24 @@ function onEvent(eventName, value1, value2)
 			}
 	}
 }
+
+// function onSpawnNote(note)
+// {
+// 	if (note.lane == 1)
+// 	{
+// 		note.lane = 0;
+// 		note.owner = dad;
+// 		note.noMissAnimation = true;
+// 	}
+// }
+
+// function goodNoteHit(note)
+// {
+// 	if (note.owner == dad && songName == 'Ow')
+// 	{
+// 		boyfriend.playAnim(note.skin.data.singAnimations[note.noteData] + '-alt', true);
+// 		boyfriend.holdTimer = 0;
+
+// 		health -= 0.038;
+// 	}
+// }
