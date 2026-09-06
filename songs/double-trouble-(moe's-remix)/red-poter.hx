@@ -33,7 +33,20 @@ function onUpdate(elapsed:Float):Void
 
 function onDestroy():Void
 {
-	redFuckFace.destroy();
+	if (dad.library != null)
+	{
+		var bodyParts = [dad.library.getSymbol('parasite head'), dad.library.getSymbol('parasite down head'), dad.library.getSymbol('parasite up head')];
+
+		if (bodyParts != null)
+		{
+			for (i in 0...bodyParts.length)
+			{
+				bodyParts[i].timeline.layers[0].forEachFrame((frame) -> {
+					frame.remove(redBitchyElement);
+				});
+			}
+		}
+	}
 }
 
 function onBeatHit()
