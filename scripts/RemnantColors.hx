@@ -1,4 +1,6 @@
 import funkin.game.shaders.ExtraDropShadowShader;
+import funkin.FunkinAssets;
+import haxe.Json;
 
 using StringTools;
 
@@ -45,10 +47,28 @@ function wRemnants(character, ?type = 'notPet')
 
 	switch (type)
 	{
-		case 'pet':
-			// bullshitR = petColors.color[0];
-			// bullshitG = petColors.color[1];
-			// bullshitB = petColors.color[2];
+		case 'pet':	
+			var data:Dynamic; // json data of the pet
+			var modName:String = Paths.getModFolder(FlxG.bitmap.findKeyForBitmap(pet.pixels)); // fetch the image path of the pet by finding the bitmap key
+			var path:String;
+			
+			if (modName == '') // not in any mod, assume its base game
+			{
+				path = 'data/cosmicube/impostor';
+			}
+			else 
+			{
+				path = fetchPetPath(modName);
+			}
+
+			data = FunkinAssets.parseJson(Paths.getTextFromFile('$path/${ClientPrefs.equipment.get('pet')}.json', null, PathsTestMode.LOOSE));
+
+			if (data?.color != null) // has color data
+			{
+				bullshitR = data.color[0];
+				bullshitG = data.color[1];
+				bullshitB = data.color[2];
+			}
 
 		default:
 			bullshitR = FlxColor.getRed(character.healthColour);
@@ -107,3 +127,18 @@ function onEvent(eventName, value1, value2)
 // 		health -= 0.038;
 // 	}
 // }
+
+function fetchPetPath(modName:String) {
+	for (i in FunkinAssets.readDirectory('content/${modName}/data/cosmicube')) // check every cosmicube of this mod
+	{
+		if (FunkinAssets.isDirectory('content/$modName/data/cosmicube/$i')) // loop through each one of the cosmicubes
+		{
+			if (FunkinAssets.readDirectory('content/$modName/data/cosmicube/$i').contains('${ClientPrefs.equipment.get('pet')}.json')) // contains the pet
+			{
+				return 'data/cosmicube/$i';
+			}
+		}
+	}
+
+	return null; // failsafe
+}
