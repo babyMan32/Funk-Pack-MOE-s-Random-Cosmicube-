@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Cat_Impostor.png">
+<SubTexture name="Cat_Impostor Idle0000" x="2119" y="443" width="483" height="430" frameX="-151" frameY="-94" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Idle0001" x="1577" y="894" width="487" height="418" frameX="-150" frameY="-108" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Idle0002" x="1051" y="510" width="488" height="418" frameX="-149" frameY="-108" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Idle0003" x="2119" y="1302" width="486" height="426" frameX="-149" frameY="-98" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Idle0004" x="2119" y="873" width="485" height="429" frameX="-150" frameY="-95" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Left0000" x="0" y="1024" width="542" height="447" frameX="-8" frameY="-98" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Left0001" x="542" y="1024" width="543" height="447" frameX="-12" frameY="-98" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Left0002" x="1577" y="0" width="542" height="447" frameX="-14" frameY="-98" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Left0003" x="1577" y="447" width="542" height="447" frameX="-15" frameY="-98" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Down0000" x="1830" y="1915" width="610" height="326" frameX="-77" frameY="-205" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Down0001" x="1221" y="1915" width="609" height="331" frameX="-78" frameY="-199" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Down0002" x="0" y="1915" width="610" height="334" frameX="-77" frameY="-196" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Down0003" x="610" y="1915" width="611" height="334" frameX="-76" frameY="-196" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Up0000" x="0" y="0" width="526" height="513" frameX="-65" frameY="-5" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Up0001" x="526" y="0" width="525" height="513" frameX="-66" frameY="-5" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Up0002" x="0" y="513" width="526" height="511" frameX="-66" frameY="-7" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Up0003" x="1051" y="0" width="526" height="510" frameX="-66" frameY="-8" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Right0000" x="0" y="1471" width="647" height="444" frameX="-146" frameY="-78" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Right0001" x="2119" y="0" width="646" height="443" frameX="-143" frameY="-79" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Right0002" x="647" y="1471" width="647" height="444" frameX="-140" frameY="-78" frameWidth="800" frameHeight="550" />
+<SubTexture name="Cat_Impostor Right0003" x="1294" y="1471" width="647" height="444" frameX="-139" frameY="-78" frameWidth="800" frameHeight="550" />
+</TextureAtlas>

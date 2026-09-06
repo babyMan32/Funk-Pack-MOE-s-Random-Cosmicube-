@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Girlfriend (17bucks)",
+	"description": "uncanny valley",
+
+	"node":
+	{
+		"parent": "17bucks-bf",
+		"direction": "south"
+	}
+}

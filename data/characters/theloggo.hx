@@ -22,11 +22,11 @@ function onCreatePost()
 	}
 }
 
-function goodNoteHit(note)
+function goodNoteHitPre(note)
 {
 	if (note.owner == dad)
 	{
-		opponentNoteHit(note);
+		opponentNoteHitPre(note);
 	}
 }
 

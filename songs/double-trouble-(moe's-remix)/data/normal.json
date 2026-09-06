@@ -1,0 +1,442 @@
+{
+	"song": {
+		"player1": "bf",
+		"notes": [
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [
+					[
+						124.48132780083,
+						5,
+						0,
+						"",
+						true
+					],
+					[
+						248.96265560166,
+						7,
+						0,
+						"",
+						true
+					],
+					[
+						373.44398340249,
+						4,
+						0,
+						"",
+						true
+					],
+					[
+						497.925311203319,
+						6,
+						186.721991701245,
+						"",
+						true
+					],
+					[
+						746.887966804979,
+						5,
+						0,
+						"",
+						true
+					],
+					[
+						871.369294605809,
+						4,
+						0,
+						"",
+						true
+					]
+				],
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": false,
+				"changeBPM": false,
+				"bpm": 100
+			},
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [
+					[
+						995.850622406639,
+						6,
+						311.203319502075,
+						"Opponent 2 Sing",
+						true
+					],
+					[
+						995.850622406639,
+						7,
+						311.203319502075,
+						"",
+						true
+					],
+					[
+						1369.29460580913,
+						4,
+						311.203319502075,
+						"Opponent 2 Sing",
+						true
+					],
+					[
+						1369.29460580913,
+						5,
+						311.203319502075,
+						"",
+						true
+					],
+					[
+						1742.73858921162,
+						5,
+						186.721991701245,
+						"Opponent 2 Sing",
+						true
+					],
+					[
+						1742.73858921162,
+						6,
+						186.721991701245,
+						"",
+						true
+					]
+				],
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": false,
+				"changeBPM": false,
+				"bpm": 100
+			},
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [
+					[
+						2116.18257261411,
+						7,
+						0,
+						"",
+						true
+					],
+					[
+						2240.66390041494,
+						6,
+						0,
+						"",
+						true
+					],
+					[
+						2365.14522821577,
+						7,
+						0,
+						"",
+						true
+					],
+					[
+						2489.6265560166,
+						4,
+						186.721991701245,
+						"",
+						true
+					],
+					[
+						2738.58921161826,
+						5,
+						0,
+						"",
+						true
+					],
+					[
+						2863.07053941909,
+						6,
+						0,
+						"",
+						true
+					]
+				],
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": false,
+				"changeBPM": false,
+				"bpm": 241
+			},
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [
+					[
+						2987.55186721992,
+						5,
+						311.203319502075,
+						"Opponent 2 Sing",
+						true
+					],
+					[
+						2987.55186721992,
+						7,
+						311.203319502075,
+						"",
+						true
+					],
+					[
+						3360.99585062241,
+						7,
+						311.203319502075,
+						"Opponent 2 Sing",
+						true
+					],
+					[
+						3360.99585062241,
+						4,
+						311.203319502075,
+						"",
+						true
+					],
+					[
+						3734.4398340249,
+						4,
+						186.721991701245,
+						"Opponent 2 Sing",
+						true
+					],
+					[
+						3734.4398340249,
+						6,
+						186.721991701245,
+						"",
+						true
+					]
+				],
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": false,
+				"changeBPM": false,
+				"bpm": 241
+			},
+			{
+				"sectionNotes": [
+					[
+						4107.88381742739,
+						2,
+						0,
+						"",
+						true
+					],
+					[
+						4232.36514522822,
+						1,
+						0,
+						"",
+						true
+					],
+					[
+						4356.84647302905,
+						3,
+						0,
+						"",
+						true
+					],
+					[
+						4481.32780082988,
+						1,
+						186.721991701245,
+						"",
+						true
+					],
+					[
+						4730.29045643153,
+						0,
+						0,
+						"",
+						true
+					],
+					[
+						4854.77178423237,
+						3,
+						0,
+						"",
+						true
+					]
+				],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"gfSection": false,
+				"altAnim": false,
+				"bpm": 241,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [],
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 241
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 241,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"sectionNotes": [],
+				"bpm": 241,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			}
+		],
+		"player2": "doubleTrouble",
+		"keys": 4,
+		"song": "Double Trouble (MOE's Remix)",
+		"allowGFskin": true,
+		"allowPet": true,
+		"format": "nmv2",
+		"lanes": 2,
+		"speed": 3,
+		"events": [
+			[
+				3983.40248962656,
+				[
+					[
+						"camTween",
+						"",
+						""
+					]
+				]
+			],
+			[
+				7966.80497925311,
+				[
+					[
+						"camTween",
+						"",
+						""
+					]
+				]
+			]
+		],
+		"gfVersion": "doubleTroubleGf",
+		"allowBFskin": true,
+		"arrowSkins": [
+			"default",
+			"default"
+		],
+		"needsVoices": true,
+		"trackSwap": false,
+		"stage": "doubletroublefast",
+		"bpm": 241
+	}
+}

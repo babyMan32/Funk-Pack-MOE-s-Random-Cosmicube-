@@ -65,7 +65,8 @@
 	"dance_every": 2,
 	"flags": {
 		"variants": {
-			"dark": "Vaporeon-dark"
+			"dark": "Vaporeon-dark",
+			"retro": "abomination-fish"
 		}
 	},
 	"gameover_intial_sound": null,

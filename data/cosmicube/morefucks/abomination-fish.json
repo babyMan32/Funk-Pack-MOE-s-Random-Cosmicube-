@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": -5000,
+
+	"title": "Vaporeon (Vaporeon Mix)",
+	"description": "no words\n\nRequested by kludge54n5",
+
+	"node":
+	{
+		"parent": "boykisser",
+		"direction": "south"
+	}
+}

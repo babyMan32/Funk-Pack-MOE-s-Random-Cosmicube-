@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ENC-GF.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="idleleft0000" x="0" y="1243" width="899" height="1247" frameX="-823" frameY="-650" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="idleleft0001" x="0" y="0" width="903" height="1243" frameX="-819" frameY="-654" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="idleleft0002" x="903" y="0" width="897" height="1245" frameX="-821" frameY="-652" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="idleleft0003" x="1800" y="0" width="886" height="1250" frameX="-822" frameY="-647" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="idleleft0004" x="2686" y="0" width="877" height="1252" frameX="-824" frameY="-645" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="idleleft0005" x="3563" y="0" width="874" height="1252" frameX="-825" frameY="-645" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="idleright0000" x="2686" y="1252" width="862" height="1232" frameX="-822" frameY="-665" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="idleright0001" x="1800" y="1250" width="861" height="1230" frameX="-824" frameY="-667" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="idleright0002" x="3563" y="1252" width="862" height="1234" frameX="-825" frameY="-663" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="idleright0003" x="873" y="2490" width="870" height="1247" frameX="-825" frameY="-650" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="idleright0004" x="0" y="2490" width="873" height="1251" frameX="-825" frameY="-646" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="idleright0005" x="3563" y="0" width="874" height="1252" frameX="-825" frameY="-645" frameWidth="2500" frameHeight="2500"/>
+</TextureAtlas>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ENC-BF-Dead.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="retry0000" x="3642" y="0" width="1128" height="805" frameX="-558" frameY="-1195" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="retry0001" x="1239" y="846" width="1206" height="829" frameX="-554" frameY="-1170" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="retry0002" x="0" y="846" width="1239" height="840" frameX="-553" frameY="-1159" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="retry0003" x="1253" y="0" width="1246" height="843" frameX="-552" frameY="-1156" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="retry0004" x="0" y="0" width="1253" height="846" frameX="-553" frameY="-1153" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="retry0005" x="4770" y="0" width="947" height="553" frameX="-553" frameY="-1446" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="loop0000" x="0" y="1686" width="1160" height="812" frameX="-546" frameY="-1187" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="loop0001" x="1160" y="1686" width="1148" height="808" frameX="-546" frameY="-1191" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="loop0002" x="2499" y="0" width="1143" height="806" frameX="-546" frameY="-1193" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="loop0003" x="2499" y="806" width="1141" height="805" frameX="-546" frameY="-1194" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="loop0004" x="0" y="2498" width="1139" height="804" frameX="-546" frameY="-1195" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="loop0005" x="2499" y="1611" width="1140" height="804" frameX="-546" frameY="-1195" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="loop0006" x="2499" y="1611" width="1140" height="804" frameX="-546" frameY="-1195" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="loop0007" x="2499" y="1611" width="1140" height="804" frameX="-546" frameY="-1195" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="loop0008" x="2499" y="1611" width="1140" height="804" frameX="-546" frameY="-1195" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="loop0009" x="2499" y="1611" width="1140" height="804" frameX="-546" frameY="-1195" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0000" x="0" y="3302" width="737" height="967" frameX="-1036" frameY="-961" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0001" x="737" y="3302" width="737" height="967" frameX="-1036" frameY="-961" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0002" x="1474" y="3302" width="737" height="967" frameX="-1036" frameY="-961" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0003" x="2211" y="3302" width="737" height="967" frameX="-1036" frameY="-961" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0004" x="2211" y="3302" width="737" height="967" frameX="-1036" frameY="-961" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0005" x="2211" y="3302" width="737" height="967" frameX="-1036" frameY="-961" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0006" x="2211" y="3302" width="737" height="967" frameX="-1036" frameY="-961" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0007" x="2211" y="3302" width="737" height="967" frameX="-1036" frameY="-961" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0008" x="2211" y="3302" width="737" height="967" frameX="-1036" frameY="-961" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0009" x="2211" y="3302" width="737" height="967" frameX="-1036" frameY="-961" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0010" x="3642" y="1738" width="747" height="963" frameX="-1011" frameY="-965" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0011" x="3642" y="805" width="835" height="933" frameX="-869" frameY="-996" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0012" x="2948" y="3302" width="974" height="539" frameX="-536" frameY="-1461" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0013" x="2101" y="2498" width="967" height="549" frameX="-542" frameY="-1450" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0014" x="3642" y="2701" width="963" height="553" frameX="-545" frameY="-1446" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0015" x="1139" y="2498" width="962" height="553" frameX="-546" frameY="-1446" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0016" x="1139" y="2498" width="962" height="553" frameX="-546" frameY="-1446" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0017" x="1139" y="2498" width="962" height="553" frameX="-546" frameY="-1446" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0018" x="1139" y="2498" width="962" height="553" frameX="-546" frameY="-1446" frameWidth="2500" frameHeight="2500"/>
+	<SubTexture name="1stdeath0019" x="1139" y="2498" width="962" height="553" frameX="-546" frameY="-1446" frameWidth="2500" frameHeight="2500"/>
+</TextureAtlas>
