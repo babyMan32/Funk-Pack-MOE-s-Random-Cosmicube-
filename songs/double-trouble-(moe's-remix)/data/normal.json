@@ -1,6 +1,6 @@
 {
 	"song": {
-		"player1": "bf",
+		"player1": "bf-fall",
 		"notes": [
 			{
 				"sectionBeats": 4,
@@ -398,7 +398,7 @@
 				"mustHitSection": true
 			}
 		],
-		"player2": "doubleTrouble",
+		"player2": "greenEjected",
 		"keys": 4,
 		"song": "Double Trouble (MOE's Remix)",
 		"allowGFskin": true,
@@ -428,7 +428,7 @@
 				]
 			]
 		],
-		"gfVersion": "doubleTroubleGf",
+		"gfVersion": "gf-fall",
 		"allowBFskin": true,
 		"arrowSkins": [
 			"default",
@@ -436,7 +436,7 @@
 		],
 		"needsVoices": true,
 		"trackSwap": false,
-		"stage": "doubletroublefast",
+		"stage": "polus",
 		"bpm": 241
 	}
 }
