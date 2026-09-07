@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="amongfriendverynew.png"><SubTexture name="bf idle0000" x="0" y="0" width="819" height="817" frameX="0" frameY="0" frameWidth="819" frameHeight="817" />
+<SubTexture name="bf idle0001" x="819" y="0" width="819" height="817" frameX="0" frameY="0" frameWidth="819" frameHeight="817" />
+<SubTexture name="bf idle0002" x="1638" y="0" width="819" height="817" frameX="0" frameY="0" frameWidth="819" frameHeight="817" />
+<SubTexture name="bf idle0003" x="2457" y="0" width="819" height="817" frameX="0" frameY="0" frameWidth="819" frameHeight="817" />
+<SubTexture name="bf idle0004" x="3276" y="0" width="819" height="817" frameX="0" frameY="0" frameWidth="819" frameHeight="817" />
+<SubTexture name="bf sing down0000" x="4095" y="0" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf sing down0001" x="0" y="817" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf sing left0000" x="860" y="817" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf sing left0001" x="1720" y="817" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf sing right0000" x="2580" y="817" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf sing right0001" x="3440" y="817" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf sing up0000" x="4300" y="817" width="860" height="840" frameX="0" frameY="0" frameWidth="860" frameHeight="840" />
+<SubTexture name="bf sing up0001" x="0" y="1657" width="860" height="840" frameX="0" frameY="0" frameWidth="860" frameHeight="840" />
+<SubTexture name="bf dodge0000" x="860" y="1657" width="964" height="817" frameX="0" frameY="0" frameWidth="964" frameHeight="817" />
+<SubTexture name="bf dodge0001" x="1824" y="1657" width="964" height="817" frameX="0" frameY="0" frameWidth="964" frameHeight="817" />
+<SubTexture name="bf dodge0002" x="2788" y="1657" width="964" height="817" frameX="0" frameY="0" frameWidth="964" frameHeight="817" />
+<SubTexture name="bf dodge0003" x="3752" y="1657" width="964" height="817" frameX="0" frameY="0" frameWidth="964" frameHeight="817" />
+<SubTexture name="bf dodge0004" x="4716" y="1657" width="964" height="817" frameX="0" frameY="0" frameWidth="964" frameHeight="817" />
+<SubTexture name="bf dodge0005" x="0" y="2497" width="964" height="817" frameX="0" frameY="0" frameWidth="964" frameHeight="817" />
+<SubTexture name="bf dodge0006" x="964" y="2497" width="964" height="817" frameX="0" frameY="0" frameWidth="964" frameHeight="817" />
+<SubTexture name="bf hey0000" x="1928" y="2497" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf hey0001" x="2788" y="2497" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf hey0002" x="3648" y="2497" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf hit0000" x="4508" y="2497" width="949" height="817" frameX="0" frameY="0" frameWidth="949" frameHeight="817" />
+<SubTexture name="bf hit0001" x="0" y="3314" width="949" height="817" frameX="0" frameY="0" frameWidth="949" frameHeight="817" />
+<SubTexture name="bf hit0002" x="949" y="3314" width="949" height="817" frameX="0" frameY="0" frameWidth="949" frameHeight="817" />
+<SubTexture name="bf hit0003" x="1898" y="3314" width="949" height="817" frameX="0" frameY="0" frameWidth="949" frameHeight="817" />
+<SubTexture name="bf hit0004" x="2847" y="3314" width="949" height="817" frameX="0" frameY="0" frameWidth="949" frameHeight="817" />
+<SubTexture name="bf hit0005" x="3796" y="3314" width="949" height="817" frameX="0" frameY="0" frameWidth="949" frameHeight="817" />
+<SubTexture name="bf hit0006" x="4745" y="3314" width="949" height="817" frameX="0" frameY="0" frameWidth="949" frameHeight="817" />
+<SubTexture name="bf hit0007" x="0" y="4131" width="949" height="817" frameX="0" frameY="0" frameWidth="949" frameHeight="817" />
+<SubTexture name="bf hit0008" x="949" y="4131" width="949" height="817" frameX="0" frameY="0" frameWidth="949" frameHeight="817" />
+<SubTexture name="bf hit0009" x="1898" y="4131" width="949" height="817" frameX="0" frameY="0" frameWidth="949" frameHeight="817" />
+<SubTexture name="bf hit0010" x="2847" y="4131" width="949" height="817" frameX="0" frameY="0" frameWidth="949" frameHeight="817" />
+<SubTexture name="bf hit0011" x="3796" y="4131" width="949" height="817" frameX="0" frameY="0" frameWidth="949" frameHeight="817" />
+<SubTexture name="bf miss down0000" x="4745" y="4131" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf miss down0001" x="0" y="4948" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf miss left0000" x="860" y="4948" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf miss left0001" x="1720" y="4948" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf miss up0000" x="2580" y="4948" width="860" height="840" frameX="0" frameY="0" frameWidth="860" frameHeight="840" />
+<SubTexture name="bf miss up0001" x="3440" y="4948" width="860" height="840" frameX="0" frameY="0" frameWidth="860" frameHeight="840" />
+<SubTexture name="bf miss right0000" x="4300" y="4948" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf miss right0001" x="0" y="5788" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+<SubTexture name="bf miss right0002" x="860" y="5788" width="860" height="817" frameX="0" frameY="0" frameWidth="860" frameHeight="817" />
+</TextureAtlas>

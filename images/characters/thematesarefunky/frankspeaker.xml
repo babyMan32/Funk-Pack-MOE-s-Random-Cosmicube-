@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="frankspeaker.png"><SubTexture name="frank idle left0000" x="0" y="0" width="1001" height="877" frameX="0" frameY="0" frameWidth="1001" frameHeight="877" />
+<SubTexture name="frank idle left0001" x="1001" y="0" width="1001" height="877" frameX="0" frameY="0" frameWidth="1001" frameHeight="877" />
+<SubTexture name="frank idle left0002" x="2002" y="0" width="1001" height="877" frameX="0" frameY="0" frameWidth="1001" frameHeight="877" />
+<SubTexture name="frank idle left0003" x="0" y="877" width="1001" height="877" frameX="0" frameY="0" frameWidth="1001" frameHeight="877" />
+<SubTexture name="frank idle left0004" x="1001" y="877" width="1001" height="877" frameX="0" frameY="0" frameWidth="1001" frameHeight="877" />
+<SubTexture name="frank idle right0000" x="2002" y="877" width="1001" height="877" frameX="0" frameY="0" frameWidth="1001" frameHeight="877" />
+<SubTexture name="frank idle right0001" x="0" y="1754" width="1001" height="877" frameX="0" frameY="0" frameWidth="1001" frameHeight="877" />
+<SubTexture name="frank idle right0002" x="1001" y="1754" width="1001" height="877" frameX="0" frameY="0" frameWidth="1001" frameHeight="877" />
+<SubTexture name="frank idle right0003" x="2002" y="1754" width="1001" height="877" frameX="0" frameY="0" frameWidth="1001" frameHeight="877" />
+<SubTexture name="frank idle right0004" x="0" y="2631" width="1001" height="877" frameX="0" frameY="0" frameWidth="1001" frameHeight="877" />
+</TextureAtlas>

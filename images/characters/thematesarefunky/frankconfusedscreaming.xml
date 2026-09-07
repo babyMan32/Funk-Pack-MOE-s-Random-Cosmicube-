@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="frankconfusedscreaming.png"><SubTexture name="purple idle0000" x="0" y="0" width="866" height="832" frameX="0" frameY="0" frameWidth="866" frameHeight="832" />
+<SubTexture name="purple idle0001" x="866" y="0" width="866" height="832" frameX="0" frameY="0" frameWidth="866" frameHeight="832" />
+<SubTexture name="purple idle0002" x="1732" y="0" width="866" height="832" frameX="0" frameY="0" frameWidth="866" frameHeight="832" />
+<SubTexture name="purple idle0003" x="2598" y="0" width="866" height="832" frameX="0" frameY="0" frameWidth="866" frameHeight="832" />
+<SubTexture name="purple idle0004" x="3464" y="0" width="866" height="832" frameX="0" frameY="0" frameWidth="866" frameHeight="832" />
+<SubTexture name="purple sing down0000" x="0" y="832" width="866" height="899" frameX="0" frameY="0" frameWidth="866" frameHeight="899" />
+<SubTexture name="purple sing down0001" x="866" y="832" width="866" height="899" frameX="0" frameY="0" frameWidth="866" frameHeight="899" />
+<SubTexture name="purple sing down0002" x="1732" y="832" width="866" height="899" frameX="0" frameY="0" frameWidth="866" frameHeight="899" />
+<SubTexture name="purple sing down0003" x="2598" y="832" width="866" height="899" frameX="0" frameY="0" frameWidth="866" frameHeight="899" />
+<SubTexture name="purple sing left0000" x="3464" y="832" width="971" height="899" frameX="0" frameY="0" frameWidth="971" frameHeight="899" />
+<SubTexture name="purple sing left0001" x="0" y="1731" width="971" height="899" frameX="0" frameY="0" frameWidth="971" frameHeight="899" />
+<SubTexture name="purple sing left0002" x="971" y="1731" width="971" height="899" frameX="0" frameY="0" frameWidth="971" frameHeight="899" />
+<SubTexture name="purple sing left0003" x="1942" y="1731" width="971" height="899" frameX="0" frameY="0" frameWidth="971" frameHeight="899" />
+<SubTexture name="purple sing right0000" x="2913" y="1731" width="1091" height="830" frameX="0" frameY="0" frameWidth="1091" frameHeight="830" />
+<SubTexture name="purple sing right0001" x="4004" y="1731" width="1091" height="830" frameX="0" frameY="0" frameWidth="1091" frameHeight="830" />
+<SubTexture name="purple sing right0002" x="0" y="2630" width="1091" height="830" frameX="0" frameY="0" frameWidth="1091" frameHeight="830" />
+<SubTexture name="purple sing right0003" x="1091" y="2630" width="1091" height="830" frameX="0" frameY="0" frameWidth="1091" frameHeight="830" />
+<SubTexture name="purple sing up0000" x="2182" y="2630" width="873" height="967" frameX="0" frameY="0" frameWidth="873" frameHeight="967" />
+<SubTexture name="purple sing up0001" x="3055" y="2630" width="873" height="967" frameX="0" frameY="0" frameWidth="873" frameHeight="967" />
+<SubTexture name="purple sing up0002" x="3928" y="2630" width="873" height="967" frameX="0" frameY="0" frameWidth="873" frameHeight="967" />
+<SubTexture name="purple sing up0003" x="0" y="3597" width="873" height="967" frameX="0" frameY="0" frameWidth="873" frameHeight="967" />
+<SubTexture name="purple miss down0000" x="873" y="3597" width="866" height="899" frameX="0" frameY="0" frameWidth="866" frameHeight="899" />
+<SubTexture name="purple miss down0001" x="1739" y="3597" width="866" height="899" frameX="0" frameY="0" frameWidth="866" frameHeight="899" />
+<SubTexture name="purple miss left0000" x="2605" y="3597" width="971" height="899" frameX="0" frameY="0" frameWidth="971" frameHeight="899" />
+<SubTexture name="purple miss left0001" x="3576" y="3597" width="971" height="899" frameX="0" frameY="0" frameWidth="971" frameHeight="899" />
+<SubTexture name="purple miss right0000" x="0" y="4564" width="1091" height="830" frameX="0" frameY="0" frameWidth="1091" frameHeight="830" />
+<SubTexture name="purple miss right0001" x="1091" y="4564" width="1091" height="830" frameX="0" frameY="0" frameWidth="1091" frameHeight="830" />
+<SubTexture name="purple miss up0000" x="2182" y="4564" width="873" height="967" frameX="0" frameY="0" frameWidth="873" frameHeight="967" />
+<SubTexture name="purple miss up0001" x="3055" y="4564" width="873" height="967" frameX="0" frameY="0" frameWidth="873" frameHeight="967" />
+</TextureAtlas>
