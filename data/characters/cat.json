@@ -115,7 +115,7 @@
 		330
 	],
 	"flags": {
-		"running": true
+		"runner": true
 	},
 	"dance_every": 2,
 	"gameover_intial_sound": null,

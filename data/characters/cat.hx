@@ -66,14 +66,13 @@ function onCreatePost()
 		platformCatMic.scale.set(0.5, 0.5);
 		platformCatMic.animation.play('bop');
 
-		stage.insert(stage.members.indexOf(boyfriendGroup) - 1, platformCatMic);
+		stage.insert(stage.members.indexOf(boyfriendGroup) - 3, platformCatMic);
 
 		createBfPlatform();
 
 		FlxG.signals.postUpdate.addOnce(function() {
 			mic.y -= 200;
 			container.x -= 150;
-			platformCatMic.zIndex = boyfriend.zIndex - 10;
 		});
 	}
 
@@ -96,7 +95,8 @@ function createBfPlatform()
 
 		stage.insert(stage.members.indexOf(boyfriendGroup) - 1, platform2);
 
-		platform2.zIndex = boyfriend.zIndex - 5;
+		boyfriend.x += 60;
+		boyfriend.y -= 240;
 	});
 }
 

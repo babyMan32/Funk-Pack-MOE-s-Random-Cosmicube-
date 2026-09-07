@@ -107,6 +107,7 @@
 	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"flags": {
+		"heIsSoCool": true,
 		"noteSkin": "madness",
 		"botplayNoteSkin": "madness-bot"
 	},

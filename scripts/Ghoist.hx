@@ -3,7 +3,7 @@ using StringTools;
 var stroed1 = 0;
 var sotred2 = 0;
 
-var speed = 5000;
+var speed = 50;
 
 function onCreatePost()
 {
