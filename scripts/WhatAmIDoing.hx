@@ -49,12 +49,14 @@ function onCreatePost()
 
 	if (!FunkinAssets.exists(Paths.txt('_flags_collected/' + whatIsThis.get(_the_flag_maybe)?.flagToGive))) return;
 
+	if (!ClientPrefs.inDevMode) return;
+
 	trace('Is "' + whatIsThis.get(_the_flag_maybe)?.name + '" Collected? | ' + FunkinAssets.getContent(Paths.txt('_flags_collected/' + whatIsThis.get(_the_flag_maybe)?.flagToGive)));
 
-	trace(whatIsThis.get(_the_flag_maybe)?.moveDirection);
-	trace(whatIsThis.get(_the_flag_maybe)?.canMove);
-	trace(whatIsThis.get(_the_flag_maybe)?.layerBehind);
-	trace(whatIsThis.get(_the_flag_maybe)?.flagToGive);
+	trace('Moves: ' + whatIsThis.get(_the_flag_maybe)?.moveDirection);
+	trace('Can The Flag Move?: ' + whatIsThis.get(_the_flag_maybe)?.canMove);
+	trace('Layer The Flag Behind Everything?: ' + whatIsThis.get(_the_flag_maybe)?.layerBehind);
+	trace('Flag To Give When Collected: ' + whatIsThis.get(_the_flag_maybe)?.flagToGive);
 	trace(whatIsThis.get(_the_flag_maybe)?.name);
 }
 
@@ -90,11 +92,15 @@ function didYouClickFlag()
 
 	if (!_the_flag_maybe.visible) return;
 
+	if (!FunkinAssets.exists(Paths.txt('_flags_collected/' + whatIsThis.get(_the_flag_maybe)?.flagToGive, null, PathsTestMode.LOOSE))) return;
+
 	_the_flag_maybe.visible = false;
 
 	FlxG.sound.play(Paths.sound('equip'));
 
-	File.saveContent(Paths.txt('_flags_collected/' + whatIsThis.get(_the_flag_maybe)?.flagToGive), 'true');
+	File.saveContent(Paths.txt('_flags_collected/' + whatIsThis.get(_the_flag_maybe)?.flagToGive, null, PathsTestMode.LOOSE), 'true');
 
-	trace('Is "' + whatIsThis.get(_the_flag_maybe)?.name + '" Collected? | ' + FunkinAssets.getContent(Paths.txt('_flags_collected/' + whatIsThis.get(_the_flag_maybe)?.flagToGive)));
+	if (!ClientPrefs.inDevMode) return;
+
+	trace('Is "' + whatIsThis.get(_the_flag_maybe)?.name + '" Collected? | ' + FunkinAssets.getContent(Paths.txt('_flags_collected/' + whatIsThis.get(_the_flag_maybe)?.flagToGive, null, PathsTestMode.LOOSE)));
 }

@@ -24,12 +24,13 @@ function onUpdate()
 				menuFlag = new FlxSprite(0, 0).loadGraphic(Paths.image('flag rofl'));
 				// menuFlag.scale.set(0.05, 0.05);
 				menuFlag.updateHitbox();
-				add(menuFlag);
+				// add(menuFlag);
+
+				trace(FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[items])));
 
 				flagVisible = true;
 			}
-
-			trace(FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[items])));
+			trace(flagVisible);
 		}
 	}
 

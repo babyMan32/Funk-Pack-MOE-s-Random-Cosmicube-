@@ -1,0 +1,151 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 12,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "purple idle"
+		},
+		{
+			"offsets": [
+				40,
+				-60
+			],
+			"indices": [],
+			"fps": 12,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "purple sing down"
+		},
+		{
+			"offsets": [
+				64,
+				0
+			],
+			"indices": [],
+			"fps": 12,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "purple sing left"
+		},
+		{
+			"offsets": [
+				18,
+				-25
+			],
+			"indices": [],
+			"fps": 12,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "purple sing right"
+		},
+		{
+			"offsets": [
+				18,
+				75
+			],
+			"indices": [],
+			"fps": 12,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "purple sing up"
+		},
+		{
+			"offsets": [
+				18,
+				75
+			],
+			"indices": [],
+			"fps": 12,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "purple miss up"
+		},
+		{
+			"offsets": [
+				18,
+				-25
+			],
+			"indices": [],
+			"fps": 12,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "purple miss right"
+		},
+		{
+			"offsets": [
+				64,
+				0
+			],
+			"indices": [],
+			"fps": 12,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "purple miss left"
+		},
+		{
+			"offsets": [
+				40,
+				-60
+			],
+			"indices": [],
+			"fps": 12,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "purple miss down"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/thematesarefunky/frankconfusedscreaming",
+	"position": [
+		-200,
+		140
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"variants": {
+			"defeat": "funky_frank"
+		}
+	},
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "frankui",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -9361198,
+	"camera_position": [
+		-100,
+		150
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.75,
+	"_editor_isPlayer": true
+}

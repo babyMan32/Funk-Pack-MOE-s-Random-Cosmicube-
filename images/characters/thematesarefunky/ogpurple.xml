@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="ogpurple.png">
+<SubTexture name="purple idle0000" x="0" y="0" width="677" height="800" frameX="0" frameY="0" frameWidth="677" frameHeight="800" />
+<SubTexture name="purple idle0001" x="677" y="0" width="677" height="800" frameX="0" frameY="0" frameWidth="677" frameHeight="800" />
+<SubTexture name="purple idle0002" x="1354" y="0" width="677" height="800" frameX="0" frameY="0" frameWidth="677" frameHeight="800" />
+<SubTexture name="purple idle0003" x="2031" y="0" width="677" height="800" frameX="0" frameY="0" frameWidth="677" frameHeight="800" />
+<SubTexture name="purple idle0004" x="2708" y="0" width="677" height="800" frameX="0" frameY="0" frameWidth="677" frameHeight="800" />
+<SubTexture name="purple idle0005" x="3385" y="0" width="677" height="800" frameX="0" frameY="0" frameWidth="677" frameHeight="800" />
+<SubTexture name="purple sing down0000" x="0" y="800" width="749" height="995" frameX="0" frameY="0" frameWidth="749" frameHeight="995" />
+<SubTexture name="purple sing down0001" x="749" y="800" width="749" height="995" frameX="0" frameY="0" frameWidth="749" frameHeight="995" />
+<SubTexture name="purple sing down0002" x="1498" y="800" width="749" height="995" frameX="0" frameY="0" frameWidth="749" frameHeight="995" />
+<SubTexture name="purple sing down0003" x="2247" y="800" width="749" height="995" frameX="0" frameY="0" frameWidth="749" frameHeight="995" />
+<SubTexture name="purple sing down0004" x="2996" y="800" width="749" height="995" frameX="0" frameY="0" frameWidth="749" frameHeight="995" />
+<SubTexture name="purple sing down0005" x="3745" y="800" width="749" height="995" frameX="0" frameY="0" frameWidth="749" frameHeight="995" />
+<SubTexture name="purple sing down0006" x="0" y="1795" width="749" height="995" frameX="0" frameY="0" frameWidth="749" frameHeight="995" />
+<SubTexture name="purple sing down0007" x="749" y="1795" width="749" height="995" frameX="0" frameY="0" frameWidth="749" frameHeight="995" />
+<SubTexture name="purple sing down0008" x="1498" y="1795" width="749" height="995" frameX="0" frameY="0" frameWidth="749" frameHeight="995" />
+<SubTexture name="purple sing down0009" x="2247" y="1795" width="749" height="995" frameX="0" frameY="0" frameWidth="749" frameHeight="995" />
+<SubTexture name="purple sing left0000" x="2996" y="1795" width="1173" height="864" frameX="0" frameY="0" frameWidth="1173" frameHeight="864" />
+<SubTexture name="purple sing left0001" x="4169" y="1795" width="1173" height="864" frameX="0" frameY="0" frameWidth="1173" frameHeight="864" />
+<SubTexture name="purple sing left0002" x="0" y="2790" width="1173" height="864" frameX="0" frameY="0" frameWidth="1173" frameHeight="864" />
+<SubTexture name="purple sing left0003" x="1173" y="2790" width="1173" height="864" frameX="0" frameY="0" frameWidth="1173" frameHeight="864" />
+<SubTexture name="purple sing left0004" x="2346" y="2790" width="1173" height="864" frameX="0" frameY="0" frameWidth="1173" frameHeight="864" />
+<SubTexture name="purple sing left0005" x="3519" y="2790" width="1173" height="864" frameX="0" frameY="0" frameWidth="1173" frameHeight="864" />
+<SubTexture name="purple sing left0006" x="4692" y="2790" width="1173" height="864" frameX="0" frameY="0" frameWidth="1173" frameHeight="864" />
+<SubTexture name="purple sing left0007" x="5865" y="2790" width="1173" height="864" frameX="0" frameY="0" frameWidth="1173" frameHeight="864" />
+<SubTexture name="purple sing left0008" x="0" y="3654" width="1173" height="864" frameX="0" frameY="0" frameWidth="1173" frameHeight="864" />
+<SubTexture name="purple sing left0009" x="1173" y="3654" width="1173" height="864" frameX="0" frameY="0" frameWidth="1173" frameHeight="864" />
+<SubTexture name="purple sing right0000" x="2346" y="3654" width="1033" height="909" frameX="0" frameY="0" frameWidth="1033" frameHeight="909" />
+<SubTexture name="purple sing right0001" x="3379" y="3654" width="1033" height="909" frameX="0" frameY="0" frameWidth="1033" frameHeight="909" />
+<SubTexture name="purple sing right0002" x="4412" y="3654" width="1033" height="909" frameX="0" frameY="0" frameWidth="1033" frameHeight="909" />
+<SubTexture name="purple sing right0003" x="5445" y="3654" width="1033" height="909" frameX="0" frameY="0" frameWidth="1033" frameHeight="909" />
+<SubTexture name="purple sing right0004" x="0" y="4563" width="1033" height="909" frameX="0" frameY="0" frameWidth="1033" frameHeight="909" />
+<SubTexture name="purple sing right0005" x="1033" y="4563" width="1033" height="909" frameX="0" frameY="0" frameWidth="1033" frameHeight="909" />
+<SubTexture name="purple sing right0006" x="2066" y="4563" width="1033" height="909" frameX="0" frameY="0" frameWidth="1033" frameHeight="909" />
+<SubTexture name="purple sing right0007" x="3099" y="4563" width="1033" height="909" frameX="0" frameY="0" frameWidth="1033" frameHeight="909" />
+<SubTexture name="purple sing right0008" x="4132" y="4563" width="1033" height="909" frameX="0" frameY="0" frameWidth="1033" frameHeight="909" />
+<SubTexture name="purple sing right0009" x="5165" y="4563" width="1033" height="909" frameX="0" frameY="0" frameWidth="1033" frameHeight="909" />
+<SubTexture name="purple sing up0000" x="0" y="5472" width="915" height="995" frameX="0" frameY="0" frameWidth="915" frameHeight="995" />
+<SubTexture name="purple sing up0001" x="915" y="5472" width="915" height="995" frameX="0" frameY="0" frameWidth="915" frameHeight="995" />
+<SubTexture name="purple sing up0002" x="1830" y="5472" width="915" height="995" frameX="0" frameY="0" frameWidth="915" frameHeight="995" />
+<SubTexture name="purple sing up0003" x="2745" y="5472" width="915" height="995" frameX="0" frameY="0" frameWidth="915" frameHeight="995" />
+<SubTexture name="purple sing up0004" x="3660" y="5472" width="915" height="995" frameX="0" frameY="0" frameWidth="915" frameHeight="995" />
+<SubTexture name="purple sing up0005" x="4575" y="5472" width="915" height="995" frameX="0" frameY="0" frameWidth="915" frameHeight="995" />
+<SubTexture name="purple sing up0006" x="0" y="6467" width="915" height="995" frameX="0" frameY="0" frameWidth="915" frameHeight="995" />
+<SubTexture name="purple sing up0007" x="915" y="6467" width="915" height="995" frameX="0" frameY="0" frameWidth="915" frameHeight="995" />
+<SubTexture name="purple sing up0008" x="1830" y="6467" width="915" height="995" frameX="0" frameY="0" frameWidth="915" frameHeight="995" />
+<SubTexture name="purple sing up0009" x="2745" y="6467" width="915" height="995" frameX="0" frameY="0" frameWidth="915" frameHeight="995" />
+</TextureAtlas>
