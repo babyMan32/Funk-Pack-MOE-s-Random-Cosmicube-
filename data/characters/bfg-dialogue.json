@@ -160,9 +160,11 @@
 	"dance_every": 2,
 	"gameover_intial_sound": null,
 	"flags": {
+		"variants": {
+			"retro": "bf-ghost"
+		},
 		"seeThrough": true,
 		"floating": true,
-		"defeatRetro": "bf-ghost",
 		"ghost": true
 	},
 	"scalableOffsets": false,

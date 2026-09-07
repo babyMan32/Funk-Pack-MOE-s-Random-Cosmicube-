@@ -9,7 +9,7 @@ var flagVisible = false;
 
 var menuFlag;
 
-function onLoad()
+function onUpdate()
 {
 	var game = FlxG.state;
 
@@ -32,4 +32,9 @@ function onLoad()
 			trace(FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[items])));
 		}
 	}
+
+	Paths.overrideMode = null;
 }
+
+function onLoad() FlxG.signals.preUpdate.add(onUpdate);
+function onDestroy() FlxG.signals.preUpdate.remove(onUpdate);

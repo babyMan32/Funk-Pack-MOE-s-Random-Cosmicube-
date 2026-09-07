@@ -20,6 +20,8 @@ function onCreatePost()
 	{
 		if (PlayState.SONG.stage == _stage_flag_pos[stages][0])
 		{
+			if (!FunkinAssets.exists(Paths.txt('_flags_collected/' + _stage_flag_pos[stages][3]))) return;
+
 			if (FunkinAssets.getContent(Paths.txt('_flags_collected/' + _stage_flag_pos[stages][3])) == 'true') return;
 
 			_the_flag_maybe = new FlxSprite(_stage_flag_pos[stages][1], _stage_flag_pos[stages][2]).loadGraphic(Paths.image('flag rofl', null, null, PathsTestMode.LOOSE));
@@ -44,6 +46,8 @@ function onCreatePost()
 			}
 		}
 	}
+
+	if (!FunkinAssets.exists(Paths.txt('_flags_collected/' + whatIsThis.get(_the_flag_maybe)?.flagToGive))) return;
 
 	trace('Is "' + whatIsThis.get(_the_flag_maybe)?.name + '" Collected? | ' + FunkinAssets.getContent(Paths.txt('_flags_collected/' + whatIsThis.get(_the_flag_maybe)?.flagToGive)));
 
