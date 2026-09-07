@@ -44,18 +44,20 @@ function onUpdate(elapsed:Float):Void
 {
 	redFuckFace.update(elapsed);
 
-	if (boyfriend.getFlag('floating') == true)
+	if (boyfriend.getFlag('floating') == true || !hasBfSkin)
 	{
 		songPos = Conductor.songPosition;
 
 		currentBeat = (songPos / 5000) * (Conductor.bpm / 60);
 		currentBeatSlow = (songPos / 5000) * (Conductor.bpm / 105);
 
+		number = ((boyfriend.getFlag('ghost') == true || !hasBfSkin) ? 0 : 300);
+
 		boyfriend.offset.x = 150 * Math.sin((currentBeatSlow + 12 * 12) * Math.PI);
-		boyfriend.offset.y = -300 + 150 * Math.sin((currentBeat + 12 * 12) * Math.PI);
+		boyfriend.offset.y = -number + 150 * Math.sin((currentBeat + 12 * 12) * Math.PI);
 
 		bfOff[0] = stroed1 - boyfriend.offset.x;
-		bfOff[1] = (sotred2 - boyfriend.offset.y) - 300;
+		bfOff[1] = (sotred2 - boyfriend.offset.y) - number;
 	}
 }
 
