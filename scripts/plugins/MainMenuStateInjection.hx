@@ -17,25 +17,40 @@ function onUpdate()
 	{
 		for (items in 0..._these_shits.length)
 		{
-			Paths.overrideMode = PathsTestMode.LOOSE;
-
-			if (FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[items])) == 'true' && !flagVisible)
+			if (FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[items], null, PathsTestMode.LOOSE)) == 'true' && !flagVisible)
 			{
-				menuFlag = new FlxSprite(0, 0).loadGraphic(Paths.image('flag rofl'));
-				// menuFlag.scale.set(0.05, 0.05);
+				menuFlag = new FlxSprite(0, 0).loadGraphic(Paths.image('flag rofl', null, null, PathsTestMode.LOOSE));
+				menuFlag.scale.set(0.05, 0.05);
 				menuFlag.updateHitbox();
-				// add(menuFlag);
+				game.add(menuFlag);
 
-				trace(FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[items])));
+				trace(FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[items], null, PathsTestMode.LOOSE)));
 
 				flagVisible = true;
 			}
+
 			trace(flagVisible);
 		}
-	}
 
-	Paths.overrideMode = null;
+		if (FlxG.mouse.overlaps(menuFlag) && FlxG.mouse.justPressed)
+		{
+			trace('it was clicked');
+		}
+	}
+	else
+	{
+		flagVisible = false;
+	}
 }
 
 function onLoad() FlxG.signals.preUpdate.add(onUpdate);
-function onDestroy() FlxG.signals.preUpdate.remove(onUpdate);
+
+function onDestroy()
+{
+	if (menuFlag != null)
+	{
+		FlxG.state.remove(menuFlag);
+	}
+
+	FlxG.signals.preUpdate.remove(onUpdate);
+}
