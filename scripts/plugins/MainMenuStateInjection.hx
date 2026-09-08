@@ -9,7 +9,7 @@ var flagVisible = false;
 
 var menuFlag;
 
-function onUpdate()
+function onStateSwitchPost()
 {
 	var game = FlxG.state;
 
@@ -31,15 +31,21 @@ function onUpdate()
 
 			trace(flagVisible);
 		}
+	}
+}
+
+function onUpdate()
+{
+	var game = FlxG.state;
+
+	if (Std.isOfType(game, MainMenuState))
+	{
+		if (menuFlag == null) return;
 
 		if (FlxG.mouse.overlaps(menuFlag) && FlxG.mouse.justPressed)
 		{
 			trace('it was clicked');
 		}
-	}
-	else
-	{
-		flagVisible = false;
 	}
 }
 
@@ -47,8 +53,9 @@ function onLoad() FlxG.signals.preUpdate.add(onUpdate);
 
 function onDestroy()
 {
-	if (menuFlag != null)
+	if (flagVisible)
 	{
+		flagVisible = false;
 		FlxG.state.remove(menuFlag);
 	}
 
