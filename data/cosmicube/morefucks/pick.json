@@ -1,0 +1,14 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Pick",
+	"hint": "not \"wafer\" like a vanilla wafer fatass-",
+	"description": "Evergreen Pico",
+
+	"node":
+	{
+		"parent": "fifi",
+		"direction": "east"
+	}
+}

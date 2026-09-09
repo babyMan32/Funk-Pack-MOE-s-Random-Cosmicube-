@@ -1,0 +1,95 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "Idle instance 1"
+		},
+		{
+			"offsets": [
+				0,
+				-30
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Down instance 1"
+		},
+		{
+			"offsets": [
+				6,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Right instance 1"
+		},
+		{
+			"offsets": [
+				0,
+				-8
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Left instance 1"
+		},
+		{
+			"offsets": [
+				0,
+				11
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Up instance 1"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/wafer/reptile",
+	"position": [
+		115,
+		385
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "reptile",
+	"afterimages": false,
+	"gameover_character": null,
+	"vslice_sustains": true,
+	"flip_x": false,
+	"healthbar_colour": -5149697,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1.25,
+	"_editor_isPlayer": true
+}

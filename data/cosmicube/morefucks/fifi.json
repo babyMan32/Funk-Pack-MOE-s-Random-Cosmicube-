@@ -1,0 +1,14 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Fifi",
+	"hint": "not \"wafer\" like a vanilla wafer fatass-",
+	"description": "Wafer Girlfriend",
+
+	"node":
+	{
+		"parent": "jobby",
+		"direction": "east"
+	}
+}

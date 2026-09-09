@@ -1,0 +1,108 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "Idle instance 1"
+		},
+		{
+			"offsets": [
+				43,
+				70
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Down instance 1"
+		},
+		{
+			"offsets": [
+				179,
+				-8
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Left instance 1"
+		},
+		{
+			"offsets": [
+				0,
+				-11
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Right instance 1"
+		},
+		{
+			"offsets": [
+				163,
+				17
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Up instance 1"
+		},
+		{
+			"offsets": [
+				0,
+				-49
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "miss",
+			"loop": false,
+			"name": "miss instance 1"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/wafer/wpico",
+	"position": [
+		125,
+		350
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "wpico",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": true,
+	"flip_x": true,
+	"healthbar_colour": -4260018,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1.25,
+	"_editor_isPlayer": true
+}
