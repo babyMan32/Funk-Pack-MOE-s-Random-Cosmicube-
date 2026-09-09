@@ -8,7 +8,7 @@
 
 	"node":
 	{
-		"parent": "funky_frank_scream",
-		"direction": "north"
+		"parent": "reptile",
+		"direction": "west"
 	}
 }

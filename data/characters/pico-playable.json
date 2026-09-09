@@ -127,7 +127,11 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": null,
+	"flags": {
+		"variants": {
+			"cold": "pico-playable-christmas"
+		}
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "pico",
