@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend (Rootfunk)",
+	"description": "lined-less",
+
+	"node":
+	{
+		"parent": "gerny",
+		"direction": "north"
+	}
+}

@@ -1,0 +1,95 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "tube bro"
+		},
+		{
+			"offsets": [
+				-20,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "tube_d"
+		},
+		{
+			"offsets": [
+				59,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "tube_r"
+		},
+		{
+			"offsets": [
+				-44,
+				-1
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "tube_l"
+		},
+		{
+			"offsets": [
+				141,
+				537
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "tube_u"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/whittybonusweekend/BRO",
+	"position": [
+		0,
+		250
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "brokemongo",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -12377237,
+	"camera_position": [
+		-100,
+		100
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.75,
+	"_editor_isPlayer": true
+}
