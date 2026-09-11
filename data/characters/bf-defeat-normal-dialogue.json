@@ -109,7 +109,10 @@
 	"dance_every": 2,
 	"flags": {
 		"backlit": true,
-		"defeatRetro": "bf-dialogue"
+		"variants": {
+			"defeatScared": "bf-defeat-scared-dialogue",
+			"retro": "bf-dialogue"
+		}
 	},
 	"gameover_intial_sound": null,
 	"scalableOffsets": false,

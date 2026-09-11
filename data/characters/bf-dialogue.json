@@ -341,6 +341,7 @@
 	"gameover_intial_sound": null,
 	"flags": {
 		"variants": {
+			"defeatScared": "bf-defeat-scared-dialogue",
 			"defeat": "bf-defeat-normal-dialogue",
 			"dark": "whitebf-dialogue",
 			"falling": "bf-fall-dialogue",

@@ -229,10 +229,12 @@
 	"gameover_intial_sound": null,
 	"flags": {
 		"runner": true,
-		"defeatRetro": "bfMADNESSnew",
-		"customMonotone": "bf-monotone",
 		"noteSkin": "madness",
-		"botplayNoteSkin": "madness-bot"
+		"botplayNoteSkin": "madness-bot",
+		"variants": {
+			"defeat": "bfMADNESSexenew",
+			"monotone": "bf-monotone"
+		}
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
