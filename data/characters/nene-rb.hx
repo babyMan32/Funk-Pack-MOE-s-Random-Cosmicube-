@@ -13,12 +13,6 @@ var yollowExploding = ['D\'low', 'D\'low (Pico Mix)'];
 
 function onCreatePost()
 {
-	switch (PlayState.SONG.stage)
-	{
-		case "maroon":
-			changeCharacter("nene_v-slice-christmas", 2);
-	}
-
 	if (noAbotStages.contains(PlayState.SONG.stage))
 	{
 		platformFloat();

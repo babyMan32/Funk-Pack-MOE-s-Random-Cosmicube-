@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Nene (Rootfunk)",
+	"description": "lined-less",
+
+	"node":
+	{
+		"parent": "pico-rb",
+		"direction": "west"
+	}
+}

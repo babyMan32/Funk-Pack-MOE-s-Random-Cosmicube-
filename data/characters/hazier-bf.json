@@ -12,51 +12,12 @@
 			"flipY": false,
 			"anim": "idle",
 			"loop": false,
-			"name": "Pico Idle Dance"
+			"name": "idle"
 		},
 		{
 			"offsets": [
-				102,
-				-8
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singLEFT",
-			"loop": false,
-			"name": "Pico NOTE LEFT"
-		},
-		{
-			"offsets": [
-				-52,
-				11
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singRIGHT",
-			"loop": false,
-			"name": "Pico Note Right"
-		},
-		{
-			"offsets": [
-				42,
-				64
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singUP",
-			"loop": false,
-			"name": "pico Up note"
-		},
-		{
-			"offsets": [
-				76,
-				-76
+				0,
+				0
 			],
 			"indices": [],
 			"fps": 24,
@@ -64,25 +25,64 @@
 			"flipY": false,
 			"anim": "singDOWN",
 			"loop": false,
-			"name": "Pico Down Note"
+			"name": "down"
 		},
 		{
 			"offsets": [
-				238,
-				230
+				0,
+				0
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singLEFTmiss",
+			"anim": "singLEFT",
 			"loop": false,
-			"name": "Left Miss"
+			"name": "left"
 		},
 		{
 			"offsets": [
-				235,
-				230
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "hey",
+			"loop": false,
+			"name": "hey"
+		},
+		{
+			"offsets": [
+				0,
+				0
 			],
 			"indices": [],
 			"fps": 24,
@@ -90,12 +90,25 @@
 			"flipY": false,
 			"anim": "singDOWNmiss",
 			"loop": false,
-			"name": "Down Miss"
+			"name": "missdown"
 		},
 		{
 			"offsets": [
-				240,
-				230
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "missleft"
+		},
+		{
+			"offsets": [
+				0,
+				0
 			],
 			"indices": [],
 			"fps": 24,
@@ -103,12 +116,12 @@
 			"flipY": false,
 			"anim": "singRIGHTmiss",
 			"loop": false,
-			"name": "Right Miss"
+			"name": "missright"
 		},
 		{
 			"offsets": [
-				250,
-				230
+				0,
+				0
 			],
 			"indices": [],
 			"fps": 24,
@@ -116,31 +129,26 @@
 			"flipY": false,
 			"anim": "singUPmiss",
 			"loop": false,
-			"name": "Up Miss"
+			"name": "missup"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/pico/playable-animations, characters/pico/basic-animations",
+	"image": "characters/hazier/bf-gar",
 	"position": [
 		0,
-		290
+		300
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": {
-		"variants": {
-			"cold": "pico-playable-christmas",
-			"monotone": "pico"
-		}
-	},
+	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "pico",
+	"healthicon": "bf",
 	"afterimages": true,
 	"gameover_character": null,
 	"vslice_sustains": true,
 	"flip_x": true,
-	"healthbar_colour": -4728747,
+	"healthbar_colour": -13520687,
 	"camera_position": [
 		0,
 		0

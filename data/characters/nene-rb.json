@@ -10,137 +10,203 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "idle",
+			"anim": "danceLeft",
 			"loop": false,
-			"name": "Pico Idle Dance"
+			"name": "Dance Left"
 		},
 		{
 			"offsets": [
-				102,
-				-8
+				0,
+				0
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singLEFT",
+			"anim": "danceRight",
 			"loop": false,
-			"name": "Pico NOTE LEFT"
+			"name": "Dance Right"
 		},
 		{
 			"offsets": [
-				-52,
-				11
+				-1,
+				1
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singRIGHT",
+			"anim": "idleKnife",
 			"loop": false,
-			"name": "Pico Note Right"
+			"name": "Raised Knife Blink"
 		},
 		{
 			"offsets": [
-				42,
-				64
+				-1,
+				1
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singUP",
+			"anim": "lowerKnife",
 			"loop": false,
-			"name": "pico Up note"
+			"name": "Knife Lower"
 		},
 		{
 			"offsets": [
-				76,
-				-76
+				-1,
+				1
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singDOWN",
+			"anim": "raiseKnife",
 			"loop": false,
-			"name": "Pico Down Note"
+			"name": "Knife Raise"
 		},
 		{
 			"offsets": [
-				238,
-				230
+				0,
+				0
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "drop70",
+			"loop": false,
+			"name": "Laugh"
+		},
+		{
+			"offsets": [
+				0,
+				0
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singLEFTmiss",
+			"anim": "combo50",
 			"loop": false,
-			"name": "Left Miss"
+			"name": "Combo 50"
 		},
 		{
 			"offsets": [
-				235,
-				230
+				0,
+				0
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singDOWNmiss",
+			"anim": "combo200",
 			"loop": false,
-			"name": "Down Miss"
+			"name": "She Want Me"
 		},
 		{
 			"offsets": [
-				240,
-				230
+				1,
+				0
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singRIGHTmiss",
+			"anim": "wat",
 			"loop": false,
-			"name": "Right Miss"
+			"name": "Confused"
 		},
 		{
 			"offsets": [
-				250,
-				230
+				1,
+				0
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singUPmiss",
+			"anim": "wat-end",
 			"loop": false,
-			"name": "Up Miss"
+			"name": "Confused End"
+		},
+		{
+			"offsets": [
+				1,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "wat-loop",
+			"loop": true,
+			"name": "Confused Hold"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/pico/playable-animations, characters/pico/basic-animations",
+	"image": "characters/rootfunk/nene-rb",
 	"position": [
-		0,
-		290
+		75,
+		-65
 	],
-	"dance_every": 2,
+	"dance_every": 1,
 	"gameover_intial_sound": null,
-	"flags": {
-		"variants": {
-			"cold": "pico-playable-christmas",
-			"monotone": "pico"
-		}
-	},
+	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "pico",
+	"healthicon": "nene-playble",
 	"afterimages": true,
 	"gameover_character": null,
 	"vslice_sustains": true,
-	"flip_x": true,
-	"healthbar_colour": -4728747,
+	"flip_x": false,
+	"healthbar_colour": -24888,
 	"camera_position": [
 		0,
 		0
@@ -148,5 +214,5 @@
 	"gameover_loop_sound": null,
 	"sing_duration": 8,
 	"scale": 1,
-	"_editor_isPlayer": true
+	"_editor_isPlayer": false
 }
