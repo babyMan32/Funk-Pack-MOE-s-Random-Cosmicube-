@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Nene (Hazier River)",
+	"description": "BITCH GIMME A BLUNT TOO!",
+
+	"node":
+	{
+		"parent": "hazier-pico",
+		"direction": "east"
+	}
+}

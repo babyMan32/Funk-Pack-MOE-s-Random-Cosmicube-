@@ -10,8 +10,6 @@ var raise_her_knife = false;
 
 var blinkCountdown = 3;
 
-var yo_nenes = ['nene_v-slice', 'nene_v-slice-dark', 'nene_v-slice-pixel', 'nene_d-sides'];
-
 var playedAnim = false;
 
 function onCreatePost()
@@ -26,7 +24,7 @@ function onUpdatePost(elapsed:Float):Void
 {
 	if (!neneExists) return;
 
-	if (!yo_nenes.contains(gf.curCharacter)) return;
+	if (gf.getFlag('canRaiseKnife') != true) return;
 
 	if (health <= VULTURE_THRESHOLD && !raise_her_knife)
 	{
@@ -84,7 +82,7 @@ function onBeatHit()
 
 function goodNoteHit(note)
 {
-	if (!neneExists) return;
+	if (gf == null) return;
 
 	if (note.isSustainNote) return;
 
@@ -102,7 +100,7 @@ function goodNoteHit(note)
 
 function noteMiss(note)
 {
-	if (!neneExists) return;
+	if (gf == null) return;
 
 	if (game.combo >= 70)
 	{

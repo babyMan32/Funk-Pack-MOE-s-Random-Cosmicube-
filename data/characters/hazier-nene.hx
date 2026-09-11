@@ -1,4 +1,5 @@
-var ext = 'characters/neneshit/abot/';
+var ext = 'characters/hazier/abot/gar/';
+var extExtra = 'characters/neneshit/abot/';
 var lookingLeft = false;
 
 var abot;
@@ -25,7 +26,7 @@ function onCreatePost()
 	abot_eyeWhites = new FlxSprite(-380, 730).makeGraphic(160, 60, 0xffffffff);
 	abot.add(abot_eyeWhites);
 
-	a_bot_eyes = new FunkinSprite(-355, 740).loadAtlas('${ext}systemEyes', null, PathsTestMode.LOOSE);
+	a_bot_eyes = new FunkinSprite(-355, 740).loadAtlas('${extExtra}systemEyes', null, PathsTestMode.LOOSE);
 	a_bot_eyes.addAnimByPrefix('move', '', 24, false);
 	abot.add(a_bot_eyes);
 
@@ -34,10 +35,10 @@ function onCreatePost()
 			a_bot_eyes.anim.pause(); // totally didnt steal this from idks modpack what are you taaaaaaalking about-
 	});
 
-	a_bot_screen = new FlxSprite(-250, 540).loadGraphic(Paths.image('${ext}stereoBG', null, null, PathsTestMode.LOOSE));
+	a_bot_screen = new FlxSprite(-250, 540).loadGraphic(Paths.image('${extExtra}stereoBG', null, null, PathsTestMode.LOOSE));
 	abot.add(a_bot_screen);
 
-	a_bot = new FunkinSprite(-410, 500).loadAtlas('${ext}abotSystem', null, PathsTestMode.LOOSE);
+	a_bot = new FunkinSprite(-410, 425).loadAtlas('${ext}abotSystem', null, PathsTestMode.LOOSE);
 	abot.add(a_bot);
 
 	abot.x = gf.x + 300;
@@ -118,7 +119,7 @@ function onUpdatePost()
 
 	if (noAbotStages.contains(PlayState.SONG.stage)) return;
 
-	for (i in [abot_eyeWhites, a_bot_eyes, a_bot_screen, a_bot])
+	for (i in [abot_eyeWhites, a_bot])
 	{
 		i.shader = gf.shader;
 		i.color = gf.color;

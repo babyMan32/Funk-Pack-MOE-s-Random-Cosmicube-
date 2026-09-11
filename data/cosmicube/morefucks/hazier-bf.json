@@ -7,7 +7,7 @@
 
 	"node":
 	{
-		"parent": "cap-toad",
+		"parent": "garcello",
 		"direction": "east"
 	}
 }

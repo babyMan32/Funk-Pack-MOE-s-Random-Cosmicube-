@@ -198,7 +198,9 @@
 	],
 	"dance_every": 1,
 	"gameover_intial_sound": null,
-	"flags": null,
+	"flags": {
+		"canRaiseKnife": true,
+	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "nene-playble",

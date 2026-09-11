@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Girlfriend (Hazier River)",
+	"description": "sweater",
+
+	"node":
+	{
+		"parent": "hazier-bf",
+		"direction": "east"
+	}
+}

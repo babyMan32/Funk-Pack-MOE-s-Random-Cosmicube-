@@ -185,6 +185,7 @@
 			"pixel": "nene_v-slice-pixel",
 			"dark": "nene_v-slice-dark"
 		},
+		"canRaiseKnife": true,
 		"floating": true
 	},
 	"scalableOffsets": false,
