@@ -1,0 +1,42 @@
+{
+	"times": [
+		{
+			"step": 32,
+			"sfx": "picoGasp"
+		},
+		{
+			"step": 73,
+			"sfx": "picoCigarette"
+		},
+		{
+			"step": 104,
+			"sfx": "picoShoot"
+		},
+		{
+			"step": 151,
+			"sfx": "picoSpin"
+		}
+	],
+	"times_dead": [
+		{
+			"step": 32,
+			"sfx": "picoGasp"
+		},
+		{
+			"step": 73,
+			"sfx": "picoCigarette2"
+		},
+		{
+			"step": 104,
+			"sfx": "picoShoot"
+		},
+		{
+			"step": 132,
+			"sfx": "picoExplode"
+		},
+		{
+			"step": 151,
+			"sfx": "picoSpin"
+		}
+	]
+}
