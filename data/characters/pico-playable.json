@@ -1,122 +1,148 @@
 {
-	"pausePortrait": null,
+	"pausePortrait": "",
 	"animations": [
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "idle",
-			"loop": false,
-			"name": "Pico Idle Dance"
+			"fps": 24,
+			"name": "Pico Idle Dance",
+			"indices": [],
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				102,
 				-8
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "Pico NOTE LEFT"
+			"fps": 24,
+			"name": "Pico NOTE LEFT",
+			"indices": [],
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				-52,
 				11
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "singRIGHT",
-			"loop": false,
-			"name": "Pico Note Right"
+			"fps": 24,
+			"name": "Pico Note Right",
+			"indices": [],
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				42,
 				64
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "singUP",
-			"loop": false,
-			"name": "pico Up note"
+			"fps": 24,
+			"name": "pico Up note",
+			"indices": [],
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				76,
 				-76
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "Pico Down Note"
+			"fps": 24,
+			"name": "Pico Down Note",
+			"indices": [],
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				238,
 				230
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "singLEFTmiss",
-			"loop": false,
-			"name": "Left Miss"
+			"fps": 24,
+			"name": "Left Miss",
+			"indices": [],
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				235,
 				230
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "singDOWNmiss",
-			"loop": false,
-			"name": "Down Miss"
+			"fps": 24,
+			"name": "Down Miss",
+			"indices": [],
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				240,
 				230
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "singRIGHTmiss",
-			"loop": false,
-			"name": "Right Miss"
+			"fps": 24,
+			"name": "Right Miss",
+			"indices": [],
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				250,
 				230
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "Up Miss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"offsets": [
+				241,
+				229
 			],
 			"indices": [],
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singUPmiss",
+			"anim": "hey",
 			"loop": false,
-			"name": "Up Miss"
+			"name": "Hey"
+		},
+		{
+			"offsets": [
+				226,
+				237
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "cheer",
+			"loop": false,
+			"name": "Cheer"
 		}
 	],
 	"no_antialiasing": false,

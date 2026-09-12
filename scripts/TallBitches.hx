@@ -12,7 +12,9 @@ function onCreatePost()
 	}
 	else
 	{
-		bfOff[1] -= 25;
+		FlxG.signals.postUpdate.addOnce(function() {
+			bfOff[1] -= 25;
+		});
 	}
 }
 
@@ -36,6 +38,8 @@ function onEvent(eventName, value1, value2)
 					});
 
 				case 'black', 'not black':
+					if (curSong == 'Double Kill (SUSKILL)') return;
+
 					FlxG.signals.postUpdate.addOnce(function() {
 						bfOff[1] -= 25;
 					});

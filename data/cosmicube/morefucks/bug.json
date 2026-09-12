@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Huggy Wuggy",
+	"description": "h e ' s   h u g g y   w u g g y",
+
+	"node":
+	{
+		"parent": "darnell",
+		"direction": "east"
+	}
+}
