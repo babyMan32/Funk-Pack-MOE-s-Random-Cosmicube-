@@ -39,7 +39,7 @@ function onCreatePost()
 
 	bloooooood = new FunkinSprite(bloodPos[0], bloodPos[1]).loadAtlas('characters/dopple/bloodPool');
 	bloooooood.updateHitbox();
-	stage.insert(stage.members.indexOf(dadGroup) - 1, bloooooood);
+	stage.insert(stage.members.indexOf(dadGroup) - 0, bloooooood);
 	bloooooood.alpha = 0.0001;
 }
 
