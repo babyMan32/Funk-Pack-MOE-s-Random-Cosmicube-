@@ -32,6 +32,16 @@ function onStateSwitchPost()
 			trace(flagVisible);
 		}
 	}
+	else 
+	{
+		// on destroy doesnt exist lmao
+		if (flagVisible)
+		{
+			flagVisible = false;
+			FlxG.state.remove(menuFlag);
+		}
+		menuFlag = null;
+	}
 }
 
 function onUpdate()
@@ -47,17 +57,4 @@ function onUpdate()
 			trace('it was clicked');
 		}
 	}
-}
-
-function onLoad() FlxG.signals.preUpdate.add(onUpdate);
-
-function onDestroy()
-{
-	if (flagVisible)
-	{
-		flagVisible = false;
-		FlxG.state.remove(menuFlag);
-	}
-
-	FlxG.signals.preUpdate.remove(onUpdate);
 }

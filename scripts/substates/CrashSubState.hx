@@ -8,14 +8,14 @@ function onLoad()
 	damn_it.alpha = 0.0001;
 	add(damn_it);
 
-	onCreatePost();
+	FlxG.signals.postUpdate.addOnce(crash);
 }
 
-function onCreatePost()
+function crash()
 {
 	trace('got here');
 
-	new FlxTimer().start(2, function(_) {
+	new FlxTimer().start(2, () -> {
 		FlxTween.tween(damn_it, {alpha: 0.5}, 1);
 
 		new FlxTimer().start(3, function(_) {
