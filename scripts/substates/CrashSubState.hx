@@ -13,10 +13,8 @@ function onLoad()
 
 function crash()
 {
-	trace('got here');
-
-	new FlxTimer().start(2, () -> {
-		FlxTween.tween(damn_it, {alpha: 0.5}, 1);
+	new FlxTimer().start(1.5, () -> {
+		FlxTween.tween(damn_it, {alpha: 0.5}, 0.5);
 
 		new FlxTimer().start(3, function(_) {
 			FlxG.stage.window.close();

@@ -111,7 +111,7 @@
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "bfhair",
-	"gameover_character": "bf-beach-dead",
+	"gameover_character": "bf-d-beach-dead",
 	"vslice_sustains": false,
 	"flip_x": true,
 	"healthbar_colour": -1813032,
