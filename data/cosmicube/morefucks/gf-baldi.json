@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Girlfriend (Baldi)",
+	"description": "oh!",
+
+	"node":
+	{
+		"parent": "bf-baldi",
+		"direction": "west"
+	}
+}
