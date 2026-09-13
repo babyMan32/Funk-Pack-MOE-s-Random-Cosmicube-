@@ -8,9 +8,6 @@ var boom = false;
 var killedPlay = false;
 var killedOpp = false;
 
-var bleedPlay = false;
-var bleedOpp = false;
-
 var firstNote = true;
 
 var bloodPos;
@@ -19,8 +16,16 @@ var startBloodPool = false;
 
 var blodSped = 3;
 
+var bloooooood:FunkinSprite;
+
+var specialFuck;
+
 function onCreatePost()
 {
+	specialFuck = boyfriend.getFlag('variants').monotone;
+
+	if (dad.curCharacter != specialFuck) return;
+
 	playShoot = FlxG.random.bool();
 	boom = FlxG.random.bool(8);
 
@@ -57,7 +62,7 @@ function onStepHit()
 
 function onBeatHit()
 {
-	if (curSong != 'Identity Crisis') return;
+	if (dad.curCharacter != specialFuck && dad.curCharacter != 'pico-dopple-opponent') return;
 
 	switch (curBeat)
 	{
@@ -82,11 +87,6 @@ function onBeatHit()
 						bloooooood.alpha = 1;
 						dad.stunned = true;
 					}
-
-					if (animName == 'death')
-					{
-						bleedOpp = true;
-					}
 				});
 			}
 			else
@@ -102,11 +102,7 @@ function onBeatHit()
 						boyfriend.stunned = true;
 						startBloodPool = true;
 						bloooooood.alpha = 1;
-					}
-
-					if (animName == 'death')
-					{
-						bleedPlay = true;
+						health = 0;
 					}
 				});
 			}
@@ -114,6 +110,8 @@ function onBeatHit()
 		case 46:
 			if (!killedPlay) changeCharacter('pico-playable', 0);
 			if (!killedOpp) changeCharacter('pico', 1);
+
+			dad.vSliceSustains = false;
 	}
 }
 
@@ -138,6 +136,7 @@ function onUpdatePost(elapsed:Float):Void
 	{
 		changeCharacter('pico-dopple-opponent', 1);
 		dad.playAnim('death');
+		playHUD.scoreTxt.color = dad.healthColour;
 	}
 
 	if (startBloodPool)
@@ -149,5 +148,40 @@ function onUpdatePost(elapsed:Float):Void
 
 		bloooooood.x -= amt;
 		bloooooood.y += elapsed * blodSped;
+	}
+
+	if (bloooooood?.scale?.x >= 25 && startBloodPool)
+	{
+		startBloodPool = false;
+
+		if (killedOpp)
+		{
+			if (dad.library != null)
+			{
+				var blood = dad.library.getSymbol('blood stream ');
+
+				if (blood != null)
+				{
+					blood.timeline.layers[0].forEachFrame((frame) -> {
+						for (i in frame.elements) i.visible = false;
+					});
+				}
+			}
+		}
+
+		if (killedPlay)
+		{
+			if (boyfriend.library != null)
+			{
+				var blood = boyfriend.library.getSymbol('blood stream ');
+
+				if (blood != null)
+				{
+					blood.timeline.layers[0].forEachFrame((frame) -> {
+						for (i in frame.elements) i.visible = false;
+					});
+				}
+			}
+		}
 	}
 }
