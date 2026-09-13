@@ -20,7 +20,7 @@ function onStateSwitchPost()
 			if (FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[items], null, PathsTestMode.LOOSE)) == 'true' && !flagVisible)
 			{
 				menuFlag = new FlxSprite(0, 0).loadGraphic(Paths.image('flag rofl', null, null, PathsTestMode.LOOSE));
-				menuFlag.scale.set(0.05, 0.05);
+				menuFlag.scale.set(0.025, 0.025);
 				menuFlag.updateHitbox();
 				game.add(menuFlag);
 
@@ -40,6 +40,7 @@ function onStateSwitchPost()
 			flagVisible = false;
 			FlxG.state.remove(menuFlag);
 		}
+
 		menuFlag = null;
 	}
 }
@@ -52,9 +53,12 @@ function onUpdate()
 	{
 		if (menuFlag == null) return;
 
-		if (FlxG.mouse.overlaps(menuFlag) && FlxG.mouse.justPressed)
+		if (FlxG.mouse.overlaps(menuFlag) && FlxG.mouse.justPressed && !game.lockMovement)
 		{
 			trace('it was clicked');
+			game.lockMovement = true;
+			Paths.overrideMode = PathsTestMode.LOOSE;
+			game.openSubState(new ScriptedSubstate('FlagFunniesSubState'));
 		}
 	}
 }

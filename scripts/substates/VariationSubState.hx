@@ -39,9 +39,9 @@ function onLoad()
 	overlayCamera.bgColor = 0x00000000;
 	overlayCamera.antialiasing = ClientPrefs.globalAntialiasing;
 	FlxG.cameras.add(overlayCamera, false);
-		
+
 	camera = overlayCamera;
-		
+
 	bg = new flixel.system.FlxBGSprite();
 	bg.color = FlxColor.BLACK;
 	bg.alpha = 0;
@@ -110,7 +110,7 @@ function tweenTheShits(?on:Bool = false) // fade the shit in/out
 	FlxTween.tween(songType, {alpha: (on ? 1 : 0)}, 0.35, {ease: tweenType});
 	FlxTween.tween(selectionArrow, {alpha: (on ? 1 : 0)}, 0.35, {ease: tweenType, onComplete: function() bullshitFuncMyFav(on)});
 
-	if (on == false) return;
+	if (on != true) return;
 
 	bottomControls.revive();
 }
@@ -120,7 +120,7 @@ function bullshitFuncMyFav(?on:Bool = false)
 	canMove = on;
 	FlxG.state.lockMovement = on;
 
-	if (on == true) return;
+	if (on != false) return;
 
 	bottomControls.kill();
 }
