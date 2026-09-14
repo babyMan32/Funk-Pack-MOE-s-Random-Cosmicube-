@@ -79,7 +79,7 @@ function onUpdate()
 {
 	hasHovered = false;
 
-	for (i in 0...flags.length - 1)
+	for (i in 0...flags.length)
 	{
 		if (FlxG.mouse.overlaps(flags[i]))
 		{
