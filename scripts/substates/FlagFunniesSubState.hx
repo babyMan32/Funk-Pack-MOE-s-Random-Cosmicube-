@@ -2,12 +2,13 @@ import funkin.FunkinAssets;
 
 var _these_shits = ['backlit', 'floating', 'ghost', 'isPixel', 'runner', 'seeThrough'];
 var _these_tips = [
-	'backlit tip', 
-	'floating tip',
-	'ghost tip',
-	'isPixel tip',
-	'runner tip',
-	'seeThrough tip'
+	Lang.str('backlit_tip'), 
+	Lang.str('floating_tip'),
+	Lang.str('ghost_tip'),
+	Lang.str('isPixel_tip'),
+	Lang.str('runner_tip'),
+	Lang.str('seeThrough_tip'),
+	Lang.str('generic_collected')
 ];
 
 var canLeave = false;
@@ -64,7 +65,7 @@ function onLoad()
 		FlxTween.tween(textFlag, {alpha: leNewAlpha}, 0.55, {ease: FlxEase.circOut});
 	}
 
-	tipText = new FlxText(0, 0, 1000, '', 24);
+	tipText = new FlxText(0, 0, 1280, '', 24);
 	tipText.alignment = 'center';
 	tipText.screenCenter();
 	tipText.y = 670;
@@ -73,15 +74,18 @@ function onLoad()
 }
 
 var hasHovered:Bool = false;
-function onUpdate() {
+
+function onUpdate()
+{
 	hasHovered = false;
+
 	for (i in 0...flags.length - 1)
 	{
 		if (FlxG.mouse.overlaps(flags[i]))
 		{
 			// hover
 			hasHovered = true;
-			tipText.text = flagData[i].tip;
+			tipText.text = (FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[i], null, PathsTestMode.LOOSE)) == 'true' ? _these_tips[6] : flagData[i].tip);
 			break;
 		}
 	}
@@ -91,7 +95,13 @@ function onUpdate() {
 	if (controls.BACK && canLeave)
 	{
 		canLeave = false;
-		FlxTween.tween(bg, {alpha: 0.0}, 0.3, {ease: FlxEase.circOut, onComplete: () -> {
+
+		for (i in 0..._these_shits.length)
+		{
+			FlxTween.tween(flags[i], {alpha: 0.0}, 0.3, {ease: FlxEase.circIn});
+		}
+
+		FlxTween.tween(bg, {alpha: 0.0}, 0.3, {ease: FlxEase.circIn, onComplete: () -> {
 			close();
 		}});
 	}

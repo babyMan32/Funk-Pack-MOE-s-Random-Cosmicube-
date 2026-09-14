@@ -1,6 +1,15 @@
 {
 	"lang": {
 		"shop_extraPlayerSkin": "EXTRA PLAYER SKIN",
-		"shop_extraExtraPlayerSkin": "EXTRA EXTRA PLAYER SKIN"
+		"shop_extraExtraPlayerSkin": "EXTRA EXTRA PLAYER SKIN",
+
+		"backlit_tip": "Found in a stage with a less than sane crewmate...",
+		"floating_tip": "Found in a stage where the floor is approaching rapidly...",
+		"ghost_tip": "Found in a stage with two killers and two dead players...",
+		"isPixel_tip": "Found in the secret pixel stage found through a suspicious vent...",
+		"runner_tip": "Found in a horizontally scrolling stage... But be quick.",
+		"seeThrough_tip": "Found in a stage where a blood sacrifice is required...",
+
+		"generic_collected": "You have already collected this flag and are closer to unlocking something."
 	}
 }
