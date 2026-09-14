@@ -31,17 +31,8 @@ function onStateSwitchPost()
 
 			trace(flagVisible);
 		}
-	}
-	else 
-	{
-		// on destroy doesnt exist lmao
-		if (flagVisible)
-		{
-			flagVisible = false;
-			FlxG.state.remove(menuFlag);
-		}
 
-		menuFlag = null;
+		FlxG.signals.preStateSwitch.addOnce(onDestroy);
 	}
 }
 
@@ -61,4 +52,15 @@ function onUpdate()
 			game.openSubState(new ScriptedSubstate('FlagFunniesSubState'));
 		}
 	}
+}
+
+function onDestroy() {
+	trace('KILL');
+	if (flagVisible)
+	{
+		flagVisible = false;
+		FlxG.state.remove(menuFlag);
+	}
+
+	menuFlag = null;
 }

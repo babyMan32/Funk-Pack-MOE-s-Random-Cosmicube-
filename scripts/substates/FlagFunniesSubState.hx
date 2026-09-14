@@ -45,5 +45,19 @@ function onLoad()
 		FlxTween.tween(textFlag, {alpha: leNewAlpha}, 0.55, {ease: FlxEase.circOut});
 	}
 
-	FlxTween.tween(bg, {alpha: 0.75}, 0.55, {ease: FlxEase.circOut});
+	FlxTween.tween(bg, {alpha: 0.75}, 0.55, {ease: FlxEase.circOut, onComplete: () -> { canLeave = true; }});
+}
+
+function onUpdate() {
+	if (controls.BACK && canLeave)
+	{
+		canLeave = false;
+		FlxTween.tween(bg, {alpha: 0.0}, 0.3, {ease: FlxEase.circOut, onComplete: () -> {
+			close();
+		}});
+	}
+}
+
+function onDestroy() {
+	FlxG.state.lockMovement = false;
 }
