@@ -1,8 +1,11 @@
 import funkin.FunkinAssets;
+import haxe.ds.WeakMap;
 
 var _these_shits = ['backlit', 'floating', 'ghost', 'isPixel', 'runner', 'seeThrough'];
 
 var canLeave = false;
+
+var _stupid_flags:Map<FunkinSprite, Dynamic> = new WeakMap();
 
 function onLoad()
 {
@@ -22,12 +25,19 @@ function onLoad()
 
 	for (i in 0..._these_shits.length)
 	{
-		var newFlag = new FlxSprite(0, 0).loadGraphic(Paths.image('flag rofl', null, null, PathsTestMode.LOOSE));
-		newFlag.scale.set(0.05, 0.05);
-		newFlag.updateHitbox();
-		newFlag.screenCenter();
-		newFlag.x = ((FlxG.width / 6) * i) + (FlxG.width / 25);
-		add(newFlag);
+		_stupid_flags.set('flag' + i, {
+			name: _these_shits[i],
+			index: i
+		});
+
+		_stupid_flags.get('flag' + i)?.x = ((FlxG.width / 6) * _stupid_flags.get('flag' + i)?.index) + (FlxG.width / 25);
+		add('flag' + i);
+		// var newFlag = new FlxSprite(0, 0).loadGraphic(Paths.image('flag rofl', null, null, PathsTestMode.LOOSE));
+		// newFlag.scale.set(0.05, 0.05);
+		// newFlag.updateHitbox();
+		// newFlag.screenCenter();
+		// newFlag.x = ((FlxG.width / 6) * i) + (FlxG.width / 25);
+		// add(newFlag);
 
 		var textFlag = new FlxText(0, 0, 1280, _these_shits[i], 15);
 		textFlag.updateHitbox();
