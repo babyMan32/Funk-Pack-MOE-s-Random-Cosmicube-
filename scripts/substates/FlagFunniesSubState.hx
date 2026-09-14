@@ -1,11 +1,20 @@
 import funkin.FunkinAssets;
-import haxe.ds.WeakMap;
 
 var _these_shits = ['backlit', 'floating', 'ghost', 'isPixel', 'runner', 'seeThrough'];
+var _these_tips = [
+	'backlit tip', 
+	'floating tip',
+	'ghost tip',
+	'isPixel tip',
+	'runner tip',
+	'seeThrough tip'
+];
 
 var canLeave = false;
 
-var _stupid_flags:Map<FunkinSprite, Dynamic> = new WeakMap();
+var flags:Array<FunkinSprite> = [];
+var flagData:Array<FlagData> = [];
+var tipText:FlxText;
 
 function onLoad()
 {
@@ -25,19 +34,19 @@ function onLoad()
 
 	for (i in 0..._these_shits.length)
 	{
-		_stupid_flags.set('flag' + i, {
-			name: _these_shits[i],
-			index: i
-		});
+		var newFlag = new FlxSprite(0, 0).loadGraphic(Paths.image('flag rofl', null, null, PathsTestMode.LOOSE));
+		newFlag.scale.set(0.05, 0.05);
+		newFlag.updateHitbox();
+		newFlag.screenCenter();
+		newFlag.x = ((FlxG.width / 6) * i) + (FlxG.width / 25);
+		add(newFlag);
 
-		_stupid_flags.get('flag' + i)?.x = ((FlxG.width / 6) * _stupid_flags.get('flag' + i)?.index) + (FlxG.width / 25);
-		add('flag' + i);
-		// var newFlag = new FlxSprite(0, 0).loadGraphic(Paths.image('flag rofl', null, null, PathsTestMode.LOOSE));
-		// newFlag.scale.set(0.05, 0.05);
-		// newFlag.updateHitbox();
-		// newFlag.screenCenter();
-		// newFlag.x = ((FlxG.width / 6) * i) + (FlxG.width / 25);
-		// add(newFlag);
+		var data = {
+			id: _these_shits[i],
+			tip: _these_tips[i]
+		};
+		flags.push(newFlag);
+		flagData.push(data);
 
 		var textFlag = new FlxText(0, 0, 1280, _these_shits[i], 15);
 		textFlag.updateHitbox();
@@ -55,10 +64,30 @@ function onLoad()
 		FlxTween.tween(textFlag, {alpha: leNewAlpha}, 0.55, {ease: FlxEase.circOut});
 	}
 
+	tipText = new FlxText(0, 0, 1000, '', 24);
+	tipText.alignment = 'center';
+	tipText.screenCenter();
+	tipText.y = 670;
+	add(tipText);
 	FlxTween.tween(bg, {alpha: 0.75}, 0.55, {ease: FlxEase.circOut, onComplete: () -> { canLeave = true; }});
 }
 
+var hasHovered:Bool = false;
 function onUpdate() {
+	hasHovered = false;
+	for (i in 0...flags.length - 1)
+	{
+		if (FlxG.mouse.overlaps(flags[i]))
+		{
+			// hover
+			hasHovered = true;
+			tipText.text = flagData[i].tip;
+			break;
+		}
+	}
+
+	if (!hasHovered) tipText.text = '';
+
 	if (controls.BACK && canLeave)
 	{
 		canLeave = false;
