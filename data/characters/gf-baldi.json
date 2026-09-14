@@ -53,10 +53,10 @@
 	"no_antialiasing": false,
 	"image": "characters/bald/gf/main",
 	"position": [
-		0,
-		0
+		-175,
+		150
 	],
-	"dance_every": 2,
+	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"flags": null,
 	"scalableOffsets": false,
@@ -73,6 +73,6 @@
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 8,
-	"scale": 0.75,
+	"scale": 0.875,
 	"_editor_isPlayer": false
 }

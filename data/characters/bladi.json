@@ -1,0 +1,95 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": ".export/idle",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				30,
+				-139
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": ".export/down",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				247,
+				5
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": ".export/right",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-78,
+				-3
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": ".export/left",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				45,
+				118
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": ".export/up",
+			"indices": [],
+			"flipX": false
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bald/baldi/core",
+	"position": [
+		20,
+		-10
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "baldi",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -16655302,
+	"camera_position": [
+		100,
+		50
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.875,
+	"_editor_isPlayer": true
+}
