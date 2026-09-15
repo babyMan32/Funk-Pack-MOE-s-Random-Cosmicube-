@@ -1,0 +1,15 @@
+{
+	"lang": {
+		"shop_extraPlayerSkin": "EXTRA PLAYER SKIN",
+		"shop_extraExtraPlayerSkin": "EXTRA EXTRA PLAYER SKIN",
+
+		"backlit_tip": "Achado em uma fase com um tripulante menos sano...",
+		"floating_tip": "Achado em uma fase com um tripulante menos sano...",
+		"ghost_tip": "Achado em uma fase com dois assasinos e dois jogadores mortos...",
+		"isPixel_tip": "Achado em uma fase pixel secreta achado por uma ventilação suspeita...",
+		"runner_tip": "Achado em uma fase com movimento vertical... Mas seja rapído.",
+		"seeThrough_tip": "Achado em uma fase onde um sacrifício de sangue é necessário...",
+
+		"generic_collected": "Você já coletou essa bandeira e está mais próximo para desbloquear algo."
+	}
+}
