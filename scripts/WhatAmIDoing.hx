@@ -1,11 +1,19 @@
+import funkin.data.Highscore;
 import funkin.FunkinAssets;
 import haxe.ds.WeakMap;
 import sys.io.File;
 
+var _amt_counted = 0;
+
+var _these_shits = ['backlit', 'floating', 'ghost', 'isPixel', 'runner', 'seeThrough'];
+
 var _stage_flag_pos = [
+	['grey', 375, 970, 'backlit'],
+	['ejected', 2000, 3000, 'floating', true, true, 'vertical'],
 	['cargo', 3350, 1300, 'ghost'],
+	['bars', 1600, 400, 'isPixel', true],
 	['danger', 26000, 500, 'runner', true, true, 'horizontal'],
-	['ejected', 2000, 3000, 'floating', true, true, 'vertical']
+	['medbay', 1550, 600, 'seeThrough', true]
 ];
 
 var _the_flag_maybe;
@@ -16,6 +24,11 @@ var flagspeed:Float = (ClientPrefs.photosensitive ? 7 : 9);
 
 function onCreatePost()
 {
+	for (i in 0..._these_shits.length)
+	{
+		_amt_counted += (FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[i], null, PathsTestMode.LOOSE)) == 'true' ? 1 : 0);
+	}
+
 	for (stages in 0..._stage_flag_pos.length)
 	{
 		if (PlayState.SONG.stage == _stage_flag_pos[stages][0])
@@ -42,7 +55,7 @@ function onCreatePost()
 			}
 			else
 			{
-				stage.insert(stage.members.indexOf(dadGroup) - 0, _the_flag_maybe);
+				stage.insert(stage.members.indexOf(dadGroup) - 3, _the_flag_maybe);
 			}
 		}
 	}
@@ -58,6 +71,11 @@ function onCreatePost()
 	trace('Layer The Flag Behind Everything?: ' + whatIsThis.get(_the_flag_maybe)?.layerBehind);
 	trace('Flag To Give When Collected: ' + whatIsThis.get(_the_flag_maybe)?.flagToGive);
 	trace(whatIsThis.get(_the_flag_maybe)?.name);
+
+	if (whatIsThis.get(_the_flag_maybe)?.flagToGive == 'seeThrough')
+	{
+		_the_flag_maybe.visible = false;
+	}
 }
 
 function onUpdatePost(elapsed:Float):Void
@@ -103,4 +121,23 @@ function didYouClickFlag()
 	if (!ClientPrefs.inDevMode) return;
 
 	trace('Is "' + whatIsThis.get(_the_flag_maybe)?.name + '" Collected? | ' + FunkinAssets.getContent(Paths.txt('_flags_collected/' + whatIsThis.get(_the_flag_maybe)?.flagToGive, null, PathsTestMode.LOOSE)));
+}
+
+function onEvent(eventName, value1, value2)
+{
+	switch (eventName)
+	{
+		case 'Lights on':
+			if (whatIsThis.get(_the_flag_maybe)?.flagToGive != 'seeThrough') return;
+
+			_the_flag_maybe.visible = true;
+	}
+}
+
+function onEndSong()
+{
+	if (Paths.sanitize(PlayState.SONG.song) == 'sussus-moogus' && _amt_counted == 6)
+	{
+		Highscore.saveScore('the_flags_were_got', 999999, 1, 1, 0);
+	}
 }

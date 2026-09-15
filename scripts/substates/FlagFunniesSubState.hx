@@ -1,5 +1,7 @@
 import funkin.FunkinAssets;
 
+var _amt_counted = 0;
+
 var _these_shits = ['backlit', 'floating', 'ghost', 'isPixel', 'runner', 'seeThrough'];
 var _these_tips = [
 	Lang.str('backlit_tip'), 
@@ -8,7 +10,8 @@ var _these_tips = [
 	Lang.str('isPixel_tip'),
 	Lang.str('runner_tip'),
 	Lang.str('seeThrough_tip'),
-	Lang.str('generic_collected')
+	Lang.str('generic_collected'),
+	Lang.str('all_collected')
 ];
 
 var canLeave = false;
@@ -61,6 +64,8 @@ function onLoad()
 
 		leNewAlpha = (FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[i], null, PathsTestMode.LOOSE)) == 'true' ? 1 : 0.5);
 
+		_amt_counted += (FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[i], null, PathsTestMode.LOOSE)) == 'true' ? 1 : 0);
+
 		FlxTween.tween(newFlag, {alpha: leNewAlpha}, 0.55, {ease: FlxEase.circOut});
 		FlxTween.tween(textFlag, {alpha: leNewAlpha}, 0.55, {ease: FlxEase.circOut});
 	}
@@ -85,7 +90,7 @@ function onUpdate()
 		{
 			// hover
 			hasHovered = true;
-			tipText.text = (FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[i], null, PathsTestMode.LOOSE)) == 'true' ? _these_tips[6] : flagData[i].tip);
+			tipText.text = (_amt_counted == 6 ? _these_tips[7] : (FunkinAssets.getContent(Paths.txt('_flags_collected/' + _these_shits[i], null, PathsTestMode.LOOSE)) == 'true' ? _these_tips[6] : flagData[i].tip));
 			break;
 		}
 	}

@@ -1,0 +1,17 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend (Flagged Up)",
+	"description": "what the fuck...?",
+	"hint": "Find the flags.",
+
+	"song": "the_flags_were_got",
+	"requirement": "A",
+
+	"node":
+	{
+		"parent": "cap-toad",
+		"direction": "east"
+	}
+}
