@@ -66,7 +66,7 @@ function onEvent(eventName, value1, value2) // dont mind me
 					boyfriend.ghostsEnabled = false;
 
 				case 1:
-					if (boyfriend.curCharacter == 'oldmongboy') changeCharacter('amongbf', 0);
+					if (ClientPrefs.bfSkin == 'amongbf') changeCharacter('amongbf', 0);
 			}
 	}
 }
