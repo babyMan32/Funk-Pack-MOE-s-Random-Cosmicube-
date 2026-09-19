@@ -4,7 +4,7 @@ function onUpdate(elapsed:Float):Void
 {
 	if (inCutscene || cpuControlled) return;
 
-	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bidu' && allow_taunt && boyfriend.canTaunt)
+	if (controls.NOTE_TAUNT_P && boyfriend.curCharacter == 'bidu-weird' && allow_taunt && boyfriend.canTaunt)
 	{
 		boyfriend.playAnim('yo');
 

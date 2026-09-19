@@ -183,7 +183,7 @@
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/arrow/BIDU",
+	"image": "characters/arrow/BIDU_WEIRD",
 	"position": [
 		25,
 		325
@@ -191,10 +191,7 @@
 	"dance_every": 2,
 	"gameover_intial_sound": "fnf_loss_sfx-bidu",
 	"flags": {
-		"noteSkin": "arrowfunk",
-		"variants": {
-			"weird": "bidu-weird"
-		}
+		"noteSkin": "arrowfunk"
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,

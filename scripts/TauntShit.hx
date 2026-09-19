@@ -16,7 +16,9 @@ public var _character_sets = [ // you can do "_character_sets.push('bfChar', 'gf
 	['bf-b2', 'whittygf', 'hey'],
 	['nene-playable', 'cassandra', 'combo50'],
 	['upboyv3', 'gf21updog'],
-	['bftoogusupdog', 'gftoogusupdog']
+	['bftoogusupdog', 'gftoogusupdog'],
+	['bidu', 'barbara-blue'],
+	['bidu-weird', 'barbara-blue-weird']
 ];
 
 function onUpdatePost(elapsed:Float):Void
