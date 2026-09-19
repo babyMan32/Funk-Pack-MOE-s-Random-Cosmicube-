@@ -18,24 +18,24 @@ function onLoad()
 	{
 		leShitFuckAss = _array_picos[i][0];
 		leShitFuckAss2 = _array_picos[i][1];
-	}
 
-	switch (songName)
-	{
-		case leShitFuckAss:
-			baseChar = leShitFuckAss2;
+		switch (songName)
+		{
+			case leShitFuckAss:
+				baseChar = leShitFuckAss2;
 
-			for (phillies in 0..._hell_yeah_picos.length)
-			{
-				if (ClientPrefs.bfSkin == _hell_yeah_picos[phillies])
+				for (phillies in 0..._hell_yeah_picos.length)
 				{
-					PlayState.SONG.player1 = ClientPrefs.bfSkin;
-					return;
+					if (ClientPrefs.bfSkin == _hell_yeah_picos[phillies])
+					{
+						PlayState.SONG.player1 = ClientPrefs.bfSkin;
+						return;
+					}
+					else
+					{
+						PlayState.SONG.player1 = baseChar;
+					}
 				}
-				else
-				{
-					PlayState.SONG.player1 = baseChar;
-				}
-			}
+		}
 	}
 }
