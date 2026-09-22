@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="chica_chicken.png">
+<SubTexture name="idle0000" x="0" y="0" width="591" height="967" frameX="-9" frameY="0" frameWidth="606" frameHeight="967" />
+</TextureAtlas>

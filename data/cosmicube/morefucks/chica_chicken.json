@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "Chica",
+	"description": "hey guys new fnaf oc just dropped\n\nRequested by motticello.vermicelli",
+
+	"node": {
+		"parent": "flipnotebf-ytpi",
+		"direction": "north"
+	},
+	
+	"color": [
+		255,
+		255,
+		255
+	]
+}
