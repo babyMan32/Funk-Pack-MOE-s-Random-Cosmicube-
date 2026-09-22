@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "Lama",
+	"description": "Okay\n\nRequested by shannels_yt",
+
+	"node": {
+		"parent": "flipnotebf-ytpi",
+		"direction": "south"
+	},
+	
+	"color": [
+		255,
+		255,
+		255
+	]
+}

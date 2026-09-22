@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="lama.png">
+<SubTexture name="idle0000" x="0" y="0" width="127" height="237" frameX="-43" frameY="-13" frameWidth="190" frameHeight="260" />
+</TextureAtlas>
