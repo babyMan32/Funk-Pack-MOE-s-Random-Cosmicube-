@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend (Indie Cross - Celo's Recreation)",
+	"description": "Requested (and created) by celocogumelo",
+
+	"node":
+	{
+		"parent": "john-guy",
+		"direction": "south"
+	}
+}

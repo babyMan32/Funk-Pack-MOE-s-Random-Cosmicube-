@@ -75,7 +75,11 @@
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": {},
+	"flags": {
+		"variants": {
+			"retro": "old-bald"
+		}
+	},
 	"scalableOffsets": true,
 	"gameover_confirm_sound": null,
 	"healthicon": "baldi",

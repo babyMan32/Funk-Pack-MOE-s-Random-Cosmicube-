@@ -17,7 +17,11 @@ function crash()
 		FlxTween.tween(damn_it, {alpha: 0.5}, 0.5);
 
 		new FlxTimer().start(3, function(_) {
-			FlxG.stage.window.close();
+			game.audio?.resume();
+
+			FlxG.signals.postUpdate.addOnce(function() {
+				FlxG.stage.window.close();
+			});
 		});
 	});
 }

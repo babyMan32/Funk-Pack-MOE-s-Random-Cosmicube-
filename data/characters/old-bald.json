@@ -1,0 +1,95 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-70,
+				-60
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down"
+		},
+		{
+			"offsets": [
+				150,
+				102
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "right"
+		},
+		{
+			"offsets": [
+				-220,
+				33
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "left"
+		},
+		{
+			"offsets": [
+				-90,
+				141
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bald/baldihappy",
+	"position": [
+		-50,
+		50
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "baldihappy",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -16060647,
+	"camera_position": [
+		-100,
+		100
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.8,
+	"_editor_isPlayer": true
+}

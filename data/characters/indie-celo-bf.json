@@ -1,0 +1,199 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "Idle"
+		},
+		{
+			"offsets": [
+				-20,
+				-50
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Down0"
+		},
+		{
+			"offsets": [
+				11,
+				-13
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Left0"
+		},
+		{
+			"offsets": [
+				-59,
+				-4
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Right0"
+		},
+		{
+			"offsets": [
+				-60,
+				50
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Up0"
+		},
+		{
+			"offsets": [
+				-60,
+				40
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP-hold",
+			"loop": false,
+			"name": "HoldUp"
+		},
+		{
+			"offsets": [
+				-59,
+				-4
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT-hold",
+			"loop": false,
+			"name": "HoldRight"
+		},
+		{
+			"offsets": [
+				-15,
+				-13
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT-hold",
+			"loop": false,
+			"name": "HoldLeft"
+		},
+		{
+			"offsets": [
+				-28,
+				-50
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN-hold",
+			"loop": false,
+			"name": "HoldDown"
+		},
+		{
+			"offsets": [
+				-20,
+				-25
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "DownMiss"
+		},
+		{
+			"offsets": [
+				-10,
+				18
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "LeftMiss"
+		},
+		{
+			"offsets": [
+				-40,
+				22
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "RightMiss"
+		},
+		{
+			"offsets": [
+				-55,
+				36
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "UpMiss"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/IndieBF",
+	"position": [
+		-10,
+		350
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -13520687,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

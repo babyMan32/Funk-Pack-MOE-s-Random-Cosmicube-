@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Guy",
+	"description": "random kid\n\nRequested (and created) by goldenbun",
+
+	"node":
+	{
+		"parent": "nene-rb",
+		"direction": "west"
+	}
+}
