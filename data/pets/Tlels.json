@@ -1,0 +1,19 @@
+{
+	"animations": [
+		{
+			"fps": 8,
+			"loop": false,
+			"anim": "danceLeft",
+			"name": "danceLeft"
+		},
+		{
+			"fps": 8,
+			"loop": false,
+			"anim": "danceRight",
+			"name": "danceRight"
+		}
+	],
+
+	"dance_every": 1,
+	"scale": 2
+}

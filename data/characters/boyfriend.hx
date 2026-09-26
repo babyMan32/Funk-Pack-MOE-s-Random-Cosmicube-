@@ -32,6 +32,24 @@ function onCreatePost()
 			changeCharacter("boyfriend-with-girlfriend", 0);
 	}
 
+	if (FlxG.random.bool(15))
+	{
+		if (boyfriend.library != null)
+		{
+			var hand = [boyfriend.library.getSymbol('mic hand'), boyfriend.library.getSymbol('arm default'), boyfriend.library.getSymbol('BF defalt arm')];
+
+			if (hand != null)
+			{
+				for (i in 0...hand.length)
+				{
+					hand[i].timeline.layers[0].forEachFrame((frame) -> {
+						for (i in frame.elements) i.visible = false;
+					});
+				}
+			}
+		}
+	}
+
 	if (!doWeLegs) return;
 
 	changeCharacter('boyfriend-running', 0);

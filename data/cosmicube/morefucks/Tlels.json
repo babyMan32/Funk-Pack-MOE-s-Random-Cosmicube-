@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": -500,
+	
+	"title": "Tlels",
+	"description": "le goober shimmys",
+
+	"node": {
+		"parent": "indie-celo-bf",
+		"direction": "south"
+	},
+	
+	"color": [
+		255,
+		165,
+		40
+	]
+}
