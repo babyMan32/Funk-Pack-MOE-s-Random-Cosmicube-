@@ -1,0 +1,12 @@
+{
+	"type": "pet",
+	"price": 87,
+	
+	"title": "Markiplier",
+	"description": "hello everybody my name is welcome",
+
+	"node": {
+		"parent": "live_kludge_reaction",
+		"direction": "east"
+	}
+}

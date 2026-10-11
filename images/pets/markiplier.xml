@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="spritesheet.png">
+	<SubTexture name="idle0000" x="0" y="0" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0000" x="280" y="0" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0001" x="560" y="0" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0002" x="840" y="0" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0003" x="1120" y="0" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0004" x="1400" y="0" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0005" x="0" y="233" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0006" x="280" y="233" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0007" x="560" y="233" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0008" x="840" y="233" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0009" x="1120" y="233" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0010" x="1400" y="233" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0011" x="0" y="466" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0012" x="280" y="466" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0013" x="560" y="466" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0014" x="840" y="466" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0015" x="1120" y="466" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0016" x="1400" y="466" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0017" x="0" y="699" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0018" x="280" y="699" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0019" x="560" y="699" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0020" x="840" y="699" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0021" x="1120" y="699" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0022" x="1400" y="699" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0023" x="0" y="932" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0024" x="280" y="932" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0025" x="560" y="932" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0026" x="840" y="932" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0027" x="1120" y="932" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0028" x="1400" y="932" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+	<SubTexture name="songend0029" x="0" y="1165" width="280" height="233" frameX="0" frameY="0" frameWidth="280" frameHeight="233" />
+</TextureAtlas>
