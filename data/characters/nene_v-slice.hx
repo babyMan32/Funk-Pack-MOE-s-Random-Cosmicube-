@@ -1,3 +1,6 @@
+import funkin.audio.visualize.PolygonSpectogram;
+import funkin.audio.visualize.SpectogramSprite.SPECDIRECTION;
+
 var ext = 'characters/neneshit/abot/';
 var lookingLeft = false;
 
@@ -51,15 +54,22 @@ function onCreatePost()
 	abot.add(a_bot_screenDark);
 	a_bot_screenDark.alpha = 0;
 
+	instVis = new PolygonSpectogram(audio.inst, null, 480, null, SPECDIRECTION.HORIZONTAL);
+	abot.add(instVis);
+	instVis.x = gf.x - 300;
+	instVis.y = gf.y + 725;
+
 	a_bot = new FunkinSprite(-410, 500).loadAtlas('${ext}abotSystem', null, PathsTestMode.LOOSE);
+	a_bot.addAnimByPrefix('idle', '', 24, false);
 	abot.add(a_bot);
 
 	a_botDark = new FunkinSprite(-410, 500).loadAtlas('${ext}dark/abotSystem', null, PathsTestMode.LOOSE);
+	a_botDark.addAnimByPrefix('idle', '', 24, false);
 	abot.add(a_botDark);
 	a_botDark.alpha = 0;
 
-	abot.x = gf.x + 300;
-	abot.y = gf.y - 117;
+	abot.x = parent.x + 300;
+	abot.y = parent.y - 117;
 
 	nene_laugh = FlxG.sound.load(Paths.sound('darnell/nene_laugh', null, PathsTestMode.LOOSE));
 
@@ -73,7 +83,7 @@ function platformFloat()
 	platformGF.animation.addByPrefix('bop', 'floating', 24, true);
 	platformGF.animation.play('bop');
 
-	platformGF.shader = gf.shader;
+	platformGF.shader = parent.shader;
 	gfGroup.insert(0, platformGF);
 
 	if (PlayState.SONG.stage == 'danger') return;
@@ -156,18 +166,33 @@ function onUpdatePost()
 		i.color = gf.color;
 	}
 
-	abot.alpha = gf.alpha;
-	abot.visible = gf.visible;
+	// abot.alpha = gf.alpha;
+	// abot.visible = gf.visible;
+}
+
+function onCountdownTick(counter)
+{
+	if (counter % parent.danceEveryNumBeats == 0 && counter != 4)
+	{
+		a_bot.animation.play('idle', true);
+		a_botDark.animation.play('idle', true);
+	}
 }
 
 function onBeatHit()
 {
+	if (curBeat % parent.danceEveryNumBeats == 0)
+	{
+		a_bot.animation.play('idle', true);
+		a_botDark.animation.play('idle', true);
+	}
+
 	if (!yollowExploding.contains(PlayState.SONG.song)) return;
 
 	if (curBeat == 356)
 	{
-		gf.playAnimForDuration('drop70', 2, true);
-		gf.specialAnim = true;
+		parent.playAnimForDuration('drop70', 2, true);
+		parent.specialAnim = true;
 		nene_laugh.play();
 	}
 }
