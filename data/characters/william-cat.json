@@ -1,0 +1,95 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "william idle"
+		},
+		{
+			"offsets": [
+				-60,
+				-380
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "william down"
+		},
+		{
+			"offsets": [
+				50,
+				-90
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "william right"
+		},
+		{
+			"offsets": [
+				-80,
+				-90
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "william left"
+		},
+		{
+			"offsets": [
+				-60,
+				150
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "william up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/ward/william",
+	"position": [
+		-240,
+		190
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "face",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -8355712,
+	"camera_position": [
+		-200,
+		180
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.5,
+	"_editor_isPlayer": true
+}

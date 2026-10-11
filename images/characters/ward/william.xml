@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="william.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="william down0000" x="6" y="6" width="770" height="490" frameX="-1" frameY="-134" frameWidth="784" frameHeight="759"/>
+	<SubTexture name="william down0001" x="6" y="6" width="770" height="490" frameX="-1" frameY="-134" frameWidth="784" frameHeight="759"/>
+	<SubTexture name="william down0002" x="776" y="6" width="764" height="597" frameX="-9" frameY="-81" frameWidth="784" frameHeight="759"/>
+	<SubTexture name="william down0003" x="776" y="6" width="764" height="597" frameX="-9" frameY="-81" frameWidth="784" frameHeight="759"/>
+	<SubTexture name="william down0004" x="1540" y="6" width="784" height="759"/>
+	<SubTexture name="william down0005" x="1540" y="6" width="784" height="759"/>
+	<SubTexture name="william down0006" x="1540" y="6" width="784" height="759"/>
+	<SubTexture name="william down0007" x="1540" y="6" width="784" height="759"/>
+	<SubTexture name="william down0008" x="1540" y="6" width="784" height="759"/>
+	<SubTexture name="william down0009" x="1540" y="6" width="784" height="759"/>
+	<SubTexture name="william down0010" x="1540" y="6" width="784" height="759"/>
+	<SubTexture name="william down0011" x="1540" y="6" width="784" height="759"/>
+	<SubTexture name="william down0012" x="1540" y="6" width="784" height="759"/>
+	<SubTexture name="william down0013" x="1540" y="6" width="784" height="759"/>
+	<SubTexture name="william idle0000" x="2324" y="6" width="893" height="471" frameX="0" frameY="-303" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0001" x="2324" y="6" width="893" height="471" frameX="0" frameY="-303" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0002" x="3217" y="6" width="826" height="533" frameX="-34" frameY="-235" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0003" x="3217" y="6" width="826" height="533" frameX="-34" frameY="-235" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0004" x="6" y="765" width="803" height="644" frameX="-45" frameY="-123" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0005" x="6" y="765" width="803" height="644" frameX="-45" frameY="-123" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0006" x="809" y="765" width="771" height="749" frameX="-61" frameY="-26" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0007" x="809" y="765" width="771" height="749" frameX="-61" frameY="-26" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0008" x="1580" y="765" width="771" height="772" frameX="-61" frameY="0" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0009" x="1580" y="765" width="771" height="772" frameX="-61" frameY="0" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0010" x="1580" y="765" width="771" height="772" frameX="-61" frameY="0" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0011" x="1580" y="765" width="771" height="772" frameX="-61" frameY="0" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0012" x="1580" y="765" width="771" height="772" frameX="-61" frameY="0" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william idle0013" x="1580" y="765" width="771" height="772" frameX="-61" frameY="0" frameWidth="893" frameHeight="775"/>
+	<SubTexture name="william left0000" x="2351" y="765" width="824" height="681" frameX="-84" frameY="0" frameWidth="972" frameHeight="681"/>
+	<SubTexture name="william left0001" x="2351" y="765" width="824" height="681" frameX="-84" frameY="0" frameWidth="972" frameHeight="681"/>
+	<SubTexture name="william left0002" x="6" y="1537" width="946" height="681" frameX="-15" frameY="0" frameWidth="972" frameHeight="681"/>
+	<SubTexture name="william left0003" x="6" y="1537" width="946" height="681" frameX="-15" frameY="0" frameWidth="972" frameHeight="681"/>
+	<SubTexture name="william left0004" x="952" y="1537" width="972" height="681"/>
+	<SubTexture name="william left0005" x="952" y="1537" width="972" height="681"/>
+	<SubTexture name="william left0006" x="952" y="1537" width="972" height="681"/>
+	<SubTexture name="william left0007" x="952" y="1537" width="972" height="681"/>
+	<SubTexture name="william left0008" x="952" y="1537" width="972" height="681"/>
+	<SubTexture name="william left0009" x="952" y="1537" width="972" height="681"/>
+	<SubTexture name="william left0010" x="952" y="1537" width="972" height="681"/>
+	<SubTexture name="william left0011" x="952" y="1537" width="972" height="681"/>
+	<SubTexture name="william left0012" x="952" y="1537" width="972" height="681"/>
+	<SubTexture name="william left0013" x="952" y="1537" width="972" height="681"/>
+	<SubTexture name="william right0000" x="1924" y="1537" width="791" height="681" frameX="-40" frameY="0" frameWidth="885" frameHeight="681"/>
+	<SubTexture name="william right0001" x="1924" y="1537" width="791" height="681" frameX="-40" frameY="0" frameWidth="885" frameHeight="681"/>
+	<SubTexture name="william right0002" x="2715" y="1537" width="867" height="681" frameX="-8" frameY="0" frameWidth="885" frameHeight="681"/>
+	<SubTexture name="william right0003" x="2715" y="1537" width="867" height="681" frameX="-8" frameY="0" frameWidth="885" frameHeight="681"/>
+	<SubTexture name="william right0004" x="6" y="2218" width="885" height="681"/>
+	<SubTexture name="william right0005" x="6" y="2218" width="885" height="681"/>
+	<SubTexture name="william right0006" x="6" y="2218" width="885" height="681"/>
+	<SubTexture name="william right0007" x="6" y="2218" width="885" height="681"/>
+	<SubTexture name="william right0008" x="6" y="2218" width="885" height="681"/>
+	<SubTexture name="william right0009" x="6" y="2218" width="885" height="681"/>
+	<SubTexture name="william right0010" x="6" y="2218" width="885" height="681"/>
+	<SubTexture name="william right0011" x="6" y="2218" width="885" height="681"/>
+	<SubTexture name="william right0012" x="6" y="2218" width="885" height="681"/>
+	<SubTexture name="william right0013" x="6" y="2218" width="885" height="681"/>
+	<SubTexture name="william up0000" x="891" y="2218" width="769" height="453" frameX="-11" frameY="-405" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0001" x="891" y="2218" width="769" height="453" frameX="-11" frameY="-405" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0002" x="1660" y="2218" width="764" height="599" frameX="-19" frameY="-212" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0003" x="1660" y="2218" width="764" height="599" frameX="-19" frameY="-212" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0004" x="2424" y="2218" width="782" height="736" frameX="0" frameY="0" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0005" x="2424" y="2218" width="782" height="736" frameX="0" frameY="0" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0006" x="2424" y="2218" width="782" height="736" frameX="0" frameY="0" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0007" x="2424" y="2218" width="782" height="736" frameX="0" frameY="0" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0008" x="2424" y="2218" width="782" height="736" frameX="0" frameY="0" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0009" x="2424" y="2218" width="782" height="736" frameX="0" frameY="0" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0010" x="2424" y="2218" width="782" height="736" frameX="0" frameY="0" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0011" x="2424" y="2218" width="782" height="736" frameX="0" frameY="0" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0012" x="2424" y="2218" width="782" height="736" frameX="0" frameY="0" frameWidth="783" frameHeight="858"/>
+	<SubTexture name="william up0013" x="2424" y="2218" width="782" height="736" frameX="0" frameY="0" frameWidth="783" frameHeight="858"/>
+</TextureAtlas>
