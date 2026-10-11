@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 0,
+	
+	"title": "IronMouse (Rewired)",
+	"description": "Cry for Me.",
+	"hint": "Unlocked by receiving a rank of A or higher on GO GO GO!.",
+
+	"node": {
+		"direction": "west",
+		"parent": "qt-player"
+	}
+}
