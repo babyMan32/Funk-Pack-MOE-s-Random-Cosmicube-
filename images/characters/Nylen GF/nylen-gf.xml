@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="nylen-gf.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="comboBreak0000" x="413" y="701" width="404" height="694" frameX="0" frameY="-4" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0001" x="413" y="701" width="404" height="694" frameX="0" frameY="-4" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0002" x="822" y="705" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0003" x="822" y="705" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0004" x="822" y="705" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0005" x="822" y="705" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0006" x="1225" y="0" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0007" x="1225" y="0" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0008" x="1225" y="0" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0009" x="1225" y="0" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0010" x="1225" y="0" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0011" x="1225" y="0" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0012" x="1225" y="0" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0013" x="822" y="705" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0014" x="822" y="705" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0015" x="822" y="705" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0016" x="822" y="705" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0017" x="822" y="705" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0018" x="822" y="705" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0019" x="822" y="705" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0020" x="1226" y="703" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0021" x="1226" y="703" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0022" x="1226" y="703" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0023" x="1226" y="703" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0024" x="1226" y="703" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0025" x="1226" y="703" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0026" x="1226" y="703" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0027" x="1226" y="703" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0028" x="1226" y="703" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="comboBreak0029" x="1226" y="703" width="399" height="698" frameX="0" frameY="0" frameWidth="404" frameHeight="698"/>
+	<SubTexture name="idleDance0000" x="0" y="701" width="408" height="694" frameX="0" frameY="-6" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0001" x="0" y="701" width="408" height="694" frameX="0" frameY="-6" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0002" x="0" y="0" width="409" height="696" frameX="0" frameY="-4" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0003" x="0" y="0" width="409" height="696" frameX="0" frameY="-4" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0004" x="822" y="0" width="398" height="700" frameX="0" frameY="0" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0005" x="822" y="0" width="398" height="700" frameX="0" frameY="0" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0006" x="1630" y="0" width="390" height="700" frameX="0" frameY="0" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0007" x="1630" y="0" width="390" height="700" frameX="0" frameY="0" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0008" x="1630" y="705" width="388" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0009" x="1630" y="705" width="388" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0010" x="2023" y="705" width="387" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0011" x="2023" y="705" width="387" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0012" x="2023" y="705" width="387" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0013" x="2023" y="705" width="387" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0014" x="2417" y="0" width="381" height="697" frameX="0" frameY="-3" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0015" x="2806" y="689" width="354" height="682" frameX="0" frameY="-18" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0016" x="2806" y="689" width="354" height="682" frameX="0" frameY="-18" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0017" x="2806" y="0" width="353" height="684" frameX="0" frameY="-16" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0018" x="2806" y="0" width="353" height="684" frameX="0" frameY="-16" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0019" x="414" y="0" width="371" height="693" frameX="0" frameY="-7" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0020" x="414" y="0" width="371" height="693" frameX="0" frameY="-7" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0021" x="2415" y="704" width="386" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0022" x="2415" y="704" width="386" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0023" x="2025" y="0" width="387" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0024" x="2025" y="0" width="387" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0025" x="2025" y="0" width="387" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0026" x="2025" y="0" width="387" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0027" x="2025" y="0" width="387" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+	<SubTexture name="idleDance0028" x="2025" y="0" width="387" height="699" frameX="0" frameY="-1" frameWidth="409" frameHeight="700"/>
+</TextureAtlas>
