@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Bidu (Weird Variant)",
+	"description": "he's so hue-shifted",
+
+	"node":
+	{
+		"parent": "animania-bf-xmas",
+		"direction": "south"
+	}
+}

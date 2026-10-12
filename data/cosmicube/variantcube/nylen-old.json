@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Nylen (Old Variant)",
+	"description": "Their favorite sprite!",
+
+	"node":
+	{
+		"parent": "root",
+		"direction": "north"
+	}
+}

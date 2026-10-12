@@ -118,10 +118,7 @@
 		370
 	],
 	"flags": {
-		"defeatRetro": "bfpolus",
-		"variants": {
-			"boiling": "bf-lava-dialogue"
-		}
+		"defeatRetro": "bfpolus"
 	},
 	"dance_every": 2,
 	"gameover_intial_sound": null,

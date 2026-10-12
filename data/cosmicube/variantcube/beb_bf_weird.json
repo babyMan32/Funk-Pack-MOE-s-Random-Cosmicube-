@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend (Big Engine Brawl) (Weird Variant)",
+	"description": "why's he weoird",
+
+	"node":
+	{
+		"parent": "bidu-weird",
+		"direction": "south"
+	}
+}
