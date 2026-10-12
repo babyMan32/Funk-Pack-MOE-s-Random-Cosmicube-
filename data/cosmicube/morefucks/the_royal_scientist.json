@@ -1,0 +1,19 @@
+{
+	"type": "pet",
+	"price": 300,
+
+	"title": "W. D. Gaster",
+	"description": "he's the royal scientist",
+
+	"node":
+	{
+		"parent": "william-cat",
+		"direction": "north"
+	},
+	
+	"color": [
+		0,
+		0,
+		0
+	]
+}

@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="the_royal_scientist.png">
+<SubTexture name="idle0000" x="0" y="0" width="380" height="940" frameX="-20" frameY="-80" frameWidth="420" frameHeight="1100" />
+</TextureAtlas>
