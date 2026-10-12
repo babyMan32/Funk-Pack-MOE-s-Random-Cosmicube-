@@ -10,7 +10,7 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "drop70",
+			"anim": "sad",
 			"loop": false,
 			"name": "comboBreak"
 		},
