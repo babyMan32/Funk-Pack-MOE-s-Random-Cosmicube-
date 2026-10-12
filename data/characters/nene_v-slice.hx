@@ -1,5 +1,6 @@
-import funkin.audio.visualize.PolygonSpectogram;
-import funkin.audio.visualize.SpectogramSprite.SPECDIRECTION;
+import funkin.vis.dsp.SpectralAnalyzer;
+import funkin.vis.audioclip.frontends.LimeAudioClip;
+using Lambda;
 
 var ext = 'characters/neneshit/abot/';
 var lookingLeft = false;
@@ -13,6 +14,58 @@ var floatingStages = ['ejected', 'ejectedErected'];
 var nene_laugh;
 
 var yollowExploding = ['D\'low', 'D\'low (Pico Mix)'];
+
+var analyzer:SpectralAnalyzer;
+var analyzerLevelsCache:Array<Bar> = [];
+var vizGroup:FlxSpriteGroup = new FlxSpriteGroup();
+var BAR_COUNT = 7;
+
+function initAnalyzer() {
+	analyzer = new SpectralAnalyzer(inst._channel.__audioSource, BAR_COUNT, 0.1, 40);
+	analyzer.minDb = -65;
+	analyzer.maxDb = -25;
+	analyzer.maxFreq = 22000;
+	analyzer.minFreq = 10;
+}
+
+function drawFFT():Void
+{
+	analyzerLevelsCache = (analyzer != null) ? analyzer.getLevels() : getDefaultLevels();
+
+	for (i in 0...Math.min(vizGroup.members.length, analyzerLevelsCache.length))
+	{
+		var animFrame:Int = Math.round(analyzerLevelsCache[i].value * 6);
+
+		// don't display if we're at 0 volume from the level
+		vizGroup.members[i].visible = animFrame > 0;
+
+		// decrement our animFrame, so we can get a value from 0-5 for animation frames
+		animFrame -= 1;
+
+		animFrame = Math.floor(Math.min(5, animFrame));
+		animFrame = Math.floor(Math.max(0, animFrame));
+
+		animFrame = Std.int(Math.abs(animFrame - 5)); // shitty dumbass flip, cuz dave got da shit backwards lol!
+
+		vizGroup.members[i].animation.curAnim.curFrame = animFrame;
+	}
+}
+
+function getDefaultLevels():Array<Bar>
+{
+	var result:Array<Bar> = [];
+
+	for (i in 0...BAR_COUNT)
+	{
+		result.push({value: 0, peak: 0.0});
+	}
+
+	return result;
+}
+
+function onSongStart() {
+	initAnalyzer();
+}
 
 function onCreatePost()
 {
@@ -54,10 +107,7 @@ function onCreatePost()
 	abot.add(a_bot_screenDark);
 	a_bot_screenDark.alpha = 0;
 
-	instVis = new PolygonSpectogram(audio.inst, null, 480, null, SPECDIRECTION.HORIZONTAL);
-	abot.add(instVis);
-	instVis.x = gf.x - 300;
-	instVis.y = gf.y + 725;
+	abot.add(vizGroup);
 
 	a_bot = new FunkinSprite(-410, 500).loadAtlas('${ext}abotSystem', null, PathsTestMode.LOOSE);
 	a_bot.addAnimByPrefix('idle', '', 24, false);
@@ -72,6 +122,25 @@ function onCreatePost()
 	abot.y = parent.y - 117;
 
 	nene_laugh = FlxG.sound.load(Paths.sound('darnell/nene_laugh', null, PathsTestMode.LOOSE));
+
+	var vizFrames = Paths.getSparrowAtlas('${ext}/aBotViz', null, PathsTestMode.LOOSE);
+	var positionX = [0, 59, 56, 66, 54, 52, 51];
+	var positionY = [0, -8, -3.5, -0.4, 0.5, 4.7, 7];
+	for (i in 1...BAR_COUNT + 1)
+	{
+		var viz = new FunkinSprite();
+		viz.frames = vizFrames;
+		vizGroup.add(viz);
+		var sum = function(num:Float, total:Float) return total += num;
+    var posX:Float = positionX.slice(0, i).fold(sum, 0);
+		var posY:Float = positionY.slice(0, i).fold(sum, 0);
+		viz.x = posX;
+		viz.y = posY;
+
+		var visStr = 'viz';
+		viz.animation.addByPrefix('VIZ', '$visStr${i}0', 0);
+		viz.animation.play('VIZ', false, false, 1);
+	}
 
 	lookLeft();
 }
@@ -152,6 +221,10 @@ function onEvent(ev, v1, v2)
 			a_bot_screenDark.alpha = 0;
 			abot_eyeWhitesDark.alpha = 0;
 	}
+}
+
+function onUpdate(elapsed) {
+	drawFFT();
 }
 
 function onUpdatePost()
