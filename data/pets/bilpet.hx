@@ -8,10 +8,10 @@ function onLoad()
 {
 	if (FlxG.random.bool(10)) 
 	{
-		pet.scale.set(1.2, 1.2);
-		pet.x -= 200;
-		pet.y -= 450;
-		pet.updateHitbox();
+		parent.scale.set(1.2, 1.2);
+		parent.x -= 200;
+		parent.y -= 450;
+		parent.updateHitbox();
 		state = 'beeg';
 
 		playbackRate = Math.round(playbackRate * 120) / 100;
@@ -19,16 +19,27 @@ function onLoad()
 
 	if (FlxG.random.bool(10) && state != 'beeg') 
 	{
-		pet.scale.set(0.1, 0.1);
-		pet.x += 100;
-		pet.y += 150;
-		pet.updateHitbox();
+		parent.scale.set(0.1, 0.1);
+		parent.x += 100;
+		parent.y += 150;
+		parent.updateHitbox();
 		state = 'smol';
 
 		playbackRate = Math.round(playbackRate * 80) / 100;
 	}
 
 	speed = playbackRate;
+
+	if (PlayState.SONG.stage == 'toogus')
+	{
+		parent.scale.x *= 0.8;
+		parent.scale.y *= 0.8;
+		parent.updateHitbox();
+		parent.x -= 385;
+		parent.y -= 282;
+
+		parent.zIndex = 15;
+	}
 }
 
 function onCreatePost()

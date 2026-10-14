@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Double//Slash",
+	"description": "the goobery goob",
+
+	"node":
+	{
+		"parent": "ironmouse",
+		"direction": "north"
+	}
+}

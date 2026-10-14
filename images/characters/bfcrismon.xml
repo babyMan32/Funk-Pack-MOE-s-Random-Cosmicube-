@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bfcrismon.png">
+<SubTexture name="bfcrismon idle0000" x="542" y="2194" width="496" height="628" frameX="-692" frameY="-1422" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon idle0001" x="2332" y="1280" width="496" height="634" frameX="-692" frameY="-1416" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon idle0002" x="1276" y="1514" width="498" height="642" frameX="-692" frameY="-1408" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon idle0003" x="1774" y="1514" width="500" height="640" frameX="-692" frameY="-1408" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon left0000" x="736" y="0" width="478" height="762" frameX="-700" frameY="-1282" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon left0001" x="0" y="768" width="478" height="746" frameX="-700" frameY="-1300" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon left0002" x="478" y="768" width="478" height="736" frameX="-700" frameY="-1310" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon left0003" x="956" y="768" width="480" height="718" frameX="-700" frameY="-1330" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon leftmiss0000" x="1214" y="0" width="480" height="760" frameX="-680" frameY="-1288" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon up0000" x="640" y="1514" width="636" height="656" frameX="-784" frameY="-1400" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon up0001" x="1694" y="680" width="636" height="672" frameX="-784" frameY="-1382" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon up0002" x="1694" y="0" width="638" height="680" frameX="-784" frameY="-1368" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon up0003" x="0" y="1514" width="640" height="680" frameX="-784" frameY="-1368" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon upmiss0000" x="0" y="0" width="736" height="768" frameX="-810" frameY="-1280" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon down0000" x="2872" y="1752" width="576" height="560" frameX="-724" frameY="-1494" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon down0001" x="2872" y="1184" width="576" height="568" frameX="-724" frameY="-1484" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon down0002" x="2872" y="600" width="578" height="584" frameX="-724" frameY="-1468" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon down0003" x="2128" y="2194" width="580" height="600" frameX="-724" frameY="-1448" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon downmiss0000" x="2872" y="0" width="580" height="600" frameX="-724" frameY="-1448" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon right0000" x="1584" y="2194" width="544" height="620" frameX="-810" frameY="-1438" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon right0001" x="1038" y="2194" width="546" height="628" frameX="-810" frameY="-1422" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon right0002" x="0" y="2194" width="542" height="632" frameX="-814" frameY="-1416" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon right0003" x="2332" y="0" width="540" height="640" frameX="-816" frameY="-1408" frameWidth="2000" frameHeight="2160" />
+<SubTexture name="bfcrismon rightmiss0000" x="2332" y="640" width="540" height="640" frameX="-816" frameY="-1408" frameWidth="2000" frameHeight="2160" />
+</TextureAtlas>

@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Double//Slash (Speaker)",
+	"description": "she sit",
+
+	"node":
+	{
+		"parent": "trickyV3BF",
+		"direction": "south"
+	}
+}
