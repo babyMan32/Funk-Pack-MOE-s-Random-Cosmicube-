@@ -38,7 +38,7 @@ function onLoad()
 		parent.x -= 385;
 		parent.y -= 282;
 
-		parent.zIndex = 15;
+		parent.zIndex = (ClientPrefs.gfSkin == 'slash-speaker' ? 15 : 10);
 	}
 }
 

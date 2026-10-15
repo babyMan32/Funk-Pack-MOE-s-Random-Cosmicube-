@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="arley.png">
+	<SubTexture name="ARLEY 200COMBO0000" x="554" y="1662" width="554" height="554" pivotX="0" pivotY="0"/>
+	<SubTexture name="ARLEY 200COMBO0001" x="554" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0002" x="554" y="2216" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0003" x="554" y="2216" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0004" x="554" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0005" x="554" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0006" x="554" y="3324" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0007" x="554" y="3324" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0008" x="1108" y="0" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0009" x="1108" y="0" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0010" x="1108" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0011" x="1108" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0012" x="1108" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0013" x="1108" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0014" x="1108" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0015" x="1108" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0016" x="1108" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0017" x="1108" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0018" x="1108" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 200COMBO0019" x="1108" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 50COMBO0000" x="554" y="0" width="554" height="554" pivotX="0" pivotY="0"/>
+	<SubTexture name="ARLEY 50COMBO0001" x="554" y="0" width="554" height="554"/>
+	<SubTexture name="ARLEY 50COMBO0002" x="554" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY 50COMBO0003" x="554" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY 50COMBO0004" x="554" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 50COMBO0005" x="554" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 50COMBO0006" x="554" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 50COMBO0007" x="554" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 50COMBO0008" x="554" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY 50COMBO0009" x="554" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY DOWN0000" x="1662" y="1108" width="554" height="554" pivotX="0" pivotY="0"/>
+	<SubTexture name="ARLEY DOWN0001" x="1662" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY DOWN0002" x="1662" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY DOWN0003" x="1662" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY DOWN0004" x="1662" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY DOWN0005" x="1662" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY DOWN0006" x="1662" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY DOWN0007" x="1662" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY DOWN0008" x="1662" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY DOWN0009" x="1662" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0000" x="0" y="0" width="554" height="554" pivotX="0" pivotY="0"/>
+	<SubTexture name="ARLEY IDLE0001" x="0" y="0" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0002" x="0" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0003" x="0" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0004" x="0" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0005" x="0" y="1108" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0006" x="0" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0007" x="0" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0008" x="0" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0009" x="0" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0010" x="0" y="2216" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0011" x="0" y="2216" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0012" x="0" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0013" x="0" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0014" x="0" y="3324" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0015" x="0" y="3324" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0016" x="0" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0017" x="0" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0018" x="0" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY IDLE0019" x="0" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY LEFT0000" x="1662" y="0" width="554" height="554" pivotX="0" pivotY="0"/>
+	<SubTexture name="ARLEY LEFT0001" x="1662" y="0" width="554" height="554"/>
+	<SubTexture name="ARLEY LEFT0002" x="1662" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY LEFT0003" x="1662" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY LEFT0004" x="1662" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY LEFT0005" x="1662" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY LEFT0006" x="1662" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY LEFT0007" x="1662" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY LEFT0008" x="1662" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY LEFT0009" x="1662" y="554" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0000" x="1108" y="1662" width="554" height="554" pivotX="0" pivotY="0"/>
+	<SubTexture name="ARLEY LOSSCOMBO0001" x="1108" y="1662" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0002" x="1108" y="2216" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0003" x="1108" y="2216" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0004" x="1108" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0005" x="1108" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0006" x="1108" y="3324" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0007" x="1108" y="3324" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0008" x="1108" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0009" x="1108" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0010" x="1108" y="3324" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0011" x="1108" y="3324" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0012" x="1108" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY LOSSCOMBO0013" x="1108" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY RIGHT0000" x="1662" y="2216" width="554" height="554" pivotX="0" pivotY="0"/>
+	<SubTexture name="ARLEY RIGHT0001" x="1662" y="2216" width="554" height="554"/>
+	<SubTexture name="ARLEY RIGHT0002" x="1662" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY RIGHT0003" x="1662" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY RIGHT0004" x="1662" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY RIGHT0005" x="1662" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY RIGHT0006" x="1662" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY RIGHT0007" x="1662" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY RIGHT0008" x="1662" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY RIGHT0009" x="1662" y="2770" width="554" height="554"/>
+	<SubTexture name="ARLEY UP0000" x="1662" y="3324" width="554" height="554" pivotX="0" pivotY="0"/>
+	<SubTexture name="ARLEY UP0001" x="1662" y="3324" width="554" height="554"/>
+	<SubTexture name="ARLEY UP0002" x="2216" y="0" width="554" height="554"/>
+	<SubTexture name="ARLEY UP0003" x="2216" y="0" width="554" height="554"/>
+	<SubTexture name="ARLEY UP0004" x="2216" y="0" width="554" height="554"/>
+	<SubTexture name="ARLEY UP0005" x="2216" y="0" width="554" height="554"/>
+	<SubTexture name="ARLEY UP0006" x="2216" y="0" width="554" height="554"/>
+	<SubTexture name="ARLEY UP0007" x="2216" y="0" width="554" height="554"/>
+	<SubTexture name="ARLEY UP0008" x="2216" y="0" width="554" height="554"/>
+	<SubTexture name="ARLEY UP0009" x="2216" y="0" width="554" height="554"/>
+</TextureAtlas>

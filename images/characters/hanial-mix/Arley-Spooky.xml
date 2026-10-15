@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Arley-Spooky.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="idle0000" x="1282" y="0" width="644" height="579" frameX="2" frameY="-63" frameWidth="640" frameHeight="640"/>
+	<SubTexture name="idle0001" x="1282" y="579" width="642" height="578" frameX="0" frameY="-62" frameWidth="640" frameHeight="640"/>
+	<SubTexture name="idle0002" x="0" y="590" width="641" height="586" frameX="-1" frameY="-52" frameWidth="640" frameHeight="640"/>
+	<SubTexture name="idle0003" x="641" y="0" width="641" height="589" frameX="-1" frameY="-49" frameWidth="640" frameHeight="640"/>
+	<SubTexture name="idle0004" x="0" y="0" width="641" height="590" frameX="-1" frameY="-48" frameWidth="640" frameHeight="640"/>
+	<SubTexture name="idle0005" x="0" y="0" width="641" height="590" frameX="-1" frameY="-48" frameWidth="640" frameHeight="640"/>
+	<SubTexture name="idle0006" x="0" y="0" width="641" height="590" frameX="-1" frameY="-48" frameWidth="640" frameHeight="640"/>
+</TextureAtlas>

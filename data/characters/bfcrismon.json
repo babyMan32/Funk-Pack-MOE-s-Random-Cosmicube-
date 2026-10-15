@@ -1,0 +1,149 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "bfcrismon idle"
+		},
+		{
+			"offsets": [
+				-50,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "bfcrismon down0"
+		},
+		{
+			"offsets": [
+				-50,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "bfcrismon downmiss"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "bfcrismon rightmiss"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "bfcrismon right0"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "bfcrismon left0"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "bfcrismon leftmiss"
+		},
+		{
+			"offsets": [
+				-110,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "bfcrismon up0"
+		},
+		{
+			"offsets": [
+				-110,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "bfcrismon upmiss"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfcrismon",
+	"position": [
+		-700,
+		-800
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"isPixel": true
+	},
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "bfsmon",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -16757013,
+	"camera_position": [
+		-500,
+		950
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.5,
+	"_editor_isPlayer": true
+}

@@ -125,7 +125,10 @@
 		342
 	],
 	"flags": {
-		"defeatRetro": "bf-encore"
+		"variants": {
+			"retro": "bf-encore",
+			"pixel": "bfcrismon"
+		}
 	},
 	"dance_every": 2,
 	"gameover_intial_sound": null,
