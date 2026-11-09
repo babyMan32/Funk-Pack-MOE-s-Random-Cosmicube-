@@ -8,7 +8,7 @@ var allow_taunt:Bool = true;
 var animSuffixVariable:Array = ["", "-beatbox"];
 var animSuffixInt:Int = 0;
 
-var _autismChance:Bool = false;
+public var _autismChance:Bool = false;
 
 function onLoad()
 {
