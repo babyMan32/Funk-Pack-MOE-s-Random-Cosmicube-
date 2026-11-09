@@ -78,7 +78,7 @@
 	"flags": null,
 	"scalableOffsets": true,
 	"gameover_confirm_sound": null,
-	"healthicon": "cyan",
+	"healthicon": "cyanfriend",
 	"afterimages": true,
 	"gameover_character": null,
 	"vslice_sustains": false,

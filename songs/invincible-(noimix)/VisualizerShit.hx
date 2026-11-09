@@ -54,3 +54,19 @@ function onSpawnNote(note)
 		note.camera = playFields.members[1].camera;
 	}
 }
+
+function onEvent(eventName, value1, value2)
+{
+	switch (eventName)
+	{
+		case 'Legacy':
+			if (value1 == 'scream')
+			{
+				strengthing += 0.1;
+				strengthingPet += 0.15;
+
+				chroma.set_amount(strengthing);
+				chromaPet.set_amount(strengthingPet);
+			}
+	}
+}

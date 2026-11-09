@@ -75,12 +75,14 @@ function onSectionHit()
 	if (mustHitSection)
 	{
 		defaultCamZoom = 0.35;
-		FlxTween.tween(boyfriend, {alpha: 1}, 0.7);
+		if (pet?.alpha == 0) FlxTween.tween(pet, {alpha: 1}, 0.7);
+		if (boyfriend.alpha == 0) FlxTween.tween(boyfriend, {alpha: 1}, 0.7);
 	}
 	else if (!mustHitSection)
 	{
 		defaultCamZoom = 0.6;
-		FlxTween.tween(boyfriend, {alpha: 0}, 0.7);
+		if (pet?.alpha == 1) FlxTween.tween(pet, {alpha: 0}, 0.7);
+		if (boyfriend.alpha == 1) FlxTween.tween(boyfriend, {alpha: 0}, 0.7);
 	}
 }
 

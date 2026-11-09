@@ -13,11 +13,12 @@ function onCreatePost()
 
 function REMNA()
 {
-	if (!curSong.contains('Remnants')) return;
+	if (!curSong.toLowerCase().contains('remnants')) return;
 
 	if (boyfriend != null && !boyfriend.curCharacter.contains('remnants')
 		&& !boyfriend.curCharacter.contains('ghost')
 		&& !boyfriend.curCharacter.contains('nightmare')
+		&& !boyfriend.getFlag('remnants')
 		|| boyfriend.curCharacter == 'yellow-ghostPLUS') {
 		wRemnants(boyfriend);
 		boyfriend.ghostsEnabled = false;
@@ -25,14 +26,16 @@ function REMNA()
 
 	if (gf != null && !gf.curCharacter.contains('remnants')
 		&& !gf.curCharacter.contains('ghost')
-		&& !gf.curCharacter.contains('nightmare')) {
+		&& !gf.curCharacter.contains('nightmare')
+		&& !gf.getFlag('remnants')) {
 		wRemnants(gf);
 		gf.ghostsEnabled = false;
 	}
 
 	if (hasPet && !pet.curPet.contains('remnants')
 		&& !pet.curPet.contains('ghost')
-		&& !pet.curPet.contains('nightmare')) {
+		&& !pet.curPet.contains('nightmare')
+		&& !pet.getFlag('remnants')) {
 		wRemnants(pet, 'pet');
 	}
 }
