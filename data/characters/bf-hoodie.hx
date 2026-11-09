@@ -3,10 +3,12 @@ using StringTools;
 var camX:Float = 900;
 var camY:Float = 475;
 var stageBannedFromChance:Bool = false;
-var allow_taunt = true;
+var allow_taunt:Bool = true;
 
 var animSuffixVariable:Array = ["", "-beatbox"];
 var animSuffixInt:Int = 0;
+
+var _autismChance:Bool = false;
 
 function onLoad()
 {
@@ -136,6 +138,9 @@ function onLoad()
 
 		case "warehouse":
 			stageBannedFromChance = true; //torture
+
+		case "lab":
+			stageBannedFromChance = true; //braiiiiinsss...
 	}
 
 	checkStupid();
@@ -150,6 +155,7 @@ function onCreatePost()
 			boyfriend.idleSuffix = '-stupid';
 			boyfriend.recalculateDanceIdle();
 			boyfriend.playAnim('idle-stupid', true); //autism chance
+			_autismChance = true;
 		}
 	}
 }
