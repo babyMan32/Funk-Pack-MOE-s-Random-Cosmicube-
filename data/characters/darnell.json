@@ -246,7 +246,7 @@
 	"gameover_intial_sound": null,
 	"flags": {
 		"variants": {
-			"remnants": "danrell-remnants"
+			"remnants": "danrell-remts"
 		}
 	},
 	"scalableOffsets": false,

@@ -6,36 +6,55 @@ using StringTools;
 
 var remnanytsShader;
 
+var canItBecomeRemnantsGirlfriend;
+var canItBecomeRemnantsBoyfriend;
+var canItBecomeRemnantsPet;
+
 function onCreatePost()
 {
-	REMNA();
+	remnantShade();
+
+	pet.onChange.add(remnantShade);
 }
 
-function REMNA()
+function remnantShade()
 {
 	if (!curSong.toLowerCase().contains('remnants')) return;
 
-	if (boyfriend != null && !boyfriend.curCharacter.contains('remnants')
+	FlxG.signals.postUpdate.addOnce(function() {
+		playHUD.scoreTxt.color = FlxColor.WHITE;
+	});
+
+	canItBecomeRemnantsBoyfriend = (!boyfriend.curCharacter.contains('remnants')
 		&& !boyfriend.curCharacter.contains('ghost')
 		&& !boyfriend.curCharacter.contains('nightmare')
 		&& !boyfriend.getFlag('remnants')
-		|| boyfriend.curCharacter == 'yellow-ghostPLUS') {
+		&& !boyfriend.getFlag('ghost')
+		|| boyfriend.curCharacter == 'yellow-ghostPLUS');
+
+	canItBecomeRemnantsGirlfriend = (!gf.curCharacter.contains('remnants')
+		&& !gf.curCharacter.contains('ghost')
+		&& !gf.curCharacter.contains('nightmare')
+		&& !gf.getFlag('remnants')
+		&& !gf.getFlag('ghost'));
+
+	canItBecomeRemnantsPet = (!pet.curPet.contains('remnants')
+		&& !pet.curPet.contains('ghost')
+		&& !pet.curPet.contains('nightmare')
+		&& !pet.getFlag('remnants')
+		&& !pet.getFlag('ghost'));
+
+	if (boyfriend != null && canItBecomeRemnantsBoyfriend) {
 		wRemnants(boyfriend);
 		boyfriend.ghostsEnabled = false;
 	}
 
-	if (gf != null && !gf.curCharacter.contains('remnants')
-		&& !gf.curCharacter.contains('ghost')
-		&& !gf.curCharacter.contains('nightmare')
-		&& !gf.getFlag('remnants')) {
+	if (gf != null && canItBecomeRemnantsGirlfriend) {
 		wRemnants(gf);
 		gf.ghostsEnabled = false;
 	}
 
-	if (hasPet && !pet.curPet.contains('remnants')
-		&& !pet.curPet.contains('ghost')
-		&& !pet.curPet.contains('nightmare')
-		&& !pet.getFlag('remnants')) {
+	if (hasPet && canItBecomeRemnantsPet) {
 		wRemnants(pet, 'pet');
 	}
 }
@@ -94,8 +113,115 @@ function wRemnants(character, ?type = 'notPet')
 	]);
 	remnanytsShader.antialiasStages = 4;
 
+	if (character == boyfriend)
+	{
+		var hudRemShader = new funkin.game.shaders.ExtraDropShadowShader().copyFrom(remnanytsShader);
+		playHUD.iconP1.shader = hudRemShader;
+
+		FlxG.signals.postUpdate.addOnce(function() {
+			playHUD.healthBar.setColors(null, 6750003);
+		});
+	}
+
 	remnanytsShader.attachedSprite = character;
 	character.useRenderTexture = true;
+
+	if (character.curCharacter == 'triplespeaker')
+	{
+		character.useRenderTexture = false;
+
+		pinkParts = ['Symbol 2', 'daheart', 'pinkhand1', 'pinkvisor', 'pinkleg', 'pinkleg2', 'pinkbody', 'body parts/bag', 'pinkmouth'];
+		maroonParts = ['Symbol 1', 'Symbol 5', 'maroonvisor', 'maroonbod', 'maroonhand1', 'maroonhand2', 'maroonmouth'];
+
+		if (character.library != null)
+		{
+			for (i in 0...pinkParts.length)
+			{
+				var pinkToShade = character.library.getSymbol(pinkParts[i]);
+
+				var remnanytsShaderAlt = newRemnantsShader('pink');
+
+				if (pinkToShade != null)
+				{
+					pinkToShade.timeline.layers[0].forEachFrame((frame) -> {
+						for (i in frame.elements) i.shader = remnanytsShaderAlt;
+					});
+				}
+			}
+
+			for (i in 0...maroonParts.length)
+			{
+				var marronToShade = character.library.getSymbol(maroonParts[i]);
+
+				var remnanytsShaderAlt2 = newRemnantsShader('maroon');
+
+				if (marronToShade != null)
+				{
+					marronToShade.timeline.layers[0].forEachFrame((frame) -> {
+						for (i in frame.elements) i.shader = remnanytsShaderAlt2;
+					});
+				}
+			}
+		}
+	}
+}
+
+function newRemnantsShader(color)
+{
+	var newRemnt = new funkin.game.shaders.ExtraDropShadowShader();
+
+	switch (color)
+	{
+		case 'pink':
+			newRemnt.threshold = 0.03;
+			newRemnt.setHollowColorMatrix([
+				0, 0, 0, 0, FlxColor.getRed(-1153844),
+				0, 0, 0, 0, FlxColor.getGreen(-1153844),
+				0, 0, 0, 0, FlxColor.getBlue(-1153844),
+				0, 0, 0, 1,         0
+			]);
+			newRemnt.setColorMatrix([
+				0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0,
+				0, 0, 0, 1, 0
+			]);
+			newRemnt.antialiasStages = 4;
+
+		case 'maroon':
+			newRemnt.threshold = 0.03;
+			newRemnt.setHollowColorMatrix([
+				0, 0, 0, 0, FlxColor.getRed(-11394257),
+				0, 0, 0, 0, FlxColor.getGreen(-11394257),
+				0, 0, 0, 0, FlxColor.getBlue(-11394257),
+				0, 0, 0, 1,         0
+			]);
+			newRemnt.setColorMatrix([
+				0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0,
+				0, 0, 0, 1, 0
+			]);
+			newRemnt.antialiasStages = 4;
+
+		case 'green':
+			newRemnt.threshold = 0.03;
+			newRemnt.setHollowColorMatrix([
+				0, 0, 0, 0, 255,
+				0, 0, 0, 0, 212,
+				0, 0, 0, 0,  82,
+				0, 0, 0, 1,   0
+			]);
+			newRemnt.setColorMatrix([
+				0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0,
+				0, 0, 0, 1, 0
+			]);
+			newRemnt.antialiasStages = 4;
+	}
+
+	return newRemnt;
 }
 
 function onEvent(eventName, value1, value2)
