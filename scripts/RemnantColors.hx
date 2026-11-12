@@ -126,12 +126,36 @@ function wRemnants(character, ?type = 'notPet')
 	remnanytsShader.attachedSprite = character;
 	character.useRenderTexture = true;
 
+	if (character.curCharacter == 'speakermungus')
+	{
+		character.useRenderTexture = false;
+
+		var jorsawseeParts = ['Symbol 1', 'Symbol 2', 'Symbol 4', 'Symbol 9', 'Symbol 8', 'Carpeta de elementos duplicados/Símbolo 18'];
+
+		if (character.library != null)
+		{
+			for (i in 0...jorsawseeParts.length)
+			{
+				var jorToShade = character.library.getSymbol(jorsawseeParts[i]);
+
+				var remnanytsShaderAlt = newRemnantsShader('jor');
+
+				if (jorToShade != null)
+				{
+					jorToShade.timeline.layers[0].forEachFrame((frame) -> {
+						for (i in frame.elements) i.shader = remnanytsShaderAlt;
+					});
+				}
+			}
+		}
+	}
+
 	if (character.curCharacter == 'triplespeaker')
 	{
 		character.useRenderTexture = false;
 
-		pinkParts = ['Symbol 2', 'daheart', 'pinkhand1', 'pinkvisor', 'pinkleg', 'pinkleg2', 'pinkbody', 'body parts/bag', 'pinkmouth'];
-		maroonParts = ['Symbol 1', 'Symbol 5', 'maroonvisor', 'maroonbod', 'maroonhand1', 'maroonhand2', 'maroonmouth'];
+		var pinkParts = ['Symbol 2', 'daheart', 'pinkhand1', 'pinkvisor', 'pinkleg', 'pinkleg2', 'pinkbody', 'body parts/bag', 'pinkmouth'];
+		var maroonParts = ['Symbol 1', 'Symbol 5', 'maroonvisor', 'maroonbod', 'maroonhand1', 'maroonhand2', 'maroonmouth'];
 
 		if (character.library != null)
 		{
@@ -204,12 +228,12 @@ function newRemnantsShader(color)
 			]);
 			newRemnt.antialiasStages = 4;
 
-		case 'green':
+		case 'jor':
 			newRemnt.threshold = 0.03;
 			newRemnt.setHollowColorMatrix([
-				0, 0, 0, 0, 255,
-				0, 0, 0, 0, 212,
-				0, 0, 0, 0,  82,
+				0, 0, 0, 0, FlxColor.getRed(-14188569),
+				0, 0, 0, 0, FlxColor.getGreen(-14188569),
+				0, 0, 0, 0, FlxColor.getBlue(-14188569),
 				0, 0, 0, 1,   0
 			]);
 			newRemnt.setColorMatrix([
