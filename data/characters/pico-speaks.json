@@ -149,7 +149,7 @@
 	"image": "characters/pico-speaker",
 	"position": [
 		-450,
-		-200
+		-150
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
