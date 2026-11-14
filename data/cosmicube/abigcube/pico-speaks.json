@@ -1,0 +1,13 @@
+{
+	"type": "speakerSkin",
+	"price": 250,
+
+	"title": "Pico (Speakers)",
+	"description": "He shoots",
+
+	"node":
+	{
+		"parent": "bf-modern",
+		"direction": "east"
+	}
+}

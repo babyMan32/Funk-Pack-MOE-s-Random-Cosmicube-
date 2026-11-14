@@ -1,0 +1,177 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": true,
+			"name": "Shoot 1"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "shoot1",
+			"loop": false,
+			"name": "Shoot 1"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "shoot2",
+			"loop": false,
+			"name": "Shoot 2"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				57,
+				58,
+				59
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "shoot2-hold",
+			"loop": true,
+			"name": "Shoot 2"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				23,
+				24,
+				25
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "shoot1-hold",
+			"loop": true,
+			"name": "Shoot 1"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "shoot3",
+			"loop": false,
+			"name": "Shoot 3"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				50,
+				51,
+				52
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "shoot3-hold",
+			"loop": true,
+			"name": "Shoot 3"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "shoot4",
+			"loop": false,
+			"name": "Shoot 4"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				50,
+				51,
+				52
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "shoot4-hold",
+			"loop": true,
+			"name": "Shoot 4"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/pico-speaker",
+	"position": [
+		-450,
+		-200
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"variants": {
+			"remnants": "pico-remnants-speaker"
+		}
+	},
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "pico",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": true,
+	"flip_x": false,
+	"healthbar_colour": -4728747,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": false
+}
