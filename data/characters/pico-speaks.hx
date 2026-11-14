@@ -23,6 +23,8 @@ var shouldWalk = true;
 
 var baseY = 0;
 
+var layer = dadGroup;
+
 var fuckYouLegacy = ['Don\'t Lied', 'Armed'];
 
 var regret = false;
@@ -31,7 +33,7 @@ var distanceAway = 0;
 
 function onCreatePost()
 {
-	for (bitch in 0...fuckYouLegacy.length) layer = (PlayState.SONG.song == fuckYouLegacy[bitch] ? boyfriendGroup : dadGroup);
+	for (bitch in 0...fuckYouLegacy.length) if (PlayState.SONG.song == fuckYouLegacy[bitch]) layer = boyfriendGroup;
 
 	baseY = parent.y;
 
@@ -126,9 +128,7 @@ function onUpdatePost(elapsed:Float):Void
 }
 function theKillFunction()
 {
-	var exclude = (!flip ? [1,2] : [3,4]);
-
-	if (PlayState.SONG.song == 'Don\'t Lied') exclude = [1,2];
+	var exclude = ((willBeKilled?.x < parent.x + 600) ? [1,2] : [3,4]);
 
 	var numb = FlxG.random.int(1, 4, exclude);
 
