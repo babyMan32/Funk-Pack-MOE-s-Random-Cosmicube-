@@ -93,7 +93,7 @@ function onUpdatePost(elapsed:Float):Void
 		if (!shouldWalk && willBeKilled.getAnimName() == 'walk')
 		{
 			willBeKilled.animation.play('idle', true);
-			regret = FlxG.random.bool(50);
+			regret = FlxG.random.bool(35);
 		}
 
 		if (shouldWalk && willBeKilled.getAnimName() == 'idle') willBeKilled.animation.play('walk', true);
