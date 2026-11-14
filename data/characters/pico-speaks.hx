@@ -67,13 +67,13 @@ function onUpdatePost(elapsed:Float):Void
 {
 	if (willBeKilled?.visible)
 	{
-		if (shouldWalk) willBeKilled?.x += (elapsed * 333) * (flip ? -1 : 1);
-
 		shouldWalk = FlxG.random.bool(0.5) ? !shouldWalk : shouldWalk;
 
 		if (!shouldWalk && willBeKilled.getAnimName() == 'walk') willBeKilled.animation.play('idle', true);
 
 		if (shouldWalk && willBeKilled.getAnimName() == 'idle') willBeKilled.animation.play('walk', true);
+
+		if (shouldWalk) willBeKilled?.x += (elapsed * 333) * (flip ? -1 : 1);
 
 		if (willBeKilled?.x >= (gf.x + variance) && !flip || willBeKilled?.x <= (gf.x + 1200 + variance) && flip)
 		{
