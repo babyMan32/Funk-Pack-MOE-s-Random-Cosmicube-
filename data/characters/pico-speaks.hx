@@ -21,6 +21,17 @@ var variance = 0;
 
 var shouldWalk = true;
 
+var baseY = 0;
+
+function onCreatePost()
+{
+	layer = (PlayState.SONG.song == 'Don\'t Lied' ? boyfriendGroup : dadGroup);
+
+	baseY = parent.y;
+
+	if (PlayState.SONG.song == 'Don\'t Lied') parent.y -= 30;
+}
+
 function onBeatHit()
 {
 	if (!amongWalking && FlxG.random.bool())
@@ -40,12 +51,18 @@ function onBeatHit()
 
 		flip = (FlxG.random.bool() ? true : false);
 
-		var pos = (!flip ? [gf.x - 900, gf.y + 210] : [gf.x + 2100, gf.y + 210]);
+		if (PlayState.SONG.song == 'Don\'t Lied')
+		{
+			flip = true;
+			variance -= 1500;
+		}
+
+		var pos = (!flip ? [parent.x - 900, baseY + 210] : [parent.x + 2100, baseY + 210]);
 
 		willBeKilled = new FunkinSprite(pos[0], pos[1] + FlxG.random.float(-30, 30)).loadAtlas('${ext}walkers');
 		willBeKilled.addAnimByPrefix('walk', '$color walk', 24, true);
 		willBeKilled.addAnimByPrefix('idle', '$color idle', 24, false);
-		stage.insert(stage.members.indexOf(dadGroup) - 0, willBeKilled);
+		stage.insert(stage.members.indexOf(layer) - 0, willBeKilled);
 		willBeKilled.visible = false;
 		amongWalking = true;
 
@@ -75,9 +92,11 @@ function onUpdatePost(elapsed:Float):Void
 
 		if (shouldWalk) willBeKilled?.x += (elapsed * 333) * (flip ? -1 : 1);
 
-		if (willBeKilled?.x >= (gf.x + variance) && !flip || willBeKilled?.x <= (gf.x + 1200 + variance) && flip)
+		if (willBeKilled?.x >= (parent.x + variance) && !flip || willBeKilled?.x <= (parent.x + 1200 + variance) && flip)
 		{
 			var exclude = (!flip ? [1,2] : [3,4]);
+
+			if (PlayState.SONG.song == 'Don\'t Lied') exclude = [1,2];
 
 			var numb = FlxG.random.int(1, 4, exclude);
 
@@ -85,7 +104,7 @@ function onUpdatePost(elapsed:Float):Void
 			parent.specialAnim = true;
 
 			var body = new FlxSprite(willBeKilled?.x, willBeKilled?.y + 450).loadGraphic(Paths.image('stages/airship/mando/YELLOW', null, null, PathsTestMode.LOOSE));
-			stage.insert(stage.members.indexOf(dadGroup) - 0, body);
+			stage.insert(stage.members.indexOf(layer) - 0, body);
 			body.flipX = flip;
 
 			willBeKilled.destroy();
