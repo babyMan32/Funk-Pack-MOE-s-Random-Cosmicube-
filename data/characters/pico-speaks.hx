@@ -143,18 +143,42 @@ function theKillFunction()
 
 	var bodyColor = ext2 + '${color}';
 
-	var body = new FlxSprite(willBeKilled?.x + (willBeKilled?.flipX ? 180 : 50), willBeKilled?.y + 310);
-	body.frames = Paths.getSparrowAtlas(bodyColor, null, null, PathsTestMode.LOOSE);
-	body.animation.addByPrefix('death', 'dies', 24, false);
-	stage.insert(stage.members.indexOf(layer) - 0, body);
-	body.scale.set(0.8, 0.8);
-	body.updateHitbox();
-	body.flipX = !willBeKilled?.flipX;
+	var accidentalKill = FlxG.random.bool(2);
 
-	body.animation.play('death', true);
+	var playerCanBeKilled = ((numb == 1 || numb == 2) && boyfriend.x > parent.x || (numb == 3 || numb == 4) && boyfriend.x < parent.x);
 
-	willBeKilled.destroy();
-	amongWalking = false;
-	willBeKilled = null;
-	regret = false;
+	if (accidentalKill && playerCanBeKilled)
+	{
+		FlxG.signals.postUpdate.addOnce(function() {
+			health = -5; // get FUUUUUUUUUUUUUUUUUUUCKED
+		});
+	}
+	else if (!accidentalKill || accidentalKill && !playerCanBeKilled)
+	{
+		var body = new FlxSprite(willBeKilled?.x + (willBeKilled?.flipX ? 180 : 50), willBeKilled?.y + 310);
+		body.frames = Paths.getSparrowAtlas(bodyColor, null, null, PathsTestMode.LOOSE);
+		body.animation.addByPrefix('death', 'dies', 24, false);
+		stage.insert(stage.members.indexOf(layer) - 0, body);
+		body.scale.set(0.8, 0.8);
+		body.updateHitbox();
+		body.flipX = !willBeKilled?.flipX;
+
+		body.animation.play('death', true);
+
+		willBeKilled.destroy();
+		amongWalking = false;
+		willBeKilled = null;
+		regret = false;
+	}
+}
+
+function onGameOver()
+{
+	if (willBeKilled != null)
+	{
+		willBeKilled.destroy();
+		amongWalking = false;
+		willBeKilled = null;
+		regret = false;
+	}
 }
