@@ -1,3 +1,5 @@
+import funkin.FunkinAssets;
+
 var amongWalking = false;
 
 var willBeKilled;
@@ -7,7 +9,7 @@ var flip = false;
 var ext = 'stages/mira/cafeteria/';
 
 var color = 'lime';
-public var colours = ['blue', 'lime', 'tan', 'white', 'yellow', 'brown'];
+public var colours = ['blue', 'brown', 'lime', 'tan', 'white', 'yellow'];
 
 var exclusions = [
 	['jorsawsee', 'blue'],
@@ -126,6 +128,7 @@ function onUpdatePost(elapsed:Float):Void
 		}
 	}
 }
+
 function theKillFunction()
 {
 	var exclude = ((willBeKilled?.x < parent.x + 600) ? [1,2] : [3,4]);
@@ -136,9 +139,19 @@ function theKillFunction()
 	parent.playAnim('shoot$numb', true);
 	parent.specialAnim = true;
 
-	var body = new FlxSprite(willBeKilled?.x, willBeKilled?.y + 450).loadGraphic(Paths.image('stages/airship/mando/YELLOW', null, null, PathsTestMode.LOOSE));
+	var ext2 = 'walkersDEATHS/';
+
+	var bodyColor = ext2 + '${color}';
+
+	var body = new FlxSprite(willBeKilled?.x + (willBeKilled?.flipX ? 180 : 50), willBeKilled?.y + 310);
+	body.frames = Paths.getSparrowAtlas(bodyColor, null, null, PathsTestMode.LOOSE);
+	body.animation.addByPrefix('death', 'dies', 24, false);
 	stage.insert(stage.members.indexOf(layer) - 0, body);
-	body.flipX = willBeKilled?.flipX;
+	body.scale.set(0.8, 0.8);
+	body.updateHitbox();
+	body.flipX = !willBeKilled?.flipX;
+
+	body.animation.play('death', true);
 
 	willBeKilled.destroy();
 	amongWalking = false;
