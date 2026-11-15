@@ -155,7 +155,7 @@ function theKillFunction()
 	}
 	else if (!accidentalKill || accidentalKill && !playerCanBeKilled)
 	{
-		var body = new FlxSprite(willBeKilled?.x + (willBeKilled?.flipX ? 180 : 50), willBeKilled?.y + 310);
+		var body = new FlxSprite(willBeKilled?.x + (willBeKilled?.flipX ? 130 : 50), willBeKilled?.y + 310);
 		body.frames = Paths.getSparrowAtlas(bodyColor, null, null, PathsTestMode.LOOSE);
 		body.animation.addByPrefix('death', 'dies', 24, false);
 		stage.insert(stage.members.indexOf(layer) - 0, body);
