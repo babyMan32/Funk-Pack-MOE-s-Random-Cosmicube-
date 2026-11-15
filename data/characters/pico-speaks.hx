@@ -11,14 +11,6 @@ var ext = 'stages/mira/cafeteria/';
 var color = 'lime';
 public var colours = ['blue', 'brown', 'lime', 'tan', 'white', 'yellow'];
 
-var exclusions = [
-	['jorsawsee', 'blue'],
-	['LIMEGREENWEEKINVSIMPOSTOR', 'lime'],
-	['white', 'white'],
-	['whitedk', 'white'],
-	['yellow', 'yellow']
-];
-
 var variance = 0;
 
 var shouldWalk = true;
@@ -33,6 +25,9 @@ var regret = false;
 
 var distanceAway = 0;
 
+var gunBlast;
+var whenIShit;
+
 function onCreatePost()
 {
 	for (bitch in 0...fuckYouLegacy.length) if (PlayState.SONG.song == fuckYouLegacy[bitch]) layer = boyfriendGroup;
@@ -40,6 +35,9 @@ function onCreatePost()
 	baseY = parent.y;
 
 	if (PlayState.SONG.song == 'Don\'t Lied') parent.y -= 30;
+
+	gunBlast = FlxG.sound.load(Paths.sound('hankshoot', null, PathsTestMode.LOOSE));
+	whenIShit = FlxG.sound.load(Paths.sound('kill', null, PathsTestMode.LOOSE));
 }
 
 function onBeatHit()
@@ -51,13 +49,6 @@ function onBeatHit()
 		color = colours[number];
 
 		variance = FlxG.random.float(-350, 350);
-
-		for (i in 0...exclusions.length)
-		{
-			if (dad.curCharacter == exclusions[i][0] && color == exclusions[i][1]) color = colours[number + (FlxG.random.bool() ? 1 : -1)];
-
-			if (PlayState.SONG.song == 'Oversight' && color == 'yellow') color = colours[number + (FlxG.random.bool() ? 1 : -2)];
-		}
 
 		flip = (FlxG.random.bool() ? true : false);
 
@@ -135,7 +126,9 @@ function theKillFunction()
 
 	var numb = FlxG.random.int(1, 4, exclude);
 
-	FlxG.sound.play(Paths.sound('kill'), null, PathsTestMode.LOOSE);
+	gunBlast.play(true);
+	whenIShit.play(true);
+
 	parent.playAnim('shoot$numb', true);
 	parent.specialAnim = true;
 
