@@ -19,6 +19,8 @@ function onUpdate()
 
 		trace(charsToType[index]);
 
+		trace(FlxG.keys.justPressed);
+
 		if (index == 5) FreeplayState.loadSong('Invincible (Noimix)');
 	}
 }

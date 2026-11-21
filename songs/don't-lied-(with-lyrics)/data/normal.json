@@ -3241,10 +3241,8 @@
 		],
 		"player2": "purple",
 		"keys": 4,
-		"splashSkin": "noteSplashes",
 		"song": "Don't Lied (With Lyrics)",
-		"arrowSkin": "default",
-		"validScore": false,
+		"validScore": true,
 		"format": "nmv2",
 		"lanes": 2,
 		"speed": 2.9,
@@ -3254,7 +3252,7 @@
 			"default",
 			"default"
 		],
-		"stage": "medbay",
+		"stage": "polus",
 		"needsVoices": true,
 		"bpm": 178
 	}

@@ -25,8 +25,13 @@ var regret = false;
 
 var distanceAway = 0;
 
+var number = 0;
+
 var gunBlast;
 var whenIShit;
+
+var walkingFuckers = [];
+var deadFuckers = [];
 
 function onCreatePost()
 {
@@ -44,7 +49,7 @@ function onBeatHit()
 {
 	if (!amongWalking && FlxG.random.bool())
 	{
-		var number = FlxG.random.int(0, colours.length - 1);
+		number = FlxG.random.int(0, colours.length - 1);
 
 		color = colours[number];
 
@@ -71,58 +76,65 @@ function onBeatHit()
 
 		willBeKilled.flipX = flip;
 
+		walkingFuckers.push(willBeKilled);
 	}
 
-	if (amongWalking && !shouldWalk && curBeat % 2 == 0)
+	for (i in 0...walkingFuckers.length)
 	{
-		willBeKilled.animation.play('idle', false);
+		if (amongWalking && !shouldWalk && curBeat % 2 == 0)
+		{
+			walkingFuckers[i]?.animation.play('idle', false);
+		}
 	}
 }
 
 function onUpdatePost(elapsed:Float):Void
 {
-	if (willBeKilled != null)
+	for (i in 0...walkingFuckers.length)
 	{
-		shouldWalk = FlxG.random.bool(0.5) ? !shouldWalk : shouldWalk;
-
-		if (!shouldWalk && willBeKilled.getAnimName() == 'walk')
+		if (walkingFuckers != null)
 		{
-			willBeKilled.animation.play('idle', true);
-			regret = FlxG.random.bool(35);
-		}
+			shouldWalk = FlxG.random.bool(0.5) ? !shouldWalk : shouldWalk;
 
-		if (shouldWalk && willBeKilled.getAnimName() == 'idle') willBeKilled.animation.play('walk', true);
-
-		if (shouldWalk)
-		{
-			var speed = (elapsed * 333);
-
-			willBeKilled?.x += speed * (flip ? -1 : 1) * (regret ? -1 : 1);
-
-			if (regret)
+			if (!shouldWalk && walkingFuckers[i]?.getAnimName() == 'walk')
 			{
-				distanceAway += speed;
-				willBeKilled.flipX = !flip;
-			}
-			else if (!regret)
-			{
-				distanceAway = 0;
-				willBeKilled.flipX = flip;
+				walkingFuckers[i]?.animation.play('idle', true);
+				regret = FlxG.random.bool(35);
 			}
 
-			if (distanceAway >= 100) theKillFunction();
-		}
+			if (shouldWalk && walkingFuckers[i]?.getAnimName() == 'idle') walkingFuckers[i]?.animation.play('walk', true);
 
-		if (willBeKilled?.x >= (parent.x + variance) && !flip || willBeKilled?.x <= (parent.x + 1200 + variance) && flip)
-		{
-			theKillFunction();
+			if (shouldWalk)
+			{
+				var speed = (elapsed * 333);
+
+				walkingFuckers[i]?.x += speed * (flip ? -1 : 1) * (regret ? -1 : 1);
+
+				if (regret)
+				{
+					distanceAway += speed;
+					walkingFuckers[i]?.flipX = !flip;
+				}
+				else if (!regret)
+				{
+					distanceAway = 0;
+					walkingFuckers[i]?.flipX = flip;
+				}
+
+				if (distanceAway >= 100) theKillFunction(walkingFuckers[i]);
+			}
+
+			if (walkingFuckers[i]?.x >= (parent.x + variance) && !flip || walkingFuckers[i]?.x <= (parent.x + 1200 + variance) && flip)
+			{
+				theKillFunction(walkingFuckers[i], i);
+			}
 		}
 	}
 }
 
-function theKillFunction()
+function theKillFunction(person, index)
 {
-	var exclude = ((willBeKilled?.x < parent.x + 600) ? [1,2] : [3,4]);
+	var exclude = ((person?.x < parent.x + 600) ? [1,2] : [3,4]);
 
 	var numb = FlxG.random.int(1, 4, exclude);
 
@@ -148,30 +160,32 @@ function theKillFunction()
 	}
 	else if (!accidentalKill || accidentalKill && !playerCanBeKilled)
 	{
-		var body = new FlxSprite(willBeKilled?.x + (willBeKilled?.flipX ? 130 : 50), willBeKilled?.y + 310);
+		var body = new FlxSprite(person?.x + (person?.flipX ? 130 : 50), person?.y + 310);
 		body.frames = Paths.getSparrowAtlas(bodyColor, null, null, PathsTestMode.LOOSE);
 		body.animation.addByPrefix('death', 'dies', 24, false);
 		stage.insert(stage.members.indexOf(layer) - 0, body);
 		body.scale.set(0.8, 0.8);
 		body.updateHitbox();
-		body.flipX = !willBeKilled?.flipX;
+		body.flipX = !person?.flipX;
 
 		body.animation.play('death', true);
 
-		willBeKilled.destroy();
+		walkingFuckers[index].destroy();
+		walkingFuckers[index] = null;
 		amongWalking = false;
-		willBeKilled = null;
 		regret = false;
+
+		deadFuckers.push(body);
 	}
 }
 
 function onGameOver()
 {
-	if (willBeKilled != null)
+	if (walkingFuckers != null)
 	{
-		willBeKilled.destroy();
+		walkingFuckers.destroy();
+		walkingFuckers = null;
 		amongWalking = false;
-		willBeKilled = null;
 		regret = false;
 	}
 }

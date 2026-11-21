@@ -255,7 +255,7 @@ function onEvent(eventName, value1, value2)
 		case 'Defeat Retro':
 			if (Std.parseInt(value1) == 1)
 			{
-				REMNA();
+				remnantShade();
 			}
 	}
 }

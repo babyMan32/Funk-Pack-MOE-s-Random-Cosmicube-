@@ -1,0 +1,19 @@
+{
+	"type": "pet",
+	"price": 250,
+
+	"title": "Gem Alert",
+	"description": "hell yeah jigsaw",
+
+	"node":
+	{
+		"parent": "bf-modern",
+		"direction": "east"
+	},
+	
+	"color": [
+		55,
+		59,
+		71
+	]
+}
