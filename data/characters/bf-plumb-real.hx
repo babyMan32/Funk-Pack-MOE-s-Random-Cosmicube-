@@ -5,9 +5,18 @@ var _step_shit = [
 	[367, 383]
 ];
 
+function onLoad()
+{
+	pauseOverride = 'ghosthouse';
+}
+
 function opponentNoteHitPre(note)
 {
 	if (curSong != 'Identity Crisis') return;
+
+	if (dad.curCharacter == boyfriend.getFlag('variants')?.monotone) pauseOverride = 'ghosthouse' + dad.idleSuffix;
+
+	if (dad.curCharacter == 'monotone') pauseOverride = 'monotone';
 
 	if (_step_shit[counter] == null) return;
 
@@ -18,7 +27,19 @@ function opponentNoteHitPre(note)
 
 	if (curStep >= _step_shit[counter][1]) counter++;
 
+	parent.idleSuffix = note.animSuffix;
+}
+
+function onPause()
+{
 	if (dad.curCharacter != boyfriend.getFlag('variants')?.monotone) return;
 
-	dad.idleSuffix = note.animSuffix;
+	Paths.overrideMode = PathsTestMode.LOOSE;
+}
+
+function onResume()
+{
+	if (dad.curCharacter != boyfriend.getFlag('variants')?.monotone) return;
+
+	Paths.overrideMode = null;
 }
