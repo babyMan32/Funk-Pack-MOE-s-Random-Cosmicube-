@@ -171,7 +171,7 @@ function theKillFunction(person, index)
 		body.animation.play('death', true);
 
 		walkingFuckers[index].destroy();
-		walkingFuckers[index] = null;
+		walkingFuckers.remove(walkingFuckers[index]);
 		amongWalking = false;
 		regret = false;
 

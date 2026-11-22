@@ -77,7 +77,6 @@ function botplayNoteCheck()
 	if (!boyfriend.hasFlag('botplayNoteSkin')) // mainly only used for the MMV2 chars
 	{
 		skins = boyfriend.getFlag('noteSkin') ?? PlayState.SONG.arrowSkins[0];
-		lastPlaySkin = skins;
 		return;
 	}
 
