@@ -20,9 +20,17 @@ var bloooooood:FunkinSprite;
 
 var specialFuck;
 
+var yollowExploding = ['D\'low', 'D\'low (Pico Mix)'];
+
+var cock_gun;
+var shoot;
+
 function onCreatePost()
 {
 	specialFuck = boyfriend.getFlag('variants').monotone;
+
+	cock_gun = FlxG.sound.load(Paths.sound('Gun_Prep', null, PathsTestMode.LOOSE));
+	shoot = FlxG.sound.load(Paths.sound('shot3', null, PathsTestMode.LOOSE));
 
 	if (dad.curCharacter != specialFuck) return;
 
@@ -58,10 +66,31 @@ function onStepHit()
 			FlxG.sound.play(Paths.sound('cutscene/' + step.sfx));
 		}
 	}
+
+	if (curStep == 1423 && yollowExploding.contains(PlayState.SONG.song))
+	{
+		shoot.play(true);
+	}
 }
 
 function onBeatHit()
 {
+	if (yollowExploding.contains(PlayState.SONG.song))
+	{
+		if (curBeat == 355)
+		{
+			boyfriend.playAnim('cock', true);
+			boyfriend.specialAnim = true;
+			cock_gun.play(true);
+		}
+
+		if (curBeat == 356)
+		{
+			boyfriend.playAnim('shoot', true);
+			boyfriend.specialAnim = true;
+		}
+	}
+	
 	if (dad.curCharacter != specialFuck && dad.curCharacter != 'pico-dopple-opponent') return;
 
 	switch (curBeat)
@@ -183,5 +212,15 @@ function onUpdatePost(elapsed:Float):Void
 				}
 			}
 		}
+	}
+}
+
+function goodNoteHitPre(note)
+{
+	if (!yollowExploding.contains(PlayState.SONG.song)) return;
+
+	if (curStep >= 1418)
+	{
+		note.noAnimation = true;
 	}
 }

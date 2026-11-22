@@ -2,7 +2,7 @@ import funkin.states.MainMenuState;
 import funkin.states.FreeplayState;
 import funkin.FunkinAssets;
 
-var charsToType = ['G', 'F', 'PERIOD', 'H', 'X'];
+var charsToType = [FlxG.keys.pressed.G, FlxG.keys.pressed.F, FlxG.keys.pressed.PERIOD, FlxG.keys.pressed.H, FlxG.keys.pressed.X];
 var index = 0;
 
 function onUpdate()
@@ -11,15 +11,13 @@ function onUpdate()
 
 	if (Std.isOfType(game, MainMenuState))
 	{
-		if (FlxG.keys.anyJustPressed(charsToType[index]))
+		if (charsToType[index])
 		{
 			index++;
 			FlxG.sound.play(Paths.sound('equip', null, PathsTestMode.LOOSE));
 		}
 
 		trace(charsToType[index]);
-
-		trace(FlxG.keys.justPressed);
 
 		if (index == 5) FreeplayState.loadSong('Invincible (Noimix)');
 	}

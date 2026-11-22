@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend (Teratoma)",
+	"description": "holy moly",
+
+	"node":
+	{
+		"parent": "gem_alert",
+		"direction": "east"
+	}
+}
