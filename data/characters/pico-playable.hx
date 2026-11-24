@@ -27,10 +27,17 @@ var shoot;
 
 function onCreatePost()
 {
-	specialFuck = boyfriend.getFlag('variants').monotone;
+	specialFuck = boyfriend.getFlag('variants')?.monotone;
 
 	cock_gun = FlxG.sound.load(Paths.sound('Gun_Prep', null, PathsTestMode.LOOSE));
 	shoot = FlxG.sound.load(Paths.sound('shot3', null, PathsTestMode.LOOSE));
+
+	switch (PlayState.SONG.song)
+	{
+		case 'Oversight 2025', 'Lights Down 2024', 'Sussus Purple', '2torial', 'Reinforcements', 'Tomongus Tuesday':
+			boyfriend.playAnim('maaaan', true);
+			boyfriend.specialAnim = true;
+	}
 
 	if (dad.curCharacter != specialFuck) return;
 
@@ -90,7 +97,19 @@ function onBeatHit()
 			boyfriend.specialAnim = true;
 		}
 	}
-	
+
+	if (PlayState.SONG.song == 'Reinforcements' && curBeat == 174)
+	{
+		boyfriend.playAnim('maaaan', true, true);
+		boyfriend.specialAnim = true;
+	}
+
+	if (PlayState.SONG.song == 'Crewbrainz' && curBeat == 47)
+	{
+		boyfriend.playAnim('maaaan', true);
+		boyfriend.specialAnim = true;
+	}
+
 	if (dad.curCharacter != specialFuck && dad.curCharacter != 'pico-dopple-opponent') return;
 
 	switch (curBeat)
